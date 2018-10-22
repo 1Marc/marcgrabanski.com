@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.scss'
-import '../../assets/fonts/fontello-771c82e0/css/fontello.css'
+import twitterIcon from './svg/twitter.svg'
+import githubIcon from './svg/github.svg'
 
 class Links extends React.Component {
   render() {
@@ -9,7 +10,6 @@ class Links extends React.Component {
       twitter: author.twitter,
       github: author.github,
     }
-    console.log(author)
 
     return (
       <div className="links">
@@ -19,12 +19,12 @@ class Links extends React.Component {
               href={`https://www.twitter.com/${links.twitter}`}
               target="_blank"
             >
-              <i className="icon-twitter" />
+              <img src={twitterIcon} />
             </a>
           </li>
           <li className="links__list-item">
             <a href={`https://www.github.com/${links.github}`} target="_blank">
-              <i className="icon-github" />
+              <img src={githubIcon} />
             </a>
           </li>
         </ul>

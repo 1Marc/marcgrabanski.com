@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     url: 'https://marcgrabanski.com',
-    title: "Marc Grabanski's Website - Web Development and Business",
+    title: 'Marc Grabanski - Web Development and Business',
     subtitle:
       'The latest articles by Marc Grabanski: Founder, CEO & UI Developer for Frontend Masters',
     copyright: '© All rights reserved.',
