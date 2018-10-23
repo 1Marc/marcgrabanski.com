@@ -4,7 +4,7 @@
   "description": "Marc Grabanski's Website",
   "main": "n/a",
   "scripts": {
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "build": "gatsby build",
     "clean:public": "rm -rf public",
     "clean": "npm run clean:public",
@@ -37,6 +37,7 @@
     "gatsby-remark-responsive-iframe": "^1.4.16",
     "gatsby-remark-smartypants": "^1.4.10",
     "gatsby-source-filesystem": "^1.5.11",
+    "gatsby-remark-embed-video": "^1.4.0",
     "gatsby-transformer-remark": "^1.7.28",
     "gatsby-transformer-sharp": "^1.6.16",
     "lodash": "^4.17.4",
