@@ -10,4 +10,5 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/asian-vector-art.gif! A Japanese design firm created some "amazing vector illustrations":http://www.studioespace.co.jp/index.html . There is something about vector art that I just love. Maybe it is the vibrant colors that you normally don't pull off with traditional art.
+!http://marcgrabanski.com/img/asian-vector-art.gif!
+A Japanese design firm created some "amazing vector illustrations":http://www.studioespace.co.jp/index.html . There is something about vector art that I just love. Maybe it is the vibrant colors that you normally don't pull off with traditional art.

@@ -11,4 +11,5 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/wp-content/uploads/font-awesome-500x165.png! The "Font Awesome":http://fontawesome.io/ is the best and most complete free icon set I have seen in a long time. If you need a specific icon, you can most likely find it in there. Brilliant!
+!http://marcgrabanski.com/wp-content/uploads/font-awesome-500x165.png!
+The "Font Awesome":http://fontawesome.io/ is the best and most complete free icon set I have seen in a long time. If you need a specific icon, you can most likely find it in there. Brilliant!

@@ -10,4 +10,4 @@ category: "test"
 layout: "post"
 ---
 
-\[mgslides id=3272184\] HTML5 presentation slides from a talk I gave.
+[mgslides id=3272184] HTML5 presentation slides from a talk I gave.

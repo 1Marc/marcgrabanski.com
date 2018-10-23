@@ -12,4 +12,5 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/logo-jqueryui.jpg! I published an article on learningjquery.com titled, ""Introduction to jQuery UI":http://www.learningjquery.com/2008/07/introduction-to-jquery-ui" - I hope you enjoy the article! As a member of the jQuery UI team, I felt compelled to write this introduction because I didn't see any tutorials starting from the ground level. I'm hoping the article will help people get their feet wet with jQuery UI.
+!http://marcgrabanski.com/img/logo-jqueryui.jpg!
+I published an article on learningjquery.com titled, ""Introduction to jQuery UI":http://www.learningjquery.com/2008/07/introduction-to-jquery-ui" - I hope you enjoy the article! As a member of the jQuery UI team, I felt compelled to write this introduction because I didn't see any tutorials starting from the ground level. I'm hoping the article will help people get their feet wet with jQuery UI.
