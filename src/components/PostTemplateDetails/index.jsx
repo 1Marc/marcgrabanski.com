@@ -5,8 +5,10 @@ import './style.scss'
 
 class PostTemplateDetails extends React.Component {
   render() {
-    const { subtitle, author, url } = this.props.siteMetadata
+    const { author } = this.props.siteMetadata
     const post = this.props.post
+    const next = this.props.next
+    const prev = this.props.prev
     const tags = post.fields.tagSlugs
 
     const homeBlock = (
@@ -48,8 +50,10 @@ class PostTemplateDetails extends React.Component {
               </em>
             </div>
           </div>
+
           <div className="post-single__footer">
             {tagsBlock}
+            {/* 
             <hr />
             <p className="post-single__footer-text">
               Don't forget to&nbsp;
@@ -60,7 +64,21 @@ class PostTemplateDetails extends React.Component {
               >
                 <strong>say "hi" 👋 on Twitter!</strong>
               </a>
-            </p>
+            </p> 
+            */}
+          </div>
+
+          <div className="post-single__footer-nextprev">
+            {prev ? (
+              <Link className="post-single__footer-prev" to={prev.fields.slug}>
+                &lt;&lt; {prev.frontmatter.title}
+              </Link>
+            ) : null}
+            {next ? (
+              <Link className="post-single__footer-next" to={next.fields.slug}>
+                {next.frontmatter.title} &gt;&gt;
+              </Link>
+            ) : null}
           </div>
         </div>
       </div>
