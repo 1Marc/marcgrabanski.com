@@ -11,4 +11,5 @@ category: "test"
 layout: "post"
 ---
 
-p. !http://marcgrabanski.com/img/zoom-it.gif! p. "Zoom it!":http://www.microsoft.com/technet/sysinternals/utilities/zoomit.mspx (Windows) is a very click way of zooming in. It also comes with a marker that you could use in a presentation or something. A simple hotkey (Control+1 by default) will take you into zoom mode which you can zoom in and out with the mouse scroll wheel. I feel like another level of control has been added to my computer with zoom it!
+!http://marcgrabanski.com/img/zoom-it.gif!
+"Zoom it!":http://www.microsoft.com/technet/sysinternals/utilities/zoomit.mspx (Windows) is a very click way of zooming in. It also comes with a marker that you could use in a presentation or something. A simple hotkey (Control+1 by default) will take you into zoom mode which you can zoom in and out with the mouse scroll wheel. I feel like another level of control has been added to my computer with zoom it!

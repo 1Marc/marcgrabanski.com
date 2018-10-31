@@ -11,4 +11,6 @@ category: "test"
 layout: "post"
 ---
 
-This is a smart kid. I think he should get extra credit but the teacher wouldn't understand. It reminds me of when I was in school programming on my TI-83 calculator during all of my classes. p. !http://marcgrabanski.com/img/fox.jpg! p. "Geek Humor - I will not throw paper airplanes in class":http://www.jeffpalm.com/fox/index.html
+This is a smart kid. I think he should get extra credit but the teacher wouldn't understand. It reminds me of when I was in school programming on my TI-83 calculator during all of my classes.
+!http://marcgrabanski.com/img/fox.jpg!
+"Geek Humor - I will not throw paper airplanes in class":http://www.jeffpalm.com/fox/index.html

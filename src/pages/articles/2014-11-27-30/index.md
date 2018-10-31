@@ -1,17 +1,97 @@
 ---
-path: "30"
-title: "Turning 30"
-description: ""
-tags: 
+path: '30'
+title: 'Turning 30'
+description: ''
+tags:
   - "Marc Grabanski's Work"
-date: "2014-11-27T08:41:07.000Z"
+date: '2014-11-27T08:41:07.000Z'
 draft: false
-category: "test"
-layout: "post"
+category: 'test'
+layout: 'post'
 ---
 
-Turning 30 has been interesting. I've been a full-time front-end web developer since '04-05. That's 10 years! But now honestly although I still do front-end dev I feel like I'm more of a CEO than anything now -- that's a recent development in the last 6-12 months. p=. ![family-photo](448ab52d-7425-4237-9b6e-baa60502fcaa.jpg)  h2. Front-End Web Development Career From 15-18 I was in IT. I saw a huge opportunity in writing and creating software that goes out to many. That's what I ended up doing web development and writing. I started web development full time around age 20. bq. I felt as though I was doing the most important job I could. I was looked down upon, but knew what I was doing was important and I wanted to learn the most I could despite that fact. - "My response on Quora":http://qr.ae/piIkg If you want a longer answer "why I got into front-end":http://qr.ae/piIkg I wrote this Quora answer last year. h2. Blogging My blog reached millions of visitors. 2010 (age 26) was the height of my blogging career with 1.5M unique visitors that year. I quit blogging around that year (re-birthed this year '14) in favor of creating a company. Writing became my life for a few years and it was hard to do anything else. In retrospect since I had built up a huge following I should have created info products, but that wasn't cool in '08-10. Info products have only become a trend in recent years. I stopped having things to write about in '10 favor of going out and having more life experiences. Now I feel like I have more to share (if I only took the time to write). So hopefully I'll share more on this blog next year. h2. Speaking I spoke at around 60 conferences in my 20s. I learned a lot from that. Basically it comes down to doing a ton of research and distilling potent points into an interesting to watch, 30-50 minute presentation. I feel like I've done well honing in on this skill -- even though I'm not the best / most interesting speaker, I got in the top 10 rated talks of one of the more important industry conferences. So that says something. I've come a long ways from 2007 when I started speaking. I distilled my knowledge in this "top 10 speaking tips":http://marcgrabanski.com/tech-talks/ article. h2. Family I now have a wife and two kids! Honestly my kids are a huge part of my life now. Having kids changes you. I no longer can dink around with projects that don't have to lead anywhere. Throwing away work now feels irresponsible. Either I should contribute something important or go home to my wife and kids who want me in their life. h2. Business I've been an entrepreneur for about 15 years now. I've only had one full time job and that was for less than two years. I even wrote a "guide on self-employed software development":http://marcgrabanski.com/self-employed-software-development-guide/. In my mid to late twenties I had a dream of recurring revenue solving a lot of my cashflow problems. I've done that now. I don't think about money day to day even though I probably should since the business still has it's rough parts, but instead I consider the future and what's best for the structure of the business. \*I now think about what's best for my customers and improving the core product.\* h3. Recurring Revenue is King Honestly having customers paying you every month for something has been the most liberating thing ever. I've done a lot of things. Consulted and made several companies millions of dollars, but the cash was fleeting. Now as I contribute to something it just provides more and more value for my customers. Building up something big has become an obsession and \*I'm finally feeling like I'm running instead of running in circles.\* Business has growth over 400% last year and I hope to do at least 200% increase next year. It's now bigger than even my biggest months running my consulting business. h3. VC and Acquisitions I've been distracted by several companies asking to buy my business. Actually, three offers at this point now... but in the end investment and acquisition discussions has just been days and weeks of unproductive distraction. I just need to focus on building a better business.
+Turning 30 has been interesting. I've been a full-time front-end web developer since '04-05. That's 10 years! But now honestly although I still do front-end dev I feel like I'm more of a CEO than anything now -- that's a recent development in the last 6-12 months.
 
-* * *
+![family-photo](448ab52d-7425-4237-9b6e-baa60502fcaa.jpg)
 
-h2. The Future Now let's look at what's on my mind right now and into the future. h3. Health I'm still reasonably healthy when it comes down to it, but I've definitely gained a good 15 pounds over the years. If there's something I think about daily now it's that I want to be healthy and live a healthy lifestyle. Especially for my kids to have a role model and a healthy father. Unfortunately I feel like I'm far from my health goals. I need to find something that works for me. I did Jiu Jitsu for a while but fell off of it. I'm really bad with committing to things and being consistent. h3. Spirituality My early 20s were pretty much filled with spiritual experiences. Prayer, active in the church, bible and hitting the streets sharing my faith and experiencing what God has to offer. I wish I could do more of this today. Maybe someday I'll get back to it, but for now it still shapes my thoughts tons and I do take time to pray and meditate daily. h3. Moving? I'm still renting here in Minnesota and I feel like I'm stuck here. I've built a business here and I'm afraid to pick up and move it even though I do consider it a fairly mobile-friendly business. We checked out some other states, but I just don't want to move too early and take risks when things are working pretty well now. We'll see where I end up. I want to move but I think we'll stay here for at least another 6-12 months while my wife finishes her degree. h3. My Kids Ultimately I think the majority of my future will be centered around what's best for my kids. I still haven't fully realized the impact this will have on my life since my kids are only 2 and 3 months...but I can already see it impacting my future decisions. h3. Business I'd like to grow a very large business in the next 20-30 years. Even if it's not at scale in 5-10 years I'm not too worried about it. I'm honestly not even sure why I want to create such a big business. I kind of hate money but I just feel like it's my duty to bring the best education to the world in a scalable fashion and money is a measure of the scale of it. So far my business is off to a strong start. Showing numbers and growth I've impressed potential investors, mentor networks and etc...but I haven't felt compelled to take investment or move forward with changes like that yet. h3. Excited Overall I'm super excited about the future! In five years I hope to be in a different location that inspires me and my wife, be healthier, have awesome kids who are in an education program they love and be taking plenty of vacations amongst building the business bigger and bigger. ;-) Cheers! And here's to 30!!
+## Front-End Web Development Career
+
+From 15-18 I was in IT. I saw a huge opportunity in writing and creating software that goes out to many. That's what I ended up doing web development and writing. I started web development full time around age 20.
+
+> I felt as though I was doing the most important job I could. I was looked down upon, but knew what I was doing was important and I wanted to learn the most I could despite that fact. - [My response on Quora](http://qr.ae/piIkg)
+
+## Blogging
+
+My blog reached millions of visitors. 2010 (age 26) was the height of my blogging career with 1.5M unique visitors that year.
+
+I quit blogging around that year (re-birthed this year '14) in favor of creating a company. Writing became my life for a few years and it was hard to do anything else. In retrospect since I had built up a huge following I should have created info products, but that wasn't cool in '08-10. Info products have only become a trend in recent years.
+
+I stopped having things to write about in '10 favor of going out and having more life experiences. Now I feel like I have more to share (if I only took the time to write). So hopefully I'll share more on this blog next year.
+
+## Speaking
+
+I spoke at around 60 conferences in my 20s. I learned a lot from that. Basically it comes down to doing a ton of research and distilling potent points into an interesting to watch, 30-50 minute presentation.
+
+I feel like I've done well honing in on this skill -- even though I'm not the best / most interesting speaker, I got in the top 10 rated talks of one of the more important industry conferences. So that says something. I've come a long ways from 2007 when I started speaking. I distilled my knowledge in this [top 10 speaking tips](/tech-talks/) article.
+
+## Family
+
+I now have a wife and two kids!
+
+Honestly my kids are a huge part of my life now. Having kids changes you. I no longer can dink around with projects that don't have to lead anywhere. Throwing away work now feels irresponsible. Either I should contribute something important or go home to my wife and kids who want me in their life.
+
+## Business
+
+I've been an entrepreneur for about 15 years now. I've only had one full time job and that was for less than two years. I even wrote a "guide on self-employed software development":http://marcgrabanski.com/self-employed-software-development-guide/.
+
+In my mid to late twenties I had a dream of recurring revenue solving a lot of my cashflow problems. I've done that now. I don't think about money day to day even though I probably should since the business still has it's rough parts, but instead I consider the future and what's best for the structure of the business. **I now think about what's best for my customers and improving the core product.**
+
+### Recurring Revenue is King
+
+Honestly having customers paying you every month for something has been the most liberating thing ever. I've done a lot of things. Consulted and made several companies millions of dollars, but the cash was fleeting.
+
+Now as I contribute to something it just provides more and more value for my customers. Building up something big has become an obsession and **I'm finally feeling like I'm running instead of running in circles.**
+
+Business has growth over 400% last year and I hope to do at least 200% increase next year. It's now bigger than even my biggest months running my consulting business.
+
+### VC and Acquisitions
+
+I've been distracted by several companies asking to buy my business. Actually, three offers at this point now... but in the end investment and acquisition discussions has just been days and weeks of unproductive distraction. I just need to focus on building a better business.
+
+---
+
+## The Future
+
+Now let's look at what's on my mind right now and into the future.
+
+### Health
+
+I'm still reasonably healthy when it comes down to it, but I've definitely gained a good 15 pounds over the years. If there's something I think about daily now it's that I want to be healthy and live a healthy lifestyle. Especially for my kids to have a role model and a healthy father.
+
+Unfortunately I feel like I'm far from my health goals. I need to find something that works for me. I did Jiu Jitsu for a while but fell off of it. I'm really bad with committing to things and being consistent.
+
+### Spirituality
+
+My early 20s were pretty much filled with spiritual experiences. Prayer, active in the church, bible and hitting the streets sharing my faith and experiencing what God has to offer. I wish I could do more of this today. Maybe someday I'll get back to it, but for now it still shapes my thoughts tons and I do take time to pray and meditate daily.
+
+### Moving?
+
+I'm still renting here in Minnesota and I feel like I'm stuck here. I've built a business here and I'm afraid to pick up and move it even though I do consider it a fairly mobile-friendly business. We checked out some other states, but I just don't want to move too early and take risks when things are working pretty well now.
+
+We'll see where I end up. I want to move but I think we'll stay here for at least another 6-12 months while my wife finishes her degree.
+
+### My Kids
+
+Ultimately I think the majority of my future will be centered around what's best for my kids. I still haven't fully realized the impact this will have on my life since my kids are only 2 and 3 months...but I can already see it impacting my future decisions.
+
+### Business
+
+I'd like to grow a very large business in the next 20-30 years. Even if it's not at scale in 5-10 years I'm not too worried about it. I'm honestly not even sure why I want to create such a big business. I kind of hate money but I just feel like it's my duty to bring the best education to the world in a scalable fashion and money is a measure of the scale of it.
+
+So far my business is off to a strong start. Showing numbers and growth I've impressed potential investors, mentor networks and etc...but I haven't felt compelled to take investment or move forward with changes like that yet.
+
+### Excited
+
+Overall I'm super excited about the future! In five years I hope to be in a different location that inspires me and my wife, be healthier, have awesome kids who are in an education program they love and be taking plenty of vacations amongst building the business bigger and bigger. ;-)
+
+Cheers! And here's to 30!!

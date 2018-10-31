@@ -1,13 +1,13 @@
 ---
-path: "securing-digital-life"
-title: "Securing Your Digital Life"
-description: "In this post I discuss the tools you can use to be more secure living your digital life."
-tags: 
-  - "Security"
-date: "2015-06-18T06:09:00.000Z"
+path: 'securing-digital-life'
+title: 'Securing Your Digital Life'
+description: 'In this post I discuss the tools you can use to be more secure living your digital life.'
+tags:
+  - 'Security'
+date: '2015-06-18T06:09:00.000Z'
 draft: false
-category: "test"
-layout: "post"
+category: 'test'
+layout: 'post'
 ---
 
 _This post contains tools and tactics you can use to be more secure living your digital life._
@@ -44,7 +44,7 @@ On the file sharing and backup route I've tried [CrashPlan](http://www.code42.co
 
 ### Block 3rd party scripts
 
-**Use a 3rd party blocking browser extension like [ghostery](https://www.ghostery.com/en/)** to block 3rd party scripts loading on websites. You can always enable them again on a per website basis. Advertising is basically the antithesis of security and is everywhere tracking everything -- ghostery gives you a bit of control what scripts actually load. _**Not only does blocking 3rd party scripts help security...but suddenly the internet gets a LOT faster! **_
+**Use a 3rd party blocking browser extension like [ghostery](https://www.ghostery.com/en/)** to block 3rd party scripts loading on websites. You can always enable them again on a per website basis. Advertising is basically the antithesis of security and is everywhere tracking everything -- ghostery gives you a bit of control what scripts actually load. **_Not only does blocking 3rd party scripts help security...but suddenly the internet gets a LOT faster! _**
 
 ### Private VPN
 
@@ -60,7 +60,7 @@ Recently tools like [1Password](https://agilebits.com/onepassword) and [Lastpass
 
 ### Remember some unique passwords and don't store in password managers
 
-**I don't store everything in password managers** because it's a single point of failure likely to be comprimised at some point. [xkcd has an article on password strength](https://xkcd.com/936/) which is how you should generate great password which are more secure than the average Joe. _**Use a longer phrase (series of words) that's easy to remember and throw in some weird characters to boot.**_ I have various levels of passwords where I throw in my junk / simple password into sites I don't care about or are likely to get comprimised. Then my computer has a unique password, Dropbox, and essentially anything I really care about.
+**I don't store everything in password managers** because it's a single point of failure likely to be comprimised at some point. [xkcd has an article on password strength](https://xkcd.com/936/) which is how you should generate great password which are more secure than the average Joe. **_Use a longer phrase (series of words) that's easy to remember and throw in some weird characters to boot._** I have various levels of passwords where I throw in my junk / simple password into sites I don't care about or are likely to get comprimised. Then my computer has a unique password, Dropbox, and essentially anything I really care about.
 
 ## Plan for theft of your computers, tablets and phones
 

@@ -14,4 +14,6 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/logo-cakephp.gif! !http://marcgrabanski.com/img/yahoo-search-boss.gif! bq. Note on March 21st, 2008: Neil Crookes made a nice "Yahoo! Boss CakePHP Plugin":http://www.neilcrookes.com/2009/01/30/cakephp-site-search-with-yahoo-boss/ that I would recommend over my code. Neil's fits much better into the CakePHP environment.
+!http://marcgrabanski.com/img/logo-cakephp.gif!
+!http://marcgrabanski.com/img/yahoo-search-boss.gif!
+> Note on March 21st, 2008: Neil Crookes made a nice "Yahoo! Boss CakePHP Plugin":http://www.neilcrookes.com/2009/01/30/cakephp-site-search-with-yahoo-boss/ that I would recommend over my code. Neil's fits much better into the CakePHP environment.

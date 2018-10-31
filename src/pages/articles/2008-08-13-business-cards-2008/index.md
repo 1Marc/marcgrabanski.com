@@ -11,4 +11,6 @@ category: "test"
 layout: "post"
 ---
 
-After getting tired of not having business cards when people asked, I decided to buckle down and make some. I sent the design over to "www.overnightprints.com":http://www.overnightprints.com to get them printed.They turned out \_exactly\_ how I wanted them - A+ print job by my standards. These cards turned out great! !http://marcgrabanski.com/img/business-cards.jpg! It is exciting to have some business cards that are this nice. \_No more writing my email address on a napkin!\_
+After getting tired of not having business cards when people asked, I decided to buckle down and make some. I sent the design over to "www.overnightprints.com":http://www.overnightprints.com to get them printed.They turned out *exactly* how I wanted them - A+ print job by my standards. These cards turned out great!
+!http://marcgrabanski.com/img/business-cards.jpg!
+It is exciting to have some business cards that are this nice. *No more writing my email address on a napkin!*
