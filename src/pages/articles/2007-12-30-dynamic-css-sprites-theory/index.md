@@ -20,7 +20,9 @@ I thought of a way to optimize images and reduce http requests: dynamically stac
 
 Because it would be painful to stitch the images together and write the CSS rules, this would have to be done dynamically with a server side language. CSS sprites are [not a new theory](http://www.alistapart.com/articles/sprites) , but dynamic sprites are. I would love for the day that PHP generates nicely written CSS classes for me to use. If no one else creates this, I will - in time.
 
-Each http request ( [test here](http://marcgrabanski.com/_sandbox/http-test/test.php) ) takes on average 80-100ms per http request. **If you have 40 images and compress them into 3 images, you would save 37 http requests, or at least 2 seconds of load time!**
+Each http request ( [test here](http://marcgrabanski.com/_sandbox/http-test/test.php) ) takes on average 80-100ms per http request. 
+-If you have 40 images and compress them into 3 images, you would save 37 http requests, or at least 2 seconds of load time!
+-
 
 The limitations:
 - Different image types need to be grouped together (gif, png, jpg, etc).

@@ -38,7 +38,9 @@ As a result of years of experience, research and field testing, here is the line
 
 > If something is generic and more than likely doesn't solve a specific problem that is directly used for monetization purposes, then that educational content should remain free and that knowledge belongs in the public domain. However, if I produce something that someone would arrive to if they are looking to profit or take the next step in their career or business, then it becomes responsible to monetize access to that material while pricing based on the likely return on their investment (1/10th rule of thumb).
 
-![Dublin Monument](http://marcgrabanski.com/images/dublin-monument.jpg) There is still a somewhat fuzzy line there, open to personal judgment, but it at least clarifies and somewhat delineates things on a philosophical level. **Someone who is building something big should probably pay for the knowledge necessary to create the blue prints.**
+![Dublin Monument](http://marcgrabanski.com/images/dublin-monument.jpg) There is still a somewhat fuzzy line there, open to personal judgment, but it at least clarifies and somewhat delineates things on a philosophical level. 
+-Someone who is building something big should probably pay for the knowledge necessary to create the blue prints.
+-
 
 ## Retaining Trust
 

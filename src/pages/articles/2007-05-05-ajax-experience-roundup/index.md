@@ -11,8 +11,12 @@ category: "test"
 layout: "post"
 ---
 
-**[Part 1: Ajax Experience Tutorial Sessions](http://marcgrabanski.com/article/79/Ajax-Experience-Tutorial-Sessions)**
-**Part 2: Ajax Experience Roundup**
+
+-[Part 1: Ajax Experience Tutorial Sessions](http://marcgrabanski.com/article/79/Ajax-Experience-Tutorial-Sessions)
+-
+
+-Part 2: Ajax Experience Roundup
+-
 
 The final part of my coverage on [The Ajax Experience in Boston](http://ajaxexperience.techtarget.com/) .
 

@@ -13,13 +13,20 @@ category: "test"
 layout: "post"
 ---
 
-![](http://marcgrabanski.com/img/logo-pivotal-tracker.jpg):http://www.pivotaltracker.com It is not very often that I am blown away by software to an (tech)emotional level. Today I was blown away. I honestly believe [Pivotal Tracker](http://www.pivotaltracker.com) could change the way I view product development from now on. I have even pitched this same type of idea to a business partners before: **ticket items based on value-added to the business**. Finally, a tracking system that works like this. Here's 10 reasons I think Pivotal Track is amazing.
+![](http://marcgrabanski.com/img/logo-pivotal-tracker.jpg):http://www.pivotaltracker.com It is not very often that I am blown away by software to an (tech)emotional level. Today I was blown away. I honestly believe [Pivotal Tracker](http://www.pivotaltracker.com) could change the way I view product development from now on. I have even pitched this same type of idea to a business partners before: 
+-ticket items based on value-added to the business
+-. Finally, a tracking system that works like this. Here's 10 reasons I think Pivotal Track is amazing.
 
 ### 10 Reasons I am Blown Away By Pivotal Tracker # Creates charts of time line / deadline against amount of work yet to accomplish.
 ![](http://marcgrabanski.com/img/pivotal-chart.jpg)
-Look at how huge this is.. if your manager wants to hit the deadline, he/she has to remove "points", or feature requests and slide them to a new release. There is only so much you can get done in a given time period, and Pivotal Tracker makes that clear. # **Centered around value-added to the business**. Amount of value added in a iteration (week) is the velocity. #** Each new feature is assigned a point value depending on how difficult it is to implement. #** Project's velocity is based on how many points you accomplish in an iteration (week).
+Look at how huge this is.. if your manager wants to hit the deadline, he/she has to remove "points", or feature requests and slide them to a new release. There is only so much you can get done in a given time period, and Pivotal Tracker makes that clear. # 
+-Centered around value-added to the business
+-. Amount of value added in a iteration (week) is the velocity. #
+- Each new feature is assigned a point value depending on how difficult it is to implement. #
+- Project's velocity is based on how many points you accomplish in an iteration (week).
 ![](http://marcgrabanski.com/img/pivotal-velocity.jpg)
-#** Chores and bugs are viewed as necessary overhead, but do not add value to the business so they do not contribute to a project's velocity. # *There is only so much you can get done in a week, realistically.* Pivotal Tracker knows this and pushes new items to the backlog, showing management a good idea of what is realistic.
+#
+- Chores and bugs are viewed as necessary overhead, but do not add value to the business so they do not contribute to a project's velocity. # *There is only so much you can get done in a week, realistically.* Pivotal Tracker knows this and pushes new items to the backlog, showing management a good idea of what is realistic.
 ![](http://marcgrabanski.com/img/pivotal-backlog.jpg)
 # Team strength adjusts the amount of points able to accomplish in a given week.
 ![](http://marcgrabanski.com/img/pivotal-team-strength.jpg)

@@ -25,16 +25,24 @@ var World = {
 }
 ```
 
-**You have to do something to make `World.peopleWhoCareAboutYourSolution` greater than zero.**
+
+-You have to do something to make `World.peopleWhoCareAboutYourSolution` greater than zero.
+-
 
 ## You Don't Start with Delivering Value to a Small Amount of Users First
 
 In business things actually work almost the exact opposite as casting a wide net. Business starts with resonating greatly with a very small segment of the population. The internet has created more niches than it has mega corporations. And on top of that, almost every software mega corporations started so niche they have almost laughable stories.
-** Groupon? Group-buying coffee and pizza at a local pizzeria. ** Facebook? A network for connecting with fellow Harvard students. ** Twitter? Let people know what you ate for dinner. ** Kahn Academy? Started with a guy in his closet teaching his extended family Math on YouTube.
+
+- Groupon? Group-buying coffee and pizza at a local pizzeria. 
+- Facebook? A network for connecting with fellow Harvard students. 
+- Twitter? Let people know what you ate for dinner. 
+- Kahn Academy? Started with a guy in his closet teaching his extended family Math on YouTube.
 
 So many companies seemed laughable because they made a solution for such a small segment of the population. Almost none of it was ever made for a big audience.
 
-**It's simple solutions with big hooks that win. Crawl before you walk! It's ok...it really is.**
+
+-It's simple solutions with big hooks that win. Crawl before you walk! It's ok...it really is.
+-
 
 ```js
  var mockup, mvp, feedback, idea;
@@ -59,7 +67,9 @@ I remember in my teen years wondering why guys who were complete idiots or not e
 
 You need to get comfortable asking for everything... feedback, money, help. Not comfortable asking? You need a partner who is.
 
-**The more people you ask, the greater your chances are to get people to get feedback, people to use your solution or...perhaps...even find customers who love your solution!**
+
+-The more people you ask, the greater your chances are to get people to get feedback, people to use your solution or...perhaps...even find customers who love your solution!
+-
 
 ```js
 var prospects = [],
@@ -97,8 +107,18 @@ Here's the final kicker. Let's say you don't want money, or fame, or fortune, or
 
 Are you being the change you want to see in the world or are you hoarding your treasure?
 
-** If you go to a conference and find yourself complaining there aren't any good talks...**create a new talk and submit to call for papers!\*\* ** If you look online for a solution and can't find one so create one for yourself...**open source or productize it!\*\* ** If there are no companies you'd like to work at...**create the ideal company you'd love to work for!\*\* ** Can't find a blog you'd like to read...**create a blog and start writing what you want to hear!\*\*
+
+- If you go to a conference and find yourself complaining there aren't any good talks...
+-create a new talk and submit to call for papers!\*\* 
+- If you look online for a solution and can't find one so create one for yourself...
+-open source or productize it!\*\* 
+- If there are no companies you'd like to work at...
+-create the ideal company you'd love to work for!\*\* 
+- Can't find a blog you'd like to read...
+-create a blog and start writing what you want to hear!\*\*
 
 _Find people who will enjoy what you've made._ It will change you to see people enjoying your creations.
 
-**The hardest thing in life is to be the change you want to see.** It is what separates truly successful people from people with hollow and shallow form of success.
+
+-The hardest thing in life is to be the change you want to see.
+- It is what separates truly successful people from people with hollow and shallow form of success.

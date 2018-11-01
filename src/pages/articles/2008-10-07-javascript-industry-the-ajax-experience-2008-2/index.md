@@ -31,7 +31,9 @@ Kevin Hoyt of Adobe showed off the new features of Dreamweaver CS4. I was actual
 
 ## Comet Basics
 Greg Wilkins came up with an interactive way of describing to the audience what Comet is. It involved the audience acting as the web browser and Greg as the server.
-> **Normal Scenario**
+> 
+-Normal Scenario
+-
 > 
 > Audience:"Hello, I'm Firefox/IE/Opera/etc. and I want to view my stock."
 > Greg:"Hello, I'm the server and here are your stock prices."
@@ -40,10 +42,14 @@ Greg Wilkins came up with an interactive way of describing to the audience what 
 > Audience:"Are there any updates to my stock price?"
 > Greg:"Your stock price went up 1 point."
 > 
-> **Same Scenario with Comet**
+> 
+-Same Scenario with Comet
+-
 > Audience:"Hello, I'm Firefox/IE/Opera/etc. and I want to view my stock."
 > Greg:"Hello, I'm the server and here are your stock prices."
-> **delay**
+> 
+-delay
+-
 > Greg:"Your stock price went up 1 point."
 
 ![](http://marcgrabanski.com/img/comet-chart.jpg)

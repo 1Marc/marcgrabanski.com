@@ -12,7 +12,9 @@ layout: "post"
 ---
 
 ![](http://marcgrabanski.com/img/logo-svn.png)
-Yet again I was saved from a *catastrophic failure* by using SVN. If you are not using SVN or some sort of version control I **highly recommend** using SVN as it will save you from losing your work time and time again.
+Yet again I was saved from a *catastrophic failure* by using SVN. If you are not using SVN or some sort of version control I 
+-highly recommend
+- using SVN as it will save you from losing your work time and time again.
 
 ## SVN Reverse Merge
 The common way to roll back a change is the *reverse merge*. You are taking the old revision and merging it into your working directory.For instance, here we could merge revision 117 into our working directory with this command:

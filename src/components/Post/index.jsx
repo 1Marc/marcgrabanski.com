@@ -29,7 +29,6 @@ class Post extends React.Component {
             {title}
           </Link>
         </h2>
-        <p className="post__description">{description}</p>
       </div>
     )
   }

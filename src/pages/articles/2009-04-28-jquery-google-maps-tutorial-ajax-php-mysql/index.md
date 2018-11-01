@@ -44,7 +44,9 @@ To allow users to add locations to the map, let's create a basic form. This will
 </form>
 ```
 
-A couple things to note about the form: ** The form's action is pointed to map-service.php, which is where we will process the form data. ** A hidden input @@ will be used on the server to flag that we want to save a point to the database. This is just a personal preference on how to do things, there are many other ways to flag the intended action. \*\* An empty div with class error @
+A couple things to note about the form: 
+- The form's action is pointed to map-service.php, which is where we will process the form data. 
+- A hidden input @@ will be used on the server to flag that we want to save a point to the database. This is just a personal preference on how to do things, there are many other ways to flag the intended action. \*\* An empty div with class error @
 
 @ is placed in the form to be used in a later step to display errors.
 
@@ -137,7 +139,15 @@ function savePoint(geocode) {
 }
 ```
 
-The @$.post@ method accepts parameters. # **URL** to post data to: @$(this).attr('action')@ will get the action attribute from the form that was submitted in the previous step. # **Data** in name, value pairs i.e. @{ name:[inputname", value:"inputvalue"}@ we will get all the inputs using the :input selector in jQuery, then use the "serialize array](http://docs.jquery.com/Ajax/serializeArray) function to turn those inputs into name, value pairs. Then add the two geocode name/value pairs to the data object. # **Function** to run after AJAX response is received. This function has one parameter which contains the response of the AJAX request. # **Type of data** to be returned (optional). In this case we will use JSON.
+The @$.post@ method accepts parameters. # 
+-URL
+- to post data to: @$(this).attr('action')@ will get the action attribute from the form that was submitted in the previous step. # 
+-Data
+- in name, value pairs i.e. @{ name:[inputname", value:"inputvalue"}@ we will get all the inputs using the :input selector in jQuery, then use the "serialize array](http://docs.jquery.com/Ajax/serializeArray) function to turn those inputs into name, value pairs. Then add the two geocode name/value pairs to the data object. # 
+-Function
+- to run after AJAX response is received. This function has one parameter which contains the response of the AJAX request. # 
+-Type of data
+- to be returned (optional). In this case we will use JSON.
 
 ## Step #5: Use PHP on the Server to Process the Form
 
@@ -242,7 +252,8 @@ function addLocation(location) {
   var marker = new GMarker(point)
   map.addOverlay(marker)
   bounds.extend(marker.getPoint())
-  $('**   ')
+  $('
+-   ')
     .html(location.name)
     .click(function() {
       showMessage(marker, location.name)
@@ -254,7 +265,9 @@ function addLocation(location) {
 }
 ```
 
-It has a few things you might want to note: ** using location.name, location.lat and location.lng means that we will be passing in a location object with those properties to the function. ** Ignore @bounds.extend(marker.getPoint());@ and @zoomToBounds@ for now or skip to #13 quickly to find out what they do.
+It has a few things you might want to note: 
+- using location.name, location.lat and location.lng means that we will be passing in a location object with those properties to the function. 
+- Ignore @bounds.extend(marker.getPoint());@ and @zoomToBounds@ for now or skip to #13 quickly to find out what they do.
 
 ## Step #9: Load and Display the Locations from in the Database
 
@@ -270,7 +283,8 @@ To make a,[GET"request to the server, we can use jQuery's "getJson method](http:
 Simply check the,"GET"action in the PHP and run this code to fetch the locations records. Pretty straight-forward code here. We are creating an array of points and then sending them back to the client as JSON.
 
 ```
-if ($_GET['action'] == 'listpoints') { $query ="SELECT ** FROM locations"; $result = map_query($query); $points = array(); while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) { array_push($points, array('name' =>$row['name'], 'lat' =>$row['lat'], 'lng' =>$row['lng'])); } echo json_encode(array("Locations"=>$points)); exit; }
+if ($_GET['action'] == 'listpoints') { $query ="SELECT 
+- FROM locations"; $result = map_query($query); $points = array(); while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) { array_push($points, array('name' =>$row['name'], 'lat' =>$row['lat'], 'lng' =>$row['lng'])); } echo json_encode(array("Locations"=>$points)); exit; }
 ```
 
 ## Step #11: Display the Locations

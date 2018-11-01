@@ -12,7 +12,9 @@ category: "test"
 layout: "post"
 ---
 
-- **Part 1: Ajax Experience Tutorial Sessions**
+- 
+-Part 1: Ajax Experience Tutorial Sessions
+-
 - [Part 2: Ajax Experience Roundup](http://marcgrabanski.com/article/81/Ajax-Experience-Roundup)
 
 ![](http://marcgrabanski.com/img/logo-ajax-experience.gif)
@@ -42,7 +44,9 @@ Three basic ways to implement JavaScript with libraries.
 - Level 2 - Some assembly required. Set of functions that allow you to not worry about the browser bugs. JavaScript Frameworks - Aids writing JavaScript code. 
 - Level 3 - Directly interact with the DOM API. Dealing directly with DOM and dealing directly with browser quirks and bugs. 
 
-You **should** use a JavaScript library so you don't have to deal with problems people have already solved. Hence wasting a lot of time.
+You 
+-should
+- use a JavaScript library so you don't have to deal with problems people have already solved. Hence wasting a lot of time.
 
 Prototype, jQuery, Yahoo UI, Dojo - These four libraries completely dominated the open source, general purpose JavaScript libraries. These libraries are significantly more popular than any commercial solutions. GWT, DWR and etc are minuscule in their overall use than the open source JavaScript libraries.
 

@@ -12,7 +12,9 @@ layout: 'post'
 
 This combines much of the advice I give to friends and colleagues over the years (I advise many startups) all packaged together along with a bit of history of my career at the beginning of the talk.
 
-This talk is **chock full of advice to freelancers / consultants and startups**.
+This talk is 
+-chock full of advice to freelancers / consultants and startups
+-.
 
 _Quick note: It is my first public talk on business, so it takes a bit for me to get into the talk and find myself in it. Please forgive me for starting slow, but I do find my groove and give tons of advice and tips. I'm excited about this talk. Enjoy! :-D_
 

@@ -12,7 +12,9 @@ layout: 'post'
 
 ![Cheetah](http://marcgrabanski.com/img/cheetah.jpg)
 
-Society is moving at an unprecedented pace. A year ago I didn't have the word "Android" in my vocabulary but now I use an Android phone every day. Entrepreneurs of yesterday have to wake up to this new world and realize that the rules have changed. Entrepreneurs suddenly, "cannot find good talent". Meanwhile, **hackers don't need idea people when they _are_ the idea people.**
+Society is moving at an unprecedented pace. A year ago I didn't have the word "Android" in my vocabulary but now I use an Android phone every day. Entrepreneurs of yesterday have to wake up to this new world and realize that the rules have changed. Entrepreneurs suddenly, "cannot find good talent". Meanwhile, 
+-hackers don't need idea people when they _are_ the idea people.
+-
 
 ## Inside the Hacker's Mind
 
@@ -20,4 +22,6 @@ The job of the hacker is to turn ideas into reality and breathe life into the id
 
 ## Hackers Thrive on Progress
 
-The biggest way to interest a hacker beyond money is through providing opportunities to progress in skills. Hackers need progress daily (I'd also argue all of humanity feels this way, but most certainly hackers). Hackers need a project, or five, to hack on to improve their abilities. If you are a business owner, give hackers ways to experiment and own the success of ideas. **Entrepreneurs have only one option for thriving in today's new society: become a hacker or find hackers and give them liberty to try out their ideas and progress.**
+The biggest way to interest a hacker beyond money is through providing opportunities to progress in skills. Hackers need progress daily (I'd also argue all of humanity feels this way, but most certainly hackers). Hackers need a project, or five, to hack on to improve their abilities. If you are a business owner, give hackers ways to experiment and own the success of ideas. 
+-Entrepreneurs have only one option for thriving in today's new society: become a hacker or find hackers and give them liberty to try out their ideas and progress.
+-

@@ -35,7 +35,9 @@ When crafting a business or a career you really have to think about the entire p
 
 ### Delivering Value for the Benefit of Humanity
 
-Ultimately my suggestion through this article is to build your career or business in a way that gives others back more than it gives you. People say if you charge $1 at the door and deliver $10 of value you will be rich. I would go further and ask the following: ** Do you actually like giving the $10? ** Do the people working for you enjoy working towards giving that $10 of value? \*\* Is the $10 going to affect society in a good way?
+Ultimately my suggestion through this article is to build your career or business in a way that gives others back more than it gives you. People say if you charge $1 at the door and deliver $10 of value you will be rich. I would go further and ask the following: 
+- Do you actually like giving the $10? 
+- Do the people working for you enjoy working towards giving that $10 of value? \*\* Is the $10 going to affect society in a good way?
 
 ![Serving Food](http://marcgrabanski.com/img/serving-food.jpg)
 
