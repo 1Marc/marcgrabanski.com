@@ -12,16 +12,16 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/jquery-tools.jpg!
+![](http://marcgrabanski.com/img/jquery-tools.jpg)
 VS
-!http://marcgrabanski.com/img/logo-jqueryui.jpg!
+![](http://marcgrabanski.com/img/logo-jqueryui.jpg)
 
-A new library has come out called,""jQuery Tools":http://flowplayer.org/tools/" that is packed with some visually appealing plugins built on top of jQuery.
+A new library has come out called,["jQuery Tools](http://flowplayer.org/tools/)" that is packed with some visually appealing plugins built on top of jQuery.
 
 Here is their opening line to grab your interest:
 > Let's face it: do you really need drag-and-drop, resizables, selectables or sortable tables in your web applications? Websites are not desktop applications. They are different.
 
-This is obviously a jab at "jQuery UI":http://jqueryui.com/
+This is obviously a jab at [jQuery UI](http://jqueryui.com/)
 > What you really need are tabs, tooltips, accordions, overlays, smooth navigation, great visual effects and all those "web 2.0" goodies that you have seen on your favorite websites.
 > jQuery UI contains six of the most useful JavaScript tools available for today's website. The beauty of this library is that all of these tools can be used together, extended, configured and styled. In the end, you can have hundreds of different widgets and new personal ways of using the library.
 > While there is some truth to the fact that you don't need each component that jQuery UI provides in most websites. You still have to keep in mind that jQuery UI's focus is to bring a set of components to the table that you can pick and chose from.
@@ -29,8 +29,8 @@ This is obviously a jab at "jQuery UI":http://jqueryui.com/
 
 > Note: the author says he isn't attacking the jQuery UI library (in comments). But I think he should still be looking for ways to add the good parts of his plugins into jQuery UI.
 
-From an outside perspective, this library shines and has great potential. However as I dig deeper into the "API":http://flowplayer.org/tools/using.html#api it looked bad.
-> Note: Tero from jQuery Tools has updated the API to fix this issue I'm pointing out here. You can see the result of the update in the "jQuery Tools release notes":http://flowplayer.org/tools/release-notes.html. This type of thing should be sorted out behind the scenes from now on, but it was a good learning experience for me personally about where the public / private line should be.
+From an outside perspective, this library shines and has great potential. However as I dig deeper into the [API](http://flowplayer.org/tools/using.html#api) it looked bad.
+> Note: Tero from jQuery Tools has updated the API to fix this issue I'm pointing out here. You can see the result of the update in the [jQuery Tools release notes](http://flowplayer.org/tools/release-notes.html). This type of thing should be sorted out behind the scenes from now on, but it was a good learning experience for me personally about where the public / private line should be.
 
 ### Tooltip
 ```html
@@ -51,10 +51,10 @@ Tooltips can contain any HTML such as links, images, forms and tables. This tool
 It doesn't make sense within the context of jQuery. So apparently, you have to grab the tooltip div, then turn it into a tooltip? Um... what? How do I get multiple tooltips on the page? Quick, here is the philosophy behind jQuery: # Find element(s) on the page # Do something to them Typically you would grab elements on the page and then attach the tooltips to them. This is just common jQuery sense.
 > Note: After reading this article, the author of jQuery Tools updated his tooltip API.
 
-As I dive into more examples of the tooltip, it continues to make no sense. The form example have no way to target inputs that you desire with custom classes or ids. You have to modify the markup before page load to change tooltips. After you load up the tooltips, you are stuck and cannot ditch tooltips, or make new ones from within the JavaScript. Please, just use the "jQuery Tooltip":http://bassistance.de/jquery-plugins/jquery-plugin-tooltip/ plugin or "ClueTip":http://plugins.learningjquery.com/cluetip/.
+As I dive into more examples of the tooltip, it continues to make no sense. The form example have no way to target inputs that you desire with custom classes or ids. You have to modify the markup before page load to change tooltips. After you load up the tooltips, you are stuck and cannot ditch tooltips, or make new ones from within the JavaScript. Please, just use the [jQuery Tooltip](http://bassistance.de/jquery-plugins/jquery-plugin-tooltip/) plugin or [ClueTip](http://plugins.learningjquery.com/cluetip/).
 
 ### Non-jQuery API
-So now look at the "API":http://flowplayer.org/tools/using.html#api where it talks about returning the API instead of a jQuery object by passing @api: true@ ... What? We are now forced to exit out of jQuery into a separate jQuery Tools API by passing a variable?
+So now look at the [API](http://flowplayer.org/tools/using.html#api) where it talks about returning the API instead of a jQuery object by passing @api: true@ ... What? We are now forced to exit out of jQuery into a separate jQuery Tools API by passing a variable?
 ```js
  var api = $("#myDiv").scrollable({size: 3, api: true}); api.onClick = function(){ ...
 ```

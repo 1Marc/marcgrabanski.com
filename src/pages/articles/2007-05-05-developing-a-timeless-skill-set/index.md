@@ -10,7 +10,7 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/timeless.jpg!
+![](http://marcgrabanski.com/img/timeless.jpg)
 The place I've been striving for is a place where I can use the proper tool for the job. Each programming language has their strength. Here are your average development languages and their common strength:
 - Behavior and Animation = JavaScript
 - Functionality = PHP, ASP.NET, Java, Ruby

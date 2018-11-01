@@ -19,8 +19,8 @@ I purchased 5 PHP books this morning. I am really excited to learn PHP security 
 - PHP Solutions: Dynamic Web Design Made Easy - $21.95
 - Programming PHP, 2nd Edition - $24.95
 
-!http://marcgrabanski.com/img/book_phpsecurity.gif!
-!http://marcgrabanski.com/img/book_phpandmysqldev.gif!
-!http://marcgrabanski.com/img/book_phpcookbook.gif!
-!http://marcgrabanski.com/img/book_phpsolutions.gif!
-!http://marcgrabanski.com/img/book_programmingphpgif.gif!
+![](http://marcgrabanski.com/img/book_phpsecurity.gif)
+![](http://marcgrabanski.com/img/book_phpandmysqldev.gif)
+![](http://marcgrabanski.com/img/book_phpcookbook.gif)
+![](http://marcgrabanski.com/img/book_phpsolutions.gif)
+![](http://marcgrabanski.com/img/book_programmingphpgif.gif)

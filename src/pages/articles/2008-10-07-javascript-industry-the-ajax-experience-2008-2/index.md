@@ -12,15 +12,15 @@ category: "test"
 layout: "post"
 ---
 
-This is part 2 of my series on "JavaScript Industry Notes":http://marcgrabanski.com/article/javascript-industry-the-ajax-experience-2008-1 based on attending The Ajax Experience 2008, in Boston.
+This is part 2 of my series on [JavaScript Industry Notes](http://marcgrabanski.com/article/javascript-industry-the-ajax-experience-2008-1) based on attending The Ajax Experience 2008, in Boston.
 
 ## Smush It Image Optimizer
-!http://marcgrabanski.com/img/smushit.jpg!
+![](http://marcgrabanski.com/img/smushit.jpg)
 
-The Yahoo performance team unveiled a tool called ""Smush.It":http://smushit.com/" that grabs all of the images used on a website and compresses them. I tried it on my website and it cut 26.53% off the size of my images. Pretty Impressive.
+The Yahoo performance team unveiled a tool called ["Smush.It](http://smushit.com/)" that grabs all of the images used on a website and compresses them. I tried it on my website and it cut 26.53% off the size of my images. Pretty Impressive.
 
 ## Dreamweaver CS4
-!http://marcgrabanski.com/img/dreamweaver-cs4.jpg!
+![](http://marcgrabanski.com/img/dreamweaver-cs4.jpg)
 
 Kevin Hoyt of Adobe showed off the new features of Dreamweaver CS4. I was actually quite impressed with how far they've come from being simply a WYSWYG drag'n'drop HTML editor. The new version features four things worth noting:
 
@@ -46,12 +46,12 @@ Greg Wilkins came up with an interactive way of describing to the audience what 
 > **delay**
 > Greg:"Your stock price went up 1 point."
 
-!http://marcgrabanski.com/img/comet-chart.jpg!
+![](http://marcgrabanski.com/img/comet-chart.jpg)
 
 I pulled the above chart from his presentation later that day. Basically Comet is a way for the server to talk to the client when it has new information, rather than the client polling the server a bunch of times asking for new information, where latency can occur between each poll.
 
 ## Firebug's Future
-!http://marcgrabanski.com/img/firebug.jpg!
+![](http://marcgrabanski.com/img/firebug.jpg)
 
 John Resig explained his involvement with Firebug. The two main points I pulled out:
 - Resig is working on documenting and clean up the 35,000 lines of JavaScript that Firebug currently has. Firebug was previously maintained largely by one person and his job is to come in and make things readable and easier to maintain going forward.
@@ -60,12 +60,12 @@ John Resig explained his involvement with Firebug. The two main points I pulled 
 Netflix explained that people were creating mashups via scraping Netflix's website, which led to broken links and bad applications. Now with their new API he was excited on what was being created.
 
 ## Internet Explorer 8 and Visual Studio
-!http://marcgrabanski.com/img/logo-ie8-beta.jpg!
+![](http://marcgrabanski.com/img/logo-ie8-beta.jpg)
 
 The Microsoft product manager explained a new focus of IE8 was on us, the developers. He showcased the, "development toolbar" that will be packaged with IE8 in order to provide better debugging. Even though it is widely known as a clone of Firebug for IE, he managed to never mention Firebug in his presentation. Regardless, it will provide us developers a far better experience when developing for Internet Explorer in the future.
 
-!http://marcgrabanski.com/img/logo-visual-studio.jpg!
+![](http://marcgrabanski.com/img/logo-visual-studio.jpg)
 
 The next version of Visual Studio will be packaged with jQuery and will feature full IntelliSense for the library. Microsoft setup a standard for documenting JavaScript libraries and is hoping for community members to contribute in order for other libraries to be able to use Visual Studio IntelliSense.
 
-I'll be covering more of the JavaScript industry in Part 3, until then please "subscribe":http://feeds.feedburner.com/allTrades if you haven't already. Also check out "Part 1":http://marcgrabanski.com/article/javascript-industry-the-ajax-experience-2008-1 if you missed it.
+I'll be covering more of the JavaScript industry in Part 3, until then please [subscribe](http://feeds.feedburner.com/allTrades) if you haven't already. Also check out [Part 1](http://marcgrabanski.com/article/javascript-industry-the-ajax-experience-2008-1) if you missed it.

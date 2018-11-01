@@ -13,15 +13,15 @@ layout: 'post'
 ---
 
 My old website had a "top commenters" page.
-!http://marcgrabanski.com/img/logo-mysql.jpg!
-To get the top commenter count I have to thank "Ryan Peterson":https://twitter.com/therpeterson in helping me write this custom MySQL query.I used @Group By@ to lump the results together based on the commenter's email address. Then use @count(\*\*)@ to count the number of records in the group. Also used the @NOT@ function in MySQL to filter my email address.
+![](http://marcgrabanski.com/img/logo-mysql.jpg)
+To get the top commenter count I have to thank [Ryan Peterson](https://twitter.com/therpeterson) in helping me write this custom MySQL query.I used @Group By@ to lump the results together based on the commenter's email address. Then use @count(\*\*)@ to count the number of records in the group. Also used the @NOT@ function in MySQL to filter my email address.
 
 ```mysql
 SELECT \`Comment\`.\`author\`, \`Comment\`.\`id\`, \`Comment\`.\`url\`, count(**) AS \`count\` FROM \`cake_comments\` AS \`Comment\` WHERE 1 = 1 AND NOT(\`Comment\`.\`email\`='m@marcgrabanski.com') GROUP BY \`Comment\`.\`email\` ORDER BY \`count\` DESC LIMIT 0, 10
 ```
 
 Since I didn't want to load all of the related comments at once, I decied to use a little jQuery and Ajax to show comments that they have made.
-!http://marcgrabanski.com/img/jQuery-logo.gif!
+![](http://marcgrabanski.com/img/jQuery-logo.gif)
 First, I put a @span@ tag around the comment count, because without JavaScript you won't see this functionality. On page load I swapped the spans into links with @$(this).replaceWith('' \+ $(this).html() + '');@. Instead adding behavior later after append, I used a jQuery object inside @replaceWith@ so I can attach behavior to the link and I like how the code looks.
 
 ```js
@@ -41,7 +41,7 @@ Using CakePHP's JavaScript object generator, @$javascript->object($data);@ it wa
 
 > Update: I think I'll post the CakePHP code just in case someone is interested. Here is the controller, I use the RequestHandler component `var $components = array('RequestHandler');` and the Time helper `var $helpers = array('Time');` in the top of the controller.
 
-!http://marcgrabanski.com/img/logo-cakephp.gif!
+![](http://marcgrabanski.com/img/logo-cakephp.gif)
 
 ```
 function get($type = null) { if ($this->RequestHandler->isAjax()) { Configure::write('debug', 0); if ($type == 'comments') { $comment = $this->Comment->read(array('Comment.email'), $this->data['Comment']['id']); $results = $this->Comment->find('all', array( 'conditions' => array( 'email' => $comment['Comment']['email']), 'fields' =>'Article.title, Article.slug, Article.type, Comment.id, Comment.created' )); $this->set(compact('results')); } } }

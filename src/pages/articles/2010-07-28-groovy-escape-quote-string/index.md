@@ -37,7 +37,7 @@ var myJSON = $.parseJSON('${myObject}');
 The problem comes when you have single quotes inside that JSON string.
 > “Strings are CON–FUSE–ING in groovy- I just want to print a dang backslash-quote “’” nope try again.. ‘\’” ..nope “\’” ..nope.. ‘\\’‘ ..?” – [2AM Tweet frustration](http://twitter.com/1Marc/status/19722616677)
 
-I looked up countless articles, and found out that it is not actually strings that are a deal. With Groovy, you have to use four slashes `s.replaceAll("'", "\\\\'")`. See, "Slashy Strings in Groovy":http://blog.adaptivesoftware.biz/2009/06/slashy-strings-in-groovy.html. This is also outlined in a forum thread where people were complaining about Java itself, "String.replaceAll troubles with regEx":http://www.velocityreviews.com/forums/t152246-string-replaceall-troubles-with-regex.html.
+I looked up countless articles, and found out that it is not actually strings that are a deal. With Groovy, you have to use four slashes `s.replaceAll(['", "\\\\'")`. See, "Slashy Strings in Groovy](http://blog.adaptivesoftware.biz/2009/06/slashy-strings-in-groovy.html). This is also outlined in a forum thread where people were complaining about Java itself, [String.replaceAll troubles with regEx](http://www.velocityreviews.com/forums/t152246-string-replaceall-troubles-with-regex.html).
 
 This is great if you want to print out a normal string:
 ```groovy

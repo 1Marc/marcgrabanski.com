@@ -13,8 +13,8 @@ category: 'test'
 layout: 'post'
 ---
 
-!http://marcgrabanski.com/img/logo-cakephp.gif!
-When launching new websites and web applications, it is difficult to get on trusted email lists of Hotmail, Yahoo and Etc. Aside from having "proper SPF records":http://marcgrabanski.com/article/hotmail-email-filtering-and-spf, a great way to avoid this sysadmin problem is to use Gmail / Google Apps to offload your domain's email to their servers. By doing this, your domain gets an instant trust factor with receiving mail servers that a new server simply cannot do in a short period of time. To email with Google Apps / Gmail with CakePHP, I've had recent success using the "SwiftMailer CakePHP component":http://bakery.cakephp.org/articles/view/updated-swiftmailer-4-xx-component-with-attachments-and-plugins. It is easy to use and leverages the "PHP SwiftMailer library":http://swiftmailer.org/.
+![](http://marcgrabanski.com/img/logo-cakephp.gif)
+When launching new websites and web applications, it is difficult to get on trusted email lists of Hotmail, Yahoo and Etc. Aside from having [proper SPF records](http://marcgrabanski.com/article/hotmail-email-filtering-and-spf), a great way to avoid this sysadmin problem is to use Gmail / Google Apps to offload your domain's email to their servers. By doing this, your domain gets an instant trust factor with receiving mail servers that a new server simply cannot do in a short period of time. To email with Google Apps / Gmail with CakePHP, I've had recent success using the [SwiftMailer CakePHP component](http://bakery.cakephp.org/articles/view/updated-swiftmailer-4-xx-component-with-attachments-and-plugins). It is easy to use and leverages the [PHP SwiftMailer library](http://swiftmailer.org/).
 
 ### Configuring SwiftMailer CakePHP Component with Gmail This is pulled off the component article's example, but I posted it here as well for your reference.
 
@@ -36,4 +36,4 @@ You will also notice here that we are wrapping the send function in a try/catch 
  sudo make clean && sudo ./configure --prefix=/usr/local/php5 --with-pear --enable-sockets --with-iodbc=/usr --with-curl=/usr --with-mysql=/usr/local/mysql --without-iconv --with-apxs2=/opt/local/apache2/bin/apxs --with-zlib-dir=../zlib-1.2.3/ --with-jpeg-dir=../jpeg-6b --with-openssl --with-gd --with-freetype2=/Developer/SDKs/MacOSX10.5.sdk/usr/X11/include/freetype2/freetype && sudo make && sudo make install
 ```
 
-As an alternative to SwiftMailer, I was pointed to joshua's solution on the mailing list to use the built-in "CakePHP email component with Gmail":http://groups.google.com/group/cake-php/browse_thread/thread/8573140b2e72d1aa/839b6f576077ed18?lnk=raot. Apparently he got it to work, but I couldn't for whatever reason. Enjoy having mail go through to your users without fail!
+As an alternative to SwiftMailer, I was pointed to joshua's solution on the mailing list to use the built-in [CakePHP email component with Gmail](http://groups.google.com/group/cake-php/browse_thread/thread/8573140b2e72d1aa/839b6f576077ed18?lnk=raot). Apparently he got it to work, but I couldn't for whatever reason. Enjoy having mail go through to your users without fail!

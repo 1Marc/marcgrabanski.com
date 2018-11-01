@@ -10,7 +10,7 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/public-speaking.jpg!
+![](http://marcgrabanski.com/img/public-speaking.jpg)
 Even as a web developer we need to be aware of how we communicate. You don't have to be politically correct all the time, but at least be aware of how you phrase things.
 
 **Consider the following statements:**

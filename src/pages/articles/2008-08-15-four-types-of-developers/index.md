@@ -14,7 +14,7 @@ layout: "post"
 ---
 
 After years of working with developers and observing motivations - it seems I've somewhat generalized people into a few categories.
-!http://marcgrabanski.com/img/puzzle-pieces.jpg!
+![](http://marcgrabanski.com/img/puzzle-pieces.jpg)
 > *Please don't balk if they aren't 100% accurate, since everyone is different it is hard to generalize - but this shows the general trends I see of paths people follow when developing for the web.*
 
 ## Type A: Developers for Developers The core of the coding world. They have philosophical debates about code with each other.From this group of people came all the programming languages ( C++, PHP, Java, Ruby, etc). If they have any people skills at all you will see them leading conferences and in the lime-light. Otherwise you can find them in password protected MIRC channels and in the deep dark caverns of corporations where no business person has ever step foot.

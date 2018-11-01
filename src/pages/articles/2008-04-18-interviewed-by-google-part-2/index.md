@@ -11,7 +11,7 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/google-logo.gif!
+![](http://marcgrabanski.com/img/google-logo.gif)
 As many of you know, I was interviewed by Google two more times. Once as a UI Engineer for Gmail and once for a web developer position at YouTube (Google owns YouTube). YouTube actually sent me out on a plane to San Francisco, but I was turned down for both positions. Let me explain how this played out...
 
 ### UI Engineer at Gmail The phone interview for UI Engineer was for a position on the gmail team. The person who interviewed me asked very heavy JavaScript questions. One question went like this, "How do you profile JavaScript"? So I told him about Firebug for Firefox and Drosera for Safari, that was fine. Then he asked me, "How do you profile JavaScript in Internet Explorer?" I had no idea so he responded with, "The JavaScript date object, outputting the date and time with each line of code executed". Wow, manually profiling JavaScript with the date object? - I wouldn't have thought of that, nor would I do that unless for some drastic situation. Aside from the heavy JavaScript questions, I think the interview went well and I gained more insight about Google.

@@ -11,7 +11,7 @@ category: "test"
 layout: "post"
 ---
 
-The deeper I get into CouchDB, the more I love it. I empathize with the thread on Quora about "why isn't couchDB more popular?":http://www.quora.com/CouchDB/Why-isnt-CouchDB-more-popular started by someone who was blown away like I was when I started using CouchDB.
+The deeper I get into CouchDB, the more I love it. I empathize with the thread on Quora about [why isn't couchDB more popular?](http://www.quora.com/CouchDB/Why-isnt-CouchDB-more-popular) started by someone who was blown away like I was when I started using CouchDB.
 
 !http://marcgrabanski.com/img/couchdb-logo.jpg(CouchDB Logo)!
 
@@ -68,17 +68,17 @@ But be forewarned...being able to map/reduce and then filter on a dataset with v
 You can attach blobs to a document and serve them directly out of CouchDB. With attachments you can serve out entire web applications with CouchDB.
 
 ## Cool Projects in CouchDB Ecosystem
-"iOS Couchbase":https://github.com/couchbaselabs/iOS-Couchbase lets you package a local CouchDB in an iOS app. This really takes advantage of Couch's replication and the philosophy of the project.
+[iOS Couchbase](https://github.com/couchbaselabs/iOS-Couchbase) lets you package a local CouchDB in an iOS app. This really takes advantage of Couch's replication and the philosophy of the project.
 
-Geospacial indexing here we go, with "GeoCouch":https://github.com/couchbase/geocouch 
+Geospacial indexing here we go, with [GeoCouch](https://github.com/couchbase/geocouch) 
 
-Need to split up your CouchDB across multiple servers? "Use Lounge Nginx module":http://tilgovi.github.com/couchdb-lounge/
+Need to split up your CouchDB across multiple servers? [Use Lounge Nginx module](http://tilgovi.github.com/couchdb-lounge/)
 
 ## Not 100% Roses
-As this guy is "annoyed by 10 things in CouchDB":http://www.paperplanes.de/2010/7/26/10_annoying_things_about_couchdb.html and recently "GimmeBar moved to MongoDB":http://seancoates.com/blogs/gimme-bar-on-mongodb.
+As this guy is [annoyed by 10 things in CouchDB](http://www.paperplanes.de/2010/7/26/10_annoying_things_about_couchdb.html) and recently [GimmeBar moved to MongoDB](http://seancoates.com/blogs/gimme-bar-on-mongodb).
 
 ## Meets My Needs
 But for my needs, I love that JavaScript can interact with the database directly. I love that I get JSONP for free and soon cross-domain XHR. I'll admit it is taking me a long time to wrap my head around map/reduce and the view / query system, but I've been able to do everything I need.
 
 ## Where to Start?
-I got started walking through the "CouchDB Guide":http://guide.couchdb.org/draft/ and also used the "CouchDB Reference on the Wiki":http://wiki.apache.org/couchdb/Reference to dig into the specific parts of the API.
+I got started walking through the [CouchDB Guide](http://guide.couchdb.org/draft/) and also used the [CouchDB Reference on the Wiki](http://wiki.apache.org/couchdb/Reference) to dig into the specific parts of the API.

@@ -12,7 +12,7 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/logo-jquery.jpg!
+![](http://marcgrabanski.com/img/logo-jquery.jpg)
 A friend asked me a simple question today, but it is worth noting because I have asked the same before, "How do you get the current value from a select list?" To get the current value is very simple using @val()@ .
 ```js
  $('#selectList').val();

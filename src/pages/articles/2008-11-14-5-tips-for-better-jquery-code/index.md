@@ -12,7 +12,7 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/logo-jquery.jpg!
+![](http://marcgrabanski.com/img/logo-jquery.jpg)
 I've been coding using jQuery since shortly after it came out, and well -- I've been using it almost every work day. Here is a few tips that have saved me time.
 
 ## #1: Use data method instead of storing data inside the DOM.

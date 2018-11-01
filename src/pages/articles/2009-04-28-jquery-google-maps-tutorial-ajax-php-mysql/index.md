@@ -12,10 +12,10 @@ category: 'test'
 layout: 'post'
 ---
 
-Continuing the "series on jQuery and Google Maps":http://marcgrabanski.com/article/jquery-google-maps-tutorial-basics, I will teach you how to store and retrieve points with using AJAX and a server-side language. This tutorial will use PHP/MySQL on the server, but it is basic enough that re-writing in another language should not be difficult.
-"View Final Demo":http://marcgrabanski.com/resources/jquery-google-maps/tutorial-part2.html
+Continuing the [series on jQuery and Google Maps](http://marcgrabanski.com/article/jquery-google-maps-tutorial-basics), I will teach you how to store and retrieve points with using AJAX and a server-side language. This tutorial will use PHP/MySQL on the server, but it is basic enough that re-writing in another language should not be difficult.
+[View Final Demo](http://marcgrabanski.com/resources/jquery-google-maps/tutorial-part2.html)
 
-!http://marcgrabanski.com/img/google-maps-form-jquery.jpg!:http://marcgrabanski.com/resources/jquery-google-maps/tutorial-part2.html
+![](http://marcgrabanski.com/img/google-maps-form-jquery.jpg):http://marcgrabanski.com/resources/jquery-google-maps/tutorial-part2.html
 
 First, let me share with you the design-pattern behind the tutorial. My design pattern has two steps. The first is to use a simple HTML form to create new locations by posting the data to the server via AJAX. The second step is to fetch those locations from the server also via AJAX. Sound simple? Well, then lets get started...
 
@@ -60,7 +60,7 @@ ss #add-point { float:left; } div.input { padding:3px 0; } label { display:block
 
 ### 3a) Override default form submit
 
-At this point we'll override the form's default submit action by selecting the form `$("#add-point")` , then using jQuery's "submit event method":http://docs.jquery.com/Events/submit . This method accepts a function that will run on submit of the form.
+At this point we'll override the form's default submit action by selecting the form `$([#add-point")` , then using jQuery's "submit event method](http://docs.jquery.com/Events/submit) . This method accepts a function that will run on submit of the form.
 
 ```js
 $('#add-point').submit(function() {
@@ -71,7 +71,7 @@ $('#add-point').submit(function() {
 
 ### 3b) Add GeoCoder
 
-Then, inside the submit we will post the form data with AJAX using jQuery's "ajax post method":http://docs.jquery.com/Ajax/jQuery.post .
+Then, inside the submit we will post the form data with AJAX using jQuery's [ajax post method](http://docs.jquery.com/Ajax/jQuery.post) .
 
 ```js
 var geo = new GClientGeocoder()
@@ -137,7 +137,7 @@ function savePoint(geocode) {
 }
 ```
 
-The @$.post@ method accepts parameters. # **URL** to post data to: @$(this).attr('action')@ will get the action attribute from the form that was submitted in the previous step. # **Data** in name, value pairs i.e. @{ name:"inputname", value:"inputvalue"}@ we will get all the inputs using the :input selector in jQuery, then use the "serialize array":http://docs.jquery.com/Ajax/serializeArray function to turn those inputs into name, value pairs. Then add the two geocode name/value pairs to the data object. # **Function** to run after AJAX response is received. This function has one parameter which contains the response of the AJAX request. # **Type of data** to be returned (optional). In this case we will use JSON.
+The @$.post@ method accepts parameters. # **URL** to post data to: @$(this).attr('action')@ will get the action attribute from the form that was submitted in the previous step. # **Data** in name, value pairs i.e. @{ name:[inputname", value:"inputvalue"}@ we will get all the inputs using the :input selector in jQuery, then use the "serialize array](http://docs.jquery.com/Ajax/serializeArray) function to turn those inputs into name, value pairs. Then add the two geocode name/value pairs to the data object. # **Function** to run after AJAX response is received. This function has one parameter which contains the response of the AJAX request. # **Type of data** to be returned (optional). In this case we will use JSON.
 
 ## Step #5: Use PHP on the Server to Process the Form
 
@@ -163,20 +163,20 @@ Save the file as map-service.php or whatever you named your form's action attrib
 
 ### 5b) Output the error message as a JSON object
 
-Our fail function will use PHP's "die method":http://us.php.net/manual/en/function.die.php to stop the script from executing and output an error message to the client. Since the front-end (jQuery) is expecting a JSON object, we want to make sure to always send back a JSON response. To output JSON with PHP, you simply pass an array into the "json encode method":http://us.php.net/manual/en/function.json-encode.php (json_encode is PHP 5.2+ only, if you are using less than 5.2 then use the "JSON PHP library":http://mike.teczno.com/JSON/JSON.phps ).
+Our fail function will use PHP's [die method](http://us.php.net/manual/en/function.die.php) to stop the script from executing and output an error message to the client. Since the front-end (jQuery) is expecting a JSON object, we want to make sure to always send back a JSON response. To output JSON with PHP, you simply pass an array into the [json encode method](http://us.php.net/manual/en/function.json-encode.php) (json_encode is PHP 5.2+ only, if you are using less than 5.2 then use the [JSON PHP library](http://mike.teczno.com/JSON/JSON.phps) ).
 
 ```js
  function fail($message) { die(json_encode(array('status' => 'fail', 'message' => $message))); }
 ```
 
-For the JSON array we want to use the "JSEND specification":http://labs.omniti.com/trac/jsend for sending back a response. Basically, you have a key/value pair of status equals success or fail. That way the response can easily be checked on the front-end. I'm deviating from the JSEND spec a little bit by only sending a string back instead of a key/value pair of messages. Using "Firebug":http://getfirebug.com/ and "Firefox":http://www.mozilla.com/en-US/firefox/personal.html , we can inspect the Ajax requests easily within the browser.
-!http://marcgrabanski.com/img/google-maps-firebug-json-error.jpg!
+For the JSON array we want to use the [JSEND specification](http://labs.omniti.com/trac/jsend) for sending back a response. Basically, you have a key/value pair of status equals success or fail. That way the response can easily be checked on the front-end. I'm deviating from the JSEND spec a little bit by only sending a string back instead of a key/value pair of messages. Using [Firebug](http://getfirebug.com/) and [Firefox](http://www.mozilla.com/en-US/firefox/personal.html) , we can inspect the Ajax requests easily within the browser.
+![](http://marcgrabanski.com/img/google-maps-firebug-json-error.jpg)
 You can see here I submitted the form without entering a name and it sent me back an error message in the form of JSON.
 
 ## Step #6: Display the Error Messages with jQuery
 
 Hopping back to the jQuery code, we will write the error handling.
-Inside the post code, we will first use the "hide method":http://docs.jquery.com/Effects/hide to hide the error div in case it is already displaying. Then check if @json.status@ is showing,"fail". If it is, we'll place the @json.message@ inside the error div with jQuery's "html attribute method":http://docs.jquery.com/Attributes/html and then fade it in with the "fade in method":http://docs.jquery.com/Effects/fadeIn .
+Inside the post code, we will first use the [hide method](http://docs.jquery.com/Effects/hide) to hide the error div in case it is already displaying. Then check if @json.status@ is showing,[fail". If it is, we'll place the @json.message@ inside the error div with jQuery's "html attribute method](http://docs.jquery.com/Attributes/html) and then fade it in with the [fade in method](http://docs.jquery.com/Effects/fadeIn) .
 
 ```js
 $('#add-point .error').hide()
@@ -189,7 +189,7 @@ if (json.status == 'fail') {
 
 ## Step #7: Create a Database and Store the Locations
 
-Using SQL, create a database table named locations which has a"name","latitude","longitude"and an"id"in it. If you need help with this, you will have to consult "w3schools php and mysql":http://www.w3schools.com/PHP/php_mysql_intro.asp for more help.
+Using SQL, create a database table named locations which has a[name","latitude","longitude"and an"id"in it. If you need help with this, you will have to consult "w3schools php and mysql](http://www.w3schools.com/PHP/php_mysql_intro.asp) for more help.
 
 ### 7a) Create the table with SQL
 
@@ -218,7 +218,7 @@ I also created a similar method to"fail"called"success"which looks like:
 ```
 
 An example of a succesful response in firebug:
-!http://marcgrabanski.com/img/google-maps-firebug-json-success.jpg!
+![](http://marcgrabanski.com/img/google-maps-firebug-json-success.jpg)
 
 ## Step #8: Map the New Point
 
@@ -233,8 +233,8 @@ if (json.status == 'success') {
 }
 ```
 
-After a location is successfully added to the database, we want to clear the form to prevent duplicate entry. Do this by selecting the inputs with the @:input@ selector. Then we need to filter out theaction input, do this by using the "attribute not equal selector":http://docs.jquery.com/Selectors/attributeNotEqual#attributevalue @[name!=action]@.
-My @addLocation(location)@ function is simply our code from the "last tutorial":http://marcgrabanski.com/article/jquery-google-maps-tutorial-basics placed into a function to be reusable later.
+After a location is successfully added to the database, we want to clear the form to prevent duplicate entry. Do this by selecting the inputs with the @:input@ selector. Then we need to filter out theaction input, do this by using the [attribute not equal selector](http://docs.jquery.com/Selectors/attributeNotEqual#attributevalue) @[name!=action]@.
+My @addLocation(location)@ function is simply our code from the [last tutorial](http://marcgrabanski.com/article/jquery-google-maps-tutorial-basics) placed into a function to be reusable later.
 
 ```js
 function addLocation(location) {
@@ -259,7 +259,7 @@ It has a few things you might want to note: ** using location.name, location.lat
 ## Step #9: Load and Display the Locations from in the Database
 
 When the page initially loads, we want to load all of our stored points. The simplest way to do this (in my opinion) is to do a GET request to fetch a JSON object from the server after the page loads.
-To make a,"GET"request to the server, we can use jQuery's "getJson method":http://docs.jquery.com/Ajax/jQuery.getJSON . We will send the server a,"get"variable called action with value,"listpoints".
+To make a,[GET"request to the server, we can use jQuery's "getJson method](http://docs.jquery.com/Ajax/jQuery.getJSON) . We will send the server a,"get"variable called action with value,"listpoints".
 
 ```js
  $.getJSON("php/map-service.php?action=listpoints", function(json) { // do stuff in step #11 });

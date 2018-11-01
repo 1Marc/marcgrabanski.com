@@ -14,18 +14,18 @@ layout: "post"
 ---
 
 I was shocked after searching Google today, Google is currently redirecting to my homepage and **not the actual page searched for.**
-!http://marcgrabanski.com/img/google-search-homepage.jpg!
-"Why is this?"I thought to myself. I tried the url that you *should* get... "http://marcgrabanski.com/pages/code/jquery-ui-datepicker":http://marcgrabanski.com/pages/code/jquery-ui-datepicker ... ok that works fine. Now try the old url that has most of the link juice attached to it which has a 301 redirect to the new page... "http://marcgrabanski.com/code/ui-datepicker/":http://marcgrabanski.com/code/ui-datepicker/ ... ok that works fine too. So what is going on?
+![](http://marcgrabanski.com/img/google-search-homepage.jpg)
+[Why is this?"I thought to myself. I tried the url that you *should* get... "http://marcgrabanski.com/pages/code/jquery-ui-datepicker](http://marcgrabanski.com/pages/code/jquery-ui-datepicker) ... ok that works fine. Now try the old url that has most of the link juice attached to it which has a 301 redirect to the new page... [http://marcgrabanski.com/code/ui-datepicker/](http://marcgrabanski.com/code/ui-datepicker/) ... ok that works fine too. So what is going on?
 > Update July 30, 2008: The Google crawl appears to be fixed, the search results look good now, so this issue is resolved! Hoorah.
 
-> Update July 23, 2008: There is great discussion going on on "Sphinn":http://sphinn.com/story/60419 about this issue.
+> Update July 23, 2008: There is great discussion going on on [Sphinn](http://sphinn.com/story/60419) about this issue.
 
 First, I go to Google Webmaster and see this, an SEO's nightmare:
-!http://marcgrabanski.com/img/google-webmaster-404-errors.jpg!
-Time to "check my 301 redirects":http://www.best-seo-tools.net/301check/ :
-!http://marcgrabanski.com/img/301-redirect-ui-datepicker.jpg!
-And on "another 301 redirect tool":http://www.webconfs.com/redirect-check.php :
-!http://marcgrabanski.com/img/301-redirect-ui-datepicker2.jpg!
+![](http://marcgrabanski.com/img/google-webmaster-404-errors.jpg)
+Time to [check my 301 redirects](http://www.best-seo-tools.net/301check/) :
+![](http://marcgrabanski.com/img/301-redirect-ui-datepicker.jpg)
+And on [another 301 redirect tool](http://www.webconfs.com/redirect-check.php) :
+![](http://marcgrabanski.com/img/301-redirect-ui-datepicker2.jpg)
 Well that worked great.Still, *what is the issue?* To make absolutely sure my 301 redirects work, I dumped the text redirects into a htaccess file.My htaccess code now looks like this:
 ```xml
  AddDefaultCharset UTF-8 DefaultLanguage en-US

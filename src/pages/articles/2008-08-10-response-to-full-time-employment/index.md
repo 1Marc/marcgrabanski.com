@@ -11,7 +11,7 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/all-star-web-development.jpg!
+![](http://marcgrabanski.com/img/all-star-web-development.jpg)
 
 I received a request for employment from a company who had gotten funding and was trying to assemble an, "all star team" (I made the above logo for fun). Most of the time I do not respond, but in this case the person hiring took so much time crafting the email that I decide that I needed to email back. My response was largely canned, but at least I took the time to respond:
 > **I am currently not seeking full-time employment, however I do consult for agencies that know my work or have worked with me in the past. I find that working relationships are most beneficial if the agency has had experience with my work, because they are able to accurately judge my abilities. Typically, I am sought after for prototyping and user interface development. My rate is ___ per hour.**
@@ -27,6 +27,6 @@ He then responded with a line of questions regarding why I was only open to cons
 > Employer: Will you consider it with the right pay? Let me know.
 > **Marc:I do not consider full-time to be an option right now because it limits me from doing the projects that I feel the need to create.**
 
-!http://marcgrabanski.com/img/assemble-construction.jpg!
+![](http://marcgrabanski.com/img/assemble-construction.jpg)
 
 Overall the goal is to create ideas, and full-time employment doesn't allow me to do that at this point in my life.

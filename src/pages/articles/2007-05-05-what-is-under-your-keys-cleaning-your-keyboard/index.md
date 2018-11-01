@@ -11,7 +11,7 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/DSCF2781.jpg!
+![](http://marcgrabanski.com/img/DSCF2781.jpg)
 
 Have you ever thought about what is under your keyboard keys? Yuk! Make your keyboard as good as new with the "How To Clean Your Keyboard - A Step By Step Guide".
 

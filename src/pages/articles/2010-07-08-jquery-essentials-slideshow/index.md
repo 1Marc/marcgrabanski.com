@@ -12,4 +12,4 @@ category: "test"
 layout: "post"
 ---
 
-[mgslides id=1254680] Want to download the presentation? "PDF of jQuery Essentials":http://marcgrabanski.com/presentations/jquery-essentials.pdf
+[mgslides id=1254680] Want to download the presentation? [PDF of jQuery Essentials](http://marcgrabanski.com/presentations/jquery-essentials.pdf)

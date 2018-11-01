@@ -11,7 +11,7 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/logo-svn.png!
+![](http://marcgrabanski.com/img/logo-svn.png)
 Yet again I was saved from a *catastrophic failure* by using SVN. If you are not using SVN or some sort of version control I **highly recommend** using SVN as it will save you from losing your work time and time again.
 
 ## SVN Reverse Merge

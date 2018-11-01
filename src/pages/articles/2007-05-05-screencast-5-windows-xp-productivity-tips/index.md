@@ -23,8 +23,8 @@ Here are five of my favorite Windows XP Productivity tips. If you are reading vi
   3. Right Click Taskbar -> Unlock and move taskbar items
 1. Taskbar Shortcuts Group
   - Right Click Taskbar -> Toolbars -> New Toolbar -> Choose Folder with Shortcuts in it
-2. "Taskbar Shuffle":http://www.freewebs.com/nerdcave/taskbarshuffle.htm
-3. "Tabbed Windows Explorer [QT Tab]":http://members.at.infoseek.co.jp/Quizo/freeware/indexEn.html#qttab
-4. "Texter":http://lifehacker.com/software/texter/lifehacker-code-texter-windows-238306.php 
+2. [Taskbar Shuffle](http://www.freewebs.com/nerdcave/taskbarshuffle.htm)
+3. [Tabbed Windows Explorer [QT Tab]](http://members.at.infoseek.co.jp/Quizo/freeware/indexEn.html#qttab)
+4. [Texter](http://lifehacker.com/software/texter/lifehacker-code-texter-windows-238306.php) 
 
 If you would like me to make more of these screencasts let me know.

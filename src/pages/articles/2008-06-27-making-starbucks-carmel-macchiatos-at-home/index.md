@@ -11,7 +11,7 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/starbucks-at-home.jpg!
+![](http://marcgrabanski.com/img/starbucks-at-home.jpg)
 
 My favorite drink in the world (at the moment) is a caramel macchiato from Starbucks. Since I'm consulting from home these days, I thought it would be a great idea to make my own caramel macchiatos.
 

@@ -12,11 +12,11 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/logo-tae.jpg!
-Over the last 4 days I attended The Ajax Experience 2008 (Boston) and jQuery Camp 2008. Each day I had many intense discussions about JavaScript with industry experts. I've been forming a picture of the industry with each discussion and presentation and would like to share what I've found out.If you would like a play-by-play, Nathan Hammond wrote a great job on covering "jQueryCamp":http://nathanhammond.com/jquery-conference-2008 and "TAE day 1":http://nathanhammond.com/the-ajax-experience-day-1 and "TAE day 2":http://nathanhammond.com/the-ajax-experience-day-2. Otherwise stay and read-up on my overview.
+![](http://marcgrabanski.com/img/logo-tae.jpg)
+Over the last 4 days I attended The Ajax Experience 2008 (Boston) and jQuery Camp 2008. Each day I had many intense discussions about JavaScript with industry experts. I've been forming a picture of the industry with each discussion and presentation and would like to share what I've found out.If you would like a play-by-play, Nathan Hammond wrote a great job on covering [jQueryCamp](http://nathanhammond.com/jquery-conference-2008) and [TAE day 1](http://nathanhammond.com/the-ajax-experience-day-1) and [TAE day 2](http://nathanhammond.com/the-ajax-experience-day-2). Otherwise stay and read-up on my overview.
 
 ## Google Chrome
-!http://marcgrabanski.com/img/logo-googlechrome.jpg!
+![](http://marcgrabanski.com/img/logo-googlechrome.jpg)
 Ojan Vafai spoke on "Google Chrome" Google's new web browser, which is built from the Chromium open source project.
 > "The browser crashing will be as drastic as the computer blue screen."
 
@@ -31,8 +31,8 @@ Ojan also pleaded with the audience about getting involved in documenting bugs, 
 
 Overall Google Chrome is a great addition to the web browser landscape. As competition increases, so does quality.
 
-## The JavaScript Library Panel PPK, who runs "Quirksmode.org":http://quirksmode.org/ interviewed the JavaScript library authors from Prototype, YUI, Dojo and jQuery.
-!http://farm4.static.flickr.com/3275/2902388592_fb31532766.jpg?v=0! The panel asked how their library worked within Google Chrome, and it seemed that there were no huge problems with the libraries, just a few minor issues that were not hard to deal with. The panel got a little fired up though, when John Resig (jQuery) made the following declaration:
+## The JavaScript Library Panel PPK, who runs [Quirksmode.org](http://quirksmode.org/) interviewed the JavaScript library authors from Prototype, YUI, Dojo and jQuery.
+![](http://farm4.static.flickr.com/3275/2902388592_fb31532766.jpg?v=0) The panel asked how their library worked within Google Chrome, and it seemed that there were no huge problems with the libraries, just a few minor issues that were not hard to deal with. The panel got a little fired up though, when John Resig (jQuery) made the following declaration:
 > "Browser sniffing is used almost as bad as eval()."
 
 He maintained that in order to support new and different browsers, the library needs to not contain browser sniffing. The other library authors thought this goal of not having browser sniffing in the library was a pipe dream. I didn't understand their arguements for why this was the case.But John's argument seemed clear to me, "you test browser capabilities rather than browser types and versions". It seems like a relatively simple concept, although tough to execute. John reassured me in person that he would not have made that statement if he didn't have code to back it up. The panel was asked in the end,"If you had to use a library and couldn't use your own, which one would you chose."The audience laughed. Prototype representative:
@@ -47,4 +47,4 @@ jQuery representative:
 YUI representative:
 > "jQuery."
 
-I'll be covering more of the event and industry in Part 2 - until then please "subscribe":http://feeds.feedburner.com/allTrades if you haven't already. Thanks!
+I'll be covering more of the event and industry in Part 2 - until then please [subscribe](http://feeds.feedburner.com/allTrades) if you haven't already. Thanks!

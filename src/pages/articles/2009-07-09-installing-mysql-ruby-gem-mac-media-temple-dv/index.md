@@ -13,14 +13,14 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/logo-mysql.jpg!
+![](http://marcgrabanski.com/img/logo-mysql.jpg)
 +
-!http://marcgrabanski.com/img/rails.png!
+![](http://marcgrabanski.com/img/rails.png)
 on
-!http://marcgrabanski.com/img/osx-leapord.jpg!
-!http://marcgrabanski.com/img/dedicated-virtual.jpg!
+![](http://marcgrabanski.com/img/osx-leapord.jpg)
+![](http://marcgrabanski.com/img/dedicated-virtual.jpg)
 
-After getting rails installed on mac and rails on Media Temple (dv) and running through the "getting started with rails guide":http://guides.rubyonrails.org/getting_started.html I was having issues installing MySQL ruby gem.
+After getting rails installed on mac and rails on Media Temple (dv) and running through the [getting started with rails guide](http://guides.rubyonrails.org/getting_started.html) I was having issues installing MySQL ruby gem.
 
 When I created a new rails app with @rails blog -d mysql@, it complained about not having mysql gem installed. Then that iis hwere I got an error installing the gem.
 ```bash

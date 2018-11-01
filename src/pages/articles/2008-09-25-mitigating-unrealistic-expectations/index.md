@@ -11,7 +11,7 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/unreal-machine.jpg!
+![](http://marcgrabanski.com/img/unreal-machine.jpg)
 We all work within the bounds of expectations to perform up to a certain level or hit a deadline.But, I think more often than not, web development people have unrealistic expectations.Managers, coworkers, and we too put higher expectations on ourselves than we ought to.Some of this is healthy, but there are certainly pitfalls when dealing with unrealistic expectations.
 
 ## The Main Pitfall, Communication All to often the culprit of unrealistic expectations is *poor communication* . This happens all the time - the developer knows the work is not going to get done on time but decides to say nothing about it.Then when it comes time for the final deliverable there is nothing to show.It can be tough to set emotions aside, but you better communicate with your manager (or client) that you aren't going to make the deadline as soon as you know. An honest explanation, communicated as soon as possible is usually all that is needed.Just make sure you set the expectations level to a reasonable level the next time around.

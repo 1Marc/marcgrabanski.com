@@ -45,4 +45,4 @@ I had no complaints about JWT Minneapolis internally as a business. Some benefit
 
 There are so many words I could say about my last 2 years working with JWT Minneapolis, but I think I'll stick to the above for now. **Thank you to everyone I worked with!**
 
-The "testimonials":http://marcgrabanski.com/pages/testimonials page also has many recommendations that I received from coworkers at JWT Minneapolis through "LinkedIn":http://www.linkedin.com/in/1marc
+The [testimonials](http://marcgrabanski.com/pages/testimonials) page also has many recommendations that I received from coworkers at JWT Minneapolis through [LinkedIn](http://www.linkedin.com/in/1marc)

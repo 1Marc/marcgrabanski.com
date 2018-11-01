@@ -12,5 +12,5 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/IM-Realnames.gif!
+![](http://marcgrabanski.com/img/IM-Realnames.gif)
 Try renaming your instant messaging contact list by full name and trade. It's simple, but very helpful to remember names and roles. For instance,"(CakePHP) Full Name"for my CakePHP friends. This has been especially helpful in a corporate environment. Instead of john390, you see their full name and what they do. Try it out!

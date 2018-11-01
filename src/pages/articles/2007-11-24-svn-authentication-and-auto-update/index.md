@@ -12,8 +12,8 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/dedicated-virtual.jpg!
-During the first two parts of my series on setting up a "Media Temple":http://www.mediatemple.net/go/order/?refdom=marcgrabanski.com dedicated server, I setup subversion (SVN) on apache. Now I want to show you how I setup basic authentication and a SVN hook to automatically deploy files to the server (called continuous integration). This is great because you can check in your files to SVN and see them on the server immediately.
+![](http://marcgrabanski.com/img/dedicated-virtual.jpg)
+During the first two parts of my series on setting up a [Media Temple](http://www.mediatemple.net/go/order/?refdom=marcgrabanski.com) dedicated server, I setup subversion (SVN) on apache. Now I want to show you how I setup basic authentication and a SVN hook to automatically deploy files to the server (called continuous integration). This is great because you can check in your files to SVN and see them on the server immediately.
 
 ### Adding Basic Apache Authentication to your Subversion (SVN) Repository First lets give apache access to the SVN database (the $ symbol just means it is a shell command).
 ```bash
@@ -25,7 +25,7 @@ Now create a password file with htpasswd, name the file whatever you would like.
 htpasswd -cm /etc/.htaccess yourusername
 ```
 
-It will prompt you for your password. Now go back to your httpd.conf and than add the last four lines below to your Location code block- we are adding to what we did in "part 2 of the media temple setup series":http://marcgrabanski.com/article/86/Installing-Subversion-on-Apache.
+It will prompt you for your password. Now go back to your httpd.conf and than add the last four lines below to your Location code block- we are adding to what we did in [part 2 of the media temple setup series](http://marcgrabanski.com/article/86/Installing-Subversion-on-Apache).
 ```xml
 DAV svn SVNParentPath /usr/local/svn AuthType Basic AuthName "Subversion repository" AuthUserFile /etc/.htaccess require valid-user
 ```
@@ -35,14 +35,14 @@ For security reasons, we also need to make sure and hide the .svn folders from h
 Order deny,allow Deny from all
 ```
 
-Restart apache and when you try to access SVN you should be prompted for authentication. Great, SVN is now secure! You can also add more security by "adding SSL to your dedicated server":http://kb.mediatemple.net/article.php?id=430 .
+Restart apache and when you try to access SVN you should be prompted for authentication. Great, SVN is now secure! You can also add more security by [adding SSL to your dedicated server](http://kb.mediatemple.net/article.php?id=430) .
 
-### Creating a Subversion (SVN) Hook to Auto Update Your Server I want to automatically deploy my files to my httpdocs without having to manually go in and update the files. So to accomplish this you need to "create a SVN hook that runs after every commit":http://subversion.tigris.org/faq.html#website-auto-update . First, copy the post-commit template from your svnroot/hooks folder. And lets also use chmod to give the file rights to execute.
+### Creating a Subversion (SVN) Hook to Auto Update Your Server I want to automatically deploy my files to my httpdocs without having to manually go in and update the files. So to accomplish this you need to [create a SVN hook that runs after every commit](http://subversion.tigris.org/faq.html#website-auto-update) . First, copy the post-commit template from your svnroot/hooks folder. And lets also use chmod to give the file rights to execute.
 ```bash
 cd /svnroot/hooks/ cp post-commit.tmpl post-commit chmod +x post-commit
 ```
 
-Now we need to create a little C program. You should have "GCC":http://gcc.gnu.org/ installed. This will compile our little C program. Create a new svnupdate.c file and put this code in. Don't forget to change the directory path: @"public_html_directory"@
+Now we need to create a little C program. You should have [GCC](http://gcc.gnu.org/) installed. This will compile our little C program. Create a new svnupdate.c file and put this code in. Don't forget to change the directory path: @"public_html_directory"@
 ```c
 #include #include #include int main(void) { execl("/usr/bin/svn","svn","update","/public_html_direcotry/", (const char **) NULL); return(EXIT_FAILURE); }
 ```

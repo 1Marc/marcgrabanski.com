@@ -11,7 +11,7 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/corporate-freedom.jpg!
+![](http://marcgrabanski.com/img/corporate-freedom.jpg)
 A freelancer on a mailing list I'm part of has to make the leap to hiring his first employee. This is obviously a good time for him, but it also can be challenging because he now has another person to consider while doing his work:
 > "For anybody who has had an employee, any advice? Any things I should be concerned about? I'm a little nervous about it but all in all feeling more relief than anything."
 

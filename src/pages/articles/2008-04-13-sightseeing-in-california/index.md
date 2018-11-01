@@ -12,6 +12,6 @@ layout: "post"
 ---
 
 Out and about in California taking some pictures...
-!http://marcgrabanski.com/img/googleplex.jpg!
-!http://marcgrabanski.com/img/youtube.jpg!
-!http://marcgrabanski.com/img/youtube-goldengate.jpg!
+![](http://marcgrabanski.com/img/googleplex.jpg)
+![](http://marcgrabanski.com/img/youtube.jpg)
+![](http://marcgrabanski.com/img/youtube-goldengate.jpg)

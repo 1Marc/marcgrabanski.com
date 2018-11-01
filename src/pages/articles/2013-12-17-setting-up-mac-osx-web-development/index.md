@@ -11,7 +11,7 @@ layout: "post"
 ---
 
 Recently I had a machine break down and had to setup a new one and this is documentation of my setup.
-!http://marcgrabanski.com/wp-content/uploads/mavericks2013-06-1913-30-56600-1372082910-500x312.jpg!
+![](http://marcgrabanski.com/wp-content/uploads/mavericks2013-06-1913-30-56600-1372082910-500x312.jpg)
 
 In this article I give you all the apps I use, OS configurations and local hosting setup.
 
@@ -23,17 +23,17 @@ In this article I give you all the apps I use, OS configurations and local hosti
 - [Bartender](http://www.macbartender.com/) - Nice to clean up OSX icons when you get too many, or it you just want to hide certain icons you don't use ever.
 - Google Chrome of course.
 - [Dropbox](www.dropbox.com) - Currently I have 500GB Dropbox and I only sync certain folders to my computer. This gives me an extra 300GB+ of storage. It's expensive, but I use it primarily to collaborate for work projects so it's a cost of doing business at this point.
-- [MAMP](http://www.mamp.info/) - It's a nice installer of the latest PHP and MySQL. I could configure this manually, but MAMP is so easy. *As commentaries suggested, you can "Set Up Vagrant":http://www.makeuseof.com/tag/vagrant-quick-effortless-way-create-virtual-machines-local-web-development/ instead.*
+- [MAMP](http://www.mamp.info/) - It's a nice installer of the latest PHP and MySQL. I could configure this manually, but MAMP is so easy. *As commentaries suggested, you can [Set Up Vagrant](http://www.makeuseof.com/tag/vagrant-quick-effortless-way-create-virtual-machines-local-web-development/) instead.*
 - [Node.js](http://nodejs.org/)
 - [Sequel Pro](http://www.sequelpro.com/) - Free tool to easily manage MySQL. MAMP starts by default at port 8889 with user:pass as root:root
 - Skype
 - [CloudApp](http://getcloudapp.com/) - Nice way to drag and drop share files and especially images. Automatically copies the link to the file once it's uploaded to your clipboard.
 - Twitter - I find Twitter's default notifications to be annoying so I only setup menu highlighting when I'm mentioned.
-!http://marcgrabanski.com/wp-content/uploads/2013/12/twitter-settings-300x188.png!
+![](http://marcgrabanski.com/wp-content/uploads/2013/12/twitter-settings-300x188.png)
 - [Caffeine](http://lightheadsw.com/caffeine/) - For keeping your mac awake...especially during those long Dropbox syncs!
 - [Pocket](http://getpocket.com/) - Twitter natively supports saving links to Pocket and there's a Chrome extension, so if I don't want to lose a link I drop it in Pocket.
 - [Old Skitch](http://evernote.com/skitch/) - I don't like the new Skitch...the old one was so simple! You can still download it by the link under the main download.
-!http://marcgrabanski.com/wp-content/uploads/2013/12/oldskitch-2-300x139.jpg!
+![](http://marcgrabanski.com/wp-content/uploads/2013/12/oldskitch-2-300x139.jpg)
 - [Transmit](http://panic.com/transmit/) - For FTP and S3 pushing/pulling files. Be careful with the "sync" feature though, I deleted some files from the server once (was not good).
 - GitHub for Mac - Find it's nice to keep a running track of all the projects I've cloned.
 - [ScreenFlow](http://telestream.net/screenflow/) - Best screencasting app I've used -- I've tried most of the Mac ones I could find.
@@ -91,6 +91,6 @@ I use [DB Migrate Pro](https://deliciousbrains.com/wp-migrate-db-pro/) to export
 ```
 
 ## Sharing Retina Screenshots Easily at Normal Resolution
-I managed to get "Gyazo Setup on My Own Server":http://benalman.com/news/2009/10/gyazo-on-your-own-server/ which allows you to upload normal resolution screenshots to your server just by opening Gyazo.app. I then used Automator to launch it by keystroke. Works perfectly.
+I managed to get [Gyazo Setup on My Own Server](http://benalman.com/news/2009/10/gyazo-on-your-own-server/) which allows you to upload normal resolution screenshots to your server just by opening Gyazo.app. I then used Automator to launch it by keystroke. Works perfectly.
 
 Hopefully you've found this setup guide useful. Let me know what apps and utilities I'm missing in the comments!

@@ -11,10 +11,10 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/jQuery-logo.gif!
+![](http://marcgrabanski.com/img/jQuery-logo.gif)
 
 If you saw my old articles page, you would have seen a, "next" button on the bottom left of the browser window that looks like this:
-!http://marcgrabanski.com/img/structure/backgrounds/next_arrow.gif!
+![](http://marcgrabanski.com/img/structure/backgrounds/next_arrow.gif)
 
 Click the arrow, and it will take you to the next article on the page.
 

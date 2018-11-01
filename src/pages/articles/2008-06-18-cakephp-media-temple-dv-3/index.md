@@ -14,8 +14,8 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/logo-cakephp.gif!
-!http://marcgrabanski.com/img/dedicated-virtual.jpg!
+![](http://marcgrabanski.com/img/logo-cakephp.gif)
+![](http://marcgrabanski.com/img/dedicated-virtual.jpg)
 A good thing to do when deploying CakePHP websites is to load one copy of the CakePHP core files onto your server, and point all of your domains to that core directory. Media Temple's Plesk default configuration does not let PHP access files outside the website httpdocs. So we need to configure the domain's settings to have access to the root /cake folder, or wherever you happened to put the CakePHP root files. First, let's make a new config file in our domain. *Make sure you replace domain.com with your domain.*
 ```bash
  cd /var/www/vhosts/domain.com/conf/ vi vhost.conf

@@ -12,9 +12,9 @@ category: 'test'
 layout: 'post'
 ---
 
-!http://marcgrabanski.com/img/logo-cakephp.gif!
-!http://marcgrabanski.com/img/jQuery-logo.gif!
-When you are in an administration panel, sometimes you want a "quick save" feature that allows you to save without leaving the page.Here is how to accomplish this with CakePHP and jQuery. To start, download "jQuery":http://jquery.com and the "jQuery Form Plugin JavaScript":http://jqueryjs.googlecode.com/svn/trunk/plugins/form/jquery.form.js . Include them in your view with the JavaScript helper:
+![](http://marcgrabanski.com/img/logo-cakephp.gif)
+![](http://marcgrabanski.com/img/jQuery-logo.gif)
+When you are in an administration panel, sometimes you want a [quick save" feature that allows you to save without leaving the page.Here is how to accomplish this with CakePHP and jQuery. To start, download "jQuery](http://jquery.com) and the [jQuery Form Plugin JavaScript](http://jqueryjs.googlecode.com/svn/trunk/plugins/form/jquery.form.js) . Include them in your view with the JavaScript helper:
 
 ```
 $javascript->link(array('jquery', 'form'), false);
@@ -57,4 +57,4 @@ jQuery(function($) {
 })
 ```
 
-This adds a button called, "Quick Save" to each form on the page where a @div@ with @class="submit"@ exists (you may want to switch this to the id of the form you want to add quick save to). Then It also attaches a click event to the button that submits the form via the "jQuery Form Plugin":http://malsup.com/jquery/form/. In a few simple steps, we've created a quick save feature that saves your data whenever you want without leaving the page.
+This adds a button called, [Quick Save" to each form on the page where a @div@ with @class="submit"@ exists (you may want to switch this to the id of the form you want to add quick save to). Then It also attaches a click event to the button that submits the form via the "jQuery Form Plugin](http://malsup.com/jquery/form/). In a few simple steps, we've created a quick save feature that saves your data whenever you want without leaving the page.

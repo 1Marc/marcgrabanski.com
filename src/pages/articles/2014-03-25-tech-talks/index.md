@@ -10,7 +10,7 @@ category: "test"
 layout: "post"
 ---
 
-My last talk was given at "Fluent conf":http://fluentconf.com/, one of more premiere JavaScript and web development conferences out there (created by O'Reilly, curated by Peter Cooper and Simon St. Laurent). **My talk was rated amongst the top 5 talks at Fluent**...but I wasn't always good at speaking.
+My last talk was given at [Fluent conf](http://fluentconf.com/), one of more premiere JavaScript and web development conferences out there (created by O'Reilly, curated by Peter Cooper and Simon St. Laurent). **My talk was rated amongst the top 5 talks at Fluent**...but I wasn't always good at speaking.
 
 Here's some reviews of my latest talk...
 > Well presented, tight focus and good examples. A+ presentation!

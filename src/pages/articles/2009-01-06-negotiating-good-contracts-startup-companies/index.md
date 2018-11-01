@@ -10,7 +10,7 @@ category: "test"
 layout: "post"
 ---
 
-!http://marcgrabanski.com/img/new-york-cityscape.jpg!
+![](http://marcgrabanski.com/img/new-york-cityscape.jpg)
 I was writing about my own startup companies, then found Ryan Carson's post on [building his web applications](http://www.carsonified.com/web-apps/when-you-fail-its-time-to-try-again).
 
 Here is the part of the post I found particularly interesting, the contract:
@@ -39,7 +39,7 @@ Wow, talk about getting kicked in the butt by a contract. Carsonified gets all t
 
 ## How To Negotiate a *Good* Contract
 Now I'd like to share with you how I negotiate a contract. When I say,"you"here that means you as the developer. Assuming you want to go on these ventures.
-!http://marcgrabanski.com/img/money-key.jpg!
+![](http://marcgrabanski.com/img/money-key.jpg)
 
 - **Chose a partnership with business who *care about you* and you care about their product.** This is tough in a for-profit world, but I've managed to do it. There is an over-abundance of companies with ideas and a shortage of developers who can actually accomplish it - know that as leverage to negotiate a fair contract.
 - **If you build it, you should own everything that doesn't apply specifically to that project.** You need to build products with reusable code so you can start other companies. You can even open source engines from it, like Ruby on Rails did.

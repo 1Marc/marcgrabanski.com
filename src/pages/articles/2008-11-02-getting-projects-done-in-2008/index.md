@@ -12,8 +12,8 @@ category: "test"
 layout: "post"
 ---
 
-I have decided to pour all of my resources and energy into getting four rather demanding projects done *before the end of the year*. This big end-of-year push has had a lot of "thought behind it":http://twitter.com/1Marc/status/964005935, which I wanted to share with you and document here on my blog.
-!http://marcgrabanski.com/img/push-forward.jpg!
+I have decided to pour all of my resources and energy into getting four rather demanding projects done *before the end of the year*. This big end-of-year push has had a lot of [thought behind it](http://twitter.com/1Marc/status/964005935), which I wanted to share with you and document here on my blog.
+![](http://marcgrabanski.com/img/push-forward.jpg)
 
 ## The Projects Of the four projects I am focusing on getting done, two are consulting jobs and two are my own start-up companies. With the start-ups, I have partnered with businesses to help define the products and they will sell them when the products are released to the public.
 

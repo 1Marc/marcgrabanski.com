@@ -13,7 +13,7 @@ category: 'test'
 layout: 'post'
 ---
 
-!http://marcgrabanski.com/img/five_dice.jpg!
+![](http://marcgrabanski.com/img/five_dice.jpg)
 
 ### 1. Create a solid foundation.
 
@@ -25,7 +25,7 @@ Make sure you give users a platform to speak off of. I did this with comments on
 
 ### 3. If your code becomes popular, prepare for tons of bugs and feature requests.
 
-At first, it was really cool to get any response at all on my code. I was instantly fixing, updating and supporting my users. After a few months the code became more and more popular. I eventually got overwhelmed with emails and comments. Now I could literally spend three full work weeks tracking down and catching up on the comments on my "jQuery Calendar plugin":http://marcgrabanski.com/code/jquery-calendar alone. I decided I need to shut down my comments and direct all traffic to jQuery's bug tracking tool. At least now it will be categorized, organized and more efficient. I think comments were a really great starting point because people could make comments without having to register or go to a new location to comment. But at some point I need to have a life and that involves making things easier for me, the developer.
+At first, it was really cool to get any response at all on my code. I was instantly fixing, updating and supporting my users. After a few months the code became more and more popular. I eventually got overwhelmed with emails and comments. Now I could literally spend three full work weeks tracking down and catching up on the comments on my [jQuery Calendar plugin](http://marcgrabanski.com/code/jquery-calendar) alone. I decided I need to shut down my comments and direct all traffic to jQuery's bug tracking tool. At least now it will be categorized, organized and more efficient. I think comments were a really great starting point because people could make comments without having to register or go to a new location to comment. But at some point I need to have a life and that involves making things easier for me, the developer.
 
 ### 4. Test your code in browsers you don't care about.
 
