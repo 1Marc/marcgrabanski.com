@@ -1,25 +1,27 @@
 {
-    "parser": "babel-eslint",
-    "extends": "airbnb",
-    "plugins": [
-        "react",
-        "jsx-a11y",
-        "import"
+  "parser": "babel-eslint",
+  "extends": ["prettier", "airbnb"],
+  "plugins": ["import", "jsx-a11y", "react"],
+  "globals": {
+    "graphql": true
+  },
+  "rules": {
+    "arrow-body-style": [
+      "error",
+      "as-needed",
+      { "requireReturnForObjectLiteral": true }
     ],
-    "globals": {
-        "graphql": true
-    },
-    "rules": {
-        "react/jsx-filename-extension": [0],
-        "react/prefer-stateless-function": [0],
-        "react/prop-types": [0],
-        "import/no-extraneous-dependencies": [0],
-        "comma-dangle": ["error", "never"],
-        "jsx-a11y/anchor-is-valid": [0],
-        "prefer-destructuring": [0],
-        "object-curly-newline": ["error", { "multiline": true, "minProperties": 5 }],
-        "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
-        "import/extensions": [0],
-        "no-console": "off"
-    }
+    "arrow-parens": ["error", "as-needed"],
+    "comma-dangle": ["error", "always-multiline"],
+    "function-paren-newline": "off",
+    "no-console": "off",
+    "prefer-destructuring": "off",
+    "semi": ["error", "never"],
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/jsx-filename-extension": "off",
+    "react/prefer-stateless-function": "off",
+    "react/prop-types": "off"
+  }
 }

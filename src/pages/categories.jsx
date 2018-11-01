@@ -1,34 +1,39 @@
+import kebabCase from 'lodash/kebabCase'
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
-import kebabCase from 'lodash/kebabCase'
 import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar'
 
-class TagsRoute extends React.Component {
+class CategoriesRoute extends React.Component {
   render() {
     const { title } = this.props.data.site.siteMetadata
-    const tags = this.props.data.allMarkdownRemark.group
+    const categories = this.props.data.allMarkdownRemark.group
 
     return (
       <Layout>
         <div>
-          <Helmet title={`All Tags - ${title}`} />
+          <Helmet title={`All Categories - ${title}`} />
           <Sidebar {...this.props} />
           <div className="content">
             <div className="content__inner">
               <div className="page">
-                <h1 className="page__title">Tags</h1>
+                <h1 className="page__title">Categories</h1>
                 <div className="page__body">
-                  <div className="tags">
-                    <ul className="tags__list">
-                      {tags.map(tag => (
-                        <li key={tag.fieldValue} className="tags__list-item">
+                  <div className="categories">
+                    <ul className="categories__list">
+                      {categories.map(category => (
+                        <li
+                          key={category.fieldValue}
+                          className="categories__list-item"
+                        >
                           <Link
-                            to={`/tags/${kebabCase(tag.fieldValue)}/`}
-                            className="tags__list-item-link"
+                            to={`/categories/${kebabCase(
+                              category.fieldValue
+                            )}/`}
+                            className="categories__list-item-link"
                           >
-                            {tag.fieldValue} ({tag.totalCount})
+                            {category.fieldValue} ({category.totalCount})
                           </Link>
                         </li>
                       ))}
@@ -44,10 +49,10 @@ class TagsRoute extends React.Component {
   }
 }
 
-export default TagsRoute
+export default CategoriesRoute
 
 export const pageQuery = graphql`
-  query TagsQuery {
+  query CategoryesQuery {
     site {
       siteMetadata {
         title
@@ -68,7 +73,7 @@ export const pageQuery = graphql`
       limit: 2000
       filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
     ) {
-      group(field: frontmatter___tags) {
+      group(field: frontmatter___category) {
         fieldValue
         totalCount
       }

@@ -2,39 +2,30 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Post from '../components/Post'
 import Sidebar from '../components/Sidebar'
+import CategoryTemplateDetails from '../components/CategoryTemplateDetails'
 
-class IndexRoute extends React.Component {
+class CategoryTemplate extends React.Component {
   render() {
-    const items = []
-    const { title, subtitle } = this.props.data.site.siteMetadata
-    const posts = this.props.data.allMarkdownRemark.edges
-    posts.forEach(post => {
-      items.push(<Post data={post} key={post.node.fields.slug} />)
-    })
+    const { title } = this.props.data.site.siteMetadata
+    const { category } = this.props.pageContext
 
     return (
       <Layout>
         <div>
-          <Helmet>
-            <title>{title}</title>
-            <meta name="description" content={subtitle} />
-          </Helmet>
+          <Helmet title={`${category} - ${title}`} />
           <Sidebar {...this.props} />
-          <div className="content">
-            <div className="content__inner">{items}</div>
-          </div>
+          <CategoryTemplateDetails {...this.props} />
         </div>
       </Layout>
     )
   }
 }
 
-export default IndexRoute
+export default CategoryTemplate
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query CategoryPage($category: String) {
     site {
       siteMetadata {
         title
@@ -53,7 +44,13 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       limit: 1000
-      filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
+      filter: {
+        frontmatter: {
+          category: { eq: $category }
+          layout: { eq: "post" }
+          draft: { ne: true }
+        }
+      }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {

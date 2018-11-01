@@ -1,13 +1,13 @@
 ---
-path: "setting-up-mac-osx-web-development"
-title: "Setting Up a New Mac on OSX for Web Development"
-description: "Recently I had a machine break down and had to setup a new one and this is documentation of my setup."
-tags: 
-  - "Mac OS X"
-date: "2013-12-17T07:55:10.000Z"
+path: 'setting-up-mac-osx-web-development'
+title: 'Setting Up a New Mac on OSX for Web Development'
+description: 'Recently I had a machine break down and had to setup a new one and this is documentation of my setup.'
+tags:
+  - 'Mac OS X'
+date: '2013-12-17T07:55:10.000Z'
 draft: false
-category: "test"
-layout: "post"
+category: 'test'
+layout: 'post'
 ---
 
 Recently I had a machine break down and had to setup a new one and this is documentation of my setup.
@@ -16,24 +16,21 @@ Recently I had a machine break down and had to setup a new one and this is docum
 In this article I give you all the apps I use, OS configurations and local hosting setup.
 
 ## Mac OS X Apps I Install
-- [Alfred](http://www.alfredapp.com/) - Quick shortcut to anything.
-- [Sublime Text](http://www.sublimetext.com/) - For the codes. I switched to it from TextMate because it's super fast!
+
+- [VS Code](https://code.visualstudio.com) - For the codes. I switched to it because it's super fast!
 - [1Password](https://agilebits.com/onepassword) - To generate secure passwords is easy, only problem is it introduced a single point of fail. Either way, I can't live without the convenience of it. Has Safari and Chrome extensions as well as a menu bar icon in OSX for quick access.
-- [iTerm2](www.iterm2.com) - Super terminal! 
+- [iTerm2](www.iterm2.com) - Super terminal!
 - [Bartender](http://www.macbartender.com/) - Nice to clean up OSX icons when you get too many, or it you just want to hide certain icons you don't use ever.
 - Google Chrome of course.
 - [Dropbox](www.dropbox.com) - Currently I have 500GB Dropbox and I only sync certain folders to my computer. This gives me an extra 300GB+ of storage. It's expensive, but I use it primarily to collaborate for work projects so it's a cost of doing business at this point.
-- [MAMP](http://www.mamp.info/) - It's a nice installer of the latest PHP and MySQL. I could configure this manually, but MAMP is so easy. *As commentaries suggested, you can [Set Up Vagrant](http://www.makeuseof.com/tag/vagrant-quick-effortless-way-create-virtual-machines-local-web-development/) instead.*
 - [Node.js](http://nodejs.org/)
 - [Sequel Pro](http://www.sequelpro.com/) - Free tool to easily manage MySQL. MAMP starts by default at port 8889 with user:pass as root:root
 - Skype
 - [CloudApp](http://getcloudapp.com/) - Nice way to drag and drop share files and especially images. Automatically copies the link to the file once it's uploaded to your clipboard.
 - Twitter - I find Twitter's default notifications to be annoying so I only setup menu highlighting when I'm mentioned.
-![](http://marcgrabanski.com/wp-content/uploads/2013/12/twitter-settings-300x188.png)
+  ![](http://marcgrabanski.com/wp-content/uploads/2013/12/twitter-settings-300x188.png)
 - [Caffeine](http://lightheadsw.com/caffeine/) - For keeping your mac awake...especially during those long Dropbox syncs!
 - [Pocket](http://getpocket.com/) - Twitter natively supports saving links to Pocket and there's a Chrome extension, so if I don't want to lose a link I drop it in Pocket.
-- [Old Skitch](http://evernote.com/skitch/) - I don't like the new Skitch...the old one was so simple! You can still download it by the link under the main download.
-![](http://marcgrabanski.com/wp-content/uploads/2013/12/oldskitch-2-300x139.jpg)
 - [Transmit](http://panic.com/transmit/) - For FTP and S3 pushing/pulling files. Be careful with the "sync" feature though, I deleted some files from the server once (was not good).
 - GitHub for Mac - Find it's nice to keep a running track of all the projects I've cloned.
 - [ScreenFlow](http://telestream.net/screenflow/) - Best screencasting app I've used -- I've tried most of the Mac ones I could find.
@@ -41,56 +38,24 @@ In this article I give you all the apps I use, OS configurations and local hosti
 - Microsoft Office (Word and Excel)
 
 ## OS-level Items Todo
+
 - Of course lots of updates in the app store including OSX itself.
 - Install XCode and the iOS Simulator (Preferences -> Downloads -> iOS Simulator) @/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications@ Then drag app to dock for iOS testing
 - Setup Messages App for Google Talk and AIM
 - Move the OSX doc to the right. On a 13" the problem is more vertical space than it is horizontal.
-- In Settings -> Mission Control I uncheck "show dashboard as a space" because I want to see what I'm doing and have quick access to the calculator (fn + F12).
 
 ## Bash Config
+
 [Install Homebrew](http://brew.sh/):
+
 ```bash
  ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 ```
 
-Add Sublime Text bin to terminal (run this in Terminal)
-```bash
- ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
-```
-
 Install Paul Irish dotfiles and dependencies
+
 ```bash
  git clone https://github.com/paulirish/dotfiles.git && cd dotfiles && ./sync.sh ./install-deps.sh sync.sh
 ```
 
-## Setting up Localhost Websites
-I edit my /etc/hosts file adding any local domains to it: 127.0.0.1 localhost mydomain.local myotherdomain.local Then I make a vhosts.conf file in @/Applications/MAMP/conf/apache/vhosts.conf@
-```xml
- NameVirtualHost **:80 ServerName mydomain.local DocumentRoot /Users/USERNAME/Sites/projects/mydomain/ Options Indexes FollowSymLinks MultiViews AllowOverride All Order allow,deny allow from all ServerName myotherdomain.local DocumentRoot /Users/USERNAME/Sites/projects/myotherdomain/ Options Indexes FollowSymLinks MultiViews AllowOverride All Order allow,deny allow from all
-```
-
-Then finally adding @Include /Applications/MAMP/conf/apache/vhosts.conf@ to the httpd.conf file and changing the DocumentRoot to my @/Users/USERNAME/Sites/@ folder.
-
-### Remove MAMP PHP Cacheing
-For some reason, MAMP defaults to having caching enabled which caused me issues. I had to disable it by going to
-```bash
- sublime /Applications/MAMP/conf/phpX.X.X/php.ini
-```
-
-Then comment out @[OPcach]@.
-```
-; [OPcache] ; zend_extension="/Applications/MAMP/bin/php/php5.5.3/lib/php/extensions/no-; debug-non-zts-20121212/opcache.so" ; opcache.memory_consumption=128 ; opcache.interned_strings_buffer=8 ; opcache.max_accelerated_files=4000 ; opcache.revalidate_freq=60 ; opcache.fast_shutdown=1 ; opcache.enable_cli=1
-```
-
-### Migrate Host Data to Local
-I use [DB Migrate Pro](https://deliciousbrains.com/wp-migrate-db-pro/) to export a SQL file and import content to replicate the server to my local instance. Just unselect wp_users and wp_usersmeta if you just want the content.
-
-## Update Sublime Settings
-```js
- { "color_scheme": "Packages/Color Scheme - Default/Sunburst.tmTheme", "font_size": 16, "tab_size": 2, "translate_tabs_to_spaces": true }
-```
-
-## Sharing Retina Screenshots Easily at Normal Resolution
-I managed to get [Gyazo Setup on My Own Server](http://benalman.com/news/2009/10/gyazo-on-your-own-server/) which allows you to upload normal resolution screenshots to your server just by opening Gyazo.app. I then used Automator to launch it by keystroke. Works perfectly.
-
-Hopefully you've found this setup guide useful. Let me know what apps and utilities I'm missing in the comments!
+Hopefully you've found these tools useful!

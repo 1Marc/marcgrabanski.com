@@ -1,12 +1,17 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import moment from 'moment'
 import './style.scss'
 
 class Post extends React.Component {
   render() {
-    const { title, date, description } = this.props.data.node.frontmatter
-    const { slug } = this.props.data.node.fields
+    const {
+      title,
+      date,
+      category,
+      description,
+    } = this.props.data.node.frontmatter
+    const { slug, categorySlug } = this.props.data.node.fields
 
     return (
       <div className="post">

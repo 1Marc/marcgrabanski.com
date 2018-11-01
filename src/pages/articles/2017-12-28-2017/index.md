@@ -12,7 +12,7 @@ layout: 'post'
 
 ## 2017 was the year I built a team of amazing people
 
-We are small, but incredibly effective. The 7 of us -- 5 full time and 2 contractors. We are **all focused together on one mission together: improving the state of (professional) education**. We are all working together on [Frontend Masters](https://frontendmasters.com), where **50+ teachers share their experiences and knowledge with tens of thousands of software developers**, making an impact on their careers and their life’s path.
+We are small, but incredibly effective. The 7 of us -- 5 full time and 2 contractors. We are **all focused together on one mission together: improving the state of (professional) education**. We are all working together on [Frontend Masters](https://frontendmasters.com), where **50+ teachers share their experiences and knowledge with tens of thousands of software developers**, making an impact on their careers and their life's path.
 
 ## We Moved to Downtown Minneapolis!
 

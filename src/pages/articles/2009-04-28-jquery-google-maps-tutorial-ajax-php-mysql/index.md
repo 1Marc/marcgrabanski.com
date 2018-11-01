@@ -291,15 +291,15 @@ if (json.Locations.length>0) {
 
 <h2>Step #12: Zoom Map to Show all Points</h2>
 
-<p>Let’s define that mysterious <code>zoomToBounds</code> method that I keep calling and not telling you what it does.</p>
+<p>Let's define that mysterious <code>zoomToBounds</code> method that I keep calling and not telling you what it does.</p>
 
-<p>First, define a variable called,“bounds“above the getJson method.</p>
+<p>First, define a variable called,"bounds"above the getJson method.</p>
 
 <p>[code lang="js"]
 var bounds = new GLatLngBounds();
 ```
 
-Note that in step #8’s `addLocation` method we are extending the bounds with `bounds.extend(marker.getPoint());` This takes the bounds and adds each point to it. Then we can set the map to show all the points later by using the bounds that contains each point on the map.
+Note that in step #8's `addLocation` method we are extending the bounds with `bounds.extend(marker.getPoint());` This takes the bounds and adds each point to it. Then we can set the map to show all the points later by using the bounds that contains each point on the map.
 
 ```js
 function zoomToBounds() {
@@ -308,7 +308,7 @@ function zoomToBounds() {
 }
 ```
 
-This function sets the center of the map, and the zoom minus 1 to set the map’s viewport based on that bounds variable we declared and extended earlier.
+This function sets the center of the map, and the zoom minus 1 to set the map's viewport based on that bounds variable we declared and extended earlier.
 Congrats! You just create a Google Maps mashup that you can add and remove points to dynamically with Ajax, PHP and MySQL.
 
 [View Final Demo](http://marcgrabanski.com/resources/jquery-google-maps/tutorial-part2.html)

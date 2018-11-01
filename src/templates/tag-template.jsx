@@ -1,22 +1,23 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar'
 import TagTemplateDetails from '../components/TagTemplateDetails'
 
 class TagTemplate extends React.Component {
   render() {
     const { title } = this.props.data.site.siteMetadata
-    const { tag } = this.props.pathContext
+    const { tag } = this.props.pageContext
 
     return (
-      <div>
-        <Helmet title={`All Posts tagged as "${tag}" - ${title}`} />
-        <Sidebar siteMetadata={this.props.data.site.siteMetadata} />
-        <TagTemplateDetails
-          posts={this.props.data.allMarkdownRemark.edges}
-          tag={tag}
-        />
-      </div>
+      <Layout>
+        <div>
+          <Helmet title={`All Posts tagged as "${tag}" - ${title}`} />
+          <Sidebar {...this.props} />
+          <TagTemplateDetails {...this.props} />
+        </div>
+      </Layout>
     )
   }
 }
@@ -27,7 +28,18 @@ export const pageQuery = graphql`
   query TagPage($tag: String) {
     site {
       siteMetadata {
-        ...sidebarFragment
+        title
+        subtitle
+        copyright
+        menu {
+          label
+          path
+        }
+        author {
+          name
+          twitter
+          github
+        }
       }
     }
     allMarkdownRemark(
@@ -45,10 +57,12 @@ export const pageQuery = graphql`
         node {
           fields {
             slug
+            categorySlug
           }
           frontmatter {
             title
             date
+            category
             description
           }
         }

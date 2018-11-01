@@ -17,7 +17,7 @@ This year has been an incredible year on the career front. I literally can't bel
 
 Some of the this year's career highlights:
 
-- I met a lot of great people where I work at RMG Connect. I got to lead UI development on some pretty big projects, and was the third to receive our [internal company, "Rockstar" award](http://marcgrabanski.com/testimonials.html) .
+- I met a lot of great people where I work at RMG Connect. I got to lead UI development on some pretty big projects, and was the third to receive our internal company, "Rockstar" award.
 - I launched this website 8 months ago (late April), all of it being hand written 100%from scratch. Since the launch, it has received 300k page views and grown to 15k unique visitors a month.
 - I learned how to successfully [code open source projects](http://marcgrabanski.com/code.html) - helping thousands of developers around the world is worth its weight in gold.
 - I gave two presentations at [jQueryCamp](http://docs.jquery.com/JQueryCamp07) , held on the Harvard campus.
