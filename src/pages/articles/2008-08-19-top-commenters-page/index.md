@@ -17,8 +17,7 @@ My old website had a "top commenters" page.
 To get the top commenter count I have to thank [Ryan Peterson](https://twitter.com/therpeterson) in helping me write this custom MySQL query.I used @Group By@ to lump the results together based on the commenter's email address. Then use @count(\*\*)@ to count the number of records in the group. Also used the @NOT@ function in MySQL to filter my email address.
 
 ```mysql
-SELECT \`Comment\`.\`author\`, \`Comment\`.\`id\`, \`Comment\`.\`url\`, count(
--) AS \`count\` FROM \`cake_comments\` AS \`Comment\` WHERE 1 = 1 AND NOT(\`Comment\`.\`email\`='m@marcgrabanski.com') GROUP BY \`Comment\`.\`email\` ORDER BY \`count\` DESC LIMIT 0, 10
+SELECT \`Comment\`.\`author\`, \`Comment\`.\`id\`, \`Comment\`.\`url\`, count(**) AS \`count\` FROM \`cake_comments\` AS \`Comment\` WHERE 1 = 1 AND NOT(\`Comment\`.\`email\`='m@marcgrabanski.com') GROUP BY \`Comment\`.\`email\` ORDER BY \`count\` DESC LIMIT 0, 10
 ```
 
 Since I didn't want to load all of the related comments at once, I decied to use a little jQuery and Ajax to show comments that they have made.
@@ -32,8 +31,7 @@ First, I put a @span@ tag around the comment count, because without JavaScript y
 Using CakePHP's JavaScript object generator, @$javascript->object($data);@ it was easy to send JSON back to the client and parse with jQuery. Here is the full source of the JavaScript file.
 
 ```js
- $(document).ready(function(){ $('.get_comments').each(function(){ $(this).replaceWith( $(''+$(this).html()+'').click(function(){ link = $(this); $.post('comments/get/comments', { 'data[Comment][id]': $(this).siblings('.author').attr('id') }, function(data){ out = ''; for (i in data) { prefix = data[i].Article.type ? 'article/' : 'answers/'; out += '
--   [' \+ data[i].Article.title + '](' + prefix + data[i].Article.slug + '#c' + data[i].Comment.id + ')' \+ data[i].Comment.created + '
+ $(document).ready(function(){ $('.get_comments').each(function(){ $(this).replaceWith( $(''+$(this).html()+'').click(function(){ link = $(this); $.post('comments/get/comments', { 'data[Comment][id]': $(this).siblings('.author').attr('id') }, function(data){ out = ''; for (i in data) { prefix = data[i].Article.type ? 'article/' : 'answers/'; out += '**   [' \+ data[i].Article.title + '](' + prefix + data[i].Article.slug + '#c' + data[i].Comment.id + ')' \+ data[i].Comment.created + '
 '; } $('
 
 ' \+ out + '

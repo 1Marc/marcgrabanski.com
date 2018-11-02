@@ -33,9 +33,7 @@ Finding The time I spend thinking about the underlying philosophies is actually 
 
 ## Productivity Tools
 
-I think when I'm most productive I'm thinking less about my tools and more about what I want to accomplish. My tools revert to a piece of paper or whiteboard and I 
--forget
-- to use all my tools that I was using when I lost sight of the "why". Tools such as GTD tools are great on a per-task basis, but don't let them take your sight off the overall mission.
+I think when I'm most productive I'm thinking less about my tools and more about what I want to accomplish. My tools revert to a piece of paper or whiteboard and I **forget** to use all my tools that I was using when I lost sight of the "why". Tools such as GTD tools are great on a per-task basis, but don't let them take your sight off the overall mission.
 
 ## Conclusion
 

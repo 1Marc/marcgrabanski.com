@@ -54,6 +54,4 @@ People often ask me, "What program are you using to do that?" So here is a list 
 - [GAIM](http://gaim.sourceforge.net/downloads.php) - Alternative to AOL Intant Messanger. It is basically AIM without the advertisments.
 - [IE7 Inline Search](http://www.ieforge.com/InlineSearch/HomePage) - Module that adds inline search to IE7 instead of a pop-up.
 
-Whew, 
--wipes sweat off forehead
--, that is my entire list of applications I use to get the job done. I hope you discover something in here that will make your day more productive and smooth!
+Whew, **wipes sweat off forehead**, that is my entire list of applications I use to get the job done. I hope you discover something in here that will make your day more productive and smooth!

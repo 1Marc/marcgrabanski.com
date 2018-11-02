@@ -27,13 +27,7 @@ At this point I was mad, not at the client but at the fact that I had no idea wh
 > If I could have 100 PC computers from all around the world to test your website to find the issue, I would pay for it. I am riled up about this and want to fix the issue at all costs.
 
 ### The Amazon Turk, "Testbed"
-To my complete amazement, I *actually found out a way to have 100 PC computers from all around the world testing my website* ! 
--Welcome to the world of
-- [
--Amazon Turk
--](https://www.mturk.com/mturk/welcome) 
--.
-- For a total of $5, I had just about 80 users go through my tests and give me feedback.
+To my complete amazement, I *actually found out a way to have 100 PC computers from all around the world testing my website* ! **Welcome to the world of** [**Amazon Turk**](https://www.mturk.com/mturk/welcome) **.** For a total of $5, I had just about 80 users go through my tests and give me feedback.
 ![](http://marcgrabanski.com/img/world-map-orange.jpg)
 
 ### My Process of Testing Through Amazon Turk

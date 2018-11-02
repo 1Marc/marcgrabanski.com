@@ -20,37 +20,17 @@ _After working for JWT Minneapolis for two years, I would like to take this mome
 ## Business Structure of JWT Minneapolis
 
 The biggest takeaway from my experience at JWT was structure. From a high level, this is how the office was broken down into roles and responsibilities on the production side of the business:
-\*\* 
--Account Executive:
-- Makes initial relationship with the client. Gets contract signed, presents RFP response, on-going client contact.
+\*\* **Account Executive:** Makes initial relationship with the client. Gets contract signed, presents RFP response, on-going client contact.
 
-- 
--Strategist:
-- Interviews the client to find out their goals with JWT services, big picture people. Decides on a product and vision to pursue with JWT.
-- 
--(PM) Project Manager:
-- Estimates hours, creates project plan and lays out project time-line. Becomes client contact for anything project related.
-- 
--(BA) Business Analyst:
-- Defines business requirements and use cases.
-- 
--(IA) Information Architect:
-- Creates wire frames based on the business requirements.
-- 
--Copywriter:
-- Writes copy for anywhere the client and IA deems it necessary.
-- 
--Designer:
-- Creates templates and style guides for project based on wire frames.
-- 
--Developer:
-- Takes all artifacts and creates the finished product.
-- 
--(QA) Quality Assurance:
-- Checks everything to assure final product matches all artifacts signed off by client (content, design, wire frames, use cases, etc).
-- 
--Analytics:
-- Ongoing tracking shows user trends and how to make the product more effective.
+- **Strategist:** Interviews the client to find out their goals with JWT services, big picture people. Decides on a product and vision to pursue with JWT.
+- **(PM) Project Manager:** Estimates hours, creates project plan and lays out project time-line. Becomes client contact for anything project related.
+- **(BA) Business Analyst:** Defines business requirements and use cases.
+- **(IA) Information Architect:** Creates wire frames based on the business requirements.
+- **Copywriter:** Writes copy for anywhere the client and IA deems it necessary.
+- **Designer:** Creates templates and style guides for project based on wire frames.
+- **Developer:** Takes all artifacts and creates the finished product.
+- **(QA) Quality Assurance:** Checks everything to assure final product matches all artifacts signed off by client (content, design, wire frames, use cases, etc).
+- **Analytics:** Ongoing tracking shows user trends and how to make the product more effective.
 
 While at JWT, I had a chance to work with all of these core groups of production people, aside from the account exec and strategists. I was always so interested in how each of these roles interacted with each other. I would walk the floor throughout the day having brief conversations with coworkers to understand this structure more. It was fascinating to me and I always enjoyed learning bits about their expertise. All too often people don't realize that each one of these roles requires a specific and refined skill set.
 
@@ -67,8 +47,6 @@ I had no complaints about JWT Minneapolis internally as a business. Some benefit
 - JWT subsidized my trip to a web development conference in Boston, The Ajax Experience 2007.
 - I was able to grow my abilities by researching during down times.
 
-There are so many words I could say about my last 2 years working with JWT Minneapolis, but I think I'll stick to the above for now. 
--Thank you to everyone I worked with!
--
+There are so many words I could say about my last 2 years working with JWT Minneapolis, but I think I'll stick to the above for now. **Thank you to everyone I worked with!**
 
 LinkedIn has many recommendations that I received from coworkers at JWT Minneapolis through [LinkedIn](http://www.linkedin.com/in/1marc)

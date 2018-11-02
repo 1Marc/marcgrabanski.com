@@ -22,9 +22,7 @@ So I picked up what I needed:
 
 After a couple screwed up drinks, I finally got the right combination of espresso, milk and vanilla syrup.I can make it without leaving my house and it tastes just the same, if not better since I control the proportions.
 
-Web devleopment from home just got even better thanks to you, 
--Mr. Starbucks Barista Espresso Machine
-- !
+Web devleopment from home just got even better thanks to you, **Mr. Starbucks Barista Espresso Machine** !
 > Note on June 27th, 2008: Rammi asked for my recipe, so here it how I make it - adjust to your liking:
 > ~1 tbsp of vanilla flavoring syrup
 > 8-10 oz of milk

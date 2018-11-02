@@ -24,9 +24,7 @@ But sometimes you may need to get the selected option's text. This is not as str
 ```
 
 View Demo: <!-- #selectList, #button1, #button2 { font-size: 16px; } -->First OptionSecond OptionThird OptionGet Value Get Text
-> Note on July 23 @9:14AM: 
--HoyaSaxa93
-- wrote in to ask how to get values from select multiples. I will create the demo and code below. This would be how to set a select multiple to an array called,"foo".
+> Note on July 23 @9:14AM: **HoyaSaxa93** wrote in to ask how to get values from select multiples. I will create the demo and code below. This would be how to set a select multiple to an array called,"foo".
 
 ```js
  var foo = []; $('#multiple :selected').each(function(i, selected){ foo[i] = $(selected).text(); });

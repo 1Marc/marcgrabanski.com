@@ -13,7 +13,4 @@ layout: "post"
 ---
 
 ![](http://marcgrabanski.com/img/oo-javascript.gif)
-[Objectifying JavaScript](http://www.digital-web.com/articles/objectifying_javascript/) is a must-read for Javascript developers. Jonathan Snook does a great job explaining how to use Object Oriented scripting by using the 
--object literal, 
--prototype, and 
--returning an object in the constructor. You may also want to check out [Show love to the object literal](http://www.wait-till-i.com/index.php?p=239) by Chris Heilmann as well. It didn't take long for me to grasp the object literal - which you can see by viewing my [clean calendar source](https://github.com/1Marc/javascript-clean-calendar). Enjoy the reads!
+[Objectifying JavaScript](http://www.digital-web.com/articles/objectifying_javascript/) is a must-read for Javascript developers. Jonathan Snook does a great job explaining how to use Object Oriented scripting by using the **object literal, **prototype, and **returning an object in the constructor. You may also want to check out [Show love to the object literal](http://www.wait-till-i.com/index.php?p=239) by Chris Heilmann as well. It didn't take long for me to grasp the object literal - which you can see by viewing my [clean calendar source](https://github.com/1Marc/javascript-clean-calendar). Enjoy the reads!

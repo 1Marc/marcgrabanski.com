@@ -37,9 +37,7 @@ When I moved to Minneapolis I was the lowest paid person in the company. I worke
 
 I've decided on many routes in life that people reject. There is no shortage of people who will tell you how you can live your life better or different. You have to decide for yourself and never make a decision based on other peoples' opinions solely. Get the facts, strive for them about yourself and the world around you. A life filled with intention and principles is a life worth living, regardless if you are rewarded for living that way or not. I am not rich but I am rich in spirit. I likely will be rich in the future but ultimately the richness needs to be in creating richness inside others.
 
-
--_If I would have followed the logical path according to society and those with more experience I wouldn't have had the opportunities I will describe in my recap._
--
+**_If I would have followed the logical path according to society and those with more experience I wouldn't have had the opportunities I will describe in my recap._**
 
 ## (2007-2009) Recapping
 

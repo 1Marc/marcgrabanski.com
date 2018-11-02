@@ -36,9 +36,7 @@ Seems easy? Well, no because of the browser differences. I will show you that in
 
 Getting the browser height and browserY was more challenging. Browsers were getting different heights for the same property! Go figure (sarcasm).
 
-In trying to find out what browsers used to calculate heights, I found a great resource at quirksmode to [test browser height and width variables](http://www.quirksmode.org/js/doctype_on.html). Thank God for that page, I was able to figure out 
--exactly
-- what the browser was doing with each variable. This [JavaScript Window Size and Height](http://www.howtocreate.co.uk/tutorials/javascript/browserwindow) tutorial was also helpful.
+In trying to find out what browsers used to calculate heights, I found a great resource at quirksmode to [test browser height and width variables](http://www.quirksmode.org/js/doctype_on.html). Thank God for that page, I was able to figure out **exactly** what the browser was doing with each variable. This [JavaScript Window Size and Height](http://www.howtocreate.co.uk/tutorials/javascript/browserwindow) tutorial was also helpful.
 
 In testing I found out a few things. To get the browser height, window.innerHeight worked pretty well for most browsers. Then to get the browser height in the rest of the browsers, document.documentElement.clientHeight worked.
 

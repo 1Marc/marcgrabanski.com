@@ -13,9 +13,7 @@ layout: "post"
 
 > Update Here's an updated article with the [tools I use on Mac OS X](http://marcgrabanski.com/setting-up-mac-osx-web-development/).
 
-First, I want to preface this article by saying that this is not just another big list of every web development tool on the internet. 
--This is a list of tools that I rely on for my job as a web developer and I use these tools every day!
--
+First, I want to preface this article by saying that this is not just another big list of every web development tool on the internet. **This is a list of tools that I rely on for my job as a web developer and I use these tools every day!**
 
 This arsenal of web development tools was gathered from my computer at work (Windows XP) and is a little more current than my previous post on [tools to get the job done](http://marcgrabanski.com/article/30/Tools-For-Getting-the-Job-Done) .
 

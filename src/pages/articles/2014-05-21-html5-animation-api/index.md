@@ -10,9 +10,7 @@ category: 'test'
 layout: 'post'
 ---
 
-The HTML5 vs native OS performance debate simply will not die -- and for good reason! 
--We currently don't have the API we need to build fluid animations on the web.
-- Before you go and put me on a stake, let me explain. Through this article I will make the case of why what we currently have in the browser for animation is limited, and try to clearly point out limitations and how JavaScript animation engines are leading us towards a better world that I hope gets built into the core browser UI rendering engine API.
+The HTML5 vs native OS performance debate simply will not die -- and for good reason! **We currently don't have the API we need to build fluid animations on the web.** Before you go and put me on a stake, let me explain. Through this article I will make the case of why what we currently have in the browser for animation is limited, and try to clearly point out limitations and how JavaScript animation engines are leading us towards a better world that I hope gets built into the core browser UI rendering engine API.
 
 ## The Problem with CSS Animation Easing
 
@@ -32,9 +30,7 @@ Let's go under the hood...
 
 ## Matrix Transforms
 
-The matrix transform API is the lowest-level, cheapest way to move things in DOM -- matrix3d is the CSS style property for it. It is a 4x4 matrix that tells the browser where to move, rotate and scale something in X, Y and Z space. It's basic linear algebra. You did pay attention in grade school...right? 
--wink wink
-- ![science-stand-back](a0820b4e-8c4a-49d0-b65c-fbe1b37b6f12.jpg) Side note: I have a slide deck here that goes more into matrix3d and other related stuff: [mgslides id=27707793] You can also [play with matrix3d](http://www.eleqtriq.com/wp-content/static/demos/2010/css3d/matrix3dexplorer.html).
+The matrix transform API is the lowest-level, cheapest way to move things in DOM -- matrix3d is the CSS style property for it. It is a 4x4 matrix that tells the browser where to move, rotate and scale something in X, Y and Z space. It's basic linear algebra. You did pay attention in grade school...right? **wink wink** ![science-stand-back](a0820b4e-8c4a-49d0-b65c-fbe1b37b6f12.jpg) Side note: I have a slide deck here that goes more into matrix3d and other related stuff: [mgslides id=27707793] You can also [play with matrix3d](http://www.eleqtriq.com/wp-content/static/demos/2010/css3d/matrix3dexplorer.html).
 
 ## Famo.us + Matrix Transforms
 
@@ -50,9 +46,7 @@ This post isn't about Famo.us though -- it's a call to arms for real animation e
 
 ## Transform API
 
-Let me get into the next thing you need to understand before my proposal, which is transforms themselves. The way the transform API works in CSS (and SVG), is it composes a resulting matrix under the hood (sound familiar?). So in CSS if you say. transform: rotate(45) scale(1.25) under the hood of the browser it's going to make the resulting matrix3d and move the element in a cheap way through applying the resulting matrix3d frame-by-frame. That's why Famo.us isn't some wizardry-warlock-magic-dragon-vomit, it's just manual-mode matrix transforms under the hood. Famo.us is just re-implementing the same matrix transform API under the hood as the browser does itself! Do you get my point here folks? 
--It's matrices all the way down!
-- Transforms compose into a resulting matrix. Linear algebra baby.
+Let me get into the next thing you need to understand before my proposal, which is transforms themselves. The way the transform API works in CSS (and SVG), is it composes a resulting matrix under the hood (sound familiar?). So in CSS if you say. transform: rotate(45) scale(1.25) under the hood of the browser it's going to make the resulting matrix3d and move the element in a cheap way through applying the resulting matrix3d frame-by-frame. That's why Famo.us isn't some wizardry-warlock-magic-dragon-vomit, it's just manual-mode matrix transforms under the hood. Famo.us is just re-implementing the same matrix transform API under the hood as the browser does itself! Do you get my point here folks? **It's matrices all the way down!** Transforms compose into a resulting matrix. Linear algebra baby.
 
 ## Composable Transform API
 
@@ -100,9 +94,7 @@ This is a lot closer to Famo.us in that we are modifying the matrix3d in JavaScr
 
 ## What We Need
 
-So far we've covered CSS Animations, easing, matrix transforms, composing transforms, tweening, manually tweening matrix transforms with JavaScript and requestAnimationFrame. 
--phew
-- -- still with me? What we need is a new animation API: - it can tween between two matrices - it will allow you to compose transforms in an absolute or relative way - it will let you compose tweens -- modify where it's going and transition between them with physics - it will allow you to compose tweens mid-animation with physics - it will take direction into account and allow you to apply force to the animation with physics properties - it will allow you to query the current properties of an existing tween (or set of tweens) There is a new initiative to create a [Web Animations API](http://www.polymer-project.org/platform/web-animations.html), but I'm not sure it covers all the cases in this article. Though, it looks like it's a step in the right direction. So for instance. If you're going right at a velocity of 30px per second, and you add a downward force, it should arc downward...not just go straight down and then lose that velocity over a given time reduced by friction (or decay). All of this is explained in exquisite detail in [Animate Your Way to Glory](http://acko.net/blog/animate-your-way-to-glory/) by Steven Wittens. I'll add that Facebook paper uses its [pop animation framework](https://code.facebook.com/posts/234067533455773/introducing-pop-the-animation-engine-behind-paper/) which has spring, decay and custom easing which accept velocity as input. It is a basic physics animation engine for animation. We need something like that on the web built into the web browser. .embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+So far we've covered CSS Animations, easing, matrix transforms, composing transforms, tweening, manually tweening matrix transforms with JavaScript and requestAnimationFrame. **phew** -- still with me? What we need is a new animation API: - it can tween between two matrices - it will allow you to compose transforms in an absolute or relative way - it will let you compose tweens -- modify where it's going and transition between them with physics - it will allow you to compose tweens mid-animation with physics - it will take direction into account and allow you to apply force to the animation with physics properties - it will allow you to query the current properties of an existing tween (or set of tweens) There is a new initiative to create a [Web Animations API](http://www.polymer-project.org/platform/web-animations.html), but I'm not sure it covers all the cases in this article. Though, it looks like it's a step in the right direction. So for instance. If you're going right at a velocity of 30px per second, and you add a downward force, it should arc downward...not just go straight down and then lose that velocity over a given time reduced by friction (or decay). All of this is explained in exquisite detail in [Animate Your Way to Glory](http://acko.net/blog/animate-your-way-to-glory/) by Steven Wittens. I'll add that Facebook paper uses its [pop animation framework](https://code.facebook.com/posts/234067533455773/introducing-pop-the-animation-engine-behind-paper/) which has spring, decay and custom easing which accept velocity as input. It is a basic physics animation engine for animation. We need something like that on the web built into the web browser. .embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
 ## GreenSock Thoughts
 

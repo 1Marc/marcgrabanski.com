@@ -116,8 +116,7 @@ ss #map { float:left; width:500px; height:500px; } #list { float:left; width:200
 In our jQuery each loop from last step, let's append the clickable list items to the list.
 
 ```js
-$('
--   ')
+$('**   ')
   .html('Point' + i)
   .click(function() {
     map.panTo(marker.getLatLng())

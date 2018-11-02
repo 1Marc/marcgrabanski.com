@@ -19,9 +19,7 @@ Quick FYI: this article is a high-level overview of CouchDB features, not a tuto
 
 Ok, so what makes me so excited about CouchDB?! CouchDB is a NoSQL, schema-free JSON document storage where JavaScript can access the database directly via HTTP with no middleware required! Let me say that again...
 
-
--JavaScript can access the database directly.
--
+**JavaScript can access the database directly.**
 
 If you are a web application developer, you know your apps just end up being a REST interface to SQL queries that check a session for permission. I can't tell you how many times I see application that are just mapping SQL queries to a router of some sort. Welp, no need for that if you use CouchDB (albeit it takes a lot of learning to get there).
 

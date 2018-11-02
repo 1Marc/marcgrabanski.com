@@ -38,11 +38,7 @@ From an outside perspective, this library shines and has great potential. Howeve
 
 ### The Tooltip
 
-
--
--A great tool for designing better layouts and more intuitive user-interfaces.
--
--
+****A great tool for designing better layouts and more intuitive user-interfaces.****
 
 Tooltips can contain any HTML such as links, images, forms and tables. This tooltip is vertically centered on the top edge of the trigger element
 

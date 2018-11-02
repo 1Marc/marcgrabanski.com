@@ -44,8 +44,7 @@ cd /svnroot/hooks/ cp post-commit.tmpl post-commit chmod +x post-commit
 
 Now we need to create a little C program. You should have [GCC](http://gcc.gnu.org/) installed. This will compile our little C program. Create a new svnupdate.c file and put this code in. Don't forget to change the directory path: @"public_html_directory"@
 ```c
-#include #include #include int main(void) { execl("/usr/bin/svn","svn","update","/public_html_direcotry/", (const char 
--) NULL); return(EXIT_FAILURE); }
+#include #include #include int main(void) { execl("/usr/bin/svn","svn","update","/public_html_direcotry/", (const char **) NULL); return(EXIT_FAILURE); }
 ```
 
 Complile the file with this command. It will take the whatever.c and compile it into a binary file.

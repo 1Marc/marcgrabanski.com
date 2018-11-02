@@ -73,20 +73,7 @@ html = ''
 Yuck! So to solve this I wrote a little ditty function called buildHTML. The code isn't perfect and it could be written better (please do) but it looks like this:
 
 ```js
-// my little html string builder
-buildHTML = function(tag, html, attrs) {
-  // you can skip html param
-  if (typeof html != 'string') {
-    attrs = html
-    html = null
-  }
-  var h = '<' + tag
-  for (attr in attrs) {
-    if (attrs[attr] === false) continue
-    h += ' ' + attr + '="' + attrs[attr] + '"'
-  }
-  return (h += html ? '>' + html + '' : '/>')
-}
+// my little html string builder buildHTML = function(tag, html, attrs) { // you can skip html param if (typeof(html) != 'string') { attrs = html; html = null; } var h = '<' + tag; for (attr in attrs) { if(attrs[attr] === false) continue; h += ' ' + attr + '="' + attrs[attr] + '"'; } return h += html ? ">" + html + "" : "/>"; }
 ```
 
 So now our code for building that same input becomes:
@@ -97,6 +84,4 @@ So now our code for building that same input becomes:
 
 Nicer, huh? Get the gist for [buildHTML and examples](https://gist.github.com/466432). And by all means fork it and make it better.
 
-## Templating
-
-Another way to build out more complex HTML is using templating. John Resig has a great article and some code examples for [JavaScript Micro Templating](http://ejohn.org/blog/javascript-micro-templating/) There is a templating language called [mustache](http://mustache.github.com/) that I see a lot of people using. Also, there has been some proposals for templating being built into jQuery's core, however for now there is a jQuery plugin on github [jquery-tmpl](http://github.com/nje/jquery-tmpl). Rey Bango wrote an article explaining [using jQuery templating](http://blog.reybango.com/2010/07/09/not-using-jquery-javascript-templates-youre-really-missing-out/). If you have any other HTML building tips, please share!
+## Templating Another way to build out more complex HTML is using templating. John Resig has a great article and some code examples for [JavaScript Micro Templating](http://ejohn.org/blog/javascript-micro-templating/) There is a templating language called [mustache](http://mustache.github.com/) that I see a lot of people using. Also, there has been some proposals for templating being built into jQuery's core, however for now there is a jQuery plugin on github [jquery-tmpl](http://github.com/nje/jquery-tmpl). Rey Bango wrote an article explaining [using jQuery templating](http://blog.reybango.com/2010/07/09/not-using-jquery-javascript-templates-youre-really-missing-out/). If you have any other HTML building tips, please share!

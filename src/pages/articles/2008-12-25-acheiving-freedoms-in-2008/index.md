@@ -18,13 +18,7 @@ layout: "post"
 
 ## Attained Freedoms
 The following freedoms are available to me, that I didn't have at the beginning of this year:
-
-- work from home remotely 
-- hire people I trust 
-- create my own applications 
-- work as much or little as I desire and still get paid for it (as a contractor) 
-- take time out to eat, read and pray (during the work day) 
-- spend more time doing things outside of normal work like go to conferences, spend time with my girlfriend and go on vacations
+** work from home remotely ** hire people I trust ** create my own applications ** work as much or little as I desire and still get paid for it (as a contractor) ** take time out to eat, read and pray (during the work day) ** spend more time doing things outside of normal work like go to conferences, spend time with my girlfriend and go on vacations
 
 ## Assets VS Liabilities
 Attaining these freedoms became incredibly important to me late 2007 when I realized I was building someone else's assets. I realized that if I stayed the course I was headed down, I would end up dependent on that next pay check to pay for the liabilities (things on credit) just like those surrounding me. I needed to break out of the system and forge into new territories.

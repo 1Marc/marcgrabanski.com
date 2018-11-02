@@ -44,17 +44,13 @@ Honestly my kids are a huge part of my life now. Having kids changes you. I no l
 
 I've been an entrepreneur for about 15 years now. I've only had one full time job and that was for less than two years. I even wrote a [guide on self-employed software development](http://marcgrabanski.com/self-employed-software-development-guide/).
 
-In my mid to late twenties I had a dream of recurring revenue solving a lot of my cashflow problems. I've done that now. I don't think about money day to day even though I probably should since the business still has it's rough parts, but instead I consider the future and what's best for the structure of the business. 
--I now think about what's best for my customers and improving the core product.
--
+In my mid to late twenties I had a dream of recurring revenue solving a lot of my cashflow problems. I've done that now. I don't think about money day to day even though I probably should since the business still has it's rough parts, but instead I consider the future and what's best for the structure of the business. **I now think about what's best for my customers and improving the core product.**
 
 ### Recurring Revenue is King
 
 Honestly having customers paying you every month for something has been the most liberating thing ever. I've done a lot of things. Consulted and made several companies millions of dollars, but the cash was fleeting.
 
-Now as I contribute to something it just provides more and more value for my customers. Building up something big has become an obsession and 
--I'm finally feeling like I'm running instead of running in circles.
--
+Now as I contribute to something it just provides more and more value for my customers. Building up something big has become an obsession and **I'm finally feeling like I'm running instead of running in circles.**
 
 Business has growth over 400% last year and I hope to do at least 200% increase next year. It's now bigger than even my biggest months running my consulting business.
 
