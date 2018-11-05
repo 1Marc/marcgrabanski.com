@@ -87,7 +87,7 @@ I wish this wasn't true, but **your job at a conference is to introduce and insp
 
 Don't believe me? Look at this keynote by Scott Hanselman. I don't even know what he's saying, I didn't learn anything and didn't know what his point was, but **he entertained every step of the way and people loved it!**
 
-`youtube: http://www.youtube.com/embed/UzyoT4DziQ4`
+`youtube: https://www.youtube.com/embed/UzyoT4DziQ4`
 
 **Most people would rather be wow'd, entertained, made laugh, etc than taught** (especially during keynotes). I really, really wish learning was the primary objective at technical conferences, but it's not. It's entertainment!
 
@@ -117,4 +117,4 @@ Finally, have fun. This is your time to shine and speak what's on your heart, wh
 
 ## Finally...My Talk
 
-`youtube: http://www.youtube.com/embed/a2K_pOp2ydQ`
+`youtube: https://www.youtube.com/embed/a2K_pOp2ydQ`

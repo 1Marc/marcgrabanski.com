@@ -20,7 +20,7 @@ With these tools we can build interactive vector-based web applications that wor
 
 ## CodePen SVG Collection
 
-I created a [collection of demos](http://codepen.io/collection/DHLiK) on CodePen to show how you can do things with SVG and CSS transforms.
+I created a [collection of demos](https://codepen.io/collection/DHLiK) on CodePen to show how you can do things with SVG and CSS transforms.
 
 ## Introduction to SVG Elements
 
@@ -67,32 +67,32 @@ Here's an introduction article to [understanding CSS matrices](http://dev.opera.
 - Stacking Transforms with SVG
 - In the first demo, I show you how you can add many transforms to SVG. This is a basic demo of how transforms "stack" on top of each other and modify the original origin of the transform. For instance, if you add a rotation transform and then try to add a translate transform on top of that, "x" may not take you left and right anymore, but in a different direction based on the axis of the rotation origin.
 
-[Try it on CodePen](http://codepen.io/1marc/pen/DCvFm)
+[Try it on CodePen](https://codepen.io/1marc/pen/DCvFm)
 
 - Stacking Transforms with RaphaelJS
 - With RaphaelJS, you can do the same transforms as before, but you can make "absolute" or "relative" transforms. So using absolute transforms makes it explicit what you are doing to modify your object instead of it stacking on top of the prior transform. Also, not shown in the demo, RaphaelJS  has convenience methods like "element.matrix.split()" to get the current resulting transform stack and "getBBox()" to know where your object is now.
 
-[Try it on CodePen](http://codepen.io/1marc/pen/rsmbF)
+[Try it on CodePen](https://codepen.io/1marc/pen/rsmbF)
 
 - Animating the HTML5 Logo with RaphaelJS Transforms
 - You can use the .animate() method built into RaphaelJS to tween between transforms. We're also using the built in "elastic" easing method when we clear the transform.
 
-[Try it on CodePen](http://codepen.io/1marc/pen/zqJba)
+[Try it on CodePen](https://codepen.io/1marc/pen/zqJba)
 
 - Animating SVG with CSS Matrix Transforms
 - Once you have a matrix transform, you can use the transition property to animate the transform matrix with CSS.
 
-[Try it on CodePen](http://codepen.io/1marc/pen/FJbtj)
+[Try it on CodePen](https://codepen.io/1marc/pen/FJbtj)
 
 - SVG Path Interpolation with RaphaelJS
 - You can animate between two path elements using RaphaelJS to do the interpolation between them. One of the more interesting things done with path transitions is [animating the progression of the batman logo](http://www.wimp.com/batmanlogo/).
 
-[Try it on CodePen](http://codepen.io/1marc/pen/bgHJk)
+[Try it on CodePen](https://codepen.io/1marc/pen/bgHJk)
 
 - Using the XCSSMatrix Library to Modify a Matrix Transform
 - John Schulz has made the XCSSMatrix library which lets you take an existing matrix and modify it with various transform methods (sort of like RaphaelJS does). You can then use the native CSS transition property to animate the matrix like we did in a previous demo.
 
-[Try it on CodePen](http://codepen.io/1marc/pen/BdAvt)
+[Try it on CodePen](https://codepen.io/1marc/pen/BdAvt)
 
 You can also [play with matrix3d](http://www.eleqtriq.com/wp-content/static/demos/2010/css3d/matrix3dexplorer.html).
 

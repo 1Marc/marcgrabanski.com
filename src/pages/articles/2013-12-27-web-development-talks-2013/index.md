@@ -28,11 +28,11 @@ In 2013 I gave 7 talks, 3 videos and wrote 4 external articles (...and [tweeted]
 
 ### Videos of my talks on jQuery Mobile and SVG as well as a Q&A with jQuery Team Members
 
-`youtube: http://www.youtube.com/watch?v=ECUhNrlyTkE`
+`youtube: https://www.youtube.com/watch?v=ECUhNrlyTkE`
 
 Introduction to SVG and RaphaelJS - video of my talk on SVG (Scalable Vector Graphics) and RaphaelJS API.
 
-`youtube: http://www.youtube.com/watch?v=DIA4qJCTeYI`
+`youtube: https://www.youtube.com/watch?v=DIA4qJCTeYI`
 
 Video of my talk covering the philosophy and reasons for using jQuery mobile.
 

@@ -4,7 +4,7 @@ layout: page
 path: '/jquery-ui-datepicker'
 ---
 
-![jQuery UI Datepicker Screenshot](http://marcgrabanski.com/img/jquery-ui-datepicker.jpg)
+![jQuery UI Datepicker Screenshot](./jquery-ui-datepicker.jpg)
 
 👋 Hi! I am the original creator of the jQuery UI Datepicker. 😀
 
