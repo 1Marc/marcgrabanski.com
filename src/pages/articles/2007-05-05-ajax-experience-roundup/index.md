@@ -64,7 +64,7 @@ Paul overviewed some of the recent happening online that replicate we know and l
 
 ### - And other web app / UI experts
 
-![](http://marcgrabanski.com/img/ajax-experts-panel.jpg)
+![](./ajax-experts-panel.jpg)
 
 These panels were the highlight of The Ajax Experience for me. It really was hilarious to see such conflicting opinions come through on both sides. It kind of felt like a spectator sport as you root for the person that you identify most with. When I look back at it two memorable moments stand out to me.
 
@@ -96,4 +96,4 @@ You may download the [Yslow firebug plugin here](http://developer.yahoo.com/yslo
 
 The registration cost was hefty ($1200), but the company I work for, RMG Connect paid for my registration fee. The overall experience was pretty amazing. I met some great people - especially the jQuery guys. Talking directly to the framework authors was an invaluble experience. Knowing the person's motivations behind creating their library really clues you into the longevity and energy behind a project.
 
-If you enjoyed this series or have an constructive criticism, please let me know by [emailing me":mailto:m@marcgrabanski.com , posting a comment below or subscribing to my "RSS feed](http://feeds.feedburner.com/allTrades) . This is the first time that I have covered something like this in so much detail so it is important to me to have your feedback.
+This is the first time that I have covered something like this in so much detail so it is important to me to have your feedback.

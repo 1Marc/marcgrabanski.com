@@ -14,7 +14,7 @@ layout: 'post'
 
 A friend of mine got hacked - one of his JavaScript files had been modified to contain some sort of advertisement. Here are a few tips you can do to lock your server down, starting with simple things and getting more advanced at the bottom.
 
-![](internet-security.gif)
+![](./internet-security.gif)
 
 - Change your web hosting password.
 - Change your SSH / root login username (if possible) and password.

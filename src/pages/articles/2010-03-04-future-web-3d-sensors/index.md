@@ -43,6 +43,6 @@ If you haven't seen it, check out Google's O3D beach demo. O3D is a plugin, but 
 
 Web + 3D is the world I pictured and wanted to be a part of since back in 2001 when I went to DigiPen, Nintendo's school, for 3D Animation:
 
-![](marc-at-nintendo.jpg)
+![](./marc-at-nintendo.jpg)
 
 So, more ways to input information and 3D are two directions I think the web is going!

@@ -13,7 +13,7 @@ category: 'test'
 layout: 'post'
 ---
 
-![](http://marcgrabanski.com/img/five_dice.jpg)
+![](./five_dice.jpg)
 
 ### 1. Create a solid foundation.
 

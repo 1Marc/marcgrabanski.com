@@ -11,7 +11,7 @@ category: 'test'
 layout: 'post'
 ---
 
-![](unreal-machine.jpg)
+![](./unreal-machine.jpg)
 
 We all work within the bounds of expectations to perform up to a certain level or hit a deadline.But, I think more often than not, web development people have unrealistic expectations.Managers, coworkers, and we too put higher expectations on ourselves than we ought to.Some of this is healthy, but there are certainly pitfalls when dealing with unrealistic expectations.
 

@@ -12,7 +12,7 @@ category: 'test'
 layout: 'post'
 ---
 
-![](logo-jquery.jpg)
+![](./logo-jquery.jpg)
 
 I've been coding using jQuery since shortly after it came out, and well -- I've been using it almost every work day. Here is a few tips that have saved me time.
 

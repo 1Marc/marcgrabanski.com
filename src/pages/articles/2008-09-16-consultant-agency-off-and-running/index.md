@@ -11,7 +11,7 @@ category: 'test'
 layout: 'post'
 ---
 
-![](consultants.jpg)
+![](./consultants.jpg)
 
 I have been operating as a small consulting agency for my clients lately. Here is what has been happening:
 

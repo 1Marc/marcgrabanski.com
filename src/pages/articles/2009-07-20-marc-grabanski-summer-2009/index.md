@@ -21,7 +21,7 @@ Here is an update on the status of [my projects as of 10 months ago](/projects-l
 - **Family Reminder**: will be built on CakeCal and [Calendar Engine](http://github.com/1Marc/javascript-calendar-engine), so I need to finish those open source projects before I get to this application, on hold for now.
 - **Open Ad Sense**: on hold until I get momentum behind this project, maybe next year.
 
-![](business-up.jpg)
+![](./business-up.jpg)
 
 ## New developments!
 

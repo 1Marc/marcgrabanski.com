@@ -12,7 +12,7 @@ category: 'test'
 layout: 'post'
 ---
 
-![](sunset-freedom.jpg)
+![](./sunset-freedom.jpg)
 
 2008 was a year of embarking on a journey towards personal freedoms in my career, which although was scary at times, paid off in spades.
 
@@ -37,7 +37,7 @@ It would have been a cold day in hell before I launched any major start-up compa
 
 In April of 2008, I pinged a few companies to see if they would hire me for 24 hours per week, remotely to cover my living costs. After casting the line, I got a few offers. I ended up turning down a job offer working on the [Firefox Addons](https://addons.mozilla.org) theming engine (which I was grateful for the offer!) to work for an [internet marketing company in Duluth, MN](http://aimclearblog.com/). Why? My #1 reason for turning down a job with Mozilla is, Silicon Valley doesn't need anymore high-level talent. Silicon Valley takes away much of the [great talent](http://davedash.com/2008/11/07/you-cant-go-home-again-a-year-in-the-bay-area/) (poke at Dave Dash of delicious.com) we have here in Minnesota.
 
-![](minneapolis-skyline.jpg)
+![](./minneapolis-skyline.jpg)
 
 ## Instantly Respected Names VS Local Business
 
@@ -51,11 +51,11 @@ Not everything went perfect this year. My first startup company will launch in t
 
 I had to give up my seat on the [jQuery UI development team](http://ui.jquery.com/) . It was just too hard to generate revenue, launch startup companies and program open source at the same time. [Datepicker](/jquery-ui-datepicker) was just consuming way too much of my time and I had to give it up. Though, I did review a book that is coming out soon on jQuery UI, so that was cool.
 
-![](reflecting-sunset.jpg)
+![](./reflecting-sunset.jpg)
 
 ## Reflecting on 2008 Goals
 
-The [goals I've made](career-goals-as-of-august-2007) in the past have been [fairly lofty](2008-plans-for-marcgrabanski-com), but all-in-all it is good to make them once and a while. As I've found out, it is incredibly hard to hit software development goals because things change and your focus can shift. It is hard to stick out projects to the end in this dynamic profession, but if you do stick it out you may get [big rewards](2007-was-an-incredible-year).
+The [goals I've made](career-goals-as-of-august-2007) in the past have been fairly lofty, but all-in-all it is good to make them once and a while. As I've found out, it is incredibly hard to hit software development goals because things change and your focus can shift. It is hard to stick out projects to the end in this dynamic profession, but if you do stick it out you may get [big rewards](2007-was-an-incredible-year).
 
 I've met more amazing people this year, and have continued to grow past work relationships stronger ( [thanks, Twitter](http://twitter.com/1Marc) ). I know things will continue in the midst of the failing economy because I work with great companies who have strong client-bases. Each company has been chosen wisely.
 

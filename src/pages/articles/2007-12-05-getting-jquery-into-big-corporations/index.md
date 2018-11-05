@@ -13,7 +13,7 @@ category: 'test'
 layout: 'post'
 ---
 
-![](nyc-corporations.jpg)
+![](./nyc-corporations.jpg)
 
 Big corporations are typically resistant to adopting change - and for good reason. They have to work at keeping stable a large amount of applications in one environment. Internal IT teams will usually only adopt something if it doesn't interfere with their jobs or make them more difficult. You must have a really good reason to bring something new in. I understanding that, so how do you get them to approve you using a relatively new library like jQuery?
 

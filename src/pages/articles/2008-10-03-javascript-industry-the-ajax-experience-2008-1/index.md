@@ -12,13 +12,13 @@ category: 'test'
 layout: 'post'
 ---
 
-![](logo-tae.jpg)
+![](./logo-tae.jpg)
 
 Over the last 4 days I attended The Ajax Experience 2008 (Boston) and jQuery Camp 2008. Each day I had many intense discussions about JavaScript with industry experts. I've been forming a picture of the industry with each discussion and presentation and would like to share what I've found out.If you would like a play-by-play, Nathan Hammond wrote a great job on covering [jQueryCamp](http://nathanhammond.com/jquery-conference-2008) and [TAE day 1](http://nathanhammond.com/the-ajax-experience-day-1) and [TAE day 2](http://nathanhammond.com/the-ajax-experience-day-2). Otherwise stay and read-up on my overview.
 
 ## Google Chrome
 
-![](logo-googlechrome.jpg)
+![](./logo-googlechrome.jpg)
 
 Ojan Vafai spoke on "Google Chrome" Google's new web browser, which is built from the Chromium open source project.
 
@@ -42,7 +42,7 @@ Overall Google Chrome is a great addition to the web browser landscape. As compe
 
 PPK, who runs [Quirksmode.org](http://quirksmode.org/) interviewed the JavaScript library authors from Prototype, YUI, Dojo and jQuery.
 
-[![](ajax-panel.jpg)](http://farm4.static.flickr.com/3275/2902388592_fb31532766.jpg?v=0)
+[![](./ajax-panel.jpg)](http://farm4.static.flickr.com/3275/2902388592_fb31532766.jpg?v=0)
 
 The panel asked how their library worked within Google Chrome, and it seemed that there were no huge problems with the libraries, just a few minor issues that were not hard to deal with. The panel got a little fired up though, when John Resig (jQuery) made the following declaration:
 

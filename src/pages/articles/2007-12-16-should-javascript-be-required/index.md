@@ -13,7 +13,7 @@ category: 'test'
 layout: 'post'
 ---
 
-![](disabled-customers.jpg)
+![](./disabled-customers.jpg)
 
 Should you offer your website to those without JavaScript? - or should you simply require it to make sure your website works how you intended? Where do you draw the line in the sand between functionality and accessibility?
 

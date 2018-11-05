@@ -10,7 +10,7 @@ category: 'test'
 layout: 'post'
 ---
 
-In 2013 I gave 7 talks, 3 videos and wrote 4 external articles (...and [tweeted](http://twitter.com/1marc) 3,516 times). I spoke at: [Fluent Conf Online](http://oreillynet.com/pub/e/2969), [JS Day Italy](http://2013.jsday.it), [Minnesota Developer's Conference](http://mdc.ilmservice.com/), Clockwork JavaScript, MinneBar, [MN Web Design](http://www.meetup.com/mn-web-design/events/95185932/) and [JavaScript MN](http://www.meetup.com/JavaScriptMN/events/128471632/). Most of the talks I gave were local to Minnesota because my wife and I had our _first_ baby and I want to stay close to home. :-) Here are the links to the [slides](http://marcgrabanski.com/web-development-talks-2013/#slides), [videos](http://marcgrabanski.com/web-development-talks-2013/#videos) and [external articles](http://marcgrabanski.com/web-development-talks-2013/#external-articles) I wrote in 2013...enjoy!
+In 2013 I gave 7 talks, 3 videos and wrote 4 external articles (...and [tweeted](http://twitter.com/1marc) 3,516 times). I spoke at: [Fluent Conf Online](http://oreillynet.com/pub/e/2969), [JS Day Italy](http://2013.jsday.it), [Minnesota Developer's Conference](http://mdc.ilmservice.com/), Clockwork JavaScript, MinneBar, [MN Web Design](http://www.meetup.com/mn-web-design/events/95185932/) and [JavaScript MN](http://www.meetup.com/JavaScriptMN/events/128471632/). Most of the talks I gave were local to Minnesota because my wife and I had our _first_ baby and I want to stay close to home. :-)
 
 ## Talks I Gave in 2013:
 

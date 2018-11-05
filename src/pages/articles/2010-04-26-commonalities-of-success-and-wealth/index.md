@@ -12,7 +12,7 @@ layout: 'post'
 
 Introspection and reflection on the last few years of being a ["balls to the wall](http://en.wiktionary.org/wiki/balls_to_the_wall)" entrepreneur, I've studied and found a few commonalities of successful people and the ability to accumulate wealth. Of course, I'm generalizing the word "success" here.
 
-![](mountain-hike.jpg)
+![](./mountain-hike.jpg)
 
 - **Successful employees and entrepreneurs** do what they love doing, or at the very least, something they feel makes an impact and difference in the world around them. Focusing on the part of world that they are familiar with, not detached.
 - **Successful businesses** are started with people who have passive income elsewhere. Their owners do not draw large salaries.

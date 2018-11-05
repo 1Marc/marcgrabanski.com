@@ -11,7 +11,7 @@ category: 'test'
 layout: 'post'
 ---
 
-![](google-logo.gif)
+![](./google-logo.gif)
 
 As many of you know, I was interviewed by Google two more times. Once as a UI Engineer for Gmail and once for a web developer position at YouTube (Google owns YouTube). YouTube actually sent me out on a plane to San Francisco, but I was turned down for both positions. Let me explain how this played out...
 

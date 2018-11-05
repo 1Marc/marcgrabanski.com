@@ -42,7 +42,7 @@ Honestly my kids are a huge part of my life now. Having kids changes you. I no l
 
 ## Business
 
-I've been an entrepreneur for about 15 years now. I've only had one full time job and that was for less than two years. I even wrote a [guide on self-employed software development](http://marcgrabanski.com/self-employed-software-development-guide/).
+I've been an entrepreneur for about 15 years now. I've only had one full time job and that was for less than two years. I even wrote a [guide on self-employed software development](/self-employed-software-development-guide).
 
 In my mid to late twenties I had a dream of recurring revenue solving a lot of my cashflow problems. I've done that now. I don't think about money day to day even though I probably should since the business still has it's rough parts, but instead I consider the future and what's best for the structure of the business. **I now think about what's best for my customers and improving the core product.**
 

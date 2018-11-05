@@ -11,7 +11,7 @@ category: 'test'
 layout: 'post'
 ---
 
-![](twitter-invention.png)
+./twitter-invention.png)
 
 > [I'm shifting from RSS to the live-web [Twitter]" - "Minnov8 podcast: episode 36](http://minnov8.com/2009/05/09/m8-gang-podcast-episode-36/)
 

@@ -11,7 +11,7 @@ category: 'test'
 layout: 'post'
 ---
 
-![](all-star-web-development.jpg)
+![](./all-star-web-development.jpg)
 
 I received a request for employment from a company who had gotten funding and was trying to assemble an, "all star team" (I made the above logo for fun). Most of the time I do not respond, but in this case the person hiring took so much time crafting the email that I decide that I needed to email back. My response was largely canned, but at least I took the time to respond:
 
@@ -35,6 +35,6 @@ He then responded with a line of questions regarding why I was only open to cons
 
 > **Marc:I do not consider full-time to be an option right now because it limits me from doing the projects that I feel the need to create.**
 
-![](assemble-construction.jpg)
+![](./assemble-construction.jpg)
 
 Overall the goal is to create ideas, and full-time employment doesn't allow me to do that at this point in my life.

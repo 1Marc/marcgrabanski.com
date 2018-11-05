@@ -12,7 +12,7 @@ category: 'test'
 layout: 'post'
 ---
 
-![](reading-bottom-up.gif)
+![](./reading-bottom-up.gif)
 
 While reading blogs and technical articles - I noticed a pattern that had developed over time. I **start at the bottom of the articles and read up to the top** . After skimming the document, I read back down again and read the parts I care most about more thoroughly.
 

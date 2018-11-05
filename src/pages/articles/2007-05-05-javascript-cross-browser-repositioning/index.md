@@ -16,7 +16,7 @@ layout: 'post'
 We added a feature to [jQuery calendar](jquery-ui-datepicker) that repositions the calendar back into the viewable window. It wasn't working right so I took it into my hands to figure out why.
 
 First, I needed to determine if the calendar is outside the browser window:
-![](calendar-heights.gif)
+![](./calendar-heights.gif)
 
 - BrowserY - The browser's window position from the top of the document.
 - Browser Height - The height of the browser window.

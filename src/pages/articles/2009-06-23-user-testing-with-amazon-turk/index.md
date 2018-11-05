@@ -33,7 +33,7 @@ At this point I was mad, not at the client but at the fact that I had no idea wh
 
 To my complete amazement, I _actually found out a way to have 100 PC computers from all around the world testing my website_ ! **Welcome to the world of** [**Amazon Turk**](https://www.mturk.com/mturk/welcome) **.** For a total of $5, I had just about 80 users go through my tests and give me feedback.
 
-![](world-map-orange.jpg)
+![](./world-map-orange.jpg)
 
 ### My Process of Testing Through Amazon Turk
 
