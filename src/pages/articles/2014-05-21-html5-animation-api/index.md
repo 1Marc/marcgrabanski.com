@@ -30,7 +30,7 @@ Let's go under the hood...
 
 ## Matrix Transforms
 
-The matrix transform API is the lowest-level, cheapest way to move things in DOM -- matrix3d is the CSS style property for it. It is a 4x4 matrix that tells the browser where to move, rotate and scale something in X, Y and Z space. It's basic linear algebra. You did pay attention in grade school...right? **wink wink** ![science-stand-back](a0820b4e-8c4a-49d0-b65c-fbe1b37b6f12.jpg) Side note: I have a slide deck here that goes more into matrix3d and other related stuff: [mgslides id=27707793] You can also [play with matrix3d](http://www.eleqtriq.com/wp-content/static/demos/2010/css3d/matrix3dexplorer.html).
+The matrix transform API is the lowest-level, cheapest way to move things in DOM -- matrix3d is the CSS style property for it. It is a 4x4 matrix that tells the browser where to move, rotate and scale something in X, Y and Z space. It's basic linear algebra. You did pay attention in grade school...right? **wink wink** ![science-stand-back](science-stand-back.jpg) Side note: I have a slide deck here that goes more into matrix3d and other related stuff: [mgslides id=27707793] You can also [play with matrix3d](http://www.eleqtriq.com/wp-content/static/demos/2010/css3d/matrix3dexplorer.html).
 
 ## Famo.us + Matrix Transforms
 
@@ -50,7 +50,7 @@ Let me get into the next thing you need to understand before my proposal, which 
 
 ## Composable Transform API
 
-One of the main issues with the transform API is it's singular way of composing them together. You can, as I showed before, compose rotate(45) scale(1.25) translateX(50) into one resulting transform. But that way compose is kind of weird. Every time you add a rotate before a translate, the rotate modifies the original axis origin. So if you rotate(45), then translateX(50), instead of it going 50px to the right, it goes down and to the right. See my little graphic here: ![3e2706](ad876dd3-31cb-4f5a-be84-2a96ff5bc653.png)
+One of the main issues with the transform API is it's singular way of composing them together. You can, as I showed before, compose rotate(45) scale(1.25) translateX(50) into one resulting transform. But that way compose is kind of weird. Every time you add a rotate before a translate, the rotate modifies the original axis origin. So if you rotate(45), then translateX(50), instead of it going 50px to the right, it goes down and to the right. See my little graphic here: ![translation axis](translation-axis.png)
 
 ### Demo of Composing / Stacking Transforms
 

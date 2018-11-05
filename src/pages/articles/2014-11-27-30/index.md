@@ -12,7 +12,7 @@ layout: 'post'
 
 Turning 30 has been interesting. I've been a full-time front-end web developer since '04-05. That's 10 years! But now honestly although I still do front-end dev I feel like I'm more of a CEO than anything now -- that's a recent development in the last 6-12 months.
 
-![family-photo](448ab52d-7425-4237-9b6e-baa60502fcaa.jpg)
+![family-photo](family.jpg)
 
 ## Front-End Web Development Career
 

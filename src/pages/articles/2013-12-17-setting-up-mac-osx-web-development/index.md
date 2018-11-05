@@ -11,7 +11,6 @@ layout: 'post'
 ---
 
 Recently I had a machine break down and had to setup a new one and this is documentation of my setup.
-![](http://marcgrabanski.com/wp-content/uploads/mavericks2013-06-1913-30-56600-1372082910-500x312.jpg)
 
 In this article I give you all the apps I use, OS configurations and local hosting setup.
 
@@ -28,7 +27,6 @@ In this article I give you all the apps I use, OS configurations and local hosti
 - Skype
 - [CloudApp](http://getcloudapp.com/) - Nice way to drag and drop share files and especially images. Automatically copies the link to the file once it's uploaded to your clipboard.
 - Twitter - I find Twitter's default notifications to be annoying so I only setup menu highlighting when I'm mentioned.
-  ![](http://marcgrabanski.com/wp-content/uploads/2013/12/twitter-settings-300x188.png)
 - [Caffeine](http://lightheadsw.com/caffeine/) - For keeping your mac awake...especially during those long Dropbox syncs!
 - [Pocket](http://getpocket.com/) - Twitter natively supports saving links to Pocket and there's a Chrome extension, so if I don't want to lose a link I drop it in Pocket.
 - [Transmit](http://panic.com/transmit/) - For FTP and S3 pushing/pulling files. Be careful with the "sync" feature though, I deleted some files from the server once (was not good).

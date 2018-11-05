@@ -12,7 +12,7 @@ layout: 'post'
 
 I wanted to take a moment to share my views on paid versus free education as this has been a topic on my heart for a long time...education is in the core of things I think about on a daily basis.
 
-![Duluth Lighthouse](http://marcgrabanski.com/images/duluth-lighthouse.jpg)
+![Duluth Lighthouse](duluth-lighthouse.jpg)
 
 ## Give Away Everything FREE?
 
@@ -20,7 +20,7 @@ My view has come full circle on paid versus free education. At one time I though
 
 ## Curiosity or Career?
 
-![Minnesota Zephr](http://marcgrabanski.com/images/minnesota-zephr.jpg)
+![Minnesota Zephr](minnesota-zephr.jpg)
 
 > There is a difference in someone who is just trying to learn how to use jQuery or an open source project and someone who is obviously using that material for direct monetary gain.
 
@@ -30,7 +30,7 @@ I can see the "thank you"s coming from people who learned from me carry a differ
 
 So let me explain with an example of this in action in my own learning adventures... I bought peepcode's node.js screencast and after I watched it I actually didn't feel that good about it because I was just trying to explore node.js and there was no direct financial gain involved with buying the screencast (not like others I've bought in the past). I was just..curious about node.js so it was a waste of money. However there has been other times when I really needed to learn a topic and I stood to benefit financially from the knowledge so I actually felt better about buying it than when I learned it for free from some blog.
 
-![Dublin Bridge](http://marcgrabanski.com/images/dublin-bridge.jpg)
+![Dublin Bridge](dublin-bridge.jpg)
 
 ## Eureka! A Plausible Philosophy
 
@@ -38,7 +38,7 @@ As a result of years of experience, research and field testing, here is the line
 
 > If something is generic and more than likely doesn't solve a specific problem that is directly used for monetization purposes, then that educational content should remain free and that knowledge belongs in the public domain. However, if I produce something that someone would arrive to if they are looking to profit or take the next step in their career or business, then it becomes responsible to monetize access to that material while pricing based on the likely return on their investment (1/10th rule of thumb).
 
-![Dublin Monument](http://marcgrabanski.com/images/dublin-monument.jpg) There is still a somewhat fuzzy line there, open to personal judgment, but it at least clarifies and somewhat delineates things on a philosophical level. **Someone who is building something big should probably pay for the knowledge necessary to create the blue prints.**
+![Dublin Monument](dublin-monument.jpg) There is still a somewhat fuzzy line there, open to personal judgment, but it at least clarifies and somewhat delineates things on a philosophical level. **Someone who is building something big should probably pay for the knowledge necessary to create the blue prints.**
 
 ## Retaining Trust
 

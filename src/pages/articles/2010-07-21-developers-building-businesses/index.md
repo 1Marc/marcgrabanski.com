@@ -10,7 +10,7 @@ category: 'test'
 layout: 'post'
 ---
 
-![](http://marcgrabanski.com/img/construction-smaller.jpg)
+![](construction-smaller.jpg)
 
 Every good developer has their own independent visions, but even when visions line up developers chose to build independently instead of together. College students don't seem to have this problem, but anyone seasoned in their career will only work for money or so it seems. The risk is gone, the emotion, the drive, the opportunism to create something new that drives new businesses goes away. Instead it becomes all of us making money for other people which is much safer.
 

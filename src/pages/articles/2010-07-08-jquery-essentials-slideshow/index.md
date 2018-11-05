@@ -12,4 +12,4 @@ category: 'test'
 layout: 'post'
 ---
 
-[PDF of jQuery Essentials](http://marcgrabanski.com/presentations/jquery-essentials.pdf)
+[PDF of jQuery Essentials](jquery-essentials.pdf)

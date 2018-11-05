@@ -13,7 +13,7 @@ layout: 'post'
 
 The deeper I get into CouchDB, the more I love it. I empathize with the thread on Quora about [why isn't couchDB more popular?](http://www.quora.com/CouchDB/Why-isnt-CouchDB-more-popular) started by someone who was blown away like I was when I started using CouchDB.
 
-![CouchDB Logo](http://marcgrabanski.com/img/couchdb-logo.jpg)
+![CouchDB Logo](couchdb-logo.jpg)
 
 Quick FYI: this article is a high-level overview of CouchDB features, not a tutorial.
 
@@ -33,7 +33,7 @@ Play with your data, permissions and configuration right from the browser with C
 
 ## Replication
 
-![CouchDB Replication](http://marcgrabanski.com/img/couchdb-replication.jpg)
+![CouchDB Replication](couchdb-replication.jpg)
 
 I've never seen a database so simple to replicate. Just make a POST request.
 
