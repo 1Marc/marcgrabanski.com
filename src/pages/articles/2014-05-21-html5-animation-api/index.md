@@ -24,7 +24,7 @@ Easing doesn't compose. You can't take the current velocity and direction and th
 
 [Famo.us](http://famo.us) is the latest entry to the scene to give us a complete, physics-based rendering engine in the browser. The demos are incredibly impressive! Go check out the [demos](http://famo.us/demos) if you haven't already. They are able to do incredible organic-feeling, fluid, composable animations in HTML5 that no one else can do. This is because animations and layout composes to a resulting frame rendered in a targeted 60fps.
 
-[Try it on CodePen](codepen://befamous/kbxnH)
+[Try it on CodePen](http://codepen.io/befamous/pen/kbxnH)
 
 Let's go under the hood...
 
@@ -40,7 +40,7 @@ Famo.us uses the concept of a render tree which outputs the resulting matrix3d t
 
 Famo.us also lets you take the directional velocity of a mouse flick and allows you to compose that velocity into an animation which ends up at a certain point. It makes a fluid animation by composing on easing, velocity and direction and outputs the result of where that thing should be at each frame in the 60fps. If each frame takes X milliseconds, it would know how many milliseconds has passed between frames and then calculates the resulting matrix for each frame and spit it out into the DOM node's matrix3d style property. Simple...right? ;-) Here's a demo that when you click on the disc it adds velocity in that direction. Try clicking on the top right and then the bottom left. HTML5 itself just can't do that. You need an engine that can take the current state and then apply a force to it to change the current velocity.
 
-[Try it on CodePen](codepen://befamous/eAlwd)
+[Try it on CodePen](http://codepen.io/befamous/pen/eAlwd)
 
 This post isn't about Famo.us though -- it's a call to arms for real animation engine. Not some tween-between-two-linear-points crap like we have today.
 
@@ -56,7 +56,7 @@ One of the main issues with the transform API is it's singular way of composing 
 
 In this next demo, I show you how you can compose transforms so you can play around yourself. This is a basic demo of how transforms "stack" on top of each other and modify the original origin of the transform. For instance, if you add a rotation transform and then try to add a translate transform on top of that, "x" may not take you left and right anymore, but in a different direction based on the axis of the rotation origin.
 
-[Try it on CodePen](codepen://1marc/DCvFm)
+[Try it on CodePen](http://codepen.io/1marc/pen/DCvFm)
 
 This isn't ideal because you have no idea what the results of this transform is. You can stack eight different transforms together, but if you try to move it right...well, it won't go right unless your axis has never been modified!
 
@@ -64,7 +64,7 @@ This isn't ideal because you have no idea what the results of this transform is.
 
 With RaphaelJS, you can do the same transforms as before, but you can make "absolute" or "relative" transforms. So using absolute transforms makes it explicit what you are doing to modify your object instead of it stacking on top of the prior transform. If you want that damn thing to move right after a rotate, you'll be able to do it with Raphael's absolute transform. Again...the power of matrix math!
 
-[Try it on CodePen](codepen://1marc/rsmbF)
+[Try it on CodePen](http://codepen.io/1marc/pen/rsmbF)
 
 Also, not shown in the demo, RaphaelJS  has convenience methods like "element.matrix.split()" to get the current resulting transform stack and "getBBox()" to know where your object is now. Current transform API has nothing like this other than getComputedStyle. Which if you've ever used getComputedStyle... you know it's not enough. You'd have to getComputedStyle, break the matrix apart with matrix math and then modify it. Ouch.
 
@@ -76,19 +76,19 @@ The concept of tweening I first learned back in the Flash days. You could "tween
 
 Once you have a matrix transform, you can use the transition property to animate the transform matrix with CSS.
 
-[Try it on CodePen](codepen://1marc/FJbtj)
+[Try it on CodePen](http://codepen.io/1marc/pen/FJbtj)
 
 ### Tweening with RaphaelJS Transforms
 
 You can use the .animate() method built into RaphaelJS to tween between transforms. We're also using the built in "elastic" easing method when we clear the transform. I like it because you can use absolute or relative transforms and Raphael interpolates between states for you.
 
-[Try it on CodePen](codepen://1marc/zqJba)
+[Try it on CodePen](http://codepen.io/1marc/pen/zqJba)
 
 ### Using the XCSSMatrix Library to Modify a Matrix Transform
 
 John Schulz has made the XCSSMatrix library which lets you take an existing matrix and modify it with various transform methods (sort of like RaphaelJS does). You can then use the native CSS transition property to animate the matrix like we did in a previous demo.
 
-[Try it on CodePen](codepen://1marc/BdAvt)
+[Try it on CodePen](http://codepen.io/1marc/pen/BdAvt)
 
 This is a lot closer to Famo.us in that we are modifying the matrix3d in JavaScript and then outputting the new result in every animation frame. Ideally we would be calculating timestamp between frames and using that as a key in our timeline, but here I did it the naive way just to illustrate the concept.
 
@@ -100,7 +100,7 @@ So far we've covered CSS Animations, easing, matrix transforms, composing transf
 
 GreenSock I think does some of the above... but I haven't looked into it too much. I need to look into it more. Here's a shiny demo of GreenSock in action with some pretty nice animations. The thing that's missing from it is physics. We have the problem in this animation of it looking pretty linear and robotic.
 
-[Try it on CodePen](codepen://A973C/gnHrJ)
+[Try it on CodePen](http://codepen.io/A973C/pen/gnHrJ)
 
 Here's a demo site of [using 2d physics in GreenSock](http://www.greensock.com/draggable/) ...so I think it has to be possible to do some of this physics-tween stuff with GreenSock.
 

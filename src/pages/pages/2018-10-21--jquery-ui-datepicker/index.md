@@ -6,6 +6,8 @@ path: '/jquery-ui-datepicker'
 
 ![jQuery UI Datepicker Screenshot](http://marcgrabanski.com/img/jquery-ui-datepicker.jpg)
 
+👋 Hi! I am the original creator of the jQuery UI Datepicker. 😀
+
 Most likely, you are looking for a [demo of jQuery UI Datepicker](http://jqueryui.com/datepicker/).
 The jQuery Datepicker project has been donated to the [jQuery UI project](http://jqueryui.com). However, since the jQuery UI team had a different direction in mind than Keith Wood (co-author of jQuery Datepicker), Keith Wood has created another implementation of, [jQuery Datepicker](http://keith-wood.name/datepick.html).
 
