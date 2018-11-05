@@ -6,7 +6,7 @@ tags:
   - 'Conference'
   - 'Conferences'
   - 'Open Source'
-date: '2007-05-05T17:00:00.000Z'
+date: '2007-05-05T17:24:00.000Z'
 draft: false
 category: 'test'
 layout: 'post'
@@ -14,8 +14,6 @@ layout: 'post'
 
 - **Part 1: Ajax Experience Tutorial Sessions**
 - [Part 2: Ajax Experience Roundup](/ajax-experience-roundup)
-
-![](http://marcgrabanski.com/img/logo-ajax-experience.gif)
 
 I'll be here in Boston for the next week at the Ajax Experience until Friday. Then on Saturday I will be heading over to [jQuery Camp](http://docs.jquery.com/JQueryCamp07) at Harvard where I am giving two sessions.
 
@@ -77,8 +75,4 @@ I am sure the IA folks from back home would have absolutely loved this presentat
 
 ## Wrapping up Day 1
 
-It was great tutorial day - a precursor to the actual Ajax Experience conference. I have to say I was absolutely locked to Resig's presentation, being that I am really involved with JavaScript development. David Verba's presentation was very important for developing client work, and Ben's was a great overview on Ajax. Tomorrow is when the actual conference starts. Here is my schedule:
-
-|_.Time |_.Title |\_.Category | |Tue (1:00PM-2:30PM)|Intro to Ajax - Ben Galbraith and Dion Almaer|Tutorials| |Tue (2:30PM-4:00PM)|JavaScript Library Overview - John Resig|Tutorials| |Tue (4:00PM-5:30PM)|Designing for Ajax|Tutorials| |Wed (10:25AM-11:25AM)|The Future and Viability of the JavaScript Language - John Resig|JavaScript| |Wed (12:00PM-1:00PM)|Reaching the Entire World: Accessibility&Internationalization with Dojo - Adam Peller&Becky Gibson|Frameworks: Client-Side| |Wed (2:00PM-3:00PM)|Industry Leader Technical Session|Industry Leader Technical Session| |Wed (3:10PM-4:10PM)|Industry Leader Technical Session|Industry Leader Technical Session| |Wed (4:35PM-5:35PM)|Ajax Performance Analysis: Employing the Latest Tools to Get the Job Done|Building Quality Software| |Thu (9:10AM-10:10AM)|Intro to jQuery - John Resig|Frameworks: Server-Side| |Thu (1:00PM-2:00PM)|Advanced jQuery - John Resig|Frameworks: Server-Side| |Thu (2:10PM-3:10PM)|CASE STUDY: Dodging the Pitfalls of Enterprise Ajax Applications - Joshua Gertzen|Case Study| |Thu (3:45PM-4:45PM)|Using Firebug for More than Development - Patrick Lightbody|Building Quality Software| |Thu (4:45PM-5:45PM)|Ruining the User Experience - Aaron Gustafson|Design&Effects| |Thu (6:00PM-7:00PM)|Ajax on Struts - Ted Husted|Frameworks: Client-Side| |Fri (10:10AM-11:10AM)|Design Patterns and Animation with jQuery - Paul Bakaus|Design&Effects| |Fri (11:30AM-12:30PM)|Silverlight|Design&Effects| |Fri (2:10PM-3:10PM)|Advanced JSON: Persistence Mapping, Mashups, RPCs and beyond - Kriz Zyp|Architecture| |Fri (3:20PM-4:20PM)|Looking for a Fix? Ajax Debugging&Quality Assurance|Building Quality Software|
-
-I will attempt to document good sessions, but there aren't any plugins around here so it is going to be hard to save the laptop juice. 5 days total - 1 day down.
+It was great tutorial day - a precursor to the actual Ajax Experience conference. I have to say I was absolutely locked to Resig's presentation, being that I am really involved with JavaScript development. David Verba's presentation was very important for developing client work, and Ben's was a great overview on Ajax. Tomorrow is when the actual conference starts.

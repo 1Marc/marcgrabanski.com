@@ -1,22 +1,24 @@
 ---
-path: "developing-a-timeless-skill-set"
-title: "Developing a Timeless Skill-Set"
-description: "By learning a diverse amount of technologies you can develop a timeless skill-set."
-tags: 
-  - "Business"
-date: "2007-05-05T17:00:00.000Z"
+path: 'developing-a-timeless-skill-set'
+title: 'Developing a Timeless Skill-Set'
+description: 'By learning a diverse amount of technologies you can develop a timeless skill-set.'
+tags:
+  - 'Business'
+date: '2007-05-05T17:32:00.000Z'
 draft: false
-category: "test"
-layout: "post"
+category: 'test'
+layout: 'post'
 ---
 
-![](http://marcgrabanski.com/img/timeless.jpg)
+![](./timeless.jpg)
+
 The place I've been striving for is a place where I can use the proper tool for the job. Each programming language has their strength. Here are your average development languages and their common strength:
+
 - Behavior and Animation = JavaScript
 - Functionality = PHP, ASP.NET, Java, Ruby
-- Information = HTML, XML, JSON
+- Information = HTML, JSON
 - Styling Information = CSS
-- Media Delivery = Flash and HTML5
+- Media Delivery = HTML5
 
 What if you had a web application that needed to do **all of these things**...as is common the case ? You need a team of developers that can communicate very well with each other.
 

@@ -5,7 +5,7 @@ description: 'Summary of the last two days of The Ajax Experience 2007 in Boston
 tags:
   - 'Conference'
   - 'Conferences'
-date: '2007-05-05T17:00:00.000Z'
+date: '2007-05-05T17:23:00.000Z'
 draft: false
 category: 'test'
 layout: 'post'
@@ -16,7 +16,7 @@ layout: 'post'
 
 The final part of my coverage on [The Ajax Experience in Boston](http://ajaxexperience.techtarget.com/) .
 
-![](http://marcgrabanski.com/img/ajax-futures-panel.jpg)
+![](./ajax-futures-panel.jpg)
 
 ## jQuery Advanced
 
@@ -42,7 +42,7 @@ In order for a backend framework to be useful to me it must leave the presentati
 Paul overviewed some of the recent happening online that replicate we know and love on the desktop, such as drag&drop and collapse&expand. He put a term to these interactions called, [design patterns". Design patterns are solutions for interactive, navigation and visualization problems. On the browser they are often JavaScript based. Then he showed off real world examples and how they are coded in JavaScript. He finished by showing the ready to use components in the "jQuery User Interface library (JUI)](http://ui.jquery.com/) .
 [Paul's Slides](http://ajaxexperience.techtarget.com/images/Presentations/Bakaus_Paul_DesignPatters_jQuery.pdf)
 
-![](http://marcgrabanski.com/img/tae-paul-jui.jpg)
+![](./tae-paul-jui.jpg)
 
 ## Hands on DWR
 

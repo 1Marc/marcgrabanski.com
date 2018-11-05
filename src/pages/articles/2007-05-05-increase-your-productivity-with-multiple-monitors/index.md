@@ -6,13 +6,13 @@ tags:
   - 'Business'
   - 'Productivity'
   - 'Tips & Misc'
-date: '2007-05-05T17:00:00.000Z'
+date: '2007-05-05T17:35:00.000Z'
 draft: false
 category: 'test'
 layout: 'post'
 ---
 
-![](http://marcgrabanski.com/img/seven4b.jpg)
+![](./seven4b.jpg)
 
 [Photo is Stefan Didak's Home Office](http://www.stefandidak.com/office/index.php)
 
@@ -24,7 +24,7 @@ This office is amazing. Although it looks like overkill, adding more monitor rea
 
 Apple didn't think it was a good idea to be minimizing and expanding windows all day either. This is why they developed expose.
 
-![](http://marcgrabanski.com/img/expose_meme.jpg)
+![](./expose_meme.jpg)
 
 Expose allows you to see all of your windows laid in front of you so you can choose the appropriate one. This is so much better than searching through your taskbar to find the right window.
 

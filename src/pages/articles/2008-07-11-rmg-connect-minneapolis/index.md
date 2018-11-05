@@ -11,7 +11,7 @@ category: 'test'
 layout: 'post'
 ---
 
-> Note on Jan 6th, 2013: the company is now Digitaria Minneapolis.
+**Note: The company is now Mirum Minneapolis. In the past it was called JWT Minneaplis, then RMG Connect, then Digitaria. 😅**
 
 _After working for JWT Minneapolis for two years, I would like to take this moment to wrap up what I've learned and pay them some due respect. For those of you wondering where I've gone from JWT, I moved on to being a consultant and to start my own business building web applications._
 
@@ -20,8 +20,8 @@ _After working for JWT Minneapolis for two years, I would like to take this mome
 ## Business Structure of JWT Minneapolis
 
 The biggest takeaway from my experience at JWT was structure. From a high level, this is how the office was broken down into roles and responsibilities on the production side of the business:
-\*\* **Account Executive:** Makes initial relationship with the client. Gets contract signed, presents RFP response, on-going client contact.
 
+- **Account Executive:** Makes initial relationship with the client. Gets contract signed, presents RFP response, on-going client contact.
 - **Strategist:** Interviews the client to find out their goals with JWT services, big picture people. Decides on a product and vision to pursue with JWT.
 - **(PM) Project Manager:** Estimates hours, creates project plan and lays out project time-line. Becomes client contact for anything project related.
 - **(BA) Business Analyst:** Defines business requirements and use cases.
