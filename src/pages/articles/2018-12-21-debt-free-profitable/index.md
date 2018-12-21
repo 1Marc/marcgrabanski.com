@@ -1,5 +1,5 @@
 ---
-slug: 'debt-free-profitable'
+path: 'debt-free-profitable'
 title: '2018: Debt Free & Profitable'
 description: ''
 tags:
