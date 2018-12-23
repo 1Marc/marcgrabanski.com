@@ -4,7 +4,7 @@ title: '2018: Debt Free & Profitable'
 description: ''
 tags:
   - "Marc Grabanski's Work"
-date: '22018-12-21T16:39:09.213Z'
+date: '2018-12-21T16:39:09.213Z'
 draft: false
 category: 'test'
 layout: 'post'

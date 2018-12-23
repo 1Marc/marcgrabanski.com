@@ -12,7 +12,7 @@ layout: 'post'
 
 ## 2017 was the year I built a team of amazing people
 
-We are small, but incredibly effective. The 7 of us -- 5 full time and 2 contractors. We are **all focused together on one mission together: improving the state of (professional) education**. We are all working together on [Frontend Masters](https://frontendmasters.com), where **50+ teachers share their experiences and knowledge with tens of thousands of software developers**, making an impact on their careers and their life's path.
+We are small, but incredibly effective. The 7 of us – 5 full time and 2 contractors. We are **all focused together on one mission together: improving the state of (professional) education**. We are all working together on [Frontend Masters](https://frontendmasters.com), where **50+ teachers share their experiences and knowledge with tens of thousands of software developers**, making an impact on their careers and their life's path.
 
 ## We Moved to Downtown Minneapolis!
 
@@ -30,11 +30,16 @@ It feels magical to have all of us using the fresh parts of our day working toge
 
 ## Looking Back: Hiring Contractors
 
-In the Early Days Our needs were seasonal -- we recorded workshops only 3 months for the first few years and didn't need ongoing help. Hiring contractors, even if they were expensive, cut costs and **helped me retain equity over the first few years while I proved out the product.** Over time though as the business was proven out, contractors became much more expensive to hire ongoing than having a tight, focused team working together day after day.
+In the Early Days Our needs were seasonal – we recorded workshops only 3 months for the first few years and didn't need ongoing help. Hiring contractors, even if they were expensive, cut costs and **helped me retain equity over the first few years while I proved out the product.** Over time though as the business was proven out, contractors became much more expensive to hire ongoing than having a tight, focused team working together day after day.
 
 ## Starting a Business: Choosing Contractors or Employees
 
-To start, you choose: - hire employees and give them quite a lot of equity to join you to de-risk the business in the early-days. - OR pay contractors a premium. Contractors just have to trust that you'll pay your bills in order to work with you. Your job, in the early days, is to **de-risk the business and prove that your product works in the market**. _You either have to give employees a lot of equity, or pay contractors a premium._ I chose to work two contract jobs in order to afford to pay the contractors and retain equity in the business.
+To start, you choose either:
+
+1. Hire employees and give them quite a lot of equity to join you to de-risk the business in the early-days. 
+2. Pay contractors a premium.
+
+Contractors just have to trust that you'll pay your bills in order to work with you. Your job, in the early days, is to **de-risk the business and prove that your product works in the market**. _You either have to give employees a lot of equity, or pay contractors a premium._ I chose to work two contract jobs in order to afford to pay the contractors and retain equity in the business.
 
 ## Transitioning Away from Contractors to Vested Full Time Employees
 
@@ -53,7 +58,7 @@ We hired a **CTO who has replaced most of our old broken systems** that were hac
 
 ## Improving My Health
 
-In 2015 my metabolism started to drop and I went in to measure my body composition. 28% body fat! Embarrassing to me since I was skinny all of my life. I tried running a lot but it didn't seem to help. Eventually I got a trainer and started lifting weights twice per week. In less than 6-12 months I got down to 17% body fat and was able to deadlift 375 lb and squat 285 multiple times. Pretty happy with that. Overall I've shed around 30 pounds of fat and put on like 40 pounds of muscle. Pretty dramatic change in body composition. All I'm doing is **lifting weights twice per week for about 30-45 minutes, but it's made all the difference in the world health-wise**.
+In 2015 my metabolism started to drop and I went in to measure my body composition. 28% body fat! Embarrassing to me since I was skinny all of my life. I tried running a lot but it didn't seem to help. Eventually I got a trainer and started lifting weights twice per week. In less than 6-12 months I got down to 17% body fat and was able to deadlift 375lb and squat 285 multiple times. Pretty happy with that. Overall I've shed around 30 pounds of fat and put on like 40 pounds of muscle. Pretty dramatic change in body composition. All I'm doing is **lifting weights twice per week for about 30-45 minutes, but it's made all the difference in the world health-wise**.
 
 ## Crypto Currency
 
@@ -63,7 +68,7 @@ I got super fascinated with crypto currencies this year and started investing ab
 
 In 2018 I'd like to:
 
-- **Business:** Grow at least 2x again= by trying out marketing experiments and making major innovations / breakthroughs on the core product. We need to focus a lot this year on growth and innovation. Ideally growing out the team by at least 2-4 more people.
+- **Business:** Grow at least 2x again by trying out marketing experiments and making major innovations / breakthroughs on the core product. We need to focus a lot this year on growth and innovation. Ideally growing out the team by at least 2-4 more people.
 - **Fun:** Plan out some group activities for my extended friend network to meet each other. In 2017 I setup a 15 person paintball outing that was a ton of fun. I need to do more of this type of thing!
 - **Family:** Plan out more vacations and key fun things I want to do with my family. I haven't been great at planning in advance for family stuff. I'd also like to re-connect with some of my extended family.
 - **Health:** I'd like to get back down to 15% body fat and continue to grow lean muscle mass in a sustainable way where I can keep in shape for the longterm. Cheers and thank you all so much for the support and love! I really feel like a lot of people are cheering us on to continue to improve how we can better learn professional skills.
