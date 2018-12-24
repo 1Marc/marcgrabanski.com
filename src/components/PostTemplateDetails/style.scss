@@ -57,8 +57,8 @@
     @include margin-top(1);
     @include margin-bottom(2);
     &-title {
-      color: $color-gray;
       a:hover {
+        color: $typographic-link-color;
         border-bottom: 2px solid;
       }
     }
@@ -148,6 +148,12 @@
       color: $color-base;
       border: 0;
     }
+  }
+  &__home-photo {
+    display: inline-block;
+    margin-bottom: 0;
+    border-radius: 50%;
+    background-clip: padding-box;
   }
 }
 

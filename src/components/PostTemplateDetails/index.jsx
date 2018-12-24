@@ -18,7 +18,7 @@ class PostTemplateDetails extends React.Component {
         <Link className="post-single__home-button" to="/">
           <img
             src={profilePic}
-            className="sidebar__author-photo"
+            className="post-single__home-photo"
             width="75"
             height="75"
             alt={author.name}
