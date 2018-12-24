@@ -1,11 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import moment from 'moment'
+import profilePic from '../../pages/photo.jpg'
+import Links from '../Links'
 import './style.scss'
 
 class PostTemplateDetails extends React.Component {
   render() {
-    const { author } = this.props.siteMetadata
+    const { author, subtitle } = this.props.siteMetadata
     const post = this.props.post
     const next = this.props.next
     const prev = this.props.prev
@@ -14,7 +16,13 @@ class PostTemplateDetails extends React.Component {
     const homeBlock = (
       <div>
         <Link className="post-single__home-button" to="/">
-          All Articles
+          <img
+            src={profilePic}
+            className="sidebar__author-photo"
+            width="75"
+            height="75"
+            alt={author.name}
+          />
         </Link>
       </div>
     )
@@ -54,19 +62,16 @@ class PostTemplateDetails extends React.Component {
 
           <div className="post-single__footer">
             {tagsBlock}
-            {/* 
             <hr />
-            <p className="post-single__footer-text">
-              Don't forget to&nbsp;
-              <a
-                href={`https://twitter.com/${author.twitter}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <strong>say "hi" 👋 on Twitter!</strong>
-              </a>
-            </p> 
-            */}
+            <div>
+              <h2 className="post-single__footer-title">
+                <Link className="sidebar__author-title-link" to="/">
+                  {author.name}
+                </Link>
+              </h2>
+              <p className="post-single__footer-subtitle">{subtitle}</p>
+            </div>
+            <Links data={author} />
           </div>
 
           <div className="post-single__footer-nextprev">

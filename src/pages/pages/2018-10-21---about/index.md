@@ -6,7 +6,7 @@ path: '/about'
 
 **The web is the most fertile ground to build on which is why I’ve _dedicated my life_ to _teaching people_ how to build their dreams with _great user interface code and interface design_.**
 
-![Frontend Masters](https://static.frontendmasters.com/assets/brand/logos/full.png)
+[<img src="https://static.frontendmasters.com/assets/brand/logos/full.png" alt="Frontend Masters" width="400">](https://frontendmasters.com)
 
 I am CEO of Frontend Masters which publishes [in-depth, modern front-end engineering courses](https://frontendmasters.com).
 

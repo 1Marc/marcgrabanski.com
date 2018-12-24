@@ -20,7 +20,7 @@ Some things teams need:
 - To be growing each day and be surrounded by people that are encouraging you to grow.
 - To be in a financially secure environment.
 
-That last one, "financially secure" has been an issue in the early days... even until early 2018. They need to feel secure and stable if they're going to view working at the company as a viable career option – and not just a temporary gig to add to their portfolio like many job options out there.
+That last one, "financially secure" has been an issue in the early days... even until early 2018. The team needs to feel secure and stable if they're going to view working at the company as a viable career option – and not just a temporary gig to add to their portfolio like many job options out there.
 
 ## Becoming Debt Free and Financially Stable
 
