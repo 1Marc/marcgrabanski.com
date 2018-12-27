@@ -7,7 +7,6 @@ tags:
   - 'The Basics'
 date: '2010-05-11T08:36:32.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

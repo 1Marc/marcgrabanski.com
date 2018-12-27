@@ -7,7 +7,6 @@ tags:
   - 'Communication'
 date: '2008-09-25T23:15:17.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

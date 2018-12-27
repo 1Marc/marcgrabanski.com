@@ -8,7 +8,6 @@ tags:
   - 'The Basics'
 date: '2008-04-23T18:59:12.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

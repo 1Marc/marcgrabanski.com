@@ -7,7 +7,6 @@ tags:
   - 'Twitter'
 date: '2009-05-10T01:31:27.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

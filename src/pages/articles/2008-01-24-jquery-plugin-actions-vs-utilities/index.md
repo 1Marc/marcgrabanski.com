@@ -7,7 +7,6 @@ tags:
   - 'jQuery'
 date: '2008-01-24T09:50:23.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

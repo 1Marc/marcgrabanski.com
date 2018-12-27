@@ -8,7 +8,6 @@ tags:
   - 'Tutorial'
 date: '2008-07-22T11:34:03.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

@@ -7,7 +7,6 @@ tags:
   - "Marc Grabanski's Work"
 date: '2015-09-25T18:10:28.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

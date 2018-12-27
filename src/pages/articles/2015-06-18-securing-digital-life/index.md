@@ -6,7 +6,6 @@ tags:
   - 'Security'
 date: '2015-06-18T06:09:00.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

@@ -7,7 +7,6 @@ tags:
   - 'My Work'
 date: '2007-05-05T17:27:00.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

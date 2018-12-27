@@ -7,7 +7,6 @@ tags:
   - 'Management'
 date: '2009-03-15T13:28:35.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

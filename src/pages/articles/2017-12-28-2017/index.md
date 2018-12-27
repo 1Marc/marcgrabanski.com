@@ -6,7 +6,6 @@ tags:
   - "Marc Grabanski's Work"
 date: '2017-12-28T02:33:54.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 
@@ -71,4 +70,6 @@ In 2018 I'd like to:
 - **Business:** Grow at least 2x again by trying out marketing experiments and making major innovations / breakthroughs on the core product. We need to focus a lot this year on growth and innovation. Ideally growing out the team by at least 2-4 more people.
 - **Fun:** Plan out some group activities for my extended friend network to meet each other. In 2017 I setup a 15 person paintball outing that was a ton of fun. I need to do more of this type of thing!
 - **Family:** Plan out more vacations and key fun things I want to do with my family. I haven't been great at planning in advance for family stuff. I'd also like to re-connect with some of my extended family.
-- **Health:** I'd like to get back down to 15% body fat and continue to grow lean muscle mass in a sustainable way where I can keep in shape for the longterm. Cheers and thank you all so much for the support and love! I really feel like a lot of people are cheering us on to continue to improve how we can better learn professional skills.
+- **Health:** I'd like to get back down to 15% body fat and continue to grow lean muscle mass in a sustainable way where I can keep in shape for the longterm.
+
+Cheers and thank you all so much for the support and love! I really feel like a lot of people are cheering us on to continue to improve how we can better learn professional skills.

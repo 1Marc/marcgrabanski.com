@@ -6,7 +6,6 @@ tags:
   - 'Communication'
 date: '2014-03-25T22:07:05.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

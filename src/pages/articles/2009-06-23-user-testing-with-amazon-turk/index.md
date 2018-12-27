@@ -7,7 +7,6 @@ tags:
   - 'Usability & Testing'
 date: '2009-06-23T10:08:31.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

@@ -35,18 +35,6 @@
     &-divider {
       margin: 0 5px;
     }
-    &-category {
-      &-link {
-        font-size: $typographic-small-font-size;
-        color: $color-secondary;
-        font-weight: 500;
-        text-transform: uppercase;
-        &:hover,
-        &:focus {
-          color: $color-primary;
-        }
-      }
-    }
   }
   &__readmore {
     font-size: $typographic-base-font-size;

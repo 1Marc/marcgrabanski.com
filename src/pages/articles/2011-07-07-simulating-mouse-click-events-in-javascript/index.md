@@ -6,7 +6,6 @@ tags:
   - 'JavaScript & jQuery'
 date: '2011-07-07T17:36:13.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

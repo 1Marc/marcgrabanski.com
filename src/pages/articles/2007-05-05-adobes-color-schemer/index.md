@@ -7,7 +7,6 @@ tags:
   - 'Design'
 date: '2007-05-05T17:22:00.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

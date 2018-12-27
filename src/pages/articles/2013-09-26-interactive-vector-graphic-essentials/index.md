@@ -6,7 +6,6 @@ tags:
   - 'HTML5 and SVG'
 date: '2013-09-26T00:32:23.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

@@ -8,7 +8,6 @@ tags:
   - 'Open Source'
 date: '2007-05-05T17:24:00.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

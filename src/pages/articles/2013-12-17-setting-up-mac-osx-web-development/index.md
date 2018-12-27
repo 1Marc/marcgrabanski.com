@@ -6,7 +6,6 @@ tags:
   - 'Mac OS X'
 date: '2013-12-17T07:55:10.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

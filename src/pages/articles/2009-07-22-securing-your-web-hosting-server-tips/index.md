@@ -8,7 +8,6 @@ tags:
   - 'Security'
 date: '2009-07-22T21:41:44.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

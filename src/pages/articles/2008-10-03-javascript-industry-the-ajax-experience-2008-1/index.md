@@ -8,7 +8,6 @@ tags:
   - 'JavaScript'
 date: '2008-10-03T09:11:00.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

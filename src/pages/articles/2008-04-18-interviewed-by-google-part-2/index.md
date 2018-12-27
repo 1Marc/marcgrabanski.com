@@ -7,7 +7,6 @@ tags:
   - 'Google & Yahoo'
 date: '2008-04-18T09:40:27.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

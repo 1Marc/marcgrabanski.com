@@ -6,7 +6,6 @@ tags:
   - 'Business'
 date: '2010-01-14T10:30:30.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

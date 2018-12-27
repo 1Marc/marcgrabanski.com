@@ -7,7 +7,6 @@ tags:
   - 'Productivity'
 date: '2010-08-12T20:53:55.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

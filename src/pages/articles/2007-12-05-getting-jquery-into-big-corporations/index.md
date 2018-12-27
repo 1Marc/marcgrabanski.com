@@ -9,7 +9,6 @@ tags:
   - 'jQuery'
 date: '2007-12-05T21:44:15.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 

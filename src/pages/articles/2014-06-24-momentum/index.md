@@ -6,7 +6,6 @@ tags:
   - 'Tips & Misc'
 date: '2014-06-24T01:12:51.000Z'
 draft: false
-category: 'test'
 layout: 'post'
 ---
 
