@@ -11,7 +11,7 @@ draft: false
 layout: 'post'
 ---
 
-![](./logo-jquery.jpg)
+![](./logo-jquery-1.jpg)
 
 A friend asked me a simple question today, but it is worth noting because I have asked the same before, "How do you get the current value from a select list?" To get the current value is very simple using `val()` .
 
@@ -25,7 +25,9 @@ But sometimes you may need to get the selected option's text. This is not as str
 $('#selectList :selected').text()
 ```
 
-> Note on July 23 `9:14AM: **HoyaSaxa93** wrote in to ask how to get values from select multiples. I will create the demo and code below. This would be how to set a select multiple to an array called,"foo".
+> Note on July 23 `9:14AM: **HoyaSaxa93** wrote in to ask how to get values from select multiples.
+
+This would be how to set a select multiple to an array called, "foo":
 
 ```js
 var foo = []
