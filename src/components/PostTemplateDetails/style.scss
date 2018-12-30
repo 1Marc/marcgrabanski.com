@@ -15,7 +15,7 @@
     font-weight: 600;
     @include line-height(2);
     @include margin-top(1);
-    @include margin-bottom(0.5);
+    @include margin-bottom(0);
   }
   &__body {
     & figure {
@@ -103,7 +103,8 @@
     max-width: $layout-post-single-width;
     margin-left: auto;
     margin-right: auto;
-    font-size: $typographic-base-font-size * 1.1;
+    font-size: $typographic-base-font-size * 1;
+    color: $color-gray;
   }
   &__tags {
     @include margin-bottom(0.5);
