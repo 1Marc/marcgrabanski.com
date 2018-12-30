@@ -59,6 +59,7 @@ export const pageQuery = graphql`
       html
       fields {
         tagSlugs
+        fileSlug
       }
       frontmatter {
         title

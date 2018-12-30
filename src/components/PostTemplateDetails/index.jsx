@@ -12,6 +12,7 @@ class PostTemplateDetails extends React.Component {
     const next = this.props.next
     const prev = this.props.prev
     const tags = post.fields.tagSlugs
+    const fileSlug = post.fields.fileSlug
 
     const homeBlock = (
       <div>
@@ -58,6 +59,14 @@ class PostTemplateDetails extends React.Component {
               className="post-single__body"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
+            <div className="post-single__footer">
+              <a
+                rel="nofollow"
+                href={`https://github.com/1Marc/marcgrabanski.com/edit/master/src/pages/articles/${fileSlug}/index.md`}
+              >
+                Edit Post on Github
+              </a>
+            </div>
           </div>
 
           <div className="post-single__footer">
