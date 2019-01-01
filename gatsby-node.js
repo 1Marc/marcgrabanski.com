@@ -100,5 +100,9 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       )
       createNodeField({ node, name: 'tagSlugs', value: tagSlugs })
     }
+
+    const { dir } = path.parse(fileNode.absolutePath)
+    const folderName = dir.slice(dir.indexOf('/articles/') + 10)
+    createNodeField({ node, name: 'fileSlug', value: folderName })
   }
 }

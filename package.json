@@ -23,7 +23,6 @@
   ],
   "author": "Marc Grabanski",
   "dependencies": {
-    "@weknow/gatsby-remark-twitter": "^0.1.2",
     "bluebird": "^3.5.3",
     "gatsby": "^2.0.80",
     "gatsby-plugin-catch-links": "^2.0.9",
