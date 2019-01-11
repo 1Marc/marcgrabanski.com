@@ -54,7 +54,7 @@ I couldn't be more pumped about the new system...go team!
 
 - **Course statuses** — An issue with updating courses is that people were taking the old versions. We added this status indicator at the top of old courses to make sure they're pointed to the updated course.
 
-![Coures Statuses](statuses.png)
+![Course Statuses](statuses.png)
 
 - **Bootcamp Website** – The biggest project of the year was putting together a 2 week bootcamp to take beginners from nothing all the way up to having autonomy and taking control of their learning. By the end they were able to actually code their own projects. I built a sub-website around this project.
 - **Promotional Websites** - Every spring and fall we have a new theme for promoting the things we're building. We launched an [updated iOS app](https://itunes.apple.com/us/app/frontend-masters/id1383780486?ls=1&mt=8) and a [new Android app](https://play.google.com/store/apps/details?id=in.mjg.frontendmasters.store&utm_source=frontendmasters_com&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1) (which I had nothing to do with), but what I did do was build both of the sub-sites for the promotions.
