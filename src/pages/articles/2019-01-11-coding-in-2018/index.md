@@ -19,7 +19,7 @@ This was mostly thanks to our new team enabling me to work on the site, combined
 
 The fastest websites do one thing first and foremost: focus on delivering the HTML content. Plus they aren't blocked by script parsing, loading of styles, or 3rd party content. The new site is compiled static HTML files built with Go's static site generator, [Hugo](https://gohugo.io).
 
-A static site generator just means that a visitor of your site is going to get a prebuilt HTML file served to them instead of rendering the template dynamically on the server, similar to what you get with WordPress out of the box.
+A static site generator just means that a visitor of your site is going to get a prebuilt HTML file served to them instead of rendering the template dynamically on the server. WordPress out of the box render pages dynamically, and you have to add caching to make it fast. With static generators, your site is fast out of the box.
 
 From there, we modified Hugo to also be able to render templates on the fly, which enables us to reuse the same template hydrated with user data if the user is logged in.
 
