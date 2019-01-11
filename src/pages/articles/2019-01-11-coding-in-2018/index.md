@@ -22,17 +22,17 @@ We built the system with two goals in mind:
 
 ## #1: How FrontendMasters.com is So Fast
 
-Fast websites focus on delivering the HTML content immediately, and aren't blocked by script parsing, loading of styles, or 3rd party content. Our new site is compiled static HTML files built with Go's static site generator, [Hugo](https://gohugo.io).
+Fast websites deliver the HTML content immediately and don't block this with script parsing, style loading, or 3rd party content. Our new website achieves this by serving compiled static HTML files built with Go’s static site generator, [Hugo](https://gohugo.io).
 
 By using a static site generator, the visitors of your site will get served prebuilt HTML files. They don't need to be rendered on the server dynamically like WordPress does out of the box. With static generators, your sites are fast by default.
 
-From there, we modified Hugo to render templates on the fly. This enables us to use the same template we did for the static site, but now hydrated with user data if the user is logged in.
+From there, we modified Hugo to render templates on the fly. This process enables us to use the same template we did for the static site but now hydrated with user data if the user is logged in.
 
-**What we ended up with was a system that gives us the best of both worlds.** The site serves the user static files if you're just visiting the site (which makes the ⚡️ site super fast), but if you're logged in, you get the same templates rendered with your user data on the fly.
+**What we ended up with was a system that gives us the best of both worlds.** The site serves the user the static files if you’re visiting the site anonymously (which makes the ⚡️ site super fast), but if you’re logged in, you get the same templates rendered with your user data on the fly.
 
 ## #2: Developer Experience
 
-This system is not only fast, but also a pleasure to work with. We don't need two separate systems for logged in vs logged out users... we have **one template to rule them all!**
+This system is not only fast, but also a pleasure to work in. We don't need two separate systems for logged in vs logged out users... we have **one template to rule them all!**
 
 ### Webpack and BrowserSync
 
