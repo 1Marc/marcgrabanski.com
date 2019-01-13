@@ -1,6 +1,6 @@
 ---
 path: 'coding-2018'
-title: '💻 Coding in 2018'
+title: '💻 Coding a Lot More in 2018'
 description: ''
 tags:
   - "Marc Grabanski's Work"

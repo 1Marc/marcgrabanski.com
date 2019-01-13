@@ -1,6 +1,6 @@
 ---
 path: '2017'
-title: '2017: The Year I Built a Team 😀'
+title: '🏙 2017: The Year I Built a Team'
 description: ''
 tags:
   - "Marc Grabanski's Work"

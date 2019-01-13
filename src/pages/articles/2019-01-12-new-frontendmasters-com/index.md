@@ -1,6 +1,6 @@
 ---
 path: 'new-frontend-masters-website'
-title: 'The New Frontend Masters Site 🏎💨'
+title: '🏎💨 The New Frontend Masters Site'
 description: ''
 tags:
   - 'Performance'
@@ -14,10 +14,10 @@ We built it about a year ago now, but the new web stack we built is an absolute 
 
 The new [Frontend Masters](https://frontendmasters.com) website was built system with two goals in mind:
 
-1. Performance – it's ⚡️ fast!
-2. Solid developer experience - the tools need to show your updates automatically.
+1. Performance
+2. Developer Experience
 
-## #1: Performance
+## #1: Performance – It's ⚡️ fast!
 
 Fast websites deliver the HTML content immediately and don't block this with script parsing, style loading, or 3rd party content. Our new website achieves this by serving compiled static HTML files built with Go’s static site generator, [Hugo](https://gohugo.io).
 
@@ -35,9 +35,12 @@ Overall our webpage test results are pretty good. 😀
 
 There's more we have planned to improve performance, such as building the JS & CSS assets into Cloudfront and updating the caching rules on them.
 
-## #2: Developer Experience
+## #2: Developer Experience – It's a Pleasure to Work In
 
-This system is not only fast, but also a pleasure to work in. We don't need two separate systems for logged in vs logged out users... we have **one template to rule them all!**
+Why is the new system fun to work in?
+
+1. Changes you make show up instantly with Webpack & BrowserSync.
+1. Developing for logged in vs logged out users can be done with one template.
 
 ### Webpack and BrowserSync
 
@@ -45,8 +48,10 @@ We're using Webpack to build local file changes and BrowserSync to push those ch
 
 ![Modern Development Experience](dev-experience.gif)
 
-### Updating the Templates Based on Different States
+### One Template to Handle Different State
 
 Developing the logged in vs. logged out Hugo templates is super smooth as well since all of our data is in local YAML data files. These YAML files are what get replaced on the server when rendering the dynamic pages. Developing the logged in pages is as simple as editing the local YAML `auth.yml` file and switching the logged in property to `true`.
+
+This means we can switch out data in local YAML files to update any number of states inside the templates – **one template to rule them all**!
 
 It's a lot of fun to work in and I couldn’t be more pumped about the new system…go, team!

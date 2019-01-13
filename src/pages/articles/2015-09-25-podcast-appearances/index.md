@@ -1,6 +1,6 @@
 ---
 path: 'podcast-appearances'
-title: '🎙 4 Podcast Appearances in 2015'
+title: '🎙 Four Podcast Appearances in 2015'
 description: ''
 tags:
   - 'Business'

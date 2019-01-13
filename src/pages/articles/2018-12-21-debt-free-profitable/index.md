@@ -1,6 +1,6 @@
 ---
 path: 'debt-free-profitable'
-title: '2018: Debt Free & Profitable 📈'
+title: '📈 2018: Debt Free & Profitable'
 description: ''
 tags:
   - "Marc Grabanski's Work"
