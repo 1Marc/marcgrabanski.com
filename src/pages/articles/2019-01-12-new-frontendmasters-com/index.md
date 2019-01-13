@@ -1,6 +1,6 @@
 ---
 path: 'new-frontend-masters-website'
-title: 'Speeding Up the New Frontend Masters Site 🏎💨'
+title: 'The New Frontend Masters Site 🏎💨'
 description: ''
 tags:
   - 'Performance'
@@ -10,7 +10,9 @@ draft: false
 layout: 'post'
 ---
 
-The new web stack we built is an absolute pleasure to work with. We built the new [Frontend Masters](https://frontendmasters.com) website and build system with two goals in mind:
+We built it about a year ago now, but the new web stack we built is an absolute pleasure to work with. I'd like to share a few tidbits what makes it so great.
+
+The new [Frontend Masters](https://frontendmasters.com) website was built system with two goals in mind:
 
 1. Performance – it's ⚡️ fast!
 2. Solid developer experience - the tools need to show your updates automatically.
