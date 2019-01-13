@@ -1,6 +1,6 @@
 ---
 path: 'starting-frontend-masters'
-title: 'Starting Frontend Masters'
+title: '🚀 Starting Frontend Masters'
 description: ''
 tags:
   - 'Business'

@@ -1,6 +1,6 @@
 ---
 path: '2017'
-title: '2017: The Year I Built a Team'
+title: '2017: The Year I Built a Team 😀'
 description: ''
 tags:
   - "Marc Grabanski's Work"
@@ -35,7 +35,7 @@ In the Early Days Our needs were seasonal – we recorded workshops only 3 month
 
 To start, you choose either:
 
-1. Hire employees and give them quite a lot of equity to join you to de-risk the business in the early-days. 
+1. Hire employees and give them quite a lot of equity to join you to de-risk the business in the early-days.
 2. Pay contractors a premium.
 
 Contractors just have to trust that you'll pay your bills in order to work with you. Your job, in the early days, is to **de-risk the business and prove that your product works in the market**. _You either have to give employees a lot of equity, or pay contractors a premium._ I chose to work two contract jobs in order to afford to pay the contractors and retain equity in the business.

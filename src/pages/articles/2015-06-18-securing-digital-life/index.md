@@ -1,6 +1,6 @@
 ---
 path: 'securing-digital-life'
-title: 'Securing Your Digital Life'
+title: '🔒 Securing Your Digital Life'
 description: 'In this post I discuss the tools you can use to be more secure living your digital life.'
 tags:
   - 'Security'

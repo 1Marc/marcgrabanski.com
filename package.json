@@ -4,6 +4,7 @@
   "description": "Marc Grabanski's Blog Site",
   "main": "n/a",
   "scripts": {
+    "start": "npm run dev",
     "dev": "gatsby develop",
     "build": "gatsby build",
     "clean:public": "rm -rf public",

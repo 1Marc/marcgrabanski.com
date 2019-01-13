@@ -8,12 +8,12 @@
     margin: 0 auto;
   }
   &__title {
-    font-size: $typographic-base-font-size * 2.8;
+    font-size: $typographic-base-font-size * 2.3;
     max-width: $layout-post-single-width;
     margin-left: auto;
     margin-right: auto;
     font-weight: 600;
-    @include line-height(2);
+    @include line-height(1.6);
     @include margin-top(1);
     @include margin-bottom(0);
   }
@@ -184,7 +184,6 @@
       padding: 0;
     }
     &__title {
-      @include line-height(2.25);
       @include margin-top(2.25);
     }
     &__body {
