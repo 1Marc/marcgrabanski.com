@@ -10,18 +10,26 @@ draft: false
 layout: 'post'
 ---
 
-We built it about a year ago now, but the new web stack we built is an absolute pleasure to work with. I'd like to share a few tidbits what makes it so great.
+The new web stack behind [Frontend Masters](https://frontendmasters.com) is an absolute pleasure to work with! 😀
 
-The new [Frontend Masters](https://frontendmasters.com) website was built system with two goals in mind:
+The new system was built system with two goals in mind:
 
 1. Performance
 2. Developer Experience
 
-## #1: Performance – It's ⚡️ fast!
+## #1: Performance ⚡️
 
-Fast websites deliver the HTML content immediately and don't block this with script parsing, style loading, or 3rd party content. Our new website achieves this by serving compiled static HTML files built with Go’s static site generator, [Hugo](https://gohugo.io).
+### What Makes a Website Fast?
 
-By using a static site generator, the visitors of your site will get served prebuilt HTML files. They don't need to be rendered on the server dynamically like WordPress does out of the box. With static generators, your sites are fast by default.
+Fast websites deliver the HTML content immediately and don't block this with script parsing, style loading, or 3rd party content. The best way to achieve this, is to use a static site generator like Gatsby, Jekyll or Hugo.
+
+By using a static site generator, your website visitors will get served prebuilt HTML files. When they request a page, it doesn't need to be rendered on the server dynamically (like WordPress does out of the box).
+
+**With static generators, your sites are fast by default.**
+
+### Static vs. Dynamic Page Rendering
+
+Our new website achieves this by serving compiled static HTML files built with Go’s static site generator, [Hugo](https://gohugo.io).
 
 From there, we modified Hugo to render templates on the fly. This process enables us to use the same template we did for the static site but now hydrated with user data if the user is logged in.
 
