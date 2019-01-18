@@ -23,18 +23,19 @@ Here's a list of some projects that I led or was a major part of – documented 
 
 ![Learning Paths](learning-paths.gif)
 
-- **Bootcamp Website** – The largest project of the year was putting together a two-week [bootcamp](https://twitter.com/frontendmasters/status/1046765279731224576) to take beginners from nothing all the way up to having autonomy and taking control of their learning. By the end, they were able to code their own projects. I built a sub-website around this project.
-
-- **Course statuses** — An issue with updating courses is that people were taking the old versions. We added this status indicator at the top of old courses to make sure old courses are pointing to the updated course.
-
-![Course Statuses](statuses.png)
-
-- **Promotional Websites** - Every spring and fall we have a new theme for promoting the things we're building. We launched an [updated iOS app](https://itunes.apple.com/us/app/frontend-masters/id1383780486?ls=1&mt=8) and a [new Android app](https://play.google.com/store/apps/details?id=in.mjg.frontendmasters.store&utm_source=frontendmasters_com&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1) (which I had nothing to do with), but what I did do was build both of the sub-sites for the promotions.
 - **Video Annotations** - One issue our users were having was keeping the code in sync with our courses. So we addressed this by popping up git commands and code snippets within the player. They’re super helpful. Was a blast to be able to take a stab at and get out to the public – this has been on the roadmap for years!
 
 ![Video Annotations](video-annotations.png)
 
+- **Bootcamp Website** – The largest project of the year was putting together a two-week [bootcamp](https://twitter.com/frontendmasters/status/1046765279731224576) to take beginners from nothing all the way up to having autonomy and taking control of their learning. By the end, they were able to code their own projects. I built a sub-website around this project.
+
+* **Course statuses** — An issue with updating courses is that people were taking the old versions. We added this status indicator at the top of old courses to make sure old courses are pointing to the updated course.
+
+![Course Statuses](statuses.png)
+
 - **Static Pages SEO Revamp** – Our build process takes markdown content files and puts it in a data format for Hugo to generate the static pages. I revamped that build process to spit out more SEO-friendly pages, and increased our search traffic by a non-trivial amount.
+- **Promotional Websites** - Every spring and fall we have a new theme for promoting the things we're building. We launched an [updated iOS app](https://itunes.apple.com/us/app/frontend-masters/id1383780486?ls=1&mt=8) and a [new Android app](https://play.google.com/store/apps/details?id=in.mjg.frontendmasters.store&utm_source=frontendmasters_com&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1) (which I had nothing to do with), but what I did do was build both of the sub-sites for the promotions.
+
 - **MarcGrabanski.com** – Moved this site to Gatsby! The [code is up on Github](https://github.com/1Marc/marcgrabanski.com). The most difficult part of the migration was getting the old WordPress posts into a proper markdown format. I tried to hire some help on Upwork...but that didn't go so well. I did write an importer, then from there I clean up the remaining items with some pretty intense regex. Nice to have a blog again... I couldn't get myself to write when it was on WordPress. 😂
 
 ## 😍 Loving Code 15 Years In
