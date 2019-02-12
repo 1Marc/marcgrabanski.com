@@ -132,11 +132,17 @@ Note: All images copyright Nintendo, Konami, Rare & respective game developer.
 
 ![Zelda Minish Cap Gameboy Advanced](./gameboy-advanced-minish-cap.jpg)
 
+## 3DS
+
+### Zelda: A Link Between Worlds
+
 ## Nintendo 64
+
+### Zelda: Ocarina of Time
 
 ### Goldeneye 64
 
-### Zelda: Ocarina of Time
+### Zelda: Majora's Mask
 
 ## Early PC
 
@@ -150,11 +156,13 @@ Note: All images copyright Nintendo, Konami, Rare & respective game developer.
 
 ### Zelda: The Wind Waker
 
+### Zelda: Twilight Princess
+
 ## Nintendo Wii
 
 ### Mario Galaxy
 
-### The Legend of Zelda: Twilight Princess
+### Zelda: Skyward Sword
 
 ### Mario Galaxy 2
 
