@@ -8,11 +8,11 @@ draft: true
 layout: 'post'
 ---
 
+# This is my wall of memories and nostalgia!\*\*
+
 ## Original Nintendo
 
-Note: All images copyright Nintendo, Konami, Rare & respective game developer.
-
-**This is my wall of memories and nostalgia!**
+_Note: All images copyright Nintendo, Konami, Rare & respective game developer._
 
 ### Super Mario Brothers
 
