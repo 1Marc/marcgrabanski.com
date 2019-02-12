@@ -10,6 +10,10 @@ layout: 'post'
 
 ## Original Nintendo
 
+Note: All images copyright Nintendo, Konami, Rare & respective game developer.
+
+**This is my wall of memories and nostalgia!**
+
 ### Super Mario Brothers
 
 ![Super Mario Brothers NES](./nes-mario.jpg)
@@ -42,51 +46,91 @@ layout: 'post'
 
 ![Super Mario Brothers NES](./nes-mario-3.jpg)
 
-## Sega Genesis
-
-### Landstalker
-
-### Toejam and Earl
-
 ## Gameboy
 
 ### Zelda: Link's Awakening
 
-### Tetris
+![Zelda: Link's Awakening Gameboy](./gameboy-links-awakening.jpg)
+
+### Kirby's Dream Land
+
+![Kirby's Dream Land Gameboy](./gameboy-kirbys-dream-land.png)
+
+### Pokemon Blue
+
+![Pokemon Blue](./gameboy-pokemon.jpg)
+
+## Sega Genesis
+
+### Landstalker
+
+![Landstalker Sega](./sega-landstalker.jpg)
 
 ## Super Nintendo
 
 ### Super Mario World
 
+![Super Mario World SNES](./snes-super-mario-world.jpg)
+
+### Super Mario Kart
+
+![Super Mario Kart SNES](./snes-mario-kart.png)
+
 ### Super Metroid
+
+![Super Metroid SNES](./snes-super-metroid.jpg)
 
 ### Zelda: A Link to the Past
 
-### Ninja Turtles in Time
+![Zelda: A Link to the Past SNES](./snes-link-to-past.jpg)
 
 ### Earthbound
 
+![Earthbound SNES](./snes-earthbound.png)
+
 ### Donkey Kong Country
+
+![Donkey Kong Country SNES](./snes-donkey-kong-country.jpg)
+
+### Lufia II
+
+![Lufia II SNES](./snes-lufia-2.jpg)
 
 ### Killer Instinct
 
+![Killer Instinct SNES](./snes-killer-instinct.jpg)
+
 ### Final Fantasy III
+
+![Final Fantasy III SNES](./snes-ff3.jpg)
 
 ## PlayStation
 
 ### Silent Hill
 
+![Silent Hill Playstation PlayStation](./playstation-silent-hill.jpg)
+
 ### Resident Evil
+
+![Resident Evil PlayStation](./playstation-resident-evil.jpg)
 
 ### Resident Evil 2
 
 ### Twisted Metal 2
 
+![Twisted Metal 2 Playstation](./playstation-twisted-metal-2.jpg)
+
 ## Gameboy Color
 
-### Pokemon
+### Zelda: Oracle of Seasons / Ages
+
+![Zelda: Oracle of Seasons / Ages Gameboy Color](./gameboy-color-zelda.jpg)
+
+## Gamebody Advanced
 
 ### Zelda: Minish Cap
+
+![Zelda Minish Cap Gameboy Advanced](./gameboy-advanced-minish-cap.jpg)
 
 ## Nintendo 64
 
