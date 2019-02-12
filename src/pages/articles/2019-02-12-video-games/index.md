@@ -148,7 +148,15 @@ Note: All images copyright Nintendo, Konami, Rare & respective game developer.
 
 ### Paper Mario
 
-### Zelda
+### Zelda: The Wind Waker
+
+## Nintendo Wii
+
+### Mario Galaxy
+
+### The Legend of Zelda: Twilight Princess
+
+### Mario Galaxy 2
 
 ## PC
 
@@ -161,3 +169,9 @@ Note: All images copyright Nintendo, Konami, Rare & respective game developer.
 ### Counter Strike 1.6
 
 ### Counter Strike Global Offensive
+
+## Nintendo Switch
+
+### Mario Odyssey
+
+### Zelda: Breath of the Wild
