@@ -1,14 +1,14 @@
 ---
 path: 'video-games'
-title: '🎮 Walk Through Videogame Memory Lane'
+title: '🎮 Walk Through Video Game Memory Lane'
 description: ''
-? tags
+tags:
 date: '2019-02-12T19:04:56.734Z'
 draft: false
 layout: 'post'
 ---
 
-This post is personal wall of videogame nostalgia! All the games I remember vividly to this day. 💫
+This post is personal wall of video game nostalgia! All the games I remember vividly to this day. 💫
 
 ## Original Nintendo
 
