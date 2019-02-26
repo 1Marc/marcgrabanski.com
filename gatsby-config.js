@@ -4,9 +4,9 @@ const pxtorem = require('postcss-pxtorem')
 module.exports = {
   siteMetadata: {
     url: 'https://marcgrabanski.com',
-    title: 'Marc Grabanski - Web Development and Business',
+    title: `Marc Grabanski - Web Development, Business and Life`,
     subtitle:
-      'The personal blog of Marc Grabanski – Founder, CEO & UI Developer of Frontend Masters',
+      'Web development, business and life thoughts of Marc Grabanski – Founder, CEO & UI Developer of Frontend Masters',
     copyright: '© All rights reserved.',
     menu: [
       {
