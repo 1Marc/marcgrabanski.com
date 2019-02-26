@@ -1,6 +1,6 @@
 ---
 path: 'video-games'
-title: '🎮 A Walk Down Videogame Memory Lane'
+title: '🎮 Walk Through Videogame Memory Lane'
 description: ''
 ? tags
 date: '2019-02-12T19:04:56.734Z'
