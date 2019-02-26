@@ -22,6 +22,10 @@ _Note: All images copyright Nintendo, Konami, Rare & respective game developer._
 
 ![Zelda NES](./nes-zelda.jpg)
 
+### Tecmo Bowl - © Tecmo, 1987
+
+![Tecmo Bowl NES](./nes-tecmo-bowl.png)
+
 ### Super Mario Brothers 2 - © Nintendo, 1988
 
 ![Super Mario Brothers NES](./nes-mario-2.jpg)
@@ -59,6 +63,10 @@ _Note: All images copyright Nintendo, Konami, Rare & respective game developer._
 ### Zelda: A Link to the Past - © Nintendo, 1991
 
 ![Zelda: A Link to the Past SNES](./snes-link-to-past.jpg)
+
+### Aladdin - © Nintendo, 1993
+
+![Aladdin SNES](./snes-aladdin.jpg)
 
 ### Super Metroid - © Nintendo, 1994
 
@@ -163,6 +171,10 @@ _Note: All images copyright Nintendo, Konami, Rare & respective game developer._
 ### Banjo-Kazooie - © Rare 1998
 
 ![Banjo-Kazooie N64](./n64-banjo-kazooie.jpg)
+
+### Turok: Dinosaur Hunter - © Acclaim 1997
+
+![Turok Dinosaur Hunter N64](./n64-turok.jpg)
 
 ### Zelda: Majora's Mask - © Nintendo, 2000
 
