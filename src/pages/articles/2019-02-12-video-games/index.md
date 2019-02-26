@@ -84,6 +84,10 @@ _Note: All images copyright Nintendo, Konami, Rare & respective game developer._
 
 ![Final Fantasy III SNES](./snes-ff3.jpg)
 
+### Mario RPG - © Nintendo, 1996
+
+![Mario RPG SNES](./snes-mario-rpg.png)
+
 ## Sega Genesis
 
 ### Landstalker - © Sega, 1992 (Climax)
