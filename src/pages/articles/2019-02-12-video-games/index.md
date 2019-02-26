@@ -1,185 +1,239 @@
 ---
 path: 'video-games'
-title: '🎮 My Most Memorable Videogames'
+title: '🎮 Memorable Videogames'
 description: ''
-tags:
+? tags
 date: '2019-02-12T19:04:56.734Z'
-draft: true
+draft: false
 layout: 'post'
 ---
 
-# This is my wall of memories and nostalgia!\*\*
+This post is personal wall of videogame nostalgia! All the games I remember vividly to this day. 💫
 
 ## Original Nintendo
 
 _Note: All images copyright Nintendo, Konami, Rare & respective game developer._
 
-### Super Mario Brothers
+### Super Mario Brothers - © Nintendo, 1985
 
 ![Super Mario Brothers NES](./nes-mario.jpg)
 
-### Zelda
+### The Legend of Zelda - © Nintendo, 1986
 
 ![Zelda NES](./nes-zelda.jpg)
 
-### Super Mario Brothers 2
+### Super Mario Brothers 2 - © Nintendo, 1988
 
 ![Super Mario Brothers NES](./nes-mario-2.jpg)
 
-### Dr. Mario
+### Dr. Mario - © Nintendo, 1990
 
 ![Dr. Mario NES](./nes-dr-mario.jpg)
 
-### Teenage Mutant Ninja Turtles II
+### Teenage Mutant Ninja Turtles II - © Konami, 1989
 
 ![Teenage Mutant Ninja Turtles II NES](./nes-tmnt2.jpg)
 
-### Super Dodgeball
+### Super Dodgeball - © Technos, 1988
 
 ![Super Dodgebal NES](./nes-super-dodgeball.jpg)
 
-### Mega Man 4
+### Mega Man 4 - © Capcom, 1991
 
 ![### Mega Man 4 NES](./nes-mega-man-4.jpg)
 
-### Super Mario Brothers 3
+### Super Mario Brothers 3 - © Nintendo, 1988
 
 ![Super Mario Brothers NES](./nes-mario-3.jpg)
 
-## Gameboy
-
-### Zelda: Link's Awakening
-
-![Zelda: Link's Awakening Gameboy](./gameboy-links-awakening.jpg)
-
-### Kirby's Dream Land
-
-![Kirby's Dream Land Gameboy](./gameboy-kirbys-dream-land.png)
-
-### Pokemon Blue
-
-![Pokemon Blue](./gameboy-pokemon.jpg)
-
-## Sega Genesis
-
-### Landstalker
-
-![Landstalker Sega](./sega-landstalker.jpg)
-
 ## Super Nintendo
 
-### Super Mario World
+### Super Mario World - © Nintendo, 1990
 
 ![Super Mario World SNES](./snes-super-mario-world.jpg)
 
-### Super Mario Kart
+### Super Mario Kart - © Nintendo, 1992
 
 ![Super Mario Kart SNES](./snes-mario-kart.png)
 
-### Super Metroid
-
-![Super Metroid SNES](./snes-super-metroid.jpg)
-
-### Zelda: A Link to the Past
+### Zelda: A Link to the Past - © Nintendo, 1991
 
 ![Zelda: A Link to the Past SNES](./snes-link-to-past.jpg)
 
-### Earthbound
+### Super Metroid - © Nintendo, 1994
+
+![Super Metroid SNES](./snes-super-metroid.jpg)
+
+### Earthbound - © Nintendo, 1994 (HAL Laboratory)
 
 ![Earthbound SNES](./snes-earthbound.png)
 
-### Donkey Kong Country
+### Donkey Kong Country - © Nintendo, 1994 (Rare)
 
 ![Donkey Kong Country SNES](./snes-donkey-kong-country.jpg)
 
-### Lufia II
+### Lufia II - © Nintendo, 1995 (Natsume, Neverland)
 
 ![Lufia II SNES](./snes-lufia-2.jpg)
 
-### Killer Instinct
+### Killer Instinct - © Nintendo, 1994 (Rare)
 
 ![Killer Instinct SNES](./snes-killer-instinct.jpg)
 
-### Final Fantasy III
+### Final Fantasy III - © Nintendo, 1990 (Square Enix)
 
 ![Final Fantasy III SNES](./snes-ff3.jpg)
 
+## Sega Genesis
+
+### Landstalker - © Sega, 1992 (Climax)
+
+![Landstalker Sega](./sega-landstalker.jpg)
+
+## Gameboy
+
+### Zelda: Link's Awakening - © Nintendo, 1993
+
+![Zelda: Link's Awakening Gameboy](./gameboy-links-awakening.jpg)
+
+### Kirby's Dream Land - © Nintendo, 1992 (HAL Laboratory)
+
+![Kirby's Dream Land Gameboy](./gameboy-kirbys-dream-land.png)
+
+### Pokemon Blue & Red - © Nintendo, 1996 (Game Freak)
+
+![Pokemon Blue & Red Gameboy](./gameboy-pokemon.jpg)
+
 ## PlayStation
 
-### Silent Hill
-
-![Silent Hill Playstation PlayStation](./playstation-silent-hill.jpg)
-
-### Resident Evil
-
-![Resident Evil PlayStation](./playstation-resident-evil.jpg)
-
-### Resident Evil 2
-
-### Twisted Metal 2
+### Twisted Metal 2 - © Sony, 1996 (989 Studios)
 
 ![Twisted Metal 2 Playstation](./playstation-twisted-metal-2.jpg)
 
+### Castlevania - Symphony of the Night - © Konami, 1997
+
+![Castlevania Symphony of the Night PlayStation](./playstation-caslevania.jpg)
+
+### Resident Evil - © Capcom, 1996
+
+![Resident Evil PlayStation](./playstation-resident-evil.jpg)
+
+### Silent Hill - © Konami, 1999
+
+![Silent Hill PlayStation](./playstation-silent-hill.jpg)
+
+### Resident Evil 2 - © Capcom, 1998
+
+![Resident Evil 2 PlayStation](./playstation-resident-evil-2.jpg)
+
 ## Gameboy Color
 
-### Zelda: Oracle of Seasons / Ages
+### Zelda: Oracle of Seasons & Ages - © Nintendo, 2001
 
-![Zelda: Oracle of Seasons / Ages Gameboy Color](./gameboy-color-zelda.jpg)
+![Zelda: Oracle of Seasons & Ages Gameboy Color](./gameboy-color-zelda.jpg)
 
 ## Gamebody Advanced
 
-### Zelda: Minish Cap
+### Zelda: Minish Cap - © Nintendo, 2004
 
 ![Zelda Minish Cap Gameboy Advanced](./gameboy-advanced-minish-cap.jpg)
 
-## 3DS
-
-### Zelda: A Link Between Worlds
-
 ## Nintendo 64
 
-### Zelda: Ocarina of Time
+### Zelda: Ocarina of Time - © Nintendo, 1998
 
-### Goldeneye 64
+![Zelda: Ocarina of Time Nintendo N64](./n64-zelda-ocarina-of-time.jpg)
 
-### Zelda: Majora's Mask
+### Goldeneye 64 - © Rare 1997
 
-## Early PC
+![Goldeneye Nintendo N64](./n64-goldeneye.jpg)
 
-### Half Life
+### Mario Kart 64 - © Nintendo, 1996
 
-### Red Alert 2
+![Mario Kart 64 N64](./n64-mario-kart.jpg)
 
-## GameCube
+### Diddy Kong Racing - © Rare 1997
 
-### Paper Mario
+![Diddy Kong Racing N64](./n64-diddy-kong-racing.jpg)
 
-### Zelda: The Wind Waker
+### Banjo-Kazooie - © Rare 1998
 
-### Zelda: Twilight Princess
+![Banjo-Kazooie N64](./n64-banjo-kazooie.jpg)
 
-## Nintendo Wii
+### Zelda: Majora's Mask - © Nintendo, 2000
 
-### Mario Galaxy
-
-### Zelda: Skyward Sword
-
-### Mario Galaxy 2
+![Zelda: Majora's Mask Nintendo N64](./n64-zelda-majoras-mask.jpg)
 
 ## PC
 
-### Half Life
+### Half Life - © Valve, 1998
 
-### Red Alert 2
+![Half Life PC](./pc-half-life.jpg)
 
-### Twinsen's Odyssey
+### Red Alert 2 - © EA, 2000
 
-### Counter Strike 1.6
+![Red Alert 2 PC](./pc-red-alert-2.jpg)
 
-### Counter Strike Global Offensive
+### Ultima Online - © EA, 1997
+
+![Ulitima Online PC](./pc-ultima-online.jpg)
+
+### Twinsen's Odyssey - © Adeline, 1997
+
+![Twinsen's Odyssey PC](./pc-twinsens-odyssey.png)
+
+### Counter Strike 1.6 - © Valve, 2000 (Mod of Half Life)
+
+![Counter Strike 1.6 PC](./pc-cs-1-6.jpg)
+
+### Counter Strike Global Offensive - © Valve, 2012
+
+![Counter Strike Global Offensive PC](./pc-cs-global-offensive.jpg)
+
+## GameCube
+
+### Paper Mario - © Nintendo, 2004
+
+![Paper Mario GameCube](./gamecube-paper-mario.jpg)
+
+### Zelda: The Wind Waker - © Nintendo, 2002
+
+![Zelda: The Wind Waker GameCube](./gamecube-zelda-wind-waker.png)
+
+### Zelda: Twilight Princess - © Nintendo, 2006
+
+![Zelda: Twilight Princess GameCube](./gamecube-zelda-twilight-princess.jpg)
+
+## Nintendo Wii
+
+### Mario Galaxy - © Nintendo, 2007
+
+![Mario Galaxy Nintendo Wii](./wii-super-mario-galaxy.jpg)
+
+### Zelda: Skyward Sword - © Nintendo, 2011
+
+![Zelda: Skyward Sword Nintendo Wii](./wii-zelda-skyward-sword.jpg)
+
+### Mario Galaxy 2 - © Nintendo, 2010
+
+![Mario Galaxy 2 Nintendo Wii](./wii-super-mario-galaxy-2.jpg)
+
+## 3DS
+
+### Zelda: A Link Between Worlds - © Nintendo, 2013
+
+![Zelda: A Link Between Worlds 3DS](./3ds-link-between-worlds.png)
 
 ## Nintendo Switch
 
-### Mario Odyssey
+### Mario Odyssey - © Nintendo, 2017
 
-### Zelda: Breath of the Wild
+![Mario Odyssey Nintendo Switch](./switch-mario-odyssey.jpeg)
+
+### Zelda: Breath of the Wild - © Nitendo, 2017
+
+![Zelda: Breath of the Wild Nintendo Switch](./switch-zelda-breath-wild-2.jpg)
+
+Special thanks to Andrew Soucek, Evan Stewart, Timothy Springer, Jared Piepenburg and Chris Jensen – my gaming compadres growing up.
+
+And special thanks to my kids! I played through Mario Odyssey with them and am now through most of Zelda: Breath of the Wild – really enjoy playing with them. 🙂
