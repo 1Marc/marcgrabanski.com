@@ -236,4 +236,4 @@ _Note: All images copyright Nintendo, Konami, Rare & respective game developer._
 
 My gaming compadres growing up were Andrew Soucek, Evan Stewart, Timothy Springer, Noel Barrick, Jared Piepenburg and Chris Jensen. 👊
 
-I played through Mario Odyssey with my kids, and am now through most of Zelda: Breath of the Wild – have been really enjoy playing together! 🙂
+Recently, I played through Mario Odyssey with my kids. We're now going through Zelda: Breath of the Wild – we've really enjoyed playing together – thanks Nintendo! 🙂
