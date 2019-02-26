@@ -234,6 +234,4 @@ _Note: All images copyright Nintendo, Konami, Rare & respective game developer._
 
 ![Zelda: Breath of the Wild Nintendo Switch](./switch-zelda-breath-wild-2.jpg)
 
-Special thanks to Andrew Soucek, Evan Stewart, Timothy Springer, Noel Barrick, Jared Piepenburg and Chris Jensen – my gaming compadres growing up.
-
-And special thanks to my kids! I played through Mario Odyssey with them and am now through most of Zelda: Breath of the Wild – really enjoy playing with them. 🙂
+Andrew Soucek, Evan Stewart, Timothy Springer, Noel Barrick, Jared Piepenburg and Chris Jensen were my gaming compadres growing up...and now my kids! I played through Mario Odyssey with my kids, and am now through most of Zelda: Breath of the Wild – really enjoy playing with them! 🙂
