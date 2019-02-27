@@ -1,8 +1,8 @@
 ---
 path: 'video-games'
-title: '🎮 Walk Through Video Game Memory Lane'
+title: '🎮 A Walk Down Video Game Memory Lane'
 description: ''
-tags:
+? tags
 date: '2019-02-12T19:04:56.734Z'
 draft: false
 layout: 'post'
