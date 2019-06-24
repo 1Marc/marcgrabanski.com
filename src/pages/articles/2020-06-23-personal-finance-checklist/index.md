@@ -10,7 +10,7 @@ layout: 'post'
 
 This year I've went through many personal finance resources. The best book I found is [Ramit Sethi's](https://amzn.to/2WXLrDs).
 
-Here's all the advice I've distilled, boiled down as simply as possible:
+Here's all the advice I've taken, distilled into a simple checklist:
 
 ## Pay Down High-Interest Debts, First
 
