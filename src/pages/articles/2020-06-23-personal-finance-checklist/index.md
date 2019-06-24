@@ -58,6 +58,8 @@ All of these can be negotiated or find lower rates:
 
 You can use a tool like [Truebill](https://www.truebill.com) to gain insights and they can even negotiate many bills for you for a fee if you don't want to do it yourself.
 
+I saved over \$2k/year just by making a few phone calls!
+
 ## Grow Your Money
 
 If you manage to have excess money beyond a savings and tax-advantaged accounts, then your next option is the stock market (or crypto, lol).
