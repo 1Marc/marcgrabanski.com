@@ -1,7 +1,7 @@
 ---
 path: 'personal-finance-checklist'
 title: '💵 Personal Finance Checklist'
-description: ''
+description: 'Here is all the personal finance advice I have taken, distilled into a simple checklist.'
 tags:
 date: '2019-06-23T23:30:30.409Z'
 draft: false
@@ -10,19 +10,19 @@ layout: 'post'
 
 This year I've went through many personal finance resources. The best book I found is [Ramit Sethi's](https://amzn.to/2WXLrDs).
 
-Here's all the advice I've taken, distilled into a simple checklist:
+Here is all the advice I've taken and distilled into a simple checklist:
 
 ## Pay Down High-Interest Debts, First
 
-Credit Card debt is super evil. Get rid of it.
+Credit Card debt is super evil. Get rid of it as before everything else since you can't make more money in the stock market than credit card interest rates.
 
 ## Maximize Tax Advantaged Accounts
 
-The most important thing you can do for your future is take advantage of your money growing in the stock market in a tax-advantaged way.
+The most important thing for your future is to take advantage of money growing in the stock market in a tax-advantaged way.
 
 1. **401k** is a tax-deferred account, your money grows tax-free until you take it out after you retire.
 
-   There's currently a $19,000 limit to how much you can defer from your paycheck throughout the year. Then with employer matching and profit-sharing can get you up to $56,000 per year. As your employer what is possible here!
+   There's currently a $19,000 limit to how much you can defer from your paycheck throughout the year. Then with employer matching and profit-sharing can get you up to $56,000 per year...ask your employer what is possible here to maximize your benefits!
 
 2. **Roth IRA** is the reverse of the 401k, you get taxed before you put into the account, but the total grows tax-free. If you're over a certain income level, you can't use this directly, but you still can contribute up to \$6k/year through what's called a "backdoor Roth IRA" conversion.
 
@@ -77,3 +77,5 @@ If you don't pay at least 20% down on a mortgage, they'll stick you with mortgag
 ## Keep Your Money Safe
 
 Use a password manager like LastPass or [1Password](https://1password.com) so that you aren't reusing passwords across financial sites.
+
+I'm still learning everything I can on this topic... so please let me know on [Twitter](https://twitter.com/1Marc) if you have any other tips!
