@@ -34,7 +34,7 @@ The most important thing for your future is to take advantage of money growing i
 
 ## Optimize Checking & Savings
 
-1. **Find a checking account with no minimums and no fees**. I picked Charles Shchwab because it's online-only and convinient, and has all the services I could ask for without the fees. They will even reimburse ATM fees!
+1. **Find a checking account with no minimums and no fees**. I picked Charles Schwab because it's online-only and convinient, and has all the services I could ask for without the fees. They will even reimburse ATM fees!
 
 2. **Find a savings account with no fees**. I chose the Capital One 360 Savings account. It only has 1% interest compared to their Money Market Savings which has 2%, but there's no fees.
 
