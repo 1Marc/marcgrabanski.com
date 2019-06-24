@@ -14,7 +14,7 @@ Here is all the advice I've taken and distilled into a simple checklist:
 
 ## Pay Down High-Interest Debts, First
 
-Credit Card debt is super evil. Get rid of it as before everything else since you can't make more money in the stock market than credit card interest rates.
+Credit Card debt is super evil. Get rid of it before everything else &mdash; you can't make more money in the stock market than credit card interest rates.
 
 ## Maximize Tax Advantaged Accounts
 
