@@ -29,7 +29,11 @@ var World = {
 ## You Don't Start with Delivering Value to a Small Amount of Users First
 
 In business things actually work almost the exact opposite as casting a wide net. Business starts with resonating greatly with a very small segment of the population. The internet has created more niches than it has mega corporations. And on top of that, almost every software mega corporations started so niche they have almost laughable stories.
-** Groupon? Group-buying coffee and pizza at a local pizzeria. ** Facebook? A network for connecting with fellow Harvard students. ** Twitter? Let people know what you ate for dinner. ** Kahn Academy? Started with a guy in his closet teaching his extended family Math on YouTube.
+
+* Groupon? Group-buying coffee and pizza at a local pizzeria.
+* Facebook? A network for connecting with fellow Harvard students.
+* Twitter? Let people know what you ate for dinner.
+* Kahn Academy? Started with a guy in his closet teaching his extended family Math on YouTube.
 
 So many companies seemed laughable because they made a solution for such a small segment of the population. Almost none of it was ever made for a big audience.
 
@@ -96,7 +100,10 @@ Here's the final kicker. Let's say you don't want money, or fame, or fortune, or
 
 Are you being the change you want to see in the world or are you hoarding your treasure?
 
-** If you go to a conference and find yourself complaining there aren't any good talks...**create a new talk and submit to call for papers!\*\* ** If you look online for a solution and can't find one so create one for yourself...**open source or productize it!\*\* ** If there are no companies you'd like to work at...**create the ideal company you'd love to work for!\*\* ** Can't find a blog you'd like to read...**create a blog and start writing what you want to hear!\*\*
+* If you go to a conference and find yourself complaining there aren't any good talks...create a new talk and submit to call for papers!
+* If you look online for a solution and can't find one so create one for yourself...open source or productize it! 
+* If there are no companies you'd like to work at...create the ideal company you'd love to work for!
+* Can't find a blog you'd like to read...create a blog and start writing what you want to hear!
 
 _Find people who will enjoy what you've made._ It will change you to see people enjoying your creations.
 
