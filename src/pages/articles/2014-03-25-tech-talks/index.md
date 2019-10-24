@@ -84,7 +84,7 @@ Body language matters more than you think when speaking. Although it might seem 
 
 I wish this wasn't true, but **your job at a conference is to introduce and inspire, not (primarily) to teach**.
 
-Don't believe me? Look at this keynote by Scott Hanselman. I don't even know what he's saying, I didn't learn anything and didn't know what his point was, but **he entertained every step of the way and people loved it!**
+Don't believe me? Look at this keynote by Scott Hanselman. I don't really learn anything or know what his point was really, but **he entertained every step of the way and people loved it!**
 
 `youtube: https://www.youtube.com/embed/UzyoT4DziQ4`
 
@@ -98,7 +98,7 @@ I wish you could _just wing it_, but that couldn't be further from the case. **Y
 
 ## 7. Engage, Engage...for God's Sake...Engage!
 
-**Look at the audience, smile and speak louder!** Know your points by heart and make them boldly. No matter how enthusiastic I _think_ I'm being. When I watch the videos later it looks like I'm about 3 notches lower key on the video. I keep telling myself..."DUDE, wake up!" But while I'm speaking I don't feel that way at all. I forget which actor said it, but he said "people want 3x of you on camera, not your normal self."
+**Look at the audience, smile and speak louder!** Know your points by heart and make them boldly. No matter how enthusiastic I _think_ I'm being. When I watch the videos later it looks like I'm about 3 notches lower key on the video. I keep telling myself..."Wake up!" But while I'm speaking I don't feel that way at all. I forget which actor said it, but he said "people want 3x of you on camera, not your normal self."
 
 Also, make sure to look at and embrace the people who are giving you their full attention. For some reason playing off them and looking at them draws me deeper into my own talk. It's a bit weird of a tip maybe...but it works. If you see that people are paying attention to what you're saying, it's easier to feel more comfortable about delivering the points you are making.
 
