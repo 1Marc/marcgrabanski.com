@@ -1,6 +1,6 @@
 ---
 path: 'success'
-title: 'Why These Idiots Are More Successful Than You'
+title: "Why Smart People Don't Become Successful"
 description: "I'll try to do my best to explain to you why smart people don't become succesful."
 tags:
   - 'Business'
@@ -9,7 +9,7 @@ draft: false
 layout: 'post'
 ---
 
-This article is for all of my _insanely smart_ friends. You're so damn smart -- I've told you how awesome I think you and the solutions you've built...they're amazing. You have so many awesome things on your hard drive you built that it would blow the world away if only they knew. You created Facebook before there was Facebook and PayPal before there was PayPal. But recently I've heard you ask, "how can this junk software out there be so popular?"..._why are all these idiots more successful than me?_ I'll try to do my best to explain to you why...
+This article is for all of my _super smart_ friends. You're so damn smart -- I've told you how awesome I think you and the solutions you've built...they're amazing. You have so many awesome things on your hard drive you built that it would blow the world away if only they knew. You created Facebook before there was Facebook and PayPal before there was PayPal. But recently I've heard you ask, "how can this junk software out there be so popular?"..._why are all these people who are no more intellegent than me, more successful?_ I'll try to do my best to explain to you why...
 
 ## You Pre-Maturely Optimize Your Software to Cast a Wide Net, When There's No Fish
 
