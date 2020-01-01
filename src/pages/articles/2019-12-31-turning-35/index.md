@@ -101,7 +101,7 @@ I'm not one to really set specific goals, but I do like to write some general am
 - Create means of getting out my straightforward views on capitalism out through a more personal format like a podcast or YouTube channel.
 - (Potentially) Invest financially or at least advise some engineers who can become leaders of great companies.
 
-### Personal Ambitions
+### Some Personal Ambitions
 
 - See more of the world. I planned to do way more travel in my life than I have, but I haven't found much room for trips in such a busy and compact life.
 - Get some hobbies that involve core strength and stretching. These could be something like Yoga, Jiu-Jitsu, Gymnastics, Indoor Skydiving... or something! I lift weights, but I don't think I can keep it up in my 40s and 50s the way I currently do.
