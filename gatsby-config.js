@@ -3,8 +3,8 @@ const pxtorem = require('postcss-pxtorem')
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://marcgrabanski.com',
     url: 'https://marcgrabanski.com',
+    siteUrl: `https://marcgrabanski.com`,
     title: `Marc Grabanski's Web Development, Business and Life Thoughts`,
     subtitle:
       'Web Development, Business and Life Thoughts from Marc Grabanski – Founder, CEO & UI Developer of Frontend Masters',
@@ -172,6 +172,7 @@ module.exports = {
               site {
                 siteMetadata {
                   url
+                  siteUrl
                 }
               }
               allSitePage(
