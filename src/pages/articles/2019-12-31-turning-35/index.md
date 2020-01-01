@@ -95,15 +95,20 @@ Before celebrating too much, though, there's so much more I need to do in life. 
 
 I'm not one to really set specific goals, but I do like to write some general ambitions down to take a snapshot of things rolling around in my mind. These will be pretty vague and high-level, but **here are some things I'd like to do over the next 5+ years**: (in no particular order)
 
-- Go from the current ~10 person team we have, to building an equally excellent mid or large size company. This item could be a blog post in itself since it consists of scaling the culture and structure of the company to support more people, scaling the existing product, creating new products, etc.
-- Invest financially or at least advise some engineers who can become leaders of great companies.
-- Create a means of getting out my straightforward views on capitalism out through a more personal format like a podcast or YouTube channel.
-- I've been rebuilding my relationship with my parents, I'd like to continue that and extend that to restoring relations with extended family as well.
+### Some Professional Ambitions
+
+- Go from the current ~10 person team we have, to building an even more excellent mid or large size company. This should be a blog post in itself since it consists of scaling the culture and structure of the company to support more people, scaling the existing product, scaling working with teachers, creating new products, etc.
+- Create means of getting out my straightforward views on capitalism out through a more personal format like a podcast or YouTube channel.
+- (Potentially) Invest financially or at least advise some engineers who can become leaders of great companies.
+
+### Personal Ambitions
+
 - See more of the world. I planned to do way more travel in my life than I have, but I haven't found much room for trips in such a busy and compact life.
 - Get some hobbies that involve core strength and stretching. These could be something like Yoga, Jiu-Jitsu, Gymnastics, Indoor Skydiving... or something! I lift weights, but I don't think I can keep it up in my 40s and 50s the way I currently do.
 - On the personal care side, I need to be more vulnerable and develop closer relationships. I want to foster warmer relationships and friendships. I realize this might be nearly impossible to do more of with small children, but as they grow older, I need to develop a circle of fun and supportive people.
 - Give my kids and wife more opportunities to grow and pursue their dreams. I know, this one is _super_ vague, but it's worth mentioning because just like the team and customers at work, I want to give those closest to me the ability to pursue their dreams, likely that will mean me giving up something on this list at least temporarily.
-- Become genuinely financially free to the point that I don't need to work, can retire any day and my family will continue to be provided for.
+- I've been rebuilding my relationship with my parents, I'd like to continue that and extend that to restoring relations with extended family as well.
+- Eventually it's be great to be financially free to the point that I don't need to work, can retire any day and my family will continue to be provided for.
 
 ## "Don't Screw It Up!"
 
