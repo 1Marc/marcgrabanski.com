@@ -49,7 +49,11 @@ class PostTemplateDetails extends React.Component {
           <div className="post-single__inner">
             <h1 className="post-single__title">{post.frontmatter.title}</h1>
             <div className="post-single__date">
-              {moment(post.frontmatter.date).format('MMMM DD, YYYY')}
+              {moment(post.frontmatter.date).isBefore('2007-05-06') ? (
+                <time>Written Sometime Before 2007</time>
+              ) : (
+                moment(post.frontmatter.date).format('MMMM YYYY')
+              )}
             </div>
             <div
               className="post-single__body"

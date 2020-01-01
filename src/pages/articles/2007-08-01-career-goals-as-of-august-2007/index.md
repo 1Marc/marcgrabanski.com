@@ -5,7 +5,7 @@ description: 'Short-term, persistent and long-term web development career goals 
 tags:
   - "Marc Grabanski's Work"
   - 'My Work'
-date: '2007-05-05T17:27:00.000Z'
+date: '2007-08-01T17:27:00.000Z'
 draft: false
 layout: 'post'
 ---
