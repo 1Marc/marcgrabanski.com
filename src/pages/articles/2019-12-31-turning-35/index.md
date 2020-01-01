@@ -15,9 +15,9 @@ This summer (2019) our new baby girl arrived. Now my family is full – we now h
 
 > This is a follow up to my [turning 30](https://marcgrabanski.com/30) post, where I reflected on previous years, ~2010-2014. This article will reflect on the last 5 years, ~2014-2019.
 
-As you get older, finances and health are two things that stick out more than I would have expected. They cause all sorts of cascading effects on the rest of your life if you don’t get them right.
-
 ## Finances and Feeling "Safe"
+
+Finances and health are two things that stick out more than I would have expected. They cause all sorts of cascading effects on the rest of your life if you don’t get them right.
 
 If the business isn't healthy financially, then the team doesn't feel safe. The same goes for your spouse and kids. Everyone wants to work for a financially healthy business, and it solves so many relationship problems when the family is stable financially as well.
 
