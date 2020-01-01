@@ -87,7 +87,7 @@ I was able to take nearly two months at a very reduced capacity to focus on my f
 
 I've created nearly everything I set out to do from my teens and twenties...yet I'm 35, so I've got many years to grow and expand on those dreams. 🚀
 
-The business does a great job mixing social good with capitalism. We've trained a ton of people, we've released a [free bootcamp](https://frontendmasters.com/bootcamp/), we've donated money, we offer great benefits to the team, and even on top of all that the business provides me the ability to be there for my family if they need me.
+The business does a great job mixing social good with capitalism. We've trained a ton of people, we've released a [free bootcamp](https://frontendmasters.com/bootcamp/), we've donated money, we pay our teachers well, we offer great benefits to the team, and even on top of all that the business provides me the ability to be there for my family if they need me.
 
 ## Looking to 2025 and Beyond
 
