@@ -3,6 +3,7 @@ const pxtorem = require('postcss-pxtorem')
 
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://marcgrabanski.com',
     url: 'https://marcgrabanski.com',
     title: `Marc Grabanski's Web Development, Business and Life Thoughts`,
     subtitle:
@@ -87,9 +88,7 @@ module.exports = {
                   description: edge.node.frontmatter.description,
                   date: edge.node.frontmatter.date,
                   url: `${site.siteMetadata.site_url}/${edge.node.fields.slug}`,
-                  guid: `${site.siteMetadata.site_url}/${
-                    edge.node.fields.slug
-                  }`,
+                  guid: `${site.siteMetadata.site_url}/${edge.node.fields.slug}`,
                   custom_elements: [{ 'content:encoded': edge.node.html }],
                 })
               ),
