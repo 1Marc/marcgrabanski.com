@@ -8,7 +8,7 @@ draft: false
 layout: 'post'
 ---
 
-This year saw the birth of our new baby girl. Now I have a full family with four kids! 🤩🤗😱
+This summer our new baby girl arrived. Now my family is full – we now have four kids! 🤩🤗😱
 
 ![Grabanski Family Fall 2019](./family-fall-2019.jpeg)
 
@@ -28,7 +28,7 @@ I cannot believe I've been an entrepreneur for nearly 20 years now. Feels like i
 
 ## Physical Health
 
-I’ve been struggling with staying healthy and remaining in good shape over the last 5 years. I'm pretty sure people see me as a pretty fit and healthy person from the outside. I lift weights every week and remain active through that. But I don’t always view myself as healthy. I shift between being in great shape by working out and watching what I eat, as low as 14-15% body fat, but then when things get stressful, I eat my way back up to 20% body fat or more.
+I’ve been struggling with staying healthy and remaining in good shape over the last 5 years. I'm pretty sure people see me as a pretty fit and healthy person from the outside. I lift weights every week and remain active through that. But I don’t always view myself as healthy. I shift between being in great shape by working out and watching what I eat, as low as 14-15% body fat, but then when things get stressful, I eat my way back up to ~20%.
 
 Over the next 5 years, I hope to be a lot more consistent with my physical health.
 
