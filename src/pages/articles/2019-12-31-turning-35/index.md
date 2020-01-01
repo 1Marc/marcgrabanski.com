@@ -64,7 +64,7 @@ The main thing I've been focused on since 2017 for the company has been building
 
 Currently, we are 9 team members with 2-3 working on contract in a regular capacity.
 
-## Reviewing Over a Decad Ago
+## Reviewing Goals from Over a Decade Ago
 
 Looking at my [goals written in 2007](https://marcgrabanski.com/career-goals-as-of-august-2007) (Mid & Long-Term Goals), I did pretty much everything on that list. Wow ...that really was 13 years ago!
 
