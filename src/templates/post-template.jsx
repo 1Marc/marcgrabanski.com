@@ -65,6 +65,7 @@ export const pageQuery = graphql`
         tags
         date
         description
+        path
       }
     }
     allMarkdownRemark(
@@ -82,6 +83,7 @@ export const pageQuery = graphql`
             title
             date
             description
+            path
           }
         }
       }

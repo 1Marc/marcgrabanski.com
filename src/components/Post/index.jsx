@@ -5,8 +5,8 @@ import './style.scss'
 
 class Post extends React.Component {
   render() {
-    const { title, date, description } = this.props.data.node.frontmatter
-    const { slug } = this.props.data.node.fields
+    const { title, date, description, path } = this.props.data.node.frontmatter
+    const slug = path ? path : this.props.data.node.fields.slug
 
     return (
       <div className="post">

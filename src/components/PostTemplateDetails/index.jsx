@@ -73,12 +73,18 @@ class PostTemplateDetails extends React.Component {
 
           <div className="post-single__footer-nextprev">
             {prev ? (
-              <Link className="post-single__footer-prev" to={prev.fields.slug}>
+              <Link
+                className="post-single__footer-prev"
+                to={prev.frontmatter.path}
+              >
                 &lt;&lt; {prev.frontmatter.title}
               </Link>
             ) : null}
             {next ? (
-              <Link className="post-single__footer-next" to={next.fields.slug}>
+              <Link
+                className="post-single__footer-next"
+                to={next.frontmatter.path}
+              >
                 {next.frontmatter.title} &gt;&gt;
               </Link>
             ) : null}
