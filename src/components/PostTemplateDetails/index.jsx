@@ -52,7 +52,7 @@ class PostTemplateDetails extends React.Component {
               {moment(post.frontmatter.date).isBefore('2007-05-06') ? (
                 <time>Written Sometime Before 2007</time>
               ) : (
-                moment(post.frontmatter.date).format('MMMM YYYY')
+                moment(post.frontmatter.date).format('MMMM DD, YYYY')
               )}
             </div>
             <div
