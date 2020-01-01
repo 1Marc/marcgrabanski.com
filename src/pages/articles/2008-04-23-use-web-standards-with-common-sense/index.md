@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'use-web-standards-with-common-sense'
 title: 'Use Web Standards with Common Sense'
 description: 'css, divitis, divs'

@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'making-starbucks-carmel-macchiatos-at-home'
 title: 'Making Starbucks Carmel Macchiatos at Home'
 description: 'How I make my favorite drink, the Starbucks Carmel Macchiato from home.'
@@ -16,9 +17,9 @@ My favorite drink in the world (at the moment) is a caramel macchiato from Starb
 
 So I picked up what I needed:
 
-- Starbucks Barista Espresso Machine off craigslist for $150
-- Carmel sauce, espresso grounds, vanilla syrup for about $15
-- Double insulated cup for chilled drinks for about $13.
+- Starbucks Barista Espresso Machine off craigslist for \$150
+- Carmel sauce, espresso grounds, vanilla syrup for about \$15
+- Double insulated cup for chilled drinks for about \$13.
 
 After a couple screwed up drinks, I finally got the right combination of espresso, milk and vanilla syrup.I can make it without leaving my house and it tastes just the same, if not better since I control the proportions.
 

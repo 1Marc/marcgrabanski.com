@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'twitter-invention-of-new-telephone'
 title: 'Twitter Invented a New Type of Phone'
 description: 'The hype of Twitter / micro-blogging is people realizing a new form of communication.'

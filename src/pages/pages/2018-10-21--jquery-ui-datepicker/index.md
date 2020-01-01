@@ -1,7 +1,7 @@
 ---
 title: 'jQuery UI Datepicker Project'
 layout: page
-path: '/jquery-ui-datepicker'
+path: 'jquery-ui-datepicker'
 ---
 
 ![jQuery UI Datepicker Screenshot](./jquery-ui-datepicker.jpg)

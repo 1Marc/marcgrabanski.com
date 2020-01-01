@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'exiciting-features-in-couchdb'
 title: 'Exciting Features in CouchDB'
 description: 'Overview of exciting features in CouchDB.'

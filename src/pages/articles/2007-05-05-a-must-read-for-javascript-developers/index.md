@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'a-must-read-for-javascript-developers'
 title: 'A Must-Read for Javascript Developers'
 description: 'Object Oriented Javascript article that is a must-read for Javascript Developers'

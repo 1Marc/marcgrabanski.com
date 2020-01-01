@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'jquery-essentials-slideshow'
 title: 'jQuery Essentials Slideshow, Version 2'
 description: 'Introduction to the fundamentals of the jQuery JavaScript library.'

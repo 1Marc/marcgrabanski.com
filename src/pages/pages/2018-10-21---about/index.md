@@ -1,7 +1,7 @@
 ---
 title: 'About me'
 layout: page
-path: '/about'
+path: 'about'
 ---
 
 **The web is the most fertile ground to build on which is why I’ve _dedicated my life_ to _teaching people_ how to build their dreams with _great user interface code and interface design_.**

@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'increase-your-productivity-with-multiple-monitors'
 title: 'Increase Your Productivity with Multiple Monitors'
 description: 'Article about how adding monitors to your computer helps you work faster and more efficient.'

@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'jquery-select-list-values'
 title: 'jQuery Tip - Getting Select List Values'
 description: "Get the select list value or selected option's text."

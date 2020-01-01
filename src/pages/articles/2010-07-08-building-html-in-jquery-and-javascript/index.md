@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'building-html-in-jquery-and-javascript'
 title: 'Building HTML in jQuery and JavaScript'
 description: 'Ways to create HTML with jQuery and JavaScript.'

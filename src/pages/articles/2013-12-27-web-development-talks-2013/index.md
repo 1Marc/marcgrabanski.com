@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'web-development-talks-2013'
 title: 'Slides, Videos and Articles from 2013'
 description: ''

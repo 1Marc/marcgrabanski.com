@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'avoid-over-planning'
 title: 'Avoid Over Planning'
 description: "Paul Boag's response of avoiding over-planning hit home with me."

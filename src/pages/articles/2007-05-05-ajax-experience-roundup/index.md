@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'ajax-experience-roundup'
 title: 'Ajax Experience Roundup'
 description: 'Summary of the last two days of The Ajax Experience 2007 in Boston, MA.'
@@ -93,6 +94,6 @@ You may download the [Yslow firebug plugin here](http://developer.yahoo.com/yslo
 
 ## My Ajax Experience Overall
 
-The registration cost was hefty ($1200), but the company I work for, RMG Connect paid for my registration fee. The overall experience was pretty amazing. I met some great people - especially the jQuery guys. Talking directly to the framework authors was an invaluble experience. Knowing the person's motivations behind creating their library really clues you into the longevity and energy behind a project.
+The registration cost was hefty (\$1200), but the company I work for, RMG Connect paid for my registration fee. The overall experience was pretty amazing. I met some great people - especially the jQuery guys. Talking directly to the framework authors was an invaluble experience. Knowing the person's motivations behind creating their library really clues you into the longevity and energy behind a project.
 
 This is the first time that I have covered something like this in so much detail so it is important to me to have your feedback.

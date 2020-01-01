@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'javascript-cross-browser-repositioning'
 title: 'JavaScript Cross-Browser Repositioning'
 description: 'Repositioning jQuery calendar if outside the browser window in IE6, IE7, FireFox, Safari and Opera web browsers.'

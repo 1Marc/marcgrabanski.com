@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'user-testing-with-amazon-turk'
 title: 'Cheap User Testing with Amazon Turk'
 description: 'Process of using Amazon turk for cheap user testing.'
@@ -30,7 +31,7 @@ At this point I was mad, not at the client but at the fact that I had no idea wh
 
 ### The Amazon Turk, "Testbed"
 
-To my complete amazement, I _actually found out a way to have 100 PC computers from all around the world testing my website_ ! **Welcome to the world of** [**Amazon Turk**](https://www.mturk.com/mturk/welcome) **.** For a total of $5, I had just about 80 users go through my tests and give me feedback.
+To my complete amazement, I _actually found out a way to have 100 PC computers from all around the world testing my website_ ! **Welcome to the world of** [**Amazon Turk**](https://www.mturk.com/mturk/welcome) **.** For a total of \$5, I had just about 80 users go through my tests and give me feedback.
 
 ![](./world-map-orange.jpg)
 
@@ -40,7 +41,7 @@ I came up with a process that made it easy to report back to the client with fin
 
 ### Setup a test to gather feedback on using the website.
 
-Be sure to isolate the code so that you only have the code on it that you think might be causing an issue. Save each file used in the test for future reference. # Register and pre-pay around $5 on Amazon Turk. # Created a HIT (Human Intelligence Tasks) on Amazon Turk that details the test. Use the default template and make sure you have a textarea on the HIT for them to report their findings. # After getting results back, summarize the findings into a paragraph that pinpoint reported issues. # Based on the summary, create an action item in order to develop a solution. # Based on the action item, create a new test with the solution. # Post the new HIT / test on Amazon Turk until your desired results are achieved.
+Be sure to isolate the code so that you only have the code on it that you think might be causing an issue. Save each file used in the test for future reference. # Register and pre-pay around \$5 on Amazon Turk. # Created a HIT (Human Intelligence Tasks) on Amazon Turk that details the test. Use the default template and make sure you have a textarea on the HIT for them to report their findings. # After getting results back, summarize the findings into a paragraph that pinpoint reported issues. # Based on the summary, create an action item in order to develop a solution. # Based on the action item, create a new test with the solution. # Post the new HIT / test on Amazon Turk until your desired results are achieved.
 
 ### Failing at First
 

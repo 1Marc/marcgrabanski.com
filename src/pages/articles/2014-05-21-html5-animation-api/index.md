@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'html5-animation-api'
 title: 'HTML5 Needs a New Animation API to Compete with Native'
 description: ''

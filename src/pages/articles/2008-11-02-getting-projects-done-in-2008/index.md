@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'getting-projects-done-in-2008'
 title: 'Getting Projects Done in 2008'
 description: 'My business plans to get four projects done in 2008.'

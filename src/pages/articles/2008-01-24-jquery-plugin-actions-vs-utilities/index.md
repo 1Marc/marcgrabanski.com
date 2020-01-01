@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'jquery-plugin-actions-vs-utilities'
 title: 'jQuery Plugin Actions vs Utilities'
 description: 'Explaining the difference between developing an action plugin vs a utility plugin.'

@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'username-or-user-name'
 title: 'Username or User name?'
 description: "I've run into the debate of whether to use username or user name for logins."

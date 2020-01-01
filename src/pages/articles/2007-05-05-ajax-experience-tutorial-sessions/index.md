@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'ajax-experience-tutorial-sessions'
 title: 'Ajax Experience Tutorial Sessions'
 description: 'Day 1 of 5 in Boston, I logged the tutorial sessions at The Ajax Experience.'

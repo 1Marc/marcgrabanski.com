@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'adobes-color-schemer'
 title: "Adobe's Color Schemer"
 description: 'Adobe released this color schemer called Kuler.'

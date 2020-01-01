@@ -1,4 +1,5 @@
 ---
+archived: true
 path: '5-tips-for-better-jquery-code'
 title: '5 Tips for Better jQuery Code'
 description: 'Write better jQuery code using tips for storing data, custom selectors, ajax file forms and livequery plugin.'

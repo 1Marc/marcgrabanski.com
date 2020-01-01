@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'programming-in-the-wee-hours'
 title: 'Programming in the Wee Hours'
 description: "Sometimes I can't sleep and program in the wee hours of the night."

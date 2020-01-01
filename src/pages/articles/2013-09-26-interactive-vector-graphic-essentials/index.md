@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'interactive-vector-graphic-essentials'
 title: 'Interactive Vector Graphic Essentials'
 description: ''

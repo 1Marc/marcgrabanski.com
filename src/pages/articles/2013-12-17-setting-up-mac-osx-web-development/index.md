@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'setting-up-mac-osx-web-development'
 title: 'Setting Up a New Mac on OSX for Web Development'
 description: 'Recently I had a machine break down and had to setup a new one and this is documentation of my setup.'

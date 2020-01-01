@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'simulating-mouse-click-events-in-javascript'
 title: 'Simulating Mouse Events in JavaScript'
 description: ''

@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'javascript-industry-the-ajax-experience-2008-1'
 title: 'JavaScript Industry Notes - The Ajax Experience 2008 (Part 1)'
 description: 'Google Chrome and JavaScript library panel notes from The Ajax Experience 2008 in Boston.'

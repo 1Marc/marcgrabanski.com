@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'javascript-if-statements-syntax'
 title: 'JavaScript if Statements Syntax'
 description: 'Displaying different ways to write JavaScript if statements.'

@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'getting-jquery-into-big-corporations'
 title: 'Getting jQuery into Big Corporations'
 description: "How use jQuery for big corporations' projects."

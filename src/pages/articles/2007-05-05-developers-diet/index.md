@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'developers-diet'
 title: "Developer's Diet"
 description: 'An article about the typical diet of a web developer, funny stuff.'

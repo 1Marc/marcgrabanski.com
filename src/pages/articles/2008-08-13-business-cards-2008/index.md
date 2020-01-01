@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'business-cards-2008'
 title: 'Business Cards'
 description: "Marc Grabanski's business cards, Jack of All Trades Web Development."

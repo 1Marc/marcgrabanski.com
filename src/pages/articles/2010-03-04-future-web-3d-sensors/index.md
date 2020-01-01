@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'future-web-3d-sensors'
 title: 'The Future of the Web and Things Like That'
 description: 'More devices and faster internet will allow html and javascript to gain access to sensors and show 3D in web browsers.'
