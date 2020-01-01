@@ -1,18 +1,18 @@
 ---
 path: 'turning-35'
-title: '🤗 2020: Turning 35'
-description: 'This year saw the birth of our new baby girl. Now I have a full family with four kids!'
+title: '🤗 Turning 35: Reflecting on the Last 5 Years (2014-2019)'
+description: 'This summer our new baby girl arrived. Now my family is full – we now have four kids!'
 tags:
 date: '2019-12-31T22:00:18.409Z'
 draft: false
 layout: 'post'
 ---
 
-This summer our new baby girl arrived. Now my family is full – we now have four kids! 🤩🤗😱
+This summer (2019) our new baby girl arrived. Now my family is full – we now have four kids! 🤩🤗😱
 
 ![Grabanski Family Fall 2019](./family-fall-2019.jpeg)
 
-This is a follow up to my [turning 30](https://marcgrabanski.com/30) post.
+This is a follow up to my [turning 30](https://marcgrabanski.com/30) post, where I reflected on previous years (~2010-2014).
 
 As you get older, finances and health are two things that stick out more than I would have expected. They cause all sorts of cascading effects on the rest of your life if you don’t get them right.
 
@@ -66,7 +66,7 @@ Currently, we are 9 team members with 2-3 working on contract in a regular capac
 
 ## Reviewing Goals from Over a Decade Ago
 
-Looking at my [goals written in 2007](https://marcgrabanski.com/career-goals-as-of-august-2007) (Mid & Long-Term Goals), I did pretty much everything on that list. Wow ...that really was 13 years ago!
+Looking at mid and long-term [goals from 2007](https://marcgrabanski.com/career-goals-as-of-august-2007), I did pretty much everything on that list. Wow ...that really was 13 years ago!
 
 There are a few main things I wrote that stood out to me:
 
