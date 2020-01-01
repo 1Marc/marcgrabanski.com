@@ -64,7 +64,7 @@ The main thing I've been focused on since 2017 for the company has been building
 
 Currently, we are 9 team members with 2-3 working on contract in a regular capacity.
 
-## Pulling Goals From 13 Years Ago
+## Reviewing Goals from 2007
 
 Looking at my [goals written in 2007)](https://marcgrabanski.com/career-goals-as-of-august-2007), I did pretty much everything on that list. Wow ...that was 13 years ago!
 
@@ -82,13 +82,15 @@ Surprisingly, I can focus a lot of time on my family despite running a growing b
 
 I was able to take nearly two months at a very reduced capacity to focus on my family when we had our fourth kid this year. This was HUGE for my wife and kids to have me around so much this summer.
 
+## Fulfilling Dreams from Decades Ago!
+
+I've created nearly everything I set out to do from my teens and twenties...yet I'm 35, so I've got many years to grow and expand on those dreams. 🚀
+
+The business does a great job mixing social good with capitalism. We've trained a ton of people, we've released a [free bootcamp](https://frontendmasters.com/bootcamp/), we've donated money, we offer great benefits to the team, and even on top of all that the business provides me the ability to be there for my family if they need me.
+
 ## Looking to 2025 and Beyond
 
-I've achieved nearly everything I set out to do from my teens and twenties...yet I'm 35, so I've got many years to grow and expand on those dreams. 🚀
-
-The business does a great job mixing social good with capitalism. We've trained a ton of people, we've donated a ton of money, we've released a [free bootcamp](https://frontendmasters.com/bootcamp/), and even on top of all that the business provides me the ability to be there for my family if they need me.
-
-Before I celebrate too much, though, there's so much more I can do in life. The next 5 years are about scaling the capitalism side of the business to provide more resources for the team, while also balancing that with doing good for people through education.
+Before celebrating too much, though, there's so much more I need to do in life. The next 5 years are about scaling the capitalism side of the business to provide more resources for the team, while also balancing that with doing good for people through education.
 
 I'm not one to really set specific goals, but I do like to write some general ambitions down to take a snapshot of things rolling around in my mind. These will be pretty vague and high-level, but **here are some things I'd like to do over the next 5+ years**: (in no particular order)
 
