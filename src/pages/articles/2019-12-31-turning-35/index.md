@@ -22,7 +22,7 @@ If the business isn't healthy financially, then the team doesn't feel safe. The 
 
 So with that, I do feel like I’ve taken massive steps in getting my finances straight between 30 and 35. See my [personal finance checklist](https://marcgrabanski.com/personal-finance-checklist) to see some of the steps I've taken to ensure my family's financial future.
 
-Back when I wrote that “turning 30” post, I was working multiple jobs and barely able to afford a \$1,200/mo apartment in the suburbs with one vehicle. But this year alone, the business has donated like four times my salary from 5 years ago to non-profits teaching people to code and open source projects through Open Collective! 😮 This is a direct result of the business crossing into [being debt-free and profitable since 2018](https://marcgrabanski.com/debt-free-profitable).
+Back when I wrote that “turning 30” post, I was working multiple jobs and barely able to afford a \$1,200/mo apartment in the suburbs with one vehicle. But this year alone, the business has donated like four times my salary from 5 years ago to non-profits teaching people to code and open source projects through [Open Collective](https://blog.opencollective.com/frontend-masters/)! 😮 This is a direct result of the business crossing into [being debt-free and profitable since 2018](https://marcgrabanski.com/debt-free-profitable).
 
 I cannot believe I've been an entrepreneur for nearly 20 years now. Feels like it shouldn't have taken this long for me to get here. But I'm here now, and honestly, it feels pretty good!
 
