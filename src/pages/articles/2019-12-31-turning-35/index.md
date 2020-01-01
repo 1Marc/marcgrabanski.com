@@ -64,9 +64,9 @@ The main thing I've been focused on since 2017 for the company has been building
 
 Currently, we are 9 team members with 2-3 working on contract in a regular capacity.
 
-## Reviewing Goals from 2007
+## Reviewing Over a Decad Ago
 
-Looking at my [goals written in 2007)](https://marcgrabanski.com/career-goals-as-of-august-2007), I did pretty much everything on that list. Wow ...that was 13 years ago!
+Looking at my [goals written in 2007](https://marcgrabanski.com/career-goals-as-of-august-2007) (Mid & Long-Term Goals), I did pretty much everything on that list. Wow ...that really was 13 years ago!
 
 There are a few main things I wrote that stood out to me:
 
@@ -94,7 +94,7 @@ Before celebrating too much, though, there's so much more I need to do in life. 
 
 I'm not one to really set specific goals, but I do like to write some general ambitions down to take a snapshot of things rolling around in my mind. These will be pretty vague and high-level, but **here are some things I'd like to do over the next 5+ years**: (in no particular order)
 
-- Go from the current ~10 person team we have, to building an equally excellent mid or large size company.
+- Go from the current ~10 person team we have, to building an equally excellent mid or large size company. This item could be a blog post in itself since it consists of scaling the culture and structure of the company to support more people, scaling the existing product, creating new products, etc.
 - Invest financially or at least advise some engineers who can become leaders of great companies.
 - Create a means of getting out my straightforward views on capitalism out through a more personal format like a podcast or YouTube channel.
 - I've been rebuilding my relationship with my parents, I'd like to continue that and extend that to restoring relations with extended family as well.
