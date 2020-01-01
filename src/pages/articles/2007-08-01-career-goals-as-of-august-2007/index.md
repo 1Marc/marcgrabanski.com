@@ -14,8 +14,8 @@ Recently, I started the employee review process at work. Sure, there is the norm
 
 ### Short-Term Career Goals (Now to 6 months)
 
-- Educating myself on Rapid Application Development with [CakePHP](http://cakephp.org).
-- Support open source projects, specifically CakePHP and the [jQuery JavaScript Framework](http://jquery.com).
+- Educating myself on Rapid Application Development with CakePHP.
+- Support open source projects, specifically CakePHP and jQuery.
 - Develop a complete web application including: table relationships, user authentication, custom analytics, user groups, custom components, secure validation, custom user interface elements
 - Speak at the jQuery Conference in Boston.
 
