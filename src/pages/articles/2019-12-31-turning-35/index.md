@@ -48,7 +48,7 @@ Along these lines, I've been thinking a lot about happiness vs. fulfillment. The
 
 Focusing on this mission of education brings me a sense of immense fulfillment, way beyond doing "fun" work at every moment would. I chose to do "fulfilling" work first. And when there happens to be cross-over between "fun" and "fulfilling"... it's magic! ✨ I hope I can find more of those moments over the next 5 years.
 
-## Company Culture: Working from Costa Rica
+## Company Culture: Work-Trips to Costa Rica
 
 Living and working in Minnesota, the winters get _very_ harsh cold. We've been working in Costa Rica together in mid-January to offset that for 3 weeks.
 
