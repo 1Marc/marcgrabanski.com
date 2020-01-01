@@ -1,6 +1,6 @@
 ---
 path: 'turning-35'
-title: '🤗 Turning 35: Reflecting on the Last 5 Years (2014-2019)'
+title: '🤗 Turning 35: Reflecting on the Last 5 Years'
 description: 'This summer our new baby girl arrived. Now my family is full – we now have four kids!'
 tags:
 date: '2019-12-31T22:00:18.409Z'
@@ -12,7 +12,7 @@ This summer (2019) our new baby girl arrived. Now my family is full – we now h
 
 ![Grabanski Family Fall 2019](./family-fall-2019.jpeg)
 
-This is a follow up to my [turning 30](https://marcgrabanski.com/30) post, where I reflected on previous years (~2010-2014).
+> This is a follow up to my [turning 30](https://marcgrabanski.com/30) post, where I reflected on previous years, ~2010-2014. This article will reflect on the previous 5 years, ~2014-2019.
 
 As you get older, finances and health are two things that stick out more than I would have expected. They cause all sorts of cascading effects on the rest of your life if you don’t get them right.
 
