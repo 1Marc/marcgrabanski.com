@@ -108,7 +108,7 @@ I'm not one to really set specific goals, but I do like to write some general am
 - On the personal care side, I need to be more vulnerable and develop closer relationships. I want to foster warmer relationships and friendships. I realize this might be nearly impossible to do more of with small children, but as they grow older, I need to develop a circle of fun and supportive people.
 - Give my kids and wife more opportunities to grow and pursue their dreams. I know, this one is _super_ vague, but it's worth mentioning because just like the team and customers at work, I want to give those closest to me the ability to pursue their dreams, likely that will mean me giving up something on this list at least temporarily.
 - I've been rebuilding my relationship with my parents, I'd like to continue that and extend that to restoring relations with extended family as well.
-- Eventually it's be great to be financially free to the point that I don't need to work, can retire any day and my family will continue to be provided for.
+- Eventually, it'd be great to be financially free to the point that I don't need to work, can retire any day, and my family will continue to be provided for.
 
 ## "Don't Screw It Up!"
 
