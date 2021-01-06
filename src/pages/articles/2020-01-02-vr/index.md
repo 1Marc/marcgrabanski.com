@@ -1,6 +1,6 @@
 ---
 path: 'vr'
-title: "Going Remote and Diving into Virtual Reality 🥽"
+title: "🥽 Going Remote and Diving into Virtual Reality"
 description: "I enjoyed getting into VR this year and learned to create videos in Mixed Reality through LIV, posted them to YouTube and streamed through Twitch. And got all the world records in Pistol Whip."
 tags:
   - "Gaming"
@@ -26,7 +26,7 @@ We used this kit to set up in Denver and San Francisco. It's so cool to have a t
 
 It's clear we're not going to work in-person anytime soon, so we have to adapt and learn how to hire remotely as well. I can't believe we're growing through this period, but we have overcome challenges and continue to grow. Thanks to Aisha, Joumana, Brent, Krista, Lanie, Tanner, Jon, and Ken. I'm super proud of what we've accomplished together as a team! 🤩
 
-## 🏃‍♂️ Running this Summer
+## 🏃‍♂️ Running More Over the Summer
 
 Along with going remote, I realized I'd be spending a ton of time around my house. At the beginning of the summer, I was running 4 miles regularly – managed to clock in nearly 300 miles ran throughout the summer. 
 
