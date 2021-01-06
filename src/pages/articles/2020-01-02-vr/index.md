@@ -28,11 +28,15 @@ It's clear we're not going to work in-person anytime soon, so we have to adapt a
 
 Thanks to Aisha, Joumana, Brent, Krista, Lanie, Tanner, Jon, and Ken. I'm super proud of what we've accomplished together as a team! 🤩
 
-## 🏃‍♂️ Running and Finding Virtual Reality
+## 🏃‍♂️ Running this Summer
 
-Along with going remote, I realized I'd be spending a ton of time around my house. At the beginning of the summer, I was running 4 miles at a time regularly – managed to clock in nearly 300 miles ran throughout the summer. But I knew winter was (eventually) coming, and needed something to do indoors.
+Along with going remote, I realized I'd be spending a ton of time around my house. At the beginning of the summer, I was running 4 miles at a time regularly – managed to clock in nearly 300 miles ran throughout the summer. 
 
-Last winter I used an exercise bike, but upon browsing around I found streamers on Twitch sharing their Virtual Reality workouts and getting up to high BPMs. See this video for example where she gets up over 160bpm playing a videogame:
+## Finding Virtual Reality
+
+But I knew winter was (eventually) coming, and needed something to do indoors. Last winter I used an exercise bike, but upon browsing around I found streamers on Twitch and YouTubers sharing their Virtual Reality workouts and getting up to high BPMs. 
+
+See this video for example where she gets up over 160bpm playing a videogame:
 
 `youtube: https://www.youtube.com/watch?v=hEMvbFtitRI`
 
