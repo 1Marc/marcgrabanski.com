@@ -1,8 +1,9 @@
 ---
 path: 'video-games'
 title: '🎮 A Walk Down Video Game Memory Lane'
-description: ''
-? tags
+description: "Games I've loved and remember throughout my time gaming."
+tags:
+  - "Gaming"
 date: '2019-02-12T19:04:56.734Z'
 draft: false
 layout: 'post'
