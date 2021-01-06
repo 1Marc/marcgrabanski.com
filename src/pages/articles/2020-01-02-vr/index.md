@@ -24,9 +24,7 @@ We rebuilt our entire recording process from scratch and created a remote video 
 
 We used this kit to set up in Denver and San Francisco. It's so cool to have a toolkit to set up anywhere! 🏔🏙
 
-It's clear we're not going to work in-person anytime soon, so we have to adapt and learn how to hire remotely as well. I can't believe we're growing through this period, but despite the challenges, we have overcome them and continue to grow.
-
-Thanks to Aisha, Joumana, Brent, Krista, Lanie, Tanner, Jon, and Ken. I'm super proud of what we've accomplished together as a team! 🤩
+It's clear we're not going to work in-person anytime soon, so we have to adapt and learn how to hire remotely as well. I can't believe we're growing through this period, but we have overcome challenges and continue to grow. Thanks to Aisha, Joumana, Brent, Krista, Lanie, Tanner, Jon, and Ken. I'm super proud of what we've accomplished together as a team! 🤩
 
 ## 🏃‍♂️ Running this Summer
 
@@ -70,11 +68,11 @@ I'm having to defend my title with people challenging me and beating my records 
 
 ## Streaming on Twitch
 
-After setting up the studio and making YouTube videos, I realized a lot of top players tend to stream their attempts on Twitch. A lot of people into the game like watching others play to pick up and share tips. Or just for entertainment. I started trying my hand at Twitch and talking through gameplay as I game.
+After setting up the studio and making YouTube videos, I realized many top players in various games tend to stream their attempts on Twitch. A lot of people into the game like watching others play to pick up and share tips. Or just for entertainment. I started trying my hand at Twitch and talking through gameplay as I game.
 
 [![Streaming on Twitch](./twitch-streaming.png)](https://www.twitch.tv/codewhip)
 
-It's been a blast! 11 people showed up to watch me play videogames the last time I streamed, which blew my mind. 🤯
+Experimenting with Twitch this last few weeks has been a blast! Quite a few people have shown up to watch me play videogames, and I just got the email to be a "Twitch Affiliate," which is crossing some metrics. The last time streaming was so much fun, so I'm going to try to stream at least once per week if I can find the time.
 
 ## Onto 2021!
 
@@ -82,4 +80,4 @@ Reviewing my goals from last year's [Turning 35](turning-35) post still holds. O
 
 I want my family to learn the skills to pursue their dreams, continue growing the business, and continue reconnecting with my parents and extended family. 
 
-PS It's super sad, but my nephew got in a horrific accident earlier in the year that ended his life (he was just 16). I tried to write about this, but I don't have the words. Michelle, Dustin, and Morgan, if you are reading this I think about you all and Dylan often. RIP Dylan Falling... ❤️😢
+PS It's super sad, but my nephew got in a horrific accident earlier in the year that ended his life (he was just 16). I tried to write about this, but I don't have the words. Michelle, Dustin, and Morgan, if you are reading this, I think about you all and Dylan often. RIP Dylan Falling... ❤️😢
