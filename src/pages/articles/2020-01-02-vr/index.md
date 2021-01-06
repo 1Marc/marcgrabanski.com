@@ -1,6 +1,6 @@
 ---
 path: 'vr'
-title: "🥽 2020: Going Remote and Diving into Virtual Reality"
+title: "Going Remote and Diving into Virtual Reality"
 description: "I enjoyed getting into VR this year and learned to create videos in Mixed Reality through LIV, posted them to YouTube and streamed through Twitch. And got all the world records in Pistol Whip."
 tags:
   - "Gaming"
