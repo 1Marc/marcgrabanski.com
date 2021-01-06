@@ -1,6 +1,6 @@
 ---
 path: 'vr'
-title: "Going Remote and Diving into Virtual Reality"
+title: "Going Remote and Diving into Virtual Reality 🥽"
 description: "I enjoyed getting into VR this year and learned to create videos in Mixed Reality through LIV, posted them to YouTube and streamed through Twitch. And got all the world records in Pistol Whip."
 tags:
   - "Gaming"
@@ -32,7 +32,7 @@ Thanks to Aisha, Joumana, Brent, Krista, Lanie, Tanner, Jon, and Ken. I'm super 
 
 Along with going remote, I realized I'd be spending a ton of time around my house. At the beginning of the summer, I was running 4 miles regularly – managed to clock in nearly 300 miles ran throughout the summer. 
 
-## Finding Virtual Reality
+## 🥽 Finding Virtual Reality
 
 But I knew winter was (eventually) coming and needed something to do indoors. Last winter, I used an exercise bike, but upon browsing around, I found streamers on Twitch and YouTubers sharing their Virtual Reality workouts and getting up to high BPMs. 
 
