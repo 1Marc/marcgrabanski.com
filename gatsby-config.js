@@ -27,35 +27,17 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-favicon`,
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        logo: './src/favicon.png',
+        icon: `src/favicon.png`,
 
-        // WebApp Manifest Configuration
-        appName: null, // Inferred with your package.json
-        appDescription: null,
-        developerName: null,
-        developerURL: null,
-        dir: 'auto',
-        lang: 'en-US',
-        background: '#fff',
-        theme_color: '#fff',
-        display: 'standalone',
-        orientation: 'any',
-        start_url: '/?homescreen=1',
-        version: '1.0',
-
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          opengraph: false,
-          twitter: false,
-          yandex: false,
-          windows: false,
+        options: {
+          name: `MarcGrabanski.com`,
+          short_name: `MarcGrabanski.com`,
+          start_url: `/`,
+          background_color: `#f7f0eb`,
+          theme_color: `#a2466c`,
+          display: `standalone`,
         },
       },
     },
@@ -67,57 +49,58 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-feed',
+      resolve: `gatsby-plugin-feed`,
       options: {
         query: `
           {
             site {
               siteMetadata {
-                site_url: url
                 title
-                description: subtitle
+                description
+                siteUrl
+                site_url: siteUrl
               }
             }
           }
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) =>
-              allMarkdownRemark.edges.map(edge =>
-                Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.frontmatter.description,
-                  date: edge.node.frontmatter.date,
-                  url: `${site.siteMetadata.site_url}/${edge.node.fields.slug}`,
-                  guid: `${site.siteMetadata.site_url}/${edge.node.fields.slug}`,
-                  custom_elements: [{ 'content:encoded': edge.node.html }],
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.nodes.map(node => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  custom_elements: [{ "content:encoded": node.html }],
                 })
-              ),
+              })
+            },
             query: `
               {
                 allMarkdownRemark(
-                  limit: 1000,
                   sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
                 ) {
-                  edges {
-                    node {
-                      html
-                      fields {
-                        slug
-                      }
-                      frontmatter {
-                        title
-                        date
-                        layout
-                        draft
-                        description
-                      }
+                  nodes {
+                    excerpt
+                    html
+                    fields { 
+                      slug 
+                    }
+                    frontmatter {
+                      title
+                      date
                     }
                   }
                 }
               }
             `,
-            output: '/rss.xml',
+            output: "/rss.xml",
+            title: "Your Site's RSS Feed",
+            // optional configuration to insert feed reference in pages:
+            // if `string` is used, it will be used to create RegExp and then test if pathname of
+            // current page satisfied this regular expression;
+            // if not provided or `undefined`, all pages will have feed reference inserted
           },
         ],
       },
@@ -203,8 +186,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        postCssPlugins: [
-          lost(),
+        postCssPlugins: [lost(),
           pxtorem({
             rootValue: 16,
             unitPrecision: 5,
@@ -231,9 +213,11 @@ module.exports = {
             replace: true,
             mediaQuery: false,
             minPixelValue: 0,
-          }),
+          })
         ],
-        precision: 8,
+        sassOptions: {
+          precision: 8,
+        },
       },
     },
   ],

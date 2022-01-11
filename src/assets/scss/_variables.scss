@@ -28,7 +28,7 @@ $typographic-link-p-font-color: $color-primary;
 $typographic-link-s-font-color: $color-secondary;
 
 $typographic-leading: round(
-  16 * ($typographic-root-font-size / 100) * $typographic-base-line-height
+  16 * calc($typographic-root-font-size / 100) * $typographic-base-line-height
 );
 
 // Layout
