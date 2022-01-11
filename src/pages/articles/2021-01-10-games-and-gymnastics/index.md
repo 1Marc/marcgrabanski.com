@@ -1,6 +1,6 @@
 ---
-path: 'games-gymnastics'
-title: "🤸 Games & Gymnastics"
+path: 'gymnastics-game-design'
+title: "🤸 From Gymnastics to Game Design, a 2021 Recap"
 description: ""
 tags:
   - "Marc Grabanski's Work"
