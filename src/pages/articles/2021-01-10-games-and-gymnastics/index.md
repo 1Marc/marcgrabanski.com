@@ -105,8 +105,8 @@ Here's my latest video:
 
 ## 🔥 Real Fire Pit!
 
-![Real Fire Pit](./real-firepit.jpeg)
-
 Finally, we built in a real fire pit into the back yard which has been great to still be outside in nature during cold days. I'm really enjoying it!
+
+![Real Fire Pit](./real-firepit.jpeg)
 
 I wanted to include more things like messing around with drones, trips to the climbing wall, and making cherry pie...but you can only fit so many updates into one post before you have to just hit publish. Cheers and hope 2022 is off to a good start for you and yours!
