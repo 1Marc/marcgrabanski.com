@@ -15,6 +15,14 @@ Happy New Year! 🥳 Glad 2022 is here.
 
 Here are some interesting things from 2021!
 
+## ⛵️ Getting Wind Back Through In-Person Meetings
+
+Working 100% remote with a team a love wasn't cutting it for me. I just felt too disconnected to lead the company effectively. 
+
+We started having management meetings and one-on-ones face-to-face (just one day per week) and that has re-energized me in incredible ways! I feel like I got my old self back, and I've been pushing hard to grow the business. 🕺
+
+The business has been doing well, but it's clear that we need to build out the team further this year. Hiring and growing the team will be a big priority, and how we handle it will significantly impact the future. As the business is doing great and introducing new team members adds life and vitality to everyone, I'm very hopeful.
+
 ## 🎮 Started 2021 with Mario Maker 2 Speed Running
 
 With January freezing and not getting out much due to the pandemic, why not start 2021 off with a Mario Maker 2 speedrunning competition? 🤪
@@ -102,14 +110,6 @@ The main new games I've found in VR are Stride (parkour-like mirror's edge) and 
 Here's my latest video:
 
 `youtube: https://youtu.be/jS49q1GlRfU`
-
-## ⛵️ Getting Wind Back Through In-Person Meetings
-
-Working 100% remote with a team a love wasn't cutting it for me. I just felt too disconnected to lead the company effectively. 
-
-We started having management meetings and one-on-ones face-to-face, which has re-energized me in incredible ways! I feel like I got my old self back, and I've been pushing hard to grow the business. 
-
-The business has been doing well, but it's clear that we need to build out the team further this year. Hiring and growing the team will be a big priority, and how we handle it will significantly impact the future. As the business is doing great and introducing new team members adds life and vitality to everyone, I'm very hopeful.
 
 ## 🔥 Real Fire Pit!
 
