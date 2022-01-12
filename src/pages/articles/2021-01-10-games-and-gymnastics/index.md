@@ -15,7 +15,7 @@ Happy New Year! 🥳 Glad 2022 is here.
 
 Here are some interesting things from 2021!
 
-## ⛵️ Got the Wind Back in My Sails Through In-Person Meetings
+## ⛵️ Put the Wind Back in My Sails Through In-Person Meetings
 
 Working 100% remote with a team a love wasn't cutting it for me. I just felt too disconnected to lead the company effectively. 
 

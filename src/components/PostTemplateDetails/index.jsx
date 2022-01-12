@@ -79,7 +79,7 @@ class PostTemplateDetails extends React.Component {
             {prev ? (
               <Link
                 className="post-single__footer-prev"
-                to={prev.frontmatter.path}
+                to={"/" + prev.frontmatter.path}
               >
                 &lt;&lt; {prev.frontmatter.title}
               </Link>
@@ -87,11 +87,13 @@ class PostTemplateDetails extends React.Component {
             {next ? (
               <Link
                 className="post-single__footer-next"
-                to={next.frontmatter.path}
+                to={"/" + next.frontmatter.path}
               >
                 {next.frontmatter.title} &gt;&gt;
               </Link>
             ) : null}
+
+<p>{next.frontmatter.path}</p>
           </div>
         </div>
       </div>
