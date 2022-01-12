@@ -147,40 +147,7 @@ module.exports = {
         fonts: ['roboto:400,400i,500,700'],
       },
     },
-    {
-      resolve: 'gatsby-plugin-sitemap',
-      options: {
-        query: `
-            {
-              site {
-                siteMetadata {
-                  url
-                  siteUrl
-                }
-              }
-              allSitePage(
-                filter: {
-                  path: { regex: "/^(?!/404/|/404.html|/dev-404-page/)/" }
-                }
-              ) {
-                edges {
-                  node {
-                    path
-                  }
-                }
-              }
-          }`,
-        output: '/sitemap.xml',
-        serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map(edge => {
-            return {
-              url: site.siteMetadata.siteUrl + edge.node.path,
-              changefreq: 'daily',
-              priority: 0.7,
-            }
-          }),
-      },
-    },
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
     {
