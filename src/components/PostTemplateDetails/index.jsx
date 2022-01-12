@@ -92,8 +92,6 @@ class PostTemplateDetails extends React.Component {
                 {next.frontmatter.title} &gt;&gt;
               </Link>
             ) : null}
-
-<p>{next.frontmatter.path}</p>
           </div>
         </div>
       </div>
