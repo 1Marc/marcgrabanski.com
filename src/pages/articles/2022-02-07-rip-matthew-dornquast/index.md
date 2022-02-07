@@ -4,7 +4,7 @@ title: "🕊 RIP to My Business Advisor Matthew Dornquast"
 description: "Matthew, I honestly wouldn't be where I am today without your honest advice over the years. ❤️"
 tags:
   - "Marc Grabanski's Work"
-date: '2022-01-11T00:35:55.565Z'
+date: '2022-02-07T15:16:42.832Z'
 draft: false
 layout: 'post'
 ---
