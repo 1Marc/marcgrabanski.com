@@ -27,4 +27,4 @@ I offered him an advisory position in my business which he gladly accepted. We m
 
 Matthew, I honestly wouldn't be where I am today without your honest advice over the years. ❤️
 
-My condolences to his wife and kids – so sorry for your loss. He was a brilliant man. RIP Matthew Dornquast, I will miss you!
+My condolences to his wife, kids, friends, colleagues, and family – so sorry for your loss. He was a brilliant man. RIP Matthew Dornquast, I will miss you!
