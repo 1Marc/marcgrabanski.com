@@ -25,7 +25,7 @@ class Post extends React.Component {
           <span className="post__meta-divider" />
         </div>
         <h2 className="post__title">
-          <Link className="post__title-link" to={slug}>
+          <Link className="post__title-link" to={"/"+slug}>
             {title}
           </Link>
         </h2>
