@@ -67,15 +67,14 @@ module.exports = {
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.nodes.map(node => {
+                const slug = node.frontmatter.path ? node.frontmatter.path : node.fields.slug;
+                const pageUrl = site.siteMetadata.siteUrl + slug;
+
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + (node.frontmatter.path
-                    ? node.frontmatter.path
-                    : node.fields.slug),
-                  guid: site.siteMetadata.siteUrl + (node.frontmatter.path
-                    ? node.frontmatter.path
-                    : node.fields.slug),
+                  url: pageUrl,
+                  guid: pageUrl,
                   custom_elements: [{ "content:encoded": node.html }],
                 })
               })
@@ -94,6 +93,7 @@ module.exports = {
                     frontmatter {
                       title
                       date
+                      path
                     }
                   }
                 }
