@@ -1,9 +1,10 @@
 ---
 path: 'success'
 title: "Why Some Smart People I Know Don't Become Succesful"
-description: "I'll try to do my best to explain to you why some smart people don't become succesful."
+description: "A guide to avoid some common mistakes smart friends of mine have made with their careers."
 tags:
   - 'Business'
+  - 'Checklists & Guides'
 date: '2014-01-01T07:15:23.000Z'
 draft: false
 layout: 'post'

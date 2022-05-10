@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'compress-query-strings-in-javascript'
 title: 'Compress Query Strings in JavaScript'
 description: 'JavaScript function compresses redundant query string data into comma-separated values.'

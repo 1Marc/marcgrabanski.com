@@ -63,6 +63,7 @@ export const pageQuery = graphql`
             date
             description
             path
+            archived
           }
         }
       }

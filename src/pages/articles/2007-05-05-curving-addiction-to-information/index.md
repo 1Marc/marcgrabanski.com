@@ -1,4 +1,5 @@
 ---
+archived: true
 path: 'curving-addiction-to-information'
 title: 'Addiction to Web Development Information'
 description: "I'm an information addict and I need to slow down to focus on development, rather than scouring the internet intaking too much information."

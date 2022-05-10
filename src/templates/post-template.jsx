@@ -66,6 +66,7 @@ export const pageQuery = graphql`
         date
         description
         path
+        archived
       }
     }
     allMarkdownRemark(
@@ -84,6 +85,7 @@ export const pageQuery = graphql`
             date
             description
             path
+            archived
           }
         }
       }

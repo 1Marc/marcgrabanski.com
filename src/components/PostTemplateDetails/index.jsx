@@ -47,7 +47,7 @@ class PostTemplateDetails extends React.Component {
         {homeBlock}
         <div className="post-single">
           <div className="post-single__inner">
-            <h1 className="post-single__title">{post.frontmatter.title}</h1>
+            <h1 className="post-single__title">{post.frontmatter.archived ? "[Archived] " : ""}{post.frontmatter.title}</h1>
             <div className="post-single__date">
               {moment(post.frontmatter.date).isBefore('2007-05-06') ? (
                 <time>Written Sometime Before 2007</time>

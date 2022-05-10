@@ -7,7 +7,7 @@ module.exports = {
     siteUrl: `https://marcgrabanski.com`,
     title: `Marc Grabanski's Web Development, Business and Life Thoughts`,
     subtitle:
-      'Web Development, Business and Life Thoughts from Marc Grabanski – Founder, CEO & UI Developer of Frontend Masters',
+      'Web Dev, Business and Life Thoughts',
     copyright: '© All rights reserved.',
     menu: [
       {
@@ -28,7 +28,7 @@ module.exports = {
       }
     ],
     author: {
-      name: 'Marc Grabanski',
+      name: 'Marc Grabanski, CEO & UI Developer of Frontend Masters',
       twitter: '1marc',
       github: '1marc',
     },

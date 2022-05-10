@@ -4,9 +4,10 @@ title: 'Lessons Learned from the Worst 6 Months of My Career'
 description: 'Learning from a negative work experience.'
 tags:
   - 'Business'
+  - "Marc Grabanski's Work"
 date: '2009-02-25T10:30:25.000Z'
 draft: false
-layout: 'post'
+layout: 'post
 ---
 
 In the last few years I have shared many triumphs and positive things, but now I am going to pull from a chapter in my life that was dark to pull out lessons learned and expose the story about this company I worked for. **Early-mid 2006 was _the worst 6 months of my professional life_**, but it didn't start that way.
