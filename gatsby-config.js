@@ -7,7 +7,7 @@ module.exports = {
     siteUrl: `https://marcgrabanski.com`,
     title: `Marc Grabanski's Web Development, Business and Life Thoughts`,
     subtitle:
-      'Web Dev, Business and Life Thoughts',
+      'Career Journal on Web Dev, Business, & Life',
     copyright: '© All rights reserved.',
     menu: [
       {
