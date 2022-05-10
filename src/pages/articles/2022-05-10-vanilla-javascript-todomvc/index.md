@@ -5,7 +5,7 @@ description: "Seems it is pretty simple to build fairly complex things these day
 tags:
   - 'JavaScript'
 date: '2022-05-10T14:16:17.830Z'
-draft: false
+draft: true
 layout: 'post'
 ---
 
