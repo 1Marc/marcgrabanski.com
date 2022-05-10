@@ -11,12 +11,12 @@ module.exports = {
     copyright: '© All rights reserved.',
     menu: [
       {
-        label: 'About Marc',
-        path: '/about/',
+        label: 'All Posts',
+        path: '/',
       },
       {
-        label: 'Articles',
-        path: '/',
+        label: 'About Marc',
+        path: '/about/',
       },
       {
         label: 'Checklists & Guides',
