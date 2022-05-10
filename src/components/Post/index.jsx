@@ -8,7 +8,6 @@ class Post extends React.Component {
     const node = this.props.data.node;
     const { title, date, description, path } = node.frontmatter
     const slug = path ? path : node.fields.slug
-    const tags = node.fields.tagSlugs
 
     return (
       <div className="post">

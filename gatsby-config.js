@@ -68,7 +68,7 @@ module.exports = {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.nodes.map(node => {
                 const slug = node.frontmatter.path ? node.frontmatter.path : node.fields.slug;
-                const pageUrl = site.siteMetadata.siteUrl + slug;
+                const pageUrl = `${site.siteMetadata.siteUrl}/${slug}`;
 
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
