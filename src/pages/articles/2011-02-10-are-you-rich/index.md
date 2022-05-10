@@ -1,7 +1,7 @@
 ---
 path: 'are-you-rich'
 title: '"Are You Rich?"'
-description: ''
+description: 'In terms of actual dollars I am certainly not rich, but...'
 tags:
   - 'Business'
   - "Marc Grabanski's Work"

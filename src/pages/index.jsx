@@ -1,19 +1,14 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
 import Sidebar from '../components/Sidebar'
 
 class IndexRoute extends React.Component {
   render() {
-    const items = []
     const { title, subtitle } = this.props.data.site.siteMetadata
     const posts = this.props.data.allMarkdownRemark.edges
-    posts.forEach(post => {
-      if (post.node.frontmatter.archived) return
-      items.push(<Post data={post} key={post.node.fields.slug} />)
-    })
 
     return (
       <Layout>
@@ -24,7 +19,12 @@ class IndexRoute extends React.Component {
           </Helmet>
           <Sidebar {...this.props} />
           <div className="content">
-            <div className="content__inner">{items}</div>
+            <div className="content__inner">
+              {posts.map(post => {
+                if (!post.node.frontmatter.archived)
+                  return <Post data={post} key={post.node.fields.slug} />
+              })}
+            </div>
           </div>
         </div>
       </Layout>

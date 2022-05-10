@@ -1,16 +1,21 @@
 ---
 path: 'podcast-appearances'
-title: '🎙 Four Podcast Appearances in 2015'
-description: ''
+title: "🎙 Marc Grabanski's Podcast Appearances"
+description: 'Some podcasts appearances I’ve made since 2015.'
 tags:
-  - 'Business'
-  - "Marc Grabanski's Work"
-date: '2015-09-25T18:10:28.000Z'
+  - "Marc's Work"
+date: '2015-09-25T06:09:00.000Z'
 draft: false
 layout: 'post'
 ---
 
-Some podcasts appearances I've made recently!
+Most recent podcast I appeared on:
+
+[![ShopTalk Show: Frontend Masterery With Marc Grabanski](./shoptalk-podcast.png)](https://shoptalkshow.com/408/)
+
+[ShopTalk Show: Frontend Masterery With Marc Grabanski](https://shoptalkshow.com/408/) -- What Frontend Masters is, who it's for, how they decide what to teach, what's coming up, and the question everyone asks: what do I learn next?
+
+Some podcasts appearances I've made in 2015:
 
 [JavaScript Jabber: Tech Education and the Business of Frontend Masters](https://devchat.tv/js-jabber/178-jsj-tech-education-and-the-business-of-running-front-end-masters-with-marc-grabanski) -- answering a lot of questions about e-learning and telling the history of Frontend Masters.
 

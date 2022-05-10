@@ -1,7 +1,7 @@
 ---
 path: 'new-frontend-masters-website'
 title: '🏎💨 The New Frontend Masters Site'
-description: ''
+description: 'The new web stack behind FrontendMasters.com is an absolute pleasure to work with! 😀'
 tags:
   - 'Performance'
   - "Marc Grabanski's Work"

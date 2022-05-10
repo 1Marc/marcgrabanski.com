@@ -1,8 +1,9 @@
 ---
 path: 'personal-finance-checklist'
 title: '💵 Personal Finance Checklist'
-description: 'Here is all the personal finance advice I have taken, distilled into a simple checklist.'
+description: 'All the personal finance advice I have accumulated, distilled into a simple checklist.'
 tags:
+  - 'Checklists & Guides'
 date: '2019-06-23T23:30:30.409Z'
 draft: false
 layout: 'post'

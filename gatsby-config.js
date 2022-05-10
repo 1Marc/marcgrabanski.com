@@ -11,13 +11,21 @@ module.exports = {
     copyright: '© All rights reserved.',
     menu: [
       {
+        label: 'About Marc',
+        path: '/about/',
+      },
+      {
         label: 'Articles',
         path: '/',
       },
       {
-        label: 'About me',
-        path: '/about/',
+        label: 'Checklists & Guides',
+        path: '/tags/checklists-guides'
       },
+      {
+        label: 'Career Journal',
+        path: '/tags/marc-grabanskis-work'
+      }
     ],
     author: {
       name: 'Marc Grabanski',

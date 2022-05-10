@@ -1,8 +1,7 @@
 ---
-archived: true
 path: 'coding-2018'
 title: '💻 Coding More in 2018 😀'
-description: ''
+description: 'In 2018, I managed to write a lot more code – 2,129 commits total. 15+ years in, I am still loving writing code.'
 tags:
   - "Marc Grabanski's Work"
 date: '2019-01-18T18:51:47.835Z'

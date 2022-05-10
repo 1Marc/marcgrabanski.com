@@ -16,12 +16,12 @@ Here is the (5 minute) story of starting the company:
 
 In the past I’ve…
 
-- _created_ the open source project [jQuery UI Datepicker](/jquery-ui-datepicker) (which is now one of the most popular UI component on the web).
-- _blogged_ to 100k+ monthly unique visitors.
-- _podcasted_ to 40k listeners.
+- _created_ open source projects such as the [jQuery UI Datepicker](/jquery-ui-datepicker) (which was one of the most popular UI component on the web for over a decade).
+- _podcasted_ both starting podcasts and [interviewed on them](/podcast-appearances).
 - _taught_ workshops (my favorite memory was teaching to 150+ people in Israel).
 - _created_ conferences for 200+ people at Google HQ.
 - _spoke_ at 60+ conferences on UI development topics (see past example [Whirlwind Tour of SVG](https://www.youtube.com/watch?v=a2K_pOp2ydQ).
+- _blogged_ 200+ articles, mostly between 2007 and 2010.
 
 If you've made it this far, you should probably connect with me on [Twitter](https://twitter.com/1marc) and [LinkedIn](http://www.linkedin.com/in/1marc).
 

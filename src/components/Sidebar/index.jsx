@@ -53,6 +53,7 @@ class Sidebar extends React.Component {
           <div className="sidebar__author">{authorBlock}</div>
           <div>
             <Menu data={menu} />
+
             <Links data={author} />
             <a href="https://marcgrabanski.com/rss.xml">RSS Feed</a>
           </div>

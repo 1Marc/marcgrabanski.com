@@ -4,6 +4,7 @@ title: 'Your Guide to Surviving Self-Employed Software Development'
 description: 'Use these lessons learned to help you survive self-employed software development.'
 tags:
   - 'Business'
+  - 'Checklists & Guides'
 date: '2013-12-31T07:22:47.000Z'
 draft: false
 layout: 'post'

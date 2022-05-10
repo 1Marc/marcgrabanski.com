@@ -4,7 +4,7 @@ import './style.scss'
 
 class Menu extends React.Component {
   render() {
-    const menu = this.props.data
+    let menu = this.props.data
 
     const menuBlock = (
       <ul className="menu__list">

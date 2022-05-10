@@ -1,7 +1,7 @@
 ---
 path: 'starting-frontend-masters'
 title: '🚀 Starting Frontend Masters'
-description: ''
+description: 'The team captured the story of starting Frontend Masters (~6 minutes) -- enjoy!'
 tags:
   - 'Business'
   - "Marc Grabanski's Work"
