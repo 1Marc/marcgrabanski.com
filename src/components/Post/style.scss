@@ -2,28 +2,30 @@
 @import '../../assets/scss/mixins';
 
 .post {
-  @include margin-bottom(1.25);
+  @include margin-bottom(2);
   &:last-child {
     @include margin-bottom(0.5);
   }
   &__title {
     font-size: $typographic-base-font-size * 1.6875;
     @include line-height(1.5);
-    @include margin-top(0);
-    @include margin-bottom(0.5);
+    @include margin-top(0.2);
+    @include margin-bottom(0.25);
     &-link {
       color: $color-base;
       &:hover,
       &:focus {
-        color: $color-base;
-        border-bottom: 1px solid $color-base;
+        color: $color-primary;
+        border-bottom: 1px solid $color-primary;
       }
     }
   }
   &__description {
     font-size: $typographic-base-font-size;
+    color: $color-gray;
     @include line-height(1);
-    @include margin-bottom(0.75);
+    @include margin-bottom(0.25);
+    @include margin-top(0.25);
   }
   &__meta {
     &-time {

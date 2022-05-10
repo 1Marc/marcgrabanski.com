@@ -32,10 +32,10 @@ $typographic-leading: round(
 );
 
 // Layout
-$layout-post-single-max-width: 945px;
-$layout-post-single-width: $layout-post-single-max-width - 305px;
+$layout-post-single-max-width: 1024px;
+$layout-post-single-width: $layout-post-single-max-width - 200px;
 
-$layout-width: 1070px;
+$layout-width: 1200px;
 $layout-breakpoint-sm: 685px;
 $layout-breakpoint-md: 960px;
 $layout-breakpoint-lg: 1100px;

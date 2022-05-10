@@ -73,7 +73,9 @@ module.exports = {
                   url: site.siteMetadata.siteUrl + node.frontmatter.path
                     ? node.frontmatter.path
                     : node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + node.frontmatter.path
+                    ? node.frontmatter.path
+                    : node.fields.slug,
                   custom_elements: [{ "content:encoded": node.html }],
                 })
               })

@@ -21,7 +21,7 @@ Some of the this year's career highlights:
 - I learned how to successfully code open source projects - helping thousands of developers around the world is worth its weight in gold.
 - I gave two presentations at jQueryCamp, held on the Harvard campus.
 - One week I was [featured on Ajaxian](http://ajaxian.com/archives/ajax-experience-tutorial-sessions) and [Smashing Magazine (jQuery Calendar)](http://www.smashingmagazine.com/2007/10/23/online-calendars-and-date-pickers/), sort of an epiphany that people are noticing and really do care about what I do.
-- To top off the year, my code is now being [used by Google](google-uses-ui-datepicker).
+- To top off the year, my code is now being used by Google.
 
 ### Looking Forward
 

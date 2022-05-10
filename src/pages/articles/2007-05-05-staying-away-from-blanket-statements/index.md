@@ -17,10 +17,10 @@ Even as a web developer we need to be aware of how we communicate. You don't hav
 
 > All \_**\_ are \_\_**. \_**\_ blows away all other \_\_**.
 
-> These types of blanket statements are almost always offensive because they put something above everything else.
+These types of blanket statements are almost always offensive because they put something above everything else.
 
 **Instead try the following:**
 
 > This \_**\_ suits me best. I'm very impressed with \_\_** ability to \_\_\_\_.
 
-> This way you are putting your words into a positive statement that separates what you are talking about from others without bashing anything. Being respectful and caring enough to phrase your statements like this will help you in your personal life and career. Now, excuse me I'm off to follow my own advice!
+This way you are putting your words into a positive statement that separates what you are talking about from others without bashing anything. Being respectful and caring enough to phrase your statements like this will help you in your personal life and career. Now, excuse me I'm off to follow my own advice!

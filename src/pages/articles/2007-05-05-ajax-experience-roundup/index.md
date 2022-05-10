@@ -39,7 +39,7 @@ In order for a backend framework to be useful to me it must leave the presentati
 
 ### [Paul Bakaus](http://www.paulbakaus.com/)
 
-Paul overviewed some of the recent happening online that replicate we know and love on the desktop, such as drag&drop and collapse&expand. He put a term to these interactions called, [design patterns". Design patterns are solutions for interactive, navigation and visualization problems. On the browser they are often JavaScript based. Then he showed off real world examples and how they are coded in JavaScript. He finished by showing the ready to use components in the "jQuery User Interface library (JUI)](http://ui.jquery.com/) .
+Paul overviewed some of the recent happening online that replicate we know and love on the desktop, such as drag&drop and collapse&expand. He put a term to these interactions called,design patterns". Design patterns are solutions for interactive, navigation and visualization problems. On the browser they are often JavaScript based. Then he showed off real world examples and how they are coded in JavaScript. He finished by showing the ready to use components in the "jQuery User Interface library (JUI).
 [Paul's Slides](http://ajaxexperience.techtarget.com/images/Presentations/Bakaus_Paul_DesignPatters_jQuery.pdf)
 
 ![](./tae-paul-jui.jpg)

@@ -5,8 +5,10 @@ import './style.scss'
 
 class Post extends React.Component {
   render() {
-    const { title, date, description, path } = this.props.data.node.frontmatter
-    const slug = path ? path : this.props.data.node.fields.slug
+    const node = this.props.data.node;
+    const { title, date, description, path } = node.frontmatter
+    const slug = path ? path : node.fields.slug
+    const tags = node.fields.tagSlugs
 
     return (
       <div className="post">
@@ -29,6 +31,12 @@ class Post extends React.Component {
             {title}
           </Link>
         </h2>
+        <p className="post__description">
+          {description}
+        </p>
+        <p>
+          <Link className="post__readmore" to={"/"+slug}> Read More →</Link>
+        </p>
       </div>
     )
   }
