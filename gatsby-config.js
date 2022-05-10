@@ -70,12 +70,12 @@ module.exports = {
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.frontmatter.path
+                  url: site.siteMetadata.siteUrl + (node.frontmatter.path
                     ? node.frontmatter.path
-                    : node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.frontmatter.path
+                    : node.fields.slug),
+                  guid: site.siteMetadata.siteUrl + (node.frontmatter.path
                     ? node.frontmatter.path
-                    : node.fields.slug,
+                    : node.fields.slug),
                   custom_elements: [{ "content:encoded": node.html }],
                 })
               })
