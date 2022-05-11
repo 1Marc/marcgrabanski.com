@@ -15,21 +15,21 @@ Since posting my solution, I was surprised to see the repo has received over 450
 
 [![TodoMVC with Vanilla JavaScript in 2022 with 481 stars](./todomvc-vanillajs.png)](https://github.com/1Marc/todomvc-vanillajs-2022) and sparked discussion on social sites like [Hacker News](https://news.ycombinator.com/item?id=31293750).
 
-## Criticism: Input Sanitization 
+## Addressing the Top 4 Common Criticisms
+
+### Criticism of Vanilla JS #1: Input Sanitization 
 
 The best way to sanitize user input is to use `node.textContent`. [I updated my code to use textContent](https://github.com/1Marc/todomvc-vanillajs-2022/blob/main/js/app.js#L68)
 
 Beyond this, there is a new [Trusted Types API](https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API) for sanitizing generated HTML. With JavaScript, I would update my code to use this method if I was generating lots of nested markup. (Note that it isn't available yet in Safari, but hopefully, it will be soon)
 
-## Addressing the Top 3 Common Criticisms
-
-## Criticism #1: Frameworks Enable Declarative UI
+### Criticism of Vanilla JS #2: Frameworks Enable Declarative UI
 
 > Modern frameworks like React and Vue don't exist to fill in the gap left by native JS, they exist so that you write your application in a declarative way where the view is rendered as a function of state.
 
 I was able to accomplish this in my vanilla JavaScript code by calling `App.render()` when the model changes. [See the code here](https://github.com/1Marc/todomvc-vanillajs-2022/blob/main/js/app.js#L19)
 
-## Criticism #2: Frameworks have DOM Diffing
+### Criticism of Vanilla JS #3: Frameworks have DOM Diffing
 
 This was the most common criticism cited:
 
@@ -49,7 +49,7 @@ That said, if you need to solve this problem specifically and need DOM diffing, 
 
 * [fastdom](https://github.com/wilsonpage/fastdom)
 
-## Criticism #3: Vanilla JavaScript Will Never Scale
+### Criticism of Vanilla JS #4: It Will Never Scale
 
 This one is more complicated to address. I've built many large JavaScript projects and have scaled them across many developers, making these companies tons of money, and some of these apps still exist and are used today. 
 
