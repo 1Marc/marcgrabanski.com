@@ -246,4 +246,10 @@ I admit it does look a bit messy at first glance. But the alternative here is to
 
 I find a good pattern is to have the CSS hide things you don't need on the initial render, and then have the JavaScript show the elements you need if the view is based on state.
 
-There you have it! I'll continue to update this post as I have more thoughts on it. Please send your feedback to me [@1marc on Twitter](https://twitter.com/1Marc)!
+## Final Thoughts
+
+Overall I think that JavaScript is better today than it has ever been. The fact that I could shave off 80% of the code that we used to use at the drop of a hat felt terrific. And we now have design patterns that we can lift modern frameworks that we can apply to vanilla JavaScript and make our UIs more declarative.
+
+I'm certainly not saying you need to drop your favorite framework today. Still, I'd like us to consider it an option. And as Web Components get more popular, we have a way to share our code in an interoperable and framework-agnostic way.
+
+I'll continue to update this post as I have more thoughts on it. And I will continue to write more about my thoughts if you're interested. Please send your feedback to me [@1marc on Twitter](https://twitter.com/1Marc) – cheers!
