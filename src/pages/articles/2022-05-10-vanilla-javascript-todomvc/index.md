@@ -17,7 +17,7 @@ Since posting my solution, I was surprised to see the repo has received over 450
 
 [![TodoMVC with Vanilla JavaScript in 2022 with 481 stars](./todomvc-vanillajs.png)](https://github.com/1Marc/todomvc-vanillajs-2022)
 
-When I shared it on Twitter, I was surprised by how positive a response this got! People asked me to create education around the topic. But as things get popular, eventually it sparks debate on sites like [Hacker News](https://news.ycombinator.com/item?id=31293750). So let me address the most common criticisms of my solution (and also of vanilla JavaScript) from the debates on Twitter and social sites.
+When I shared it on Twitter, I was surprised by how positive of a response this got! People asked me to create education around the topic. But as things get popular, eventually, it sparks debate on sites like [Hacker News](https://news.ycombinator.com/item?id=31293750). So let me address the most common criticisms of my solution (and vanilla JavaScript) from the debates on Twitter and social sites.
 
 ## Addressing the Top 4 Common Criticisms of My Solution (Mostly of Vanilla JavaScript in General)
 
@@ -52,11 +52,11 @@ I agree anecdotally that most websites and web apps don't suffer from this issue
 
 My issue with modern frameworks and the DOM diffing approach is that they typically necessitate that you render the entire App client-side. In my vanilla JS projects, I only re-render the most minimal parts of the page necessary. There's my argument for not needing DOM diffing everywhere ... it is inefficient in many cases because it forces you to render all of your App client-side increasing startup time and the amount the client has to do overall.
 
-That said, if you do need DOM diffing in parts of a vanilla app, there are libraries like [fastdom](https://github.com/wilsonpage/fastdom) that do just that.
+That said, if you do need DOM diffing in parts of a vanilla app, libraries like [fastdom](https://github.com/wilsonpage/fastdom) do just that.
 
-There are also fantastic templating libraries like [Lit-html](https://lit.dev/docs/v1/lit-html/introduction/) that solves this problem in a tiny package (less than 1KB), and you can continue using string templates with that.
+There are also fantastic templating libraries like [Lit-html](https://lit.dev/docs/v1/lit-html/introduction/) that solve this problem in a tiny package (less than 1KB), and you can continue using string templates with that.
 
-Lastly, I'll note that DOM diffing is not an efficient way to get reactive updates becuase it doubles up data structures needlessly. Lit, Svelte, Stencil, and many others don't need it at all. These approaches win on both performance and memory use (which matters because garbage collection hurts the UX).
+Lastly, I'll note that DOM diffing is inefficient for getting reactive updates because it doubles up data structures. Lit, Svelte, Stencil, and many others don't need it. These approaches win on performance and memory use (which matters because garbage collection hurts the UX).
 
 ### Criticism of Vanilla JS #4: "Frameworks Scale, Vanilla Will Never Scale"
 
