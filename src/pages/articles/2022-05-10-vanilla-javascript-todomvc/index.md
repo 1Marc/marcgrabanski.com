@@ -86,17 +86,19 @@ $: {
 },
 ```
 
+DOM nodes should be prefixed. Not as much of an issue if you're using TypeScript, but regardless, I still think it's a nice quality of life improvement to easily know what that variable contains at first glance.
+
 ### 2. Subclass EventTarget to Send Events Out
 
-Subclassing EventTarget on the TodoStore allows us to send out custom events to listen to anywhere in your App upon save.
+Sending out events allows other things that want to know about those events subscribe to those events. A way to accomplish this on a JavaScript module is to Subclass EventTarget. Here we do this when creating the TodoStore to send out custom event upon save.
 
 [`export const TodoStore = class extends EventTarget`](https://github.com/1Marc/todomvc-vanillajs-2022/blob/main/js/store.js#L1)
 
-Firing the save event on the store:
+Here we fire the "save" event on the store:
 
 [`this.dispatchEvent(new CustomEvent('save'));`](https://github.com/1Marc/todomvc-vanillajs-2022/blob/main/js/store.js#L17)
 
-In this case, in the App init method, we subscribe to this event and render when the store changes:
+In the App init method we subscribe to this event, and then re-render the app when the store changes:
 
 [`Todos.addEventListener('save', App.render);`](https://github.com/1Marc/todomvc-vanillajs-2022/blob/main/js/app.js#L19)
 
@@ -104,7 +106,9 @@ Hat tip to [Alex Russel for teaching me this one](https://twitter.com/slightlyla
 
 ### 3. Setup All Global Event Listeners in One Place
 
-In the App init method, we set up all the global event listeners, subscribe to the store as mentioned above, and then render the App.
+It is important to know exactly where the global event listeners are set. I find this is a good thing to do in the App init method. 
+
+Here we set up all the global event listeners, subscribe to the store as mentioned above, and then initially render the App.
 
 ```js
 init() {
@@ -130,6 +134,10 @@ init() {
 ```
 
 ### 4. Keep Rendering Component and Component's Event Listeners in One Place
+
+When you create new DOM elements and insert them into the page, it's important that you locate the event listeners near where the new DOM elements are created.
+
+Here is what the full create todo item code looks like:
 
 ```js
 createTodoItem(todo) {
@@ -184,7 +192,21 @@ li.querySelector('label').textContent = todo.title;
 li.querySelector('.edit').value = todo.title;
 ```
 
-Then set up our component's event listeners in one spot.
+Then set up our component's event listeners.
+
+```js
+addEvent(li, '.destroy', 'click', () => App.removeTodo(todo, li));
+addEvent(li, '.toggle', 'click', () => App.toggleTodo(todo, li));
+addEvent(li, 'label', 'dblclick', () => App.editingTodo(todo, li));
+addEvent(li, '.edit', 'keyup', e => {
+  if (e.key === 'Enter') App.updateTodo({ ...todo, title: e.target.value }, li)
+  if (e.key === 'Escape') {
+    e.target.value = todo.title;
+    App.render();
+  }
+});
+addEvent(li, '.edit', 'blur', e => App.updateTodo({ ...todo, title: e.target.value }, li));
+```
 
 Note that I created my own little `addEvent` helper because I just thought it was a bit nicer API for binding events.
 
@@ -194,7 +216,9 @@ export const addEvent = (el, selector, event, handler) =>{
 }
 ```
 
-Overall, the key here is to put all the component code in one place, like in React and other modern frameworks. This keeps our UI declarative, addressing one of the main criticisms.
+Overall, the idea here is to keep all the component code in one place (just like in React and other modern frameworks). This keeps our UI declarative, addressing one of the main criticisms.
+
+Sidebar: Some people were concerned this would create memory issues if we are re-rendering these elements and attaching the events directly to the new elements. I've found the same thing as in this [comment](https://news.ycombinator.com/item?id=31296728), that the browsers are smart enough to garbage collect the old listeners and you don't need to handle this like back in the day. If it does become an issue for some reason, you can move the event listeners higher up in the app and use event delegation instead of binding the events directly.
 
 ### 5. Render the State of the World Based on Data (Data Flowing Down)
 
@@ -218,6 +242,8 @@ App.$.count.innerHTML = `
 `;
 ```
 
-It may look a bit messy at first glance. But the alternative here is to put everything in our App in templated components like above. I'd rather rely more on the server to render and have complete control over the bits we hide and show. It accomplishes the optimizations that you would get with DOM diffing, albeit manually. Again we are letting the server do most of the work rather than waiting for the entire App to render client-side.
+I admit it does look a bit messy at first glance. But the alternative here is to render the entire App client-side in components. I'd rather rely more on the server to render and have complete control over the bits that we show. This accomplishes the optimizations that you would get with DOM diffing, albeit manually. We are letting the server do most of the work, rather than waiting for the entire App to render client-side.
+
+I find a good pattern is to have the CSS hide things you don't need on initial render, and then have the JavaScript show the elements you need if the view is based on state.
 
 There you have it! I'll continue to update this post as I have more thoughts on it. Please send your feedback to me [@1marc on Twitter](https://twitter.com/1Marc)!
