@@ -21,7 +21,14 @@ When I shared it on Twitter, I was surprised by how positive a response this got
 
 ## Addressing the Top 4 Common Criticisms of My Solution (Mostly of Vanilla JavaScript in General)
 
-### Criticism of Vanilla JS #1: Input Sanitization 
+### Criticism of Vanilla JS #1: "Frameworks Enable Declarative UI"
+
+> Modern frameworks like React and Vue don't exist to fill in the gap left by native JS, they exist so that you write your application in a declarative way where the view is rendered as a function of state.
+
+To me, this is simply a design pattern. Patterns apply in any language. For instance, I accomplished roughly the same thing (IMO) in my vanilla JavaScript code by calling `App.render()` when the model data changes. [See the code here](https://github.com/1Marc/todomvc-vanillajs-2022/blob/main/js/app.js#L19)
+
+
+### Criticism of Vanilla JS #2: "Frameworks Provide Input Sanitization"
 
 The best way to sanitize user input is to use `node.textContent`. [I updated my code to use textContent](https://github.com/1Marc/todomvc-vanillajs-2022/blob/main/js/app.js#L68)
 
@@ -29,13 +36,7 @@ Beyond this, there is a new [Trusted Types API](https://developer.mozilla.org/en
 
 > Trusted Types not being everywhere is fine. You can use them where they're supported and get early warning of issues that way. Security improves as browsers improve, and usage turns into an incentive for lagging engines ([source](https://twitter.com/slightlylate/status/1523425952218292224))
 
-### Criticism of Vanilla JS #2: Frameworks Enable Declarative UI
-
-> Modern frameworks like React and Vue don't exist to fill in the gap left by native JS, they exist so that you write your application in a declarative way where the view is rendered as a function of state.
-
-To me, this is simply a design pattern. Patterns apply in any language. For instance, I accomplished roughly the same thing (IMO) in my vanilla JavaScript code by calling `App.render()` when the model data changes. [See the code here](https://github.com/1Marc/todomvc-vanillajs-2022/blob/main/js/app.js#L19)
-
-### Criticism of Vanilla JS #3: Frameworks Provide DOM Diffing
+### Criticism of Vanilla JS #3: "Frameworks Provide DOM Diffing and DOM Diffing is Necessary"
 
 The most common criticism cited was the lack of DOM Diffing in vanilla JavaScript.
 
@@ -57,7 +58,7 @@ That said, if you do need DOM diffing in parts of a vanilla app, there are small
 
 * [fastdom](https://github.com/wilsonpage/fastdom)
 
-### Criticism of Vanilla JS #4: It Will Never Scale
+### Criticism of Vanilla JS #4: "Frameworks Scale, Vanilla Will Never Scale"
 
 This one is more complicated to address beyond a single blog post. I have indeed built many large vanilla JavaScript projects and have scaled them across developers, making the companies I worked for tons of money, and the apps still exist and are used today.
 
