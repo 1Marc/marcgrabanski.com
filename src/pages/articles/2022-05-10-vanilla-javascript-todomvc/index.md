@@ -17,7 +17,7 @@ Since posting my solution, I was surprised to see the repo has received over 450
 
 [![TodoMVC with Vanilla JavaScript in 2022 with 481 stars](./todomvc-vanillajs.png)](https://github.com/1Marc/todomvc-vanillajs-2022)
 
-When I shared it on Twitter, I was surprised by how positive a response this got! People even asked me to create a course on the topic. But of course, as things get popular, eventually, it sparks debate on sites like [Hacker News](https://news.ycombinator.com/item?id=31293750). 
+When I shared it on Twitter, I was surprised by how positive a response this got! People asked me to create education around the topic. But as things get popular, eventually it sparks debate on sites like [Hacker News](https://news.ycombinator.com/item?id=31293750). So let me address the most common criticisms of my solution (and also of vanilla JavaScript) from the debates on Twitter and social sites.
 
 ## Addressing the Top 4 Common Criticisms of My Solution (Mostly of Vanilla JavaScript in General)
 
@@ -52,11 +52,11 @@ I agree anecdotally that most websites and web apps don't suffer from this issue
 
 My issue with modern frameworks and the DOM diffing approach is that they typically necessitate that you render the entire App client-side. In my vanilla JS projects, I only re-render the most minimal parts of the page necessary. There's my argument for not needing DOM diffing everywhere ... it is inefficient in many cases because it forces you to render all of your App client-side increasing startup time and the amount the client has to do overall.
 
-That said, if you do need DOM diffing in parts of a vanilla app, there are smaller libraries that do just that:
+That said, if you do need DOM diffing in parts of a vanilla app, there are libraries like [fastdom](https://github.com/wilsonpage/fastdom) that do just that.
 
-* [Lit-html](https://lit.dev/docs/v1/lit-html/introduction/) is an example of a tool that solves this problem in a tiny package (less than 1KB), and you can continue using string templates with that.
+There are also fantastic templating libraries like [Lit-html](https://lit.dev/docs/v1/lit-html/introduction/) that solves this problem in a tiny package (less than 1KB), and you can continue using string templates with that.
 
-* [fastdom](https://github.com/wilsonpage/fastdom)
+Lastly, I'll note that DOM diffing is not an efficient way to get reactive updates becuase it doubles up data structures needlessly. Lit, Svelte, Stencil, and many others don't need it at all. These approaches win on both performance and memory use (which matters because garbage collection hurts the UX).
 
 ### Criticism of Vanilla JS #4: "Frameworks Scale, Vanilla Will Never Scale"
 
@@ -219,7 +219,7 @@ export const addEvent = (el, selector, event, handler) =>{
 
 Overall, the idea here is to keep all the component code in one place (just like in React and other modern frameworks). This keeps our UI declarative, addressing one of the main criticisms.
 
-Sidebar: Some people were concerned this would create memory issues if we re-render these elements and attach the events directly to the new elements. However, I've found the same thing as [this commenter](https://news.ycombinator.com/item?id=31296728) – browsers are smart enough to garbage collect the old listeners, and you don't need to handle this as you used to in the past. If it becomes an issue, you can move the event listeners higher up in the App and use event delegation instead of binding the events directly.
+Sidebar: Some people were concerned this would create memory issues if we re-render these elements and attach the events directly to the new elements. However, I've found the same thing as [this commenter](https://news.ycombinator.com/item?id=31296728) – browsers are smart enough to garbage collect the old listeners, and you don't need to handle this as you used to in the past. If it becomes an issue, you can move the event listeners higher up in the App and switch to using event delegation instead of binding the events directly.
 
 ### 5. Render the State of the World Based on Data (Data Flowing Down)
 
