@@ -17,7 +17,7 @@ Since posting my solution, I was surprised to see the repo has received over 450
 
 [![TodoMVC with Vanilla JavaScript in 2022 with 481 stars](./todomvc-vanillajs.png)](https://github.com/1Marc/todomvc-vanillajs-2022)
 
-When I shared it on Twitter, I was surprised with how much positive response this got! People even asking me to create a course on the topic. But of course, as things get popular, eventually it sparks debate on sites like [Hacker News](https://news.ycombinator.com/item?id=31293750). 
+When I shared it on Twitter, I was surprised by how positive a response this got! People even asked me to create a course on the topic. But of course, as things get popular, eventually, it sparks debate on sites like [Hacker News](https://news.ycombinator.com/item?id=31293750). 
 
 ## Addressing the Top 4 Common Criticisms of My Solution (Mostly of Vanilla JavaScript in General)
 
@@ -27,17 +27,17 @@ The best way to sanitize user input is to use `node.textContent`. [I updated my 
 
 Beyond this, there is a new [Trusted Types API](https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API) for sanitizing generated HTML. I would use this new API if I was generating nested markup with dynamic, user-input data. (Note that this new API isn't available yet in Safari, but hopefully, it will be soon)
 
-> Trusted Types not being everywhere is fine. You can use them where they're supported and get early warning of issues that way. Security improves as browsers improve, and usage turns into incentive for langging engines ([source](https://twitter.com/slightlylate/status/1523425952218292224))
+> Trusted Types not being everywhere is fine. You can use them where they're supported and get early warning of issues that way. Security improves as browsers improve, and usage turns into an incentive for lagging engines ([source](https://twitter.com/slightlylate/status/1523425952218292224))
 
 ### Criticism of Vanilla JS #2: Frameworks Enable Declarative UI
 
 > Modern frameworks like React and Vue don't exist to fill in the gap left by native JS, they exist so that you write your application in a declarative way where the view is rendered as a function of state.
 
-This might be a hot take, but to me, this is simply a design pattern. Design patterns can be applied in any language. For instance, I was able to accomplish roughly the same thing (IMO) in my vanilla JavaScript code by calling `App.render()` when the model data changes. [See the code here](https://github.com/1Marc/todomvc-vanillajs-2022/blob/main/js/app.js#L19)
+To me, this is simply a design pattern. Patterns apply in any language. For instance, I accomplished roughly the same thing (IMO) in my vanilla JavaScript code by calling `App.render()` when the model data changes. [See the code here](https://github.com/1Marc/todomvc-vanillajs-2022/blob/main/js/app.js#L19)
 
 ### Criticism of Vanilla JS #3: Frameworks Provide DOM Diffing
 
-This was the most common criticism cited:
+The most common criticism cited was the lack of DOM Diffing in vanilla JavaScript.
 
 > A reactive UI/diff engine is non-negotiable for me.
 
@@ -47,9 +47,9 @@ However, I think this is a much more balanced take:
 
 > Diffing seems necessary when your UI gets complicated to the level that a small change requires a full page re-render. However, I don't think this is necessary for at least 95% of the websites on the internet.
 
-I agree with him that most websites and web apps don't suffer from this issue, even when re-rendering the needed components based on the application state in vanilla like a framework would. 
+I agree anecdotally that most websites and web apps don't suffer from this issue, even when re-rendering the needed components based on vanilla's application state like a framework. 
 
-My issue with modern frameworks and the DOM diffing approach is that they typically necessitate that you render the entire App client-side. In my vanilla JS projects, I only re-render the most minimal parts of the page necessary. There's my argument for not needing DOM diffing everywhere ... it is inefficent in many cases because it forces you to render all of your app client-side increasing startup time and the amount the client has to do overall.
+My issue with modern frameworks and the DOM diffing approach is that they typically necessitate that you render the entire App client-side. In my vanilla JS projects, I only re-render the most minimal parts of the page necessary. There's my argument for not needing DOM diffing everywhere ... it is inefficient in many cases because it forces you to render all of your App client-side increasing startup time and the amount the client has to do overall.
 
 That said, if you do need DOM diffing in parts of a vanilla app, there are smaller libraries that do just that:
 
@@ -90,7 +90,7 @@ DOM nodes should be prefixed. Not as much of an issue if you're using TypeScript
 
 ### 2. Subclass EventTarget to Send Events Out
 
-Sending out events allows other things that want to know about those events subscribe to those events. A way to accomplish this on a JavaScript module is to Subclass EventTarget. Here we do this when creating the TodoStore to send out custom event upon save.
+Sending out events allows other things that want to know about those events to subscribe to those events. A way to accomplish this on a JavaScript module is to Subclass EventTarget. We do this when creating the TodoStore to send out custom events upon saving.
 
 [`export const TodoStore = class extends EventTarget`](https://github.com/1Marc/todomvc-vanillajs-2022/blob/main/js/store.js#L1)
 
@@ -98,7 +98,7 @@ Here we fire the "save" event on the store:
 
 [`this.dispatchEvent(new CustomEvent('save'));`](https://github.com/1Marc/todomvc-vanillajs-2022/blob/main/js/store.js#L17)
 
-In the App init method we subscribe to this event, and then re-render the app when the store changes:
+In the App init method, we subscribe to this event and then re-render the App when the store changes:
 
 [`Todos.addEventListener('save', App.render);`](https://github.com/1Marc/todomvc-vanillajs-2022/blob/main/js/app.js#L19)
 
@@ -135,7 +135,7 @@ init() {
 
 ### 4. Keep Rendering Component and Component's Event Listeners in One Place
 
-When you create new DOM elements and insert them into the page, it's important that you locate the event listeners near where the new DOM elements are created.
+When you create new DOM elements and insert them into the page, it's best to locate the event listeners near where the new DOM element templates.
 
 Here is what the full create todo item code looks like:
 
@@ -218,7 +218,7 @@ export const addEvent = (el, selector, event, handler) =>{
 
 Overall, the idea here is to keep all the component code in one place (just like in React and other modern frameworks). This keeps our UI declarative, addressing one of the main criticisms.
 
-Sidebar: Some people were concerned this would create memory issues if we are re-rendering these elements and attaching the events directly to the new elements. I've found the same thing as in this [comment](https://news.ycombinator.com/item?id=31296728), that the browsers are smart enough to garbage collect the old listeners and you don't need to handle this like back in the day. If it does become an issue for some reason, you can move the event listeners higher up in the app and use event delegation instead of binding the events directly.
+Sidebar: Some people were concerned this would create memory issues if we re-render these elements and attach the events directly to the new elements. However, I've found the same thing as [this commenter](https://news.ycombinator.com/item?id=31296728) – browsers are smart enough to garbage collect the old listeners, and you don't need to handle this as you used to in the past. If it becomes an issue, you can move the event listeners higher up in the App and use event delegation instead of binding the events directly.
 
 ### 5. Render the State of the World Based on Data (Data Flowing Down)
 
@@ -242,8 +242,8 @@ App.$.count.innerHTML = `
 `;
 ```
 
-I admit it does look a bit messy at first glance. But the alternative here is to render the entire App client-side in components. I'd rather rely more on the server to render and have complete control over the bits that we show. This accomplishes the optimizations that you would get with DOM diffing, albeit manually. We are letting the server do most of the work, rather than waiting for the entire App to render client-side.
+I admit it does look a bit messy at first glance. But the alternative here is to render the entire App client-side in components. I'd instead rely more on the server to generate the markup. Then take control over the bits that we show. This pattern accomplishes the optimizations that you would get with DOM diffing, albeit manually. We let the server do most of the work rather than waiting for the entire App to render client-side.
 
-I find a good pattern is to have the CSS hide things you don't need on initial render, and then have the JavaScript show the elements you need if the view is based on state.
+I find a good pattern is to have the CSS hide things you don't need on the initial render, and then have the JavaScript show the elements you need if the view is based on state.
 
 There you have it! I'll continue to update this post as I have more thoughts on it. Please send your feedback to me [@1marc on Twitter](https://twitter.com/1Marc)!
