@@ -9,27 +9,33 @@ draft: false
 layout: 'post'
 ---
 
-To see just how far JavaScript has come since ES6 and beyond, I took a shot at coding [TodoMVC with Modern, Vanilla JavaScript](https://github.com/1Marc/todomvc-vanillajs-2022). **My pure JavaScript solution took ~170 lines of code in just over an hour!** Compare this to the [official TodoMVC vanilla JS](https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs) solution, which is well over 900 lines of code. 
+To see just how far JavaScript has come since ES6 and beyond, I took a shot at coding [TodoMVC with Modern, Vanilla JavaScript](https://github.com/1Marc/todomvc-vanillajs-2022). **My pure JavaScript solution took ~170 lines of code in just over an hour!** Compare this to the official TodoMVC vanilla JS solution, which is well over 900 lines of [code](https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs). 
+
+An 80%+ reduction in code! I ❤️ the new state of JavaScript.
 
 Since posting my solution, I was surprised to see the repo has received over 450 stars on GitHub:
 
-[![TodoMVC with Vanilla JavaScript in 2022 with 481 stars](./todomvc-vanillajs.png)](https://github.com/1Marc/todomvc-vanillajs-2022) and sparked discussion on social sites like [Hacker News](https://news.ycombinator.com/item?id=31293750).
+[![TodoMVC with Vanilla JavaScript in 2022 with 481 stars](./todomvc-vanillajs.png)](https://github.com/1Marc/todomvc-vanillajs-2022)
 
-## Addressing the Top 4 Common Criticisms
+When I shared it on Twitter, I was surprised with how much positive response this got! People even asking me to create a course on the topic. But of course, as things get popular, eventually it sparks debate on sites like [Hacker News](https://news.ycombinator.com/item?id=31293750). 
+
+## Addressing the Top 4 Common Criticisms of My Solution (Mostly of Vanilla JavaScript in General)
 
 ### Criticism of Vanilla JS #1: Input Sanitization 
 
 The best way to sanitize user input is to use `node.textContent`. [I updated my code to use textContent](https://github.com/1Marc/todomvc-vanillajs-2022/blob/main/js/app.js#L68)
 
-Beyond this, there is a new [Trusted Types API](https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API) for sanitizing generated HTML. With JavaScript, I would update my code to use this method if I was generating lots of nested markup. (Note that it isn't available yet in Safari, but hopefully, it will be soon)
+Beyond this, there is a new [Trusted Types API](https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API) for sanitizing generated HTML. I would use this new API if I was generating nested markup with dynamic, user-input data. (Note that this new API isn't available yet in Safari, but hopefully, it will be soon)
+
+> Trusted Types not being everywhere is fine. You can use them where they're supported and get early warning of issues that way. Security improves as browsers improve, and usage turns into incentive for langging engines ([source](https://twitter.com/slightlylate/status/1523425952218292224))
 
 ### Criticism of Vanilla JS #2: Frameworks Enable Declarative UI
 
 > Modern frameworks like React and Vue don't exist to fill in the gap left by native JS, they exist so that you write your application in a declarative way where the view is rendered as a function of state.
 
-I was able to accomplish this in my vanilla JavaScript code by calling `App.render()` when the model changes. [See the code here](https://github.com/1Marc/todomvc-vanillajs-2022/blob/main/js/app.js#L19)
+This might be a hot take, but to me, this is simply a design pattern. Design patterns can be applied in any language. For instance, I was able to accomplish roughly the same thing (IMO) in my vanilla JavaScript code by calling `App.render()` when the model data changes. [See the code here](https://github.com/1Marc/todomvc-vanillajs-2022/blob/main/js/app.js#L19)
 
-### Criticism of Vanilla JS #3: Frameworks have DOM Diffing
+### Criticism of Vanilla JS #3: Frameworks Provide DOM Diffing
 
 This was the most common criticism cited:
 
@@ -37,13 +43,15 @@ This was the most common criticism cited:
 
 > Diffing is exactly what you need to do (barring newer methods like svelte) to figure out what to tell the browser to change. The vdom tree is much faster to manipulate than DOM nodes.
 
-However, I agree with this (more balanced, IMO) take:
+However, I think this is a much more balanced take:
 
 > Diffing seems necessary when your UI gets complicated to the level that a small change requires a full page re-render. However, I don't think this is necessary for at least 95% of the websites on the internet.
 
-I agree with him that most websites and web apps don't suffer from this issue, even when re-rendering the needed components based on the application state like a modern framework would. The thing with modern frameworks is that they typically necessitate that you render the entire App client-side. In my vanilla JS projects, I only re-render the most minimal parts of the page necessary.
+I agree with him that most websites and web apps don't suffer from this issue, even when re-rendering the needed components based on the application state in vanilla like a framework would. 
 
-That said, if you need to solve this problem specifically and need DOM diffing, there are two micro-library solutions:
+My issue with modern frameworks and the DOM diffing approach is that they typically necessitate that you render the entire App client-side. In my vanilla JS projects, I only re-render the most minimal parts of the page necessary. There's my argument for not needing DOM diffing everywhere ... it is inefficent in many cases because it forces you to render all of your app client-side increasing startup time and the amount the client has to do overall.
+
+That said, if you do need DOM diffing in parts of a vanilla app, there are smaller libraries that do just that:
 
 * [Lit-html](https://lit.dev/docs/v1/lit-html/introduction/) is an example of a tool that solves this problem in a tiny package (less than 1KB), and you can continue using string templates with that.
 
@@ -51,19 +59,17 @@ That said, if you need to solve this problem specifically and need DOM diffing, 
 
 ### Criticism of Vanilla JS #4: It Will Never Scale
 
-This one is more complicated to address. I've built many large JavaScript projects and have scaled them across many developers, making these companies tons of money, and some of these apps still exist and are used today. 
+This one is more complicated to address beyond a single blog post. I have indeed built many large vanilla JavaScript projects and have scaled them across developers, making the companies I worked for tons of money, and the apps still exist and are used today.
 
-Here's my hot take: Conventions and idioms are always needed, no matter if you have a framework. The codebase will always be only as good as the team,
+Here's my potentially hot take on this one: Conventions and idioms are always needed, no matter if you have a framework. **At the end of the day, your codebase will only be only as good as your team, not the framework.**
 
 The way vanilla JS scales is the same way any framework scales. You have to have intelligent people talk about the needs of the codebase and project.
 
-So with that, here are my JavaScript idioms and conventions I can demonstrate in this application:
-
 ## The Top 5 JavaScript Idioms and Conventions found in my TodoMVC Code
 
-However, many people were super positive about this no-nonsense approach. They are even requesting for me to create learning materials around vanilla JavaScript. I've built large apps and do know that they can scale, but you need to follow some language idioms and conventions to make it work.
+Despite the criticisms, many people were super positive about this no-nonsense approach. As mentioned, I've built large apps and do know that they can scale, but you need to follow some language idioms and conventions to make it work.
 
-Here are the conventions I can demonstrate in this codebase.
+Here are the thoughts I had extracted from this simple example of a codebase.
 
 ### 1. Prefix variables containing DOM nodes to $varname or $.* namespace.
 
