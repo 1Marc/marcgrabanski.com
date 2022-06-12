@@ -106,13 +106,13 @@ Lastly, I'll note that DOM diffing is inefficient for getting reactive updates b
 
 ### 🔥 Hot Take: Many modern frameworks necessitate that you render the entire App client-side, which is slow.
 
-My issue with modern frameworks forcing declarative UI (see #1) and DOM diffing (see #2) approach is that they necessitate unnecessary rendering and slow startup times. Remix is trying to avoid this by rendering server-side than "hydrating," and new approaches like Quik are trying not to have hydration altogether. It's an industry-wide problem, and people are trying to address it.
+My issue with modern frameworks forcing declarative UI (see #1) and DOM diffing (see #2) approach is that they necessitate unnecessary rendering and slow startup times. Remix is trying to avoid this by rendering server-side then "hydrating," and new approaches like Quik are trying not to have hydration altogether. It's an industry-wide problem, and people are trying to address it.
 
 In my vanilla JavaScript projects, I only re-render the most minimal parts of the page necessary. Template strings everywhere, and especially adding DOM diffing, is inefficient. It forces you to render all of your App client-side increasing startup time and the amount the client has to do overall each time data changes.
 
 That said, if you do need DOM diffing in parts of a vanilla app, libraries like [fastdom](https://github.com/wilsonpage/fastdom) do just that.
 
-There is also a fantastic templating library called [Lit-html](https://lit.dev/docs/v1/lit-html/introduction/) that solves this problem of making your App more declarative in a tiny package (less than 1KB), and you can continue using template string with that.
+There is also a fantastic templating library called [Lit-html](https://lit.dev/docs/v1/lit-html/introduction/) that solves this problem of making your App more declarative in a tiny package (less than 1KB), and you can continue using template strings with that.
 
 ## #4: "Frameworks Scale, Vanilla JavaScript Will Never Scale"
 
@@ -296,7 +296,7 @@ Similarly, when you create new DOM elements and insert them into the page, group
 
 Lastly, to reiterate what I said above, render everything based on the state in the `render()` method. This is a pattern lifted from modern frameworks.
 
-Always updates the DOM based on the data, not the other way around.
+### Make sure you update the DOM based on your App state, not the other way around. Even better if you avoid reading DOM to derive _any_ state apart from finding your target for event delegation.
 
 Side note: I like to rely on the server to generate the markup for faster boot times, then take control of the bits we show. Have the CSS initially hide things you don't need, and then have the JavaScript show the elements based on the state. Let the server do most of the work where you can, rather than wait for the entire App to render client-side.
 
