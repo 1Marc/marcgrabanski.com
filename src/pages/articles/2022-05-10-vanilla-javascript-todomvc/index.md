@@ -80,17 +80,17 @@ insertHTML(li, `
 li.querySelector('label').textContent = todo.title;
 ```
 
-In general, any user input needs to be set to the DOM using textContent and you're fine.
+Any user input must be set to the DOM using `textContent`. If you do that, then you're fine.
 
-Beyond this, there is a new [Trusted Types API](https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API) for sanitizing generated HTML. I would use this new API if I was generating nested markup with dynamic, user-input data. (Note that this new API isn't available yet in Safari, but hopefully, it will be soon)
+Beyond this, there is a new [Trusted Types API](https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API) for sanitizing generated HTML. I would use this new API if I were generating nested markup with dynamic, user-input data. (Note that this new API isn't available yet in Safari, but hopefully, it will be soon)
 
-> Trusted Types not being everywhere is fine. You can use them where they're supported and get early warning of issues that way. Security improves as browsers improve, and usage turns into an incentive for lagging engines ([source](https://twitter.com/slightlylate/status/1523425952218292224))
+> Trusted Types not being everywhere is fine. You can use them where they're supported and get early warning of issues. Security improves as browsers improve, and usage turns into an incentive for lagging engines ([source](https://twitter.com/slightlylate/status/1523425952218292224))
 
 Suppose you want a library to build your app template strings without using textContent manually. In that case, you can use a library like [DOMPurify](https://github.com/cure53/DOMPurify), which uses Trusted Types API under the hood.
 
 ## #3: "Frameworks Provide DOM Diffing and DOM Diffing is Necessary"
 
-The most common criticism cited was the lack of DOM Diffing in vanilla JavaScript.
+The most common criticism was the lack of DOM Diffing in vanilla JavaScript.
 
 > A reactive UI/diff engine is non-negotiable for me.
 
@@ -104,9 +104,9 @@ I agree most websites and web apps don't suffer from this issue, even when re-re
 
 Lastly, I'll note that DOM diffing is inefficient for getting reactive updates because it doubles up data structures. Lit, Svelte, Stencil, Solid, and many others don't need it and are way more performant as a result. These approaches win on performance and memory use, which matters because garbage collection hurts the UX.
 
-### 🔥 Hot Take: Many modern frameworks necessitate that you render the entire App client-side which is slow.
+### 🔥 Hot Take: Many modern frameworks necessitate that you render the entire App client-side, which is slow.
 
-My issue with modern frameworks forcing declarative UI (see #1) and DOM diffing (see #2) approach is that they necessitate unnecessary rendering and slow startup times. Remix is trying to avoid this by rendering server-side than "hydrating," and new approaches like Quik are trying to avoid hydration altogether. It's an industry-wide problem, and people are trying to address it.
+My issue with modern frameworks forcing declarative UI (see #1) and DOM diffing (see #2) approach is that they necessitate unnecessary rendering and slow startup times. Remix is trying to avoid this by rendering server-side than "hydrating," and new approaches like Quik are trying not to have hydration altogether. It's an industry-wide problem, and people are trying to address it.
 
 In my vanilla JavaScript projects, I only re-render the most minimal parts of the page necessary. Template strings everywhere, and especially adding DOM diffing, is inefficient. It forces you to render all of your App client-side increasing startup time and the amount the client has to do overall each time data changes.
 
@@ -124,7 +124,7 @@ Here's my potentially hot take on this one: Conventions and idioms are always ne
 
 The way vanilla JS scales is the same way any framework scales. You have to have intelligent people talk about the needs of the codebase and project.
 
-That said, here's an example of adding ~20 lines of structure to the code in the [app architecture branch](https://github.com/1Marc/todomvc-vanillajs-2022/tree/app-architecture/js). It splits the code into a TodoList and App component. Each component implements a render method with an optionally rendering a filtered view of the data.
+That said, here's an example of adding ~20 lines of structure to the code in the [app architecture branch](https://github.com/1Marc/todomvc-vanillajs-2022/tree/app-architecture/js). It splits the code into a TodoList and App component. Each component implements a render method that optionally renders a filtered view of the data.
 
 TodoList render:
 
@@ -153,13 +153,13 @@ App render:
   }
 ```
 
-Overall I'd argue either of my solutions are more performant, less code, and more straightforward than most, if not all, the TodoMVC implementations on the internet. _Without_ a framework.
+Overall I'd argue either of my solutions are more performant, less code, and more straightforward than most, if not all, the TodoMVC implementations on the internet _— without_ a framework.
 
 # Here are Seven Vanilla JavaScript Tips from the Code
 
 ## #1. Sanitization
 
-User input must be sanitized before being displayed in the HTML to prevent XSS (Cross-Site Scripting). Therefore new todo titles are added to the template string using `textContent`
+User input must be sanitized before being displayed in the HTML to prevent XSS (Cross-Site Scripting). Therefore new todo titles are added to the template string using `textContent`:
 
 ```javascript
 li.querySelector('label').textContent = todo.title;
@@ -169,7 +169,7 @@ li.querySelector('label').textContent = todo.title;
 
 Since we render the todos frequently, it doesn't make sense to bind event listeners and clean them up every time. Instead, we bind our events to the parent list that always exists in the DOM and infer which todo was clicked or edited by setting the data attribute of the item `$li.dataset.id = todo.id;`
 
-Event delgation uses the `matches` selector:
+Event delegation uses the `matches` selector:
 
 ```javascript
 export const delegate = (el, selector, event, handler) => {
@@ -247,7 +247,7 @@ We can subclass EventTarget to send out events on a class instance for our App t
 export const TodoStore = class extends EventTarget {
 ```
 
-In this case, when the store updates it sends an event:
+In this case, when the store updates, it sends an event:
 
 ```javascript
 this.dispatchEvent(new CustomEvent('save'));
@@ -259,9 +259,9 @@ The App listens to that event and re-renders itself based on the new store data:
 Todos.addEventListener('save', App.render);
 ```
 
-## #6. Setup All Global Event Listeners in One Place
+## #6. Group Setting Up Event Listeners
 
-It is essential to know exactly where the global event listeners are set. A good place to do that is in the App init method. 
+It is essential to know exactly where the global event listeners are set. An excellent place to do that is in the App init method:
 
 ```js
 init() {
@@ -288,40 +288,26 @@ init() {
 },
 ```
 
-Here we set up all the global event listeners, subscribe to the store as mentioned above, and then initially render the App.
+Here we set up all the global event listeners, subscribe to the store mentioned above, and then initially render the App.
 
-Similarly, when you create new DOM elements and insert them into the page, group the event listeners associated with the new elements near where they are created.
+Similarly, when you create new DOM elements and insert them into the page, group the event listeners associated with the new elements near where they are made.
 
 ## #7. Render the State of the World Based on Data (Data Flowing Down)
 
-Lastly, I've got all my logic for rendering grouped in the `App.render()` method:
+Lastly, to reiterate what I said above, render everything based on the state in the `render()` method. This is a pattern lifted from modern frameworks.
 
-```js
-render() {
-  const count = Todos.all().length;
-  App.$.setActiveFilter(App.filter);
-  emptyElement(App.$.list);
-  Todos.all(App.filter).forEach(todo => {
-    App.$.list.appendChild( App.createTodoItem(todo) );
-  });
-  App.$.showMain(count);
-  App.$.showFooter(count);
-  App.$.showClear(Todos.hasCompleted());
-  App.$.toggleAll.checked = Todos.isAllCompleted();
-  App.$.displayCount(Todos.all('active').length);
-}
-```
+Always updates the DOM based on the data, not the other way around.
 
-I like to rely on the server to generate the markup for faster boot times, then take control of the bits we show. This pattern surgically updates the DOM based on the data. We let the server do most of the work rather than waiting for the entire App to render client-side.
-
-A good pattern is to have the CSS hide things you don't need on the initial render and then have the JavaScript show the elements you need to view based on the state.
+Side note: I like to rely on the server to generate the markup for faster boot times, then take control of the bits we show. Have the CSS initially hide things you don't need, and then have the JavaScript show the elements based on the state. Let the server do most of the work where you can, rather than wait for the entire App to render client-side.
 
 ## IMO, Vanilla JavaScript is More Viable Today Than Ever for Building Web Apps!
 
-JavaScript is better today than it has ever been. The fact that I could shave off 80% of the code over the previous TodoMVC years ago at the drop of a hat feels terrific. And we now have established design patterns that we can lift from modern frameworks to apply to vanilla JavaScript projects to make our UIs as declarative as we like.
+JavaScript is better today than it has ever been. 
+
+The fact that I could shave off 80% of the code over the previous TodoMVC years ago at the drop of a hat feels terrific. Plus, we now have established design patterns that we can lift from modern frameworks to apply to vanilla JavaScript projects to make our UIs as declarative as we like.
 
 ### 🔥 Hot Take: I'd like us as an industry to consider pure JavaScript as an option for more projects.
 
-Final aside: as Web Components get more popular, we even have a way to share our code in an interoperable and framework-agnostic way. 
+Finally, as Web Components get more ergonomic, we even have a way to share our code in an interoperable and framework-agnostic way. 
 
-Hope you enjoyed the post. Please send your feedback to me [@1marc on Twitter](https://twitter.com/1Marc). Cheers!
+I hope you enjoyed the post. Please send your feedback to me [@1marc on Twitter](https://twitter.com/1Marc). Cheers!
