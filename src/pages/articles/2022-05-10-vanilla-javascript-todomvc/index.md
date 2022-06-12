@@ -296,7 +296,9 @@ Similarly, when you create new DOM elements and insert them into the page, group
 
 Lastly, to reiterate what I said above, render everything based on the state in the `render()` method. This is a pattern lifted from modern frameworks.
 
-### Make sure you update the DOM based on your App state, not the other way around. Even better if you avoid reading DOM to derive _any_ state apart from finding your target for event delegation.
+### Make sure you update the DOM based on your App state, not the other way around. 
+
+It's even better if you avoid reading DOM to derive _any_ part of your app state aside from finding your target for event delegation.
 
 Side note: I like to rely on the server to generate the markup for faster boot times, then take control of the bits we show. Have the CSS initially hide things you don't need, and then have the JavaScript show the elements based on the state. Let the server do most of the work where you can, rather than wait for the entire App to render client-side.
 
