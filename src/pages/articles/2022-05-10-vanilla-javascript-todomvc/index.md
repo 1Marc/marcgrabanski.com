@@ -44,7 +44,7 @@ insertHTML(li, `
 `);
 ```
 
-The entire App render method is only eleven lines, and it re-renders everything the App needs to based on the state of the App:
+The entire App `render` method is only eleven lines, and it re-renders everything the App needs to based on the state of the App:
 
 ```js
 render() {
@@ -102,51 +102,55 @@ However, I think this is a much more balanced take:
 
 I agree most websites and web apps don't suffer from this issue, even when re-rendering the needed components based on vanilla's application state like a framework. 
 
-Lastly, I'll note that DOM diffing is inefficient for getting reactive updates because it doubles up data structures. Lit, Svelte, Stencil, Solid and many others don't need it, and are way more performant as a result. These approaches win on performance and memory use, which matters because garbage collection hurts the UX.
+Lastly, I'll note that DOM diffing is inefficient for getting reactive updates because it doubles up data structures. Lit, Svelte, Stencil, Solid, and many others don't need it and are way more performant as a result. These approaches win on performance and memory use, which matters because garbage collection hurts the UX.
 
-### My personal issue with modern frameworks forcing declarative UI (see #1) and DOM diffing (see #2) approach is that they necessitate that you render the entire App client-side.
+### 🔥 Hot Take: Many modern frameworks necessitate that you render the entire App client-side. Yikes...slow.
+
+My issue with modern frameworks forcing declarative UI (see #1) and DOM diffing (see #2) approach is that they necessitate unnecessary rendering and slow startup times. Remix is trying to avoid this by rendering server-side than "hydrating," and new approaches like Quik are trying to avoid hydration altogether. It's an industry-wide problem, and people are trying to address it.
 
 In my vanilla JavaScript projects, I only re-render the most minimal parts of the page necessary. Template strings everywhere, and especially adding DOM diffing, is inefficient. It forces you to render all of your App client-side increasing startup time and the amount the client has to do overall each time data changes.
 
 That said, if you do need DOM diffing in parts of a vanilla app, libraries like [fastdom](https://github.com/wilsonpage/fastdom) do just that.
 
-There is also a fantastic templating library called [Lit-html](https://lit.dev/docs/v1/lit-html/introduction/) that solve this problem of making your app more declarative in a tiny package (less than 1KB), and you can continue using template string with that.
+There is also a fantastic templating library called [Lit-html](https://lit.dev/docs/v1/lit-html/introduction/) that solves this problem of making your App more declarative in a tiny package (less than 1KB), and you can continue using template string with that.
 
 ## #4: "Frameworks Scale, Vanilla JavaScript Will Never Scale"
 
-Time to dunk on this one! I have indeed built many large vanilla JavaScript projects and have scaled them across developers, making the companies I worked for tons of money, and the apps still exist and are used today. 🕺✨
+I have built many large vanilla JavaScript projects and scaled them across developers, making the companies I worked for tons of money, and these apps still exist today. 🕺✨
 
-Here's my potentially hot take on this one: Conventions and idioms are always needed, no matter if you have a framework. **At the end of the day, your codebase will only be only as good as your team, not the framework.**
+Here's my potentially hot take on this one: Conventions and idioms are always needed, no matter if you have a framework. 
 
-### The way vanilla JS scales is the same way any framework scales. You have to have intelligent people talk about the needs of the codebase and project.
+### 🔥 Hot Take: At the end of the day, your codebase will only be only as good as your team, not the framework.
 
-That said, here's an example of ~20 lines of added code on the [app architecture branch](https://github.com/1Marc/todomvc-vanillajs-2022/tree/app-architecture/js). It splits the code into a TodoList and App component. Each component implements a render method with an optionally rendering a filtered view of the data.
+The way vanilla JS scales is the same way any framework scales. You have to have intelligent people talk about the needs of the codebase and project.
+
+That said, here's an example of adding ~20 lines of structure to the code in the [app architecture branch](https://github.com/1Marc/todomvc-vanillajs-2022/tree/app-architecture/js). It splits the code into a TodoList and App component. Each component implements a render method with an optionally rendering a filtered view of the data.
 
 TodoList render:
 
 ```js
-	render ( filter ) {
-		if (filter !== undefined) this.filter = filter;
-		emptyElement(this.$root);
-		this.Todos.all(this.filter).forEach(todo => {
-			this.$root.appendChild( this.renderTodo(todo) );
-		});
-	}
+  render ( filter ) {
+    if (filter !== undefined) this.filter = filter;
+    emptyElement(this.$root);
+    this.Todos.all(this.filter).forEach(todo => {
+      this.$root.appendChild( this.renderTodo(todo) );
+    });
+  }
 ```
 
 App render:
 
 ```js
-	render( filter ) {
-		const count = this.Todos.all().length;
-		if (filter !== undefined) this.filter = filter;
-		this.$.setActiveFilter(this.filter);
-		this.$.showMain(count);
-		this.$.showFooter(count);
-		this.$.showClear(this.Todos.hasCompleted());
-		this.$.toggleAll.checked = this.Todos.isAllCompleted();
-		this.$.displayCount(this.Todos.all('active').length);
-	}
+  render( filter ) {
+    const count = this.Todos.all().length;
+    if (filter !== undefined) this.filter = filter;
+    this.$.setActiveFilter(this.filter);
+    this.$.showMain(count);
+    this.$.showFooter(count);
+    this.$.showClear(this.Todos.hasCompleted());
+    this.$.toggleAll.checked = this.Todos.isAllCompleted();
+    this.$.displayCount(this.Todos.all('active').length);
+  }
 ```
 
 Overall I'd argue either of my solutions are more performant, less code, and more straightforward than most, if not all, the TodoMVC implementations on the internet. _Without_ a framework.
@@ -179,8 +183,8 @@ When something inside the list is clicked, we read that data attribute id from t
 
 ```javascript
 delegate(App.$.list, selector, event, e => {
-	let $el = e.target.closest('[data-id]');
-	handler(Todos.get($el.dataset.id), $el, e);
+  let $el = e.target.closest('[data-id]');
+  handler(Todos.get($el.dataset.id), $el, e);
 });
 ```
 
@@ -190,17 +194,17 @@ insertAdjacentHTML is [much faster](https://www.measurethat.net/Benchmarks/Show/
 
 ```javascript
 export const insertHTML = (el, markup) => {
-	el.insertAdjacentHTML('afterbegin', markup);
+  el.insertAdjacentHTML('afterbegin', markup);
 }
 ```
 
-I also quite like this remove all child nodes helper which is a fast way to clear the contents of an element:
+I also quite like this remove all child nodes helper, which is a fast way to clear the contents of an element:
 
 ```javascript
 export const emptyElement = el => {
-	while (el.hasChildNodes()) {
-		el.removeChild(el.lastChild);
-	}
+  while (el.hasChildNodes()) {
+    el.removeChild(el.lastChild);
+  }
 }
 ```
 
@@ -210,28 +214,28 @@ DOM selectors and modifications are scoped to the `App.$.*` namespace. In a way,
 
 ```javascript
 $: {
-	input:		document.querySelector('.new-todo'),
-	toggleAll:	document.querySelector('.toggle-all'),
-	clear:		document.querySelector('.clear-completed'),
-	list:		document.querySelector('.todo-list'),
-	count:		document.querySelector('.todo-count'),
-	setActiveFilter: filter => {
-		document.querySelectorAll('.filters a').forEach(el => el.classList.remove('selected')),
-		document.querySelector(`.filters [href="#/${filter}"]`).classList.add('selected');
-	},
-	showMain: show =>
-		document.querySelector('.main').style.display = show ? 'block': 'none',
-	showClear: show =>
-		document.querySelector('.clear-completed').style.display = show ? 'block': 'none',
-	showFooter: show =>
-		document.querySelector('.footer').style.display = show ? 'block': 'none',
-	displayCount: count => {
-		emptyElement(App.$.count);
-		insertHTML(App.$.count, `
-			<strong>${count}</strong>
-			${count === 1 ? 'item' : 'items'} left
-		`);
-	}
+  input:    document.querySelector('.new-todo'),
+  toggleAll:  document.querySelector('.toggle-all'),
+  clear:    document.querySelector('.clear-completed'),
+  list:   document.querySelector('.todo-list'),
+  count:    document.querySelector('.todo-count'),
+  setActiveFilter: filter => {
+    document.querySelectorAll('.filters a').forEach(el => el.classList.remove('selected')),
+    document.querySelector(`.filters [href="#/${filter}"]`).classList.add('selected');
+  },
+  showMain: show =>
+    document.querySelector('.main').style.display = show ? 'block': 'none',
+  showClear: show =>
+    document.querySelector('.clear-completed').style.display = show ? 'block': 'none',
+  showFooter: show =>
+    document.querySelector('.footer').style.display = show ? 'block': 'none',
+  displayCount: count => {
+    emptyElement(App.$.count);
+    insertHTML(App.$.count, `
+      <strong>${count}</strong>
+      ${count === 1 ? 'item' : 'items'} left
+    `);
+  }
 },
 ```
 
@@ -257,7 +261,7 @@ Todos.addEventListener('save', App.render);
 
 ## #6. Setup All Global Event Listeners in One Place
 
-It is important to know exactly where the global event listeners are set. I find this is a good thing to do in the App init method. 
+It is essential to know exactly where the global event listeners are set. A good place to do that is in the App init method. 
 
 ```js
 init() {
@@ -286,11 +290,11 @@ init() {
 
 Here we set up all the global event listeners, subscribe to the store as mentioned above, and then initially render the App.
 
-Simularly, when you create new DOM elements and insert them into the page, group the event listeners associated with the new eleements near where they are created.
+Similarly, when you create new DOM elements and insert them into the page, group the event listeners associated with the new elements near where they are created.
 
 ## #7. Render the State of the World Based on Data (Data Flowing Down)
 
-Lastly, I've got all my logic for rendering grouped in the App.render method:
+Lastly, I've got all my logic for rendering grouped in the `App.render()` method:
 
 ```js
 render() {
@@ -308,16 +312,16 @@ render() {
 }
 ```
 
-I like to rely on the server to generate the markup for faster boot times, then take control over the bits that we show. This pattern surgically updates the DOM based on the data. We let the server do most of the work rather than waiting for the entire App to render client-side.
+I like to rely on the server to generate the markup for faster boot times, then take control of the bits we show. This pattern surgically updates the DOM based on the data. We let the server do most of the work rather than waiting for the entire App to render client-side.
 
-I find a good pattern is to have the CSS hide things you don't need on the initial render, and then have the JavaScript show the elements you need if the view is based on state.
+A good pattern is to have the CSS hide things you don't need on the initial render and then have the JavaScript show the elements you need to view based on the state.
 
 ## IMO, Vanilla JavaScript is More Viable Today Than Ever for Building Web Apps!
 
-JavaScript is better today than it has ever been. The fact that I could shave off 80% of the code over the previous TodoMVC years ago at the drop of a hat feels terrific. And we now have established design patterns that we can lift modern frameworks that we can apply to vanilla JavaScript and make our UIs more declarative.
+JavaScript is better today than it has ever been. The fact that I could shave off 80% of the code over the previous TodoMVC years ago at the drop of a hat feels terrific. And we now have established design patterns that we can lift from modern frameworks to apply to vanilla JavaScript projects to make our UIs as declarative as we like.
 
-### 🔥 Hot Take: I'd like, us as an industry, to consider pure JavaScript as an option for more projects.
+### 🔥 Hot Take: I'd like us as an industry to consider pure JavaScript as an option for more projects.
 
 Final aside: as Web Components get more popular, we even have a way to share our code in an interoperable and framework-agnostic way. 
 
-Hope you enjoyed the post. Please send your feedback to me [@1marc on Twitter](https://twitter.com/1Marc).  Cheers!
+Hope you enjoyed the post. Please send your feedback to me [@1marc on Twitter](https://twitter.com/1Marc). Cheers!
