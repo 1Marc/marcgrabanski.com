@@ -104,7 +104,7 @@ I agree most websites and web apps don't suffer from this issue, even when re-re
 
 Lastly, I'll note that DOM diffing is inefficient for getting reactive updates because it doubles up data structures. Lit, Svelte, Stencil, Solid, and many others don't need it and are way more performant as a result. These approaches win on performance and memory use, which matters because garbage collection hurts the UX.
 
-### 🔥 Hot Take: Many modern frameworks necessitate that you render the entire App client-side. Yikes...slow.
+### 🔥 Hot Take: Many modern frameworks necessitate that you render the entire App client-side which is slow.
 
 My issue with modern frameworks forcing declarative UI (see #1) and DOM diffing (see #2) approach is that they necessitate unnecessary rendering and slow startup times. Remix is trying to avoid this by rendering server-side than "hydrating," and new approaches like Quik are trying to avoid hydration altogether. It's an industry-wide problem, and people are trying to address it.
 
