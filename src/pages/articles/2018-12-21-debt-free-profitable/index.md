@@ -1,9 +1,9 @@
 ---
 path: 'debt-free-profitable'
-title: '📈 2018: Debt Free & Profitable'
+title: '2018: 📈 Debt Free & Profitable'
 description: 'Frontend Masters hit a major milestone: profitable and zero debt!'
 tags:
-  - "Marc Grabanski's Work"
+  - "Career Journal"
 date: '2018-12-21T16:39:09.213Z'
 draft: false
 layout: 'post'

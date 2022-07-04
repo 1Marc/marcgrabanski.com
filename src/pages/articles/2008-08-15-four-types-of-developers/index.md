@@ -3,10 +3,7 @@ path: 'four-types-of-developers'
 title: 'Four Types of Web Developers, Which are You?'
 description: "After years of being with developers - I've managed to generalize developers into a few categories."
 tags:
-  - 'Business'
-  - 'Communication'
-  - 'Development'
-  - 'The Basics'
+  - 'Opinion'
 date: '2008-08-15T07:12:48.000Z'
 draft: false
 layout: 'post'

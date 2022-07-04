@@ -3,7 +3,7 @@ path: 'success'
 title: "Why Some Smart People I Know Don't Become Succesful"
 description: "A guide to avoid some common mistakes smart friends of mine have made with their careers."
 tags:
-  - 'Business'
+  - 'Opinion'
   - 'Checklists & Guides'
 date: '2014-01-01T07:15:23.000Z'
 draft: false

@@ -1,10 +1,9 @@
 ---
 path: 'strengthen-your-weak-passwords'
 title: 'Strengthen Your Weak Passwords'
-description: 'Response to internet security article found on digg.'
+description: 'Response to internet security'
 tags:
-  - 'Security'
-  - 'Tips & Misc'
+  - 'Checklists & Guides'
 date: '2007-05-05T17:49:00.000Z'
 draft: false
 layout: 'post'

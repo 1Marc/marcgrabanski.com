@@ -1,10 +1,9 @@
 ---
 path: 'reflecting-career-and-looking-to-2011'
-title: 'Reflecting on my Career Path in 2010 and Looking Forward'
+title: '2010: Reflecting on my Career Path & Looking Forward'
 description: '2011 edition of self-reflection.'
 tags:
-  - "Marc Grabanski's Work"
-  - 'My Work'
+  - "Career Journal"
 date: '2010-12-13T05:32:03.000Z'
 draft: false
 layout: 'post'

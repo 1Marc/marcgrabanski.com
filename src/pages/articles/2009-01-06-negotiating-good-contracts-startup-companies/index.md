@@ -3,7 +3,7 @@ path: 'negotiating-good-contracts-startup-companies'
 title: 'Negotiating Good Contracts for Startup Companies'
 description: 'How to negotiate a contract that is fair for you the developer and the company you partner with.'
 tags:
-  - 'Business'
+  - 'Opinion'
 date: '2009-01-06T14:30:24.000Z'
 draft: false
 layout: 'post'

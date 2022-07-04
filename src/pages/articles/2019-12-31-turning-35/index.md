@@ -1,9 +1,9 @@
 ---
 path: 'turning-35'
-title: '🤗 Turning 35: Reflecting on the Last 5 Years'
+title: '2019: 🤗 Turning 35, Reflecting on the Last 5 Years'
 description: 'This summer our new baby girl arrived. Now my family is full – we now have four kids!'
 tags:
-  - "Marc Grabanski's Work"
+  - "Career Journal"
 date: '2019-12-31T22:00:18.409Z'
 draft: false
 layout: 'post'

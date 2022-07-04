@@ -3,8 +3,7 @@ path: 'are-you-rich'
 title: '"Are You Rich?"'
 description: 'In terms of actual dollars I am certainly not rich, but...'
 tags:
-  - 'Business'
-  - "Marc Grabanski's Work"
+  - 'Opinion'
 date: '2011-02-10T01:37:44.000Z'
 draft: false
 layout: 'post'

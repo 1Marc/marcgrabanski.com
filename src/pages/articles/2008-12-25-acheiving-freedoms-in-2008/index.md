@@ -1,11 +1,9 @@
 ---
 path: 'acheiving-freedoms-in-2008'
-title: 'Acheiving Freedoms in 2008'
+title: '2008: Acheiving Freedoms'
 description: '2008 was a year of embarking on a journey towards personal freedoms in my career, which although was scary at times, paid off in spades.'
 tags:
-  - 'Business'
-  - "Marc Grabanski's Work"
-  - 'My Work'
+  - "Career Journal"
 date: '2008-12-25T23:23:40.000Z'
 draft: false
 layout: 'post'

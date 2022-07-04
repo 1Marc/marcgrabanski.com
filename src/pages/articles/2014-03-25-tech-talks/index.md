@@ -3,7 +3,7 @@ path: 'tech-talks'
 title: "10 Things I Wish I'd Known About Giving Good Tech Talks"
 description: ''
 tags:
-  - 'Communication'
+  - 'Lessons Learned'
 date: '2014-03-25T22:07:05.000Z'
 draft: false
 layout: 'post'

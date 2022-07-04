@@ -3,10 +3,7 @@ path: '5-things-learned-from-coding-open-source'
 title: '5 Things I learned from Coding Open Source'
 description: '5 lessons I learned from developing in the jQuery Open Source community.'
 tags:
-  - 'Development'
-  - "Marc Grabanski's Work"
-  - 'Open Source'
-  - 'The Basics'
+  - 'Lessons Learned'
 date: '2007-05-05T17:20:00.000Z'
 draft: false
 layout: 'post'

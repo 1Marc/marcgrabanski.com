@@ -3,8 +3,7 @@ path: 'lessons-learned-worst-job'
 title: 'Lessons Learned from the Worst 6 Months of My Career'
 description: 'Trying to pull out the lessons from an incredibly negative work experience.'
 tags:
-  - 'Business'
-  - "Marc Grabanski's Work"
+  - 'Lessons Learned'
 date: '2009-02-25T10:30:25.000Z'
 draft: false
 layout: 'post'

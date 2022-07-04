@@ -1,11 +1,9 @@
 ---
 path: 'marc-grabanski-summer-2009'
-title: "What's Up with Marc Grabanski? Summer 2009 Edition"
+title: "2009: Summer Projects"
 description: 'Web development and entrepreneurial career of Marc Grabanski as of Summer 2009.'
 tags:
-  - 'Business'
-  - "Marc Grabanski's Work"
-  - 'My Work'
+  - "Career Journal"
 date: '2009-07-20T20:16:52.000Z'
 draft: false
 layout: 'post'

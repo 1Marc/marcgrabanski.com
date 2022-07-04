@@ -1,10 +1,9 @@
 ---
 path: 'career-goals-as-of-august-2007'
 title: 'Career Goals as of August 2007'
-description: 'Short-term, persistent and long-term web development career goals as of August, 2007.'
+description: '2007: Short-term, persistent and long-term web development career goals'
 tags:
-  - "Marc Grabanski's Work"
-  - 'My Work'
+  - 'Career Journal'
 date: '2007-08-01T17:27:00.000Z'
 draft: false
 layout: 'post'

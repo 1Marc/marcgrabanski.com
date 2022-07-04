@@ -1,10 +1,9 @@
 ---
 path: 'vr'
-title: "🥽 Going Remote and Diving into Virtual Reality"
+title: "2020: 🥽 Going Remote and Diving into Virtual Reality"
 description: "I enjoyed getting into VR this year and learned to create videos in Mixed Reality through LIV, posted them to YouTube and streamed through Twitch. And got all the world records in Pistol Whip."
 tags:
-  - "Gaming"
-  - "Marc Grabanski's Work"
+  - "Career Journal"
 date: '2021-01-02T19:04:56.734Z'
 draft: false
 layout: 'post'

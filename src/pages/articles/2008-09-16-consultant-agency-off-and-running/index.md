@@ -1,10 +1,9 @@
 ---
 path: 'consultant-agency-off-and-running'
 title: 'Consultant Agency Off and Running'
-description: 'Created a consulting agency for my clients.'
+description: '2008: Created a Consulting Agency'
 tags:
-  - 'Business'
-  - "Marc Grabanski's Work"
+  - 'Career Journal'
 date: '2008-09-16T12:42:49.000Z'
 draft: false
 layout: 'post'

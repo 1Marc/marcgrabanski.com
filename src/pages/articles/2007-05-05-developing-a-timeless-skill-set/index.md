@@ -3,11 +3,13 @@ path: 'developing-a-timeless-skill-set'
 title: 'Developing a Timeless Skill-Set'
 description: 'By learning a diverse amount of technologies you can develop a timeless skill-set.'
 tags:
-  - 'Business'
+  - 'Checklists & Guides'
 date: '2007-05-05T17:32:00.000Z'
 draft: false
 layout: 'post'
 ---
+
+Note: This post is from sometime before 2007, but it still very much applies today.
 
 ![](./timeless.jpg)
 

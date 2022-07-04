@@ -1,10 +1,9 @@
 ---
 path: 'rmg-connect-minneapolis'
 title: 'Ode to JWT Minneapolis'
-description: 'My experience working at the JWT office in Minneapolis, MN.'
+description: 'Leaving a Consultancy Downtown Minneapolis to Create My Own'
 tags:
-  - "Marc Grabanski's Work"
-  - 'My Work'
+  - "Career Journal"
 date: '2008-07-11T07:23:03.000Z'
 draft: false
 layout: 'post'

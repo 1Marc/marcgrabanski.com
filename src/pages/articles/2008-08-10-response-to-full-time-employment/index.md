@@ -3,8 +3,7 @@ path: 'response-to-full-time-employment'
 title: 'Response to Full-Time Employment'
 description: 'Full-time work limits me from doing the projects that I feel the need to create.'
 tags:
-  - "Marc Grabanski's Work"
-  - 'My Work'
+  - 'Opinion'
 date: '2008-08-10T09:39:24.000Z'
 draft: false
 layout: 'post'

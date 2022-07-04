@@ -3,7 +3,7 @@ path: 'momentum'
 title: 'Momentum is King'
 description: "Momentum is precious. It's the life force of projects. Learn to manage momentum."
 tags:
-  - 'Tips & Misc'
+  - 'Opinion'
 date: '2014-06-24T01:12:51.000Z'
 draft: false
 layout: 'post'

@@ -3,7 +3,7 @@ path: 'long-live-the-hacker-entrepreneurs'
 title: 'Entrepreneurs are Dead, Long Live the Hacker'
 description: "Entrepreneurs have only one option to survive in today's society: find hackers or become one."
 tags:
-  - 'Business'
+  - 'Opinion'
 date: '2011-04-01T06:21:06.000Z'
 draft: false
 layout: 'post'

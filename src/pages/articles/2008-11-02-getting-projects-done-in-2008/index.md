@@ -1,12 +1,10 @@
 ---
 archived: true
 path: 'getting-projects-done-in-2008'
-title: 'Getting Projects Done in 2008'
+title: '2008: Projects'
 description: 'My business plans to get four projects done in 2008.'
 tags:
-  - 'Business'
-  - 'CakePHP'
-  - "Marc Grabanski's Work"
+  - 'Career Journal'
 date: '2008-11-02T01:08:04.000Z'
 draft: false
 layout: 'post'

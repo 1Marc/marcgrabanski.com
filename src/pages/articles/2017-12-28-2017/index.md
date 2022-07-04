@@ -1,9 +1,9 @@
 ---
 path: '2017'
-title: '🏙 2017: The Year I Built a Team'
+title: '2017: 🏙 The Year I Built a Team'
 description: 'Focusing daily on building the team and learning what makes a great team is where most of my brain cycles have gone this year. Very happy about the results so far!'
 tags:
-  - "Marc Grabanski's Work"
+  - "Career Journal"
 date: '2017-12-28T02:33:54.000Z'
 draft: false
 layout: 'post'

@@ -1,9 +1,9 @@
 ---
 path: '30'
-title: 'Turning 30'
+title: '2014: Turning 30'
 description: ''
 tags:
-  - "Marc Grabanski's Work"
+  - "Career Journal"
 date: '2014-11-27T08:41:07.000Z'
 draft: false
 layout: 'post'

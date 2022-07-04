@@ -1,9 +1,9 @@
 ---
 path: 'gymnastics-game-design'
-title: "🤸 From Gymnastics to Game Design, a 2021 Recap"
+title: "2021: 🤸 From Gymnastics to Game Design"
 description: "Highlights of my career and life from 2021."
 tags:
-  - "Marc Grabanski's Work"
+  - "Career Journal"
 date: '2022-01-11T00:35:55.565Z'
 draft: false
 layout: 'post'

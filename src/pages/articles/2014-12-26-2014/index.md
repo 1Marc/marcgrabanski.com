@@ -3,7 +3,7 @@ path: '2014'
 title: '2014: I quit consulting and went full time on my business'
 description: ''
 tags:
-  - "Marc Grabanski's Work"
+  - "Career Journal"
 date: '2014-12-26T16:07:52.000Z'
 draft: false
 layout: 'post'

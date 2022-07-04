@@ -1,10 +1,9 @@
 ---
 path: '2007-was-an-incredible-year'
 title: '2007 was an Incredible Year'
-description: '2007 has been an incredible year for my career.'
+description: '2007: Incredible Year for my Career'
 tags:
-  - "Marc Grabanski's Work"
-  - 'My Work'
+  - "Career Journal"
 date: '2007-12-31T05:11:37.000Z'
 draft: false
 layout: 'post'

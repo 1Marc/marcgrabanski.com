@@ -3,7 +3,7 @@ path: 'commonalities-of-success-and-wealth'
 title: 'Commonalities of Success and Wealth'
 description: 'Lessons learned about success and wealth based on observation.'
 tags:
-  - 'Business'
+  - 'Opinion'
 date: '2010-04-26T21:21:09.000Z'
 draft: false
 layout: 'post'

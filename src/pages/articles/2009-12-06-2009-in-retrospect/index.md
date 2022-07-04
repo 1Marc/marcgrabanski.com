@@ -1,10 +1,9 @@
 ---
 path: '2009-in-retrospect'
-title: '2009 in Retrospect'
+title: '2009: Consulting & Speaking'
 description: 'Looking back at 2009 consulting, web development, speaking and the future of MarcGrabanski.com'
 tags:
-  - "Marc Grabanski's Work"
-  - 'My Work'
+  - "Career Journal"
 date: '2009-12-06T20:26:46.000Z'
 draft: false
 layout: 'post'

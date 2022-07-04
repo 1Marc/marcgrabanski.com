@@ -1,10 +1,10 @@
 ---
 archived: true
 path: 'web-development-talks-2013'
-title: 'Slides, Videos and Articles from 2013'
+title: '2013: Slides, Videos and Articles'
 description: ''
 tags:
-  - "Marc Grabanski's Work"
+  - "Career Journal"
 date: '2013-12-27T04:02:03.000Z'
 draft: false
 layout: 'post'

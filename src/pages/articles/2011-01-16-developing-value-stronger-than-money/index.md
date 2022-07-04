@@ -3,8 +3,7 @@ path: 'developing-value-stronger-than-money'
 title: 'Developing Value Stronger Than Money'
 description: ''
 tags:
-  - 'Business'
-  - "Marc Grabanski's Work"
+  - 'Opinion'
 date: '2011-01-16T21:34:55.000Z'
 draft: false
 layout: 'post'

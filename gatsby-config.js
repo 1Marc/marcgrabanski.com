@@ -11,20 +11,24 @@ module.exports = {
     copyright: '© All rights reserved.',
     menu: [
       {
-        label: 'All Posts',
-        path: '/',
-      },
-      {
-        label: 'About Marc',
-        path: '/about/',
+        label: 'Career Journal',
+        path: '/tags/career-journal'
       },
       {
         label: 'Checklists & Guides',
         path: '/tags/checklists-guides'
       },
       {
-        label: 'Career Journal',
-        path: '/tags/marc-grabanskis-work'
+        label: 'Lessons Learned',
+        path: '/tags/lessons-learned'
+      },
+      {
+        label: 'Opinion Pieces',
+        path: '/tags/opinion'
+      },
+      {
+        label: 'Podcasts & Interviews',
+        path: '/podcasts'
       }
     ],
     author: {
