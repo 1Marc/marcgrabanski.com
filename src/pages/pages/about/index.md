@@ -26,5 +26,3 @@ In the past I’ve…
 If you've made it this far, you should probably connect with me on [Twitter](https://twitter.com/1marc) and [LinkedIn](http://www.linkedin.com/in/1marc).
 
 Thanks for visiting! 😀
-
-(Click the left sidebar to read some of my writings)
