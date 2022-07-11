@@ -8,7 +8,6 @@ class PageTemplateDetails extends React.Component {
 
     return (
       <div>
-        <Sidebar {...this.props} />
         <div className="content">
           <div className="content__inner">
             <div className="page">
@@ -21,6 +20,7 @@ class PageTemplateDetails extends React.Component {
             </div>
           </div>
         </div>
+        <Sidebar {...this.props} />
       </div>
     )
   }

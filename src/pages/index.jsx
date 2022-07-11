@@ -26,7 +26,6 @@ class IndexRoute extends React.Component {
             <title>{title}</title>
             <meta name="description" content={subtitle} />
           </Helmet>
-          <Sidebar {...this.props} />
           <div className="content">
             <div className="content__inner">
               <div className="page">
@@ -46,6 +45,7 @@ class IndexRoute extends React.Component {
               </div>
             </div>
           </div>
+          <Sidebar {...this.props} />
         </div>
       </Layout>
     )

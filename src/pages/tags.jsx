@@ -14,7 +14,6 @@ class TagsRoute extends React.Component {
       <Layout>
         <div>
           <Helmet title={`All Tags - ${title}`} />
-          <Sidebar {...this.props} />
           <div className="content">
             <div className="content__inner">
               <div className="page">
@@ -38,6 +37,7 @@ class TagsRoute extends React.Component {
               </div>
             </div>
           </div>
+          <Sidebar {...this.props} />
         </div>
       </Layout>
     )

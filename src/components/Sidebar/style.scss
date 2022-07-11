@@ -6,6 +6,8 @@
     &__inner {
         position: relative;
         padding: 25px 20px 0;
+        position: fixed;
+        top: 60px;
     }
     &__author {
         &-photo {
@@ -52,7 +54,7 @@
                 width: 1px;
                 height: 540px;
                 top: 30px;
-                right: -10px;
+                left: -10px;
                 bottom: 0;
             }
         }

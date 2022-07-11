@@ -22,7 +22,8 @@ class PostTemplateDetails extends React.Component {
             width="75"
             height="75"
             alt={author.name}
-          />
+          /><br />
+          Home
         </Link>
       </div>
     )
