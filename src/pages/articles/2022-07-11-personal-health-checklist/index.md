@@ -62,17 +62,12 @@ Nothing here is revolutionary. It is a checklist to browse and remind yourself t
 
 ## Keeping Tabs on My Overall Health Data
 
-- Every 3-6 months, I do a blood panel through [Inside Tracker](https://www.insidetracker.com/) and follow the recommendations
-- Qardio fitness scale at home I step on every day. 
+- Qardio fitness smart scale at home I step on every day
 - HRV is a predictor of overall health. 0-50 is unhealthy, 50-100 is ok, and 100+ is healthy. You can see trends in your Apple Health app (I wear the latest Apple watch)
 - Professionally test body composition, VO2 Max, and RMR through [DEXA](https://www.dexafit.com/dexafit-store-mapper)
+- Every 3-6 months, I do a blood panel through [Inside Tracker](https://www.insidetracker.com/) and follow the recommendations
 
 Overall with this data, I'm looking for trends over time. I try to look at monthly weight trends rather than day-to-day. For instance, weight can vary by as much as 7 pounds depending on when I ate, how much water, etc. Blood tests are super accurate but can change a ton over time.
-
-## General Health
-
-- Sauna 4-5 days per week
-- Cold showers and ice baths daily (cools the water down to 34F just above freezing) for regular ice baths
 
 ## Exercise
 
@@ -82,11 +77,6 @@ Overall with this data, I'm looking for trends over time. I try to look at month
 - Daily stretching and handstands
 - Occasionally run or bike, but I should do more
 - Jump training (currently trying to increase my vertical from 27" to 35"+)
-
-## Skincare
-
-- Apply full-spectrum SPF in the AM
-- Beyond my morning Collagen, I also have Collagen chews I occasionally eat to try to get more in
 
 ## Diet and Supplements
 
@@ -126,6 +116,14 @@ I'm also going to start supplementing with Melatonin at night to see if that hel
 
 ![Recent Grilling](./grilling.jpeg)
 
+## General Health
+
+- Sauna 4-5 days per week
+- Cold showers and ice baths daily (cools the water down to 34F just above freezing) for regular ice baths
+- Brush and floss daily
+- Apply full-spectrum SPF in the AM
+- Beyond my morning Collagen, I also have Collagen chews I occasionally eat to try to get more in
+
 ## Mental Health
 
 - Hot baths with Epsom salt
@@ -138,4 +136,10 @@ I'm also going to start supplementing with Melatonin at night to see if that hel
 - Blinkist to go through non-fiction books and take notes to improve my life
 - Sharing notes through Discord communities of like-minded people
 
-I'm about a year into developing and following all of these items. I'll post my results at some point.
+# Final Thoughts
+
+I'm about a year into developing and following all of these items. 
+
+What did I miss? Tweet at me [@1marc](https://twitter.com/1Marc).
+
+I think the main thing that's missing from my perspective is results. I've been following this for about 6-12 months, and maybe I'll do before/after pictures and talk more about benefits in 2023 once I've been able to maintain this lifestyle for closer to 24 months.
