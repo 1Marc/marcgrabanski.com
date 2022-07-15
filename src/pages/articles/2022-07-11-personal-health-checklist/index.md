@@ -57,3 +57,78 @@ Nothing here is revolutionary. It is a checklist to browse and remind yourself t
   > A meta-analysis from 6 prospective cohort studies (n=181,709) found that patients with a more optimistic mindset were at lower risk for all-cause mortality (HR 0.87, 95% CI 0.82–0.92).
   > Less worrying, more living 😀✌️
   > ([source](https://twitter.com/BradStanfieldMD/status/1522354631279804417?s=20&t=jmUDKqg0erLH92WG7irRGw))
+
+# Things I Personally Do to Stay Healthy
+
+## My Typical Breakfast in 2022
+
+![My Typical Breakfast](./breakfast.jpeg)
+
+- Moringa powder (overall nutrients)
+- Collagen Peptides (skin and joint health)
+- Psyllium husk + fiber (more fiber, the better)
+- Ashwagandha powder (naturally increase T levels)
+
+It is mixed in 2 cups of Zero Sugar Chobani yogurt and [Harvest Blend Back to Nature Trail Mix](https://amzn.to/3z6Bjd8).
+
+- Creatine 5g mixed in water
+
+Drink 1L of water in the morning and drink 1-2L more daily.
+
+## My Supplement Stack in 2022
+
+- Vitamin D 2000
+- Calcium 500 & Magnesium 250
+- Potassium 500
+- Hesperidin 50 Duosmin 450
+- K2 MK7 100
+- B12 2500
+- R-Lipoic Acid 283
+
+I also take these food extracts and probiotics, but I hear they might be snake oil:
+
+- Green tea extract
+- Garlic extract
+- Artichoke extract
+- Probiotic Blend
+
+I'm also going to start supplementing with Melatonin at night to see if that helps sleep quality.
+
+## General Health
+
+- Eat more vegetables! Here's a picture of grilling recently where the only unhealthy thing on the grill is the bacon around the asparagus
+
+![Recent Grilling](./grilling.jpeg)
+
+- Every 3-6 months, I do a blood panel through [Inside Tracker](https://www.insidetracker.com/) and follow the recommendations
+- Qardio fitness scale at home I step on every day. I try to look at weekly/monthly weight trends rather than day-to-day since it can vary by as much as 7 pounds for me depending on when I ate, how much water, etc
+- HRV is a predictor of overall health. 0-50 is unhealthy, 50-100 is ok, and 100+ is healthy. You can see trends in your Apple Health app (I wear the latest Apple watch)
+- Sauna 4-5 days per week
+- Cold plunge tank (cools the water down to 34F just above freezing) for regular ice baths
+
+### Exercise
+
+- Weekly adult gymnastics class year-round
+- In-ground trampoline, jump 20 minutes per day
+- Straight-arm bar hangs for 60+ seconds (I used to do pull-ups but found bar hangs to be better for shoulder mobility)
+- Daily stretching and handstands
+- Occasionally run or bike, but I should do more
+
+### Skincare
+
+- Apply full-spectrum SPF in the AM
+- Beyond my morning Collagen, I also have Collagen chews I eat occasionally to try to get more in
+
+### Mental Health
+
+- Hot baths with Epsom salt
+- Cold showers and ice baths every day
+- Walks around my neighborhood or back yard. Listening to Spotify/music while walking is amazing
+
+### Organizing Thoughts
+
+- Apple notes app on my phone and mac to take notes
+- Blinkist to go through non-fiction books and take notes to improve my life
+- Sharing notes through Discord communities of like-minded people
+
+Overall this blog is a great place to organize my life. I'm trying to do more of these checklists because I find them incredibly important to living well. 
