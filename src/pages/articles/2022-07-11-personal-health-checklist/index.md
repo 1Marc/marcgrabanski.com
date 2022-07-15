@@ -116,6 +116,12 @@ I'm also going to start supplementing with Melatonin at night to see if that hel
 
 ![Recent Grilling](./grilling.jpeg)
 
+- I fast 24-48 hour water fast weekly, and a 72-120 hour water fast quarterly (the most I've ever gone is 80 hours)
+
+The most controversial item on the list is my fasting regement. The key is always can you maintain this for a lifetime. So far? Yes. By exercising my willpower once per week and once per quarter, I have more willpower throughout my entire life.
+
+But I do not do any form of special diet or restricted eating beyond this: no Keto, intermittent fast, or anything. You could call me Pescatarian, but I also eat Chicken. 
+
 ## General Health
 
 - Sauna 4-5 days per week
