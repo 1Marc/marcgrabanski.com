@@ -58,7 +58,35 @@ Nothing here is revolutionary. It is a checklist to browse and remind yourself t
   > Less worrying, more living 😀✌️
   > ([source](https://twitter.com/BradStanfieldMD/status/1522354631279804417?s=20&t=jmUDKqg0erLH92WG7irRGw))
 
-# Things I Personally Do to Stay Healthy
+# Things I Do to Stay Healthy
+
+## Keeping Tabs on My Overall Health Data
+
+- Every 3-6 months, I do a blood panel through [Inside Tracker](https://www.insidetracker.com/) and follow the recommendations
+- Qardio fitness scale at home I step on every day. 
+- HRV is a predictor of overall health. 0-50 is unhealthy, 50-100 is ok, and 100+ is healthy. You can see trends in your Apple Health app (I wear the latest Apple watch)
+- Professionally test body composition, VO2 Max, and RMR through [DEXA](https://www.dexafit.com/dexafit-store-mapper)
+
+Overall with this data, I'm looking for trends over time. I try to look at monthly weight trends rather than day-to-day. For instance, weight can vary by as much as 7 pounds depending on when I ate, how much water, etc. Blood tests are super accurate but can change a ton over time.
+
+## General Health
+
+- Sauna 4-5 days per week
+- Cold showers and ice baths daily (cools the water down to 34F just above freezing) for regular ice baths
+
+## Exercise
+
+- Weekly gymnastics class year-round
+- In-ground trampoline, jumping ~20 minutes per day
+- Straight-arm bar hangs for 60+ seconds (I used to do pull-ups but found bar hangs to be better for shoulder mobility) – my current record is 90 seconds
+- Daily stretching and handstands
+- Occasionally run or bike, but I should do more
+- Jump training (currently trying to increase my vertical from 27" to 35"+)
+
+## Skincare
+
+- Apply full-spectrum SPF in the AM
+- Beyond my morning Collagen, I also have Collagen chews I occasionally eat to try to get more in
 
 ## Diet and Supplements
 
@@ -98,44 +126,16 @@ I'm also going to start supplementing with Melatonin at night to see if that hel
 
 ![Recent Grilling](./grilling.jpeg)
 
-## Gathering Health Data
-
-- Every 3-6 months, I do a blood panel through [Inside Tracker](https://www.insidetracker.com/) and follow the recommendations
-- Qardio fitness scale at home I step on every day. 
-- HRV is a predictor of overall health. 0-50 is unhealthy, 50-100 is ok, and 100+ is healthy. You can see trends in your Apple Health app (I wear the latest Apple watch)
-- Professionally test body composition, VO2 Max, and RMR through [DEXA](https://www.dexafit.com/dexafit-store-mapper)
-
-Overall with this data I'm looking for trends over time. I try to look at monthly weight trends rather than day-to-day. For instance, weight can vary by as much as 7 pounds for me depending on when I ate, how much water, etc. Blood tests are super accurate but also can vary a ton overtime as well.
-
-## General Health
-
-- Sauna 4-5 days per week
-- Cold showers and ice baths daily (cools the water down to 34F just above freezing) for regular ice baths
-
-## Exercise
-
-- Weekly adult gymnastics class year-round
-- In-ground trampoline, jump 20 minutes per day
-- Straight-arm bar hangs for 60+ seconds (I used to do pull-ups but found bar hangs to be better for shoulder mobility)
-- Daily stretching and handstands
-- Occasionally run or bike, but I should do more
-- Jump training (currently trying to increase my vertical from 27" to 35"+)
-
-### Skincare
-
-- Apply full-spectrum SPF in the AM
-- Beyond my morning Collagen, I also have Collagen chews I eat occasionally to try to get more in
-
-### Mental Health
+## Mental Health
 
 - Hot baths with Epsom salt
 - Cold showers and ice baths every day
 - Walks around my neighborhood or back yard. Listening to Spotify/music while walking is amazing
 
-### Organizing Thoughts
+## Organizing Thoughts
 
 - Apple notes app on my phone and mac to take notes
 - Blinkist to go through non-fiction books and take notes to improve my life
 - Sharing notes through Discord communities of like-minded people
 
-Overall this blog is a great place to organize my life. I'm trying to do more of these checklists because I find them incredibly important to living well. 
+I'm about a year into developing and following all of these items. I'll post my results at some point.
