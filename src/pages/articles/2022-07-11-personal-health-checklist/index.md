@@ -120,7 +120,7 @@ I'm also going to start supplementing with Melatonin at night to see if that hel
 
 The most controversial item on the list is my fasting regement. The key is always can you maintain this for a lifetime. So far? Yes. By exercising my willpower once per week and once per quarter, I have more willpower throughout my entire life.
 
-But I do not do any form of special diet or restricted eating beyond this: no Keto, intermittent fast, or anything. You could call me Pescatarian, but I also eat Chicken. 
+I do not any special diet or restricted eating beyond fasting: No Keto, intermittent fast, or anything. The closest thing you could call me is Pescatarian, but I also eat Chicken. 
 
 ## General Health
 
