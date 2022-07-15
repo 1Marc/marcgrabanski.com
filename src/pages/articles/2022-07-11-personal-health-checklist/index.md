@@ -60,7 +60,7 @@ Nothing here is revolutionary. It is a checklist to browse and remind yourself t
 
 # Things I Personally Do to Stay Healthy
 
-## My Typical Breakfast in 2022
+## Diet and Supplements
 
 ![My Typical Breakfast](./breakfast.jpeg)
 
@@ -75,7 +75,7 @@ It is mixed in 2 cups of Zero Sugar Chobani yogurt and [Harvest Blend Back to Na
 
 Drink 1L of water in the morning and drink 1-2L more daily.
 
-## My Supplement Stack in 2022
+### My Supplement Stack in 2022
 
 - Vitamin D 2000
 - Calcium 500 & Magnesium 250
@@ -94,25 +94,32 @@ I also take these food extracts and probiotics, but I hear they might be snake o
 
 I'm also going to start supplementing with Melatonin at night to see if that helps sleep quality.
 
-## General Health
-
 - Eat more vegetables! Here's a picture of grilling recently where the only unhealthy thing on the grill is the bacon around the asparagus
 
 ![Recent Grilling](./grilling.jpeg)
 
-- Every 3-6 months, I do a blood panel through [Inside Tracker](https://www.insidetracker.com/) and follow the recommendations
-- Qardio fitness scale at home I step on every day. I try to look at weekly/monthly weight trends rather than day-to-day since it can vary by as much as 7 pounds for me depending on when I ate, how much water, etc
-- HRV is a predictor of overall health. 0-50 is unhealthy, 50-100 is ok, and 100+ is healthy. You can see trends in your Apple Health app (I wear the latest Apple watch)
-- Sauna 4-5 days per week
-- Cold plunge tank (cools the water down to 34F just above freezing) for regular ice baths
+## Gathering Health Data
 
-### Exercise
+- Every 3-6 months, I do a blood panel through [Inside Tracker](https://www.insidetracker.com/) and follow the recommendations
+- Qardio fitness scale at home I step on every day. 
+- HRV is a predictor of overall health. 0-50 is unhealthy, 50-100 is ok, and 100+ is healthy. You can see trends in your Apple Health app (I wear the latest Apple watch)
+- Professionally test body composition, VO2 Max, and RMR through [DEXA](https://www.dexafit.com/dexafit-store-mapper)
+
+Overall with this data I'm looking for trends over time. I try to look at monthly weight trends rather than day-to-day. For instance, weight can vary by as much as 7 pounds for me depending on when I ate, how much water, etc. Blood tests are super accurate but also can vary a ton overtime as well.
+
+## General Health
+
+- Sauna 4-5 days per week
+- Cold showers and ice baths daily (cools the water down to 34F just above freezing) for regular ice baths
+
+## Exercise
 
 - Weekly adult gymnastics class year-round
 - In-ground trampoline, jump 20 minutes per day
 - Straight-arm bar hangs for 60+ seconds (I used to do pull-ups but found bar hangs to be better for shoulder mobility)
 - Daily stretching and handstands
 - Occasionally run or bike, but I should do more
+- Jump training (currently trying to increase my vertical from 27" to 35"+)
 
 ### Skincare
 
