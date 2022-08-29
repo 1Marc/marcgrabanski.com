@@ -80,37 +80,25 @@ Overall with this data, I'm looking for trends over time. I try to look at month
 
 ## Diet and Supplements
 
+Drink 1L of water in the morning and drink 1-2L more daily (2-3L total).
+
 ![My Typical Breakfast](./breakfast.jpeg)
 
-- Moringa powder (overall nutrients)
-- Collagen Peptides (skin and joint health)
-- Psyllium husk + fiber (more fiber, the better)
-- Ashwagandha powder (naturally increase T levels)
+Mixed these supplements in 2 cups of Zero Sugar Chobani yogurt and [Harvest Blend Back to Nature Trail Mix](https://amzn.to/3z6Bjd8). Also add some walnuts.
 
-It is mixed in 2 cups of Zero Sugar Chobani yogurt and [Harvest Blend Back to Nature Trail Mix](https://amzn.to/3z6Bjd8).
-
-- Creatine 5g mixed in water
-
-Drink 1L of water in the morning and drink 1-2L more daily.
+- Collagen Peptides + Hyleronic Acid (skin and joint health)
+- Psyllium husk + Fiber (more fiber, the better)
+- Ashwagandha (stress, sleep, and T levels)
+- Creatine 5g
 
 ### My Supplement Stack in 2022
 
 - Vitamin D 2000
 - Calcium 500 & Magnesium 250
-- Potassium 500
-- Hesperidin 50 Duosmin 450
 - K2 MK7 100
-- B12 2500
-- R-Lipoic Acid 283
+- Zinc
 
-I also take these food extracts and probiotics, but I hear they might be snake oil:
-
-- Green tea extract
-- Garlic extract
-- Artichoke extract
-- Probiotic Blend
-
-I'm also going to start supplementing with Melatonin at night to see if that helps sleep quality.
+I might start supplementing with a small dose of Melatonin at night to see if that helps sleep quality.
 
 - Eat more vegetables! Here's a picture of grilling recently where the only unhealthy thing on the grill is the bacon around the asparagus
 
