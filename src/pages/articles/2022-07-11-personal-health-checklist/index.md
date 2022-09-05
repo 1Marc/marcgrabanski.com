@@ -17,7 +17,7 @@ Nothing here is revolutionary. It is a checklist to browse and remind yourself t
 
 * Avoid processed foods (mainly processed meats) to reduce overall sodium intake and eat more nutritious foods.
 * Walk or do some simple exercise after you eat.
-* Limit alcohol or remove it altogether!
+* Limit alcohol or remove it altogether.
 * Eat slower. Being in the present moment while eating can prevent overeating and help with better digestion.
 * Drink more water. Usually, a good rule of thumb is at least 2L per day, but it could be more depending on your weight.
 * Eat more fiber and vegetables and less meat. More lean meat and fish rather than red meat. The less sugar, the better.
@@ -34,25 +34,31 @@ Nothing here is revolutionary. It is a checklist to browse and remind yourself t
 
 `youtube: https://www.youtube.com/watch?v=2QqK4WlGXbg`
 
-* Sleep 7-9 hours per night; best to be at the same time every night. Some studies suggest that Melatonin ~2 hours before bed helps you get higher quality sleep.
-
 ## Exercise
 
-* Aerobic capacity (V02 Max) is the strongest predictor of future health. Train VO2 max by maxing out your heart rate for four minute periods through sprinting, rowing, HIT, or other intense, short-term cardio activities. Strength training important to build and maintain muscle mass.
+* Aerobic capacity (V02 Max) is the strongest predictor of future health. Train VO2 max by maxing out your heart rate for four minute periods through sprinting, rowing, HIT, or other intense, short-term cardio activities. 
 
-`youtube: https://www.youtube.com/watch?v=ojOEGfTYCjA`
+* It's important to strength training important to build and maintain muscle mass.
 
 * Mobility is crucial. Stretch/do yoga daily in the morning and at night.
 
+* Jumping on trampolines is great for your joint and ligament health.
+
+* I was surprised to see how tight the data correlation is between daily step count and all-cause mortality.
+
+[![Step Count ](./steps.png)](https://www.tandfonline.com/doi/full/10.1080/02640414.2022.2099186)
+
+Make sure to prioritize daily walking!
+
 ## Self Care
 
-* Brush your teeth daily (3 times is best) and get your teeth professionally cleaned every six months. I was surprised to find that lousy mouth health is associated with an increased risk of heart disease.
+* Sleep 7-8 hours per night; best to be at the same time every night. Make sure your room is dark and a bit cool. Change your pillow at least every two years to avoid the build-up of dust mites, etc. Silk pillowcases prevent wrinkles. Finally, some studies suggest that Melatonin ~2 hours before bed helps you get higher quality sleep. 
+* Brush your teeth daily and get your teeth professionally cleaned every six months. I was surprised to find that lousy mouth health is associated with an increased risk of heart disease.
 * Take ice-cold showers and, even better yet, ice baths. Minimally has been shown to increase your mood and decrease inflammation.
 * Regular sauna use is linked to significantly lower rates of cardiovascular issues and related deaths.
-* Breathe through your nose primarily, especially at night.
-* Interacting with animals has been shown to decrease levels of cortisol (a stress-related hormone) and lower blood pressure
-* Jumping on trampolines is great for your joint and ligament health
-* Learn to breathe and meditate
+* Breathe through your nose primarily, especially at night. Flixonase can help keep your sinuses clear.
+* Interacting with animals has been shown to decrease levels of cortisol (a stress-related hormone) and lower blood pressure.
+* Learn to breathe and meditate.
 * People with a sense of humor live longer. And people who are optimistic live longer. Be optimistic and laugh more!
   > A meta-analysis from 6 prospective cohort studies (n=181,709) found that patients with a more optimistic mindset were at lower risk for all-cause mortality (HR 0.87, 95% CI 0.82–0.92).
   > Less worrying, more living 😀✌️
@@ -71,12 +77,12 @@ Overall with this data, I'm looking for trends over time. I try to look at month
 
 ## Exercise
 
-- Weekly gymnastics class year-round
-- In-ground trampoline, jumping ~20 minutes per day
-- Straight-arm bar hangs for 60+ seconds (I used to do pull-ups but found bar hangs to be better for shoulder mobility) – my current record is 90 seconds
-- Daily stretching and handstands
-- Occasionally run or bike, but I should do more
-- Jump training (currently trying to increase my vertical from 27" to 35"+)
+- Weekly gymnastics class year-round.
+- In-ground trampoline, jumping ~20 minutes per day.
+- Straight-arm bar hangs for 60+ seconds (I used to do pull-ups but found bar hangs to be better for shoulder mobility) – my current record is 90 seconds.
+- Daily stretching and handstands.
+- Occasionally run or bike, but I should do more.
+- Jump training (currently trying to increase my vertical from 27" to 35"+).
 
 ## Diet and Supplements
 
@@ -86,9 +92,8 @@ Drink 1L of water in the morning and drink 1-2L more daily (2-3L total).
 
 Mixed these supplements in 2 cups of Zero Sugar Chobani yogurt and [Harvest Blend Back to Nature Trail Mix](https://amzn.to/3z6Bjd8). Also add some walnuts.
 
-- Collagen Peptides + Hyleronic Acid (skin and joint health)
+- Collagen Peptides + Hyaluronic Acid (skin and joint health)
 - Psyllium husk + Fiber (more fiber, the better)
-- Ashwagandha (stress, sleep, and T levels)
 - Creatine 5g
 
 ### My Supplement Stack in 2022
@@ -97,6 +102,7 @@ Mixed these supplements in 2 cups of Zero Sugar Chobani yogurt and [Harvest Blen
 - Calcium 500 & Magnesium 250
 - K2 MK7 100
 - Zinc
+- Fish Oil (I like [Carlson](https://amzn.to/3Ri6j0n))
 
 I might start supplementing with a small dose of Melatonin at night to see if that helps sleep quality.
 
@@ -104,7 +110,7 @@ I might start supplementing with a small dose of Melatonin at night to see if th
 
 ![Recent Grilling](./grilling.jpeg)
 
-- I fast 24-48 hour water fast weekly, and a 72-120 hour water fast quarterly (the most I've ever gone is 80 hours)
+- I fast 24-36 hour fast weekly, just water, and a ~72-96 hour water-only fast quarterly (the most I've ever gone is 80 hours)
 
 The most controversial item on the list is my fasting regement. The key is always can you maintain this for a lifetime. So far? Yes. By exercising my willpower once per week and once per quarter, I have more willpower throughout my entire life.
 
