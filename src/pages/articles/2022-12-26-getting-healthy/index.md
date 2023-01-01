@@ -1,6 +1,6 @@
 ---
 path: 'focusing-on-health'
-title: "2022: 🥗 Getting Healthy & Ran Lots of Workshops"
+title: "2022: 🥗 Focusing on Health & Record Amount of Workshops"
 description: "Highlights of my career and life from 2022."
 tags:
   - "Career Journal"
@@ -33,7 +33,7 @@ Some projects we launched this year:
 
 ## Coded TodoMVC in Modern JavaScript
 
-I took a stab at [writing TodoMVC with modern JavaScript](https://github.com/1Marc/modern-todomvc-vanillajs). It became a popular project with over 700 GitHub stars. I addressed feedback as it came up and learned a lot through the project. From there, I built examples of app architecture, performant DOM updates, TypeScript, and some UI components.
+I [wrote TodoMVC using modern JavaScript](https://github.com/1Marc/modern-todomvc-vanillajs). It became a popular project with over 700 GitHub stars. I addressed feedback as it came up and learned a lot through the project. From there, I built examples of app architecture, performant DOM updates, TypeScript, and some UI components.
 
 ➡️ This year, I’d love to tackle another project with a “vanilla” approach &mdash; maybe something like the Movies app.
 
