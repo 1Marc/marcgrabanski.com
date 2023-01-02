@@ -4,7 +4,7 @@ title: "2022: 🥗 Focusing on Health & Record Amount of Workshops"
 description: "Highlights of my career and life from 2022."
 tags:
   - "Career Journal"
-date: '2022-12-31T00:35:55.565Z'
+date: '2023-01-01T10:35:55.565Z'
 draft: false
 layout: 'post'
 ---
@@ -39,23 +39,9 @@ I [wrote TodoMVC using modern JavaScript](https://github.com/1Marc/modern-todomv
 
 ## Created a Personal Health Checklist System
 
-This year I did a ton of health research to set up a system I can live by to live a healthy life. I distilled all that research into a [Personal Health Checklist](https://marcgrabanski.com/personal-health-checklist) that a world-renown longevity doctor, Dr. Brad Steinfield, reviewed.
+This year I did a ton of health research to set up a system I can live by to live a healthy life. I distilled all that research into a [Personal Health Checklist](https://marcgrabanski.com/personal-health-checklist) that a world-renowned longevity doctor, Dr. Brad Steinfield, reviewed.
 
 ➡️ This year, I want to continue adhering to this while revising and expanding it.
-
-## Videogame Progress
-
-I found an excellent programmer and artist for the family game. It’s progressing nicely, and every kid we’ve had play it loves it, but to take something like this to production is a massive project.
-
-![Game 2](./game-screenshot-2.png)
-
-![Game 4](./game-screenshot-4.png)
-
-![Game 1](./game-screenshot-1.png)
-
-I’m a product guy with no experience in the gaming industry, so although I know what makes a great game, and I love how the game is turning out, I honestly don’t know exactly what I’m going to do with it the game in terms of marketing and roll out.
-
-➡️ The game seems perfect to sell to something like Apple Arcade or Netflix Mobile Games. If y’all have any contacts or advice for me here, let me know.
 
 ## My First Full Year of Gymnastics
 
@@ -83,3 +69,21 @@ Lots of progress; here’s my list of things I learned this year ✅ versus the 
 ➡️ Overall, I want to continue this journey and keep progressing daily! Also, a significant addition to my routine that I want to incorporate is 🥵 sauna and 🥶 ice baths.
 
 I am excited to continue! Follow along on Instagram if you’d like: https://www.instagram.com/1marc/
+
+## Videogame Progress
+
+I found an excellent programmer and artist for the family game. It’s progressing nicely, and every kid we’ve had play it loves it, but to take something like this to production is a massive project.
+
+![Game 2](./game-screenshot-2.png)
+
+![Game 4](./game-screenshot-4.png)
+
+![Game 1](./game-screenshot-1.png)
+
+I’m a product guy with no experience in the gaming industry, so although I know what makes a great game, and I love how the game is turning out, I honestly don’t know exactly what I’m going to do with it the game in terms of marketing and roll out.
+
+➡️ The game seems perfect to sell to something like Apple Arcade or Netflix Mobile Games. If y’all have any contacts or advice for me here, let me know.
+
+There's certainly things I'm missing like a family trip to Florida, a hiking trip up near Ely, and doing the tough mudder 8k.
+
+🥂 Cheers to 2023 &mdash; I hope you this year is off to a good start for you!
