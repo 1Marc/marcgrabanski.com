@@ -84,6 +84,6 @@ I’m a product guy with no experience in the gaming industry, so although I kno
 
 ➡️ The game seems perfect to sell to something like Apple Arcade or Netflix Mobile Games. If y’all have any contacts or advice for me here, let me know.
 
-There's certainly things I'm missing like a family trip to Florida, a hiking trip up near Ely, and doing the tough mudder 8k.
+There's certainly things I'm missing like a family trip to Florida, a hiking trip up near Ely, and doing the tough mudder 8k &mdash; but you can only fit so many things in before you have to hit publish!
 
-🥂 Cheers to 2023 &mdash; I hope you this year is off to a good start for you!
+🥂 Cheers to 2023! I hope you this year is off to a good start for you! See you on [Twitter](https://twitter.com/1marc) & [Instagram](https://www.instagram.com/1marc/).
