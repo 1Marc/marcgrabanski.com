@@ -30,9 +30,9 @@ Nothing here is revolutionary. It is a checklist to browse and remind yourself t
 
 ## Supplements
 
-* Get your blood tested to determine what nutritional supplements you should take. Universal supplements challenging to get enough of in modern society include, but are not limited to: Fish Oil, B12, Vitamin D, Magnesium, and Calcium.
+* Get your blood tested to determine what nutritional supplements you should take. Universal supplements challenging to get enough of in modern society include, but are not limited to: Fish Oil / Omega 3, Vitamin D, Magnesium, and Calcium.
 
-`youtube: https://www.youtube.com/watch?v=2QqK4WlGXbg`
+`youtube: https://www.youtube.com/watch?v=owQKjQOudoQ`
 
 ## Exercise
 
