@@ -1,0 +1,26 @@
+---
+import '../styles/menu.scss';
+
+export interface Props {
+	data: {path: string, label: string}[];
+}
+
+const { data } = Astro.props;
+---
+
+<nav class="menu">
+	<ul class="menu__list">
+		{data.map(item => (
+			<li class="menu__list-item">
+				<a 
+					href={item.path}
+					class="menu__list-item-link"
+					// TODO: figure this out // DELETE THIS LINE TO GET RID OF ALL ERROS IN THIS FILE
+					// activeClass="menu__list-item-link menu__list-item-link--active"
+				>
+					{item.label}
+				</a>
+			</li>
+		))}
+	</ul>
+</nav>

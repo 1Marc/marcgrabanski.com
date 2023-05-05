@@ -1,0 +1,41 @@
+---
+import { CollectionEntry } from 'astro:content';
+import '../styles/post.scss';
+import moment from 'moment';
+
+export interface Props {
+	node: CollectionEntry<"articles">
+}
+
+const { node } = Astro.props;
+const { postTitle, description, date } = node.data
+const slug = node.slug
+---
+
+<div class="post">
+	<div class="post__meta">
+		{moment(date).isBefore('2007-05-06') ? (
+			<time>Written Sometime Before 2007</time>
+		) : (
+			<time
+				class="post__meta-time"
+				datetime={moment(date).format('MMMM D, YYYY')}
+			>
+				{moment(date).format('MMMM YYYY')}
+			</time>
+		)}
+
+		<span class="post__meta-divider" />
+	</div>
+	<h2 class="post__title">
+		<a class="post__title-link" href={"/articles/"+slug}>
+			{postTitle}
+		</a>
+	</h2>
+	<p class="post__description">
+		{description}
+	</p>
+	<!-- <p>
+		<a class="post__readmore" href={"/"+slug}> Read More →</a>
+	</p> -->
+</div>

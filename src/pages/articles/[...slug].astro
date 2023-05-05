@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+
+// ASTRO DOCUMENTATION: https://docs.astro.build/en/reference/api-reference/#getstaticpaths
+export async function getStaticPaths() {
+  const allArticles = await getCollection('articles');
+  return allArticles.map(article => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+};
+
+const { article } = Astro.props;
+const { Content } = await article.render();
+---
+
+<Content />

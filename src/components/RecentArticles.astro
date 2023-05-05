@@ -1,0 +1,21 @@
+---
+import ArticleAbstract from '../components/ArticleAbstract.astro';
+import Menu from '../components/Menu.astro';
+import { site } from "../data/siteMetaData.js";
+
+// https://docs.astro.build/en/guides/content-collections/#querying-collections
+import { getCollection } from 'astro:content';
+// Get all entries from 'articles' collection.
+const allArticles = await getCollection('articles');
+// Slice allArticles to only display the 5 most recent (previously handled in Gatsby's graphQL query), then reverse to put them in same order as the Gatsby site.
+const items = allArticles.slice(-5).reverse();
+---
+
+<div>
+  <h1>Recent Articles:</h1>
+	{items.map(article => (
+		<ArticleAbstract node={article} />
+	))}
+	<h1>Post Categories:</h1>
+	<Menu data={site.menu} />
+</div>

@@ -1,0 +1,32 @@
+---
+import '../styles/global.scss';
+import { site } from "../data/siteMetaData.js";
+import TagTemplateDetails from '../components/TagTemplateDetails.astro'
+import Sidebar from '../components/Sidebar.astro';
+
+export interface Props {
+  term: string;
+}
+
+const { term } = Astro.props;
+const { title } = site;
+const pageTitle = `All Posts Tagged as "${term}"`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+    <title>{`${pageTitle} - ${title}`}</title>
+	</head>
+	<body>
+		<main class="layout">
+			<TagTemplateDetails term={term}>
+				<slot />
+			</TagTemplateDetails>
+      <Sidebar data={site} />
+		</main>
+</html>

@@ -1,0 +1,93 @@
+---
+import '../styles/posttemplatedetails.scss';
+import { site } from "../data/siteMetaData.js";
+import moment from 'moment';
+import profilePic from '../../photo.jpg';
+import Links from './Links.astro'
+
+
+const { author, subtitle } = site;
+const { post, next, prev } = Astro.props;
+// const tags = post.fields.tagSlugs
+
+// const items = []
+//     const tagTitle = this.props.pageContext.tag
+//     const posts = this.props.data.allMarkdownRemark.edges
+//     posts.forEach(post => {
+//       items.push(<Post data={post} key={post.node.fields.slug} />)
+//     })
+---
+
+<div>
+  <div>
+    <a class="post-single__home-button" href="/">
+      <img
+        src={profilePic}
+        class="post-single__home-photo"
+        width="75"
+        height="75"
+        alt={author.name}
+      /><br />
+      Home
+    </a>
+  </div>
+  <div class="post-single">
+    <div class="post-single__inner">
+      <h1 class="post-single__title">{post.archived ? "[Archived] " : ""}{post.postTitle}</h1>
+      <div class="post-single__date">
+        {moment(post.date).isBefore('2007-05-06') ? (
+          <time>Written Sometime Before 2007</time>
+        ) : (
+          moment(post.date).format('MMMM DD, YYYY')
+        )}
+    </div>
+    
+    <div class="post-single__body">
+      <slot />
+    </div>
+
+    <div class="post-single__footer">
+      <div class="post-single__tags">
+        <ul class="post-single__tags-list">
+          <!-- {tags &&
+            tags.map((tag, i) => (
+              <li class="post-single__tags-list-item" key={tag}>
+                <a href={tag} class="post-single__tags-list-item-link">
+                  {post.frontmatter.tags[i]}
+                </a>
+              </li>
+            ))} -->
+        </ul>
+      </div>
+      <hr />
+      <div>
+        <h2 class="post-single__footer-title">
+          <a class="sidebar__author-title-link" href="/">
+            {author.name}
+          </a>
+        </h2>
+        <p class="post-single__footer-subtitle">{subtitle}</p>
+      </div>
+      <Links data={author} />
+    </div>
+
+    <div class="post-single__footer-nextprev">
+      {prev ? (
+        <a
+          class="post-single__footer-prev"
+          href={"/" + prev.frontmatter.path}
+        >
+          &lt;&lt; {prev.frontmatter.postTitle}
+        </a>
+      ) : null}
+      {next ? (
+        <a
+          class="post-single__footer-next"
+          href={"/" + next.frontmatter.path}
+        >
+          {next.frontmatter.postTitle} &gt;&gt;
+        </a>
+      ) : null}
+    </div>
+  </div>
+</div>

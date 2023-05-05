@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import RecentArticles from '../components/RecentArticles.astro';
+import { Content as About } from '../components/About.mdx';
+import { site } from "../data/siteMetaData.js";
+
+---
+
+<Layout title={site.title}>
+	<div class="content">
+		<div class="content__inner">
+			<div class="page">
+				<About class="page__body"/>
+				<hr />
+				<RecentArticles />
+			</div>
+		</div>
+	</div>
+</Layout>
