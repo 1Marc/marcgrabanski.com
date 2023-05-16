@@ -47,7 +47,7 @@ Nothing here is revolutionary. It is a checklist to browse and remind yourself t
 
 * I was surprised to see how tight the data correlation is between daily step count and all-cause mortality.
 
-[![Step Count ](../2022-07-11-personal-health-checklist/steps.png)](https://www.tandfonline.com/doi/full/10.1080/02640414.2022.2099186)
+[![Step Count ](../2022-07-11-personal-health-checklist/_steps.png)](https://www.tandfonline.com/doi/full/10.1080/02640414.2022.2099186)
 
 Make sure to prioritize daily walking!
 
@@ -89,7 +89,7 @@ Overall with this data, I'm looking for trends over time. I try to look at month
 
 Drink 1L of water in the morning and drink 1-2L more daily (2-3L total).
 
-![My Typical Breakfast](../2022-07-11-personal-health-checklist/breakfast.jpeg)
+![My Typical Breakfast](../2022-07-11-personal-health-checklist/_breakfast.jpeg)
 
 Mixed these supplements in 2 cups of Zero Sugar Chobani yogurt and [Harvest Blend Back to Nature Trail Mix](https://amzn.to/3z6Bjd8). Also add some walnuts.
 
@@ -109,7 +109,7 @@ I might start supplementing with a small dose of Melatonin at night to see if th
 
 - Eat more vegetables! Here's a picture of grilling recently where the only unhealthy thing on the grill is the bacon around the asparagus
 
-![Recent Grilling](../2022-07-11-personal-health-checklist/grilling.jpeg)
+![Recent Grilling](../2022-07-11-personal-health-checklist/_grilling.jpeg)
 
 - I fast 24-36 hour fast weekly, just water, and a ~72-96 hour water-only fast quarterly (the most I've ever gone is 80 hours)
 

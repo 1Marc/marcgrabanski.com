@@ -12,7 +12,7 @@ layout: '../../../layouts/ArticleLayout.astro'
 
 This summer (2019) our new baby girl arrived. Now my family is full – we now have four kids! 🤩🤗😱
 
-![Grabanski Family Fall 2019](../2019-12-31-turning-35/family-fall-2019.jpeg)
+![Grabanski Family Fall 2019](../2019-12-31-turning-35/_family-fall-2019.jpeg)
 
 > This is a follow up to my [turning 30](https://marcgrabanski.com/30) post, where I reflected on previous years, ~2010-2014. This article will reflect on the last 5 years, ~2014-2019.
 
@@ -40,7 +40,7 @@ The highs of entrepreneurship are very high, and the lows are very low. The same
 
 But at the end of the day, the results are amazing. With my kids, there is absolutely nothing like seeing your beautiful children together as friends...
 
-![Grabanski Kids Fall 2019](../2019-12-31-turning-35/kids-fall-2019.jpeg)
+![Grabanski Kids Fall 2019](../2019-12-31-turning-35/_kids-fall-2019.jpeg)
 
 They get to live their whole life together. It's incredible, and I couldn't be more proud of them! 🤗
 
@@ -56,7 +56,7 @@ Living and working in Minnesota, the winters get _very_ harsh cold. We've been w
 
 It was on the beach in January, where we took probably my favorite family photo ever (my wife was pregnant with our baby):
 
-![Grabanski Costa Rica 2019](../2019-12-31-turning-35/family-costarica-2019.jpeg)
+![Grabanski Costa Rica 2019](../2019-12-31-turning-35/_family-costarica-2019.jpeg)
 
 We also plan to work from somewhere exciting in the Summer as well. These are work trips, not vacations. So we set up a condo as our office to work on special group projects and get out of our day-to-day mindset into a different, more collaborative mindset in an inspiring location.
 

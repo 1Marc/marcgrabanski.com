@@ -10,7 +10,7 @@ isArchived: false
 layout: '../../../layouts/ArticleLayout.astro'
 ---
 
-![](../2008-12-25-acheiving-freedoms-in-2008/sunset-freedom.jpg)
+![](../2008-12-25-acheiving-freedoms-in-2008/_sunset-freedom.jpg)
 
 2008 was a year of embarking on a journey towards personal freedoms in my career, which although was scary at times, paid off in spades.
 
@@ -35,7 +35,7 @@ It would have been a cold day in hell before I launched any major start-up compa
 
 In April of 2008, I pinged a few companies to see if they would hire me for 24 hours per week, remotely to cover my living costs. After casting the line, I got a few offers. I ended up turning down a job offer working on the [Firefox Addons](https://addons.mozilla.org) theming engine (which I was grateful for the offer!) to work for an [internet marketing company in Duluth, MN](http://aimclearblog.com/). Why? My #1 reason for turning down a job with Mozilla is, Silicon Valley doesn't need anymore high-level talent. Silicon Valley takes away much of the [great talent](http://davedash.com/2008/11/07/you-cant-go-home-again-a-year-in-the-bay-area/) (poke at Dave Dash of delicious.com) we have here in Minnesota.
 
-![](../2008-12-25-acheiving-freedoms-in-2008/minneapolis-skyline.jpg)
+![](../2008-12-25-acheiving-freedoms-in-2008/_minneapolis-skyline.jpg)
 
 ## Instantly Respected Names VS Local Business
 
@@ -49,7 +49,7 @@ Not everything went perfect this year. My first startup company will launch in t
 
 I had to give up my seat on the [jQuery UI development team](http://ui.jquery.com/) . It was just too hard to generate revenue, launch startup companies and program open source at the same time. [Datepicker](/jquery-ui-datepicker) was just consuming way too much of my time and I had to give it up. Though, I did review a book that is coming out soon on jQuery UI, so that was cool.
 
-![](../2008-12-25-acheiving-freedoms-in-2008/reflecting-sunset.jpg)
+![](../2008-12-25-acheiving-freedoms-in-2008/_reflecting-sunset.jpg)
 
 ## Reflecting on 2008 Goals
 
