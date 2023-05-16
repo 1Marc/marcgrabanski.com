@@ -3,7 +3,7 @@ slug: 'commonalities-of-success-and-wealth'
 postTitle: 'Commonalities of Success and Wealth'
 description: 'Lessons learned about success and wealth based on observation.'
 tags:
-  - 'Opinion'
+  - 'Opinion Pieces'
 date: '2010-04-26T21:21:09.000Z'
 isDraft: false
 isArchived: false

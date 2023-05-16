@@ -3,7 +3,7 @@ slug: 'developers-building-businesses'
 postTitle: "Why Aren't More Developers Building Businesses?"
 description: 'Question about what it takes to get great developers to work together.'
 tags:
-  - 'Opinion'
+  - 'Opinion Pieces'
 date: '2010-07-21T20:56:26.000Z'
 isDraft: false
 isArchived: false

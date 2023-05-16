@@ -3,7 +3,7 @@ slug: 'response-to-full-time-employment'
 postTitle: 'Response to Full-Time Employment'
 description: 'Full-time work limits me from doing the projects that I feel the need to create.'
 tags:
-  - 'Opinion'
+  - 'Opinion Pieces'
 date: '2008-08-10T09:39:24.000Z'
 isDraft: false
 isArchived: false

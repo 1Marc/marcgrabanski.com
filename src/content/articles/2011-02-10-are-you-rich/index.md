@@ -3,7 +3,7 @@ slug: 'are-you-rich'
 postTitle: '"Are You Rich?"'
 description: 'In terms of actual dollars I am certainly not rich, but...'
 tags:
-  - 'Opinion'
+  - 'Opinion Pieces'
 date: '2011-02-10T01:37:44.000Z'
 isDraft: false
 isArchived: false

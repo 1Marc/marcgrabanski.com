@@ -3,7 +3,7 @@ slug: 'becoming-a-great-web-developer'
 postTitle: 'Becoming a Great Web Developer'
 description: 'Advice and tips to be a better web developer.'
 tags:
-  - 'Opinion'
+  - 'Opinion Pieces'
 date: '2010-05-11T08:36:32.000Z'
 isDraft: false
 isArchived: false

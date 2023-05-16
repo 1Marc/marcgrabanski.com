@@ -3,7 +3,7 @@ slug: 'long-live-the-hacker-entrepreneurs'
 postTitle: 'Entrepreneurs are Dead, Long Live the Hacker'
 description: "Entrepreneurs have only one option to survive in today's society: find hackers or become one."
 tags:
-  - 'Opinion'
+  - 'Opinion Pieces'
 date: '2011-04-01T06:21:06.000Z'
 isDraft: false
 isArchived: false

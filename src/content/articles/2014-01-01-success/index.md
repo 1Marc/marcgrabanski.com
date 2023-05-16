@@ -3,7 +3,7 @@ slug: 'success'
 postTitle: "Why Some Smart People I Know Don't Become Succesful"
 description: "A guide to avoid some common mistakes smart friends of mine have made with their careers."
 tags:
-  - 'Opinion'
+  - 'Opinion Pieces'
   - 'Checklists & Guides'
 date: '2014-01-01T07:15:23.000Z'
 isDraft: false

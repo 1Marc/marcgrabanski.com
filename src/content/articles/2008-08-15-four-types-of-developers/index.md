@@ -3,7 +3,7 @@ slug: 'four-types-of-developers'
 postTitle: 'Four Types of Web Developers, Which are You?'
 description: "After years of being with developers - I've managed to generalize developers into a few categories."
 tags:
-  - 'Opinion'
+  - 'Opinion Pieces'
 date: '2008-08-15T07:12:48.000Z'
 isDraft: false
 isArchived: false

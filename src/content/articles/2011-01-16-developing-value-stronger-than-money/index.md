@@ -3,7 +3,7 @@ slug: 'developing-value-stronger-than-money'
 postTitle: 'Developing Value Stronger Than Money'
 description: ''
 tags:
-  - 'Opinion'
+  - 'Opinion Pieces'
 date: '2011-01-16T21:34:55.000Z'
 isDraft: false
 isArchived: false
