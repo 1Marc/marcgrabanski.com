@@ -20,7 +20,7 @@ MarcGrabanski.com
   - images are currently being served from the /public/ folder
   - images will eventually be served from /content/ folder, co-located there with each of the index.md files.
     - Astro 'assets', which allows the images to be in the /content/ folder, does not yet support svg, gif, and image optimization
-      - I tried image, imagetools, sharp, the EleventyImage Astro Optimizer, and a few other things, but none of them could work with Astro: assets to match the responsive sizing and speed of the public folder or like the original Gatsby website does
+      - I tried image, imagetools, sharp, the EleventyImage Astro Optimizer, and a few other things, but none of them could work with Astro:assets to match the responsive sizing and speed of the public folder or match what the original Gatsby website does
     - image file names in content/ folder should be escaped with an underscore ('_') at the start of the filename
       - this tells Astro to skip making a page route for the image file
     - when Astro:assets is fully working:
