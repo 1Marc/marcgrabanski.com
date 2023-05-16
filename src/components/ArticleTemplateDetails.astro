@@ -16,8 +16,8 @@ const tags = post.tags.map((postTag: string) => {
 
 const allArticles = await getCollection("articles");
 const articleIndex = allArticles.findIndex(currentArticle => currentArticle.slug === post.slug);
-const prev = allArticles[articleIndex - 1];
-const next = allArticles[articleIndex + 1];
+const prev = allArticles[articleIndex + 1];
+const next = allArticles[articleIndex - 1];
 ---
 
 <div>
@@ -72,24 +72,24 @@ const next = allArticles[articleIndex + 1];
       </div>
       <Links data={author} />
     </div>
+  </div>
 
-    <div class="post-single__footer-nextprev">
-      {prev ? (
-        <a
-          class="post-single__footer-prev"
-          href={prev.slug}
-        >
-          &lt;&lt; {prev.data.postTitle}
-        </a>
-      ) : null}
-      {next ? (
-        <a
-          class="post-single__footer-next"
-          href={next.slug}
-        >
-          {next.data.postTitle} &gt;&gt;
-        </a>
-      ) : null}
-    </div>
+  <div class="post-single__footer-nextprev">
+    {prev ? (
+      <a
+        class="post-single__footer-prev"
+        href={prev.slug}
+      >
+        &lt;&lt; {prev.data.postTitle}
+      </a>
+    ) : null}
+    {next ? (
+      <a
+        class="post-single__footer-next"
+        href={next.slug}
+      >
+        {next.data.postTitle} &gt;&gt;
+      </a>
+    ) : null}
   </div>
 </div>
