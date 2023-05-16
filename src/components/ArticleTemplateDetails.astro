@@ -3,22 +3,21 @@ import '../styles/posttemplatedetails.scss';
 import { site } from "../data/siteMetaData.js";
 import moment from 'moment';
 import profilePic from '../../photo.jpg';
-import Links from './Links.astro'
-
+import Links from './Links.astro';
+import { getCollection } from "astro:content";
 
 const { author, subtitle } = site;
-const { post, next, prev } = Astro.props;
+const { post } = Astro.props;
+
 const tags = post.tags.map((postTag: string) => {
   const tagObject = site.menu.find(menuElement => menuElement.label === postTag)
   return tagObject
-})
+});
 
-// const items = []
-//     const tagTitle = this.props.pageContext.tag
-//     const posts = this.props.data.allMarkdownRemark.edges
-//     posts.forEach(post => {
-//       items.push(<Post data={post} key={post.node.fields.slug} />)
-//     })
+const allArticles = await getCollection("articles");
+const articleIndex = allArticles.findIndex(currentArticle => currentArticle.slug === post.slug);
+const prev = allArticles[articleIndex - 1];
+const next = allArticles[articleIndex + 1];
 ---
 
 <div>
@@ -78,17 +77,17 @@ const tags = post.tags.map((postTag: string) => {
       {prev ? (
         <a
           class="post-single__footer-prev"
-          href={"/" + prev.frontmatter.path}
+          href={prev.slug}
         >
-          &lt;&lt; {prev.frontmatter.postTitle}
+          &lt;&lt; {prev.data.postTitle}
         </a>
       ) : null}
       {next ? (
         <a
           class="post-single__footer-next"
-          href={"/" + next.frontmatter.path}
+          href={next.slug}
         >
-          {next.frontmatter.postTitle} &gt;&gt;
+          {next.data.postTitle} &gt;&gt;
         </a>
       ) : null}
     </div>
