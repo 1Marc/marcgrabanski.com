@@ -12,7 +12,7 @@ layout: '../../../layouts/ArticleLayout.astro'
 
 Here's a 2020 recap, but first Happy New Year! 🥳
 
-![My Family 2020](./grabanski-family.jpeg)
+![My Family 2020](../2020-01-02-vr/grabanski-family.jpeg)
 
 ## Going Remote (and Recording Remote)
 
@@ -20,7 +20,7 @@ In March, the whole world changed. Everything became uncertain as we had to pivo
 
 We rebuilt our entire recording process from scratch and created a remote video kit we can ship to instructor's homes or set up in remote locations:
 
-![Frontend Masters Remote Instruction Kit in Action](./remote-kit.jpg)
+![Frontend Masters Remote Instruction Kit in Action](../2020-01-02-vr/remote-kit.jpg)
 
 We used this kit to set up in Denver and San Francisco. It's so cool to have a toolkit to set up anywhere! 🏔🏙
 
@@ -46,11 +46,11 @@ If you watched the video I linked to above, you'd see the real camera footage pu
 
 Here's the mixed reality studio I built for it:
 
-![Mixed Reality Studio](./mixed-reality-studio.jpg)
+![Mixed Reality Studio](../2020-01-02-vr/mixed-reality-studio.jpg)
 
 I've been making videos and learning a ton through it. Everything from capture with LIV software to equipment and video editing. Now have a whole channel of videos shot in Mixed Reality on Pistol Whip VR:
 
-[![CodeWhip YouTube Channel](./codewhip-youtube.png)](https://www.youtube.com/channel/UC5W6ZgJB40-2NUYkhuqs2GA/videos)
+[![CodeWhip YouTube Channel](../2020-01-02-vr/codewhip-youtube.png)](https://www.youtube.com/channel/UC5W6ZgJB40-2NUYkhuqs2GA/videos)
 
 Here's an example of my latest video:
 
@@ -62,7 +62,7 @@ I had to learn all sorts of skills to combine educational stand-ups with gamepla
 
 Not only was I having fun with Pistol Whip, but I realized I was getting good at the game. _Very good_. To the point where I ended up getting _all_ the world records on Hard in Pistol Whip as of December 17th:
 
-[![Pistol Whip World Records](./pistol-whip-world-records.jpg)](https://twitter.com/CodeWhipTV/status/1339762948995239936)
+[![Pistol Whip World Records](../2020-01-02-vr/pistol-whip-world-records.jpg)](https://twitter.com/CodeWhipTV/status/1339762948995239936)
 
 I'm having to defend my title with people challenging me and beating my records occasionally, and so far, I've held them off. But we'll see with a busy work and family life if on nights and weekends I can keep squeezing enough time to keep them all! 😉
 
@@ -70,7 +70,7 @@ I'm having to defend my title with people challenging me and beating my records 
 
 After setting up the studio and making YouTube videos, I realized many top players in various games tend to stream their attempts on Twitch. A lot of people into the game like watching others play to pick up and share tips. Or just for entertainment. I started trying my hand at Twitch and talking through gameplay as I game.
 
-[![Streaming on Twitch](./twitch-streaming.png)](https://www.twitch.tv/codewhip)
+[![Streaming on Twitch](../2020-01-02-vr/twitch-streaming.png)](https://www.twitch.tv/codewhip)
 
 Experimenting with Twitch this last few weeks has been a blast! Quite a few people have shown up to watch me play videogames, and I just got the email to be a "Twitch Affiliate," which is crossing some metrics. The last time streaming was so much fun, so I'm going to try to stream at least once per week if I can find the time.
 

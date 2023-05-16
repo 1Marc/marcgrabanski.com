@@ -12,7 +12,7 @@ layout: '../../../layouts/ArticleLayout.astro'
 
 Happy New Year! 🥳 Glad 2022 is here.
 
-![My Family 2021](./grabanski-family-2021.jpg)
+![My Family 2021](../2021-01-10-games-and-gymnastics/grabanski-family-2021.jpg)
 
 Here are some interesting things from 2021!
 
@@ -30,17 +30,17 @@ With January freezing and not getting out much due to the pandemic, why not star
 
 I finished 464 out of 123k+ competitors! Who knew I was still good at Mario:
 
-![Top 500 Mario Maker](./top-500-mario.jpeg)
+![Top 500 Mario Maker](../2021-01-10-games-and-gymnastics/top-500-mario.jpeg)
 
 ## 🛶 Canoe Trip Down the Mississippi
 
 Towards the top of my list of memories from this year, my good friend Scott and I went on a four-day canoe trip this summer. It was amazing.
 
-![Canoing Mississippi](./canoing-mississippi3.jpg)
+![Canoing Mississippi](../2021-01-10-games-and-gymnastics/canoing-mississippi3.jpg)
 
-![Canoing Mississippi](./canoing-mississippi.jpg)
+![Canoing Mississippi](../2021-01-10-games-and-gymnastics/canoing-mississippi.jpg)
 
-![Canoing Mississippi](./canoing-mississippi2.jpg)
+![Canoing Mississippi](../2021-01-10-games-and-gymnastics/canoing-mississippi2.jpg)
 
 A reminder if you're reading this to get outside! It's super good for your mind.
 
@@ -48,29 +48,29 @@ A reminder if you're reading this to get outside! It's super good for your mind.
 
 We have been dipping our toes into video game design with the kids. Taking the kids' drawings and ideas as a basis for creating a videogame is super fun.
 
-![Kid Drawing](./game-drawings.jpeg)
+![Kid Drawing](../2021-01-10-games-and-gymnastics/game-drawings.jpeg)
 
 Then sending those drawings to a professional artist to make custom art:
 
-![Game Sketches](./game-pro-drawings.jpg)
+![Game Sketches](../2021-01-10-games-and-gymnastics/game-pro-drawings.jpg)
 
 Here are some more "final" art concepts cleaned up:
 
-![Game art](./game-art3.jpg)
+![Game art](../2021-01-10-games-and-gymnastics/game-art3.jpg)
 
-![Game art](./game-art2.jpg)
+![Game art](../2021-01-10-games-and-gymnastics/game-art2.jpg)
 
 Here's another drawing of a bunch of monsters I love.
 
-![Kid Drawing](./game-drawings-monsters.jpg)
+![Kid Drawing](../2021-01-10-games-and-gymnastics/game-drawings-monsters.jpg)
 
 Then the artist makes them into actual characters!
 
-![Kid Drawing](./monster-sketches.jpg)
+![Kid Drawing](../2021-01-10-games-and-gymnastics/monster-sketches.jpg)
 
 I'm looking forward to making the game, but I know it will be A LOT of work.
 
-![Game art](./game-art.png)
+![Game art](../2021-01-10-games-and-gymnastics/game-art.png)
 
 Excited to kick this project off and start programming a simple version of the game, but as you may know, learning Unity isn't going to be easy! Projects like this die all the time; my goal is not to let this one. It has to become real someday.
 
@@ -82,7 +82,7 @@ With hard work, I was able to land flat-ground front flips!
 
 I posted a montage of 6 months of progress and posted it on r/Gymnastics – and it hit the front page, and the comments were super positive! Check out the video montage of my [first six months of Gymnastics](https://www.reddit.com/r/Gymnastics/comments/rtb6c0/first_6_months_of_gymnastics_starting_at_age_37/) – starting at age 37. 😝
 
-[![Gymnastics](./gymnastics.png)](https://www.reddit.com/r/Gymnastics/comments/rtb6c0/first_6_months_of_gymnastics_starting_at_age_37/)
+[![Gymnastics](../2021-01-10-games-and-gymnastics/gymnastics.png)](https://www.reddit.com/r/Gymnastics/comments/rtb6c0/first_6_months_of_gymnastics_starting_at_age_37/)
 
 I have some goals here:
 
@@ -104,7 +104,7 @@ I have some goals here:
 
 The channel is growing pretty well lately, too, with the increasing adoption of VR in general:
 
-![Growing YouTube channel](./youtube-analytics.jpeg)
+![Growing YouTube channel](../2021-01-10-games-and-gymnastics/youtube-analytics.jpeg)
 
 The main new games I've found in VR are Stride (parkour-like mirror's edge) and a top-down strategy board game called Demeo, which is super fun to play with friends and colleagues.
 
@@ -116,6 +116,6 @@ Here's my latest video:
 
 Finally, we built a real fire pit into the backyard, which was great to still be outside in nature during cold days. I'm enjoying it!
 
-![Real Fire Pit](./real-firepit.jpeg)
+![Real Fire Pit](../2021-01-10-games-and-gymnastics/real-firepit.jpeg)
 
 I wanted to include more things like messing around with drones, trips to the climbing wall, and making cherry pie...but you can only fit so many updates into one post before you have just to hit publish. Cheers, and I hope 2022 is off to a good start for you and yours!

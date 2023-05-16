@@ -12,7 +12,7 @@ layout: '../../../layouts/ArticleLayout.astro'
 
 Note: This post is from sometime before 2007, but it still very much applies today.
 
-![](./timeless.jpg)
+![](../2007-05-05-developing-a-timeless-skill-set/timeless.jpg)
 
 The place I've been striving for is a place where I can use the proper tool for the job. Each programming language has their strength. Here are your average development languages and their common strength:
 

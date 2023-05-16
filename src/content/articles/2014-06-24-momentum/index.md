@@ -16,13 +16,13 @@ Likely many of your projects have died due to lack of keeping the momentum going
 
 The best advice I have to build momentum and do great things is to look for the little successes and build on them. **If you see a little success, keep it going!...for god's sake, keep doing more of that thing and keep those little successes growing!** Little, no scratch that, _even tiny itty bitty_ successes build up into BIG things. String together those tiny wins and you'll see something big starting to grow.
 
-![](./boxes.jpg)
+![](../2014-06-24-momentum/boxes.jpg)
 
 ## Don't Switch
 
 In my life I've had so many things I started. Some of them started to see success. Even with success piling up... as soon as I switched -- it died (even if slowly).
 
-![](./success-fail.jpg)
+![](../2014-06-24-momentum/success-fail.jpg)
 
 **Moving away for large periods of time to focus on other things absolutely kills momentum.** By switching focus, you pretty much killed the previous project with a horrible death. You'll notice when you come back to it the wind is gone, or the wind is dying out. The myth I used to keep telling myself when switching projects is that I'll, "get back to later". _It never happens...once you quit, you quit!_ Then you'll be staring back at that thing in a "what if" scenario.
 
@@ -36,7 +36,7 @@ Once you lose momentum from switching, it's hard if not impossible to get it bac
 
 So what's the reason I like focusing on one project at a time now as opposed to 3-5 at a time like I used to? **Working on one project/mission is all about snowballing momentum.** What do I mean by that? Well, once you get a small snowball moving forward it picks up other snow and becomes a bigger snowball...and if you keep it going...well, it could could become an avalanche!
 
-![](./avalanche.jpg)
+![](../2014-06-24-momentum/avalanche.jpg)
 
 **The bigger project starts rolling up things underneath it and the whole thing continues to grow bigger on that combined momentum.**
 

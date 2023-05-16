@@ -10,7 +10,7 @@ isArchived: false
 layout: '../../../layouts/ArticleLayout.astro'
 ---
 
-![](./five_dice.jpg)
+![](../2007-05-05-5-things-learned-from-coding-open-source/five_dice.jpg)
 
 ### 1. Create a solid foundation.
 
