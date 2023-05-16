@@ -8,7 +8,10 @@ import Links from './Links.astro'
 
 const { author, subtitle } = site;
 const { post, next, prev } = Astro.props;
-// const tags = post.fields.tagSlugs
+const tags = post.tags.map((postTag: string) => {
+  const tagObject = site.menu.find(menuElement => menuElement.label === postTag)
+  return tagObject
+})
 
 // const items = []
 //     const tagTitle = this.props.pageContext.tag
@@ -33,7 +36,7 @@ const { post, next, prev } = Astro.props;
   </div>
   <div class="post-single">
     <div class="post-single__inner">
-      <h1 class="post-single__title">{post.archived ? "[Archived] " : ""}{post.postTitle}</h1>
+      <h1 class="post-single__title">{post.isArchived ? "[Archived] " : ""}{post.postTitle}</h1>
       <div class="post-single__date">
         {moment(post.date).isBefore('2007-05-06') ? (
           <time>Written Sometime Before 2007</time>
@@ -49,14 +52,14 @@ const { post, next, prev } = Astro.props;
     <div class="post-single__footer">
       <div class="post-single__tags">
         <ul class="post-single__tags-list">
-          <!-- {tags &&
-            tags.map((tag, i) => (
-              <li class="post-single__tags-list-item" key={tag}>
-                <a href={tag} class="post-single__tags-list-item-link">
-                  {post.frontmatter.tags[i]}
+          {tags &&
+            tags.map((tag: { path: string; label: string; }) => (
+              <li class="post-single__tags-list-item">
+                <a href={tag.path} class="post-single__tags-list-item-link">
+                  {tag.label}
                 </a>
               </li>
-            ))} -->
+            ))}
         </ul>
       </div>
       <hr />
