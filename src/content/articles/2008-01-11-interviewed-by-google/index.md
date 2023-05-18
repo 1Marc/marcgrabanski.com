@@ -12,7 +12,7 @@ layout: '../../../layouts/ArticleLayout.astro'
 
 ## Part 1 (Series)
 
-![](../2008-01-11-interviewed-by-google/_google-logo.gif)
+![](/2008-01-11-interviewed-by-google/_google-logo.gif)
 
 I got interviewed by Google and was turned down. I never expected to interview with Google because it was not something I sought out. I love where I work, but you can't say "no" to an opportunity to entertain the idea of working with Google. An internal developer over there saw my work and said I should work there, so I sent over a resume and got interviewed. Even though I didn't get the job, it was a good experience and really tested my convictions of where I am at in my career. In the interview I botched the technical interview badly.
 
@@ -24,7 +24,7 @@ Lately I've had some big successes with projects and I want to make sure it cont
 
 ## Part 2 (Series)
 
-![](../2008-01-11-interviewed-by-google/_google-logo.gif)
+![](/2008-01-11-interviewed-by-google/_google-logo.gif)
 
 As many of you know, I was interviewed by Google two more times. Once as a UI Engineer for Gmail and once for a web developer position at YouTube (Google owns YouTube). YouTube actually sent me out on a plane to San Francisco, but I was turned down for both positions. Let me explain how this played out...
 

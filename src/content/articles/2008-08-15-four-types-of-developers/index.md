@@ -12,7 +12,7 @@ layout: '../../../layouts/ArticleLayout.astro'
 
 After years of working with developers and observing motivations - it seems I've somewhat generalized people into a few categories.
 
-![](../2008-08-15-four-types-of-developers/_puzzle-pieces.jpg)
+![](/2008-08-15-four-types-of-developers/_puzzle-pieces.jpg)
 
 > _Please don't balk if they aren't 100% accurate, since everyone is different it is hard to generalize - but this shows the general trends I see of paths people follow when developing for the web._
 

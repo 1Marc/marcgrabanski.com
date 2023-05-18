@@ -5,7 +5,7 @@ layout: '../../layouts/PageLayout.astro'
 
 [Software Unscripted: Back to Basics in Production](https://open.spotify.com/episode/3BypKRz30vSFC3XKlwEmNz) – Richard and Frontend Masters founder Marc Grabanski talk about a "back to basics" approach to Web development, not based on any frameworks or unnecessary dependencies.
 
-[![ShopTalk Show: Frontend Masterery With Marc Grabanski](../Podcasts.shoptalk-podcast.png)](https://shoptalkshow.com/408/)
+[![ShopTalk Show: Frontend Masterery With Marc Grabanski](/Podcasts.shoptalk-podcast.png)](https://shoptalkshow.com/408/)
 
 [ShopTalk Show: Frontend Masterery With Marc Grabanski](https://shoptalkshow.com/408/) – What Frontend Masters is, who it's for, how they decide what to teach, what's coming up, and the question everyone asks: what do I learn next?
 

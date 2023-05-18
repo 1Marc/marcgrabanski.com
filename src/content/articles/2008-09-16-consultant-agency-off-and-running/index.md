@@ -10,7 +10,7 @@ isArchived: false
 layout: '../../../layouts/ArticleLayout.astro'
 ---
 
-![](../2008-09-16-consultant-agency-off-and-running/_consultants.jpg)
+![](/2008-09-16-consultant-agency-off-and-running/_consultants.jpg)
 
 I have been operating as a small consulting agency for my clients lately. Here is what has been happening:
 

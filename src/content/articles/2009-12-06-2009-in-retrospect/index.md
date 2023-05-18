@@ -20,7 +20,7 @@ Although my blogging and open source work has slowed down while trying to boost 
 
 I spoke at more events this year. I especially enjoyed the short-notice trip to Dublin, Ireland.
 
-![](../2009-12-06-2009-in-retrospect/_ireland-mainstreet.jpg)
+![](/2009-12-06-2009-in-retrospect/_ireland-mainstreet.jpg)
 
 - jQuery Summit 2009
 - jQuery Conference 2009 in Boston, MA
@@ -34,7 +34,7 @@ I technical reviewed Dan Wellman's book on jQuery UI.
 
 ### Startup Companies
 
-![](../2009-12-06-2009-in-retrospect/_rentupdate-thumb.jpg)
+![](/2009-12-06-2009-in-retrospect/_rentupdate-thumb.jpg)
 
 Aside from my consulting company, I own shares in two startup companies. One of them launched a few months back, it is a rental listing and search engine called Rent Update. Another one is a firefox extension that talks to a web service I built.
 
