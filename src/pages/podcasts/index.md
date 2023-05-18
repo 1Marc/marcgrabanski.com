@@ -3,13 +3,11 @@ pageTitle: 'Podcast Appearances'
 layout: '../../layouts/PageLayout.astro'
 ---
 
-[Software Unscripted: Back to Basics in Production](https://open.spotify.com/episode/3BypKRz30vSFC3XKlwEmNz)
+[Software Unscripted: Back to Basics in Production](https://open.spotify.com/episode/3BypKRz30vSFC3XKlwEmNz) – Richard and Frontend Masters founder Marc Grabanski talk about a "back to basics" approach to Web development, not based on any frameworks or unnecessary dependencies.
 
 [![ShopTalk Show: Frontend Masterery With Marc Grabanski](../Podcasts.shoptalk-podcast.png)](https://shoptalkshow.com/408/)
 
-[ShopTalk Show: Frontend Masterery With Marc Grabanski](https://shoptalkshow.com/408/) -- What Frontend Masters is, who it's for, how they decide what to teach, what's coming up, and the question everyone asks: what do I learn next?
-
-Some podcasts appearances I've made in 2015:
+[ShopTalk Show: Frontend Masterery With Marc Grabanski](https://shoptalkshow.com/408/) – What Frontend Masters is, who it's for, how they decide what to teach, what's coming up, and the question everyone asks: what do I learn next?
 
 [JavaScript Jabber: Tech Education and the Business of Frontend Masters](https://devchat.tv/js-jabber/178-jsj-tech-education-and-the-business-of-running-front-end-masters-with-marc-grabanski) -- answering a lot of questions about e-learning and telling the history of Frontend Masters.
 
