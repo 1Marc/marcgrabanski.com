@@ -1,0 +1,56 @@
+---
+import '../styles/sidebar.scss';
+import Menu from './Menu.astro';
+import Links from './Links.astro';
+import profilePic from '../../photo.jpg';
+
+export interface Props {
+	data: {
+    author: { name: string; twitter: string; github: string; };
+	  menu: { path: string, label: string }[];
+	  subtitle: string;
+  }
+}
+
+const { data } = Astro.props;
+const { author, menu, subtitle } = data;
+const { name } = author;
+const isHomePage = true // get(location, 'pathname', '/') === '/' // TODO: figure this out for astro
+---
+
+<div class="sidebar">
+	<div class="sidebar__inner">
+		<div class="sidebar__author">
+			<div>
+        <a href="/">
+          <img
+            src={profilePic}
+            class="sidebar__author-photo"
+            width="75"
+            height="75"
+            alt={name}
+          />
+				</a>
+        {isHomePage ? (
+          <h1 class="sidebar__author-title">
+            <a class="sidebar__author-title-link" href="/">
+              {name}
+            </a>
+          </h1>
+        ) : (
+          <h2 class="sidebar__author-title">
+            <a class="sidebar__author-title-link" href="/">
+              {name}
+            </a>
+          </h2>
+        )}
+        <p class="sidebar__author-subtitle">{subtitle}</p>
+      </div>
+		</div>
+		<div>
+			<Menu data={menu} />
+			<Links data={author} />
+			<a href="https://marcgrabanski.com/rss.xml">RSS Feed</a>
+		</div>
+	</div>
+</div>

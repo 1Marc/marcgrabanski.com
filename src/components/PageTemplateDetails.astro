@@ -1,0 +1,20 @@
+---
+import '../styles/pagetemplatedetails.scss';
+
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div class="content">
+	<div class="content__inner">
+		<div class="page">
+			<h1 class="page__title">{title}</h1>
+			<div class="page__body">
+				<slot />
+			</div>
+		</div>
+	</div>
+</div>

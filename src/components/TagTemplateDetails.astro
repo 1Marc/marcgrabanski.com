@@ -1,0 +1,29 @@
+---
+import '../styles/pagetemplatedetails.scss';
+import { getCollection } from 'astro:content';
+import ArticleAbstract from './ArticleAbstract.astro';
+
+export interface Props {
+	term: string;
+}
+
+const { term } = Astro.props;
+
+const filteredArticles = await getCollection('articles', ({ data }) => {
+  return data.tags.includes(term);
+});
+filteredArticles.reverse()
+---
+
+<div class="content">
+  <div class="content__inner">
+    <div class="page">
+      <h1 class="page__title">
+        All Posts tagged as &quot;{term}&quot;
+      </h1>
+      <div class="page__body">
+        {filteredArticles.map(article => <ArticleAbstract node={article} />)}
+      </div>
+    </div>
+  </div>
+</div>

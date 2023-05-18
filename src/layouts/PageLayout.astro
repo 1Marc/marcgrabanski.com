@@ -1,0 +1,35 @@
+---
+import '../styles/global.scss';
+import '@fontsource/roboto';
+import { site } from "../data/siteMetaData.js";
+import PageTemplateDetails from '../components/PageTemplateDetails.astro';
+import Sidebar from '../components/Sidebar.astro';
+
+export interface Props {
+  frontmatter: any; // TODO: update this type
+}
+
+const { frontmatter } = Astro.props;
+const { pageTitle, description } = frontmatter;
+const { title } = site;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+    <title>{`${pageTitle} - ${title}`}</title>
+    <meta name="description" content={description} />
+	</head>
+	<body>
+    <main class="layout">
+      <PageTemplateDetails title={pageTitle}>
+        <slot />
+      </PageTemplateDetails>
+      <Sidebar data={site} />
+    </main>
+  </body>
+</html>

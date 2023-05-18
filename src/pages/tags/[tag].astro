@@ -1,0 +1,16 @@
+---
+import TagLayout from "../../layouts/TagLayout.astro";
+
+export function getStaticPaths() {
+  return [
+    {params: {tag: 'career-journal'}, props: {term: 'Career Journal'}},
+    {params: {tag: 'checklists-guides'}, props: {term: 'Checklists & Guides'}},
+    {params: {tag: 'lessons-learned'}, props: {term: 'Lessons Learned'}},
+    {params: {tag: 'opinion'}, props: {term: 'Opinion Pieces'}},
+  ];
+}
+
+const { term } = Astro.props;
+---
+
+<TagLayout term={term} />
