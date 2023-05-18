@@ -12,7 +12,7 @@ layout: '../../../layouts/ArticleLayout.astro'
 
 Happy new year! Here are some highlights from 2022.
 
-![My Family 2022](../2022-12-26-getting-healthy/_grabanski-family.jpg)
+![My Family 2022](/2022-12-26-getting-healthy/_grabanski-family.jpg)
 
 My family is growing up. Our oldest turned 10! 🤔 To say it's got me thinking is a bit of an understatement.
 
@@ -48,7 +48,7 @@ This year I did a ton of health research to set up a system I can live by to liv
 
 My montage of the year went viral on r/Gymnastics! 400+ upvotes and tons of positive comments and DMs:
 
-[![Gymnastics at Age 38](../2022-12-26-getting-healthy/_gymnastics-38.jpg)](https://www.reddit.com/r/Gymnastics/comments/zvvwvo/first_15_years_of_gymnastics_age_38/)
+[![Gymnastics at Age 38](/2022-12-26-getting-healthy/_gymnastics-38.jpg)](https://www.reddit.com/r/Gymnastics/comments/zvvwvo/first_15_years_of_gymnastics_age_38/)
 
 It's clear I'm inspiring folks to get out there and do awesome stuff in their 30s and 40s.
 
@@ -75,11 +75,11 @@ I am excited to continue! Follow along on Instagram if you’d like: https://www
 
 I found an excellent programmer and artist for the family game. It’s progressing nicely, and every kid we’ve had play it loves it, but to take something like this to production is a massive project.
 
-![Game 2](../2022-12-26-getting-healthy/_game-screenshot-2.jpg)
+![Game 2](/2022-12-26-getting-healthy/_game-screenshot-2.jpg)
 
-![Game 4](../2022-12-26-getting-healthy/_game-screenshot-4.jpg)
+![Game 4](/2022-12-26-getting-healthy/_game-screenshot-4.jpg)
 
-![Game 1](../2022-12-26-getting-healthy/_game-screenshot-1.jpg)
+![Game 1](/2022-12-26-getting-healthy/_game-screenshot-1.jpg)
 
 I’m a product guy with no experience in the gaming industry, so although I know what makes a great game, and I love how the game is turning out, I honestly don’t know exactly what I’m going to do with it the game in terms of marketing and roll out.
 
@@ -89,8 +89,8 @@ I’m a product guy with no experience in the gaming industry, so although I kno
 
 There's certainly things I'm missing like a family trip to Florida (below is a photo of me and my son doing handstands on the beach), a hiking trip up near Ely, and doing the tough mudder 8k (finishing photo below) &mdash; but you can only fit so many things in before you have to hit publish!
 
-![Tough Mudder 8k](../2022-12-26-getting-healthy/_tough-mudder.jpg)
+![Tough Mudder 8k](/2022-12-26-getting-healthy/_tough-mudder.jpg)
 
-![Father and son doing handstands on the beach](../2022-12-26-getting-healthy/_handstands.jpg)
+![Father and son doing handstands on the beach](/2022-12-26-getting-healthy/_handstands.jpg)
 
 🥂 Cheers to 2023! I hope you this year is off to a good start for you! See you on [Twitter](https://twitter.com/1marc) & [Instagram](https://www.instagram.com/1marc/).
