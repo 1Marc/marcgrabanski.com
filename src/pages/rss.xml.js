@@ -2,6 +2,9 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 import { site } from '../data/siteMetaData';
+import sanitizeHtml from 'sanitize-html';
+import MarkdownIt from 'markdown-it';
+const parser = new MarkdownIt();
 
 export async function get(context) {
   const allArticles = await getCollection('articles', (article) => {
@@ -19,7 +22,7 @@ export async function get(context) {
       pubDate: article.data.date,
       description: article.data.description,
       link: `/articles/${article.slug}`,
-      content: article.body,
+      content: sanitizeHtml(parser.render(article.body)),
     })),
   });
 }

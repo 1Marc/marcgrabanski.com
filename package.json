@@ -16,7 +16,9 @@
     "@fontsource/roboto": "^4.5.8",
     "astro": "^2.3.2",
     "lost": "^9.0.1",
+    "markdown-it": "^13.0.1",
     "moment": "^2.29.4",
+    "sanitize-html": "^2.10.0",
     "sass": "^1.62.1"
   }
 }
