@@ -10,7 +10,7 @@ export async function get(context) {
   allArticles.reverse();
 
   return rss({
-    title: site.url,
+    title: "MarcGrabanski.com: Web Development & Business RSS Feed",
     description: site.title,
     // https://docs.astro.build/en/reference/api-reference/#contextsite
     site: context.site,
