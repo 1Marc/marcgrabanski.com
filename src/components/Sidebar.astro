@@ -10,12 +10,13 @@ export interface Props {
 	  menu: { path: string, label: string }[];
 	  subtitle: string;
   }
-}
+};
 
 const { data } = Astro.props;
 const { author, menu, subtitle } = data;
 const { name } = author;
-const isHomePage = true // get(location, 'pathname', '/') === '/' // TODO: figure this out for astro
+const currentPath = Astro.url.pathname;
+const isHomePage = currentPath === '/';
 ---
 
 <div class="sidebar">
