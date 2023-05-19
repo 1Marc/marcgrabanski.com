@@ -7,7 +7,8 @@ export async function get(context) {
   const allArticles = await getCollection('articles', (article) => {
     return !article.data.isDraft && !article.data.isArchived && article.data.date <= new Date();
   });
-  console.log(allArticles.slice(0,1))
+  allArticles.reverse();
+
   return rss({
     title: site.url,
     description: site.title,
@@ -18,6 +19,7 @@ export async function get(context) {
       pubDate: article.data.date,
       description: article.data.description,
       link: `/articles/${article.slug}`,
+      content: article.body,
     })),
   });
 }
