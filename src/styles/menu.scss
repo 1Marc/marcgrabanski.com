@@ -12,13 +12,13 @@
       margin: 10px 0;
       &-link {
         font-size: $typographic-base-font-size * 1.25;
-        color: $typographic-base-font-color;
-        font-weight: 400;
+        color: $typographic-link-color;
+        font-weight: 600;
         border: 0;
         &:hover,
         &:focus {
-          color: $color-primary;
-          border-bottom: 1px solid $color-primary;
+          color: $color-secondary;
+          border-bottom: 1px solid $color-secondary;
         }
         &--active {
           color: $color-base;

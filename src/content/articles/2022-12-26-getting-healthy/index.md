@@ -40,7 +40,7 @@ I [wrote TodoMVC using modern JavaScript](https://github.com/1Marc/modern-todomv
 
 ## Created a Personal Health Checklist System
 
-This year I did a ton of health research to set up a system I can live by to live a healthy life. I distilled all that research into a [Personal Health Checklist](https://marcgrabanski.com/personal-health-checklist) that a world-renowned longevity doctor, Dr. Brad Steinfield, reviewed.
+This year I did a ton of health research to set up a system I can live by to live a healthy life. I distilled all that research into a [Personal Health Checklist](https://marcgrabanski.com/articles/personal-health-checklist/) that a world-renowned longevity doctor, Dr. Brad Steinfield, reviewed.
 
 ➡️ This year, I want to continue adhering to this while revising and expanding it.
 

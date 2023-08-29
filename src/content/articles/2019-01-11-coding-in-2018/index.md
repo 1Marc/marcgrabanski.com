@@ -12,7 +12,7 @@ layout: '../../../layouts/ArticleLayout.astro'
 
 In 2018, I managed to write **a lot more code** – 2,129 commits total.
 
-[![Marc Grabanski's Github Profile](github-2018.jpeg)](https://github.com/1marc)
+[![Marc Grabanski's Github Profile](/2019-01-11-coding-in-2018/_github-2018.jpeg)](https://github.com/1marc)
 
 Much of this code was on the new FrontendMasters.com website, where I wrote more about the [new Frontend Masters website here](./new-frontend-masters-website).
 
@@ -22,7 +22,7 @@ Here's a list of some projects that I led or was a major part of – documented 
 
 - [**Learning Paths**](https://frontendmasters.com/learn/) — We put all our courses into a cohesive order according to peoples' learning goals. There was also a fun SVG progress widget I built from scratch which was a blast to code!
 
-![Learning Paths](learning-paths.gif)
+![Learning Paths](/2019-01-11-coding-in-2018/_learning-paths.gif)
 
 - **Video Annotations** - One issue our users were having was keeping the code in sync with our courses. So we addressed this by popping up git commands and code snippets within the player. They’re super helpful. Was a blast to be able to take a stab at and get out to the public – this has been on the roadmap for years!
 
@@ -32,7 +32,7 @@ Here's a list of some projects that I led or was a major part of – documented 
 
 * **Course statuses** — An issue with updating courses is that people were taking the old versions. We added this status indicator at the top of old courses to make sure old courses are pointing to the updated course.
 
-![Course Statuses](statuses.png)
+![Course Statuses](/2019-01-11-coding-in-2018/_statuses.png)
 
 - **Static Pages SEO Revamp** – Our build process takes markdown content files and puts it in a data format for Hugo to generate the static pages. I revamped that build process to spit out more SEO-friendly pages, and increased our search traffic by a non-trivial amount.
 - **Promotional Websites** - Every spring and fall we have a new theme for promoting the things we're building. We launched an [updated iOS app](https://itunes.apple.com/us/app/frontend-masters/id1383780486?ls=1&mt=8) and a [new Android app](https://play.google.com/store/apps/details?id=in.mjg.frontendmasters.store&utm_source=frontendmasters_com&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1) (which I had nothing to do with), but what I did do was build both of the sub-sites for the promotions.

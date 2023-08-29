@@ -16,7 +16,7 @@ We are small, but incredibly effective. The 7 of us – 5 full time and 2 contra
 
 ## We Moved to Downtown Minneapolis!
 
-![Downtown Minneapolis](downtown-minneapolis.jpg)
+![Downtown Minneapolis](/2017-12-28-2017/_downtown-minneapolis.jpg)
 
 We moved towards the top of one the the most beautiful buildings in downtown Minneapolis in RBC Plaza. We signed a 6 year lease. We moved downtown to open up our workshops to everyone in Minnesota (not just the south suburbs) and have an inspiring space for both teachers and students to learn and grow.
 

@@ -123,18 +123,19 @@
         display: inline-block;
         margin: 10px 5px;
         &-link {
-          background: $color-gray-bg;
+          background: darken($color-background, 2%);
           text-decoration: none;
-          border: 0;
+          border: 1px solid $color-primary;
           border-radius: 3px;
           color: lighten($color-base, 20%);
           line-height: $typographic-base-line-height;
           padding: 8px 16px;
           &:hover,
           &:focus {
-            color: $color-base;
-            background: darken($color-gray-bg, 5%);
-            border: 0;
+            box-shadow: var(--box-shadow);
+            color: $color-primary-highlight;
+            background: darken($color-background, 4%);
+            border: 1px solid darken($color-primary, 15%);
           }
         }
       }

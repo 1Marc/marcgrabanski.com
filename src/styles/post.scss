@@ -12,11 +12,11 @@
     @include margin-top(0.2);
     @include margin-bottom(0.25);
     &-link {
-      color: $color-base;
+      color: $typographic-link-color-highlight;
       &:hover,
       &:focus {
-        color: $color-primary;
-        border-bottom: 1px solid $color-primary;
+        color: $color-secondary;
+        border-bottom: 1px solid $color-secondary;
       }
     }
   }

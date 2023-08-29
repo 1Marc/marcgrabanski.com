@@ -10,7 +10,7 @@ isArchived: false
 layout: '../../../layouts/ArticleLayout.astro'
 ---
 
-![Cheetah](cheetah.jpg)
+![Cheetah](/2011-04-01-long-live-the-hacker-entrepreneurs/_cheetah.jpg)
 
 Society is moving at an unprecedented pace. A year ago I didn't have the word "Android" in my vocabulary but now I use an Android phone every day. Entrepreneurs of yesterday have to wake up to this new world and realize that the rules have changed. Entrepreneurs suddenly, "cannot find good talent". Meanwhile, **hackers don't need idea people when they _are_ the idea people.**
 

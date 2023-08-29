@@ -10,7 +10,7 @@ isArchived: false
 layout: '../../../layouts/ArticleLayout.astro'
 ---
 
-![Marc Grabanski Dublin](dublin_street.jpg)
+![Marc Grabanski Dublin](/2010-12-13-reflecting-career-and-looking-to-2011/_dublin_street.jpg)
 
 The most reliable way I know how to improve the future is to learn from the past. If you don't like your past, change your ways. If you do like elements of the past, learn from them and do more.
 
@@ -18,7 +18,7 @@ First, I'm going to do a recap of the past. Then I'll share about what happened 
 
 ## Foreword: Informational Rags to Riches
 
-![Minnesota Night Snow](minnesota-night-snow.jpg)
+![Minnesota Night Snow](/2010-12-13-reflecting-career-and-looking-to-2011/_minnesota-night-snow.jpg)
 
 I grew up in and still live in Minnesota. It is not a land of startups and progress. Growing up here I titled Minnesota the "technological black hole" even though these days Minneapolis is actually pretty progressive.
 
@@ -40,7 +40,7 @@ I've decided on many routes in life that people reject. There is no shortage of 
 
 ## (2007-2009) Recapping
 
-![Enger Tower](tower.jpg)
+![Enger Tower](/2010-12-13-reflecting-career-and-looking-to-2011/_tower.jpg)
 
 - [2007](/2007-was-an-incredible-year) - year of developing lots of open source, got featured on Ajaxian and spoke at the first jQuery camp.
 - [Goals as of 2007](/career-goals-as-of-august-2007) - I set goals in 2007 and by now I've accomplished most of them like learning rapid web application development, speaking at conferences and creating a web conference in Minnesota. I haven't gotten to the long term goals of supporting myself with residual income, but other than that I would say pretty much all of those goals are done while persistent goals are still happening. =)
@@ -52,7 +52,7 @@ I've decided on many routes in life that people reject. There is no shortage of 
 
 ## (2010) I Learned to Teach!
 
-![River](river.jpg)
+![River](/2010-12-13-reflecting-career-and-looking-to-2011/_river.jpg)
 
 This year I found out just how important education is to me. I took roughly five months without pay to learn how to teach. Education is deeply seeded in me in a way I never thought it did. I'm talking here about the principles of disseminating information, not being a professor. Being able to communicate understanding to others is something that is helpful in almost any situation in life.
 
@@ -66,7 +66,7 @@ I stopped working on calendar engine and instead built [jQuery Date](/jquery-dat
 
 ### (2010) Speaking
 
-![Jerusalem](jerusalem.jpg)
+![Jerusalem](/2010-12-13-reflecting-career-and-looking-to-2011/_jerusalem.jpg)
 
 I did some more speaking this year, namely getting to give an all-day tutorial session in Israel which was absolutely amazing. Here are some places I spoke:
 
@@ -95,7 +95,7 @@ My love for understanding why people do amazing things has led me to start doing
 
 ### (2011) Goals - No Particular Order
 
-![Glendalock](marc_glendalock.jpg)
+![Glendalock](/2010-12-13-reflecting-career-and-looking-to-2011/_marc_glendalock.jpg)
 
 - Improve my ability to foster and create highly collaborative and creative teams.
 - Create conferences around the nation (eventually internationally). Planning is underway for a JavaScript on Mobile conference.

@@ -39,7 +39,7 @@ I've carried a lot of debt since I started the business for the reasons listed a
 
 Forgive me for this terrible over-simplification of a sketch:
 
-![Debt vs Team vs Revenue](debt-team-revenue.png)
+![Debt vs Team vs Revenue](/2018-12-21-debt-free-profitable/_debt-team-revenue.png)
 
 This chart shows 2013-2018 at a very high level
 
