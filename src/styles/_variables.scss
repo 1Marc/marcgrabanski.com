@@ -3,10 +3,10 @@
  */
 
 // Colors
-$color-base: #ddd;
-$color-primary: #c4e3ff;
+$color-base: #e9f5ff;
+$color-primary: #98c7f1;
 $color-primary-highlight: #d2eaff;
-$color-secondary: #f7a046;
+$color-secondary: #ee6f6b;
 $color-background: #041423;
 
 $color-white: lighten($color-base, 100%);
@@ -21,7 +21,7 @@ $typographic-root-font-size: 100;
 $typographic-base-font-size: 18px;
 $typographic-small-font-size: 16px;
 
-$typographic-base-line-height: 1.625;
+$typographic-base-line-height: 1.8;
 
 $typographic-base-font-color: $color-base;
 $typographic-link-color: $color-primary;
