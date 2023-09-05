@@ -78,7 +78,7 @@ const next = allArticles[articleIndex - 1];
     {prev ? (
       <a
         class="post-single__footer-prev"
-        href={prev.slug}
+        href={"/articles/"+prev.slug+"/"}
       >
         &lt;&lt; {prev.data.postTitle}
       </a>
