@@ -5,7 +5,7 @@ import PageTemplateDetails from '../components/PageTemplateDetails.astro';
 import Sidebar from '../components/Sidebar.astro';
 
 export interface Props {
-  frontmatter: any; // TODO: update this type
+  frontmatter:  {pageTitle: string, description: string};
 }
 
 const { frontmatter } = Astro.props;

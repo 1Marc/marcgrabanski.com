@@ -12,14 +12,21 @@ const { data } = Astro.props;
 	<ul class="menu__list">
 		{data.map(item => (
 			<li class="menu__list-item">
-				<a 
-					href={item.path}
-					class="menu__list-item-link"
-					// TODO: figure this out // DELETE THIS LINE TO GET RID OF ALL ERROS IN THIS FILE
-					// activeClass="menu__list-item-link menu__list-item-link--active"
-				>
-					{item.label}
-				</a>
+				{ Astro.url.pathname === item.path ?
+					<a 
+						href={item.path}
+						class="menu__list-item-link menu__list-item-link--active"
+						>
+						{item.label}
+						</a>
+						:
+						<a 
+						href={item.path}
+						class="menu__list-item-link"
+					>
+						{item.label}
+					</a>
+				}
 			</li>
 		))}
 	</ul>
