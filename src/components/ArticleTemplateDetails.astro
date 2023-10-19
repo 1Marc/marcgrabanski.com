@@ -2,7 +2,8 @@
 import '../styles/posttemplatedetails.scss';
 import { site } from "../data/siteMetaData.js";
 import moment from 'moment';
-import profilePic from '../../public/photo.jpg';
+import { Image } from 'astro:assets';
+import profilePic from '../images/photo.jpg';
 import Links from './Links.astro';
 import { getCollection } from "astro:content";
 
@@ -23,7 +24,7 @@ const next = allArticles[articleIndex - 1];
 <div>
   <div>
     <a class="post-single__home-button" href="/">
-      <img
+      <Image
         src={profilePic}
         class="post-single__home-photo"
         width="75"
