@@ -2,6 +2,7 @@
 import '../styles/sidebar.scss';
 import Menu from './Menu.astro';
 import Links from './Links.astro';
+import { Image } from 'astro:assets';
 import profilePic from '../../public/photo.jpg';
 
 export interface Props {
@@ -24,7 +25,7 @@ const isHomePage = currentPath === '/';
 		<div class="sidebar__author">
 			<div>
         <a href="/">
-          <img
+          <Image
             src={profilePic}
             class="sidebar__author-photo"
             width="75"

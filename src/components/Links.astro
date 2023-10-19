@@ -1,5 +1,6 @@
 ---
 import '../styles/links.scss';
+import { Image } from 'astro:assets';
 import twitterIcon from '../../public/twitter.svg'
 import githubIcon from '../../public/github.svg'
 
@@ -17,12 +18,20 @@ const { data } = Astro.props;
 				href={`https://www.twitter.com/${data.twitter}`}
 				target="_blank"
 			>
-				<img src={twitterIcon} />
+				<Image
+					src={twitterIcon}
+					width="75"
+					alt={`Twitter ${data.twitter}`}
+				/>
 			</a>
 		</li>
 		<li class="links__list-item">
 			<a href={`https://www.github.com/${data.github}`} target="_blank">
-				<img src={githubIcon} />
+				<Image
+					src={githubIcon}
+					width="75"
+					alt={`GitHub ${data.github}`}
+				/>
 			</a>
 		</li>
 	</ul>
