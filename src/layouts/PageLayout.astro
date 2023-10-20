@@ -1,6 +1,7 @@
 ---
 import '../styles/global.scss';
 import { site } from "../data/siteMetaData.js";
+import { ViewTransitions } from 'astro:transitions';
 import PageTemplateDetails from '../components/PageTemplateDetails.astro';
 import Sidebar from '../components/Sidebar.astro';
 
@@ -22,6 +23,7 @@ const { title } = site;
 		<meta name="generator" content={Astro.generator} />
     <title>{`${pageTitle} - ${title}`}</title>
     <meta name="description" content={description} />
+		<ViewTransitions />
 	</head>
 	<body>
     <main class="layout">
