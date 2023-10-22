@@ -1,12 +1,12 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import IndexLayout from '../layouts/IndexLayout.astro';
 import RecentArticles from '../components/RecentArticles.astro';
 import { Content as About } from '../components/About.mdx';
 import { site } from "../data/siteMetaData.js";
 
 ---
 
-<Layout title={site.title}>
+<IndexLayout title={site.title}>
 	<div class="content">
 		<div class="content__inner">
 			<div class="page">
@@ -16,4 +16,4 @@ import { site } from "../data/siteMetaData.js";
 			</div>
 		</div>
 	</div>
-</Layout>
+</IndexLayout>
