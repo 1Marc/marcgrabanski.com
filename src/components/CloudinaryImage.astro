@@ -1,0 +1,27 @@
+---
+// import Cloudinary from '@cloudinary/url-gen';
+
+const cloudinary = new Cloudinary({
+  cloud: {
+    cloudName: "Cloudname from cloudinary"
+  }
+});
+
+const { src, ...props } = Astro.props;
+
+let cloudinarySource = cloudinary.img(src);
+
+cloudinarySource.setDeliveryType('fetch');
+
+interface Props {
+  src: string;
+  width: string;
+  height: string;
+  alt: string;
+}
+---
+
+<img
+  loading="lazy"
+  {...Astro.props}
+/>
