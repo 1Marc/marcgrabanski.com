@@ -1,21 +1,23 @@
 ---
+// https://docs.astro.build/en/guides/view-transitions/#full-site-view-transitions-spa-mode
+import { ViewTransitions } from 'astro:transitions';
 ---
 
-<ViewTransitions />
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width" />
 <link rel="icon" type="image/svg+xml" href="/favicon.png" />
 <meta name="generator" content={Astro.generator} />
 
-if (description) {
+<!-- if (description) {
   <meta name="description" content={description} />
-}
+} -->
 
-if (pageTitle) {
+<!-- if (pageTitle) {
   <title>{`${pageTitle} - ${title}`}</title>
 } else if (pageTitle) {
   <title>{`${postTitle} - ${title}`}</title>
 } else {
   <title>{title}</title>
-}
+} -->
 
+<ViewTransitions />
