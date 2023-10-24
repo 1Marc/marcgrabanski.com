@@ -25,8 +25,8 @@ const { title } = site;
 		<ViewTransitions />
 	</head>
 	<body>
-    <main class="layout">
-      <ArticleTemplateDetails post={frontmatter} >
+    <main class="layout" transition:animate="slide">
+      <ArticleTemplateDetails post={frontmatter}>
         <slot />
       </ArticleTemplateDetails>
     </main>
