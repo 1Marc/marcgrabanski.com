@@ -1,4 +1,4 @@
-// // https://docs.astro.build/en/guides/rss/
+// https://docs.astro.build/en/guides/rss/
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 import { site } from '../data/siteMetaData';
