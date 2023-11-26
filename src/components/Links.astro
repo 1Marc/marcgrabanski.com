@@ -17,12 +17,12 @@ const { data } = Astro.props;
 				href={`https://www.twitter.com/${data.twitter}`}
 				target="_blank"
 			>
-				<img src={twitterIcon} />
+				<img src={twitterIcon.src} />
 			</a>
 		</li>
 		<li class="links__list-item">
 			<a href={`https://www.github.com/${data.github}`} target="_blank">
-				<img src={githubIcon} />
+				<img src={githubIcon.src} />
 			</a>
 		</li>
 	</ul>
