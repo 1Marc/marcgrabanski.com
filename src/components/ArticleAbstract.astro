@@ -1,11 +1,6 @@
 ---
-import { CollectionEntry } from 'astro:content';
 import '../styles/post.scss';
 import moment from 'moment';
-
-export interface Props {
-	node: CollectionEntry<"articles">
-}
 
 const { node } = Astro.props;
 const { postTitle, description, date } = node.data
