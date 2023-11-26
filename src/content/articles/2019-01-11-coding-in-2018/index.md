@@ -26,7 +26,7 @@ Here's a list of some projects that I led or was a major part of – documented 
 
 - **Video Annotations** - One issue our users were having was keeping the code in sync with our courses. So we addressed this by popping up git commands and code snippets within the player. They’re super helpful. Was a blast to be able to take a stab at and get out to the public – this has been on the roadmap for years!
 
-![Video Annotations](video-annotations.png)
+![Video Annotations](/2019-01-11-coding-in-2018/_video-annotations.png)
 
 - **Bootcamp Website** – The largest project of the year was putting together a two-week [bootcamp](https://twitter.com/frontendmasters/status/1046765279731224576) to take beginners from nothing all the way up to having autonomy and taking control of their learning. By the end, they were able to code their own projects. I built a sub-website around this project.
 
