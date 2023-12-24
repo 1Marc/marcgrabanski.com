@@ -74,7 +74,6 @@ h6 {
 img {
   border: 0;
   display: block;
-  margin: inherit auto;
   height: auto;
 }
 
@@ -196,6 +195,12 @@ figcaption {
     &__inner {
       padding: 40px 35px;
     }
+  }
+}
+
+@include breakpoint-max {
+  img {
+    max-width: 100% !important;
   }
 }
 

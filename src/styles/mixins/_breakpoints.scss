@@ -20,6 +20,12 @@
 
 @mixin breakpoint-lg {
     @media screen and (min-width: $layout-breakpoint-lg) {
-        @content
+        @content;
+    }
+}
+
+@mixin breakpoint-max {
+    @media screen and (max-width: $layout-breakpoint-max) {
+        @content;
     }
 }
