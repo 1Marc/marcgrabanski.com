@@ -71,6 +71,10 @@ h6 {
   @include margin-bottom(0.5);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
 img {
   border: 0;
   display: block;
@@ -233,4 +237,21 @@ figcaption {
 lite-youtube {
   box-shadow: var(--box-shadow);
   margin: 40px 0;
+}
+
+h1 span.block,
+h2 span.block,
+h3 span.block {
+  display: inline-block;
+  background: #4f6ea0;
+  padding: 0 10px;
+  color: white;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+h1 span.alt,
+h2 span.alt,
+h3 span.alt {
+  background: #ee6f6b;
 }
