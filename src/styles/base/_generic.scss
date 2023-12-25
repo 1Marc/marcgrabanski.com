@@ -246,13 +246,15 @@ h3 span.block {
   background: #435f8b;
   padding: 0 10px;
   color: white;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
   border-right: 3px solid white;
   border-bottom: 2px solid white;
-  margin-top: 7px;
+  margin-top: 15px;
 }
 
 h1 span.alt,
 h2 span.alt,
 h3 span.alt {
-  background: #df6561;
+  background: black;
 }
