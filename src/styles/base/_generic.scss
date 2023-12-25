@@ -243,15 +243,16 @@ h1 span.block,
 h2 span.block,
 h3 span.block {
   display: inline-block;
-  background: #4f6ea0;
+  background: #435f8b;
   padding: 0 10px;
   color: white;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  border-right: 3px solid white;
+  border-bottom: 2px solid white;
+  margin-top: 7px;
 }
 
 h1 span.alt,
 h2 span.alt,
 h3 span.alt {
-  background: #ee6f6b;
+  background: #df6561;
 }
