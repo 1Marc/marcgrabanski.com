@@ -6,7 +6,7 @@ import sanitizeHtml from 'sanitize-html';
 import MarkdownIt from 'markdown-it';
 const parser = new MarkdownIt();
 
-export async function get(context) {
+export async function GET(context) {
   const allArticles = await getCollection('articles', (article) => {
     return !article.data.isDraft && !article.data.isArchived && article.data.date <= new Date();
   });
