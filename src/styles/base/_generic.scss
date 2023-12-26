@@ -243,18 +243,14 @@ h1 span.block,
 h2 span.block,
 h3 span.block {
   display: inline-block;
-  background: #435f8b;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(47, 47, 146) 50%, rgb(47, 94, 205) 100%);
   padding: 0 10px;
   color: white;
-  border-top: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  border-right: 3px solid white;
-  border-bottom: 2px solid white;
   margin-top: 15px;
 }
 
 h1 span.alt,
 h2 span.alt,
 h3 span.alt {
-  background: black;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(146, 47, 47) 50%, rgb(205, 47, 47) 100%);
 }
