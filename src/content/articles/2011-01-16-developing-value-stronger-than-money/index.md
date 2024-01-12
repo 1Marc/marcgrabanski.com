@@ -12,7 +12,7 @@ layout: '../../../layouts/ArticleLayout.astro'
 
 ![Ireland Bank](/2011-01-16-developing-value-stronger-than-money/_ireland-bank-dublin.jpg)
 
-Increasingly people [think I'm rich](/are-you-rich/) so this is in a series of articles that I've drafted to break down my concept of value and wealth to open up a path of discovering what real "rich"ness really is. Even though I am not rich financially (though people think I am), I've talked to many who wonder just how I am able to make the moves I do. Let's get started...
+Increasingly people [think I'm rich](/articles/are-you-rich/) so this is in a series of articles that I've drafted to break down my concept of value and wealth to open up a path of discovering what real "rich"ness really is. Even though I am not rich financially (though people think I am), I've talked to many who wonder just how I am able to make the moves I do. Let's get started...
 
 ### Encountering Money
 
