@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @import './variables';
 @import './mixins';
 
@@ -20,7 +22,7 @@
         border: 0;
         & i {
           font-size: 14px;
-          color: lighten($color-base, 20%);
+          color: color.adjust($color-base, $lightness: 20%);
         }
         &:hover,
         &:focus {

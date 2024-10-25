@@ -1,3 +1,5 @@
+@use "sass:color";
+
 /** 
  * Variables
  */
@@ -7,12 +9,12 @@ $color-base: #e9f5ff;
 $color-primary: #98c7f1;
 $color-primary-highlight: #d2eaff;
 $color-secondary: #ee6f6b;
-$color-background: #041423;
+$color-background: #1d1d1d;
 
-$color-white: lighten($color-base, 100%);
-$color-gray: lighten($color-base, 40%);
-$color-gray-border: lighten($color-base, 77%);
-$color-gray-bg: lighten($color-base, 79%);
+$color-white: color.adjust($color-base, $lightness: 100%);
+$color-gray: color.adjust($color-base, $lightness: 40%);
+$color-gray-border: color.adjust($color-base, $lightness: 77%);
+$color-gray-bg: color.adjust($color-base, $lightness: 79%);
 
 // Typographic
 $typographic-font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;

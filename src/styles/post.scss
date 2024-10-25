@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @import './variables';
 @import './mixins';
 
@@ -30,7 +32,7 @@
   &__meta {
     &-time {
       font-size: $typographic-small-font-size;
-      color: lighten($color-background, 40%);
+      color: color.adjust($color-background, $lightness: 40%);
       font-weight: 500;
       text-transform: uppercase;
     }

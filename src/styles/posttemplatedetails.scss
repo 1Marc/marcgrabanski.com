@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @import './variables';
 @import './mixins';
 
@@ -127,7 +129,7 @@
           text-decoration: none;
           border: 1px solid $color-primary;
           border-radius: 3px;
-          color: lighten($color-base, 20%);
+          color: color.adjust($color-base, $lightness: 20%);
           line-height: $typographic-base-line-height;
           padding: 8px 16px;
           &:hover,
@@ -148,7 +150,7 @@
     padding: 0;
     font-weight: bold;
     text-align: center;
-    color: lighten($color-base, 20%);
+    color: color.adjust($color-base, $lightness: 20%);
     border-radius: 3px;
     @include margin-top(1);
     margin-left: 15px;
