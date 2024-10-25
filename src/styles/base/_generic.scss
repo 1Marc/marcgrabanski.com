@@ -136,7 +136,7 @@ blockquote {
   padding: 0;
   font-style: normal;
   text-align: left;
-  background: darken($color-background, 2%);
+  background: color.adjust($color-background, $lightness: -2%);
   border-left: 15px solid #6386be;
   p {
     margin: 0;
