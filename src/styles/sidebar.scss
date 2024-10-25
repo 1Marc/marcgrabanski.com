@@ -1,5 +1,3 @@
-@use "sass:color";
-
 @import "./variables";
 @import "./mixins";
 
@@ -36,7 +34,7 @@
         }
     }
     &__copyright {
-        color: color.adjust($color-gray, $lightness: 20%);
+        color: lighten($color-gray, 18%);
         font-size: $typographic-small-font-size;
     }
 }

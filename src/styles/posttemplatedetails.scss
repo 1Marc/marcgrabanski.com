@@ -1,5 +1,3 @@
-@use "sass:color";
-
 @import './variables';
 @import './mixins';
 
@@ -113,7 +111,7 @@
     margin-left: auto;
     margin-right: auto;
     font-size: $typographic-base-font-size * 1;
-    color: color.adjust($color-primary, $lightness: -20%);
+    color: darken($color-primary, 20%);
   }
   &__tags {
     @include margin-bottom(0.5);
@@ -125,19 +123,19 @@
         display: inline-block;
         margin: 10px 5px;
         &-link {
-          background: color.adjust($color-background, $lightness: -2%);
+          background: darken($color-background, 2%);
           text-decoration: none;
           border: 1px solid $color-primary;
           border-radius: 3px;
-          color: color.adjust($color-base, $lightness: 20%);
+          color: lighten($color-base, 20%);
           line-height: $typographic-base-line-height;
           padding: 8px 16px;
           &:hover,
           &:focus {
             box-shadow: var(--box-shadow);
             color: $color-primary-highlight;
-            background: color.adjust($color-background, $lightness: -4%);
-            border: 1px solid color.adjust($color-primary, $lightness: -15%);
+            background: darken($color-background, 4%);
+            border: 1px solid darken($color-primary, 15%);
           }
         }
       }
@@ -150,7 +148,7 @@
     padding: 0;
     font-weight: bold;
     text-align: center;
-    color: color.adjust($color-base, $lightness: 20%);
+    color: lighten($color-base, 20%);
     border-radius: 3px;
     @include margin-top(1);
     margin-left: 15px;
