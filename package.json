@@ -10,12 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.0.7",
-    "@astro-community/astro-embed-youtube": "^0.4.3",
-    "@astrojs/rss": "^4.0.1",
-    "@astrojs/mdx": "2.0.2",
-    "markdown-it": "^14.0.0",
-    "moment": "^2.29.4",
-    "sanitize-html": "^2.11.0"
+    "astro": "^4.16.8",
+    "@astro-community/astro-embed-youtube": "^0.5.5",
+    "@astrojs/rss": "^4.0.9",
+    "@astrojs/mdx": "^3.1.9",
+    "markdown-it": "^14.1.0",
+    "moment": "^2.30.1",
+    "sanitize-html": "^2.13.1"
   }
 }
