@@ -1,0 +1,34 @@
+.links {
+    margin-bottom: 1em;
+}
+
+.links__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 10px -3px;
+}
+
+.links__list-item {
+    padding: 0;
+    margin: 0 5px;
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.links__list-item a {
+    border: 0;
+}
+
+.links__list-item a i {
+    font-size: 14px;
+    color: color-mix(in srgb, var(--color-base) 80%, white);
+}
+
+.links__list-item a:hover i,
+.links__list-item a:focus i {
+    color: var(--color-base);
+}

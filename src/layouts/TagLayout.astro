@@ -1,5 +1,5 @@
 ---
-import '../styles/global.scss';
+import '../styles/global.css';
 import { site } from "../data/siteMetaData.js";
 import TagTemplateDetails from '../components/TagTemplateDetails.astro'
 import Sidebar from '../components/Sidebar.astro';
@@ -29,4 +29,5 @@ const pageTitle = `All Posts Tagged as "${term}"`;
 			</TagTemplateDetails>
       <Sidebar data={site} />
 		</main>
+	</body>
 </html>

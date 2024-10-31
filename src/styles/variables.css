@@ -1,0 +1,30 @@
+:root {
+  /* Colors */
+  --color-base: #e9f5ff;
+  --color-primary: #98c7f1;
+  --color-primary-highlight: #d2eaff;
+  --color-secondary: #ee6f6b;
+  --color-background: #041423;
+  --color-white: #ffffff;
+  --color-gray: #f4faff;
+  --color-gray-border: #ffffff;
+  --color-gray-bg: #ffffff;
+
+  /* Typography */
+  --font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+  --font-size-root: 100%;
+  --font-size-base: 18px;
+  --font-size-small: 16px;
+  --line-height-base: 1.8;
+
+  /* Layout */
+  --layout-post-single-max-width: 1024px;
+  --layout-post-single-width: 874px;
+  --layout-width: 1200px;
+  --layout-breakpoint-sm: 685px;
+  --layout-breakpoint-max: 874px;
+  --layout-breakpoint-md: 960px;
+  --layout-breakpoint-lg: 1100px;
+
+  /* Other variables... */
+}
