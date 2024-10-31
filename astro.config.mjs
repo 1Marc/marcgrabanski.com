@@ -6,18 +6,4 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
   integrations: [mdx()],
   site: "https://www.marcgrabanski.com/",
-  build: {
-    rollupOptions: {
-      external: ["sharp"],
-    },
-  },
-  image: {
-    // Example: Enable the Sharp-based image service with a custom config
-    service: {
-      entrypoint: "astro/assets/services/sharp",
-      config: {
-        limitInputPixels: false,
-      },
-    },
-  },
 });
