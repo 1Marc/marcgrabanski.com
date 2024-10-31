@@ -14,10 +14,8 @@
     "@astro-community/astro-embed-youtube": "^0.4.3",
     "@astrojs/rss": "^4.0.1",
     "@astrojs/mdx": "2.0.2",
-    "lost": "^9.0.2",
     "markdown-it": "^14.0.0",
     "moment": "^2.29.4",
-    "sanitize-html": "^2.11.0",
-    "sass": "^1.69.5"
+    "sanitize-html": "^2.11.0"
   }
 }
