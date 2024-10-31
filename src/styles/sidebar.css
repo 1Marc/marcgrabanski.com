@@ -21,7 +21,7 @@
 .sidebar__author-title {
     font-size: calc(var(--font-size-base) * 1.125);
     font-weight: 500;
-    line-height: 1.125;
+    line-height: 1.125em;
     margin: 0.5em 0;
 }
 
@@ -36,7 +36,7 @@
 
 .sidebar__author-subtitle {
     color: var(--color-gray);
-    line-height: 1;
+    line-height: 1em;
     margin-bottom: 1em;
 }
 

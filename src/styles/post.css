@@ -1,5 +1,5 @@
 .post {
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 
 .post:last-child {
@@ -8,7 +8,7 @@
 
 .post__title {
     font-size: calc(var(--font-size-base) * 1.6875);
-    line-height: 1.5;
+    line-height: 1.5em;
     margin-top: 0.2em;
     margin-bottom: 0.25em;
 }
@@ -26,14 +26,14 @@
 .post__description {
     font-size: var(--font-size-base);
     color: var(--color-gray);
-    line-height: 1;
+    line-height: 1em;
     margin-bottom: 0.25em;
     margin-top: 0.25em;
 }
 
 .post__meta-time {
     font-size: var(--font-size-small);
-    color: color-mix(in srgb, var(--color-background) 60%, white);
+    color: var(--color-primary);
     font-weight: 500;
     text-transform: uppercase;
 }

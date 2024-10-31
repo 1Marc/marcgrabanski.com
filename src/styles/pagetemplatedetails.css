@@ -1,25 +1,31 @@
 .content {
-    /* existing styles */
+  /* existing styles */
 }
 
 .content__inner {
-    /* existing styles */
+  /* existing styles */
 }
 
 .page {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .page__title {
-    font-size: calc(var(--font-size-base) * 2.8);
-    font-weight: 500;
-    line-height: 2;
-    margin-top: 0;
-    margin-bottom: 1.45em;
+  font-size: calc(var(--font-size-base) * 2.8);
+  font-weight: 500;
+  line-height: 1.2em;
+  margin-top: 0;
+  margin-bottom: 1.45em;
 }
 
 .page__body {
-    font-size: var(--font-size-base);
-    line-height: 1;
-    margin: 0 0 1em;
+  font-size: var(--font-size-base);
+  line-height: 1em;
+  margin: 0 0 1em;
+}
+
+.page__body p {
+  font-size: calc(var(--font-size-base) * 1.125);
+  line-height: 1.6em;
+  margin-bottom: 1.125em;
 }
