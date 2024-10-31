@@ -10,12 +10,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.0.7",
     "@astro-community/astro-embed-youtube": "^0.4.3",
-    "@astrojs/rss": "^4.0.1",
     "@astrojs/mdx": "2.0.2",
+    "@astrojs/rss": "^4.0.1",
+    "astro": "^4.0.7",
     "markdown-it": "^14.0.0",
     "moment": "^2.29.4",
     "sanitize-html": "^2.11.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
   }
 }
