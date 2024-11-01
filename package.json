@@ -17,11 +17,5 @@
     "markdown-it": "^14.1.0",
     "moment": "^2.30.1",
     "sanitize-html": "^2.13.1"
-  },
-  "devDependencies": {
-    "sharp": "^0.33.5"
-  },
-  "engines": {
-    "node": "20.x"
   }
 }
