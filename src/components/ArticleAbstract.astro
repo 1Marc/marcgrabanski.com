@@ -1,6 +1,6 @@
 ---
 import '../styles/post.css';
-import moment from 'moment';
+import { formatDate, isBeforeDate } from '../utils/dateFormat';
 
 const { node } = Astro.props;
 const { postTitle, description, date } = node.data
@@ -9,14 +9,14 @@ const slug = node.slug
 
 <div class="post">
 	<div class="post__meta">
-		{moment(date).isBefore('2007-05-06') ? (
+		{isBeforeDate(date, '2007-05-06') ? (
 			<time>Written Sometime Before 2007</time>
 		) : (
 			<time
 				class="post__meta-time"
-				datetime={moment(date).format('MMMM D, YYYY')}
+				datetime={formatDate(date)}
 			>
-				{moment(date).format('MMMM YYYY')}
+				{formatDate(date, 'MMMM YYYY')}
 			</time>
 		)}
 

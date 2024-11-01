@@ -1,7 +1,7 @@
 ---
 import '../styles/posttemplatedetails.css';
 import { site } from "../data/siteMetaData.js";
-import moment from 'moment';
+import { formatDate, isBeforeDate } from '../utils/dateFormat';
 import profilePic from '../../public/photo.jpg';
 import Links from './Links.astro';
 import { getCollection } from "astro:content";
@@ -37,10 +37,10 @@ const next = allArticles[articleIndex - 1];
     <div class="post-single__inner">
       <h1 class="post-single__title">{post.isArchived ? "[Archived] " : ""}{post.postTitle}</h1>
       <div class="post-single__date">
-        {moment(post.date).isBefore('2007-05-06') ? (
+        {isBeforeDate(post.date, '2007-05-06') ? (
           <time>Written Sometime Before 2007</time>
         ) : (
-          moment(post.date).format('MMMM DD, YYYY')
+          formatDate(post.date)
         )}
     </div>
     
