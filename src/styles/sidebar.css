@@ -41,13 +41,27 @@
   font-size: var(--font-size-small);
 }
 
-@media screen and (min-width: 685px) {
+.content__footer {
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+  .content__footer {
+    display: block;
+  }
+
+  .layout {
+    display: flex;
+  }
+
   .sidebar {
-    width: 41.66667%;
+    width: 33.33333%;
   }
 
   .sidebar__inner {
-    padding: 30px 20px 0;
+    padding: 40px;
+    position: fixed;
+    top: 60px;
   }
 
   .sidebar__inner::after {
@@ -65,17 +79,5 @@
     top: 30px;
     left: -10px;
     bottom: 0;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .sidebar {
-    width: 33.33333%;
-  }
-
-  .sidebar__inner {
-    padding: 40px;
-    position: fixed;
-    top: 60px;
   }
 }

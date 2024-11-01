@@ -16,6 +16,8 @@ const items = allArticles.slice(-5).reverse();
 	{items.map(article => (
 		<ArticleAbstract node={article} />
 	))}
-	<h1>Post Categories:</h1>
-	<Menu data={site.menu} />
+	<div class="content__footer">
+		<h1>Post Categories:</h1>
+		<Menu data={site.menu} />
+	</div>
 </div>

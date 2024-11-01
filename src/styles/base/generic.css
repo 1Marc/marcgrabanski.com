@@ -179,14 +179,13 @@ figcaption {
   max-width: var(--layout-width);
   margin-left: auto;
   margin-right: auto;
-  display: flex;
 }
 
 .content__inner {
   padding: 25px 20px;
 }
 
-@media screen and (min-width: 685px) {
+@media screen and (min-width: 960px) {
   figure.float-left,
   figure.float-right {
     max-width: 310px;
@@ -198,15 +197,9 @@ figcaption {
   .float-left {
     float: left;
   }
-  .content {
-    width: 58.33333%;
-  }
   .content__inner {
     padding: 30px 20px;
   }
-}
-
-@media screen and (min-width: 960px) {
   .content {
     width: 66.66667%;
   }
