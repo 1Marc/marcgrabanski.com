@@ -56,3 +56,19 @@
 .embedVideoIframe {
   display: block;
 }
+
+.accomplishments {
+  padding: 0;
+}
+
+.accomplishments li {
+  list-style: none;
+  padding-left: 1.5em;
+  position: relative;
+}
+
+.accomplishments li::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+}

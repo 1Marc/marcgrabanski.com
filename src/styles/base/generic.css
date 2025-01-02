@@ -133,13 +133,14 @@ ul li {
   padding: 0 5px;
   margin-bottom: 10px;
   font-size: calc(var(--font-size-base) * 1.125);
-  line-height: 1.6em;
-  margin-bottom: 1.125em;
+  line-height: 1.66em;
+  margin-bottom: 0.5em;
 }
 
 p {
-  line-height: 1em;
-  margin-bottom: 1em;
+  font-size: calc(var(--font-size-base) * 1.125);
+  line-height: 1.6em;
+  margin-bottom: 1.125em;
 }
 
 blockquote {
