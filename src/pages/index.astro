@@ -3,17 +3,176 @@ import Layout from '../layouts/Layout.astro';
 import RecentArticles from '../components/RecentArticles.astro';
 import { Content as About } from '../components/About.mdx';
 import { site } from "../data/siteMetaData.js";
+import { getCollection } from 'astro:content';
 
+// Get the health checklist article specifically
+const allArticles = await getCollection('articles');
+const healthChecklist = allArticles.find(article => article.slug === 'personal-health-checklist');
+const recentArticles = allArticles.filter(article => article.slug !== 'personal-health-checklist').slice(-6).reverse();
 ---
 
 <Layout title={site.title}>
+	<div class="hero-section">
+		<div class="hero-content">
+			<div class="hero-text">
+				<h1 class="hero-title">
+					<span class="highlight">Marc Grabanski</span>
+					<br />
+					<span class="subtitle">Developer, Entrepreneur, Health Enthusiast</span>
+				</h1>
+				<p class="hero-description">
+					I've built and run <a href="https://frontendmasters.com" class="hero-link">Frontend Masters</a> for over a decade, 
+					equipping developers with the skills to turn their dreams into reality.
+				</p>
+				
+				<!-- Navigation Menu -->
+				<nav class="hero-navigation">
+					<ul class="nav-list">
+						{site.menu.map(item => (
+							<li class="nav-item">
+								<a href={item.path} class="nav-link">
+									{item.label}
+								</a>
+							</li>
+						))}
+					</ul>
+					<div class="social-links">
+						<a href={`https://www.twitter.com/${site.author.twitter}`} target="_blank" class="social-link">
+							<img src="/twitter.svg" alt="Twitter" class="social-icon" />
+						</a>
+						<a href={`https://www.github.com/${site.author.github}`} target="_blank" class="social-link">
+							<img src="/github.svg" alt="GitHub" class="social-icon" />
+						</a>
+						<a href="/rss.xml" class="social-link">
+							<span class="rss-icon">📡</span>
+						</a>
+					</div>
+				</nav>
+			</div>
+			<div class="hero-image">
+				<img src="/photo.jpg" alt="Marc Grabanski" class="profile-photo" />
+			</div>
+		</div>
+	</div>
+
 	<div class="content">
 		<div class="content__inner">
-			<div class="page">
-				<About class="page__body"/>
-				<hr />
-				<RecentArticles />
+			<div class="content-wrapper">
+			<!-- Featured Health Checklist Section -->
+			<section class="featured-section">
+				<div class="featured-header">
+					<h2 class="section-title">🚰 Most Referenced Resource</h2>
+					<p class="section-subtitle">The thing I refer people to most lately</p>
+				</div>
+				
+				<div class="featured-card">
+					<div class="featured-content">
+						<div class="featured-badge">Featured</div>
+						<h3 class="featured-title">
+							<a href="/articles/personal-health-checklist" class="featured-link">
+								Personal Health Checklist
+							</a>
+						</h3>
+						<p class="featured-description">
+							A comprehensive checklist to review and make better, healthier habits. 
+							This is my go-to reference for maintaining a healthy lifestyle.
+						</p>
+						<div class="featured-tags">
+							<span class="tag">Health</span>
+							<span class="tag">Wellness</span>
+							<span class="tag">Checklist</span>
+						</div>
+						<div class="featured-stats">
+							<div class="stat">
+								<span class="stat-number">3</span>
+								<span class="stat-label">Years Updated</span>
+							</div>
+							<div class="stat">
+								<span class="stat-number">50+</span>
+								<span class="stat-label">Health Tips</span>
+							</div>
+							<div class="stat">
+								<span class="stat-number">100%</span>
+								<span class="stat-label">Actionable</span>
+							</div>
+						</div>
+						<a href="/articles/personal-health-checklist" class="cta-button">
+							Read the Health Checklist →
+						</a>
+					</div>
+					<div class="featured-image">
+						<div class="health-icon">🚰</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- About Section -->
+			<section class="about-section">
+				<div class="about-content">
+					<h2 class="section-title">About Me</h2>
+					<About class="about-body"/>
+				</div>
+			</section>
+
+			<!-- Recent Articles Section -->
+			<section class="recent-section">
+				<div class="recent-header">
+					<h2 class="section-title">Recent Articles</h2>
+					<a href="/articles" class="view-all-link">View All Articles →</a>
+				</div>
+				<div class="articles-grid">
+					{recentArticles.map(article => (
+						<article class="article-card">
+							<div class="article-meta">
+								<time class="article-date">{new Date(article.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+								<div class="article-tags">
+									{article.data.tags?.slice(0, 2).map(tag => (
+										<span class="article-tag">{tag}</span>
+									))}
+								</div>
+							</div>
+							<h3 class="article-title">
+								<a href={`/articles/${article.slug}`} class="article-link">
+									{article.data.postTitle}
+								</a>
+							</h3>
+							<p class="article-excerpt">{article.data.description}</p>
+						</article>
+					))}
+				</div>
+			</section>
+
+			<!-- Quick Links Section -->
+			<section class="quick-links-section">
+				<h2 class="section-title">Quick Links</h2>
+				<div class="quick-links-grid">
+					<a href="https://frontendmasters.com" class="quick-link-card">
+						<div class="quick-link-icon">🎓</div>
+						<h3>Frontend Masters</h3>
+						<p>Advanced courses for developers</p>
+					</a>
+					<a href="https://twitter.com/1marc" class="quick-link-card">
+						<div class="quick-link-icon">🐦</div>
+						<h3>Twitter / X</h3>
+						<p>Follow my journey</p>
+					</a>
+					<a href="/podcasts" class="quick-link-card">
+						<div class="quick-link-icon">🎙️</div>
+						<h3>Podcasts</h3>
+						<p>Interviews & appearances</p>
+					</a>
+					<a href="https://github.com/1Marc" class="quick-link-card">
+						<div class="quick-link-icon">💻</div>
+						<h3>GitHub</h3>
+						<p>Open source projects</p>
+					</a>
+				</div>
+			</section>
 			</div>
 		</div>
 	</div>
 </Layout>
+
+
+
+

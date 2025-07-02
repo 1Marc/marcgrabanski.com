@@ -1,0 +1,190 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ArticleAbstract from '../../components/ArticleAbstract.astro';
+import { getCollection } from 'astro:content';
+import { site } from "../../data/siteMetaData.js";
+
+// Generate static paths for all pages
+export async function getStaticPaths() {
+  const allArticles = await getCollection('articles');
+  const sortedArticles = allArticles.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+  
+  const articlesPerPage = 10;
+  const totalPages = Math.ceil(sortedArticles.length / articlesPerPage);
+  const paths = [];
+  
+  // Add paginated pages (page 1, 2, 3, 4, 5, etc.)
+  for (let page = 1; page <= totalPages; page++) {
+    const startIndex = (page - 1) * articlesPerPage;
+    const endIndex = startIndex + articlesPerPage;
+    
+    paths.push({
+      params: { page: page.toString() },
+      props: { 
+        currentPage: page,
+        totalPages,
+        articles: sortedArticles.slice(startIndex, endIndex),
+        totalArticles: sortedArticles.length
+      }
+    });
+  }
+  
+  return paths;
+}
+
+const { currentPage, totalPages, articles, totalArticles } = Astro.props;
+const articlesPerPage = 10;
+const startIndex = (currentPage - 1) * articlesPerPage;
+const endIndex = startIndex + articlesPerPage;
+const articlesForCurrentPage = articles;
+
+const { title } = site;
+---
+
+<Layout title={`All Articles - ${title}`}>
+  <div class="articles-index">
+    <h1>All Articles</h1>
+    <p class="articles-count">Showing {articlesForCurrentPage.length} of {totalArticles} articles</p>
+    
+    <div class="articles-list">
+      {articlesForCurrentPage.map(article => (
+        <ArticleAbstract node={article} />
+      ))}
+    </div>
+
+    {totalPages > 1 && (
+      <div class="pagination">
+        <div class="pagination-info">
+          Page {currentPage} of {totalPages} (Articles {startIndex + 1}-{Math.min(endIndex, totalArticles)} of {totalArticles})
+        </div>
+        <div class="pagination-links">
+          {currentPage > 1 && (
+            <a href={`/articles/${currentPage - 1}`} class="pagination-link prev">
+              ← Previous
+            </a>
+          )}
+          
+          <div class="pagination-numbers">
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map(pageNum => (
+              <a 
+                href={`/articles/${pageNum}`}
+                class={`pagination-number ${pageNum === currentPage ? 'active' : ''}`}
+              >
+                {pageNum}
+              </a>
+            ))}
+          </div>
+          
+          {currentPage < totalPages && (
+            <a href={`/articles/${currentPage + 1}`} class="pagination-link next">
+              Next →
+            </a>
+          )}
+        </div>
+      </div>
+    )}
+  </div>
+</Layout>
+
+<style>
+  .articles-index {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .articles-index h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+
+  .articles-count {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  .articles-list {
+    margin-bottom: 3rem;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    border-top: 1px solid #eee;
+  }
+
+  .pagination-info {
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  .pagination-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .pagination-numbers {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .pagination-number {
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    color: #007acc;
+    border: 1px solid #007acc;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    min-width: 2rem;
+    text-align: center;
+  }
+
+  .pagination-number:hover {
+    background-color: #007acc;
+    color: white;
+  }
+
+  .pagination-number.active {
+    background-color: #007acc;
+    color: white;
+  }
+
+  .pagination-link {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #007acc;
+    border: 1px solid #007acc;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+
+  .pagination-link:hover {
+    background-color: #007acc;
+    color: white;
+  }
+
+  .pagination-link.prev {
+    margin-right: auto;
+  }
+
+  .pagination-link.next {
+    margin-left: auto;
+  }
+
+  @media (max-width: 768px) {
+    .pagination {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .pagination-links {
+      justify-content: center;
+    }
+  }
+</style> 
