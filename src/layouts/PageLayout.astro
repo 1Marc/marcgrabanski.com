@@ -1,8 +1,7 @@
 ---
 import '../styles/global.css';
 import { site } from "../data/siteMetaData.js";
-import PageTemplateDetails from '../components/PageTemplateDetails.astro';
-import Sidebar from '../components/Sidebar.astro';
+import Header from '../components/Header.astro';
 
 export interface Props {
   frontmatter:  {pageTitle: string, description: string};
@@ -24,11 +23,23 @@ const { title } = site;
     <meta name="description" content={description} />
 	</head>
 	<body>
-    <main class="layout">
-      <PageTemplateDetails title={pageTitle}>
-        <slot />
-      </PageTemplateDetails>
-      <Sidebar data={site} />
-    </main>
+    <Header />
+    <div class="content">
+      <div class="content__inner">
+        <div class="content-wrapper">
+          <div class="page-single">
+            <div class="page-single__inner">
+              <header class="page-header">
+                <h1 class="page-title">{pageTitle}</h1>
+              </header>
+              
+              <div class="page-body">
+                <slot />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

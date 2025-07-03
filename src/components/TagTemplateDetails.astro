@@ -1,5 +1,4 @@
 ---
-import '../styles/pagetemplatedetails.css';
 import { getCollection } from 'astro:content';
 import ArticleAbstract from './ArticleAbstract.astro';
 
@@ -9,21 +8,12 @@ export interface Props {
 
 const { term } = Astro.props;
 
-const filteredArticles = await getCollection('articles', ({ data }) => {
+const allArticles = await getCollection('articles');
+const filteredArticles = allArticles.filter(({ data }) => {
   return data.tags.includes(term);
-});
-filteredArticles.reverse()
+}).sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
 ---
 
-<div class="content">
-  <div class="content__inner">
-    <div class="page">
-      <h1 class="page__title">
-        All Posts tagged as &quot;{term}&quot;
-      </h1>
-      <div class="page__body">
-        {filteredArticles.map(article => <ArticleAbstract node={article} />)}
-      </div>
-    </div>
-  </div>
+<div class="tag-articles">
+  {filteredArticles.map(article => <ArticleAbstract node={article} />)}
 </div>

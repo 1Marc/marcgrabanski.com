@@ -7,7 +7,6 @@ tags:
 date: '2008-08-15T07:12:48.000Z'
 isDraft: false
 isArchived: false
-layout: '../../../layouts/ArticleLayout.astro'
 ---
 
 After years of working with developers and observing motivations - it seems I've somewhat generalized people into a few categories.

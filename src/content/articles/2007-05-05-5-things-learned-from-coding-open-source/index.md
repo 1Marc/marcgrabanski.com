@@ -7,7 +7,6 @@ tags:
 date: '2007-05-05T17:20:00.000Z'
 isDraft: false
 isArchived: false
-layout: '../../../layouts/ArticleLayout.astro'
 ---
 
 ![](/2007-05-05-5-things-learned-from-coding-open-source/_five_dice.jpg)

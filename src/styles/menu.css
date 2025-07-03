@@ -1,5 +1,5 @@
 .menu {
-  margin-bottom: 1em;
+  margin-bottom: var(--space-md);
 }
 
 .menu__list {
@@ -10,11 +10,11 @@
 
 .menu__list-item {
   padding: 0;
-  margin: 10px 0;
+  margin: var(--space-xs) 0;
 }
 
 .menu__list-item-link {
-  font-size: calc(var(--font-size-base) * 1.25);
+  font-size: var(--font-size-base);
   color: var(--color-primary);
   font-weight: 600;
   border: 0;

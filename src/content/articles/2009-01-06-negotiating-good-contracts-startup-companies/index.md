@@ -7,7 +7,6 @@ tags:
 date: '2009-01-06T14:30:24.000Z'
 isDraft: false
 isArchived: false
-layout: '../../../layouts/ArticleLayout.astro'
 ---
 
 ![](/2009-01-06-negotiating-good-contracts-startup-companies/_new-york-cityscape.jpg)

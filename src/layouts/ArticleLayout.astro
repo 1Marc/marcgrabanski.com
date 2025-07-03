@@ -1,10 +1,18 @@
 ---
 import '../styles/global.css';
 import { site } from "../data/siteMetaData.js";
-import ArticleTemplateDetails from '../components/ArticleTemplateDetails.astro';
+import Header from '../components/Header.astro';
 
 export interface Props {
-  frontmatter: {postTitle: string, description: string};
+  frontmatter: {
+    postTitle: string;
+    description: string;
+    date: Date;
+    tags: string[];
+    isDraft: boolean;
+    isArchived: boolean;
+    layout: string;
+  };
 }
 
 const { frontmatter } = Astro.props;
@@ -23,10 +31,42 @@ const { title } = site;
 		<meta name="description" content={description} />
 	</head>
 	<body>
-    <main class="layout">
-      <ArticleTemplateDetails post={frontmatter} >
-        <slot />
-      </ArticleTemplateDetails>
-    </main>
+    <header class="article-page-header">
+      <div class="content-wrapper">
+        <nav class="article-navigation">
+          <a href="/" class="home-link">← Back to Home</a>
+          <div class="nav-links">
+            <a href="/articles">Articles</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="content">
+      <div class="content__inner">
+        <div class="content-wrapper">
+          <article class="article-single">
+            <div class="article-single__inner">
+              <header class="article-header">
+                <h1 class="article-title">{postTitle}</h1>
+                <div class="article-meta">
+                  <time class="article-date">{new Date(frontmatter.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+                  {frontmatter.tags && (
+                    <div class="article-tags">
+                      {frontmatter.tags.map(tag => (
+                        <span class="article-tag">{tag}</span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </header>
+              
+              <div class="article-body">
+                <slot />
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

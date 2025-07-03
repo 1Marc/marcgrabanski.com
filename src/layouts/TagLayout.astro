@@ -1,8 +1,7 @@
 ---
 import '../styles/global.css';
 import { site } from "../data/siteMetaData.js";
-import TagTemplateDetails from '../components/TagTemplateDetails.astro'
-import Sidebar from '../components/Sidebar.astro';
+import Header from '../components/Header.astro';
 
 export interface Props {
   term: string;
@@ -23,11 +22,54 @@ const pageTitle = `All Posts Tagged as "${term}"`;
     <title>{`${pageTitle} - ${title}`}</title>
 	</head>
 	<body>
-		<main class="layout">
-			<TagTemplateDetails term={term}>
-				<slot />
-			</TagTemplateDetails>
-      <Sidebar data={site} />
-		</main>
+		<Header />
+		<div class="content">
+			<div class="content__inner">
+				<div class="content-wrapper">
+					<div class="tag-index">
+						<div class="tag-header">
+							<h1 class="section-title">Posts Tagged: {term}</h1>
+						</div>
+						<div class="tag-content">
+							<slot />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
+
+<style>
+  .tag-index {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  .tag-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .tag-header .section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-base);
+  }
+
+  .tag-content {
+    margin-bottom: 3rem;
+  }
+
+  .tag-articles-list {
+    margin-bottom: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    .tag-header .section-title {
+      font-size: 2rem;
+    }
+  }
+</style>

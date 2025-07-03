@@ -1,23 +1,23 @@
 .page {
-  margin-bottom: 2em;
+  margin-bottom: var(--space-lg);
 }
 
 .page__title {
-  font-size: calc(var(--font-size-base) * 2.8);
+  font-size: var(--font-size-h1);
   font-weight: 500;
-  line-height: 1.2em;
+  line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 1.45em;
+  margin-bottom: var(--space-lg);
 }
 
 .page__body {
   font-size: var(--font-size-base);
-  line-height: 1em;
-  margin: 0 0 1em;
+  line-height: 1.7;
+  margin: 0 0 var(--space-md);
 }
 
 .page__body p {
-  font-size: calc(var(--font-size-base) * 1.125);
-  line-height: 1.6em;
-  margin-bottom: 1.125em;
+  font-size: var(--font-size-base);
+  line-height: 1.7;
+  margin-bottom: var(--space-md);
 }

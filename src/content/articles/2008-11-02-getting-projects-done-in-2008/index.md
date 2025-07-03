@@ -7,7 +7,6 @@ tags:
 date: '2008-11-02T01:08:04.000Z'
 isDraft: false
 isArchived: false
-layout: '../../../layouts/ArticleLayout.astro'
 ---
 
 I have decided to pour all of my resources and energy into getting four rather demanding projects done _before the end of the year_. This big end-of-year push has had a lot of [thought behind it](http://twitter.com/1Marc/status/964005935), which I wanted to share with you and document here on my blog.

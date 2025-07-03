@@ -7,7 +7,6 @@ tags:
 date: '2007-05-05T17:49:00.000Z'
 isDraft: false
 isArchived: false
-layout: '../../../layouts/ArticleLayout.astro'
 ---
 
 ![](/2007-05-05-strengthen-your-weak-passwords/_internet-security.gif)

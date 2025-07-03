@@ -1,7 +1,8 @@
 ---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
 import { getCollection } from 'astro:content';
 
-// ASTRO DOCUMENTATION: https://docs.astro.build/en/reference/api-reference/#getstaticpaths
+// ASTRO DOCUMENTATION: https://docs.astro.build/en/reference/api-reference/#getStaticPaths
 export async function getStaticPaths() {
   const allArticles = await getCollection('articles');
   return allArticles.map(article => ({
@@ -14,4 +15,6 @@ const { article } = Astro.props;
 const { Content } = await article.render();
 ---
 
-<Content />
+<ArticleLayout frontmatter={article.data}>
+  <Content />
+</ArticleLayout>

@@ -1,16 +1,41 @@
 ---
 import TagLayout from "../../layouts/TagLayout.astro";
+import ArticleAbstract from "../../components/ArticleAbstract.astro";
+import { getCollection } from 'astro:content';
 
-export function getStaticPaths() {
+export async function getStaticPaths() {
   return [
-    {params: {tag: 'career-journal'}, props: {term: 'Career Journal'}},
-    {params: {tag: 'checklists-guides'}, props: {term: 'Checklists & Guides'}},
-    {params: {tag: 'lessons-learned'}, props: {term: 'Lessons Learned'}},
-    {params: {tag: 'opinion'}, props: {term: 'Opinion Pieces'}},
+    {params: {tag: 'career-journal'}, props: {term: 'career-journal', displayName: 'Career Journal'}},
+    {params: {tag: 'checklists-guides'}, props: {term: 'checklists-guides', displayName: 'Checklists & Guides'}},
+    {params: {tag: 'lessons-learned'}, props: {term: 'lessons-learned', displayName: 'Lessons Learned'}},
+    {params: {tag: 'opinion'}, props: {term: 'opinion', displayName: 'Opinion Pieces'}},
   ];
 }
 
-const { term } = Astro.props;
+const { term, displayName } = Astro.props;
+
+// Map tag slugs to actual tag names used in articles
+const tagMapping = {
+  'career-journal': 'Career Journal',
+  'checklists-guides': 'Checklists & Guides',
+  'lessons-learned': 'Lessons Learned',
+  'opinion': 'Opinion Pieces'
+};
+
+const actualTagName = tagMapping[term];
+const articles = (await getCollection('articles')).filter(article => 
+  article.data.tags.includes(actualTagName)
+).sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
 ---
 
-<TagLayout term={term} />
+<TagLayout term={displayName}>
+  <div class="tag-articles-list">
+    {articles.length === 0 ? (
+      <p>No articles found for this tag.</p>
+    ) : (
+      articles.map(article => (
+        <ArticleAbstract node={article} />
+      ))
+    )}
+  </div>
+</TagLayout>

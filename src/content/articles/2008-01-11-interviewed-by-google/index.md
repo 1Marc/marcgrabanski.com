@@ -7,7 +7,6 @@ tags:
 date: '2008-01-11T10:59:14.000Z'
 isDraft: false
 isArchived: false
-layout: '../../../layouts/ArticleLayout.astro'
 ---
 
 ## Part 1 (Series)

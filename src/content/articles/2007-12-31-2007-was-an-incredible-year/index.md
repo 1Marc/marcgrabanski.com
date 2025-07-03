@@ -7,7 +7,6 @@ tags:
 date: '2007-12-31T05:11:37.000Z'
 isDraft: false
 isArchived: false
-layout: '../../../layouts/ArticleLayout.astro'
 ---
 
 This year has been an incredible year on the career front. I literally can't believe how far I've come from last year. To put things in perspective, it reminds me of back in college when I was was failing calculus and then buckled down and **learned the entire semester's worth of calculus in an 18 hour stretch of time, receiving an "A" on my final.** This year has been like that. **I can't remember a single year of my life that I have learned so much as this year.** Thank you to everyone who has helped make this possible, thank you.

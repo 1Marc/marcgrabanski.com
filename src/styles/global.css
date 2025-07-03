@@ -10,6 +10,7 @@
 @import url("sidebar.css");
 @import url("about.css");
 @import url("home.css");
+@import url("article.css");
 
 /* Homepage layout - full width without sidebar */
 .layout-home {

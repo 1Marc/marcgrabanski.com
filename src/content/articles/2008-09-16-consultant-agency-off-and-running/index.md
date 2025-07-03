@@ -7,7 +7,6 @@ tags:
 date: '2008-09-16T12:42:49.000Z'
 isDraft: false
 isArchived: false
-layout: '../../../layouts/ArticleLayout.astro'
 ---
 
 ![](/2008-09-16-consultant-agency-off-and-running/_consultants.jpg)

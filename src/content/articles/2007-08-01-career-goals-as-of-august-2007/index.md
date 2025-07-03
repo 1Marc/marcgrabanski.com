@@ -7,7 +7,6 @@ tags:
 date: '2007-08-01T17:27:00.000Z'
 isDraft: false
 isArchived: false
-layout: '../../../layouts/ArticleLayout.astro'
 ---
 
 Recently, I started the employee review process at work. Sure, there is the normal "rate you out of 5 stars" form, but I was intrigued that they have a process for employee development. **"Do you have specific career goals in mind that we can write down to monitor your career development?"** We are to write down our career goals and make action items to achieve them. The following year we are graded by how well we meet those career objective. Interesting...but how can I answer that question? I will answer it with a list of things that are broken down into categories.

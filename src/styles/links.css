@@ -1,17 +1,17 @@
 .links {
-  margin-bottom: 1em;
+  margin-bottom: var(--space-md);
 }
 
 .links__list {
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 10px -3px;
+  margin: var(--space-sm) calc(-1 * var(--space-xs));
 }
 
 .links__list-item {
   padding: 0;
-  margin: 0 5px;
+  margin: 0 var(--space-xs);
   height: 48px;
   width: 48px;
   line-height: 48px;
@@ -24,7 +24,7 @@
 }
 
 .links__list-item a i {
-  font-size: 14px;
+  font-size: var(--font-size-small);
   color: color-mix(in srgb, var(--color-base) 80%, white);
 }
 

@@ -7,7 +7,6 @@ tags:
 date: '2008-08-10T09:39:24.000Z'
 isDraft: false
 isArchived: false
-layout: '../../../layouts/ArticleLayout.astro'
 ---
 
 ![](/2008-08-10-response-to-full-time-employment/_all-star-web-development.jpg)

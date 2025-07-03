@@ -1,0 +1,55 @@
+---
+import { site } from "../data/siteMetaData.js";
+
+const { author, menu, subtitle } = site;
+const { name } = author;
+const currentPath = Astro.url.pathname;
+const isHomePage = currentPath === '/';
+---
+
+<div class="hero-section">
+	<div class="hero-content">
+		<div class="hero-text">
+			<h1 class="hero-title">
+				<a href="/" class="hero-home-link">
+					<span class="highlight">Marc Grabanski</span>
+				</a>
+				<br />
+				<span class="subtitle">Developer, Entrepreneur, Health Enthusiast</span>
+			</h1>
+			<p class="hero-description">
+				I've built and run <a href="https://frontendmasters.com" class="hero-link">Frontend Masters</a> for over a decade, 
+				equipping developers with the skills to turn their dreams into reality.
+			</p>
+			
+			<!-- Navigation Menu -->
+			<nav class="hero-navigation">
+				<ul class="nav-list">
+					{menu.map(item => (
+						<li class="nav-item">
+							<a href={item.path} class="nav-link">
+								{item.label}
+							</a>
+						</li>
+					))}
+				</ul>
+				<div class="social-links">
+					<a href={`https://www.twitter.com/${author.twitter}`} target="_blank" class="social-link">
+						<img src="/twitter.svg" alt="Twitter" class="social-icon" />
+					</a>
+					<a href={`https://www.github.com/${author.github}`} target="_blank" class="social-link">
+						<img src="/github.svg" alt="GitHub" class="social-icon" />
+					</a>
+					<a href="/rss.xml" class="social-link">
+						<span class="rss-icon">📡</span>
+					</a>
+				</div>
+			</nav>
+		</div>
+		<div class="hero-image">
+			<a href="/">
+				<img src="/photo.jpg" alt="Marc Grabanski" class="profile-photo" />
+			</a>
+		</div>
+	</div>
+</div> 

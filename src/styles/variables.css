@@ -17,7 +17,18 @@
   --font-size-root: 100%;
   --font-size-base: 18px;
   --font-size-small: 16px;
+  --font-size-large: 22px;
+  --font-size-h1: 2.2rem;
+  --font-size-h2: 1.6rem;
+  --font-size-h3: 1.3rem;
   --line-height-base: 1.8;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
 
   /* Layout */
   --layout-post-single-max-width: 1024px;

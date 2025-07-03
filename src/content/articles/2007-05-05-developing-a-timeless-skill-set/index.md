@@ -7,7 +7,6 @@ tags:
 date: '2007-05-05T17:32:00.000Z'
 isDraft: false
 isArchived: false
-layout: '../../../layouts/ArticleLayout.astro'
 ---
 
 Note: This post is from sometime before 2007, but it still very much applies today.

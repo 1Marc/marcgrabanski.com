@@ -7,7 +7,6 @@ tags:
 date: '2008-07-11T07:23:03.000Z'
 isDraft: false
 isArchived: false
-layout: '../../../layouts/ArticleLayout.astro'
 ---
 
 **Note: The company is now Mirum Minneapolis. In the past it was called JWT Minneaplis, then RMG Connect, then Digitaria. 😅**

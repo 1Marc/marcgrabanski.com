@@ -1,7 +1,7 @@
 /* About Section Styles */
 .about-section {
-  margin-bottom: 4rem;
-  padding: 1rem 3rem 2rem;
+  margin-bottom: var(--space-xl);
+  padding: var(--space-sm) var(--space-lg) var(--space-md);
   background: var(--color-gray);
   border-radius: 20px;
   color: #333;
@@ -10,7 +10,7 @@
 .about-content {
   max-width: var(--layout-width);
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 var(--space-lg);
 }
 
 /* About Section Link Styles */

@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
 import ArticleAbstract from '../../components/ArticleAbstract.astro';
 import { getCollection } from 'astro:content';
 import { site } from "../../data/siteMetaData.js";
@@ -42,47 +43,56 @@ const { title } = site;
 ---
 
 <Layout title={`All Articles - ${title}`}>
-  <div class="articles-index">
-    <h1>All Articles</h1>
-    <p class="articles-count">Showing {articlesForCurrentPage.length} of {totalArticles} articles</p>
-    
-    <div class="articles-list">
-      {articlesForCurrentPage.map(article => (
-        <ArticleAbstract node={article} />
-      ))}
-    </div>
-
-    {totalPages > 1 && (
-      <div class="pagination">
-        <div class="pagination-info">
-          Page {currentPage} of {totalPages} (Articles {startIndex + 1}-{Math.min(endIndex, totalArticles)} of {totalArticles})
-        </div>
-        <div class="pagination-links">
-          {currentPage > 1 && (
-            <a href={`/articles/${currentPage - 1}`} class="pagination-link prev">
-              ← Previous
-            </a>
-          )}
-          
-          <div class="pagination-numbers">
-            {Array.from({ length: totalPages }, (_, i) => i + 1).map(pageNum => (
-              <a 
-                href={`/articles/${pageNum}`}
-                class={`pagination-number ${pageNum === currentPage ? 'active' : ''}`}
-              >
-                {pageNum}
-              </a>
-            ))}
+  <Header />
+  <div class="content">
+    <div class="content__inner">
+      <div class="content-wrapper">
+        <div class="articles-index">
+          <div class="articles-header">
+            <h1 class="section-title">All Articles</h1>
+            <p class="articles-count">Showing {articlesForCurrentPage.length} of {totalArticles} articles</p>
           </div>
           
-          {currentPage < totalPages && (
-            <a href={`/articles/${currentPage + 1}`} class="pagination-link next">
-              Next →
-            </a>
+          <div class="articles-list">
+            {articlesForCurrentPage.map(article => (
+              <ArticleAbstract node={article} />
+            ))}
+          </div>
+
+          {totalPages > 1 && (
+            <div class="pagination">
+              <div class="pagination-info">
+                Page {currentPage} of {totalPages} (Articles {startIndex + 1}-{Math.min(endIndex, totalArticles)} of {totalArticles})
+              </div>
+              <div class="pagination-links">
+                {currentPage > 1 && (
+                  <a href={`/articles/${currentPage - 1}`} class="pagination-link prev">
+                    ← Previous
+                  </a>
+                )}
+                
+                <div class="pagination-numbers">
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map(pageNum => (
+                    <a 
+                      href={`/articles/${pageNum}`}
+                      class={`pagination-number ${pageNum === currentPage ? 'active' : ''}`}
+                    >
+                      {pageNum}
+                    </a>
+                  ))}
+                </div>
+                
+                {currentPage < totalPages && (
+                  <a href={`/articles/${currentPage + 1}`} class="pagination-link next">
+                    Next →
+                  </a>
+                )}
+              </div>
+            </div>
           )}
         </div>
       </div>
-    )}
+    </div>
   </div>
 </Layout>
 
@@ -90,19 +100,24 @@ const { title } = site;
   .articles-index {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
   }
 
-  .articles-index h1 {
-    font-size: 2.5rem;
+  .articles-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .articles-header .section-title {
+    font-size: 3rem;
+    font-weight: 700;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: var(--color-base);
   }
 
   .articles-count {
-    color: #666;
-    margin-bottom: 2rem;
-    font-size: 1rem;
+    color: var(--color-gray);
+    font-size: 1.125rem;
   }
 
   .articles-list {
@@ -114,11 +129,12 @@ const { title } = site;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #e1e8ff;
+    margin-top: 3rem;
   }
 
   .pagination-info {
-    color: #666;
+    color: var(--color-gray);
     font-size: 0.9rem;
   }
 
@@ -136,36 +152,40 @@ const { title } = site;
   .pagination-number {
     padding: 0.5rem 0.75rem;
     text-decoration: none;
-    color: #007acc;
-    border: 1px solid #007acc;
-    border-radius: 4px;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
     transition: all 0.2s ease;
     min-width: 2rem;
     text-align: center;
+    font-weight: 500;
   }
 
   .pagination-number:hover {
-    background-color: #007acc;
+    background-color: var(--color-primary);
     color: white;
+    transform: translateY(-2px);
   }
 
   .pagination-number.active {
-    background-color: #007acc;
+    background-color: var(--color-primary);
     color: white;
   }
 
   .pagination-link {
     padding: 0.5rem 1rem;
     text-decoration: none;
-    color: #007acc;
-    border: 1px solid #007acc;
-    border-radius: 4px;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
     transition: all 0.2s ease;
+    font-weight: 500;
   }
 
   .pagination-link:hover {
-    background-color: #007acc;
+    background-color: var(--color-primary);
     color: white;
+    transform: translateY(-2px);
   }
 
   .pagination-link.prev {
@@ -177,6 +197,10 @@ const { title } = site;
   }
 
   @media (max-width: 768px) {
+    .articles-header .section-title {
+      font-size: 2rem;
+    }
+    
     .pagination {
       flex-direction: column;
       gap: 1rem;

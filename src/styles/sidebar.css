@@ -4,7 +4,7 @@
 
 .sidebar__inner {
   position: relative;
-  padding: 25px 20px 0;
+  padding: var(--space-lg) var(--space-md) 0;
 }
 
 .sidebar__author-photo {
@@ -15,10 +15,10 @@
 }
 
 .sidebar__author-title {
-  font-size: calc(var(--font-size-base) * 1.125);
+  font-size: var(--font-size-base);
   font-weight: 500;
-  line-height: 1.125em;
-  margin: 0.5em 0;
+  line-height: 1.2;
+  margin: var(--space-xs) 0;
 }
 
 .sidebar__author-title-link {
@@ -32,8 +32,8 @@
 
 .sidebar__author-subtitle {
   color: var(--color-gray);
-  line-height: 1em;
-  margin-bottom: 1em;
+  line-height: 1.2;
+  margin-bottom: var(--space-sm);
 }
 
 .sidebar__copyright {

@@ -7,7 +7,6 @@ tags:
 date: '2008-12-25T23:23:40.000Z'
 isDraft: false
 isArchived: false
-layout: '../../../layouts/ArticleLayout.astro'
 ---
 
 ![](/2008-12-25-acheiving-freedoms-in-2008/_sunset-freedom.jpg)

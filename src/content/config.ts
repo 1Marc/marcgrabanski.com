@@ -8,7 +8,6 @@ const articles = defineCollection({
     date: z.string().transform((str) => new Date(str)),
     isDraft: z.boolean(),
     isArchived: z.boolean(),
-    layout: z.string(),
   }),
 });
 
