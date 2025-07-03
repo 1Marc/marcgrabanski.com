@@ -13,6 +13,13 @@
   padding: 0 var(--space-lg);
 }
 
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .about-content {
+    padding: 0;
+  }
+}
+
 /* About Section Link Styles */
 .about-section a {
   color: var(--color-primary-dark-link);

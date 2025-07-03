@@ -5,14 +5,14 @@ import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   return [
-    {params: {tag: 'career-journal'}, props: {term: 'career-journal', displayName: 'Career Journal'}},
-    {params: {tag: 'checklists-guides'}, props: {term: 'checklists-guides', displayName: 'Checklists & Guides'}},
-    {params: {tag: 'lessons-learned'}, props: {term: 'lessons-learned', displayName: 'Lessons Learned'}},
-    {params: {tag: 'opinion'}, props: {term: 'opinion', displayName: 'Opinion Pieces'}},
+    {params: {tag: 'career-journal'}, props: {term: 'career-journal', displayName: 'Career Journal', icon: '💼', description: 'My journey in tech and entrepreneurship'}},
+    {params: {tag: 'checklists-guides'}, props: {term: 'checklists-guides', displayName: 'Checklists & Guides', icon: '✅', description: 'Practical resources and frameworks'}},
+    {params: {tag: 'lessons-learned'}, props: {term: 'lessons-learned', displayName: 'Lessons Learned', icon: '🎓', description: 'Key insights from my experiences'}},
+    {params: {tag: 'opinion'}, props: {term: 'opinion', displayName: 'Opinion Pieces', icon: '💭', description: 'Thoughts on industry and life'}},
   ];
 }
 
-const { term, displayName } = Astro.props;
+const { term, displayName, icon, description } = Astro.props;
 
 // Map tag slugs to actual tag names used in articles
 const tagMapping = {
@@ -28,7 +28,7 @@ const articles = (await getCollection('articles')).filter(article =>
 ).sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
 ---
 
-<TagLayout term={displayName}>
+<TagLayout term={displayName} icon={icon} description={description}>
   <div class="tag-articles-list">
     {articles.length === 0 ? (
       <p>No articles found for this tag.</p>

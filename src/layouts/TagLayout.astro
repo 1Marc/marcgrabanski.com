@@ -4,9 +4,11 @@ import { site } from "../data/siteMetaData.js";
 
 export interface Props {
   term: string;
+  icon: string;
+  description: string;
 }
 
-const { term } = Astro.props;
+const { term, icon, description } = Astro.props;
 const { title } = site;
 const { author } = site;
 const { name } = author;
@@ -46,7 +48,9 @@ const pageTitle = `All Posts Tagged as "${term}"`;
 				<div class="content-wrapper">
 					<div class="tag-index">
 						<div class="tag-header">
-							<h1 class="section-title">Posts Tagged: {term}</h1>
+							<div class="tag-icon">{icon}</div>
+							<h1 class="section-title">{term}</h1>
+							<p class="tag-description">{description}</p>
 						</div>
 						<div class="tag-content">
 							<slot />
@@ -70,11 +74,22 @@ const pageTitle = `All Posts Tagged as "${term}"`;
     margin-bottom: 3rem;
   }
 
+  .tag-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
   .tag-header .section-title {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: var(--color-base);
+  }
+
+  .tag-description {
+    font-size: 1.2rem;
+    color: var(--color-muted);
+    margin-bottom: 0;
   }
 
   .tag-content {
@@ -86,8 +101,16 @@ const pageTitle = `All Posts Tagged as "${term}"`;
   }
 
   @media (max-width: 768px) {
+    .tag-icon {
+      font-size: 3rem;
+    }
+    
     .tag-header .section-title {
       font-size: 2rem;
+    }
+    
+    .tag-description {
+      font-size: 1rem;
     }
   }
 </style>
