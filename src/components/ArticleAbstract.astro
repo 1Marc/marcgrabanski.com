@@ -3,11 +3,20 @@ import '../styles/post.css';
 import { formatDate, isBeforeDate } from '../utils/dateFormat';
 
 const { node } = Astro.props;
-const { postTitle, description, date } = node.data
+const { postTitle, description, date, tags } = node.data
 const slug = node.slug
 ---
 
 <div class="post">
+	{tags && tags.length > 0 && (
+		<div class="post__tags">
+			{tags.map(tag => (
+				<a href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`} class="post__tag">
+					{tag}
+				</a>
+			))}
+		</div>
+	)}
 	<div class="post__meta">
 		{isBeforeDate(date, '2007-05-06') ? (
 			<time class="post__meta-time">Written Sometime Before 2007</time>

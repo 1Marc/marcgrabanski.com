@@ -79,8 +79,49 @@
   font-size: 1.125rem;
   color: #333;
   line-height: 1.6;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   margin-top: 0;
+}
+
+.post__tags {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  z-index: 2;
+}
+
+.post__tag {
+  display: inline-block;
+  padding: 0.18rem 0.7rem;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  margin-bottom: 0;
+}
+
+.post__tag:hover,
+.post__tag:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(
+    135deg,
+    var(--color-secondary) 0%,
+    var(--color-primary) 100%
+  );
 }
 
 .post__readmore {
@@ -139,5 +180,14 @@
 
   .post__description {
     font-size: var(--font-size-small);
+  }
+
+  .post__tags {
+    gap: 0.375rem;
+  }
+
+  .post__tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
   }
 }

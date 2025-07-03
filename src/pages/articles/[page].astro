@@ -12,7 +12,15 @@ export async function getStaticPaths() {
   
   const articlesPerPage = 10;
   const totalPages = Math.ceil(sortedArticles.length / articlesPerPage);
-  const paths = [];
+  const paths: Array<{
+    params: { page: string };
+    props: {
+      currentPage: number;
+      totalPages: number;
+      articles: typeof sortedArticles;
+      totalArticles: number;
+    };
+  }> = [];
   
   // Add paginated pages (page 1, 2, 3, 4, 5, etc.)
   for (let page = 1; page <= totalPages; page++) {
@@ -37,7 +45,7 @@ const { currentPage, totalPages, articles, totalArticles } = Astro.props;
 const articlesPerPage = 10;
 const startIndex = (currentPage - 1) * articlesPerPage;
 const endIndex = startIndex + articlesPerPage;
-const articlesForCurrentPage = articles;
+const articlesForCurrentPage: typeof articles = articles;
 
 const { title } = site;
 ---

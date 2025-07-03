@@ -18,11 +18,13 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 				<h1 class="hero-title">
 					<span class="highlight">Marc Grabanski</span>
 					<br />
-					<span class="subtitle">Developer, Entrepreneur, Health Enthusiast</span>
+					<span class="subtitle">Founder, Developer, Health Enthusiast</span>
 				</h1>
 				<p class="hero-description">
-					I've built and run <a href="https://frontendmasters.com" class="hero-link">Frontend Masters</a> for over a decade, 
-					equipping developers with the skills to turn their dreams into reality.
+					Helping developers achieve technical excellence and lead healthier lives.
+				</p>
+				<p class="hero-subdescription">
+					For over a decade, I’ve led <a href="https://frontendmasters.com" class="hero-link">Frontend Masters</a>, helping developers build deep technical skills and grow their careers. I also focus on health, performance, and meaningful family life.
 				</p>
 				
 				<!-- Navigation Menu -->
@@ -61,8 +63,8 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 				<!-- Featured Health Checklist Section -->
 				<section class="featured-section">
 					<div class="featured-header">
-						<h2 class="section-title">🚰 Most Referenced Resource</h2>
-						<p class="section-subtitle">The thing I refer people to most lately</p>
+						<h2 class="section-title">🔥 What I'm Most Sharing Lately</h2>
+						<p class="section-subtitle">The resource I reference the most</p>
 					</div>
 					
 					<div class="featured-card">
@@ -70,55 +72,79 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 							<div class="featured-badge">Featured</div>
 							<h3 class="featured-title">
 								<a href="/articles/personal-health-checklist" class="featured-link">
-									Personal Health Checklist
+									✅ Personal Health Checklist →
 								</a>
 							</h3>
 							<p class="featured-description">
-								A comprehensive checklist to review and make better, healthier habits. 
-								This is my go-to reference for maintaining a healthy lifestyle.
+								Your go-to guide for building and maintaining healthy habits. This took years to put together and is updated as I learn more.
 							</p>
-							<div class="featured-tags">
-								<span class="tag">Health</span>
-								<span class="tag">Wellness</span>
-								<span class="tag">Checklist</span>
-							</div>
-							<div class="featured-stats">
-								<div class="stat">
-									<span class="stat-number">3</span>
-									<span class="stat-label">Years Updated</span>
-								</div>
-								<div class="stat">
-									<span class="stat-number">50+</span>
-									<span class="stat-label">Health Tips</span>
-								</div>
-								<div class="stat">
-									<span class="stat-number">100%</span>
-									<span class="stat-label">Actionable</span>
-								</div>
+							<div class="featured-highlights">
+								<div class="highlight-item">50+ science-backed health strategies</div>
+								<div class="highlight-item">Updated annually for 3+ years</div>
+								<div class="highlight-item">100% actionable</div>
+								<div class="highlight-item">Sleep, nutrition, movement, recovery, mental wellness</div>
 							</div>
 							<a href="/articles/personal-health-checklist" class="cta-button">
 								Read the Health Checklist →
 							</a>
 						</div>
 						<div class="featured-image">
-							<div class="health-icon">🚰</div>
+							<div class="health-icon">✅</div>
 						</div>
 					</div>
 				</section>
 
 				<!-- About Section -->
 				<section class="about-section">
-					<div class="about-content">
-						<h2 class="section-title">About Me</h2>
-						<About class="about-body"/>
+					<h2 class="section-title">📘 About Me</h2>
+					<div class="about-body">
+						<p>I founded Frontend Masters in 2014 and have grown it to over 10,000 paying customers from leading companies around the world, while keeping the company fully bootstrapped and independent.</p>
+						
+						<p>Before that, I consulted for Fortune 100 companies, launched conferences, created popular open source tools like the jQuery UI Datepicker, and spoke at more than 60 events globally. Today, I focus on helping developers go deep, stay sharp, and live well.</p>
+						
+						<h3>My current work includes:</h3>
+						<ul>
+							<li><strong>Hosting The Frontend Masters Podcast</strong> — conversations with top instructors</li>
+							<li><strong>Writing in my Career Journal</strong> — a behind-the-scenes look at leadership, business, and growth</li>
+							<li><strong>Sharing lessons on health, performance, and sustainable success</strong></li>
+						</ul>
+
+						<h3>🎙️ Featured Work</h3>
+						<div class="work-grid">
+							<div class="work-card">
+								<div class="work-icon">🧠</div>
+								<h4>Learning Paths & Deep Dives</h4>
+								<p>Frontend Masters</p>
+							</div>
+							<div class="work-card">
+								<div class="work-icon">🎧</div>
+								<h4>Podcast Host</h4>
+								<p>Frontend Masters Podcast</p>
+							</div>
+							<div class="work-card">
+								<div class="work-icon">🗣️</div>
+								<h4>Speaker</h4>
+								<p>60+ conferences including Google HQ & international audiences</p>
+							</div>
+							<div class="work-card">
+								<div class="work-icon">🧰</div>
+								<h4>Creator</h4>
+								<p>jQuery UI Datepicker, Modern Vanilla JS TodoMVC</p>
+							</div>
+							<div class="work-card">
+								<div class="work-icon">📝</div>
+								<h4>Writer</h4>
+								<p>200+ blog posts since 2007</p>
+							</div>
+						</div>
 					</div>
 				</section>
 
-				<!-- Recent Articles Section -->
+				<!-- Latest Articles Section -->
 				<section class="recent-section">
 					<div class="recent-header">
-						<h2 class="section-title">Recent Articles</h2>
-						        <a href="/articles/1" class="view-all-link">View All Articles →</a>
+						<h2 class="section-title">📰 Latest Articles</h2>
+						<a href="/articles/1" class="view-all-link">View all articles →</a>
 					</div>
 					<div class="articles-grid">
 						{recentArticles.map(article => (
@@ -142,57 +168,97 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 					</div>
 				</section>
 
-				<!-- Tags Section -->
+				<!-- Browse by Topic Section -->
 				<section class="tags-section">
-					<h2 class="section-title">Browse by Topic</h2>
+					<h2 class="section-title">📂 Browse by Topic</h2>
 					<div class="tags-grid">
 						<a href="/tags/career-journal" class="tag-card">
 							<div class="tag-icon">💼</div>
 							<h3>Career Journal</h3>
-							<p>My journey in tech and entrepreneurship</p>
+							<p>Reflections on business, leadership, and personal growth</p>
 						</a>
 						<a href="/tags/checklists-guides" class="tag-card">
 							<div class="tag-icon">✅</div>
 							<h3>Checklists & Guides</h3>
-							<p>Practical resources and frameworks</p>
-						</a>
-						<a href="/tags/lessons-learned" class="tag-card">
-							<div class="tag-icon">🎓</div>
-							<h3>Lessons Learned</h3>
-							<p>Key insights from my experiences</p>
+							<p>Frameworks I use personally and professionally</p>
 						</a>
 						<a href="/tags/opinion" class="tag-card">
 							<div class="tag-icon">💭</div>
 							<h3>Opinion Pieces</h3>
-							<p>Thoughts on industry and life</p>
+							<p>Takes on tech, life, and building thoughtfully</p>
+						</a>
+						<a href="/tags/lessons-learned" class="tag-card">
+							<div class="tag-icon">🎓</div>
+							<h3>Lessons Learned</h3>
+							<p>Insights gained the hard way</p>
 						</a>
 					</div>
 				</section>
 
-				<!-- Quick Links Section -->
-				<section class="quick-links-section">
-					<h2 class="section-title">Quick Links</h2>
-					<div class="quick-links-grid">
-						<a href="https://frontendmasters.com" class="quick-link-card">
-							<div class="quick-link-icon">🎓</div>
-							<h3>Frontend Masters</h3>
-							<p>Advanced courses for developers</p>
-						</a>
-						<a href="https://twitter.com/1marc" class="quick-link-card">
-							<div class="quick-link-icon">🐦</div>
+				<!-- Connect Section -->
+				<section class="connect-section">
+					<h2 class="section-title">🤝 Connect with Me</h2>
+					<div class="connect-grid">
+						<a href="https://twitter.com/1marc" class="connect-card">
+							<div class="connect-icon">🐦</div>
 							<h3>Twitter / X</h3>
-							<p>Follow my journey</p>
+							<p>Personal updates & thoughts</p>
 						</a>
-						<a href="/podcasts" class="quick-link-card">
-							<div class="quick-link-icon">🎙️</div>
-							<h3>Podcasts</h3>
-							<p>Interviews & appearances</p>
+						<a href="https://linkedin.com/in/marcgrabanski" class="connect-card">
+							<div class="connect-icon">💼</div>
+							<h3>LinkedIn</h3>
+							<p>Career & professional</p>
 						</a>
-						<a href="https://github.com/1Marc" class="quick-link-card">
-							<div class="quick-link-icon">💻</div>
+						<a href="https://github.com/1Marc" class="connect-card">
+							<div class="connect-icon">💻</div>
 							<h3>GitHub</h3>
-							<p>Open source projects</p>
+							<p>Open source contributions</p>
 						</a>
+						<a href="/podcasts" class="connect-card">
+							<div class="connect-icon">📡</div>
+							<h3>Podcasts & Interviews</h3>
+							<p>Guest appearances and past interviews</p>
+						</a>
+					</div>
+				</section>
+
+				<!-- Testimonials Section -->
+				<section class="testimonials-section">
+					<div class="testimonials-header">
+						<h2 class="section-title">📣 Praise from Others</h2>
+						<a href="/testimonials" class="view-all-link">View Full Testimonials →</a>
+					</div>
+					<div class="testimonials-list">
+						<blockquote class="testimonial-quote">
+							"Marc is an incredible visionary who constantly surprises me with his ability to create awesome new things, educate and grow those around him, and bring more to his projects than anyone expects."
+							<footer class="testimonial-author">
+								<strong>Tanner Thompson</strong>
+								<span>Chief Product Officer</span>
+							</footer>
+						</blockquote>
+						<blockquote class="testimonial-quote">
+							"Marc's understanding of client-side development runs deep and he was more than happy to share his knowledge with the broader team — we all learned a lot from him."
+							<footer class="testimonial-author">
+								<strong>Brian Shoemaker</strong>
+								<span>Senior Director of Innovation, Life Time</span>
+							</footer>
+						</blockquote>
+						<blockquote class="testimonial-quote">
+							"He's one of the most dedicated, skilled, and inspiring developers I've ever worked with."
+							<footer class="testimonial-author">
+								<strong>Renee Gustafson</strong>
+								<span>Group Program Director, Horizontal Digital</span>
+							</footer>
+						</blockquote>
+					</div>
+				</section>
+
+				<!-- Summary Section -->
+				<section class="summary-section">
+					<div class="summary-content">
+						<p class="summary-text">
+							I'm a product-minded founder, developer, and lifelong learner focused on creating value through depth — in tech, health, and life. Whether through courses, code, or checklists, I help people build the skills and systems to live better.
+						</p>
 					</div>
 				</section>
 			</div>
