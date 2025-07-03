@@ -176,7 +176,7 @@
 
 .section-subtitle {
   font-size: var(--font-size-base);
-  color: #666;
+  color: #fff;
   margin-bottom: var(--space-lg);
 }
 
@@ -583,7 +583,7 @@
   margin: 0;
   font-style: italic;
   position: relative;
-  padding-left: calc(var(--space-xl) + var(--space-md));
+  padding-left: calc(var(--space-xl) + var(--space-lg));
 }
 
 .testimonial-quote::before {
@@ -724,7 +724,7 @@
   .testimonial-quote {
     font-size: var(--font-size-base);
     padding: var(--space-lg);
-    padding-left: calc(var(--space-lg) + var(--space-md));
+    padding-left: calc(var(--space-lg) + var(--space-lg));
   }
 
   .testimonial-quote::before {
