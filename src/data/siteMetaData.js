@@ -7,7 +7,7 @@ export const site = {
   menu: [
     {
       label: "All Articles",
-      path: "/articles",
+      path: "/articles/1",
     },
     {
       label: "Podcasts & Interviews",
