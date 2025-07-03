@@ -5,6 +5,14 @@ import { Content as About } from '../components/About.mdx';
 import { site } from "../data/siteMetaData.js";
 import { getCollection } from 'astro:content';
 
+// Map tag names to URL slugs
+const tagMapping = {
+  'Career Journal': 'career-journal',
+  'Checklists & Guides': 'checklists-guides',
+  'Lessons Learned': 'lessons-learned',
+  'Opinion Pieces': 'opinion'
+};
+
 // Get the health checklist article specifically
 const allArticles = await getCollection('articles');
 const healthChecklist = allArticles.find(article => article.slug === 'personal-health-checklist');
@@ -24,7 +32,7 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 					Helping developers achieve technical excellence and lead healthier lives.
 				</p>
 				<p class="hero-subdescription">
-					For over a decade, I’ve led <a href="https://frontendmasters.com" class="hero-link">Frontend Masters</a>, helping developers build deep technical skills and grow their careers. I also focus on health, performance, and meaningful family life.
+					For over a decade, I've led <a href="https://frontendmasters.com" class="hero-link">Frontend Masters</a>, helping developers build deep technical skills and grow their careers. I also focus on health, performance, and meaningful family life.
 				</p>
 				
 				<!-- Navigation Menu -->
@@ -64,39 +72,44 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 				<section class="featured-section">
 					<div class="featured-header">
 						<h2 class="section-title">🔥 What I'm Most Sharing Lately</h2>
-						<p class="section-subtitle">The resource I reference the most</p>
+						<p class="section-subtitle">The resource I reference the most recently:</p>
 					</div>
 					
 					<div class="featured-card">
-						<div class="featured-content">
-							<div class="featured-badge">Featured</div>
-							<h3 class="featured-title">
-								<a href="/articles/personal-health-checklist" class="featured-link">
-									✅ Personal Health Checklist →
+						<div class="featured-banner">Featured</div>
+						<div class="featured-main">
+							<div class="featured-text">
+								<h3 class="featured-title">
+									<a href="/articles/personal-health-checklist" class="featured-link">
+										✅ Personal Health Checklist →
+									</a>
+								</h3>
+								<p class="featured-description">
+									Your go-to guide for building and maintaining healthy habits. This took years to put together and is updated as I learn more.
+								</p>
+								<div class="featured-highlights">
+									<div class="highlight-item">50+ science-backed health strategies</div>
+									<div class="highlight-item">Updated annually for 3+ years</div>
+									<div class="highlight-item">100% actionable</div>
+									<div class="highlight-item">Sleep, nutrition, movement, recovery, mental wellness</div>
+								</div>
+								<a href="/articles/personal-health-checklist" class="cta-button">
+									Read the Health Checklist →
 								</a>
-							</h3>
-							<p class="featured-description">
-								Your go-to guide for building and maintaining healthy habits. This took years to put together and is updated as I learn more.
-							</p>
-							<div class="featured-highlights">
-								<div class="highlight-item">50+ science-backed health strategies</div>
-								<div class="highlight-item">Updated annually for 3+ years</div>
-								<div class="highlight-item">100% actionable</div>
-								<div class="highlight-item">Sleep, nutrition, movement, recovery, mental wellness</div>
 							</div>
-							<a href="/articles/personal-health-checklist" class="cta-button">
-								Read the Health Checklist →
-							</a>
-						</div>
-						<div class="featured-image">
-							<div class="health-icon">✅</div>
+							<div class="featured-visual">
+								<div class="health-icon">✅</div>
+							</div>
 						</div>
 					</div>
 				</section>
 
 				<!-- About Section -->
 				<section class="about-section">
-					<h2 class="section-title">📘 About Me</h2>
+					<div class="featured-header">
+						<h2 class="section-title">📘 About Me</h2>
+					</div>
+					
 					<div class="about-body">
 						<p>I founded Frontend Masters in 2014 and have grown it to over 10,000 paying customers from leading companies around the world, while keeping the company fully bootstrapped and independent.</p>
 						
@@ -113,28 +126,43 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 						<div class="work-grid">
 							<div class="work-card">
 								<div class="work-icon">🧠</div>
-								<h4>Learning Paths & Deep Dives</h4>
-								<p>Frontend Masters</p>
+								<div class="work-text">
+									<span class="work-title">Learning Paths & Deep Dives</span>
+									<span class="work-separator">: </span>
+									<span class="work-description">Frontend Masters</span>
+								</div>
 							</div>
 							<div class="work-card">
 								<div class="work-icon">🎧</div>
-								<h4>Podcast Host</h4>
-								<p>Frontend Masters Podcast</p>
+								<div class="work-text">
+									<span class="work-title">Podcast Host</span>
+									<span class="work-separator">: </span>
+									<span class="work-description">Frontend Masters Podcast</span>
+								</div>
 							</div>
 							<div class="work-card">
 								<div class="work-icon">🗣️</div>
-								<h4>Speaker</h4>
-								<p>60+ conferences including Google HQ & international audiences</p>
+								<div class="work-text">
+									<span class="work-title">Speaker</span>
+									<span class="work-separator">: </span>
+									<span class="work-description">60+ conferences including Google HQ & international audiences</span>
+								</div>
 							</div>
 							<div class="work-card">
 								<div class="work-icon">🧰</div>
-								<h4>Creator</h4>
-								<p>jQuery UI Datepicker, Modern Vanilla JS TodoMVC</p>
+								<div class="work-text">
+									<span class="work-title">Creator</span>
+									<span class="work-separator">: </span>
+									<span class="work-description">jQuery UI Datepicker, Modern Vanilla JS TodoMVC</span>
+								</div>
 							</div>
 							<div class="work-card">
 								<div class="work-icon">📝</div>
-								<h4>Writer</h4>
-								<p>200+ blog posts since 2007</p>
+								<div class="work-text">
+									<span class="work-title">Writer</span>
+									<span class="work-separator">: </span>
+									<span class="work-description">200+ blog posts since 2007</span>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -152,9 +180,14 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 								<div class="article-meta">
 									<time class="article-date">{new Date(article.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
 									<div class="article-tags">
-										{article.data.tags?.slice(0, 2).map(tag => (
-											<span class="article-tag">{tag}</span>
-										))}
+										{article.data.tags?.slice(0, 2).map(tag => {
+											const tagSlug = tagMapping[tag];
+											return tagSlug ? (
+												<a href={`/tags/${tagSlug}`} class="article-tag">{tag}</a>
+											) : (
+												<span class="article-tag">{tag}</span>
+											);
+										})}
 									</div>
 								</div>
 								<h3 class="article-title">
@@ -257,7 +290,7 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 				<section class="summary-section">
 					<div class="summary-content">
 						<p class="summary-text">
-							I'm a product-minded founder, developer, and lifelong learner focused on creating value through depth — in tech, health, and life. Whether through courses, code, or checklists, I help people build the skills and systems to live better.
+							As a founder and developer, I focus on meaningful work that improves both technical ability and personal well-being.
 						</p>
 					</div>
 				</section>

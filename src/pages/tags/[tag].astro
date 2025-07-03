@@ -34,7 +34,7 @@ const articles = (await getCollection('articles')).filter(article =>
       <p>No articles found for this tag.</p>
     ) : (
       articles.map(article => (
-        <ArticleAbstract node={article} />
+        <ArticleAbstract node={article} showTagLinks={false} />
       ))
     )}
   </div>

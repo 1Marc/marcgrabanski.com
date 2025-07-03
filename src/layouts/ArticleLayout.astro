@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { site } from "../data/siteMetaData.js";
 import { getCollection } from 'astro:content';
+import Pagination from '../components/Pagination.astro';
 
 export interface Props {
   frontmatter: {
@@ -94,28 +95,17 @@ const tagMapping = {
               <div class="article-body">
                 <slot />
               </div>
-
-              {(previousArticle || nextArticle) && (
-                <nav class="article-navigation-bottom">
-                  {nextArticle && (
-                    <a href={`/articles/${nextArticle.slug}`} class="nav-link nav-link--next">
-                      <span class="nav-link-label">← Next</span>
-                      <span class="nav-link-title">{nextArticle.postTitle}</span>
-                    </a>
-                  )}
-                  {previousArticle && (
-                    <a href={`/articles/${previousArticle.slug}`} class="nav-link nav-link--prev">
-                      <span class="nav-link-label">Previous →</span>
-                      <span class="nav-link-title">{previousArticle.postTitle}</span>
-                    </a>
-                  )}
-                </nav>
-              )}
             </div>
           </article>
         </div>
       </div>
     </div>
+
+    <Pagination 
+      type="article-navigation"
+      previousArticle={previousArticle}
+      nextArticle={nextArticle}
+    />
   </body>
 </html>
 
@@ -141,68 +131,5 @@ const tagMapping = {
   .article-tag:hover {
     background-color: var(--color-primary);
     transform: translateY(-1px);
-  }
-
-  .article-navigation-bottom {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid #e1e8ff;
-    gap: 1rem;
-  }
-
-  .nav-link {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: var(--color-primary-dark);
-    padding: 1rem;
-    border: 1px solid var(--color-primary-dark);
-    border-radius: 8px;
-    transition: all 0.2s ease;
-    max-width: 45%;
-  }
-
-  .nav-link:hover {
-    background-color: var(--color-primary-dark);
-    color: white;
-    transform: translateY(-2px);
-  }
-
-  .nav-link--next {
-    margin-right: auto;
-  }
-
-  .nav-link--prev {
-    margin-left: auto;
-    text-align: right;
-  }
-
-  .nav-link-label {
-    font-size: 0.875rem;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-  }
-
-  .nav-link-title {
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.4;
-  }
-
-  @media (max-width: 768px) {
-    .article-navigation-bottom {
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .nav-link {
-      max-width: 100%;
-    }
-
-    .nav-link--prev {
-      text-align: left;
-    }
   }
 </style>

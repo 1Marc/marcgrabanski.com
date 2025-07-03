@@ -183,52 +183,44 @@
 .featured-card {
   background: linear-gradient(135deg, #ffffff 0%, #f8faff 100%);
   border-radius: 16px;
-  padding: var(--space-xl);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid #e1e8ff;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: var(--space-xl);
-  align-items: center;
-  position: relative;
   overflow: hidden;
 }
 
-.featured-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(
-    90deg,
-    var(--color-primary) 0%,
-    var(--color-secondary) 100%
-  );
-}
-
-.featured-badge {
-  display: inline-block;
+.featured-banner {
   background: linear-gradient(
     135deg,
     var(--color-primary) 0%,
     var(--color-secondary) 100%
   );
   color: white;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 600;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: var(--space-md);
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.featured-main {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-xl);
+  align-items: center;
+  padding: var(--space-xl);
+}
+
+.featured-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
 }
 
 .featured-title {
   font-size: var(--font-size-h3);
   font-weight: 700;
-  margin-bottom: var(--space-md);
+  margin: 0;
   color: var(--color-primary-dark);
 }
 
@@ -246,14 +238,13 @@
   font-size: var(--font-size-base);
   line-height: 1.6;
   color: #666;
-  margin-bottom: var(--space-lg);
+  margin: 0;
 }
 
 .featured-highlights {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
-  margin-bottom: var(--space-lg);
 }
 
 .highlight-item {
@@ -285,6 +276,7 @@
   font-weight: 600;
   transition: all 0.2s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  align-self: flex-start;
 }
 
 .cta-button:hover {
@@ -292,9 +284,14 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
+.featured-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .health-icon {
   font-size: 4rem;
-  text-align: center;
 }
 
 /* About Section */
@@ -361,14 +358,24 @@
   margin-bottom: var(--space-sm);
 }
 
-.work-card h4 {
+.work-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-title {
   font-size: var(--font-size-base);
   font-weight: 600;
   margin-bottom: var(--space-xs);
   color: var(--color-primary-dark);
 }
 
-.work-card p {
+.work-separator {
+  display: none;
+}
+
+.work-description {
   color: #666;
   line-height: 1.4;
   font-size: var(--font-size-small);
@@ -667,6 +674,7 @@
 @media (max-width: 768px) {
   .content-wrapper {
     padding: 0 var(--space-md);
+    max-width: 100%;
   }
 
   .about-section {
@@ -688,13 +696,35 @@
     grid-template-columns: 1fr;
   }
 
-  .featured-card {
+  .featured-main {
     grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
     text-align: center;
   }
 
-  .featured-highlights {
+  .featured-text {
+    gap: var(--space-sm);
+  }
+
+  .featured-description {
+    font-size: var(--font-size-small);
+    line-height: 1.5;
+  }
+
+  .highlight-item {
+    font-size: var(--font-size-small);
     text-align: left;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: var(--font-size-small);
+    align-self: center;
+  }
+
+  .health-icon {
+    font-size: 3rem;
   }
 
   .recent-header {
@@ -708,7 +738,46 @@
   }
 
   .work-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+
+  .work-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: var(--space-md);
+  }
+
+  .work-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-right: var(--space-sm);
+    flex-shrink: 0;
+  }
+
+  .work-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .work-title {
+    margin: 0;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+  }
+
+  .work-separator {
+    display: inline;
+    margin: 0 var(--space-xs);
+  }
+
+  .work-description {
+    margin: 0;
+    font-size: var(--font-size-base);
+    color: #666;
   }
 
   .connect-grid {

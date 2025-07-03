@@ -2,7 +2,7 @@
 import '../styles/post.css';
 import { formatDate, isBeforeDate } from '../utils/dateFormat';
 
-const { node } = Astro.props;
+const { node, showTagLinks = true } = Astro.props;
 const { postTitle, description, date, tags } = node.data
 const slug = node.slug
 ---
@@ -11,9 +11,15 @@ const slug = node.slug
 	{tags && tags.length > 0 && (
 		<div class="post__tags">
 			{tags.map(tag => (
-				<a href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`} class="post__tag">
-					{tag}
-				</a>
+				showTagLinks ? (
+					<a href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`} class="post__tag">
+						{tag}
+					</a>
+				) : (
+					<span class="post__tag">
+						{tag}
+					</span>
+				)
 			))}
 		</div>
 	)}

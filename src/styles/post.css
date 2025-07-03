@@ -101,7 +101,7 @@
     var(--color-primary) 0%,
     var(--color-secondary) 100%
   );
-  color: white;
+  color: white !important;
   text-decoration: none;
   border-radius: 20px;
   font-size: 0.7rem;
@@ -117,11 +117,7 @@
 .post__tag:focus {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(
-    135deg,
-    var(--color-secondary) 0%,
-    var(--color-primary) 100%
-  );
+  color: white !important;
 }
 
 .post__readmore {

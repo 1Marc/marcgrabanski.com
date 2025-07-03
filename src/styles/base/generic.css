@@ -200,6 +200,17 @@ figcaption {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .content__inner {
+    padding: 0;
+  }
+
+  /* Restore padding for homepage specifically */
+  body:has(.hero-section) .content__inner {
+    padding: var(--space-lg) var(--space-md);
+  }
+}
+
 :root {
   --shadow-color: 227deg 32% 59%;
   --shadow-elevation-low: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),

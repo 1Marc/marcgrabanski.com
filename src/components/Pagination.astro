@@ -1,0 +1,202 @@
+---
+export interface Props {
+  currentPage?: number;
+  totalPages?: number;
+  startIndex?: number;
+  endIndex?: number;
+  totalItems?: number;
+  previousArticle?: {
+    slug: string;
+    postTitle: string;
+  };
+  nextArticle?: {
+    slug: string;
+    postTitle: string;
+  };
+  type: 'articles' | 'article-navigation';
+}
+
+const { currentPage, totalPages, startIndex, endIndex, totalItems, previousArticle, nextArticle, type } = Astro.props;
+---
+
+{type === 'articles' && totalPages && totalPages > 1 && currentPage && startIndex !== undefined && endIndex !== undefined && totalItems && (
+  <div class="pagination-container">
+    <div class="pagination">
+      <div class="pagination-info">
+        Page {currentPage} of {totalPages} (Articles {startIndex + 1}-{Math.min(endIndex, totalItems)} of {totalItems})
+      </div>
+      <div class="pagination-links">
+        {currentPage > 1 && (
+          <a href={`/articles/${currentPage - 1}`} class="pagination-link prev">
+            ← Previous
+          </a>
+        )}
+        
+        <div class="pagination-numbers">
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map(pageNum => (
+            <a 
+              href={`/articles/${pageNum}`}
+              class={`pagination-number ${pageNum === currentPage ? 'active' : ''}`}
+            >
+              {pageNum}
+            </a>
+          ))}
+        </div>
+        
+        {currentPage < totalPages && (
+          <a href={`/articles/${currentPage + 1}`} class="pagination-link next">
+            Next →
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+)}
+
+{type === 'article-navigation' && (previousArticle || nextArticle) && (
+  <div class="pagination-container">
+    <div class="pagination">
+      <div class="pagination-links">
+        {nextArticle && (
+          <a href={`/articles/${nextArticle.slug}`} class="pagination-link prev">
+            <span class="pagination-label">← Next</span>
+            <span class="pagination-title">{nextArticle.postTitle}</span>
+          </a>
+        )}
+        {previousArticle && (
+          <a href={`/articles/${previousArticle.slug}`} class="pagination-link next">
+            <span class="pagination-label">Previous →</span>
+            <span class="pagination-title">{previousArticle.postTitle}</span>
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+)}
+
+<style>
+  .pagination-container {
+    max-width: var(--layout-width);
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+  }
+
+  .pagination {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    border-top: 1px solid var(--color-primary);
+    margin-top: 3rem;
+  }
+
+  .pagination-info {
+    color: var(--color-white);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .pagination-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  .pagination-numbers {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .pagination-number {
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    min-width: 2rem;
+    text-align: center;
+    font-weight: 500;
+    background: transparent;
+  }
+
+  .pagination-number:hover {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    transform: translateY(-2px);
+  }
+
+  .pagination-number.active {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+  }
+
+  .pagination-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--color-primary);
+    padding: 1rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    max-width: 45%;
+    background: transparent;
+  }
+
+  .pagination-link:hover {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    transform: translateY(-2px);
+  }
+
+  .pagination-link.prev {
+    margin-right: auto;
+  }
+
+  .pagination-link.next {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .pagination-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .pagination-title {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 768px) {
+    .pagination-container {
+      padding: 0 var(--space-md);
+    }
+    
+    .pagination {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .pagination-links {
+      justify-content: center;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .pagination-link {
+      max-width: 100%;
+    }
+
+    .pagination-link.next {
+      text-align: left;
+    }
+  }
+</style> 
