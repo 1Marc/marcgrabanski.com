@@ -5,7 +5,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.article-navigation {
+.article-page-header .content-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,15 +14,54 @@
   padding: 0 var(--space-lg);
 }
 
-.home-link {
-  color: var(--color-primary);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: var(--font-size-base);
+.article-header-brand {
+  display: flex;
+  align-items: center;
 }
 
-.home-link:hover {
-  color: var(--color-secondary);
+.brand-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.brand-link:hover {
+  transform: translateY(-1px);
+}
+
+.brand-photo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: var(--space-md);
+  border: 2px solid var(--color-primary);
+  object-fit: cover;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-size: var(--font-size-large);
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.brand-subtitle {
+  font-size: var(--font-size-small);
+  color: var(--color-gray);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.article-navigation {
+  display: flex;
+  align-items: center;
 }
 
 .nav-links {
@@ -36,12 +75,15 @@
   font-weight: 500;
   font-size: var(--font-size-base);
   opacity: 0.9;
-  transition: opacity 0.2s ease;
+  transition: all 0.2s ease;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 6px;
 }
 
 .nav-links a:hover {
   opacity: 1;
   color: var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Article Styles - Matching Homepage Design */
@@ -100,7 +142,7 @@
 
 .article-date {
   font-size: var(--font-size-small);
-  color: var(--color-gray);
+  color: var(--color-primary-dark);
   font-weight: 500;
 }
 
@@ -169,7 +211,7 @@
 .article-body a,
 .page-body a,
 .tag-content a {
-  color: var(--color-primary-dark);
+  color: var(--color-primary-dark-link);
   text-decoration: none;
   font-weight: 600;
   border-bottom: 2px solid transparent;
@@ -179,7 +221,7 @@
 .article-body a:hover,
 .page-body a:hover,
 .tag-content a:hover {
-  border-bottom-color: var(--color-primary-dark);
+  border-bottom-color: var(--color-primary-dark-link);
 }
 
 .article-body ul,
@@ -279,7 +321,7 @@
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: var(--color-background);
+  color: var(--color-primary-dark);
 }
 
 .page-body h1,
@@ -288,7 +330,7 @@
 .page-body h4,
 .page-body h5,
 .page-body h6 {
-  color: var(--color-background);
+  color: var(--color-primary-dark);
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -376,34 +418,81 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .article-single__inner,
+  .article-single__inner {
+    padding: var(--space-md);
+    margin: 0;
+  }
+
   .page-single__inner {
-    padding: 2rem;
-    margin: 0 1rem;
+    padding: var(--space-lg);
+    margin: var(--space-md);
   }
 
   .article-title,
   .page-title {
-    font-size: 2rem;
+    font-size: var(--font-size-h2);
   }
 
   .article-body,
   .page-body {
-    font-size: 1rem;
+    font-size: var(--font-size-base);
   }
 
   .article-body h1,
   .page-body h1 {
-    font-size: 1.75rem;
+    font-size: var(--font-size-h2);
   }
 
   .article-body h2,
   .page-body h2 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-h3);
   }
 
   .article-body h3,
   .page-body h3 {
-    font-size: 1.25rem;
+    font-size: var(--font-size-large);
+  }
+
+  /* Mobile header styles */
+  .article-page-header {
+    padding: var(--space-sm) 0;
+  }
+
+  .article-page-header .content-wrapper {
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding: 0 var(--space-md);
+  }
+
+  .article-header-brand {
+    justify-content: center;
+  }
+
+  .brand-photo {
+    width: 40px;
+    height: 40px;
+    margin-right: var(--space-sm);
+  }
+
+  .brand-name {
+    font-size: var(--font-size-base);
+  }
+
+  .brand-subtitle {
+    font-size: 0.75rem;
+  }
+
+  /* Hide navigation on mobile */
+  .article-navigation {
+    display: none;
+  }
+
+  .nav-links {
+    gap: var(--space-md);
+  }
+
+  .nav-links a {
+    font-size: var(--font-size-small);
+    padding: var(--space-xs);
   }
 }

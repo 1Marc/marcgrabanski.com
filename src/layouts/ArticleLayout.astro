@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import { site } from "../data/siteMetaData.js";
-import Header from '../components/Header.astro';
+import { getCollection } from 'astro:content';
 
 export interface Props {
   frontmatter: {
@@ -11,13 +11,31 @@ export interface Props {
     tags: string[];
     isDraft: boolean;
     isArchived: boolean;
-    layout: string;
+    layout?: string;
+  };
+  previousArticle?: {
+    slug: string;
+    postTitle: string;
+  };
+  nextArticle?: {
+    slug: string;
+    postTitle: string;
   };
 }
 
-const { frontmatter } = Astro.props;
+const { frontmatter, previousArticle, nextArticle } = Astro.props;
 const { postTitle, description } = frontmatter;
 const { title } = site;
+const { author } = site;
+const { name } = author;
+
+// Map tag names to URL slugs
+const tagMapping = {
+  'Career Journal': 'career-journal',
+  'Checklists & Guides': 'checklists-guides',
+  'Lessons Learned': 'lessons-learned',
+  'Opinion Pieces': 'opinion'
+};
 ---
 
 <!DOCTYPE html>
@@ -33,8 +51,16 @@ const { title } = site;
 	<body>
     <header class="article-page-header">
       <div class="content-wrapper">
+        <div class="article-header-brand">
+          <a href="/" class="brand-link">
+            <img src="/photo.jpg" alt="Marc Grabanski" class="brand-photo" />
+            <div class="brand-text">
+              <span class="brand-name">{name}</span>
+              <span class="brand-subtitle">Developer, Entrepreneur, Health Enthusiast</span>
+            </div>
+          </a>
+        </div>
         <nav class="article-navigation">
-          <a href="/" class="home-link">← Back to Home</a>
           <div class="nav-links">
             <a href="/articles">Articles</a>
           </div>
@@ -52,9 +78,14 @@ const { title } = site;
                   <time class="article-date">{new Date(frontmatter.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
                   {frontmatter.tags && (
                     <div class="article-tags">
-                      {frontmatter.tags.map(tag => (
-                        <span class="article-tag">{tag}</span>
-                      ))}
+                      {frontmatter.tags.map(tag => {
+                        const tagSlug = tagMapping[tag];
+                        return tagSlug ? (
+                          <a href={`/tags/${tagSlug}`} class="article-tag">{tag}</a>
+                        ) : (
+                          <span class="article-tag">{tag}</span>
+                        );
+                      })}
                     </div>
                   )}
                 </div>
@@ -63,6 +94,23 @@ const { title } = site;
               <div class="article-body">
                 <slot />
               </div>
+
+              {(previousArticle || nextArticle) && (
+                <nav class="article-navigation-bottom">
+                  {nextArticle && (
+                    <a href={`/articles/${nextArticle.slug}`} class="nav-link nav-link--next">
+                      <span class="nav-link-label">← Next</span>
+                      <span class="nav-link-title">{nextArticle.postTitle}</span>
+                    </a>
+                  )}
+                  {previousArticle && (
+                    <a href={`/articles/${previousArticle.slug}`} class="nav-link nav-link--prev">
+                      <span class="nav-link-label">Previous →</span>
+                      <span class="nav-link-title">{previousArticle.postTitle}</span>
+                    </a>
+                  )}
+                </nav>
+              )}
             </div>
           </article>
         </div>
@@ -70,3 +118,91 @@ const { title } = site;
     </div>
   </body>
 </html>
+
+<style>
+  .article-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+
+  .article-tag {
+    padding: 0.25rem 0.75rem;
+    background-color: var(--color-primary-dark);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .article-tag:hover {
+    background-color: var(--color-primary);
+    transform: translateY(-1px);
+  }
+
+  .article-navigation-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e1e8ff;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--color-primary-dark);
+    padding: 1rem;
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    max-width: 45%;
+  }
+
+  .nav-link:hover {
+    background-color: var(--color-primary-dark);
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  .nav-link--next {
+    margin-right: auto;
+  }
+
+  .nav-link--prev {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .nav-link-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .nav-link-title {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 768px) {
+    .article-navigation-bottom {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .nav-link {
+      max-width: 100%;
+    }
+
+    .nav-link--prev {
+      text-align: left;
+    }
+  }
+</style>

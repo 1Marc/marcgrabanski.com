@@ -6,20 +6,8 @@ export const site = {
   copyright: "© All rights reserved.",
   menu: [
     {
-      label: "Career Journal",
-      path: "/tags/career-journal",
-    },
-    {
-      label: "Checklists & Guides",
-      path: "/tags/checklists-guides",
-    },
-    {
-      label: "Lessons Learned",
-      path: "/tags/lessons-learned",
-    },
-    {
-      label: "Opinion Pieces",
-      path: "/tags/opinion",
+      label: "All Articles",
+      path: "/articles",
     },
     {
       label: "Podcasts & Interviews",

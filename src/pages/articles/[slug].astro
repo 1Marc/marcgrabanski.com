@@ -13,8 +13,35 @@ export async function getStaticPaths() {
 
 const { article } = Astro.props;
 const { Content } = await article.render();
+
+// Get all articles and find previous/next based on all articles (not just shared tags)
+const allArticles = await getCollection('articles');
+const sortedArticles = allArticles.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+// Find current article position in the sorted all articles
+const currentPosition = sortedArticles.findIndex(a => a.slug === article.slug);
+
+// Get previous and next articles
+let previousArticle: { slug: string; postTitle: string; } | undefined = undefined;
+let nextArticle: { slug: string; postTitle: string; } | undefined = undefined;
+
+if (currentPosition > 0) {
+  // There's a newer article (lower index = newer date)
+  nextArticle = {
+    slug: sortedArticles[currentPosition - 1].slug,
+    postTitle: sortedArticles[currentPosition - 1].data.postTitle
+  };
+}
+
+if (currentPosition < sortedArticles.length - 1) {
+  // There's an older article (higher index = older date)
+  previousArticle = {
+    slug: sortedArticles[currentPosition + 1].slug,
+    postTitle: sortedArticles[currentPosition + 1].data.postTitle
+  };
+}
 ---
 
-<ArticleLayout frontmatter={article.data}>
+<ArticleLayout frontmatter={article.data} previousArticle={previousArticle} nextArticle={nextArticle}>
   <Content />
 </ArticleLayout>

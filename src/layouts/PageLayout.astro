@@ -1,7 +1,6 @@
 ---
 import '../styles/global.css';
 import { site } from "../data/siteMetaData.js";
-import Header from '../components/Header.astro';
 
 export interface Props {
   frontmatter:  {pageTitle: string, description: string};
@@ -10,6 +9,8 @@ export interface Props {
 const { frontmatter } = Astro.props;
 const { pageTitle, description } = frontmatter;
 const { title } = site;
+const { author } = site;
+const { name } = author;
 ---
 
 <!DOCTYPE html>
@@ -23,7 +24,24 @@ const { title } = site;
     <meta name="description" content={description} />
 	</head>
 	<body>
-    <Header />
+    <header class="article-page-header">
+      <div class="content-wrapper">
+        <div class="article-header-brand">
+          <a href="/" class="brand-link">
+            <img src="/photo.jpg" alt="Marc Grabanski" class="brand-photo" />
+            <div class="brand-text">
+              <span class="brand-name">{name}</span>
+              <span class="brand-subtitle">Developer, Entrepreneur, Health Enthusiast</span>
+            </div>
+          </a>
+        </div>
+        <nav class="article-navigation">
+          <div class="nav-links">
+            <a href="/articles">Articles</a>
+          </div>
+        </nav>
+      </div>
+    </header>
     <div class="content">
       <div class="content__inner">
         <div class="content-wrapper">

@@ -65,14 +65,14 @@
 }
 
 .post__title-link {
-  color: var(--color-primary-dark);
+  color: var(--color-primary-dark-link);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .post__title-link:hover,
 .post__title-link:focus {
-  color: var(--color-primary-dark);
+  color: var(--color-primary-dark-link);
 }
 
 .post__description {
@@ -85,7 +85,7 @@
 
 .post__readmore {
   font-size: 1rem;
-  color: var(--color-primary-dark);
+  color: var(--color-primary-dark-link);
   text-decoration: none;
   font-weight: 600;
   margin-top: 1rem;
@@ -95,7 +95,7 @@
 
 .post__readmore:hover,
 .post__readmore:focus {
-  color: var(--color-primary-dark);
+  color: var(--color-primary-dark-link);
   transform: translateX(4px);
 }
 

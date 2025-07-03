@@ -58,116 +58,143 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 	<div class="content">
 		<div class="content__inner">
 			<div class="content-wrapper">
-			<!-- Featured Health Checklist Section -->
-			<section class="featured-section">
-				<div class="featured-header">
-					<h2 class="section-title">🚰 Most Referenced Resource</h2>
-					<p class="section-subtitle">The thing I refer people to most lately</p>
-				</div>
-				
-				<div class="featured-card">
-					<div class="featured-content">
-						<div class="featured-badge">Featured</div>
-						<h3 class="featured-title">
-							<a href="/articles/personal-health-checklist" class="featured-link">
-								Personal Health Checklist
-							</a>
-						</h3>
-						<p class="featured-description">
-							A comprehensive checklist to review and make better, healthier habits. 
-							This is my go-to reference for maintaining a healthy lifestyle.
-						</p>
-						<div class="featured-tags">
-							<span class="tag">Health</span>
-							<span class="tag">Wellness</span>
-							<span class="tag">Checklist</span>
-						</div>
-						<div class="featured-stats">
-							<div class="stat">
-								<span class="stat-number">3</span>
-								<span class="stat-label">Years Updated</span>
-							</div>
-							<div class="stat">
-								<span class="stat-number">50+</span>
-								<span class="stat-label">Health Tips</span>
-							</div>
-							<div class="stat">
-								<span class="stat-number">100%</span>
-								<span class="stat-label">Actionable</span>
-							</div>
-						</div>
-						<a href="/articles/personal-health-checklist" class="cta-button">
-							Read the Health Checklist →
-						</a>
+				<!-- Featured Health Checklist Section -->
+				<section class="featured-section">
+					<div class="featured-header">
+						<h2 class="section-title">🚰 Most Referenced Resource</h2>
+						<p class="section-subtitle">The thing I refer people to most lately</p>
 					</div>
-					<div class="featured-image">
-						<div class="health-icon">🚰</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- About Section -->
-			<section class="about-section">
-				<div class="about-content">
-					<h2 class="section-title">About Me</h2>
-					<About class="about-body"/>
-				</div>
-			</section>
-
-			<!-- Recent Articles Section -->
-			<section class="recent-section">
-				<div class="recent-header">
-					<h2 class="section-title">Recent Articles</h2>
-					<a href="/articles" class="view-all-link">View All Articles →</a>
-				</div>
-				<div class="articles-grid">
-					{recentArticles.map(article => (
-						<article class="article-card">
-							<div class="article-meta">
-								<time class="article-date">{new Date(article.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
-								<div class="article-tags">
-									{article.data.tags?.slice(0, 2).map(tag => (
-										<span class="article-tag">{tag}</span>
-									))}
-								</div>
-							</div>
-							<h3 class="article-title">
-								<a href={`/articles/${article.slug}`} class="article-link">
-									{article.data.postTitle}
+					
+					<div class="featured-card">
+						<div class="featured-content">
+							<div class="featured-badge">Featured</div>
+							<h3 class="featured-title">
+								<a href="/articles/personal-health-checklist" class="featured-link">
+									Personal Health Checklist
 								</a>
 							</h3>
-							<p class="article-excerpt">{article.data.description}</p>
-						</article>
-					))}
-				</div>
-			</section>
+							<p class="featured-description">
+								A comprehensive checklist to review and make better, healthier habits. 
+								This is my go-to reference for maintaining a healthy lifestyle.
+							</p>
+							<div class="featured-tags">
+								<span class="tag">Health</span>
+								<span class="tag">Wellness</span>
+								<span class="tag">Checklist</span>
+							</div>
+							<div class="featured-stats">
+								<div class="stat">
+									<span class="stat-number">3</span>
+									<span class="stat-label">Years Updated</span>
+								</div>
+								<div class="stat">
+									<span class="stat-number">50+</span>
+									<span class="stat-label">Health Tips</span>
+								</div>
+								<div class="stat">
+									<span class="stat-number">100%</span>
+									<span class="stat-label">Actionable</span>
+								</div>
+							</div>
+							<a href="/articles/personal-health-checklist" class="cta-button">
+								Read the Health Checklist →
+							</a>
+						</div>
+						<div class="featured-image">
+							<div class="health-icon">🚰</div>
+						</div>
+					</div>
+				</section>
 
-			<!-- Quick Links Section -->
-			<section class="quick-links-section">
-				<h2 class="section-title">Quick Links</h2>
-				<div class="quick-links-grid">
-					<a href="https://frontendmasters.com" class="quick-link-card">
-						<div class="quick-link-icon">🎓</div>
-						<h3>Frontend Masters</h3>
-						<p>Advanced courses for developers</p>
-					</a>
-					<a href="https://twitter.com/1marc" class="quick-link-card">
-						<div class="quick-link-icon">🐦</div>
-						<h3>Twitter / X</h3>
-						<p>Follow my journey</p>
-					</a>
-					<a href="/podcasts" class="quick-link-card">
-						<div class="quick-link-icon">🎙️</div>
-						<h3>Podcasts</h3>
-						<p>Interviews & appearances</p>
-					</a>
-					<a href="https://github.com/1Marc" class="quick-link-card">
-						<div class="quick-link-icon">💻</div>
-						<h3>GitHub</h3>
-						<p>Open source projects</p>
-					</a>
-				</div>
-			</section>
+				<!-- About Section -->
+				<section class="about-section">
+					<div class="about-content">
+						<h2 class="section-title">About Me</h2>
+						<About class="about-body"/>
+					</div>
+				</section>
+
+				<!-- Recent Articles Section -->
+				<section class="recent-section">
+					<div class="recent-header">
+						<h2 class="section-title">Recent Articles</h2>
+						<a href="/articles" class="view-all-link">View All Articles →</a>
+					</div>
+					<div class="articles-grid">
+						{recentArticles.map(article => (
+							<article class="article-card">
+								<div class="article-meta">
+									<time class="article-date">{new Date(article.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+									<div class="article-tags">
+										{article.data.tags?.slice(0, 2).map(tag => (
+											<span class="article-tag">{tag}</span>
+										))}
+									</div>
+								</div>
+								<h3 class="article-title">
+									<a href={`/articles/${article.slug}`} class="article-link">
+										{article.data.postTitle}
+									</a>
+								</h3>
+								<p class="article-excerpt">{article.data.description}</p>
+							</article>
+						))}
+					</div>
+				</section>
+
+				<!-- Tags Section -->
+				<section class="tags-section">
+					<h2 class="section-title">Browse by Topic</h2>
+					<div class="tags-grid">
+						<a href="/tags/career-journal" class="tag-card">
+							<div class="tag-icon">💼</div>
+							<h3>Career Journal</h3>
+							<p>My journey in tech and entrepreneurship</p>
+						</a>
+						<a href="/tags/checklists-guides" class="tag-card">
+							<div class="tag-icon">✅</div>
+							<h3>Checklists & Guides</h3>
+							<p>Practical resources and frameworks</p>
+						</a>
+						<a href="/tags/lessons-learned" class="tag-card">
+							<div class="tag-icon">🎓</div>
+							<h3>Lessons Learned</h3>
+							<p>Key insights from my experiences</p>
+						</a>
+						<a href="/tags/opinion" class="tag-card">
+							<div class="tag-icon">💭</div>
+							<h3>Opinion Pieces</h3>
+							<p>Thoughts on industry and life</p>
+						</a>
+					</div>
+				</section>
+
+				<!-- Quick Links Section -->
+				<section class="quick-links-section">
+					<h2 class="section-title">Quick Links</h2>
+					<div class="quick-links-grid">
+						<a href="https://frontendmasters.com" class="quick-link-card">
+							<div class="quick-link-icon">🎓</div>
+							<h3>Frontend Masters</h3>
+							<p>Advanced courses for developers</p>
+						</a>
+						<a href="https://twitter.com/1marc" class="quick-link-card">
+							<div class="quick-link-icon">🐦</div>
+							<h3>Twitter / X</h3>
+							<p>Follow my journey</p>
+						</a>
+						<a href="/podcasts" class="quick-link-card">
+							<div class="quick-link-icon">🎙️</div>
+							<h3>Podcasts</h3>
+							<p>Interviews & appearances</p>
+						</a>
+						<a href="https://github.com/1Marc" class="quick-link-card">
+							<div class="quick-link-icon">💻</div>
+							<h3>GitHub</h3>
+							<p>Open source projects</p>
+						</a>
+					</div>
+				</section>
 			</div>
 		</div>
 	</div>
