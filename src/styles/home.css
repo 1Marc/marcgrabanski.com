@@ -504,7 +504,19 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .content-wrapper {
-    padding: 0 var(--space-sm);
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .about-section {
+    border-radius: 0;
+    margin: 0 0 var(--space-xl) 0;
+    padding: var(--space-sm) var(--space-md) var(--space-md);
+  }
+
+  .about-content {
+    max-width: 100%;
+    padding: 0 var(--space-md);
   }
 
   .hero-content {

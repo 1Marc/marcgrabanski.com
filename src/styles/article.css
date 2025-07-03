@@ -421,11 +421,26 @@
   .article-single__inner {
     padding: var(--space-md);
     margin: 0;
+    border-radius: 0;
+    max-width: 100%;
   }
 
   .page-single__inner {
     padding: var(--space-lg);
-    margin: var(--space-md);
+    margin: 0;
+    border-radius: 0;
+    max-width: 100%;
+  }
+
+  .page-single {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content-wrapper {
+    max-width: 100%;
+    padding: 0;
   }
 
   .article-title,
