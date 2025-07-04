@@ -1,0 +1,337 @@
+---
+import { site } from "../data/siteMetaData.js";
+
+const { author, menu, subtitle } = site;
+const { name } = author;
+const currentPath = Astro.url.pathname;
+---
+
+<div class="hero-section-compact">
+	<div class="hero-content-compact">
+		<div class="hero-text-compact">
+			<h1 class="hero-title-compact">
+				<a href="/" class="hero-home-link-compact">
+					<span class="highlight-compact">Marc Grabanski</span>
+				</a>
+				<br />
+				<span class="subtitle-compact">Developer, Entrepreneur, Health Enthusiast</span>
+			</h1>
+			<p class="hero-description-compact">
+				Helping developers achieve technical excellence and lead healthier lives.
+			</p>
+			
+			<!-- Navigation Menu -->
+			<nav class="hero-navigation-compact">
+				<ul class="nav-list-compact">
+					{menu.map(item => (
+						<li class="nav-item-compact">
+							<a href={item.path} class="nav-link-compact">
+								{item.label}
+							</a>
+						</li>
+					))}
+				</ul>
+				<div class="social-links-compact">
+					<a href={`https://www.twitter.com/${author.twitter}`} target="_blank" class="social-link-compact">
+						<img src="/twitter.svg" alt="Twitter" class="social-icon-compact" />
+					</a>
+					<a href={`https://www.github.com/${author.github}`} target="_blank" class="social-link-compact">
+						<img src="/github.svg" alt="GitHub" class="social-icon-compact" />
+					</a>
+					<a href="/rss.xml" class="social-link-compact">
+						<span class="rss-icon-compact">📡</span>
+					</a>
+				</div>
+			</nav>
+		</div>
+		<div class="hero-image-compact">
+			<a href="/">
+				<img src="/photo.jpg" alt="Marc Grabanski" class="profile-photo-compact" />
+			</a>
+		</div>
+	</div>
+</div>
+
+<style>
+  .hero-section-compact {
+    background: linear-gradient(
+      135deg,
+      var(--color-background) 0%,
+      #0a2a4a 50%,
+      #1a3a5a 100%
+    );
+    color: var(--color-white);
+    padding: var(--space-md) 0;
+    margin-bottom: var(--space-md);
+    position: relative;
+    overflow: hidden;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-section-compact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        circle at 20% 80%,
+        rgba(152, 199, 241, 0.15) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 80% 20%,
+        rgba(238, 111, 107, 0.12) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 40% 40%,
+        rgba(152, 199, 241, 0.08) 0%,
+        transparent 70%
+      );
+    pointer-events: none;
+  }
+
+  .hero-content-compact {
+    max-width: var(--layout-width);
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--space-lg);
+    align-items: start;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-title-compact {
+    font-size: clamp(2rem, 4vw, var(--font-size-h1));
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: var(--space-sm);
+    color: var(--color-white);
+  }
+
+  .highlight-compact {
+    background: linear-gradient(
+      135deg,
+      var(--color-primary) 0%,
+      var(--color-secondary) 50%,
+      var(--color-primary) 100%
+    );
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+  }
+
+  .highlight-compact::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      var(--color-primary),
+      var(--color-secondary)
+    );
+    transform: scaleX(1);
+  }
+
+  .subtitle-compact {
+    font-size: clamp(1.1rem, 2.5vw, var(--font-size-large));
+    font-weight: 400;
+    opacity: 0.9;
+  }
+
+  .hero-description-compact {
+    font-size: clamp(1rem, 2vw, var(--font-size-large));
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: var(--space-sm);
+    font-weight: 500;
+  }
+
+  .hero-navigation-compact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--space-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: var(--space-md);
+    margin-top: var(--space-md);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .nav-list-compact {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: var(--space-lg);
+  }
+
+  .nav-item-compact {
+    margin: 0;
+  }
+
+  .nav-link-compact {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: var(--font-size-base);
+    transition: all 0.3s ease;
+    opacity: 0.9;
+    border-bottom: 1px solid transparent;
+    position: relative;
+    padding: 8px 16px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .nav-link-compact:hover {
+    opacity: 1;
+    color: var(--color-primary);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom-color: var(--color-primary);
+    transform: translateY(-1px);
+  }
+
+  .social-links-compact {
+    display: flex;
+    gap: var(--space-sm);
+  }
+
+  .social-link-compact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .social-link-compact:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .social-icon-compact {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+  }
+
+  .social-link-compact:hover .social-icon-compact {
+    transform: scale(1.1);
+  }
+
+  .rss-icon-compact {
+    font-size: 18px;
+    color: var(--color-white);
+    transition: transform 0.3s ease;
+  }
+
+  .social-link-compact:hover .rss-icon-compact {
+    transform: scale(1.1);
+  }
+
+  .hero-image-compact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--space-sm);
+  }
+
+  .profile-photo-compact {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 32px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1),
+      0 0 40px rgba(152, 199, 241, 0.2);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    filter: brightness(1.05) contrast(1.1);
+  }
+
+  .profile-photo-compact:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4), 0 12px 40px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.2),
+      0 0 60px rgba(152, 199, 241, 0.3);
+  }
+
+  @media (max-width: 768px) {
+    .hero-section-compact {
+      min-height: 45vh;
+      padding: var(--space-md) 0;
+      margin-bottom: var(--space-md);
+    }
+
+    .hero-content-compact {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: var(--space-lg);
+      padding: 0 var(--space-md);
+    }
+
+    .hero-title-compact {
+      font-size: clamp(1.8rem, 8vw, 2.5rem);
+      line-height: 1.2;
+    }
+
+    .hero-navigation-compact {
+      flex-direction: column;
+      gap: var(--space-md);
+      padding: var(--space-md);
+    }
+
+    .nav-list-compact {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--space-md);
+    }
+
+    .nav-link-compact {
+      padding: 6px 12px;
+      font-size: var(--font-size-small);
+    }
+
+    .social-links-compact {
+      gap: var(--space-xs);
+    }
+
+    .social-link-compact {
+      width: 40px;
+      height: 40px;
+    }
+
+    .profile-photo-compact {
+      width: 150px;
+      height: 150px;
+    }
+  }
+</style> 

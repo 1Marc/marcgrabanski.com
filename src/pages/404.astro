@@ -1,10 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import RecentArticles from '../components/RecentArticles.astro';
+import CompactHeader from '../components/CompactHeader.astro';
 import { site } from "../data/siteMetaData.js";
 ---
 
 <Layout title={site.title}>
+	<CompactHeader />
 	<div class="content">
 		<div class="content__inner">
 			<div class="page">

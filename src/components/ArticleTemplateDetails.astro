@@ -80,7 +80,15 @@ const next = allArticles[articleIndex - 1];
         class="post-single__footer-prev"
         href={"/articles/"+prev.slug+"/"}
       >
-        &lt;&lt; {prev.data.postTitle}
+        <div class="post-single__footer-content">
+          <svg class="post-single__footer-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+          <div class="post-single__footer-text">
+            <span class="post-single__footer-label">Previous Article</span>
+            <span class="post-single__footer-title">{prev.data.postTitle}</span>
+          </div>
+        </div>
       </a>
     ) : null}
     {next ? (
@@ -88,7 +96,15 @@ const next = allArticles[articleIndex - 1];
         class="post-single__footer-next"
         href={"/articles/"+next.slug+"/"}
       >
-        {next.data.postTitle} &gt;&gt;
+        <div class="post-single__footer-content">
+          <div class="post-single__footer-text">
+            <span class="post-single__footer-label">Next Article</span>
+            <span class="post-single__footer-title">{next.data.postTitle}</span>
+          </div>
+          <svg class="post-single__footer-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </div>
       </a>
     ) : null}
   </div>

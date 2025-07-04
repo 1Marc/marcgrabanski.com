@@ -4,6 +4,7 @@ import { site } from "../data/siteMetaData.js";
 import { getCollection } from 'astro:content';
 import Pagination from '../components/Pagination.astro';
 import Tag from '../components/Tag.astro';
+import CompactHeader from '../components/CompactHeader.astro';
 
 export interface Props {
   frontmatter: {
@@ -51,24 +52,7 @@ const tagMapping = {
 		<meta name="description" content={description} />
 	</head>
 	<body>
-    <header class="article-page-header">
-      <div class="content-wrapper">
-        <div class="article-header-brand">
-          <a href="/" class="brand-link">
-            <img src="/photo.jpg" alt="Marc Grabanski" class="brand-photo" />
-            <div class="brand-text">
-              <span class="brand-name">{name}</span>
-              <span class="brand-subtitle">Developer, Entrepreneur, Health Enthusiast</span>
-            </div>
-          </a>
-        </div>
-        <nav class="article-navigation">
-          <div class="nav-links">
-            <a href="/articles/1">Articles</a>
-          </div>
-        </nav>
-      </div>
-    </header>
+    <CompactHeader />
     <div class="content">
       <div class="content__inner">
         <div class="content-wrapper">

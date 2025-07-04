@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { site } from "../data/siteMetaData.js";
+import CompactHeader from '../components/CompactHeader.astro';
 
 export interface Props {
   frontmatter:  {pageTitle: string, description: string};
@@ -24,24 +25,7 @@ const { name } = author;
     <meta name="description" content={description} />
 	</head>
 	<body>
-    <header class="article-page-header">
-      <div class="content-wrapper">
-        <div class="article-header-brand">
-          <a href="/" class="brand-link">
-            <img src="/photo.jpg" alt="Marc Grabanski" class="brand-photo" />
-            <div class="brand-text">
-              <span class="brand-name">{name}</span>
-              <span class="brand-subtitle">Developer, Entrepreneur, Health Enthusiast</span>
-            </div>
-          </a>
-        </div>
-        <nav class="article-navigation">
-          <div class="nav-links">
-            <a href="/articles/1">Articles</a>
-          </div>
-        </nav>
-      </div>
-    </header>
+    <CompactHeader />
     <div class="content">
       <div class="content__inner">
         <div class="content-wrapper">
