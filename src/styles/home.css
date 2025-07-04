@@ -1015,12 +1015,32 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .content-wrapper {
-    padding: 0 var(--space-md);
+    padding: 0 var(--space-sm);
     max-width: 100%;
   }
 
   .about-section {
     margin-bottom: var(--space-lg);
+    padding: var(--space-lg);
+  }
+
+  .featured-section {
+    padding: var(--space-lg);
+  }
+
+  .tags-section {
+    padding: var(--space-lg);
+  }
+
+  .connect-section {
+    padding: var(--space-lg);
+  }
+
+  .recent-section {
+    padding: var(--space-lg);
+  }
+
+  .testimonials-section {
     padding: var(--space-lg);
   }
 
@@ -1041,7 +1061,7 @@
   .featured-main {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
-    padding: var(--space-lg);
+    padding: var(--space-md);
     text-align: center;
   }
 
@@ -1106,6 +1126,18 @@
     display: flex;
     align-items: center;
     text-align: left;
+    padding: var(--space-sm);
+  }
+
+  .article-card {
+    padding: var(--space-md);
+  }
+
+  .tag-card {
+    padding: var(--space-md);
+  }
+
+  .connect-card {
     padding: var(--space-md);
   }
 
