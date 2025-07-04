@@ -3,6 +3,7 @@ import '../styles/global.css';
 import { site } from "../data/siteMetaData.js";
 import { getCollection } from 'astro:content';
 import Pagination from '../components/Pagination.astro';
+import Tag from '../components/Tag.astro';
 
 export interface Props {
   frontmatter: {
@@ -82,9 +83,9 @@ const tagMapping = {
                       {frontmatter.tags.map(tag => {
                         const tagSlug = tagMapping[tag];
                         return tagSlug ? (
-                          <a href={`/tags/${tagSlug}`} class="article-tag">{tag}</a>
+                          <Tag tag={tag} href={`/tags/${tagSlug}`} size="large" />
                         ) : (
-                          <span class="article-tag">{tag}</span>
+                          <Tag tag={tag} size="large" />
                         );
                       })}
                     </div>
@@ -115,21 +116,5 @@ const tagMapping = {
     gap: 0.5rem;
     flex-wrap: wrap;
     margin-top: 0.5rem;
-  }
-
-  .article-tag {
-    padding: 0.25rem 0.75rem;
-    background-color: var(--color-primary-dark);
-    color: white;
-    text-decoration: none;
-    border-radius: 20px;
-    font-size: 0.875rem;
-    font-weight: 500;
-    transition: all 0.2s ease;
-  }
-
-  .article-tag:hover {
-    background-color: var(--color-primary);
-    transform: translateY(-1px);
   }
 </style>

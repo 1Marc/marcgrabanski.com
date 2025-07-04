@@ -125,21 +125,57 @@
 }
 
 .post-single__tags-list-item-link {
-  background: color-mix(in srgb, var(--color-background) 98%, black);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
   text-decoration: none;
-  border: 1px solid var(--color-primary);
-  border-radius: 3px;
-  color: color-mix(in srgb, var(--color-base) 80%, white);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  color: white;
   line-height: var(--line-height-base);
-  padding: var(--space-xs) var(--space-sm);
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.3px;
+}
+
+.post-single__tags-list-item-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+  opacity: 0;
 }
 
 .post-single__tags-list-item-link:hover,
 .post-single__tags-list-item-link:focus {
-  box-shadow: var(--box-shadow);
-  color: var(--color-primary-highlight);
-  background: color-mix(in srgb, var(--color-background) 96%, black);
-  border: 1px solid color-mix(in srgb, var(--color-primary) 85%, black);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.post-single__tags-list-item-link:hover::before,
+.post-single__tags-list-item-link:focus::before {
+  width: 120%;
+  height: 120%;
+  opacity: 1;
 }
 
 .post-single__home-button {

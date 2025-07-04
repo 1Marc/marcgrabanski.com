@@ -4,6 +4,7 @@ import RecentArticles from '../components/RecentArticles.astro';
 import { Content as About } from '../components/About.mdx';
 import { site } from "../data/siteMetaData.js";
 import { getCollection } from 'astro:content';
+import Tag from '../components/Tag.astro';
 
 // Map tag names to URL slugs
 const tagMapping = {
@@ -162,7 +163,7 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 								<div class="work-text">
 									<span class="work-title">Writer</span>
 									<span class="work-separator">: </span>
-									<span class="work-description">200+ blog posts since 2007</span>
+									<span class="work-description">Newsletter to 500,000+ developers & 200+ blog posts</span>
 								</div>
 							</div>
 						</div>
@@ -184,9 +185,9 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 										{article.data.tags?.slice(0, 2).map(tag => {
 											const tagSlug = tagMapping[tag];
 											return tagSlug ? (
-												<a href={`/tags/${tagSlug}`} class="article-tag">{tag}</a>
+												<Tag tag={tag} href={`/tags/${tagSlug}`} variant="default" size="small" />
 											) : (
-												<span class="article-tag">{tag}</span>
+												<Tag tag={tag} variant="default" size="small" />
 											);
 										})}
 									</div>

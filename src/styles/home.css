@@ -942,7 +942,11 @@
 }
 
 .article-card {
-  background: rgba(255, 255, 255, 0.08);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-radius: 20px;
@@ -950,7 +954,7 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  transition: all 0.15s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -960,19 +964,17 @@
   content: "";
   position: absolute;
   top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
+  left: 0;
+  right: 0;
+  height: 3px;
   background: linear-gradient(
     90deg,
-    transparent,
-    rgba(255, 255, 255, 0.1),
-    transparent
+    var(--color-primary) 0%,
+    var(--color-secondary) 50%,
+    var(--color-primary) 100%
   );
-  transition: left 0.5s ease-out;
-  pointer-events: none;
-  z-index: 3;
-  opacity: 0;
+  z-index: 2;
+  border-radius: 20px 20px 0 0;
 }
 
 .article-card::before {
@@ -990,6 +992,15 @@
   border-radius: 20px;
   pointer-events: none;
   z-index: 1;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.article-card:hover::before {
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.1) 0%,
+    rgba(239, 68, 68, 0.05) 100%
+  );
 }
 
 .article-card:hover {
@@ -997,11 +1008,24 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12), 0 8px 16px rgba(0, 0, 0, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.25);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
 }
 
 .article-card:hover::after {
-  left: 100%;
-  opacity: 1;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 25%,
+    var(--color-primary) 50%,
+    var(--color-secondary) 75%,
+    var(--color-primary) 100%
+  );
+  background-size: 200% 100%;
+  animation: gradientShift 2s ease-in-out infinite;
 }
 
 .article-meta {
@@ -1025,18 +1049,65 @@
   gap: var(--space-xs);
   position: relative;
   z-index: 2;
+  flex-wrap: wrap;
 }
 
 .article-tag {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   color: var(--color-white);
-  padding: var(--space-xs) var(--space-sm);
-  border-radius: 15px;
-  font-size: var(--font-size-small);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
   font-weight: 600;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 0.3px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.article-tag::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+  opacity: 0;
+}
+
+.article-tag:hover {
+  transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.25) 100%
+  );
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.article-tag:hover::before {
+  width: 120%;
+  height: 120%;
+  opacity: 1;
 }
 
 .article-title {
@@ -1058,6 +1129,7 @@
 
 .article-link:hover {
   color: var(--color-primary);
+  text-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
 }
 
 .article-excerpt {
@@ -1097,7 +1169,7 @@
 
 .tag-card {
   background: linear-gradient(135deg, #ffffff 0%, #f8faff 100%);
-  border-radius: 20px;
+  border-radius: 24px;
   padding: var(--space-xl);
   text-decoration: none;
   color: var(--color-primary-dark);
@@ -1105,7 +1177,7 @@
   border: 1px solid #e1e8ff;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04),
     inset 0 1px 0 rgba(255, 255, 255, 0.8);
-  transition: all 0.15s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -1114,18 +1186,21 @@
 .tag-card::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.8) 0%,
-    rgba(255, 255, 255, 0.4) 100%
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.4) 0%,
+    transparent 70%
   );
-  border-radius: 20px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
   z-index: 1;
+  opacity: 0;
 }
 
 .tag-card::after {
@@ -1134,27 +1209,42 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 4px;
   background: linear-gradient(
     90deg,
     var(--color-primary) 0%,
-    var(--color-secondary) 100%
+    var(--color-secondary) 50%,
+    var(--color-primary) 100%
   );
   z-index: 2;
+  border-radius: 24px 24px 0 0;
 }
 
 .tag-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.1),
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.15), 0 12px 24px rgba(0, 0, 0, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
   border-color: #d1e0ff;
 }
 
+.tag-card:hover::before {
+  width: 140%;
+  height: 140%;
+  opacity: 1;
+}
+
 .tag-icon {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: var(--space-md);
   position: relative;
   z-index: 2;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+
+.tag-card:hover .tag-icon {
+  transform: scale(1.15) translateY(-2px);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 
 .tag-card h3 {
@@ -1586,6 +1676,15 @@
 
   .tag-card {
     padding: var(--space-md);
+  }
+
+  .article-tag {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .tag-icon {
+    font-size: 2.5rem;
   }
 
   .connect-card {

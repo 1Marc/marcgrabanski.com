@@ -1,0 +1,150 @@
+---
+export interface Props {
+  tag: string;
+  href?: string;
+  variant?: 'default' | 'light' | 'dark';
+  size?: 'small' | 'medium' | 'large';
+}
+
+const { tag, href, variant = 'default', size = 'medium' } = Astro.props;
+
+const sizeClasses = {
+  small: 'tag-small',
+  medium: 'tag-medium', 
+  large: 'tag-large'
+};
+
+const variantClasses = {
+  default: 'tag-default',
+  light: 'tag-light',
+  dark: 'tag-dark'
+};
+---
+
+{href ? (
+  <a href={href} class={`tag ${sizeClasses[size]} ${variantClasses[variant]}`}>
+    {tag}
+  </a>
+) : (
+  <span class={`tag ${sizeClasses[size]} ${variantClasses[variant]}`}>
+    {tag}
+  </span>
+)}
+
+<style>
+  .tag {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: visible;
+    border: 1px solid transparent;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .tag::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .tag:hover::before {
+    width: 120%;
+    height: 120%;
+    opacity: 1;
+  }
+
+  /* Size variants */
+  .tag-small {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .tag-medium {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+  }
+
+  .tag-large {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  /* Color variants */
+  .tag-default {
+    background: linear-gradient(135deg, 
+      var(--color-primary) 0%, 
+      var(--color-secondary) 100%);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .tag-default:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .tag-light {
+    background: linear-gradient(135deg, 
+      rgba(255, 255, 255, 0.25) 0%, 
+      rgba(255, 255, 255, 0.15) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: var(--color-white);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .tag-light:hover {
+    transform: translateY(-2px) scale(1.03);
+    background: linear-gradient(135deg, 
+      rgba(255, 255, 255, 0.35) 0%, 
+      rgba(255, 255, 255, 0.25) 100%);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .tag-dark {
+    background: linear-gradient(135deg, 
+      var(--color-primary-dark) 0%, 
+      var(--color-primary) 100%);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .tag-dark:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .tag-small {
+      padding: 5px 10px;
+      font-size: 0.75rem;
+    }
+
+    .tag-medium {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+
+    .tag-large {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+</style> 
