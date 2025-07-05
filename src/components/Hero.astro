@@ -1,0 +1,296 @@
+---
+export interface Props {
+  title: string;
+  subtitle?: string;
+  description?: string;
+  image?: string;
+  imageAlt?: string;
+  showButton?: boolean;
+  buttonText?: string;
+  buttonHref?: string;
+  class?: string;
+}
+
+const { 
+  title,
+  subtitle,
+  description,
+  image,
+  imageAlt,
+  showButton = false,
+  buttonText = 'Learn More',
+  buttonHref = '#',
+  class: className = '',
+  ...rest 
+} = Astro.props;
+
+const classes = ['hero', className].filter(Boolean).join(' ');
+---
+
+<section class={classes} {...rest}>
+  <div class="hero-content">
+    <div class="hero-text">
+      {subtitle && <p class="hero-subtitle">{subtitle}</p>}
+      <h1 class="hero-title">{title}</h1>
+      {description && <p class="hero-description">{description}</p>}
+      {showButton && (
+        <div class="hero-actions">
+          <a href={buttonHref} class="hero-button">
+            {buttonText}
+          </a>
+        </div>
+      )}
+    </div>
+    {image && (
+      <div class="hero-image-container">
+        <img src={image} alt={imageAlt || title} class="hero-image" />
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  /* ==========================================================================
+     HERO COMPONENT
+     ========================================================================== */
+
+  .hero {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-12) 0;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    max-width: var(--layout-width);
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+    align-items: center;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.1;
+    color: var(--color-text);
+    margin: 0;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-description {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-base);
+    color: var(--color-text-muted);
+    margin: 0;
+    max-width: 600px;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+  }
+
+  .hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    text-decoration: none;
+    color: var(--color-white);
+    background: var(--gradient-primary);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    transition: all var(--transition-medium);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+  }
+
+  .hero-button:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .hero-button:hover::before {
+    left: 100%;
+  }
+
+  .hero-image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-2xl);
+    transition: transform var(--transition-medium);
+  }
+
+  .hero-image:hover {
+    transform: scale(1.05);
+  }
+
+  /* Background Effects */
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 20%, var(--color-primary-highlight) 0%, transparent 50%);
+    opacity: 0.1;
+    z-index: -1;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 70% 80%, var(--color-secondary) 0%, transparent 50%);
+    opacity: 0.05;
+    z-index: -1;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .hero-content {
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+      text-align: center;
+    }
+
+    .hero-actions {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      min-height: 50vh;
+      padding: var(--space-8) 0;
+    }
+
+    .hero-content {
+      padding: 0 var(--space-md);
+      gap: var(--space-6);
+    }
+
+    .hero-text {
+      gap: var(--space-4);
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .hero-description {
+      font-size: var(--font-size-base);
+    }
+
+    .hero-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero {
+      padding: var(--space-6) 0;
+    }
+
+    .hero-content {
+      padding: 0 var(--space-sm);
+    }
+
+    .hero-title {
+      font-size: clamp(1.8rem, 10vw, 2.5rem);
+    }
+
+    .hero-subtitle {
+      font-size: var(--font-size-base);
+    }
+  }
+
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-text {
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .hero-image-container {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+  }
+
+  /* Dark Mode Support */
+  @media (prefers-color-scheme: dark) {
+    .hero-title {
+      color: var(--color-white);
+    }
+
+    .hero-description {
+      color: var(--color-text-muted-dark);
+    }
+  }
+</style> 

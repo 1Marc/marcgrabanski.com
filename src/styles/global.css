@@ -32,24 +32,21 @@
 /* ==========================================================================
    COMPONENTS LAYER
    ========================================================================== */
-@import url("components/button.css");
-@import url("components/card.css");
-@import url("components/compact-header.css");
-@import url("components/hero.css");
-@import url("components/featured-section.css");
-@import url("components/article-grid.css");
-@import url("components/tags-section.css");
-@import url("components/about-section.css");
-@import url("components/article.css");
-@import url("components/post.css");
-@import url("components/post-template-details.css");
-@import url("components/page-template-details.css");
-@import url("components/menu.css");
-@import url("components/links.css");
-@import url("components/sidebar.css");
-@import url("components/about.css");
+
+/* Note: Most components have been converted to Astro components with scoped styles */
+/* Only keeping essential global styles and utilities */
+
+/* Navigation Components */
+@import url("components/navigation.css");
+
+/* Content Components */
+@import url("components/content.css");
+
+/* Homepage Components */
+@import url("components/home.css");
+
+/* Syntax Highlighting (global styles needed) */
 @import url("components/syntax-highlighting.css");
-@import url("components/layout.css");
 
 /* ==========================================================================
    LEGACY COMPONENTS (to be refactored)

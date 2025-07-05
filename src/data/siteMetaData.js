@@ -6,6 +6,10 @@ export const site = {
   copyright: "© All rights reserved.",
   menu: [
     {
+      label: "About",
+      path: "/about",
+    },
+    {
       label: "All Articles",
       path: "/articles/1",
     },

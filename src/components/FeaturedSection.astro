@@ -1,0 +1,380 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  articles: Array<{
+    title: string;
+    description?: string;
+    date?: string;
+    url: string;
+    image?: string;
+    tags?: string[];
+  }>;
+  showViewAll?: boolean;
+  viewAllUrl?: string;
+  class?: string;
+}
+
+const { 
+  title,
+  description,
+  articles,
+  showViewAll = false,
+  viewAllUrl = '/articles',
+  class: className = '',
+  ...rest 
+} = Astro.props;
+
+const classes = ['featured-section', className].filter(Boolean).join(' ');
+---
+
+<section class={classes} {...rest}>
+  <div class="featured-header">
+    <h2 class="featured-title">{title}</h2>
+    {description && <p class="featured-description">{description}</p>}
+    {showViewAll && (
+      <a href={viewAllUrl} class="featured-view-all">
+        View All Articles
+      </a>
+    )}
+  </div>
+  
+  <div class="featured-grid">
+    {articles.map((article, index) => (
+      <article class={`featured-card ${index === 0 ? 'featured-card--primary' : ''}`}>
+        {article.image && (
+          <div class="featured-image-container">
+            <img src={article.image} alt={article.title} class="featured-image" />
+          </div>
+        )}
+        <div class="featured-content">
+          <header class="featured-article-header">
+            {article.date && (
+              <time class="featured-date" datetime={article.date}>
+                {new Date(article.date).toLocaleDateString()}
+              </time>
+            )}
+            <h3 class="featured-article-title">
+              <a href={article.url} class="featured-link">
+                {article.title}
+              </a>
+            </h3>
+          </header>
+          {article.description && (
+            <p class="featured-article-description">{article.description}</p>
+          )}
+          {article.tags && article.tags.length > 0 && (
+            <div class="featured-tags">
+              {article.tags.slice(0, 3).map((tag) => (
+                <span class="featured-tag">{tag}</span>
+              ))}
+            </div>
+          )}
+        </div>
+      </article>
+    ))}
+  </div>
+</section>
+
+<style>
+  /* ==========================================================================
+     FEATURED SECTION COMPONENT
+     ========================================================================== */
+
+  .featured-section {
+    width: 100%;
+    padding: var(--space-12) 0;
+  }
+
+  .featured-header {
+    text-align: center;
+    margin-bottom: var(--space-10);
+  }
+
+  .featured-title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text);
+    margin: 0 0 var(--space-4) 0;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .featured-description {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-base);
+    color: var(--color-text-muted);
+    margin: 0 0 var(--space-6) 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .featured-view-all {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary);
+    background: var(--color-primary-highlight);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+
+  .featured-view-all:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .featured-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: var(--space-6);
+    max-width: var(--layout-width);
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+  }
+
+  .featured-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-medium);
+    height: 100%;
+  }
+
+  .featured-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .featured-card--primary {
+    grid-row: span 2;
+  }
+
+  .featured-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .featured-card--primary .featured-image-container {
+    height: 300px;
+  }
+
+  .featured-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-medium);
+  }
+
+  .featured-card:hover .featured-image {
+    transform: scale(1.05);
+  }
+
+  .featured-content {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-6);
+    flex: 1;
+  }
+
+  .featured-card--primary .featured-content {
+    padding: var(--space-8);
+  }
+
+  .featured-article-header {
+    margin-bottom: var(--space-4);
+  }
+
+  .featured-date {
+    display: block;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-2);
+  }
+
+  .featured-article-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  .featured-card--primary .featured-article-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .featured-link {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+  }
+
+  .featured-link:hover {
+    color: var(--color-primary);
+  }
+
+  .featured-article-description {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-text-muted);
+    margin: 0 0 var(--space-4) 0;
+    flex: 1;
+  }
+
+  .featured-card--primary .featured-article-description {
+    font-size: var(--font-size-lg);
+  }
+
+  .featured-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-top: auto;
+  }
+
+  .featured-tag {
+    display: inline-block;
+    padding: var(--space-1) var(--space-3);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary);
+    background: var(--color-primary-highlight);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+  }
+
+  .featured-tag:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .featured-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4);
+    }
+
+    .featured-card--primary {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .featured-section {
+      padding: var(--space-8) 0;
+    }
+
+    .featured-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-4);
+      padding: 0 var(--space-md);
+    }
+
+    .featured-card--primary {
+      grid-column: span 1;
+    }
+
+    .featured-title {
+      font-size: var(--font-size-xl);
+    }
+
+    .featured-description {
+      font-size: var(--font-size-base);
+    }
+
+    .featured-content {
+      padding: var(--space-4);
+    }
+
+    .featured-card--primary .featured-content {
+      padding: var(--space-6);
+    }
+
+    .featured-article-title {
+      font-size: var(--font-size-base);
+    }
+
+    .featured-card--primary .featured-article-title {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .featured-grid {
+      padding: 0 var(--space-sm);
+    }
+
+    .featured-content {
+      padding: var(--space-3);
+    }
+
+    .featured-card--primary .featured-content {
+      padding: var(--space-4);
+    }
+  }
+
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .featured-card {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .featured-card:nth-child(1) { animation-delay: 0.1s; }
+  .featured-card:nth-child(2) { animation-delay: 0.2s; }
+  .featured-card:nth-child(3) { animation-delay: 0.3s; }
+
+  /* Dark Mode Support */
+  @media (prefers-color-scheme: dark) {
+    .featured-card {
+      background: var(--color-background-dark);
+      border: 1px solid var(--color-border-dark);
+    }
+
+    .featured-link {
+      color: var(--color-text-dark);
+    }
+
+    .featured-link:hover {
+      color: var(--color-primary);
+    }
+
+    .featured-article-description {
+      color: var(--color-text-muted-dark);
+    }
+
+    .featured-tag {
+      background: var(--color-primary-highlight-dark);
+      color: var(--color-primary);
+    }
+
+    .featured-tag:hover {
+      background: var(--color-primary);
+      color: var(--color-white);
+    }
+  }
+</style> 

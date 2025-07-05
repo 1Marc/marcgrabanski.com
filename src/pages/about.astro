@@ -1,0 +1,113 @@
+---
+import Layout from '../layouts/Layout.astro';
+import About from '../components/About.astro';
+import { site } from "../data/siteMetaData.js";
+---
+
+<Layout title="About - Marc Grabanski">
+	<div class="about-page">
+		<div class="about-header">
+			<div class="about-header-content">
+				<h1 class="about-title">
+					<span class="highlight">About</span>
+					<br />
+					<span class="subtitle">Marc Grabanski</span>
+				</h1>
+				<p class="about-subtitle">
+					Founder, Developer, Health Enthusiast
+				</p>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="content__inner">
+				<div class="content-wrapper">
+					<About />
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.about-page {
+		min-height: 100vh;
+	}
+
+	.about-header {
+		background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+		color: white;
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.about-header-content {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.about-title {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+		line-height: 1.2;
+	}
+
+	.about-title .highlight {
+		background: linear-gradient(135deg, #3b82f6 0%, #ef4444 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.about-title .subtitle {
+		font-size: 2rem;
+		font-weight: 400;
+		opacity: 0.9;
+	}
+
+	.about-subtitle {
+		font-size: 1.25rem;
+		opacity: 0.8;
+		margin-top: 1rem;
+	}
+
+	.content {
+		padding: 4rem 0;
+	}
+
+	.content__inner {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.content-wrapper {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 768px) {
+		.about-title {
+			font-size: 2rem;
+		}
+
+		.about-title .subtitle {
+			font-size: 1.5rem;
+		}
+
+		.about-header {
+			padding: 2rem 0;
+		}
+
+		.content {
+			padding: 2rem 0;
+		}
+
+		.about-header-content,
+		.content__inner {
+			padding: 0 1rem;
+		}
+	}
+</style> 

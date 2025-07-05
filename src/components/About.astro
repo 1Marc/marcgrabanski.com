@@ -1,0 +1,81 @@
+---
+import { YouTube } from "@astro-community/astro-embed-youtube";
+---
+
+<style>
+  .about {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .about h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+  }
+
+  .about p {
+    margin-bottom: 1rem;
+  }
+
+  .about ul {
+    margin-bottom: 1rem;
+  }
+
+  .about li {
+    margin-bottom: 0.5rem;
+  }
+
+  .about a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .about a:hover {
+    text-decoration: underline;
+  }
+
+  .youtube-container {
+    margin: 2rem 0;
+  }
+</style>
+
+<div class="about">
+  <p>
+    I've built and run <a href="https://frontendmasters.com">Frontend Masters</a>, an online education company, for over a decade to fulfill my mission of equipping developers with the skills to turn their dreams into reality.
+  </p>
+
+  <p>Here is the (5 minute) story of starting the company:</p>
+
+  <div class="youtube-container">
+    <YouTube
+      id="KL5vEhdFpgQ"
+      poster="https://i.ytimg.com/vi/KL5vEhdFpgQ/maxresdefault.jpg"
+      params="controls=1"
+    />
+  </div>
+
+  <h3>Welcome to My Career Journal. Occasionally I post things I've learned along the way!</h3>
+
+  <p>
+    My latest project is The Frontend Masters Podcast showcasing the stories of our instructors. You can find on <a href="https://open.spotify.com/show/6El1Q4QV8OTAJVY2DWKMbo">Spotify</a>, <a href="https://podcasts.apple.com/gb/podcast/the-frontend-masters-podcast/id1710458565">Apple Podcasts</a>, and <a href="https://www.youtube.com/playlist?list=PLum3CyP95edxwLIHenKw0nMHlfvr76ZSU">YouTube</a>.
+  </p>
+
+  <p>In the past I've…</p>
+
+  <ul>
+    <li><em>created</em> open source projects such as the <a href="https://jqueryui.com/datepicker/">jQuery UI Datepicker</a> and most recently <a href="https://github.com/1Marc/todomvc-vanillajs-2022">Modern Vanilla JavaScript TodoMVC</a></li>
+    <li><em>podcasted</em> both starting podcasts and <a href="/podcasts">interviewed on them</a>.</li>
+    <li><em>taught</em> workshops (my favorite memory was teaching to 150+ people in Israel).</li>
+    <li><em>created</em> conferences for 200+ people at Google HQ.</li>
+    <li><em>spoke</em> at 60+ conferences on UI development topics (see past example <a href="https://www.youtube.com/watch?v=a2K_pOp2ydQ">Whirlwind Tour of SVG</a>.</li>
+    <li><em>blogged</em> 200+ articles, mostly between 2007 and 2010.</li>
+  </ul>
+
+  <p>
+    If you've made it this far, you should probably connect with me on <a href="https://twitter.com/1marc">Twitter / X</a> and <a href="http://www.linkedin.com/in/1marc">LinkedIn</a>.
+  </p>
+
+  <p>Thanks for visiting! 😀</p>
+</div> 

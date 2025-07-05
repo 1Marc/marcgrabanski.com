@@ -1,0 +1,99 @@
+---
+import { Image } from "astro:assets";
+import PageLayout from "../../layouts/PageLayout.astro";
+import shoptalkshowImage from "./_shoptalkshow.png";
+
+const frontmatter = {
+  pageTitle: "Podcast Appearances",
+  description: "Podcast appearances and interviews featuring Marc Grabanski discussing web development, business, and online education."
+};
+---
+
+<style>
+  .podcasts {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .podcasts h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+  }
+
+  .podcasts h2:first-child {
+    margin-top: 0;
+  }
+
+  .podcasts p {
+    margin-bottom: 1rem;
+  }
+
+  .podcasts a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .podcasts a:hover {
+    text-decoration: underline;
+  }
+
+  .podcast-image {
+    margin: 2rem 0;
+    display: block;
+  }
+
+  .podcast-image img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+
+<PageLayout frontmatter={frontmatter}>
+  <div class="podcasts">
+    <h2>Most Recent Podcast</h2>
+    
+    <p>
+      <a href="https://www.frontendhappyhour.com/episodes/online-learning-on-the-rocks/">Frontend Happy Hour: Learning on the rocks</a> – There are many options to learn about software development and how to code. In this episode, we are joined by the CEO of Frontend Masters, Marc Grabanski to get his insights into online learning and what to expect in the future.
+    </p>
+
+    <h2>The Frontend Masters Podcast</h2>
+    
+    <p>
+      My latest project is The Frontend Masters Podcast showcasing the stories of our instructors. You can find on <a href="https://open.spotify.com/show/6El1Q4QV8OTAJVY2DWKMbo">Spotify</a>, <a href="https://podcasts.apple.com/gb/podcast/the-frontend-masters-podcast/id1710458565">Apple Podcasts</a>, and <a href="https://www.youtube.com/playlist?list=PLum3CyP95edxwLIHenKw0nMHlfvr76ZSU">YouTube</a>.
+    </p>
+
+    <h2>My Personal Favorite Interview</h2>
+    
+    <p>
+      <a href="https://open.spotify.com/episode/3BypKRz30vSFC3XKlwEmNz">Software Unscripted: Back to Basics in Production</a> – Richard and Frontend Masters founder Marc Grabanski talk about a "back to basics" approach to Web development, not based on any frameworks or unnecessary dependencies.
+    </p>
+
+    <h2>More Podcasts</h2>
+    
+    <a href="https://shoptalkshow.com/408/" class="podcast-image">
+      <Image width={640} src={shoptalkshowImage} alt="ShopTalk Show: Frontend Masterery With Marc Grabanski" />
+    </a>
+
+    <p>
+      <a href="https://shoptalkshow.com/408/">ShopTalk Show: Frontend Masterery With Marc Grabanski</a> – What Frontend Masters is, who it's for, how they decide what to teach, what's coming up, and the question everyone asks: what do I learn next?
+    </p>
+
+    <p>
+      <a href="https://devchat.tv/js-jabber/178-jsj-tech-education-and-the-business-of-running-front-end-masters-with-marc-grabanski">JavaScript Jabber: Tech Education and the Business of Frontend Masters</a> -- answering a lot of questions about e-learning and telling the history of Frontend Masters.
+    </p>
+
+    <p>
+      <a href="http://talkabout.knowpriorities.com/3">Know Priorities: Marc Grabanski</a> - I spill lots of solid business tools and tactics. This is the deepest I've ever gotten into the business side.
+    </p>
+
+    <p>
+      <a href="http://shoptalkshow.com/episodes/134-marc-grabanski/">ShopTalk Show: Marc Grabanski</a> - mostly about the Q&A. Discussing markdown, JSON and WordPress script loading.
+    </p>
+
+    <p>
+      <a href="http://www.truefocusmedia.com/how-to-create-video-courses-from-live-online-and-in-person-workshops-marc-grabanski/">Online Course Coach: How to create video courses from LIVE online and in-person workshops with Marc Grabanski</a> - centered around the video production side and how to produce and promote online courses.
+    </p>
+  </div>
+</PageLayout> 

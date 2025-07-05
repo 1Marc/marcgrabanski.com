@@ -1,0 +1,193 @@
+---
+export interface Props {
+  tags: Array<{
+    name: string;
+    count: number;
+    url: string;
+  }>;
+  title?: string;
+  showCount?: boolean;
+  maxTags?: number;
+  class?: string;
+}
+
+const { 
+  tags,
+  title = 'Popular Tags',
+  showCount = true,
+  maxTags,
+  class: className = '',
+  ...rest 
+} = Astro.props;
+
+const displayTags = maxTags ? tags.slice(0, maxTags) : tags;
+const classes = ['tags-section', className].filter(Boolean).join(' ');
+---
+
+<section class={classes} {...rest}>
+  {title && <h2 class="tags-title">{title}</h2>}
+  <div class="tags-grid">
+    {displayTags.map((tag) => (
+      <a href={tag.url} class="tag-item">
+        <span class="tag-name">{tag.name}</span>
+        {showCount && <span class="tag-count">({tag.count})</span>}
+      </a>
+    ))}
+  </div>
+</section>
+
+<style>
+  /* ==========================================================================
+     TAGS SECTION COMPONENT
+     ========================================================================== */
+
+  .tags-section {
+    width: 100%;
+    padding: var(--space-8) 0;
+  }
+
+  .tags-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text);
+    margin: 0 0 var(--space-6) 0;
+    text-align: center;
+  }
+
+  .tags-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .tag-item {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary);
+    background: var(--color-primary-highlight);
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    border: 1px solid transparent;
+  }
+
+  .tag-item:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .tag-name {
+    font-weight: var(--font-weight-medium);
+  }
+
+  .tag-count {
+    font-size: var(--font-size-xs);
+    opacity: 0.8;
+    font-weight: var(--font-weight-normal);
+  }
+
+  /* Size Variants */
+  .tags-section--small .tag-item {
+    padding: var(--space-1) var(--space-3);
+    font-size: var(--font-size-xs);
+  }
+
+  .tags-section--large .tag-item {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--font-size-base);
+  }
+
+  /* Layout Variants */
+  .tags-section--centered .tags-grid {
+    justify-content: center;
+  }
+
+  .tags-section--left .tags-grid {
+    justify-content: flex-start;
+  }
+
+  .tags-section--right .tags-grid {
+    justify-content: flex-end;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .tags-section {
+      padding: var(--space-6) 0;
+    }
+
+    .tags-title {
+      font-size: var(--font-size-lg);
+      margin-bottom: var(--space-4);
+    }
+
+    .tags-grid {
+      gap: var(--space-2);
+      padding: 0 var(--space-md);
+    }
+
+    .tag-item {
+      padding: var(--space-2) var(--space-3);
+      font-size: var(--font-size-xs);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .tags-grid {
+      padding: 0 var(--space-sm);
+    }
+
+    .tag-item {
+      padding: var(--space-1) var(--space-2);
+    }
+  }
+
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .tag-item {
+    animation: fadeInUp 0.3s ease-out;
+  }
+
+  .tag-item:nth-child(1) { animation-delay: 0.1s; }
+  .tag-item:nth-child(2) { animation-delay: 0.2s; }
+  .tag-item:nth-child(3) { animation-delay: 0.3s; }
+  .tag-item:nth-child(4) { animation-delay: 0.4s; }
+  .tag-item:nth-child(5) { animation-delay: 0.5s; }
+  .tag-item:nth-child(6) { animation-delay: 0.6s; }
+
+  /* Dark Mode Support */
+  @media (prefers-color-scheme: dark) {
+    .tags-title {
+      color: var(--color-text-dark);
+    }
+
+    .tag-item {
+      background: var(--color-primary-highlight-dark);
+      color: var(--color-primary);
+    }
+
+    .tag-item:hover {
+      background: var(--color-primary);
+      color: var(--color-white);
+    }
+  }
+</style> 

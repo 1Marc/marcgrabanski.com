@@ -1,0 +1,183 @@
+---
+export interface Props {
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+  href?: string;
+  class?: string;
+}
+
+const { 
+  variant = 'primary', 
+  size = 'md', 
+  href,
+  class: className = '',
+  ...rest 
+} = Astro.props;
+
+const baseClass = 'btn';
+const variantClass = `btn-${variant}`;
+const sizeClass = `btn-${size}`;
+const classes = [baseClass, variantClass, sizeClass, className].filter(Boolean).join(' ');
+
+const Tag = href ? 'a' : 'button';
+---
+
+<Tag class={classes} href={href} {...rest}>
+  <slot />
+</Tag>
+
+<style>
+  /* ==========================================================================
+     BUTTON COMPONENT
+     ========================================================================== */
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    border: none;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Size Variants */
+  .btn-xs {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--font-size-sm);
+    line-height: 1.2;
+  }
+
+  .btn-sm {
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--font-size-sm);
+    line-height: 1.3;
+  }
+
+  .btn-md {
+    padding: var(--space-4) var(--space-6);
+    font-size: var(--font-size-base);
+    line-height: 1.4;
+  }
+
+  .btn-lg {
+    padding: var(--space-5) var(--space-8);
+    font-size: var(--font-size-lg);
+    line-height: 1.4;
+  }
+
+  .btn-xl {
+    padding: var(--space-6) var(--space-10);
+    font-size: var(--font-size-xl);
+    line-height: 1.4;
+  }
+
+  /* Variant Styles */
+  .btn-primary {
+    background: var(--gradient-primary);
+    color: var(--color-white);
+    box-shadow: var(--shadow-md);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+
+  .btn-secondary {
+    background: var(--color-secondary);
+    color: var(--color-white);
+    box-shadow: var(--shadow-md);
+  }
+
+  .btn-secondary:hover {
+    background: var(--color-secondary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
+
+  .btn-outline:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--color-primary);
+  }
+
+  .btn-ghost:hover {
+    background: var(--color-primary-highlight);
+    transform: translateY(-1px);
+  }
+
+  /* Focus States */
+  .btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-primary-highlight);
+  }
+
+  /* Disabled State */
+  .btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+  }
+
+  /* Loading State */
+  .btn.loading {
+    position: relative;
+    color: transparent;
+  }
+
+  .btn.loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin: -8px 0 0 -8px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .btn-lg {
+      padding: var(--space-4) var(--space-6);
+      font-size: var(--font-size-base);
+    }
+
+    .btn-xl {
+      padding: var(--space-5) var(--space-8);
+      font-size: var(--font-size-lg);
+    }
+  }
+</style> 
