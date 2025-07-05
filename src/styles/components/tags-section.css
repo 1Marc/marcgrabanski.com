@@ -1,0 +1,514 @@
+/* ==========================================================================
+   TAGS SECTION COMPONENT
+   ========================================================================== */
+
+.tags-section {
+  padding: var(--space-xl) 0;
+  margin-bottom: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.tags-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 70% 30%,
+      rgba(152, 199, 241, 0.08) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 30% 70%,
+      rgba(238, 111, 107, 0.06) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
+
+.tags-section .section-title {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--space-4);
+}
+
+.tags-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-xl);
+}
+
+.tag-card {
+  background: var(--card-background);
+  border: var(--card-border);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--duration-300) var(--ease-in-out);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tag-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-card);
+  opacity: 0;
+  transition: opacity var(--duration-300) var(--ease-in-out);
+  pointer-events: none;
+}
+
+.tag-card::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent,
+    transparent
+  );
+  opacity: 0;
+  transition: opacity var(--duration-500) var(--ease-in-out);
+  pointer-events: none;
+}
+
+.tag-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.tag-card:hover::before {
+  opacity: 1;
+}
+
+.tag-card:hover::after {
+  opacity: 1;
+  animation: rotate 3s linear infinite;
+}
+
+.tag-icon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: var(--space-4);
+  color: var(--color-primary);
+  transition: all var(--duration-300) var(--ease-in-out);
+  position: relative;
+  z-index: 1;
+}
+
+.tag-card:hover .tag-icon {
+  transform: scale(1.1);
+  color: var(--color-primary-light);
+}
+
+.tag-card h3 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-3);
+  color: var(--color-white);
+  position: relative;
+  z-index: 1;
+}
+
+.tag-card:hover h3 {
+  color: var(--color-primary);
+}
+
+.tag-card p {
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+  color: var(--color-muted);
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.tag-card:hover p {
+  color: var(--color-white);
+}
+
+/* ==========================================================================
+   CONNECT SECTION COMPONENT
+   ========================================================================== */
+
+.connect-section {
+  padding: var(--space-xl) 0;
+  margin-bottom: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.connect-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 30% 30%,
+      rgba(152, 199, 241, 0.08) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 70% 70%,
+      rgba(238, 111, 107, 0.06) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
+
+.connect-section .section-title {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--space-4);
+}
+
+.connect-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-xl);
+}
+
+.connect-card {
+  background: var(--card-background);
+  border: var(--card-border);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--duration-300) var(--ease-in-out);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connect-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-card);
+  opacity: 0;
+  transition: opacity var(--duration-300) var(--ease-in-out);
+  pointer-events: none;
+}
+
+.connect-card::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent,
+    transparent
+  );
+  opacity: 0;
+  transition: opacity var(--duration-500) var(--ease-in-out);
+  pointer-events: none;
+}
+
+.connect-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.connect-card:hover::before {
+  opacity: 1;
+}
+
+.connect-card:hover::after {
+  opacity: 1;
+  animation: rotate 3s linear infinite;
+}
+
+.connect-icon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: var(--space-4);
+  color: var(--color-primary);
+  transition: all var(--duration-300) var(--ease-in-out);
+  position: relative;
+  z-index: 1;
+}
+
+.connect-card:hover .connect-icon {
+  transform: scale(1.1);
+  color: var(--color-primary-light);
+}
+
+.connect-card h3 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-3);
+  color: var(--color-white);
+  position: relative;
+  z-index: 1;
+}
+
+.connect-card:hover h3 {
+  color: var(--color-primary);
+}
+
+.connect-card p {
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+  color: var(--color-muted);
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.connect-card:hover p {
+  color: var(--color-white);
+}
+
+/* ==========================================================================
+   TESTIMONIALS SECTION COMPONENT
+   ========================================================================== */
+
+.testimonials-section {
+  padding: var(--space-xl) 0;
+  margin-bottom: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 50% 50%,
+      rgba(152, 199, 241, 0.05) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at 20% 80%,
+      rgba(238, 111, 107, 0.04) 0%,
+      transparent 70%
+    );
+  pointer-events: none;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+  position: relative;
+  z-index: 1;
+}
+
+.testimonials-section .section-title {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--space-4);
+}
+
+.testimonials-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-xl);
+}
+
+.testimonial-quote {
+  background: var(--card-background);
+  border: var(--card-border);
+  border-radius: var(--card-border-radius);
+  padding: var(--space-6);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--duration-300) var(--ease-in-out);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-quote:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.testimonial-quote::before {
+  content: """;
+  position: absolute;
+  top: var(--space-4);
+  left: var(--space-4);
+  font-size: 4rem;
+  color: var(--color-primary);
+  opacity: 0.3;
+  font-family: serif;
+  line-height: 1;
+}
+
+.testimonial-author {
+  margin-top: auto;
+  font-size: var(--font-size-sm);
+  color: var(--color-muted);
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-author strong {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+  font-style: normal;
+}
+
+.testimonial-author span {
+  color: var(--color-muted);
+  font-weight: var(--font-weight-normal);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .tags-section {
+    padding: var(--space-lg) 0;
+  }
+
+  .connect-section {
+    padding: var(--space-lg) 0;
+  }
+
+  .testimonials-section {
+    padding: var(--space-lg) 0;
+  }
+
+  .tags-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .connect-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .testimonials-list {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .tag-card {
+    padding: var(--space-4);
+  }
+
+  .connect-card {
+    padding: var(--space-4);
+  }
+
+  .testimonial-quote {
+    padding: var(--space-4);
+  }
+
+  .tag-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .connect-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tags-grid {
+    gap: var(--space-3);
+  }
+
+  .connect-grid {
+    gap: var(--space-3);
+  }
+
+  .testimonials-list {
+    gap: var(--space-3);
+  }
+
+  .tag-card {
+    padding: var(--space-3);
+  }
+
+  .connect-card {
+    padding: var(--space-3);
+  }
+
+  .testimonial-quote {
+    padding: var(--space-3);
+  }
+
+  .tag-card h3 {
+    font-size: var(--font-size-base);
+  }
+
+  .connect-card h3 {
+    font-size: var(--font-size-base);
+  }
+
+  .tag-card p {
+    font-size: 0.75rem;
+  }
+
+  .connect-card p {
+    font-size: 0.75rem;
+  }
+
+  .tag-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .connect-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+} 

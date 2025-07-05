@@ -1,0 +1,71 @@
+/* ==========================================================================
+   LAYOUT COMPONENT
+   ========================================================================== */
+
+/* Content Wrapper */
+.content-wrapper {
+  max-width: var(--layout-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+/* Layout Classes */
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-home {
+  width: 100%;
+  max-width: 100%;
+}
+
+.layout-home .content {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Container Utilities */
+.container {
+  max-width: var(--layout-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.container-compact {
+  max-width: var(--layout-width-compact);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 0 var(--space-md);
+  }
+
+  .container,
+  .container-compact {
+    padding: 0 var(--space-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .content-wrapper {
+    padding: 0 var(--space-sm);
+  }
+
+  .container,
+  .container-compact {
+    padding: 0 var(--space-sm);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .layout {
+    display: flex;
+  }
+}

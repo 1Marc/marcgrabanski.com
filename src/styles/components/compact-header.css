@@ -1,0 +1,203 @@
+/* ==========================================================================
+   COMPACT HEADER COMPONENT
+   ========================================================================== */
+
+.compact-header {
+  background: var(--gradient-background);
+  color: var(--color-white);
+  padding: var(--space-sm) 0;
+  position: sticky;
+  top: 0;
+  z-index: var(--z-index-sticky);
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.compact-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 20% 80%,
+      rgba(152, 199, 241, 0.15) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(238, 111, 107, 0.12) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 40%,
+      rgba(152, 199, 241, 0.08) 0%,
+      transparent 70%
+    );
+  pointer-events: none;
+}
+
+.compact-header-content {
+  max-width: var(--layout-width-compact);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.compact-home-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  text-decoration: none;
+  color: inherit;
+  transition: opacity var(--duration-200) var(--ease-in-out);
+}
+
+.compact-home-link:hover {
+  opacity: 0.8;
+}
+
+.compact-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+  transition: all var(--duration-300) var(--ease-in-out);
+}
+
+.compact-home-link:hover .compact-avatar {
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+.compact-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.compact-name {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.highlight-compact {
+  background: var(--gradient-primary);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+.highlight-compact::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  transform: scaleX(1);
+}
+
+.compact-subtitle {
+  font-size: var(--font-size-small);
+  color: var(--color-white);
+  opacity: 0.8;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.compact-nav {
+  display: flex;
+  align-items: center;
+}
+
+.compact-nav-link {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-base);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-lg);
+  transition: all var(--duration-300) var(--ease-in-out);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid transparent;
+}
+
+.compact-nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.compact-nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transition: transform var(--duration-300) var(--ease-in-out);
+}
+
+.compact-nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .compact-header-content {
+    padding: 0 var(--space-md);
+  }
+
+  .compact-identity {
+    gap: 3px;
+  }
+
+  .compact-name {
+    font-size: var(--font-size-base);
+  }
+
+  .compact-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .compact-avatar {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .compact-subtitle {
+    display: none;
+  }
+}

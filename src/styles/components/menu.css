@@ -1,3 +1,7 @@
+/* ==========================================================================
+   MENU COMPONENT
+   ========================================================================== */
+
 .menu {
   margin-bottom: var(--space-md);
 }
@@ -8,7 +12,7 @@
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: var(--space-2);
 }
 
 .menu__list-item {
@@ -19,12 +23,12 @@
 .menu__list-item-link {
   font-size: var(--font-size-base);
   color: var(--color-primary);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   text-decoration: none;
-  padding: 0.75rem 1rem;
+  padding: var(--space-3) var(--space-4);
   border: 1px solid rgba(152, 199, 241, 0.3);
-  border-radius: 12px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: var(--radius-xl);
+  transition: all var(--duration-300) var(--ease-in-out);
   background: rgba(152, 199, 241, 0.05);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -46,7 +50,7 @@
     rgba(152, 199, 241, 0.2),
     transparent
   );
-  transition: left 0.5s ease;
+  transition: left var(--duration-500) var(--ease-in-out);
 }
 
 .menu__list-item-link:hover::before {
@@ -59,30 +63,22 @@
   background: rgba(152, 199, 241, 0.15);
   border-color: rgba(152, 199, 241, 0.6);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(152, 199, 241, 0.3);
+  box-shadow: var(--shadow-lg);
   border-bottom: none;
 }
 
 .menu__list-item-link--active {
   color: var(--color-background);
-  background: linear-gradient(
-    135deg,
-    var(--color-primary) 0%,
-    var(--color-secondary) 100%
-  );
+  background: var(--gradient-primary);
   border-color: var(--color-primary);
-  box-shadow: 0 4px 15px rgba(152, 199, 241, 0.4);
-  font-weight: 700;
+  box-shadow: var(--shadow-md);
+  font-weight: var(--font-weight-bold);
   border-bottom: none;
 }
 
 .menu__list-item-link--active:hover {
   color: var(--color-background);
-  background: linear-gradient(
-    135deg,
-    var(--color-primary) 0%,
-    var(--color-secondary) 100%
-  );
+  background: var(--gradient-primary);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(152, 199, 241, 0.4);
+  box-shadow: var(--shadow-lg);
 }

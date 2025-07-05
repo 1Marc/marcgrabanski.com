@@ -1,3 +1,7 @@
+/* ==========================================================================
+   SIDEBAR COMPONENT
+   ========================================================================== */
+
 .sidebar {
   width: 100%;
 }
@@ -16,7 +20,7 @@
 
 .sidebar__author-title {
   font-size: var(--font-size-base);
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   line-height: 1.2;
   margin: var(--space-xs) 0;
 }
@@ -38,12 +42,16 @@
 
 .sidebar__copyright {
   color: color-mix(in srgb, var(--color-gray) 82%, white);
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-sm);
 }
 
 .content__footer {
   display: none;
 }
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
 
 @media screen and (min-width: 960px) {
   .content__footer {

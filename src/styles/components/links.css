@@ -1,3 +1,7 @@
+/* ==========================================================================
+   LINKS COMPONENT
+   ========================================================================== */
+
 .links {
   margin-bottom: var(--space-md);
 }
@@ -15,7 +19,7 @@
   height: 48px;
   width: 48px;
   line-height: 48px;
-  border-radius: 3px;
+  border-radius: var(--radius-sm);
   text-align: center;
 }
 
@@ -24,7 +28,7 @@
 }
 
 .links__list-item a i {
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-sm);
   color: color-mix(in srgb, var(--color-base) 80%, white);
 }
 

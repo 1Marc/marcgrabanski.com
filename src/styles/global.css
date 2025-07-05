@@ -1,24 +1,122 @@
-@import url("variables.css");
-@import url("base/normalize.css");
-@import url("base/generic.css");
-@import url("base/highlight.css");
-@import url("post.css");
-@import url("posttemplatedetails.css");
-@import url("pagetemplatedetails.css");
-@import url("menu.css");
-@import url("links.css");
-@import url("sidebar.css");
-@import url("about.css");
-@import url("home.css");
-@import url("article.css");
+/* ==========================================================================
+   GLOBAL STYLES
+   ========================================================================== */
 
-/* Homepage layout - full width without sidebar */
-.layout-home {
-  width: 100%;
-  max-width: 100%;
+/* ==========================================================================
+   SETTINGS LAYER
+   ========================================================================== */
+@import url("design-system/tokens.css");
+
+/* ==========================================================================
+   TOOLS LAYER
+   ========================================================================== */
+/* No tools layer needed for this project */
+
+/* ==========================================================================
+   GENERIC LAYER
+   ========================================================================== */
+@import url("base/normalize.css");
+@import url("base/reset.css");
+
+/* ==========================================================================
+   ELEMENTS LAYER
+   ========================================================================== */
+@import url("base/typography.css");
+
+/* ==========================================================================
+   UTILITIES LAYER
+   ========================================================================== */
+@import url("utilities/spacing.css");
+@import url("utilities/layout.css");
+
+/* ==========================================================================
+   COMPONENTS LAYER
+   ========================================================================== */
+@import url("components/button.css");
+@import url("components/card.css");
+@import url("components/compact-header.css");
+@import url("components/hero.css");
+@import url("components/featured-section.css");
+@import url("components/article-grid.css");
+@import url("components/tags-section.css");
+@import url("components/about-section.css");
+@import url("components/article.css");
+@import url("components/post.css");
+@import url("components/post-template-details.css");
+@import url("components/page-template-details.css");
+@import url("components/menu.css");
+@import url("components/links.css");
+@import url("components/sidebar.css");
+@import url("components/about.css");
+@import url("components/syntax-highlighting.css");
+@import url("components/layout.css");
+
+/* ==========================================================================
+   LEGACY COMPONENTS (to be refactored)
+   ========================================================================== */
+/* All legacy components have been refactored into the components layer */
+
+/* ==========================================================================
+   GLOBAL UTILITIES
+   ========================================================================== */
+
+/* Background utilities */
+.bg-gradient {
+  background: var(--gradient-background);
 }
 
-.layout-home .content {
-  width: 100%;
-  max-width: 100%;
+.bg-hero {
+  background: var(--gradient-hero);
+}
+
+/* Text gradient utilities */
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animation utilities */
+.animate-fade-in {
+  animation: fadeIn 0.6s var(--ease-out);
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s var(--ease-out);
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.4s var(--ease-out);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

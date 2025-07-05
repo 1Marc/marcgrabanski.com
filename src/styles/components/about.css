@@ -1,9 +1,12 @@
-/* About Section Styles */
+/* ==========================================================================
+   ABOUT COMPONENT
+   ========================================================================== */
+
 .about-section {
   margin-bottom: var(--space-xl);
   padding: var(--space-sm) var(--space-lg) var(--space-md);
   background: var(--color-gray);
-  border-radius: 20px;
+  border-radius: var(--radius-2xl);
   color: #333;
 }
 
@@ -13,17 +16,10 @@
   padding: 0 var(--space-lg);
 }
 
-/* Mobile responsive adjustments */
-@media (max-width: 768px) {
-  .about-content {
-    padding: 0;
-  }
-}
-
 /* About Section Link Styles */
 .about-section a {
   color: var(--color-primary-dark-link);
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   text-decoration: none;
 }
 
@@ -32,4 +28,14 @@
 .about-section a:active {
   color: var(--color-secondary);
   text-decoration: underline;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 0;
+  }
 }

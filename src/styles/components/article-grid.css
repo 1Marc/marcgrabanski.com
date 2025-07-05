@@ -1,0 +1,369 @@
+/* ==========================================================================
+   ARTICLE GRID COMPONENT
+   ========================================================================== */
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-8);
+  margin-bottom: var(--space-xl);
+}
+
+.article-card {
+  background: var(--card-background);
+  border: var(--card-border);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--duration-300) var(--ease-in-out);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-card);
+  opacity: 0;
+  transition: opacity var(--duration-300) var(--ease-in-out);
+  pointer-events: none;
+}
+
+.article-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent,
+    transparent
+  );
+  opacity: 0;
+  transition: opacity var(--duration-500) var(--ease-in-out);
+  pointer-events: none;
+}
+
+.article-card:hover::before {
+  opacity: 1;
+  animation: rotate 3s linear infinite;
+}
+
+.article-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-2xl);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.article-card:hover::after {
+  opacity: 1;
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  font-size: var(--font-size-sm);
+  color: var(--color-muted);
+  position: relative;
+  z-index: 1;
+}
+
+.articles-grid .article-card .article-date {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+.articles-grid .article-meta {
+  margin-bottom: var(--space-3);
+}
+
+.article-tags {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.article-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1) var(--space-3);
+  background: rgba(152, 199, 241, 0.1);
+  color: var(--color-primary);
+  text-decoration: none;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  border: 1px solid rgba(152, 199, 241, 0.3);
+  transition: all var(--duration-200) var(--ease-in-out);
+  position: relative;
+  overflow: hidden;
+}
+
+.article-tag::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(
+    circle,
+    rgba(152, 199, 241, 0.3) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all var(--duration-300) var(--ease-in-out);
+  z-index: -1;
+}
+
+.article-tag:hover {
+  background: rgba(152, 199, 241, 0.2);
+  border-color: rgba(152, 199, 241, 0.5);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.article-tag:hover::before {
+  width: 120%;
+  height: 120%;
+}
+
+.article-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-3);
+  line-height: 1.3;
+  color: var(--color-white);
+  position: relative;
+  z-index: 1;
+}
+
+.article-link {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color var(--duration-200) var(--ease-in-out);
+}
+
+.article-link:hover {
+  color: var(--color-primary);
+}
+
+.article-excerpt {
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--color-muted);
+  margin-bottom: 0;
+  flex-grow: 1;
+  position: relative;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   WORK GRID COMPONENT
+   ========================================================================== */
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-xl);
+}
+
+.work-card {
+  background: var(--card-background);
+  border: var(--card-border);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--duration-300) var(--ease-in-out);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-card);
+  opacity: 0;
+  transition: opacity var(--duration-300) var(--ease-in-out);
+  pointer-events: none;
+}
+
+.work-card::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent,
+    transparent
+  );
+  opacity: 0;
+  transition: opacity var(--duration-500) var(--ease-in-out);
+  pointer-events: none;
+}
+
+.work-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.work-card:hover::before {
+  opacity: 1;
+}
+
+.work-card:hover::after {
+  opacity: 1;
+  animation: rotate 3s linear infinite;
+}
+
+.work-icon {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: var(--space-4);
+  color: var(--color-primary);
+  transition: all var(--duration-300) var(--ease-in-out);
+  position: relative;
+  z-index: 1;
+}
+
+.work-text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.work-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-2);
+  color: var(--color-white);
+}
+
+.work-separator {
+  width: 3rem;
+  height: 2px;
+  background: var(--gradient-primary);
+  margin: var(--space-3) auto;
+  border-radius: var(--radius-full);
+}
+
+.work-description {
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+  color: var(--color-muted);
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .articles-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .article-card {
+    padding: var(--space-4);
+  }
+
+  .work-card {
+    padding: var(--space-4);
+  }
+
+  .article-title {
+    font-size: var(--font-size-lg);
+  }
+
+  .work-title {
+    font-size: var(--font-size-base);
+  }
+
+  .article-tag {
+    padding: var(--space-1) var(--space-2);
+    font-size: 0.75rem;
+  }
+
+  .work-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .articles-grid {
+    gap: var(--space-4);
+  }
+
+  .work-grid {
+    gap: var(--space-3);
+  }
+
+  .article-card {
+    padding: var(--space-3);
+  }
+
+  .work-card {
+    padding: var(--space-3);
+  }
+
+  .article-title {
+    font-size: var(--font-size-base);
+  }
+
+  .work-title {
+    font-size: var(--font-size-sm);
+  }
+
+  .article-excerpt {
+    font-size: var(--font-size-sm);
+  }
+
+  .work-description {
+    font-size: 0.75rem;
+  }
+}
