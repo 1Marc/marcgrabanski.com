@@ -7,13 +7,12 @@ const { node, showTagLinks = true } = Astro.props;
 const { postTitle, description, date, tags } = node.data
 const slug = node.slug
 
-// Format date with full details including weekday
+// Format date with full details (without weekday)
 const formatFullDate = (date: Date) => {
 	const options: Intl.DateTimeFormatOptions = { 
 		year: 'numeric', 
 		month: 'long', 
-		day: 'numeric',
-		weekday: 'long'
+		day: 'numeric'
 	};
 	return new Date(date).toLocaleDateString('en-US', options);
 };

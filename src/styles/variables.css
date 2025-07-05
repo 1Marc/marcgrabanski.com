@@ -34,9 +34,10 @@
   --space-xl: 3rem;
 
   /* Layout */
-  --layout-post-single-max-width: 1024px;
-  --layout-post-single-width: 874px;
+  --layout-post-single-max-width: 1200px;
+  --layout-post-single-width: 1200px;
   --layout-width: 1200px;
+  --layout-width-compact: 985px;
   --layout-breakpoint-sm: 685px;
   --layout-breakpoint-max: 874px;
   --layout-breakpoint-md: 960px;

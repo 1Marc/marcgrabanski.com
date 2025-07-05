@@ -205,9 +205,9 @@ figcaption {
     padding: 0;
   }
 
-  /* Restore padding for homepage specifically */
+  /* Minimal padding for homepage specifically */
   body:has(.hero-section) .content__inner {
-    padding: var(--space-lg) var(--space-md);
+    padding: var(--space-sm) var(--space-xs);
   }
 }
 
