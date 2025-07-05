@@ -206,7 +206,7 @@
 .accomplishments li::before {
   content: "✅";
   position: absolute;
-  left: 0;
+  left: -10px;
   font-size: 1.1em;
 }
 

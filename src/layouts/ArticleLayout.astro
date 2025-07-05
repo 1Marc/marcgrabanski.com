@@ -110,6 +110,27 @@ const formatDate = (date: Date) => {
 </html>
 
 <style>
+  .content {
+    min-height: 100vh;
+    background: linear-gradient(
+      135deg,
+      var(--color-background) 0%,
+      #0a2a4a 50%,
+      #1a3a5a 100%
+    );
+    padding: var(--space-lg) 0;
+  }
+
+  .content__inner {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .content-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
   .article-single__inner {
     position: relative;
   }
@@ -136,6 +157,10 @@ const formatDate = (date: Date) => {
   }
 
   @media (max-width: 768px) {
+    .content {
+      padding: var(--space-md) 0;
+    }
+
     .article-tags {
       gap: 0.25rem;
     }
