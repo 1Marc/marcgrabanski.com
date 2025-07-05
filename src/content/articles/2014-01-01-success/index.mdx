@@ -1,11 +1,10 @@
 ---
-slug: 'success'
+slug: "success"
 postTitle: "Why Some Smart People I Know Don't Become Succesful"
 description: "A guide to avoid some common mistakes smart friends of mine have made with their careers."
 tags:
-  - 'Opinion Pieces'
-  - 'Checklists & Guides'
-date: '2014-01-01T07:15:23.000Z'
+  - "Opinion Pieces"
+date: "2014-01-01T07:15:23.000Z"
 isDraft: false
 isArchived: false
 ---
@@ -22,7 +21,7 @@ This is the default state of the world:
 var World = {
   people: 7203469811,
   peopleWhoCareAboutYourSolution: 0,
-}
+};
 ```
 
 **You have to do something to make `World.peopleWhoCareAboutYourSolution` greater than zero.**
@@ -31,10 +30,10 @@ var World = {
 
 In business things actually work almost the exact opposite as casting a wide net. Business starts with resonating greatly with a very small segment of the population. The internet has created more niches than it has mega corporations. And on top of that, almost every software mega corporations started so niche they have almost laughable stories.
 
-* Groupon? Group-buying coffee and pizza at a local pizzeria.
-* Facebook? A network for connecting with fellow Harvard students.
-* Twitter? Let people know what you ate for dinner.
-* Kahn Academy? Started with a guy in his closet teaching his extended family Math on YouTube.
+- Groupon? Group-buying coffee and pizza at a local pizzeria.
+- Facebook? A network for connecting with fellow Harvard students.
+- Twitter? Let people know what you ate for dinner.
+- Kahn Academy? Started with a guy in his closet teaching his extended family Math on YouTube.
 
 So many companies seemed laughable because they made a solution for such a small segment of the population. Almost none of it was ever made for a big audience.
 
@@ -68,31 +67,31 @@ You need to get comfortable asking for everything... feedback, money, help. Not 
 ```js
 var prospects = [],
   sales = [],
-  feedback = []
+  feedback = [];
 function ask(type) {
-  product.ask(type, person, function(response) {
+  product.ask(type, person, function (response) {
     if (response.sale) {
-      sales.push({ amount: amount, customer: person })
+      sales.push({ amount: amount, customer: person });
     }
     if (response.feedback) {
-      feedback.push(response.feedback)
+      feedback.push(response.feedback);
     }
-  })
+  });
 }
 // Marketing
 for (var i = 0; i < people.length; i++) {
   // some people might give you their email or +1 you
   if (people[i].likes(myProduct)) {
-    prospects.push(people[i])
+    prospects.push(people[i]);
   }
   // ask for sale right away to get feedback!
-  ask('sale', people[i])
+  ask("sale", people[i]);
 }
-product.iterate(feedback, function() {
+product.iterate(feedback, function () {
   for (var i = 0; i < prospects.length; i++) {
-    ask('sale', prospects[i])
+    ask("sale", prospects[i]);
   }
-})
+});
 ```
 
 ## You Aren't Being the Change You Want to See
@@ -101,10 +100,10 @@ Here's the final kicker. Let's say you don't want money, or fame, or fortune, or
 
 Are you being the change you want to see in the world or are you hoarding your treasure?
 
-* If you go to a conference and find yourself complaining there aren't any good talks...create a new talk and submit to call for papers!
-* If you look online for a solution and can't find one so create one for yourself...open source or productize it! 
-* If there are no companies you'd like to work at...create the ideal company you'd love to work for!
-* Can't find a blog you'd like to read...create a blog and start writing what you want to hear!
+- If you go to a conference and find yourself complaining there aren't any good talks...create a new talk and submit to call for papers!
+- If you look online for a solution and can't find one so create one for yourself...open source or productize it!
+- If there are no companies you'd like to work at...create the ideal company you'd love to work for!
+- Can't find a blog you'd like to read...create a blog and start writing what you want to hear!
 
 _Find people who will enjoy what you've made._ It will change you to see people enjoying your creations.
 

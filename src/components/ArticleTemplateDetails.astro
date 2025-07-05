@@ -20,8 +20,8 @@ const prev = allArticles[articleIndex + 1];
 const next = allArticles[articleIndex - 1];
 ---
 
-<div>
-  <div>
+<div class="article-template">
+  <div class="home-button-container">
     <a class="post-single__home-button" href="/">
       <img
         src={profilePic.src}
@@ -29,48 +29,57 @@ const next = allArticles[articleIndex - 1];
         width="75"
         height="75"
         alt={author.name}
-      /><br />
+      />
+      <br />
       Home
     </a>
   </div>
+  
   <div class="post-single">
     <div class="post-single__inner">
-      <h1 class="post-single__title">{post.isArchived ? "[Archived] " : ""}{post.postTitle}</h1>
+      <h1 class="post-single__title">
+        {post.isArchived ? "[Archived] " : ""}{post.postTitle}
+      </h1>
+      
       <div class="post-single__date">
         {isBeforeDate(post.date, '2007-05-06') ? (
           <time>Written Sometime Before 2007</time>
         ) : (
           formatDate(post.date)
         )}
-    </div>
-    
-    <div class="post-single__body">
-      <slot />
-    </div>
+      </div>
+      
+      <div class="post-single__body">
+        <slot />
+      </div>
 
-    <div class="post-single__footer">
-      <div class="post-single__tags">
-        <ul class="post-single__tags-list">
-          {tags &&
-            tags.map((tag: { path: string; label: string; }) => (
-              <li class="post-single__tags-list-item">
-                <a href={tag.path} class="post-single__tags-list-item-link">
-                  {tag.label}
-                </a>
-              </li>
-            ))}
-        </ul>
+      <div class="post-single__footer">
+        <div class="post-single__tags">
+          <ul class="post-single__tags-list">
+            {tags &&
+              tags.map((tag: { path: string; label: string; }) => (
+                <li class="post-single__tags-list-item">
+                  <a href={tag.path} class="post-single__tags-list-item-link">
+                    {tag.label}
+                  </a>
+                </li>
+              ))}
+          </ul>
+        </div>
+        
+        <hr />
+        
+        <div>
+          <h2 class="post-single__footer-title">
+            <a class="sidebar__author-title-link" href="/">
+              {author.name}
+            </a>
+          </h2>
+          <p class="post-single__footer-subtitle">{subtitle}</p>
+        </div>
+        
+        <Links data={author} />
       </div>
-      <hr />
-      <div>
-        <h2 class="post-single__footer-title">
-          <a class="sidebar__author-title-link" href="/">
-            {author.name}
-          </a>
-        </h2>
-        <p class="post-single__footer-subtitle">{subtitle}</p>
-      </div>
-      <Links data={author} />
     </div>
   </div>
 
@@ -91,6 +100,7 @@ const next = allArticles[articleIndex - 1];
         </div>
       </a>
     ) : null}
+    
     {next ? (
       <a
         class="post-single__footer-next"

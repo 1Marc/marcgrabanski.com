@@ -123,27 +123,71 @@
 .article-header {
   margin-bottom: var(--space-xl);
   text-align: center;
+  position: relative;
+  padding: var(--space-lg) 0;
+}
+
+.article-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+  border-radius: 2px;
 }
 
 .article-title {
   font-size: var(--font-size-h1);
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
   color: var(--color-primary-dark);
+  position: relative;
+  letter-spacing: -0.02em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.article-title::after {
+  display: none;
 }
 
 .article-meta {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-sm);
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
 }
 
 .article-date {
   font-size: var(--font-size-small);
   color: var(--color-primary-dark);
-  font-weight: 500;
+  font-weight: 600;
+  padding: var(--space-xs) var(--space-md);
+  background: linear-gradient(
+    135deg,
+    rgba(152, 199, 241, 0.1) 0%,
+    rgba(238, 111, 107, 0.1) 100%
+  );
+  border-radius: 20px;
+  border: 1px solid rgba(152, 199, 241, 0.2);
+  position: relative;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.article-date::before {
+  content: "📅";
+  margin-right: var(--space-xs);
+  font-size: 0.75rem;
 }
 
 .article-tags {
@@ -151,6 +195,7 @@
   gap: var(--space-xs);
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: var(--space-sm);
 }
 
 .article-tag {
@@ -450,68 +495,67 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .article-single__inner {
-    padding: var(--space-md);
-    margin: 0;
-    border-radius: 0;
-    max-width: 100%;
+    padding: var(--space-lg);
+    margin: 0 var(--space-sm);
+    border-radius: 16px;
   }
 
   .page-single__inner {
     padding: var(--space-lg);
-    margin: 0;
-    border-radius: 0;
-    max-width: 100%;
+    margin: 0 var(--space-sm);
+    border-radius: 16px;
   }
 
   .page-single {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
+    padding: var(--space-md) 0;
   }
 
   .content-wrapper {
-    max-width: 100%;
-    padding: 0;
+    padding: 0 var(--space-sm);
   }
 
   .article-title,
   .page-title {
-    font-size: var(--font-size-h2);
+    font-size: 1.8rem;
+    line-height: 1.3;
   }
 
   .article-body,
   .page-body {
     font-size: var(--font-size-base);
+    line-height: 1.7;
   }
 
   .article-body h1,
   .page-body h1 {
-    font-size: var(--font-size-h2);
+    font-size: 1.6rem;
+    margin-top: var(--space-xl);
   }
 
   .article-body h2,
   .page-body h2 {
-    font-size: var(--font-size-h3);
+    font-size: 1.4rem;
+    margin-top: var(--space-lg);
   }
 
   .article-body h3,
   .page-body h3 {
-    font-size: var(--font-size-large);
+    font-size: 1.2rem;
+    margin-top: var(--space-md);
   }
 
-  /* Mobile header styles */
   .article-page-header {
     padding: var(--space-sm) 0;
   }
 
   .article-page-header .content-wrapper {
+    padding: 0 var(--space-sm);
     flex-direction: column;
     gap: var(--space-sm);
-    padding: 0 var(--space-md);
   }
 
   .article-header-brand {
-    justify-content: center;
+    order: 1;
   }
 
   .brand-photo {
@@ -525,12 +569,11 @@
   }
 
   .brand-subtitle {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
 
-  /* Hide navigation on mobile */
   .article-navigation {
-    display: none;
+    order: 2;
   }
 
   .nav-links {
@@ -538,7 +581,53 @@
   }
 
   .nav-links a {
-    font-size: var(--font-size-small);
+    font-size: 0.875rem;
     padding: var(--space-xs);
+  }
+
+  /* Enhanced mobile styles for article header */
+  .article-header {
+    padding: var(--space-md) 0;
+  }
+
+  .article-header::before {
+    width: 40px;
+    height: 2px;
+  }
+
+  .article-title {
+    font-size: 1.6rem;
+    margin-bottom: var(--space-md);
+  }
+
+  .article-title::after {
+    display: none;
+  }
+
+  .article-meta {
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+  }
+
+  .article-date {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+    letter-spacing: 0.3px;
+  }
+
+  .article-date::before {
+    font-size: 0.625rem;
+    margin-right: 4px;
+  }
+
+  .article-tags {
+    gap: 6px;
+    margin-top: var(--space-xs);
+  }
+
+  .article-tag {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    border-radius: 16px;
   }
 }

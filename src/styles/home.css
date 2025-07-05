@@ -944,23 +944,43 @@
 .article-card {
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.1) 0%,
     rgba(255, 255, 255, 0.05) 100%
   );
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-radius: 20px;
-  padding: var(--space-lg);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: var(--space-md);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  color: var(--color-white);
+  text-decoration: none;
+  display: block;
 }
 
 .article-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.article-card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -970,69 +990,35 @@
   background: linear-gradient(
     90deg,
     var(--color-primary) 0%,
-    var(--color-secondary) 50%,
-    var(--color-primary) 100%
+    var(--color-secondary) 100%
   );
   z-index: 2;
-  border-radius: 20px 20px 0 0;
-}
-
-.article-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.05) 0%,
-    rgba(255, 255, 255, 0.02) 100%
-  );
-  border-radius: 20px;
-  pointer-events: none;
-  z-index: 1;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 24px 24px 0 0;
 }
 
 .article-card:hover::before {
   background: linear-gradient(
-    135deg,
-    rgba(59, 130, 246, 0.1) 0%,
-    rgba(239, 68, 68, 0.05) 100%
+    90deg,
+    var(--color-secondary) 0%,
+    var(--color-primary) 100%
   );
 }
 
 .article-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12), 0 8px 16px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.25);
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.12) 0%,
-    rgba(255, 255, 255, 0.08) 100%
-  );
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .article-card:hover::after {
-  background: linear-gradient(
-    90deg,
-    var(--color-primary) 0%,
-    var(--color-secondary) 25%,
-    var(--color-primary) 50%,
-    var(--color-secondary) 75%,
-    var(--color-primary) 100%
-  );
-  background-size: 200% 100%;
-  animation: gradientShift 2s ease-in-out infinite;
+  opacity: 1;
 }
 
 .article-meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
 }
 
 .articles-grid .article-card .article-date {
@@ -1041,7 +1027,14 @@
   position: relative;
   z-index: 2;
   font-weight: 500;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  background: none;
+  border: none;
+  margin: 0;
+}
+
+.articles-grid .article-meta {
+  margin-top: 0;
+  gap: 0;
 }
 
 .article-tags {
@@ -1074,46 +1067,10 @@
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.article-tag::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.3) 0%,
-    transparent 70%
-  );
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: -1;
-  opacity: 0;
-}
-
-.article-tag:hover {
-  transform: translateY(-2px) scale(1.03);
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.35) 0%,
-    rgba(255, 255, 255, 0.25) 100%
-  );
-  border-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-}
-
-.article-tag:hover::before {
-  width: 120%;
-  height: 120%;
-  opacity: 1;
-}
-
 .article-title {
   font-size: var(--font-size-h3);
   font-weight: 700;
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
   line-height: 1.3;
   color: var(--color-white);
   position: relative;

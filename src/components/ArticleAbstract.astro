@@ -6,6 +6,17 @@ import Tag from './Tag.astro';
 const { node, showTagLinks = true } = Astro.props;
 const { postTitle, description, date, tags } = node.data
 const slug = node.slug
+
+// Format date with full details including weekday
+const formatFullDate = (date: Date) => {
+	const options: Intl.DateTimeFormatOptions = { 
+		year: 'numeric', 
+		month: 'long', 
+		day: 'numeric',
+		weekday: 'long'
+	};
+	return new Date(date).toLocaleDateString('en-US', options);
+};
 ---
 
 <div class="post">
@@ -28,7 +39,7 @@ const slug = node.slug
 				class="post__meta-time"
 				datetime={formatDate(date)}
 			>
-				{formatDate(date, 'MMMM YYYY')}
+				{formatFullDate(date)}
 			</time>
 		)}
 
