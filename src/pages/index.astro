@@ -69,42 +69,7 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 	<div class="content">
 		<div class="content__inner">
 			<div class="content-wrapper">
-				<!-- Featured Health Checklist Section -->
-				<section class="featured-section">
-					<div class="featured-header">
-						<h2 class="section-title">🔥 What I'm Most Sharing Lately</h2>
-						<p class="section-subtitle">The resource I reference the most recently:</p>
-					</div>
-					
-					<div class="featured-card">
-						<div class="floating-particles"></div>
-						<div class="featured-banner">Featured</div>
-						<div class="featured-main">
-							<div class="featured-text">
-								<h3 class="featured-title">
-									<a href="/articles/personal-health-checklist" class="featured-link">
-										🏆 My Personal Health Checklist →
-									</a>
-								</h3>
-								<p class="featured-description">
-									Your go-to guide for building and maintaining healthy habits. This took years to put together and is updated as I learn more.
-								</p>
-								<div class="featured-highlights">
-									<div class="highlight-item">50+ science-backed health strategies</div>
-									<div class="highlight-item">Updated annually for 3+ years</div>
-									<div class="highlight-item">100% actionable</div>
-									<div class="highlight-item">Sleep, nutrition, movement, recovery, mental wellness</div>
-								</div>
-								<a href="/articles/personal-health-checklist" class="cta-button">
-									Read the Health Checklist →
-								</a>
-							</div>
-							<div class="featured-visual">
-								<div class="health-icon">💪</div>
-							</div>
-						</div>
-					</div>
-				</section>
+
 
 				<!-- About Section -->
 				<section class="about-section">
@@ -135,6 +100,22 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 								</div>
 							</div>
 							<div class="work-card">
+								<div class="work-icon">📝</div>
+								<div class="work-text">
+									<span class="work-title">Writer</span>
+									<span class="work-separator">: </span>
+									<span class="work-description">Newsletter to 500k+ developers monthly</span>
+								</div>
+							</div>
+							<div class="work-card">
+								<div class="work-icon">🧰</div>
+								<div class="work-text">
+									<span class="work-title">Creator</span>
+									<span class="work-separator">: </span>
+									<span class="work-description">jQuery UI Datepicker, Modern Vanilla JS TodoMVC</span>
+								</div>
+							</div>
+							<div class="work-card">
 								<div class="work-icon">🎧</div>
 								<div class="work-text">
 									<span class="work-title">Podcast Host</span>
@@ -150,20 +131,217 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 									<span class="work-description">60+ conferences including Google HQ & international audiences</span>
 								</div>
 							</div>
-							<div class="work-card">
-								<div class="work-icon">🧰</div>
-								<div class="work-text">
-									<span class="work-title">Creator</span>
-									<span class="work-separator">: </span>
-									<span class="work-description">jQuery UI Datepicker, Modern Vanilla JS TodoMVC</span>
+						</div>
+					</div>
+				</section>
+
+				<!-- Performance Stats Section -->
+				<section class="performance-section">
+					<div class="performance-header">
+						<div class="header-content">
+							<h2 class="section-title"><span class="emoji">🏃‍♂️</span> Health & Performance</h2>
+							<p class="section-subtitle">Living the practice, not just sharing advice</p>
+						</div>
+					</div>
+					
+					<div class="health-dashboard">
+						<!-- Strength Row -->
+						<div class="metric-row strength-row">
+							<div class="row-header">
+								<div class="header-icon">💪</div>
+								<div class="header-content">
+									<h3 class="row-title">Strength</h3>
+									<div class="row-subtitle">Power & Performance</div>
 								</div>
 							</div>
-							<div class="work-card">
-								<div class="work-icon">📝</div>
-								<div class="work-text">
-									<span class="work-title">Writer</span>
-									<span class="work-separator">: </span>
-									<span class="work-description">Newsletter to 500,000+ developers & 200+ blog posts</span>
+							<div class="row-metrics">
+								<div class="stat-item strength">
+									<div class="stat-icon">🏋️</div>
+									<div class="stat-content">
+										<div class="stat-value">225 lbs</div>
+										<div class="stat-label">Bench Press</div>
+									</div>
+								</div>
+								<div class="stat-item strength">
+									<div class="stat-icon">🏋️</div>
+									<div class="stat-content">
+										<div class="stat-value">300 lbs</div>
+										<div class="stat-label">Squat</div>
+									</div>
+								</div>
+								<div class="stat-item strength">
+									<div class="stat-icon">🔥</div>
+									<div class="stat-content">
+										<div class="stat-value">335 lbs (2 reps)</div>
+										<div class="stat-label">Deadlift</div>
+									</div>
+								</div>
+								<div class="stat-item strength">
+									<div class="stat-icon">🎯</div>
+									<div class="stat-content">
+										<div class="stat-value">20 in a row</div>
+										<div class="stat-label">Pull-ups</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Cardio Row -->
+						<div class="metric-row cardio-row">
+							<div class="row-header">
+								<div class="header-icon">❤️</div>
+								<div class="header-content">
+									<h3 class="row-title">Cardiovascular</h3>
+									<div class="row-subtitle">Endurance & Heart Health</div>
+								</div>
+							</div>
+							<div class="row-metrics">
+								<div class="stat-item cardio">
+									<div class="stat-icon">🏃‍♂️</div>
+									<div class="stat-content">
+										<div class="stat-value">1:51:50</div>
+										<div class="stat-label">Half Marathon PR</div>
+									</div>
+								</div>
+								<div class="stat-item cardio">
+									<div class="stat-icon">❤️</div>
+									<div class="stat-content">
+										<div class="stat-value">49 bpm</div>
+										<div class="stat-label">Resting HR</div>
+									</div>
+								</div>
+								<div class="stat-item cardio">
+									<div class="stat-icon">🫁</div>
+									<div class="stat-content">
+										<div class="stat-value">45</div>
+										<div class="stat-label">VO2 Max</div>
+									</div>
+								</div>
+								<div class="stat-item cardio">
+									<div class="stat-icon">🔥</div>
+									<div class="stat-content">
+										<div class="stat-value">205</div>
+										<div class="stat-label">Max HR</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Movement Row -->
+						<div class="metric-row movement-row">
+							<div class="row-header">
+								<div class="header-icon">🏃‍♂️</div>
+								<div class="header-content">
+									<h3 class="row-title">Movement & Skills</h3>
+									<div class="row-subtitle">Multi-Sport Athlete</div>
+								</div>
+							</div>
+							<div class="row-metrics">
+								<div class="stat-item movement">
+									<div class="stat-icon">🤸‍♂️</div>
+									<div class="stat-content">
+										<div class="stat-value">Backflip</div>
+										<div class="stat-label">Gymnastics</div>
+									</div>
+								</div>
+								<div class="stat-item movement">
+									<div class="stat-icon">🎾</div>
+									<div class="stat-content">
+										<div class="stat-value">Tennis</div>
+										<div class="stat-label">Weekly Play</div>
+									</div>
+								</div>
+								<div class="stat-item movement">
+									<div class="stat-icon">💃</div>
+									<div class="stat-content">
+										<div class="stat-value">State Champion</div>
+										<div class="stat-label">Adult Dance Team 2025</div>
+									</div>
+								</div>
+								<div class="stat-item movement">
+									<div class="stat-icon">🏃‍♂️</div>
+									<div class="stat-content">
+										<div class="stat-value">600 miles</div>
+										<div class="stat-label">Annual Running</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Daily Health Row -->
+						<div class="metric-row daily-row">
+							<div class="row-header">
+								<div class="header-icon">📊</div>
+								<div class="header-content">
+									<h3 class="row-title">Daily Health</h3>
+									<div class="row-subtitle">Lifestyle & Wellness</div>
+								</div>
+							</div>
+							<div class="row-metrics">
+								<div class="stat-item daily">
+									<div class="stat-icon">👣</div>
+									<div class="stat-content">
+										<div class="stat-value">13,732</div>
+										<div class="stat-label">Daily Steps (2025)</div>
+									</div>
+								</div>
+								<div class="stat-item daily">
+									<div class="stat-icon">💤</div>
+									<div class="stat-content">
+										<div class="stat-value">7h 40m</div>
+										<div class="stat-label">Avg Sleep</div>
+									</div>
+								</div>
+								<div class="stat-item daily">
+									<div class="stat-icon">📏</div>
+									<div class="stat-content">
+										<div class="stat-value">190 lbs</div>
+										<div class="stat-label">5'10"</div>
+									</div>
+								</div>
+								<div class="stat-item daily">
+									<div class="stat-icon">📊</div>
+									<div class="stat-content">
+										<div class="stat-value">14%</div>
+										<div class="stat-label">Body Fat</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="performance-footer">
+						<div class="footer-card">
+							<div class="footer-header">
+								<div class="footer-icon-wrapper">
+									<div class="footer-icon">🔥</div>
+									<h3 class="footer-title">How I achieved these numbers?</h3>
+								</div>
+								<div class="footer-badge">Featured</div>
+							</div>
+							<div class="footer-content">
+								<p class="footer-description">
+									<strong>My Personal Health Checklist:</strong> Your go-to guide for building and maintaining healthy habits. This took years to put together and is updated as I learn more.
+								</p>
+								<div class="footer-highlights">
+									<div class="highlight-item">
+										<span class="highlight-icon">✅</span>
+										<span class="highlight-text">50+ science-backed strategies</span>
+									</div>
+									<div class="highlight-item">
+										<span class="highlight-icon">📈</span>
+										<span class="highlight-text">Updated annually for 3+ years</span>
+									</div>
+									<div class="highlight-item">
+										<span class="highlight-icon">🎯</span>
+										<span class="highlight-text">100% actionable</span>
+									</div>
+								</div>
+								<div class="footer-action">
+									<a href="/articles/personal-health-checklist" class="footer-button">
+										<span class="button-text">Read the Health Checklist</span>
+										<span class="button-arrow">→</span>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -205,54 +383,80 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 
 				<!-- Browse by Topic Section -->
 				<section class="tags-section">
-					<h2 class="section-title">📂 Browse by Topic</h2>
+					<div class="section-header">
+						<div class="header-content">
+							<h2 class="section-title"><span class="emoji">📂</span> Browse by Topic</h2>
+							<p class="section-subtitle">Explore content by category</p>
+						</div>
+					</div>
 					<div class="tags-grid">
 						<a href="/tags/career-journal" class="tag-card">
 							<div class="tag-icon">💼</div>
-							<h3>Career Journal</h3>
-							<p>Reflections on business, leadership, and personal growth</p>
+							<div class="tag-content">
+								<h3>Career Journal</h3>
+								<p>Reflections on business, leadership, and personal growth</p>
+							</div>
 						</a>
 						<a href="/tags/checklists-guides" class="tag-card">
 							<div class="tag-icon">✅</div>
-							<h3>Checklists & Guides</h3>
-							<p>Frameworks I use personally and professionally</p>
+							<div class="tag-content">
+								<h3>Checklists & Guides</h3>
+								<p>Frameworks I use personally and professionally</p>
+							</div>
 						</a>
 						<a href="/tags/opinion" class="tag-card">
 							<div class="tag-icon">💭</div>
-							<h3>Opinion Pieces</h3>
-							<p>Takes on tech, life, and building thoughtfully</p>
+							<div class="tag-content">
+								<h3>Opinion Pieces</h3>
+								<p>Takes on tech, life, and building thoughtfully</p>
+							</div>
 						</a>
 						<a href="/tags/lessons-learned" class="tag-card">
 							<div class="tag-icon">🎓</div>
-							<h3>Lessons Learned</h3>
-							<p>Insights gained the hard way</p>
+							<div class="tag-content">
+								<h3>Lessons Learned</h3>
+								<p>Insights gained the hard way</p>
+							</div>
 						</a>
 					</div>
 				</section>
 
 				<!-- Connect Section -->
 				<section class="connect-section">
-					<h2 class="section-title">🤝 Connect with Me</h2>
+					<div class="section-header">
+						<div class="header-content">
+							<h2 class="section-title"><span class="emoji">🤝</span> Connect with Me</h2>
+							<p class="section-subtitle">Let's build something together</p>
+						</div>
+					</div>
 					<div class="connect-grid">
 						<a href="https://twitter.com/1marc" class="connect-card">
 							<div class="connect-icon">🐦</div>
-							<h3>Twitter / X</h3>
-							<p>Personal updates & thoughts</p>
+							<div class="connect-content">
+								<h3>Twitter / X</h3>
+								<p>Personal updates & thoughts</p>
+							</div>
 						</a>
 						<a href="https://linkedin.com/in/marcgrabanski" class="connect-card">
 							<div class="connect-icon">💼</div>
-							<h3>LinkedIn</h3>
-							<p>Career & professional</p>
+							<div class="connect-content">
+								<h3>LinkedIn</h3>
+								<p>Career & professional</p>
+							</div>
 						</a>
 						<a href="https://github.com/1Marc" class="connect-card">
 							<div class="connect-icon">💻</div>
-							<h3>GitHub</h3>
-							<p>Open source contributions</p>
+							<div class="connect-content">
+								<h3>GitHub</h3>
+								<p>Open source contributions</p>
+							</div>
 						</a>
 						<a href="/podcasts" class="connect-card">
 							<div class="connect-icon">📡</div>
-							<h3>Podcasts & Interviews</h3>
-							<p>Guest appearances and past interviews</p>
+							<div class="connect-content">
+								<h3>Podcasts & Interviews</h3>
+								<p>Guest appearances and past interviews</p>
+							</div>
 						</a>
 					</div>
 				</section>
@@ -260,7 +464,7 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 				<!-- Testimonials Section -->
 				<section class="testimonials-section">
 					<div class="testimonials-header">
-						<h2 class="section-title">📣 Praise from Others</h2>
+						<h2 class="section-title"><span class="emoji">📣</span> Praise from Others</h2>
 						<a href="https://www.linkedin.com/in/1marc/" target="_blank" class="view-all-link">View Full Testimonials →</a>
 					</div>
 					<div class="testimonials-list">
