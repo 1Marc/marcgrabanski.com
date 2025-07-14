@@ -29,6 +29,139 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 		<div class="content__inner">
 			<div class="content-wrapper">
 
+				<!-- About Section -->
+				<section class="about-section">
+					<div class="about-hero">
+						<div class="about-hero-content">
+							<div class="about-intro">
+								<div class="about-intro-text">
+									<h2 class="about-title">📘 About Me</h2>
+									<p class="about-subtitle">Founder, Developer, Educator</p>
+									<p class="about-bio">
+										I founded Frontend Masters in 2014 and have grown it to over 10,000 paying customers from leading companies around the world, while keeping the company fully bootstrapped and independent.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="about-content">
+						<div class="about-grid">
+							<!-- Journey Timeline -->
+							<div class="about-card journey-card">
+								<div class="card-header">
+									<div class="card-icon">🚀</div>
+									<h3 class="card-title">My Journey</h3>
+								</div>
+								<div class="timeline">
+									<div class="timeline-item">
+										<div class="timeline-marker"></div>
+										<div class="timeline-content">
+											<h4>Consulting & Speaking</h4>
+											<p>Worked with Fortune 100 companies and spoke at 60+ events globally</p>
+										</div>
+									</div>
+									<div class="timeline-item">
+										<div class="timeline-marker"></div>
+										<div class="timeline-content">
+											<h4>Open Source & Tools</h4>
+											<p>Created jQuery UI Datepicker and other popular developer tools</p>
+										</div>
+									</div>
+									<div class="timeline-item">
+										<div class="timeline-marker"></div>
+										<div class="timeline-content">
+											<h4>Founded Frontend Masters</h4>
+											<p>Started with a vision to help developers go deep and stay sharp</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Key Achievements -->
+							<div class="about-card achievements-card">
+								<div class="card-header">
+									<div class="card-icon">🏆</div>
+									<h3 class="card-title">Key Achievements</h3>
+								</div>
+								<div class="achievements-grid">
+									<div class="achievement-item">
+										<div class="achievement-number">10,000+</div>
+										<div class="achievement-label">Paying Customers</div>
+									</div>
+									<div class="achievement-item">
+										<div class="achievement-number">500k+</div>
+										<div class="achievement-label">Monthly Newsletter</div>
+									</div>
+									<div class="achievement-item">
+										<div class="achievement-number">100%</div>
+										<div class="achievement-label">Bootstrapped</div>
+									</div>
+									<div class="achievement-item">
+										<div class="achievement-number">60+</div>
+										<div class="achievement-label">Events Spoken At</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Featured Work -->
+						<div class="featured-work">
+							<div class="work-header">
+								<h3 class="work-title">🎙️ Featured Work</h3>
+								<p class="work-subtitle">Projects and contributions that define my career</p>
+							</div>
+							<div class="work-showcase">
+								<div class="work-item">
+									<div class="work-badge">Primary</div>
+									<div class="work-content">
+										<div class="work-icon">🧠</div>
+										<div class="work-details">
+											<h4>Frontend Masters</h4>
+											<p>Advanced learning platform with deep-dive courses and learning paths</p>
+											<div class="work-stats">
+												<span>10,000+ students</span>
+												<span>•</span>
+												<span>Leading companies</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="work-item">
+									<div class="work-badge">Creator</div>
+									<div class="work-content">
+										<div class="work-icon">🧰</div>
+										<div class="work-details">
+											<h4>jQuery UI Datepicker</h4>
+											<p>Popular open source component used by millions of developers</p>
+											<div class="work-stats">
+												<span>Millions of downloads</span>
+												<span>•</span>
+												<span>Industry standard</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="work-item">
+									<div class="work-badge">Speaker</div>
+									<div class="work-content">
+										<div class="work-icon">🗣️</div>
+										<div class="work-details">
+											<h4>Global Speaking</h4>
+											<p>Presented at Google HQ and 60+ international conferences</p>
+											<div class="work-stats">
+												<span>60+ events</span>
+												<span>•</span>
+												<span>International</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
 				<!-- Featured Health Section -->
 				<section class="featured-section">
 					<div class="featured-header">
@@ -250,70 +383,6 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 					</div>
 				</section>
 
-				<!-- About Section -->
-				<section class="about-section">
-					<div class="featured-header">
-						<h2 class="section-title">📘 About Me</h2>
-					</div>
-					
-					<div class="about-body">
-						<p>I founded Frontend Masters in 2014 and have grown it to over 10,000 paying customers from leading companies around the world, while keeping the company fully bootstrapped and independent.</p>
-						
-						<p>Before that, I consulted for Fortune 100 companies, launched conferences, created popular open source tools like the jQuery UI Datepicker, and spoke at more than 60 events globally. Today, I focus on helping developers go deep, stay sharp, and live well.</p>
-						
-						<h3>My current work includes:</h3>
-						<ul>
-							<li><strong>Hosting The Frontend Masters Podcast</strong> — conversations with top instructors</li>
-							<li><strong>Writing in my Career Journal</strong> — a behind-the-scenes look at leadership, business, and growth</li>
-							<li><strong>Sharing lessons on health, performance, and sustainable success</strong></li>
-						</ul>
-
-						<h3>🎙️ Featured Work</h3>
-						<div class="work-grid">
-							<div class="work-card">
-								<div class="work-icon">🧠</div>
-								<div class="work-text">
-									<span class="work-title">Learning Paths & Deep Dives</span>
-									<span class="work-separator">: </span>
-									<span class="work-description">Frontend Masters</span>
-								</div>
-							</div>
-							<div class="work-card">
-								<div class="work-icon">📝</div>
-								<div class="work-text">
-									<span class="work-title">Writer</span>
-									<span class="work-separator">: </span>
-									<span class="work-description">Newsletter to 500k+ developers monthly</span>
-								</div>
-							</div>
-							<div class="work-card">
-								<div class="work-icon">🧰</div>
-								<div class="work-text">
-									<span class="work-title">Creator</span>
-									<span class="work-separator">: </span>
-									<span class="work-description">jQuery UI Datepicker, Modern Vanilla JS TodoMVC</span>
-								</div>
-							</div>
-							<div class="work-card">
-								<div class="work-icon">🎧</div>
-								<div class="work-text">
-									<span class="work-title">Podcast Host</span>
-									<span class="work-separator">: </span>
-									<span class="work-description">Frontend Masters Podcast</span>
-								</div>
-							</div>
-							<div class="work-card">
-								<div class="work-icon">🗣️</div>
-								<div class="work-text">
-									<span class="work-title">Speaker</span>
-									<span class="work-separator">: </span>
-									<span class="work-description">60+ conferences including Google HQ & international audiences</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
 				<!-- Latest Articles Section -->
 				<section class="recent-section">
 					<div class="recent-header">
@@ -387,6 +456,39 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 					</div>
 				</section>
 
+
+				<!-- Testimonials Section -->
+				<section class="testimonials-section">
+					<div class="testimonials-header">
+						<h2 class="section-title">📣 Praise from Others</h2>
+						<a href="https://www.linkedin.com/in/1marc/" target="_blank" class="view-all-link">View Full Testimonials →</a>
+					</div>
+					<div class="testimonials-list">
+						<blockquote class="testimonial-quote">
+							Marc is an incredible visionary who constantly surprises me with his ability to create awesome new things, educate and grow those around him, and bring more to his projects than anyone expects.
+							<footer class="testimonial-author">
+								<strong>Tanner Thompson</strong>
+								<span>Chief Product Officer</span>
+							</footer>
+						</blockquote>
+						<blockquote class="testimonial-quote">
+							Marc's understanding of client-side development runs deep and he was more than happy to share his knowledge with the broader team — we all learned a lot from him.
+							<footer class="testimonial-author">
+								<strong>Brian Shoemaker</strong>
+								<span>Senior Director of Innovation, Life Time</span>
+							</footer>
+						</blockquote>
+						<blockquote class="testimonial-quote">
+							He's one of the most dedicated, skilled, and inspiring developers I've ever worked with.
+							<footer class="testimonial-author">
+								<strong>Renee Gustafson</strong>
+								<span>Group Program Director, Horizontal Digital</span>
+							</footer>
+						</blockquote>
+					</div>
+				</section>
+
+
 				<!-- Connect Section -->
 				<section class="connect-section">
 					<div class="section-header">
@@ -427,45 +529,6 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 					</div>
 				</section>
 
-				<!-- Testimonials Section -->
-				<section class="testimonials-section">
-					<div class="testimonials-header">
-						<h2 class="section-title">📣 Praise from Others</h2>
-						<a href="https://www.linkedin.com/in/1marc/" target="_blank" class="view-all-link">View Full Testimonials →</a>
-					</div>
-					<div class="testimonials-list">
-						<blockquote class="testimonial-quote">
-							Marc is an incredible visionary who constantly surprises me with his ability to create awesome new things, educate and grow those around him, and bring more to his projects than anyone expects.
-							<footer class="testimonial-author">
-								<strong>Tanner Thompson</strong>
-								<span>Chief Product Officer</span>
-							</footer>
-						</blockquote>
-						<blockquote class="testimonial-quote">
-							Marc's understanding of client-side development runs deep and he was more than happy to share his knowledge with the broader team — we all learned a lot from him.
-							<footer class="testimonial-author">
-								<strong>Brian Shoemaker</strong>
-								<span>Senior Director of Innovation, Life Time</span>
-							</footer>
-						</blockquote>
-						<blockquote class="testimonial-quote">
-							He's one of the most dedicated, skilled, and inspiring developers I've ever worked with.
-							<footer class="testimonial-author">
-								<strong>Renee Gustafson</strong>
-								<span>Group Program Director, Horizontal Digital</span>
-							</footer>
-						</blockquote>
-					</div>
-				</section>
-
-				<!-- Summary Section -->
-				<section class="summary-section">
-					<div class="summary-content">
-						<p class="summary-text">
-							As a founder and developer, I focus on meaningful work that improves both technical ability and personal well-being.
-						</p>
-					</div>
-				</section>
 
 			</div>
 		</div>
