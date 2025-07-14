@@ -5,6 +5,7 @@ import { Content as About } from '../components/About.mdx';
 import { site } from "../data/siteMetaData.js";
 import { getCollection } from 'astro:content';
 import Tag from '../components/Tag.astro';
+import Header from '../components/Header.astro';
 
 // Map tag names to URL slugs
 const tagMapping = {
@@ -21,114 +22,52 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 ---
 
 <Layout title={site.title}>
-	<div class="hero-section">
-		<div class="hero-content">
-			<div class="hero-text">
-				<h1 class="hero-title">
-					<span class="highlight">Marc Grabanski</span>
-					<br />
-					<span class="subtitle">Founder, Developer, Health Enthusiast</span>
-				</h1>
-				<p class="hero-description">
-					Helping developers achieve technical excellence and lead healthier lives.
-				</p>
-				<p class="hero-subdescription">
-					For over a decade, I've led <a href="https://frontendmasters.com" class="hero-link">Frontend Masters</a>, helping developers build deep technical skills and grow their careers. I also focus on health, performance, and meaningful family life.
-				</p>
-				
-				<!-- Navigation Menu -->
-				<nav class="hero-navigation">
-					<ul class="nav-list">
-						{site.menu.map(item => (
-							<li class="nav-item">
-								<a href={item.path} class="nav-link">
-									{item.label}
-								</a>
-							</li>
-						))}
-					</ul>
-					<div class="social-links">
-						<a href={`https://www.twitter.com/${site.author.twitter}`} target="_blank" class="social-link">
-							<img src="/twitter.svg" alt="Twitter" class="social-icon" />
-						</a>
-						<a href={`https://www.github.com/${site.author.github}`} target="_blank" class="social-link">
-							<img src="/github.svg" alt="GitHub" class="social-icon" />
-						</a>
-						<a href="/rss.xml" class="social-link">
-							<span class="rss-icon">📡</span>
-						</a>
-					</div>
-				</nav>
-			</div>
-			<div class="hero-image">
-				<img src="/photo.jpg" alt="Marc Grabanski" class="profile-photo" />
-			</div>
-		</div>
-	</div>
+	<!-- Original Header Component -->
+	<Header />
 
 	<div class="content">
 		<div class="content__inner">
 			<div class="content-wrapper">
 
-
-				<!-- About Section -->
-				<section class="about-section">
+				<!-- Featured Health Section -->
+				<section class="featured-section">
 					<div class="featured-header">
-						<h2 class="section-title">📘 About Me</h2>
+						<h2 class="section-title">🔥 Featured: My Health Journey</h2>
 					</div>
 					
-					<div class="about-body">
-						<p>I founded Frontend Masters in 2014 and have grown it to over 10,000 paying customers from leading companies around the world, while keeping the company fully bootstrapped and independent.</p>
-						
-						<p>Before that, I consulted for Fortune 100 companies, launched conferences, created popular open source tools like the jQuery UI Datepicker, and spoke at more than 60 events globally. Today, I focus on helping developers go deep, stay sharp, and live well.</p>
-						
-						<h3>My current work includes:</h3>
-						<ul>
-							<li><strong>Hosting The Frontend Masters Podcast</strong> — conversations with top instructors</li>
-							<li><strong>Writing in my Career Journal</strong> — a behind-the-scenes look at leadership, business, and growth</li>
-							<li><strong>Sharing lessons on health, performance, and sustainable success</strong></li>
-						</ul>
-
-						<h3>🎙️ Featured Work</h3>
-						<div class="work-grid">
-							<div class="work-card">
-								<div class="work-icon">🧠</div>
-								<div class="work-text">
-									<span class="work-title">Learning Paths & Deep Dives</span>
-									<span class="work-separator">: </span>
-									<span class="work-description">Frontend Masters</span>
+					<div class="featured-card">
+						<div class="featured-banner">
+							<div class="featured-main">
+								<div class="featured-text">
+									<h3 class="featured-title">
+										<a href="/articles/personal-health-checklist" class="featured-link">
+											My Personal Health Checklist
+										</a>
+									</h3>
+									<p class="featured-description">
+										Your go-to guide for building and maintaining healthy habits. This took years to put together and is updated as I learn more.
+									</p>
+									<div class="featured-highlights">
+										<div class="highlight-item">
+											<span class="highlight-icon">✅</span>
+											<span class="highlight-text">50+ science-backed strategies</span>
+										</div>
+										<div class="highlight-item">
+											<span class="highlight-icon">📈</span>
+											<span class="highlight-text">Updated annually for 3+ years</span>
+										</div>
+										<div class="highlight-item">
+											<span class="highlight-icon">🎯</span>
+											<span class="highlight-text">100% actionable</span>
+										</div>
+									</div>
+									<a href="/articles/personal-health-checklist" class="cta-button">
+										<span class="button-text">Read the Health Checklist</span>
+										<span class="button-arrow">→</span>
+									</a>
 								</div>
-							</div>
-							<div class="work-card">
-								<div class="work-icon">📝</div>
-								<div class="work-text">
-									<span class="work-title">Writer</span>
-									<span class="work-separator">: </span>
-									<span class="work-description">Newsletter to 500k+ developers monthly</span>
-								</div>
-							</div>
-							<div class="work-card">
-								<div class="work-icon">🧰</div>
-								<div class="work-text">
-									<span class="work-title">Creator</span>
-									<span class="work-separator">: </span>
-									<span class="work-description">jQuery UI Datepicker, Modern Vanilla JS TodoMVC</span>
-								</div>
-							</div>
-							<div class="work-card">
-								<div class="work-icon">🎧</div>
-								<div class="work-text">
-									<span class="work-title">Podcast Host</span>
-									<span class="work-separator">: </span>
-									<span class="work-description">Frontend Masters Podcast</span>
-								</div>
-							</div>
-							<div class="work-card">
-								<div class="work-icon">🗣️</div>
-								<div class="work-text">
-									<span class="work-title">Speaker</span>
-									<span class="work-separator">: </span>
-									<span class="work-description">60+ conferences including Google HQ & international audiences</span>
+								<div class="featured-visual">
+									<div class="health-icon">💪</div>
 								</div>
 							</div>
 						</div>
@@ -139,7 +78,7 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 				<section class="performance-section">
 					<div class="performance-header">
 						<div class="header-content">
-							<h2 class="section-title"><span class="emoji">🏃‍♂️</span> Health & Performance</h2>
+							<h2 class="section-title">🏃‍♂️ Health & Performance</h2>
 							<p class="section-subtitle">Living the practice, not just sharing advice</p>
 						</div>
 					</div>
@@ -309,39 +248,66 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 							</div>
 						</div>
 					</div>
+				</section>
+
+				<!-- About Section -->
+				<section class="about-section">
+					<div class="featured-header">
+						<h2 class="section-title">📘 About Me</h2>
+					</div>
 					
-					<div class="performance-footer">
-						<div class="footer-card">
-							<div class="footer-header">
-								<div class="footer-icon-wrapper">
-									<div class="footer-icon">🔥</div>
-									<h3 class="footer-title">How I achieved these numbers?</h3>
+					<div class="about-body">
+						<p>I founded Frontend Masters in 2014 and have grown it to over 10,000 paying customers from leading companies around the world, while keeping the company fully bootstrapped and independent.</p>
+						
+						<p>Before that, I consulted for Fortune 100 companies, launched conferences, created popular open source tools like the jQuery UI Datepicker, and spoke at more than 60 events globally. Today, I focus on helping developers go deep, stay sharp, and live well.</p>
+						
+						<h3>My current work includes:</h3>
+						<ul>
+							<li><strong>Hosting The Frontend Masters Podcast</strong> — conversations with top instructors</li>
+							<li><strong>Writing in my Career Journal</strong> — a behind-the-scenes look at leadership, business, and growth</li>
+							<li><strong>Sharing lessons on health, performance, and sustainable success</strong></li>
+						</ul>
+
+						<h3>🎙️ Featured Work</h3>
+						<div class="work-grid">
+							<div class="work-card">
+								<div class="work-icon">🧠</div>
+								<div class="work-text">
+									<span class="work-title">Learning Paths & Deep Dives</span>
+									<span class="work-separator">: </span>
+									<span class="work-description">Frontend Masters</span>
 								</div>
-								<div class="footer-badge">Featured</div>
 							</div>
-							<div class="footer-content">
-								<p class="footer-description">
-									<strong>My Personal Health Checklist:</strong> Your go-to guide for building and maintaining healthy habits. This took years to put together and is updated as I learn more.
-								</p>
-								<div class="footer-highlights">
-									<div class="highlight-item">
-										<span class="highlight-icon">✅</span>
-										<span class="highlight-text">50+ science-backed strategies</span>
-									</div>
-									<div class="highlight-item">
-										<span class="highlight-icon">📈</span>
-										<span class="highlight-text">Updated annually for 3+ years</span>
-									</div>
-									<div class="highlight-item">
-										<span class="highlight-icon">🎯</span>
-										<span class="highlight-text">100% actionable</span>
-									</div>
+							<div class="work-card">
+								<div class="work-icon">📝</div>
+								<div class="work-text">
+									<span class="work-title">Writer</span>
+									<span class="work-separator">: </span>
+									<span class="work-description">Newsletter to 500k+ developers monthly</span>
 								</div>
-								<div class="footer-action">
-									<a href="/articles/personal-health-checklist" class="footer-button">
-										<span class="button-text">Read the Health Checklist</span>
-										<span class="button-arrow">→</span>
-									</a>
+							</div>
+							<div class="work-card">
+								<div class="work-icon">🧰</div>
+								<div class="work-text">
+									<span class="work-title">Creator</span>
+									<span class="work-separator">: </span>
+									<span class="work-description">jQuery UI Datepicker, Modern Vanilla JS TodoMVC</span>
+								</div>
+							</div>
+							<div class="work-card">
+								<div class="work-icon">🎧</div>
+								<div class="work-text">
+									<span class="work-title">Podcast Host</span>
+									<span class="work-separator">: </span>
+									<span class="work-description">Frontend Masters Podcast</span>
+								</div>
+							</div>
+							<div class="work-card">
+								<div class="work-icon">🗣️</div>
+								<div class="work-text">
+									<span class="work-title">Speaker</span>
+									<span class="work-separator">: </span>
+									<span class="work-description">60+ conferences including Google HQ & international audiences</span>
 								</div>
 							</div>
 						</div>
@@ -385,7 +351,7 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 				<section class="tags-section">
 					<div class="section-header">
 						<div class="header-content">
-							<h2 class="section-title"><span class="emoji">📂</span> Browse by Topic</h2>
+							<h2 class="section-title">📂 Browse by Topic</h2>
 							<p class="section-subtitle">Explore content by category</p>
 						</div>
 					</div>
@@ -425,7 +391,7 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 				<section class="connect-section">
 					<div class="section-header">
 						<div class="header-content">
-							<h2 class="section-title"><span class="emoji">🤝</span> Connect with Me</h2>
+							<h2 class="section-title">🤝 Connect with Me</h2>
 							<p class="section-subtitle">Let's build something together</p>
 						</div>
 					</div>
@@ -464,7 +430,7 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 				<!-- Testimonials Section -->
 				<section class="testimonials-section">
 					<div class="testimonials-header">
-						<h2 class="section-title"><span class="emoji">📣</span> Praise from Others</h2>
+						<h2 class="section-title">📣 Praise from Others</h2>
 						<a href="https://www.linkedin.com/in/1marc/" target="_blank" class="view-all-link">View Full Testimonials →</a>
 					</div>
 					<div class="testimonials-list">
@@ -500,6 +466,7 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 						</p>
 					</div>
 				</section>
+
 			</div>
 		</div>
 	</div>
