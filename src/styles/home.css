@@ -1865,7 +1865,7 @@
   }
 
   .timeline-item {
-    flex-direction: column;
+    flex-direction: row;
     gap: var(--space-sm);
   }
 
@@ -1939,5 +1939,30 @@
     max-width: 90vw;
     max-height: 40vw;
     border-width: 2px;
+  }
+  .about-hero {
+    padding: var(--space-md) var(--space-sm);
+  }
+  .about-hero-content {
+    width: 100%;
+  }
+  .about-intro-text {
+    width: 100%;
+  }
+  .about-card,
+  .work-item {
+    padding: var(--space-md) var(--space-sm);
+  }
+  .card-header {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    text-align: center;
+  }
+  .timeline-marker {
+    margin-bottom: var(--space-xs);
+  }
+  .timeline-content {
+    width: 100%;
   }
 }
