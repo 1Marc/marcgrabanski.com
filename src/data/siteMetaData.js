@@ -18,5 +18,7 @@ export const site = {
     name: "Marc Grabanski, CEO & UI Developer of Frontend Masters",
     twitter: "1marc",
     github: "1marc",
+    linkedin: "marcgrabanski",
+    instagram: "1marc",
   },
 };

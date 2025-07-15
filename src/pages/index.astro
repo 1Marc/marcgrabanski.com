@@ -1,7 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import RecentArticles from '../components/RecentArticles.astro';
-import { Content as About } from '../components/About.mdx';
 import { site } from "../data/siteMetaData.js";
 import { getCollection } from 'astro:content';
 import Tag from '../components/Tag.astro';
@@ -17,7 +15,6 @@ const tagMapping = {
 
 // Get the health checklist article specifically
 const allArticles = await getCollection('articles');
-const healthChecklist = allArticles.find(article => article.slug === 'personal-health-checklist');
 const recentArticles = allArticles.filter(article => article.slug !== 'personal-health-checklist').slice(-6).reverse();
 ---
 
@@ -510,14 +507,22 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 							</div>
 						</a>
 						<a href="https://linkedin.com/in/marcgrabanski" class="connect-card">
-							<div class="connect-icon">💼</div>
+							<div class="connect-icon">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.29h-3v-4.5c0-1.1-.9-2-2-2s-2 .9-2 2v4.5h-3v-9h3v1.22c.41-.72 1.39-1.22 2.25-1.22 1.66 0 3 1.34 3 3v6z"/>
+								</svg>
+							</div>
 							<div class="connect-content">
 								<h3>LinkedIn</h3>
 								<p>Career & professional</p>
 							</div>
 						</a>
 						<a href="https://github.com/1Marc" class="connect-card">
-							<div class="connect-icon">💻</div>
+							<div class="connect-icon">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.157-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.686-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.699 1.028 1.593 1.028 2.686 0 3.847-2.338 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.577.688.479C19.138 20.2 22 16.448 22 12.021 22 6.484 17.523 2 12 2Z"/>
+								</svg>
+							</div>
 							<div class="connect-content">
 								<h3>GitHub</h3>
 								<p>Open source contributions</p>
@@ -525,7 +530,7 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 						</a>
 						<a href="https://instagram.com/1marc" class="connect-card">
 							<div class="connect-icon">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: -1px;" xmlns="http://www.w3.org/2000/svg">
 									<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
 								</svg>
 							</div>

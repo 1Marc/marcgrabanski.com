@@ -1873,10 +1873,71 @@
     align-self: flex-start;
   }
 
-  .hero-section::before,
-  .content-wrapper::before,
-  .content-wrapper::after,
-  .content::before {
-    display: none;
+  .hero-section {
+    min-height: unset;
+    padding: var(--space-lg) 0;
+    display: block;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    padding: 0 var(--space-md);
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
+  }
+  .hero-description {
+    font-size: 1rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    margin-bottom: var(--space-md);
+  }
+  .hero-navigation {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    margin-top: var(--space-md);
+  }
+  .nav-list {
+    flex-direction: column;
+    gap: var(--space-md);
+    align-items: stretch;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+  }
+  .social-links {
+    justify-content: center;
+    margin-top: var(--space-sm);
+  }
+  .hero-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--space-md);
+  }
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+    max-width: 90vw;
+    max-height: 40vw;
+    border-width: 2px;
   }
 }
