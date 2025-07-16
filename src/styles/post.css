@@ -84,11 +84,37 @@
   color: var(--color-primary-dark-link);
   text-decoration: none;
   transition: color 0.2s ease;
+  position: relative;
+}
+
+.post__title-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.85;
 }
 
 .post__title-link:hover,
 .post__title-link:focus {
-  color: var(--color-primary-dark-link);
+  color: var(--color-primary);
+}
+
+.post__title-link:hover::after,
+.post__title-link:focus::after {
+  transform: scaleX(1);
 }
 
 .post__description {
