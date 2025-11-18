@@ -164,9 +164,14 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 
 						<!-- Featured Work -->
 						<div class="featured-work">
-							<div class="work-header">
-								<h3 class="work-title">🎙️ Featured Work</h3>
-								<p class="work-subtitle">Projects and contributions that define my career</p>
+							<div class="section-header">
+								<div class="header-content">
+									<h3 class="section-title">
+										<span class="section-title-emoji">🎙️</span>
+										<span class="section-title-text">Featured Work</span>
+									</h3>
+									<p class="section-subtitle">Projects and contributions that define my career</p>
+								</div>
 							</div>
 							<div class="work-showcase">
 								<div class="work-item">
@@ -221,7 +226,7 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 
 				<!-- Featured Health Section -->
 				<section class="featured-section">
-					<div class="featured-header">
+					<div class="section-header">
 						<div class="header-content">
 							<h2 class="section-title">
 								<span class="section-title-emoji">🔥</span>
@@ -271,7 +276,7 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 
 				<!-- Performance Stats Section -->
 				<section class="performance-section">
-					<div class="performance-header">
+					<div class="section-header">
 						<div class="header-content">
 							<h2 class="section-title">
 								<span class="section-title-emoji">🏃‍♂️</span>
@@ -494,13 +499,13 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 
 				<!-- Latest Articles Section -->
 				<section class="articles-showcase">
-					<div class="articles-showcase-header">
-						<div class="articles-header-content">
-							<h2 class="articles-section-title">
-								<span class="articles-title-icon">📰</span>
-								<span class="articles-title-text">Latest Articles</span>
+					<div class="section-header">
+						<div class="header-content">
+							<h2 class="section-title">
+								<span class="section-title-emoji">📰</span>
+								<span class="section-title-text">Latest Articles</span>
 							</h2>
-							<p class="articles-section-description">Recent thoughts, insights, and stories from my journey</p>
+							<p class="section-subtitle">Recent thoughts, insights, and stories from my journey</p>
 						</div>
 					</div>
 					<div class="articles-showcase-grid">
@@ -520,18 +525,23 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 
 				<!-- Browse by Topic Section -->
 				<section class="topics-showcase">
-					<div class="topics-showcase-header">
-						<div class="topics-header-content">
-							<h2 class="topics-section-title">
-								<span class="topics-title-icon">📂</span>
-								<span class="topics-title-text">Browse by Topic</span>
+					<div class="section-header">
+						<div class="header-content">
+							<h2 class="section-title">
+								<span class="section-title-emoji">📂</span>
+								<span class="section-title-text">Browse by Topic</span>
 							</h2>
-							<p class="topics-section-description">Explore content organized by theme and category</p>
+							<p class="section-subtitle">Explore content organized by theme and category</p>
 						</div>
 					</div>
 					<div class="topics-grid">
 						<a href="/tags/career-journal" class="topic-card topic-card-career">
 							<div class="topic-card-background"></div>
+							<div class="topic-arrow">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<path d="M5 12h14M12 5l7 7-7 7"/>
+								</svg>
+							</div>
 							<div class="topic-card-content">
 								<div class="topic-icon-wrapper">
 									<span class="topic-icon">💼</span>
@@ -539,16 +549,16 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 								<div class="topic-text">
 									<h3 class="topic-title">Career Journal</h3>
 									<p class="topic-description">Reflections on business, leadership, and personal growth</p>
-									<div class="topic-arrow">
-										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-											<path d="M5 12h14M12 5l7 7-7 7"/>
-										</svg>
-									</div>
 								</div>
 							</div>
 						</a>
 						<a href="/tags/checklists-guides" class="topic-card topic-card-guides">
 							<div class="topic-card-background"></div>
+							<div class="topic-arrow">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<path d="M5 12h14M12 5l7 7-7 7"/>
+								</svg>
+							</div>
 							<div class="topic-card-content">
 								<div class="topic-icon-wrapper">
 									<span class="topic-icon">✅</span>
@@ -556,16 +566,16 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 								<div class="topic-text">
 									<h3 class="topic-title">Checklists & Guides</h3>
 									<p class="topic-description">Frameworks I use personally and professionally</p>
-									<div class="topic-arrow">
-										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-											<path d="M5 12h14M12 5l7 7-7 7"/>
-										</svg>
-									</div>
 								</div>
 							</div>
 						</a>
 						<a href="/tags/opinion" class="topic-card topic-card-opinion">
 							<div class="topic-card-background"></div>
+							<div class="topic-arrow">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<path d="M5 12h14M12 5l7 7-7 7"/>
+								</svg>
+							</div>
 							<div class="topic-card-content">
 								<div class="topic-icon-wrapper">
 									<span class="topic-icon">💭</span>
@@ -573,16 +583,16 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 								<div class="topic-text">
 									<h3 class="topic-title">Opinion Pieces</h3>
 									<p class="topic-description">Takes on tech, life, and building thoughtfully</p>
-									<div class="topic-arrow">
-										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-											<path d="M5 12h14M12 5l7 7-7 7"/>
-										</svg>
-									</div>
 								</div>
 							</div>
 						</a>
 						<a href="/tags/lessons-learned" class="topic-card topic-card-lessons">
 							<div class="topic-card-background"></div>
+							<div class="topic-arrow">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<path d="M5 12h14M12 5l7 7-7 7"/>
+								</svg>
+							</div>
 							<div class="topic-card-content">
 								<div class="topic-icon-wrapper">
 									<span class="topic-icon">🎓</span>
@@ -590,11 +600,6 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 								<div class="topic-text">
 									<h3 class="topic-title">Lessons Learned</h3>
 									<p class="topic-description">Insights gained the hard way</p>
-									<div class="topic-arrow">
-										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-											<path d="M5 12h14M12 5l7 7-7 7"/>
-										</svg>
-									</div>
 								</div>
 							</div>
 						</a>
@@ -604,12 +609,13 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 
 				<!-- Testimonials Section -->
 				<section class="testimonials-section">
-					<div class="testimonials-header">
-						<div class="testimonials-header-content">
+					<div class="section-header">
+						<div class="header-content">
 							<h2 class="section-title">
 								<span class="section-title-emoji">📣</span>
 								<span class="section-title-text">Praise from Others</span>
 							</h2>
+							<p class="section-subtitle">What others have to say about me</p>
 						</div>
 					</div>
 					<div class="testimonials-list">
@@ -654,7 +660,7 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 								<span class="section-title-emoji">🤝</span>
 								<span class="section-title-text">Connect with Me</span>
 							</h2>
-							<p class="section-subtitle">Let's build something together</p>
+							<p class="section-subtitle">Let's connect! I'm always looking to learn and grow.</p>
 						</div>
 					</div>
 					<div class="connect-grid">
