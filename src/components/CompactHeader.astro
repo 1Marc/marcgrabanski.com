@@ -147,11 +147,11 @@ const { name } = author;
 	}
 
 	.compact-subtitle {
-		font-size: var(--font-size-small);
+		font-size: var(--font-size-sm);
 		color: var(--color-white);
 		opacity: 0.8;
 		margin: 0;
-		line-height: 1.2;
+		line-height: var(--line-height-tight);
 	}
 
 	.compact-nav {
@@ -164,7 +164,8 @@ const { name } = author;
 		text-decoration: none;
 		font-weight: 500;
 		font-size: var(--font-size-base);
-		padding: var(--space-xs) var(--space-sm);
+		line-height: var(--line-height-normal);
+		padding: var(--space-2) var(--space-4);
 		border-radius: 8px;
 		transition: all 0.3s ease;
 		backdrop-filter: blur(10px);
@@ -217,7 +218,7 @@ const { name } = author;
 		}
 
 		.compact-subtitle {
-			font-size: 0.75rem;
+			font-size: var(--font-size-xs);
 		}
 
 		.compact-avatar {

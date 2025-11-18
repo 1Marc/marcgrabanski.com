@@ -120,10 +120,11 @@ const { currentPage, totalPages, startIndex, endIndex, totalItems, previousArtic
 
   .pagination-info {
     color: var(--color-white);
-    font-size: 0.9rem;
+    font-size: var(--font-size-sm);
     font-weight: 500;
+    line-height: var(--line-height-normal);
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--space-6);
     opacity: 0.8;
   }
 
@@ -143,7 +144,7 @@ const { currentPage, totalPages, startIndex, endIndex, totalItems, previousArtic
   }
 
   .pagination-number {
-    padding: 0.75rem 1rem;
+    padding: var(--space-3) var(--space-4);
     text-decoration: none;
     color: var(--color-primary);
     border: 1px solid rgba(224, 160, 128, 0.3);
@@ -152,6 +153,8 @@ const { currentPage, totalPages, startIndex, endIndex, totalItems, previousArtic
     min-width: 2.5rem;
     text-align: center;
     font-weight: 600;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
     background: rgba(224, 160, 128, 0.05);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -194,11 +197,13 @@ const { currentPage, totalPages, startIndex, endIndex, totalItems, previousArtic
     display: flex;
     text-decoration: none;
     color: var(--color-primary);
-    padding: 1.25rem 1.5rem;
+    padding: var(--space-5) var(--space-6);
     border: 1px solid rgba(224, 160, 128, 0.3);
     border-radius: 16px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 500;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
     max-width: 45%;
     background: rgba(224, 160, 128, 0.05);
     backdrop-filter: blur(10px);
@@ -254,18 +259,19 @@ const { currentPage, totalPages, startIndex, endIndex, totalItems, previousArtic
   }
 
   .pagination-label {
-    font-size: 0.75rem;
+    font-size: var(--font-size-xs);
     font-weight: 600;
-    margin-bottom: 0.25rem;
+    line-height: var(--line-height-tight);
+    margin-bottom: var(--space-1);
     opacity: 0.8;
     text-transform: uppercase;
     letter-spacing: 0.5px;
   }
 
   .pagination-title {
-    font-size: 0.95rem;
+    font-size: var(--font-size-sm);
     font-weight: 600;
-    line-height: 1.4;
+    line-height: var(--line-height-snug);
   }
 
   .pagination-icon {
@@ -316,8 +322,9 @@ const { currentPage, totalPages, startIndex, endIndex, totalItems, previousArtic
     }
 
     .pagination-number {
-      padding: 0.6rem 0.8rem;
+      padding: var(--space-3) var(--space-4);
       min-width: 2.2rem;
+      font-size: var(--font-size-sm);
     }
   }
 </style> 
