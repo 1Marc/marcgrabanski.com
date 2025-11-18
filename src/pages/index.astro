@@ -95,7 +95,9 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 				<section class="about-section">
 					<div class="section-header">
 						<div class="header-content">
-							<h2 class="section-title">About Me</h2>
+							<h2 class="section-title">
+								<span class="section-title-text">About Me</span>
+							</h2>
 							<p class="section-subtitle">My journey, achievements, and featured work</p>
 						</div>
 					</div>
@@ -220,7 +222,12 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 				<!-- Featured Health Section -->
 				<section class="featured-section">
 					<div class="featured-header">
-						<h2 class="section-title">🔥 Featured: My Health Journey</h2>
+						<div class="header-content">
+							<h2 class="section-title">
+								<span class="section-title-emoji">🔥</span>
+								<span class="section-title-text">Featured: My Health Journey</span>
+							</h2>
+						</div>
 					</div>
 					
 					<div class="featured-card">
@@ -266,46 +273,60 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 				<section class="performance-section">
 					<div class="performance-header">
 						<div class="header-content">
-							<h2 class="section-title">🏃‍♂️ Health & Performance</h2>
+							<h2 class="section-title">
+								<span class="section-title-emoji">🏃‍♂️</span>
+								<span class="section-title-text">Health & Performance</span>
+							</h2>
 							<p class="section-subtitle">Living the practice, not just sharing advice</p>
 						</div>
 					</div>
 					
 					<div class="health-dashboard">
-						<!-- Strength Row -->
-						<div class="metric-row strength-row">
-							<div class="row-header">
-								<div class="header-icon">💪</div>
-								<div class="header-content">
-									<h3 class="row-title">Strength</h3>
-									<div class="row-subtitle">Power & Performance</div>
+						<!-- Strength Card -->
+						<div class="health-card strength-card">
+							<div class="card-glow strength-glow"></div>
+							<div class="card-header">
+								<div class="card-icon-wrapper strength-icon">
+									<span class="card-icon">💪</span>
+								</div>
+								<div class="card-title-group">
+									<h3 class="card-title">Strength</h3>
+									<p class="card-subtitle">Power & Performance</p>
 								</div>
 							</div>
-							<div class="row-metrics">
-								<div class="stat-item strength">
-									<div class="stat-icon">🏋️</div>
-									<div class="stat-content">
+							<div class="card-stats">
+								<div class="stat-card strength-stat">
+									<div class="stat-icon-wrapper">
+										<span class="stat-icon">🏋️</span>
+									</div>
+									<div class="stat-info">
 										<div class="stat-value">235 lbs</div>
 										<div class="stat-label">Bench Press</div>
 									</div>
 								</div>
-								<div class="stat-item strength">
-									<div class="stat-icon">🏋️</div>
-									<div class="stat-content">
+								<div class="stat-card strength-stat">
+									<div class="stat-icon-wrapper">
+										<span class="stat-icon">🏋️</span>
+									</div>
+									<div class="stat-info">
 										<div class="stat-value">300 lbs</div>
 										<div class="stat-label">Squat</div>
 									</div>
 								</div>
-								<div class="stat-item strength">
-									<div class="stat-icon">🔥</div>
-									<div class="stat-content">
+								<div class="stat-card strength-stat">
+									<div class="stat-icon-wrapper">
+										<span class="stat-icon">🔥</span>
+									</div>
+									<div class="stat-info">
 										<div class="stat-value">375 lbs</div>
 										<div class="stat-label">Deadlift</div>
 									</div>
 								</div>
-								<div class="stat-item strength">
-									<div class="stat-icon">🎯</div>
-									<div class="stat-content">
+								<div class="stat-card strength-stat">
+									<div class="stat-icon-wrapper">
+										<span class="stat-icon">🎯</span>
+									</div>
+									<div class="stat-info">
 										<div class="stat-value">20 in a row</div>
 										<div class="stat-label">Pull-ups</div>
 									</div>
@@ -313,40 +334,51 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 							</div>
 						</div>
 
-						<!-- Cardio Row -->
-						<div class="metric-row cardio-row">
-							<div class="row-header">
-								<div class="header-icon">❤️</div>
-								<div class="header-content">
-									<h3 class="row-title">Cardiovascular</h3>
-									<div class="row-subtitle">Endurance & Heart Health</div>
+						<!-- Cardio Card -->
+						<div class="health-card cardio-card">
+							<div class="card-glow cardio-glow"></div>
+							<div class="card-header">
+								<div class="card-icon-wrapper cardio-icon">
+									<span class="card-icon">❤️</span>
+								</div>
+								<div class="card-title-group">
+									<h3 class="card-title">Cardiovascular</h3>
+									<p class="card-subtitle">Endurance & Heart Health</p>
 								</div>
 							</div>
-							<div class="row-metrics">
-								<div class="stat-item cardio">
-									<div class="stat-icon">🏃‍♂️</div>
-									<div class="stat-content">
+							<div class="card-stats">
+								<div class="stat-card cardio-stat">
+									<div class="stat-icon-wrapper">
+										<span class="stat-icon">🏃‍♂️</span>
+									</div>
+									<div class="stat-info">
 										<div class="stat-value">1:51:50</div>
 										<div class="stat-label">Half Marathon PR</div>
 									</div>
 								</div>
-								<div class="stat-item cardio">
-									<div class="stat-icon">❤️</div>
-									<div class="stat-content">
+								<div class="stat-card cardio-stat">
+									<div class="stat-icon-wrapper">
+										<span class="stat-icon">❤️</span>
+									</div>
+									<div class="stat-info">
 										<div class="stat-value">49 bpm</div>
 										<div class="stat-label">Resting HR</div>
 									</div>
 								</div>
-								<div class="stat-item cardio">
-									<div class="stat-icon">🫁</div>
-									<div class="stat-content">
+								<div class="stat-card cardio-stat">
+									<div class="stat-icon-wrapper">
+										<span class="stat-icon">🫁</span>
+									</div>
+									<div class="stat-info">
 										<div class="stat-value">45</div>
 										<div class="stat-label">VO2 Max</div>
 									</div>
 								</div>
-								<div class="stat-item cardio">
-									<div class="stat-icon">🔥</div>
-									<div class="stat-content">
+								<div class="stat-card cardio-stat">
+									<div class="stat-icon-wrapper">
+										<span class="stat-icon">🔥</span>
+									</div>
+									<div class="stat-info">
 										<div class="stat-value">205</div>
 										<div class="stat-label">Max HR</div>
 									</div>
@@ -354,40 +386,51 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 							</div>
 						</div>
 
-						<!-- Movement Row -->
-						<div class="metric-row movement-row">
-							<div class="row-header">
-								<div class="header-icon">🏃‍♂️</div>
-								<div class="header-content">
-									<h3 class="row-title">Movement & Skills</h3>
-									<div class="row-subtitle">Multi-Sport Athlete</div>
+						<!-- Movement Card -->
+						<div class="health-card movement-card">
+							<div class="card-glow movement-glow"></div>
+							<div class="card-header">
+								<div class="card-icon-wrapper movement-icon">
+									<span class="card-icon">🏃‍♂️</span>
+								</div>
+								<div class="card-title-group">
+									<h3 class="card-title">Movement & Skills</h3>
+									<p class="card-subtitle">Multi-Sport Athlete</p>
 								</div>
 							</div>
-							<div class="row-metrics">
-								<div class="stat-item movement">
-									<div class="stat-icon">🤸‍♂️</div>
-									<div class="stat-content">
+							<div class="card-stats">
+								<div class="stat-card movement-stat">
+									<div class="stat-icon-wrapper">
+										<span class="stat-icon">🤸‍♂️</span>
+									</div>
+									<div class="stat-info">
 										<div class="stat-value">Backflip</div>
 										<div class="stat-label">Gymnastics</div>
 									</div>
 								</div>
-								<div class="stat-item movement">
-									<div class="stat-icon">🎾</div>
-									<div class="stat-content">
+								<div class="stat-card movement-stat">
+									<div class="stat-icon-wrapper">
+										<span class="stat-icon">🎾</span>
+									</div>
+									<div class="stat-info">
 										<div class="stat-value">Tennis</div>
 										<div class="stat-label">Weekly Play</div>
 									</div>
 								</div>
-								<div class="stat-item movement">
-									<div class="stat-icon">🕺</div>
-									<div class="stat-content">
+								<div class="stat-card movement-stat">
+									<div class="stat-icon-wrapper">
+										<span class="stat-icon">🕺</span>
+									</div>
+									<div class="stat-info">
 										<div class="stat-value">State Champion</div>
 										<div class="stat-label">Adult Dance Team 2025</div>
 									</div>
 								</div>
-								<div class="stat-item movement">
-									<div class="stat-icon">🏃‍♂️</div>
-									<div class="stat-content">
+								<div class="stat-card movement-stat">
+									<div class="stat-icon-wrapper">
+										<span class="stat-icon">🏃‍♂️</span>
+									</div>
+									<div class="stat-info">
 										<div class="stat-value">600 miles</div>
 										<div class="stat-label">Annual Running</div>
 									</div>
@@ -395,40 +438,51 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 							</div>
 						</div>
 
-						<!-- Daily Health Row -->
-						<div class="metric-row daily-row">
-							<div class="row-header">
-								<div class="header-icon">📊</div>
-								<div class="header-content">
-									<h3 class="row-title">Daily Health</h3>
-									<div class="row-subtitle">Lifestyle & Wellness</div>
+						<!-- Daily Health Card -->
+						<div class="health-card daily-card">
+							<div class="card-glow daily-glow"></div>
+							<div class="card-header">
+								<div class="card-icon-wrapper daily-icon">
+									<span class="card-icon">📊</span>
+								</div>
+								<div class="card-title-group">
+									<h3 class="card-title">Daily Health</h3>
+									<p class="card-subtitle">Lifestyle & Wellness</p>
 								</div>
 							</div>
-							<div class="row-metrics">
-								<div class="stat-item daily">
-									<div class="stat-icon">👣</div>
-									<div class="stat-content">
+							<div class="card-stats">
+								<div class="stat-card daily-stat">
+									<div class="stat-icon-wrapper">
+										<span class="stat-icon">👣</span>
+									</div>
+									<div class="stat-info">
 										<div class="stat-value">13,732</div>
 										<div class="stat-label">Daily Steps (2025)</div>
 									</div>
 								</div>
-								<div class="stat-item daily">
-									<div class="stat-icon">💤</div>
-									<div class="stat-content">
+								<div class="stat-card daily-stat">
+									<div class="stat-icon-wrapper">
+										<span class="stat-icon">💤</span>
+									</div>
+									<div class="stat-info">
 										<div class="stat-value">7h 40m</div>
 										<div class="stat-label">Avg Sleep</div>
 									</div>
 								</div>
-								<div class="stat-item daily">
-									<div class="stat-icon">📏</div>
-									<div class="stat-content">
+								<div class="stat-card daily-stat">
+									<div class="stat-icon-wrapper">
+										<span class="stat-icon">📏</span>
+									</div>
+									<div class="stat-info">
 										<div class="stat-value">190 lbs</div>
 										<div class="stat-label">5'10"</div>
 									</div>
 								</div>
-								<div class="stat-item daily">
-									<div class="stat-icon">📊</div>
-									<div class="stat-content">
+								<div class="stat-card daily-stat">
+									<div class="stat-icon-wrapper">
+										<span class="stat-icon">📊</span>
+									</div>
+									<div class="stat-info">
 										<div class="stat-value">14%</div>
 										<div class="stat-label">Body Fat</div>
 									</div>
@@ -439,53 +493,109 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 				</section>
 
 				<!-- Latest Articles Section -->
-				<section class="recent-section">
-					<div class="recent-header">
-						<h2 class="section-title">📰 Latest Articles</h2>
-						<a href="/articles/1" class="view-all-link">View all articles →</a>
+				<section class="articles-showcase">
+					<div class="articles-showcase-header">
+						<div class="articles-header-content">
+							<h2 class="articles-section-title">
+								<span class="articles-title-icon">📰</span>
+								<span class="articles-title-text">Latest Articles</span>
+							</h2>
+							<p class="articles-section-description">Recent thoughts, insights, and stories from my journey</p>
+						</div>
 					</div>
-					<div class="articles-grid">
+					<div class="articles-showcase-grid">
 						{recentArticles.map(article => (
 							<ArticleAbstract node={article} />
 						))}
 					</div>
+					<div class="section-footer">
+						<a href="/articles/1" class="view-all-button">
+							<span>View All Articles</span>
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M5 12h14M12 5l7 7-7 7"/>
+							</svg>
+						</a>
+					</div>
 				</section>
 
 				<!-- Browse by Topic Section -->
-				<section class="tags-section">
-					<div class="section-header">
-						<div class="header-content">
-							<h2 class="section-title">📂 Browse by Topic</h2>
-							<p class="section-subtitle">Explore content by category</p>
+				<section class="topics-showcase">
+					<div class="topics-showcase-header">
+						<div class="topics-header-content">
+							<h2 class="topics-section-title">
+								<span class="topics-title-icon">📂</span>
+								<span class="topics-title-text">Browse by Topic</span>
+							</h2>
+							<p class="topics-section-description">Explore content organized by theme and category</p>
 						</div>
 					</div>
-					<div class="tags-grid">
-						<a href="/tags/career-journal" class="tag-card">
-							<div class="tag-icon">💼</div>
-							<div class="tag-content">
-								<h3>Career Journal</h3>
-								<p>Reflections on business, leadership, and personal growth</p>
+					<div class="topics-grid">
+						<a href="/tags/career-journal" class="topic-card topic-card-career">
+							<div class="topic-card-background"></div>
+							<div class="topic-card-content">
+								<div class="topic-icon-wrapper">
+									<span class="topic-icon">💼</span>
+								</div>
+								<div class="topic-text">
+									<h3 class="topic-title">Career Journal</h3>
+									<p class="topic-description">Reflections on business, leadership, and personal growth</p>
+									<div class="topic-arrow">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M5 12h14M12 5l7 7-7 7"/>
+										</svg>
+									</div>
+								</div>
 							</div>
 						</a>
-						<a href="/tags/checklists-guides" class="tag-card">
-							<div class="tag-icon">✅</div>
-							<div class="tag-content">
-								<h3>Checklists & Guides</h3>
-								<p>Frameworks I use personally and professionally</p>
+						<a href="/tags/checklists-guides" class="topic-card topic-card-guides">
+							<div class="topic-card-background"></div>
+							<div class="topic-card-content">
+								<div class="topic-icon-wrapper">
+									<span class="topic-icon">✅</span>
+								</div>
+								<div class="topic-text">
+									<h3 class="topic-title">Checklists & Guides</h3>
+									<p class="topic-description">Frameworks I use personally and professionally</p>
+									<div class="topic-arrow">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M5 12h14M12 5l7 7-7 7"/>
+										</svg>
+									</div>
+								</div>
 							</div>
 						</a>
-						<a href="/tags/opinion" class="tag-card">
-							<div class="tag-icon">💭</div>
-							<div class="tag-content">
-								<h3>Opinion Pieces</h3>
-								<p>Takes on tech, life, and building thoughtfully</p>
+						<a href="/tags/opinion" class="topic-card topic-card-opinion">
+							<div class="topic-card-background"></div>
+							<div class="topic-card-content">
+								<div class="topic-icon-wrapper">
+									<span class="topic-icon">💭</span>
+								</div>
+								<div class="topic-text">
+									<h3 class="topic-title">Opinion Pieces</h3>
+									<p class="topic-description">Takes on tech, life, and building thoughtfully</p>
+									<div class="topic-arrow">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M5 12h14M12 5l7 7-7 7"/>
+										</svg>
+									</div>
+								</div>
 							</div>
 						</a>
-						<a href="/tags/lessons-learned" class="tag-card">
-							<div class="tag-icon">🎓</div>
-							<div class="tag-content">
-								<h3>Lessons Learned</h3>
-								<p>Insights gained the hard way</p>
+						<a href="/tags/lessons-learned" class="topic-card topic-card-lessons">
+							<div class="topic-card-background"></div>
+							<div class="topic-card-content">
+								<div class="topic-icon-wrapper">
+									<span class="topic-icon">🎓</span>
+								</div>
+								<div class="topic-text">
+									<h3 class="topic-title">Lessons Learned</h3>
+									<p class="topic-description">Insights gained the hard way</p>
+									<div class="topic-arrow">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+											<path d="M5 12h14M12 5l7 7-7 7"/>
+										</svg>
+									</div>
+								</div>
 							</div>
 						</a>
 					</div>
@@ -495,8 +605,12 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 				<!-- Testimonials Section -->
 				<section class="testimonials-section">
 					<div class="testimonials-header">
-						<h2 class="section-title">📣 Praise from Others</h2>
-						<a href="https://www.linkedin.com/in/1marc/" target="_blank" class="view-all-link">View Full Testimonials →</a>
+						<div class="testimonials-header-content">
+							<h2 class="section-title">
+								<span class="section-title-emoji">📣</span>
+								<span class="section-title-text">Praise from Others</span>
+							</h2>
+						</div>
 					</div>
 					<div class="testimonials-list">
 						<blockquote class="testimonial-quote">
@@ -521,6 +635,14 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 							</footer>
 						</blockquote>
 					</div>
+					<div class="section-footer">
+						<a href="https://www.linkedin.com/in/1marc/" target="_blank" class="view-all-button">
+							<span>View Full Testimonials</span>
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M5 12h14M12 5l7 7-7 7"/>
+							</svg>
+						</a>
+					</div>
 				</section>
 
 
@@ -528,7 +650,10 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 				<section class="connect-section">
 					<div class="section-header">
 						<div class="header-content">
-							<h2 class="section-title">🤝 Connect with Me</h2>
+							<h2 class="section-title">
+								<span class="section-title-emoji">🤝</span>
+								<span class="section-title-text">Connect with Me</span>
+							</h2>
 							<p class="section-subtitle">Let's build something together</p>
 						</div>
 					</div>
