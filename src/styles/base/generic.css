@@ -246,9 +246,9 @@ h3 span.block {
   display: inline-block;
   background: linear-gradient(
     90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgb(47, 47, 146) 50%,
-    rgb(47, 94, 205) 100%
+    rgba(26, 15, 8, 1) 0%,
+    rgb(160, 96, 0) 50%,
+    rgb(224, 160, 128) 100%
   );
   padding: 0 10px;
   color: white;
@@ -260,8 +260,8 @@ h2 span.alt,
 h3 span.alt {
   background: linear-gradient(
     90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgb(146, 47, 47) 50%,
-    rgb(205, 47, 47) 100%
+    rgba(26, 15, 8, 1) 0%,
+    rgb(160, 96, 0) 50%,
+    rgb(224, 160, 128) 100%
   );
 }

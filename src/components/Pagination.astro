@@ -114,7 +114,7 @@ const { currentPage, totalPages, startIndex, endIndex, totalItems, previousArtic
     display: flex;
     flex-direction: column;
     padding: 2rem 0;
-    border-top: 1px solid rgba(152, 199, 241, 0.2);
+    border-top: 1px solid rgba(224, 160, 128, 0.2);
     margin-top: 3rem;
   }
 
@@ -146,13 +146,13 @@ const { currentPage, totalPages, startIndex, endIndex, totalItems, previousArtic
     padding: 0.75rem 1rem;
     text-decoration: none;
     color: var(--color-primary);
-    border: 1px solid rgba(152, 199, 241, 0.3);
+    border: 1px solid rgba(224, 160, 128, 0.3);
     border-radius: 12px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     min-width: 2.5rem;
     text-align: center;
     font-weight: 600;
-    background: rgba(152, 199, 241, 0.05);
+    background: rgba(224, 160, 128, 0.05);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     position: relative;
@@ -166,7 +166,7 @@ const { currentPage, totalPages, startIndex, endIndex, totalItems, previousArtic
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(152, 199, 241, 0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(224, 160, 128, 0.2), transparent);
     transition: left 0.5s ease;
   }
 
@@ -175,18 +175,18 @@ const { currentPage, totalPages, startIndex, endIndex, totalItems, previousArtic
   }
 
   .pagination-number:hover {
-    background: rgba(152, 199, 241, 0.15);
-    border-color: rgba(152, 199, 241, 0.6);
+    background: rgba(224, 160, 128, 0.15);
+    border-color: rgba(224, 160, 128, 0.6);
     color: var(--color-white);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(152, 199, 241, 0.3);
+    box-shadow: 0 8px 25px rgba(224, 160, 128, 0.3);
   }
 
   .pagination-number.active {
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     color: var(--color-background);
     border-color: var(--color-primary);
-    box-shadow: 0 4px 15px rgba(152, 199, 241, 0.4);
+    box-shadow: 0 4px 15px rgba(224, 160, 128, 0.4);
     font-weight: 700;
   }
 
@@ -195,12 +195,12 @@ const { currentPage, totalPages, startIndex, endIndex, totalItems, previousArtic
     text-decoration: none;
     color: var(--color-primary);
     padding: 1.25rem 1.5rem;
-    border: 1px solid rgba(152, 199, 241, 0.3);
+    border: 1px solid rgba(224, 160, 128, 0.3);
     border-radius: 16px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 500;
     max-width: 45%;
-    background: rgba(152, 199, 241, 0.05);
+    background: rgba(224, 160, 128, 0.05);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     position: relative;
@@ -214,7 +214,7 @@ const { currentPage, totalPages, startIndex, endIndex, totalItems, previousArtic
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(152, 199, 241, 0.1) 0%, rgba(238, 111, 107, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(224, 160, 128, 0.1) 0%, rgba(160, 96, 0, 0.1) 100%);
     opacity: 0;
     transition: opacity 0.3s ease;
   }
@@ -224,11 +224,11 @@ const { currentPage, totalPages, startIndex, endIndex, totalItems, previousArtic
   }
 
   .pagination-link:hover {
-    background: rgba(152, 199, 241, 0.15);
-    border-color: rgba(152, 199, 241, 0.6);
+    background: rgba(224, 160, 128, 0.15);
+    border-color: rgba(224, 160, 128, 0.6);
     color: var(--color-white);
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(152, 199, 241, 0.3);
+    box-shadow: 0 12px 35px rgba(224, 160, 128, 0.3);
   }
 
   .pagination-link.prev {

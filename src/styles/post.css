@@ -53,11 +53,11 @@
   padding: var(--space-xs) var(--space-md);
   background: linear-gradient(
     135deg,
-    rgba(152, 199, 241, 0.1) 0%,
-    rgba(238, 111, 107, 0.1) 100%
+    rgba(224, 160, 128, 0.1) 0%,
+    rgba(160, 96, 0, 0.1) 100%
   );
   border-radius: 20px;
-  border: 1px solid rgba(152, 199, 241, 0.2);
+  border: 1px solid rgba(224, 160, 128, 0.2);
   position: relative;
   display: inline-block;
 }

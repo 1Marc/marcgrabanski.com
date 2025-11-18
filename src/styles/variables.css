@@ -1,17 +1,17 @@
 :root {
-  /* Colors */
-  --color-base: #e9f5ff;
-  --color-primary: #98c7f1;
-  --color-primary-highlight: #d2eaff;
-  --color-primary-dark: #333;
-  --color-primary-dark-link: rgb(110, 170, 222);
-  --color-secondary: #ee6f6b;
-  --color-background: #041423;
+  /* Colors - Warm palette from photo */
+  --color-base: #fff5f0;
+  --color-primary: #e0a080;
+  --color-primary-highlight: #f5d4c0;
+  --color-primary-dark: #2a1f1a;
+  --color-primary-dark-link: rgb(224, 160, 128);
+  --color-secondary: #a06000;
+  --color-background: #1a0f08;
   --color-white: #ffffff;
-  --color-gray: #f4faff;
+  --color-gray: #faf5f0;
   --color-gray-border: #ffffff;
   --color-gray-bg: #ffffff;
-  --color-text: #333;
+  --color-text: #2a1f1a;
 
   /* Typography */
   --font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
