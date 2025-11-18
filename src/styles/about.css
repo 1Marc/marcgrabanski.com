@@ -2,9 +2,8 @@
 .about-section {
   margin-bottom: var(--space-xl);
   padding: var(--space-sm) var(--space-lg) var(--space-md);
-  background: var(--color-gray);
-  border-radius: 20px;
-  color: #333;
+  /* Background removed - using dark theme from home.css */
+  color: var(--color-white);
 }
 
 .about-content {

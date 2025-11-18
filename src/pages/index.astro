@@ -3,8 +3,14 @@ import Layout from '../layouts/Layout.astro';
 import { site } from "../data/siteMetaData.js";
 import { getCollection } from 'astro:content';
 import Tag from '../components/Tag.astro';
-import Header from '../components/Header.astro';
 import ArticleAbstract from '../components/ArticleAbstract.astro';
+import githubIcon from '../../public/github.svg';
+import linkedinIcon from '../../public/linkedin.svg';
+
+const xIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>`;
+
+const { author, menu } = site;
+const { twitter, github, linkedin } = author;
 
 // Map tag names to URL slugs
 const tagMapping = {
@@ -20,8 +26,66 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 ---
 
 <Layout title={site.title}>
-	<!-- Original Header Component -->
-	<Header />
+	<!-- Hero Introduction Section (New Header) -->
+	<section class="intro-section intro-header">
+		<div class="content-wrapper">
+			<div class="intro-container">
+				<div class="intro-image-wrapper">
+					<a href="/" class="intro-image-link">
+						<div class="intro-image-frame">
+							<img src="/photo.jpg" alt="Marc Grabanski" class="intro-photo" />
+							<div class="photo-glow"></div>
+						</div>
+					</a>
+				</div>
+				<div class="intro-content">
+					<h1 class="intro-title">
+						<a href="/" class="intro-title-link">Marc Grabanski</a>
+					</h1>
+					<p class="intro-role">Founder, Developer, Educator</p>
+					<p class="intro-bio">
+						I founded <strong>Frontend Masters</strong> in 2014 and have grown it to over <strong>10,000 paying customers</strong> from leading companies around the world, while keeping the company fully <strong>bootstrapped and independent</strong>.
+					</p>
+					<div class="intro-stats">
+						<div class="intro-stat">
+							<div class="stat-number">10,000+</div>
+							<div class="stat-label">Students</div>
+						</div>
+						<div class="intro-stat">
+							<div class="stat-number">60+</div>
+							<div class="stat-label">Events</div>
+						</div>
+						<div class="intro-stat">
+							<div class="stat-number">100%</div>
+							<div class="stat-label">Bootstrapped</div>
+						</div>
+					</div>
+					
+					<!-- Navigation Menu -->
+					<nav class="intro-navigation">
+						<ul class="intro-nav-list">
+							{menu.map(item => (
+								<li class="intro-nav-item">
+									<a href={item.path} class="intro-nav-link">
+										{item.label}
+									</a>
+								</li>
+							))}
+						</ul>
+						<div class="intro-social-links">
+							<a href={`https://x.com/${twitter}`} target="_blank" class="intro-social-link" title="X / Twitter" rel="noopener noreferrer" aria-label="X / Twitter">
+								<span class="intro-social-icon" set:html={xIcon} />
+							</a>
+							<a href={`https://linkedin.com/in/${linkedin}`} target="_blank" class="intro-social-link" title="LinkedIn" rel="noopener noreferrer" aria-label="LinkedIn">
+								<img src={linkedinIcon.src} alt="LinkedIn" class="intro-social-icon" />
+							</a>
+							<a href="/rss.xml" class="intro-social-link rss-link-text">RSS</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</section>
+	</div>
 
 	<div class="content">
 		<div class="content__inner">
@@ -29,17 +93,10 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 
 				<!-- About Section -->
 				<section class="about-section">
-					<div class="about-hero">
-						<div class="about-hero-content">
-							<div class="about-intro">
-								<div class="about-intro-text">
-									<h2 class="about-title">📘 About Me</h2>
-									<p class="about-subtitle">Founder, Developer, Educator</p>
-									<p class="about-bio">
-										I founded Frontend Masters in 2014 and have grown it to over 10,000 paying customers from leading companies around the world, while keeping the company fully bootstrapped and independent.
-									</p>
-								</div>
-							</div>
+					<div class="section-header">
+						<div class="header-content">
+							<h2 class="section-title">About Me</h2>
+							<p class="section-subtitle">My journey, achievements, and featured work</p>
 						</div>
 					</div>
 

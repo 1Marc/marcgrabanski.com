@@ -32,6 +32,7 @@
   --space-md: 1.5rem;
   --space-lg: 2rem;
   --space-xl: 3rem;
+  --space-xxl: 4rem;
 
   /* Layout */
   --layout-post-single-max-width: 1200px;
