@@ -235,43 +235,50 @@ const recentArticles = allArticles.filter(article => article.slug !== 'personal-
 						</div>
 					</div>
 					
-					<div class="featured-card">
-						<div class="featured-banner">
+					<a href="/articles/personal-health-checklist" class="featured-card featured-health-card">
+						<div class="featured-card-background"></div>
+						<div class="featured-card-glow"></div>
+						<div class="featured-card-content">
+							<div class="featured-badge">
+								<span class="badge-icon">⭐</span>
+								<span class="badge-text">Featured Article</span>
+							</div>
 							<div class="featured-main">
 								<div class="featured-text">
 									<h3 class="featured-title">
-										<a href="/articles/personal-health-checklist" class="featured-link">
-											My Personal Health Checklist
-										</a>
+										My Personal Health Checklist
 									</h3>
 									<p class="featured-description">
 										Your go-to guide for building and maintaining healthy habits. This took years to put together and is updated as I learn more.
 									</p>
 									<div class="featured-highlights">
 										<div class="highlight-item">
-											<span class="highlight-icon">✅</span>
 											<span class="highlight-text">50+ science-backed strategies</span>
 										</div>
 										<div class="highlight-item">
-											<span class="highlight-icon">📈</span>
 											<span class="highlight-text">Updated annually for 3+ years</span>
 										</div>
 										<div class="highlight-item">
-											<span class="highlight-icon">🎯</span>
 											<span class="highlight-text">100% actionable</span>
 										</div>
 									</div>
-									<a href="/articles/personal-health-checklist" class="cta-button">
-										<span class="button-text">Read the Health Checklist</span>
-										<span class="button-arrow">→</span>
-									</a>
 								</div>
 								<div class="featured-visual">
-									<div class="health-icon">💪</div>
+									<div class="health-icon-container">
+										<div class="health-icon">💪</div>
+									</div>
 								</div>
 							</div>
+							<div class="featured-footer">
+								<span class="cta-text">Read the Health Checklist</span>
+								<span class="cta-arrow">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+										<path d="M5 12h14M12 5l7 7-7 7"/>
+									</svg>
+								</span>
+							</div>
 						</div>
-					</div>
+					</a>
 				</section>
 
 				<!-- Performance Stats Section -->
