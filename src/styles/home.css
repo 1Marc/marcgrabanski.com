@@ -28,7 +28,7 @@
   );
   border-bottom: 1px solid rgba(224, 160, 128, 0.1);
   width: calc(100% - var(--space-xl) * 2);
-  max-width: var(--layout-width);
+  max-width: min(var(--layout-width), calc(100vw - var(--space-xl) * 2));
   border-radius: 32px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3),
     0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -955,7 +955,7 @@
 .featured-section {
   padding: 0;
   position: relative;
-  width: calc(100% + 2 * var(--space-lg));
+  width: 100%;
   max-width: var(--layout-width);
   box-sizing: border-box;
 }
@@ -1623,7 +1623,7 @@
 .about-section {
   padding: 0;
   position: relative;
-  width: calc(100% + 2 * var(--space-lg));
+  width: 100%;
   max-width: var(--layout-width);
   box-sizing: border-box;
 }
@@ -2590,10 +2590,56 @@
   margin-top: var(--space-xl);
 }
 
+/* Responsive Design - Intro Card Centered Layout */
+@media (max-width: 1020px) {
+  .intro-section.intro-header .intro-container {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    text-align: center;
+  }
+
+  .intro-section.intro-header .intro-image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro-section.intro-header .intro-image-frame {
+    width: 150px;
+    height: 150px;
+  }
+
+  .intro-section.intro-header .intro-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+  }
+
+  .intro-section.intro-header .intro-navigation {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-md);
+  }
+
+  .intro-section.intro-header .intro-nav-list {
+    justify-content: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+  }
+
+  .intro-section.intro-header .intro-social-links {
+    justify-content: center;
+  }
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .content-wrapper {
     padding: 0 var(--space-sm);
+  }
+
+  .about-section,
+  .featured-section {
+    width: 100%;
   }
 
   .featured-main {
@@ -2642,54 +2688,71 @@
     font-size: var(--font-size-lg);
   }
 
-  /* Intro Section Mobile Styles */
+  /* Intro Section Mobile Styles - Additional mobile-specific overrides */
   .intro-section.intro-header {
-    width: calc(100% - var(--space-md) * 2);
-    padding: var(--space-lg) 0;
-    margin: var(--space-lg) auto;
+    width: 90%;
+    max-width: 100%;
+    padding: var(--space-md) 0;
+    margin: var(--space-sm) auto;
+    border-radius: 0;
+  }
+
+  .intro-section.intro-header .content-wrapper {
+    padding: 0 var(--space-sm);
+    max-width: 100%;
+    width: 100%;
   }
 
   .intro-section.intro-header .intro-image-frame {
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
   }
 
-  .intro-container {
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
-    text-align: center;
+  .intro-section.intro-header .intro-container {
     padding: var(--space-lg);
-  }
-
-  .intro-image-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-
-  .intro-image-frame {
-    width: 150px;
-    height: 150px;
-  }
-
-  .intro-stats {
-    justify-content: center;
-    flex-wrap: wrap;
     gap: var(--space-md);
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
   }
 
-  .intro-navigation {
-    flex-direction: column;
-    align-items: stretch;
-    gap: var(--space-md);
+  .intro-section.intro-header .intro-stats {
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
   }
 
-  .intro-nav-list {
-    justify-content: center;
-    gap: var(--space-md);
+  .intro-section.intro-header .intro-navigation {
+    gap: var(--space-sm);
+    padding-top: var(--space-md);
+    margin-top: var(--space-md);
   }
 
-  .intro-social-links {
-    justify-content: center;
+  .intro-section.intro-header .intro-nav-list {
+    gap: var(--space-sm);
+  }
+
+  .intro-section.intro-header .intro-bio {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-sm);
+  }
+
+  .intro-section.intro-header .intro-role {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-sm);
+  }
+
+  .intro-section.intro-header .intro-title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-xs);
+  }
+
+  .intro-section.intro-header .stat-number {
+    font-size: var(--font-size-xl);
+  }
+
+  .intro-section.intro-header .stat-label {
+    font-size: var(--font-size-xs);
   }
 
   /* About Section Mobile Styles */
