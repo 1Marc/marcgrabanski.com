@@ -112,13 +112,8 @@ const formatDate = (date: Date) => {
 <style>
   .content {
     min-height: 100vh;
-    background: linear-gradient(
-      135deg,
-      var(--color-background) 0%,
-      #2a1a0f 50%,
-      #3a2a1a 100%
-    );
-    padding: var(--space-lg) 0;
+    background: #ffffff;
+    padding: 40px 0;
   }
 
   .content__inner {
@@ -127,8 +122,9 @@ const formatDate = (date: Date) => {
   }
 
   .content-wrapper {
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 80px;
   }
 
   .article-single__inner {
@@ -141,32 +137,48 @@ const formatDate = (date: Date) => {
   }
   
   .article-meta {
-    margin-bottom: var(--space-md);
+    margin-bottom: 20px;
   }
   
   .article-tags {
     display: flex;
-    gap: 0.5rem;
+    gap: 12px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: var(--space-md);
+    margin-top: 24px;
   }
 
   .article-header {
-    padding-top: 1rem;
+    padding-top: 0;
+  }
+
+  @media (max-width: 1440px) {
+    .content-wrapper {
+      padding: 0 40px;
+    }
   }
 
   @media (max-width: 768px) {
     .content {
-      padding: var(--space-md) 0;
+      padding: 24px 0;
+    }
+
+    .content-wrapper {
+      padding: 0 24px;
     }
 
     .article-tags {
-      gap: 0.25rem;
+      gap: 8px;
     }
     
     .article-header {
-      padding-top: 0.75rem;
+      padding-top: 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .content-wrapper {
+      padding: 0 16px;
     }
   }
 </style>

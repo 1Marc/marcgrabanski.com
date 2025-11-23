@@ -44,4 +44,45 @@ const { name } = author;
       </div>
     </div>
   </body>
+
+<style>
+  .content {
+    background: #ffffff;
+    min-height: 100vh;
+    padding: 40px 0;
+  }
+
+  .content__inner {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
+
+  @media (max-width: 1440px) {
+    .content-wrapper {
+      padding: 0 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      padding: 24px 0;
+    }
+
+    .content-wrapper {
+      padding: 0 24px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .content-wrapper {
+      padding: 0 16px;
+    }
+  }
+</style>
 </html>

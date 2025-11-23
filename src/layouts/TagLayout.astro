@@ -32,7 +32,9 @@ const pageTitle = `All Posts Tagged as "${term}"`;
 				<div class="content-wrapper">
 					<div class="tag-index">
 						<div class="tag-header">
-							<div class="tag-icon">{icon}</div>
+							<div class="tag-icon-wrapper">
+								<div class="tag-icon">{icon}</div>
+							</div>
 							<h1 class="section-title">{term}</h1>
 							<p class="tag-description">{description}</p>
 						</div>
@@ -47,60 +49,131 @@ const pageTitle = `All Posts Tagged as "${term}"`;
 </html>
 
 <style>
-  .tag-index {
-    max-width: var(--layout-width-compact);
-    margin: 0 auto;
-    padding: 2rem 0;
+  .content {
+    background: #ffffff;
+    min-height: 100vh;
+    padding: 40px 0;
   }
 
-  .tag-index .tag-icon {
-    width: 100%;
-    background: none;
+  .content__inner {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
+
+  .tag-index {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .tag-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 48px;
+  }
+
+  .tag-icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: #f7f7f7;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    border: 1px solid #e0e0e0;
   }
 
   .tag-icon {
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
+    font-size: 40px;
+    line-height: 1;
   }
 
   .tag-header .section-title {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-    color: var(--color-base);
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-top: 0;
+    color: #222222;
+    letter-spacing: -0.02em;
   }
 
   .tag-description {
-    font-size: 1.2rem;
-    color: var(--color-muted);
+    font-size: 18px;
+    color: #717171;
     margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1.5;
   }
 
   .tag-content {
-    margin-bottom: 3rem;
+    margin-bottom: 48px;
   }
 
   .tag-articles-list {
-    margin-bottom: 3rem;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 1440px) {
+    .content-wrapper {
+      padding: 0 40px;
+    }
   }
 
   @media (max-width: 768px) {
+    .content {
+      padding: 24px 0;
+    }
+
+    .content-wrapper {
+      padding: 0 24px;
+    }
+
+    .tag-header {
+      margin-bottom: 32px;
+    }
+
+    .tag-icon-wrapper {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 20px;
+    }
+
     .tag-icon {
-      font-size: 3rem;
+      font-size: 32px;
     }
     
     .tag-header .section-title {
-      font-size: 2rem;
+      font-size: 36px;
     }
     
     .tag-description {
-      font-size: 1rem;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .content-wrapper {
+      padding: 0 16px;
+    }
+
+    .tag-header .section-title {
+      font-size: 28px;
+    }
+
+    .tag-icon-wrapper {
+      width: 56px;
+      height: 56px;
+      margin-bottom: 16px;
+    }
+
+    .tag-icon {
+      font-size: 28px;
     }
   }
 </style>

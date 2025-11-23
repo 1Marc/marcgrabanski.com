@@ -16,13 +16,24 @@
 .layout-home {
   width: 100%;
   max-width: 100%;
+  background: #ffffff;
 }
 
 .layout-home .content {
   width: 100%;
   max-width: 100%;
+  background: #ffffff;
+}
+
+.layout-home body {
+  background: #ffffff;
 }
 
 body {
   padding-bottom: 100px;
+}
+
+/* Light background for homepage */
+body:has(.hero-section) {
+  background: #ffffff;
 }
