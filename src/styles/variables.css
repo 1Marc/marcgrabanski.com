@@ -50,9 +50,9 @@
   --line-height-loose: 1.75; /* Spacious reading */
   --line-height-base: var(--line-height-normal);
 
-  /* Article body typography */
-  --article-font-size: 20px;
-  --article-line-height: 1.75;
+  /* Article body typography - using rem-based variable for consistency */
+  --article-font-size: var(--font-size-md); /* 20.25px - slightly larger than base for readability */
+  --article-line-height: var(--line-height-relaxed);
 
   /* Additional font sizes for comprehensive coverage */
   --font-size-12: 0.667rem; /* 12px */

@@ -33,7 +33,7 @@
 }
 
 .post__meta-time {
-  font-size: var(--font-size-14);
+  font-size: var(--font-size-sm);
   color: #717171;
   font-weight: 500;
   text-transform: none;
@@ -44,7 +44,7 @@
   border: 1px solid #e0e0e0;
   position: relative;
   display: inline-block;
-  line-height: 1.4;
+  line-height: var(--line-height-normal);
 }
 
 .post__meta-divider {
@@ -53,7 +53,7 @@
 }
 
 .post__title {
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-3xl);
   line-height: var(--line-height-tight);
   margin-bottom: var(--space-4);
   font-weight: 700;
@@ -72,9 +72,9 @@
 }
 
 .post__description {
-  font-size: var(--font-size-16);
+  font-size: var(--font-size-md);
   color: #484848;
-  line-height: 1.6;
+  line-height: var(--line-height-relaxed);
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -182,7 +182,7 @@
   position: relative;
   margin-bottom: var(--space-xs);
   font-size: var(--font-size-base);
-  line-height: 1.5;
+  line-height: var(--line-height-normal);
 }
 
 .accomplishments li::before {
@@ -200,13 +200,13 @@
   }
 
   .post__title {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-2xl);
     line-height: var(--line-height-tight);
   }
 
   .post__description {
     font-size: var(--font-size-base);
-    line-height: var(--line-height-normal);
+    line-height: var(--line-height-relaxed);
   }
 
   .post__tags {
@@ -227,10 +227,5 @@
     font-size: var(--font-size-xs);
     padding: var(--space-2) var(--space-3);
     letter-spacing: 0.3px;
-  }
-
-  .post__meta-time::before {
-    font-size: var(--font-size-12);
-    margin-right: 4px;
   }
 }

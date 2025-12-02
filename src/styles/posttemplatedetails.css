@@ -10,7 +10,7 @@
   margin-left: auto;
   margin-right: auto;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: var(--line-height-tight);
   margin-top: var(--space-lg);
   margin-bottom: var(--space-sm);
 }
@@ -28,10 +28,10 @@
 
 .post-single__body figure blockquote p {
   max-width: var(--layout-post-single-width);
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-lg);
   margin-top: 0;
   margin-bottom: var(--space-md);
-  line-height: 1.5;
+  line-height: var(--line-height-relaxed);
 }
 
 .post-single__body a {
@@ -62,7 +62,7 @@
   max-width: var(--layout-post-single-width);
   margin-left: var(--space-md);
   margin-right: var(--space-md);
-  line-height: 1.2;
+  line-height: var(--line-height-tight);
   margin-top: var(--space-md);
   margin-bottom: var(--space-lg);
 }
@@ -169,7 +169,7 @@
 .post-single__footer-title {
   font-size: var(--font-size-sm);
   font-weight: 600;
-  line-height: 1.4;
+  line-height: var(--line-height-normal);
 }
 
 .post-single__footer-icon {
@@ -294,8 +294,8 @@
 }
 
 .post-single__body p {
-  font-size: var(--font-size-base);
-  line-height: 1.7;
+  font-size: var(--article-font-size);
+  line-height: var(--line-height-relaxed);
   margin-bottom: var(--space-md);
 }
 
@@ -337,8 +337,8 @@
     margin-top: var(--space-xl);
   }
   .post-single__body {
-    font-size: var(--font-size-base);
-    line-height: 1.7;
+    font-size: var(--article-font-size);
+    line-height: var(--line-height-relaxed);
     margin-bottom: var(--space-md);
   }
   .post-single__home-button {

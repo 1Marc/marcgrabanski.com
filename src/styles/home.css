@@ -77,23 +77,23 @@
 .hero-title {
   font-size: var(--font-size-64);
   font-weight: 600;
-  line-height: 1.1;
+  line-height: var(--line-height-tight);
   margin: 0;
   color: #222222;
   letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
-  font-size: var(--font-size-22);
+  font-size: var(--font-size-lg);
   font-weight: 400;
   color: #717171;
   margin: 0;
-  line-height: 1.4;
+  line-height: var(--line-height-snug);
 }
 
 .hero-description {
-  font-size: var(--font-size-base);
-  line-height: 1.6;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-relaxed);
   color: #484848;
   margin: 0;
   max-width: 600px;
@@ -267,15 +267,15 @@
 .featured-title {
   font-size: var(--font-size-36);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: var(--line-height-tight);
   margin: 0 0 16px;
   color: #222222;
   letter-spacing: -0.02em;
 }
 
 .featured-description {
-  font-size: var(--font-size-lg);
-  line-height: 1.6;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-relaxed);
   color: #484848;
   margin: 0 0 24px;
   max-width: 700px;
@@ -294,9 +294,10 @@
   display: flex;
   gap: 8px;
   align-items: center;
-  font-size: var(--font-size-15);
+  font-size: var(--font-size-sm);
   color: #717171;
   font-weight: 500;
+  line-height: var(--line-height-normal);
 }
 
 .featured-arrow {
@@ -351,7 +352,7 @@
   font-size: var(--font-size-40);
   font-weight: 600;
   color: #222222;
-  line-height: 1.2;
+  line-height: var(--line-height-tight);
   margin-bottom: 8px;
   letter-spacing: -0.02em;
 }
@@ -371,17 +372,18 @@
 .section-title {
   font-size: var(--font-size-48);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: var(--line-height-tight);
   margin: 0 0 12px;
   color: #222222;
   letter-spacing: -0.02em;
 }
 
 .section-subtitle {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-md);
   color: #717171;
   margin: 0;
   font-weight: 400;
+  line-height: var(--line-height-relaxed);
 }
 
 /* Articles Section */
@@ -473,8 +475,8 @@
 }
 
 .card-content p {
-  font-size: var(--font-size-16);
-  line-height: 1.6;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-relaxed);
   color: #484848;
   margin: 0;
 }
@@ -489,8 +491,9 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: var(--font-size-15);
+  font-size: var(--font-size-base);
   color: #484848;
+  line-height: var(--line-height-relaxed);
 }
 
 .highlight-icon {
@@ -521,9 +524,10 @@
 }
 
 .work-stat-label {
-  font-size: var(--font-size-13);
+  font-size: var(--font-size-xs);
   color: #717171;
   font-weight: 500;
+  line-height: var(--line-height-normal);
 }
 
 .work-link {
@@ -533,7 +537,7 @@
   color: #222222;
   text-decoration: none;
   font-weight: 600;
-  font-size: var(--font-size-15);
+  font-size: var(--font-size-base);
   margin-top: 8px;
   transition: all 0.2s ease;
 }
@@ -597,10 +601,11 @@
 }
 
 .health-subtitle {
-  font-size: var(--font-size-14);
+  font-size: var(--font-size-sm);
   color: #717171;
   margin: 0;
   font-weight: 400;
+  line-height: var(--line-height-normal);
 }
 
 .health-stats {
@@ -624,9 +629,10 @@
 }
 
 .health-stat-label {
-  font-size: var(--font-size-12);
+  font-size: var(--font-size-xs);
   color: #717171;
   font-weight: 500;
+  line-height: var(--line-height-normal);
 }
 
 /* Topics Section */
@@ -687,10 +693,10 @@
 }
 
 .topic-description {
-  font-size: var(--font-size-15);
+  font-size: var(--font-size-base);
   color: #717171;
   margin: 0;
-  line-height: 1.5;
+  line-height: var(--line-height-relaxed);
 }
 
 /* Testimonials Section */
@@ -735,8 +741,8 @@
 }
 
 .testimonial-text {
-  font-size: var(--font-size-16);
-  line-height: 1.6;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-relaxed);
   color: #484848;
   margin: 0 0 20px;
   position: relative;
@@ -753,12 +759,13 @@
   font-weight: 600;
   color: #222222;
   margin-bottom: 4px;
-  font-size: var(--font-size-15);
+  font-size: var(--font-size-base);
 }
 
 .testimonial-author span {
-  font-size: var(--font-size-14);
+  font-size: var(--font-size-sm);
   color: #717171;
+  line-height: var(--line-height-normal);
 }
 
 /* Connect Section */
@@ -821,9 +828,10 @@
 }
 
 .connect-description {
-  font-size: var(--font-size-14);
+  font-size: var(--font-size-sm);
   color: #717171;
   margin: 0;
+  line-height: var(--line-height-normal);
 }
 
 /* Responsive Design */
@@ -892,7 +900,7 @@
   }
 
   .hero-description {
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-base);
   }
 
   .hero-image-frame {
@@ -905,7 +913,7 @@
   }
 
   .section-subtitle {
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-base);
   }
 
   .articles-grid {
