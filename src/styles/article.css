@@ -196,8 +196,8 @@
 
 .article-body,
 .page-body {
-  font-size: 20px;
-  line-height: 1.75;
+  font-size: var(--article-body-font-size);
+  line-height: var(--article-body-line-height);
   color: #484848;
   max-width: 100%;
   overflow-wrap: break-word;
@@ -254,8 +254,8 @@
 .article-body p,
 .page-body p {
   margin: 0 0 24px 0;
-  font-size: 20px;
-  line-height: 1.75;
+  font-size: var(--article-body-font-size);
+  line-height: var(--article-body-line-height);
   text-align: left;
 }
 
@@ -288,8 +288,8 @@
 .article-body li,
 .page-body li {
   margin: var(--space-xs) 0;
-  font-size: var(--font-size-lg);
-  line-height: var(--line-height-loose);
+  font-size: var(--article-body-font-size);
+  line-height: var(--article-body-line-height);
 }
 
 .article-body ul li,
@@ -313,7 +313,7 @@
   border-left: 4px solid #e0a080;
   border-radius: 8px;
   font-style: italic;
-  font-size: 20px;
+  font-size: var(--article-body-font-size);
   line-height: 1.6;
   color: #484848;
   position: relative;
@@ -531,8 +531,8 @@
 
 .page-body p {
   margin: 0 0 24px 0;
-  font-size: 20px;
-  line-height: 1.75;
+  font-size: var(--article-body-font-size);
+  line-height: var(--article-body-line-height);
   text-align: left;
 }
 
@@ -544,7 +544,8 @@
 
 .page-body li {
   margin: var(--space-xs) 0;
-  line-height: var(--line-height-normal);
+  font-size: var(--article-body-font-size);
+  line-height: var(--article-body-line-height);
 }
 
 .page-body blockquote {
@@ -554,7 +555,7 @@
   border-left: 4px solid #e0a080;
   border-radius: 8px;
   font-style: italic;
-  font-size: 20px;
+  font-size: var(--article-body-font-size);
   line-height: 1.6;
   color: #484848;
   position: relative;
