@@ -343,9 +343,8 @@
 }
 
 .stat-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border-color: #b0b0b0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  border-color: #d0d0d0;
 }
 
 .stat-value {
@@ -455,9 +454,8 @@
 }
 
 .info-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border-color: #b0b0b0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  border-color: #d0d0d0;
 }
 
 .card-heading {
@@ -576,9 +574,8 @@
 }
 
 .health-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border-color: #b0b0b0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  border-color: #d0d0d0;
 }
 
 .health-card-header {
@@ -723,9 +720,8 @@
 }
 
 .testimonial-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border-color: #b0b0b0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  border-color: #d0d0d0;
 }
 
 .testimonial-card::before {
