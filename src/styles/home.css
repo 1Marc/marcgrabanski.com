@@ -67,7 +67,7 @@
   background: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 30px;
-  font-size: 14px;
+  font-size: var(--font-size-14);
   font-weight: 600;
   color: #222222;
   width: fit-content;
@@ -75,7 +75,7 @@
 }
 
 .hero-title {
-  font-size: 64px;
+  font-size: var(--font-size-64);
   font-weight: 600;
   line-height: 1.1;
   margin: 0;
@@ -84,7 +84,7 @@
 }
 
 .hero-subtitle {
-  font-size: 22px;
+  font-size: var(--font-size-22);
   font-weight: 400;
   color: #717171;
   margin: 0;
@@ -92,7 +92,7 @@
 }
 
 .hero-description {
-  font-size: 18px;
+  font-size: var(--font-size-base);
   line-height: 1.6;
   color: #484848;
   margin: 0;
@@ -121,7 +121,7 @@
   color: #222222;
   text-decoration: none;
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--font-size-16);
   padding: 12px 24px;
   border-radius: 8px;
   background: #ffffff;
@@ -155,7 +155,7 @@
   transition: all 0.2s ease;
   text-decoration: none;
   color: #222222;
-  font-size: 14px;
+  font-size: var(--font-size-14);
   font-weight: 500;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
@@ -254,18 +254,18 @@
   background: #ffffff;
   border: 1px solid #ffedd5;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: var(--font-size-14);
   font-weight: 600;
   color: #ea580c;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
 .badge-icon {
-  font-size: 16px;
+  font-size: var(--font-size-16);
 }
 
 .featured-title {
-  font-size: 36px;
+  font-size: var(--font-size-36);
   font-weight: 600;
   line-height: 1.2;
   margin: 0 0 16px;
@@ -274,7 +274,7 @@
 }
 
 .featured-description {
-  font-size: 18px;
+  font-size: var(--font-size-lg);
   line-height: 1.6;
   color: #484848;
   margin: 0 0 24px;
@@ -294,7 +294,7 @@
   display: flex;
   gap: 8px;
   align-items: center;
-  font-size: 15px;
+  font-size: var(--font-size-15);
   color: #717171;
   font-weight: 500;
 }
@@ -348,7 +348,7 @@
 }
 
 .stat-value {
-  font-size: 40px;
+  font-size: var(--font-size-40);
   font-weight: 600;
   color: #222222;
   line-height: 1.2;
@@ -357,7 +357,7 @@
 }
 
 .stat-label {
-  font-size: 14px;
+  font-size: var(--font-size-14);
   color: #717171;
   font-weight: 500;
 }
@@ -369,7 +369,7 @@
 }
 
 .section-title {
-  font-size: 48px;
+  font-size: var(--font-size-48);
   font-weight: 600;
   line-height: 1.2;
   margin: 0 0 12px;
@@ -378,7 +378,7 @@
 }
 
 .section-subtitle {
-  font-size: 18px;
+  font-size: var(--font-size-base);
   color: #717171;
   margin: 0;
   font-weight: 400;
@@ -413,7 +413,7 @@
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
-  font-size: 16px;
+  font-size: var(--font-size-16);
   transition: all 0.2s ease;
 }
 
@@ -459,7 +459,7 @@
 }
 
 .card-heading {
-  font-size: 24px;
+  font-size: var(--font-size-24);
   font-weight: 600;
   margin: 0 0 16px;
   color: #222222;
@@ -473,7 +473,7 @@
 }
 
 .card-content p {
-  font-size: 16px;
+  font-size: var(--font-size-16);
   line-height: 1.6;
   color: #484848;
   margin: 0;
@@ -489,12 +489,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 15px;
+  font-size: var(--font-size-15);
   color: #484848;
 }
 
 .highlight-icon {
-  font-size: 20px;
+  font-size: var(--font-size-20);
   line-height: 1;
 }
 
@@ -513,7 +513,7 @@
 }
 
 .work-stat-value {
-  font-size: 28px;
+  font-size: var(--font-size-28);
   font-weight: 600;
   color: #222222;
   margin-bottom: 4px;
@@ -521,7 +521,7 @@
 }
 
 .work-stat-label {
-  font-size: 13px;
+  font-size: var(--font-size-13);
   color: #717171;
   font-weight: 500;
 }
@@ -533,7 +533,7 @@
   color: #222222;
   text-decoration: none;
   font-weight: 600;
-  font-size: 15px;
+  font-size: var(--font-size-15);
   margin-top: 8px;
   transition: all 0.2s ease;
 }
@@ -585,19 +585,19 @@
 }
 
 .health-icon {
-  font-size: 32px;
+  font-size: var(--font-size-32);
   line-height: 1;
 }
 
 .health-title {
-  font-size: 20px;
+  font-size: var(--font-size-20);
   font-weight: 600;
   margin: 0 0 4px;
   color: #222222;
 }
 
 .health-subtitle {
-  font-size: 14px;
+  font-size: var(--font-size-14);
   color: #717171;
   margin: 0;
   font-weight: 400;
@@ -617,14 +617,14 @@
 }
 
 .health-stat-value {
-  font-size: 20px;
+  font-size: var(--font-size-20);
   font-weight: 600;
   color: #222222;
   margin-bottom: 4px;
 }
 
 .health-stat-label {
-  font-size: 12px;
+  font-size: var(--font-size-12);
   color: #717171;
   font-weight: 500;
 }
@@ -671,7 +671,7 @@
 }
 
 .topic-icon {
-  font-size: 32px;
+  font-size: var(--font-size-32);
   line-height: 1;
 }
 
@@ -680,14 +680,14 @@
 }
 
 .topic-title {
-  font-size: 20px;
+  font-size: var(--font-size-20);
   font-weight: 600;
   margin: 0 0 8px;
   color: #222222;
 }
 
 .topic-description {
-  font-size: 15px;
+  font-size: var(--font-size-15);
   color: #717171;
   margin: 0;
   line-height: 1.5;
@@ -727,7 +727,7 @@
   position: absolute;
   top: 24px;
   left: 24px;
-  font-size: 48px;
+  font-size: var(--font-size-48);
   color: #e0e0e0;
   opacity: 0.5;
   font-family: Georgia, serif;
@@ -735,7 +735,7 @@
 }
 
 .testimonial-text {
-  font-size: 16px;
+  font-size: var(--font-size-16);
   line-height: 1.6;
   color: #484848;
   margin: 0 0 20px;
@@ -753,11 +753,11 @@
   font-weight: 600;
   color: #222222;
   margin-bottom: 4px;
-  font-size: 15px;
+  font-size: var(--font-size-15);
 }
 
 .testimonial-author span {
-  font-size: 14px;
+  font-size: var(--font-size-14);
   color: #717171;
 }
 
@@ -814,14 +814,14 @@
 }
 
 .connect-title {
-  font-size: 18px;
+  font-size: var(--font-size-base);
   font-weight: 600;
   margin: 0 0 4px;
   color: #222222;
 }
 
 .connect-description {
-  font-size: 14px;
+  font-size: var(--font-size-14);
   color: #717171;
   margin: 0;
 }
@@ -884,15 +884,15 @@
   }
 
   .hero-title {
-    font-size: 40px;
+    font-size: var(--font-size-40);
   }
 
   .hero-subtitle {
-    font-size: 18px;
+    font-size: var(--font-size-base);
   }
 
   .hero-description {
-    font-size: 16px;
+    font-size: var(--font-size-16);
   }
 
   .hero-image-frame {
@@ -901,11 +901,11 @@
   }
 
   .section-title {
-    font-size: 36px;
+    font-size: var(--font-size-36);
   }
 
   .section-subtitle {
-    font-size: 16px;
+    font-size: var(--font-size-16);
   }
 
   .articles-grid {
@@ -933,7 +933,7 @@
   }
 
   .featured-title {
-    font-size: 24px;
+    font-size: var(--font-size-24);
   }
 }
 
@@ -943,11 +943,11 @@
   }
 
   .hero-title {
-    font-size: 32px;
+    font-size: var(--font-size-32);
   }
 
   .section-title {
-    font-size: 28px;
+    font-size: var(--font-size-28);
   }
 
   .stats-grid {
