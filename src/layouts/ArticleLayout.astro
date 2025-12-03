@@ -98,14 +98,15 @@ const formatDate = (date: Date) => {
           </article>
         </div>
       </div>
+      
+      <Pagination 
+        type="article-navigation"
+        previousArticle={previousArticle}
+        nextArticle={nextArticle}
+        layout="full"
+      />
     </div>
 
-    <Pagination 
-      type="article-navigation"
-      previousArticle={previousArticle}
-      nextArticle={nextArticle}
-      layout="full"
-    />
   </body>
 </html>
 

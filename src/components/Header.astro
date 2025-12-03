@@ -39,6 +39,12 @@ const { twitter, github, linkedin, instagram } = author;
 					<a href={`https://x.com/${twitter}`} target="_blank" class="social-link" title="X / Twitter" rel="noopener noreferrer" aria-label="X / Twitter">
 						<span class="social-icon" set:html={xIcon} />
 					</a>
+					<a href={`https://github.com/${github}`} target="_blank" class="social-link" title="GitHub" rel="noopener noreferrer" aria-label="GitHub">
+						<img src={githubIcon.src} alt="GitHub" class="social-icon" />
+					</a>
+					<a href={`https://instagram.com/${instagram}`} target="_blank" class="social-link" title="Instagram" rel="noopener noreferrer" aria-label="Instagram">
+						<span class="social-icon" set:html={instagramIcon} />
+					</a>
 					<a href={`https://linkedin.com/in/${linkedin}`} target="_blank" class="social-link" title="LinkedIn" rel="noopener noreferrer" aria-label="LinkedIn">
 						<img src={linkedinIcon.src} alt="LinkedIn" class="social-icon" />
 					</a>
