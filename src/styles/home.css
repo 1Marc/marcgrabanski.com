@@ -408,8 +408,8 @@
   align-items: center;
   gap: 8px;
   padding: 14px 28px;
-  background: #222222;
-  border: 1px solid #222222;
+  background: var(--color-primary-dark);
+  border: 1px solid var(--color-primary-dark);
   border-radius: 8px;
   color: #ffffff;
   text-decoration: none;
@@ -419,10 +419,11 @@
 }
 
 .view-all-link:hover {
-  background: #000000;
-  border-color: #000000;
+  background: var(--color-secondary);
+  border-color: var(--color-secondary);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
 }
 
 .view-all-link svg {
