@@ -850,8 +850,9 @@
   }
 
   .hero-image-wrapper {
-    display: flex;
-    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
   }
 
   .hero-actions {
