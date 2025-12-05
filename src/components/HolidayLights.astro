@@ -1,0 +1,188 @@
+<div id="holiday-lights" class="lightrope" style="display: none;">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</div>
+
+<script>
+  // Client-side check for date
+  // Visible only in December (Month 11)
+  const today = new Date();
+  const isDecember = today.getMonth() === 11;
+  
+  if (isDecember) {
+    const lights = document.getElementById('holiday-lights');
+    if (lights) {
+      lights.style.display = 'block';
+      // Add padding to body so lights don't overlap content
+      // Using margin instead of padding to push everything down including fixed headers if they are relative to body
+      document.body.style.paddingTop = '40px';
+    }
+  }
+</script>
+
+<style>
+  .lightrope {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    z-index: 9999;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+    width: 100%;
+    top: -20px;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #ffffff;
+  }
+
+  .lightrope li {
+    position: relative;
+    animation-fill-mode: both; 
+    animation-iteration-count: infinite;
+    list-style: none;
+    margin: 25px 12px 0 12px;
+    padding: 0;
+    display: block;
+    width: 10px;
+    height: 22px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #ff0000;
+    box-shadow: 0px 4px 20px 2px #ff0000;
+    animation-name: flash-1;
+    animation-duration: 2s;
+  }
+
+  .lightrope li:nth-child(4n+1) {
+    background: #ff0000; /* Red */
+    box-shadow: 0px 4px 20px 2px rgba(255, 0, 0, 0.5);
+    animation-name: flash-1;
+    animation-duration: 2s;
+  }
+
+  .lightrope li:nth-child(4n+2) {
+    background: #00ff00; /* Green */
+    box-shadow: 0px 4px 20px 2px rgba(0, 255, 0, 0.5);
+    animation-name: flash-2;
+    animation-duration: 0.8s;
+  }
+
+  .lightrope li:nth-child(4n+3) {
+    background: #ffd700; /* Gold */
+    box-shadow: 0px 4px 20px 2px rgba(255, 215, 0, 0.5);
+    animation-name: flash-3;
+    animation-duration: 1.2s;
+  }
+
+  .lightrope li:nth-child(4n+4) {
+    background: #0000ff; /* Blue */
+    box-shadow: 0px 4px 20px 2px rgba(0, 0, 255, 0.5);
+    animation-name: flash-4;
+    animation-duration: 2.5s;
+  }
+
+  .lightrope li:nth-child(odd) {
+    animation-duration: 1.8s;
+  }
+
+  .lightrope li:nth-child(3n+1) {
+    animation-duration: 1.4s;
+  }
+
+  .lightrope li:before {
+    content: "";
+    position: absolute;
+    background: #222;
+    width: 8px;
+    height: 8px;
+    border-radius: 3px;
+    top: -4px;
+    left: 1px;
+  }
+
+  .lightrope li:after {
+    content: "";
+    top: -10px;
+    left: 8px;
+    position: absolute;
+    width: 42px;
+    height: 14px;
+    border-bottom: solid #222 2px;
+    border-radius: 50%;
+  }
+
+  .lightrope li:last-child:after {
+    content: none;
+  }
+
+  .lightrope li:first-child {
+    margin-left: -40px;
+  }
+
+  @keyframes flash-1 { 
+      0%, 100% { background: #ff0000; box-shadow: 0px 4px 20px 2px #ff0000; } 
+      50% { background: rgba(255, 0, 0, 0.4); box-shadow: 0px 4px 20px 2px rgba(255, 0, 0, 0.2); } 
+  }
+
+  @keyframes flash-2 { 
+      0%, 100% { background: #00ff00; box-shadow: 0px 4px 20px 2px #00ff00; } 
+      50% { background: rgba(0, 255, 0, 0.4); box-shadow: 0px 4px 20px 2px rgba(0, 255, 0, 0.2); } 
+  }
+
+  @keyframes flash-3 { 
+      0%, 100% { background: #ffd700; box-shadow: 0px 4px 20px 2px #ffd700; } 
+      50% { background: rgba(255, 215, 0, 0.4); box-shadow: 0px 4px 20px 2px rgba(255, 215, 0, 0.2); } 
+  }
+
+  @keyframes flash-4 { 
+      0%, 100% { background: #0000ff; box-shadow: 0px 4px 20px 2px #0000ff; } 
+      50% { background: rgba(0, 0, 255, 0.4); box-shadow: 0px 4px 20px 2px rgba(0, 0, 255, 0.2); } 
+  }
+</style>

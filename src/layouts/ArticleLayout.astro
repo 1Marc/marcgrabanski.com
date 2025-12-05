@@ -5,6 +5,7 @@ import { getCollection } from 'astro:content';
 import Pagination from '../components/Pagination.astro';
 import Tag from '../components/Tag.astro';
 import CompactHeader from '../components/CompactHeader.astro';
+import HolidayLights from '../components/HolidayLights.astro';
 
 export interface Props {
   frontmatter: {
@@ -62,6 +63,7 @@ const formatDate = (date: Date) => {
 		<meta name="description" content={description} />
 	</head>
 	<body>
+    <HolidayLights />
     <CompactHeader />
     <div class="content">
       <div class="content__inner">

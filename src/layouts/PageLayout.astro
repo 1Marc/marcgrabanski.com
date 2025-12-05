@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { site } from "../data/siteMetaData.js";
 import CompactHeader from '../components/CompactHeader.astro';
+import HolidayLights from '../components/HolidayLights.astro';
 
 export interface Props {
   frontmatter:  {pageTitle: string, description: string};
@@ -25,6 +26,7 @@ const { name } = author;
     <meta name="description" content={description} />
 	</head>
 	<body>
+    <HolidayLights />
     <CompactHeader />
     <div class="content">
       <div class="content__inner">
