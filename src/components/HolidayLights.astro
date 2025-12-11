@@ -45,7 +45,17 @@
   <li></li>
   <li></li>
   <li></li>
+  <li></li>
+  <li></li>
 </div>
+
+<div id="holiday-music-control" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 10000; background: rgba(255, 255, 255, 0.9); padding: 12px; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.2); cursor: pointer; transition: transform 0.2s;" title="Play Christmas Music">
+  <div id="music-icon" style="font-size: 24px; line-height: 1;">🔇</div>
+</div>
+
+<audio id="holiday-audio" loop preload="auto">
+  <source src="/jingle-bells-calm.mp3" type="audio/mpeg">
+</audio>
 
 <script>
   // Client-side check for date
@@ -60,6 +70,36 @@
       // Add padding to body so lights don't overlap content
       // Using margin instead of padding to push everything down including fixed headers if they are relative to body
       document.body.style.paddingTop = '40px';
+    }
+
+    const musicControl = document.getElementById('holiday-music-control');
+    const audio = document.getElementById('holiday-audio') as HTMLAudioElement;
+    const musicIcon = document.getElementById('music-icon');
+    let isPlaying = false;
+
+    if (musicControl && audio && musicIcon) {
+      musicControl.style.display = 'block';
+      
+      musicControl.addEventListener('click', () => {
+        if (isPlaying) {
+          audio.pause();
+          musicIcon.textContent = '🔇';
+          musicControl.title = "Play Christmas Music";
+        } else {
+          audio.play().catch(e => console.log("Audio play failed:", e));
+          musicIcon.textContent = '🎵';
+          musicControl.title = "Pause Christmas Music";
+        }
+        isPlaying = !isPlaying;
+      });
+
+      // Hover effect
+      musicControl.addEventListener('mouseenter', () => {
+        musicControl.style.transform = 'scale(1.1)';
+      });
+      musicControl.addEventListener('mouseleave', () => {
+        musicControl.style.transform = 'scale(1)';
+      });
     }
   }
 </script>
@@ -156,6 +196,7 @@
     height: 14px;
     border-bottom: solid #222 2px;
     border-radius: 50%;
+    display: block; /* Ensure visibility */
   }
 
   .lightrope li:last-child:after {
