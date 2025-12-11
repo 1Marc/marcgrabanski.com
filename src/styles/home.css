@@ -118,22 +118,23 @@
 }
 
 .hero-nav-link {
-  color: #222222;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   font-size: var(--font-size-16);
   padding: 12px 24px;
   border-radius: 8px;
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
+  background: #222222;
+  border: 1px solid #222222;
   transition: all 0.2s ease;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .hero-nav-link:hover {
-  background: #f7f7f7;
-  border-color: #b0b0b0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  color: #ffffff;
+  background: #404040;
+  border-color: #404040;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transform: translateY(-1px);
 }
 
