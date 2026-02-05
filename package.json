@@ -12,7 +12,7 @@
   "dependencies": {
     "@astro-community/astro-embed-youtube": "^0.5.5",
     "@astrojs/mdx": "^3.1.9",
-    "@astrojs/rss": "^4.0.9",
+    "@astrojs/rss": "^4.0.15",
     "astro": "^4.16.8",
     "markdown-it": "^14.1.0",
     "sanitize-html": "^2.13.1"
