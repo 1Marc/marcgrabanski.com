@@ -14,7 +14,7 @@
     "@astrojs/mdx": "^3.1.9",
     "@astrojs/rss": "^4.0.9",
     "astro": "^4.16.8",
-    "markdown-it": "^14.1.0",
+    "markdown-it": "^14.1.1",
     "sanitize-html": "^2.13.1"
   },
   "devDependencies": {
